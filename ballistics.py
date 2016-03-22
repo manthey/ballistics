@@ -28,8 +28,8 @@ wmi = False  # False to not even try
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-03-20v23'
-PROGRAM_SIGNATURE = '0dc3972d8128dcfdd7da26049e9cc61c'
+__version__ = '2016-03-21v24'
+PROGRAM_SIGNATURE = 'e53ddef434957e90a15cd57ccf0b491a'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -198,9 +198,11 @@ UnitsTable = [
      'Grain (1/7000th of a avoirdupois pound)'),
     (['g', 'gram', 'grams'], True, 0.001, 'SI grams'),
     (['dr', 'dram', 'drams'], False, 0.45359237/256,
-     'International avoirdupois dram (1/12 ounce)'),
+     'International avoirdupois dram (1/16 ounce)'),
     (['oz', 'ounce', 'ounces'], False, 0.45359237/16,
      'International avoirdupois ounce'),
+    (['drt', 'troydram', 'troydrams'], False, 0.37324172/96,
+     'Troy dram (1/8 ounce)'),
     (['ozt', 'troyounce', 'troyounces'], False, 0.37324172/12, 'Troy ounce'),
     (['lb', 'pound', 'pounds'], False, 0.45359237,
      'International avoirdupois pound'),
@@ -697,9 +699,9 @@ def coefficient_of_drag(state=None, density=None,  # noqa - mccabe
         if only_in_range:
             return None
         if Verbose >= 3:
-            sys.stderr.write(
-                'Warning: coefficient of drag for Re=%6.4g, Mn=%6.4f outside '
-                'of available data.\n' % (Re, Mn))
+            warning(state, 'cod_outside',
+                    'Warning: coefficient of drag for Re=%6.4g, Mn=%6.4f '
+                    'outside of available data.\n' % (Re, Mn))
     if not len(mach_data):
         mach_data = mach_data_oor
         (cd, in_range) = interpolate(Mn, mach_data, method='linear')
@@ -712,9 +714,9 @@ def coefficient_of_drag(state=None, density=None,  # noqa - mccabe
         if only_in_range:
             return None
         if Verbose >= 3:
-            sys.stderr.write(
-                'Warning: coefficient of drag for Re=%6.4g, Mn=%6.4f '
-                'extrapolated.\n' % (Re, Mn))
+            warning(state, 'cod_extrapolated',
+                    'Warning: coefficient of drag for Re=%6.4g, Mn=%6.4f '
+                    'extrapolated.\n' % (Re, Mn))
     return cd
 
 
@@ -1037,16 +1039,21 @@ def find_unknown(initial_state, unknown):  # noqa - mccabe
         foundval = maxval
     else:
         threshold = 10**(-PrecisionInDigits)
+        linear = True
         while True:
-            # value that linear interpolation predicts will be the correct point
-            intval = (minval*maxerror-maxval*minerror)/(maxerror-minerror)
+            # value that linear interpolation predicts will be the correct
+            # point
+            intval = (minval*maxerror - maxval*minerror) / (maxerror-minerror)
             if maxval-minval < intval*threshold:
                 foundval = intval
                 break
             # value halfway between last two tests
             midval = (minval+maxval)*0.5
-            # weight them; this helps prevent only updating one side repeatedly
-            intval = (intval*99+midval)/100
+            # Alternate between the linear interpolation and the mid point;
+            # this helps prevent only updating one side repeatedly
+            if not linear:
+                intval = midval
+            linear = not linear
             interror = trajectory_error(initial_state, unknown, intval)
             if not interror:
                 foundval = intval
@@ -2303,6 +2310,21 @@ def viscosity_water_vapor(T, density):
             factor += bij[j][i]*(1/scaledT-1)**i*(scaledRho-1)**j
     mu = mu0*math.exp(scaledRho*factor)
     return mu
+
+
+def warning(state, tag, message):
+    """Show a warning message and mark that it was shown so it doesn't get
+     shown a second time.
+    Enter: state: state to record that the warning was given.
+           tag: a distinct key for this warning.
+           message: the actual warning message.
+    """
+    if 'warning' not in state:
+        state['warning'] = {}
+    if tag in state['warning']:
+        return
+    state['warning'][tag] = True
+    sys.stderr.write(message)
 
 
 if __name__ == '__main__':  # noqa - mccabe
