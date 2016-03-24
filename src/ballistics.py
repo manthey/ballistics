@@ -17,6 +17,9 @@ import sys
 import time
 import types
 
+from formattext import line_break
+from units import convert_units, list_units
+
 # Modules that will get loaded if needed.  None of these are required.
 csv = None
 matplotlib = None
@@ -28,8 +31,8 @@ wmi = False  # False to not even try
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-03-21v24'
-PROGRAM_SIGNATURE = 'e53ddef434957e90a15cd57ccf0b491a'
+__version__ = '2016-03-23v25'
+PROGRAM_SIGNATURE = '33b4d269e5f0e85e524772eff2d72dc4'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -170,73 +173,6 @@ MnReCdDataTable = [
            (1e7, 0.9494)], 1e6),
     # Mach 4.5 is from Munson, fig 11.2, p. 709
     (4.5, [(1e4, 0.906), (1e7, 0.906)], 1e6),
-    ]
-
-# The units table is a list of tuples, each of which is ([list of names and
-# abbreviations], prefixes allowed, factor to SI, description).  The factor can
-# be a single number if the conversion has the same zero-point, or can be a
-# pair where the first number is the scale and the second is the offset.  If
-# prefixes are allowed, the standard SI prefixes for powers of ten can be added
-# to the unit names as needed.
-UnitsTable = [
-    # Distance (reference is meter)
-    (['in', 'inch', 'inches'], False, 0.0254,
-     'Statute inch (British and American inch)'),
-    (['lk', 'link', 'links'], False, 0.66*0.3048,
-     'Link (1/100th of a chain or 1/25 of a rod)'),
-    (['ft', 'foot', 'feet'], False, 0.3048,
-     'Statute foot (British and American foot)'),
-    (['yd', 'yard', 'yards'], False, 3*0.3048,
-     'Statute yard (British and American yard)'),
-    (['m', 'meter', 'meters'], True, 1., 'SI meter'),
-    (['ch', 'chain', 'chains'], False, 66*0.3048,
-     'Chain (100 links or 66 statute feet)'),
-    (['mi', 'mile', 'miles'], False, 5280*0.3048,
-     'Statute mile (British and American mile)'),
-    # Mass (reference is kg)
-    (['gr', 'grain', 'grains'], False, 0.45359237/7000,
-     'Grain (1/7000th of a avoirdupois pound)'),
-    (['g', 'gram', 'grams'], True, 0.001, 'SI grams'),
-    (['dr', 'dram', 'drams'], False, 0.45359237/256,
-     'International avoirdupois dram (1/16 ounce)'),
-    (['oz', 'ounce', 'ounces'], False, 0.45359237/16,
-     'International avoirdupois ounce'),
-    (['drt', 'troydram', 'troydrams'], False, 0.37324172/96,
-     'Troy dram (1/8 ounce)'),
-    (['ozt', 'troyounce', 'troyounces'], False, 0.37324172/12, 'Troy ounce'),
-    (['lb', 'pound', 'pounds'], False, 0.45359237,
-     'International avoirdupois pound'),
-    (['lbt', 'troypound', 'troypounds'], False, 0.37324172, 'Troy pound'),
-    (['kg', 'kilogram', 'kilograms'], False, 1., 'SI kilograms'),
-    # Energy (reference is J)
-    (['J', 'Joule', 'Joules'], True, 1., 'SI Joule (kg*m*m/s/s)'),
-    (['cal', 'calorie', 'calories'], True, 4.201681, 'gram calorie'),
-    (['Cal', 'kcal', 'Calorie', 'Calories'], False, 4201.681,
-     'kilogram Calorie'),
-    (['ftton', 'footton', 'foottons'], False, 3037.03232,
-     'Foot-ton, using the long ton'),
-    # Angle (reference is radian)
-    (['deg', 'degree', 'degrees'], False, math.pi/180, 'Degree (angle)'),
-    (['rad', 'radian', 'radians'], False, 1., 'Radian'),
-    # Time (reference is second)
-    (['s', 'sec', 'second', 'seconds'], True, 1., 'Second (time)'),
-    (['min', 'minute', 'minutes'], False, 60., 'Minute (time)'),
-    (['h', 'hour', 'hours'], False, 3600., 'Hour (time)'),
-    # Temperature (reference is K)
-    (['F', 'degF'], False, (5./9., 459.67), 'Degree Fahrenheit'),
-    (['Ra', 'Rankine'], False, 5./9., 'Rankine (temperature)'),
-    (['C', 'degC'], False, (1., 273.15), 'Degree Centigrade'),
-    (['K', 'Kelvin'], False, 1., 'Kelvin (temperature)'),
-    # Pressure (reference is Pa)
-    (['Pa', 'Pascal', 'Pascals'], True, 1.,
-     'SI Pascal (1 N/m/m or 1 kg/m/s/s)'),
-    (['bar'], False, 10.e5, 'Pressure bar (100000 Pa)'),
-    (['atm', 'atmosphere', 'atmospheres'], False, 101325.,
-     'Standard atmospheric pressure (101,325 Pa)'),
-    (['psi'], False, 689.48, 'Pounds of force per square inch'),
-    (['mmHg'], False, 133.322387415, 'Pressure in millimeters of mercury'),
-    (['mHg'], True, 0.133322387415, 'Pressure in meters of mercury'),
-    (['inHg'], False, 3386.388, 'Pressure in inches of mercury'),
     ]
 
 # The materials table is a list of tuples, each of which is ([list of names and
@@ -720,123 +656,6 @@ def coefficient_of_drag(state=None, density=None,  # noqa - mccabe
     return cd
 
 
-def convert_units(value, to=None, from_units=None):  # noqa - mccabe
-    """Convert a value from one set of units to another.  The value is
-     specified as (number)[ ]*(units), and the units is any unit
-     abbreviation or name combined with '*' and '/' without any spaces.
-     Note that unit names NEVER have ., +, -, or numerals in them.
-    Enter: value: the value to convert.  If this includes units, from_unit
-                  is ignored.  If this does not have units and from_units
-                  is also None, it is assumed that this is in SI units.
-             to: a string with the units to convert to.  If None, convert to
-                 SI units.  If 'string', do not try to convert units.
-             from_units: if specified, a string with the units to convert
-                         from.  This is ignored if the value includes units.
-    Exit:  value: the value in the 'to' units.  If no units are specified,
-                  None is returned."""
-    remainder = None
-    value = str(value)
-    if to == 'string':
-        return value
-    lastpos = None
-    for k in xrange(len(value)):
-        if value[k] in '0123456789.+-':
-            lastpos = k+1
-        elif value[k] == 'e' and value[k+1:k+2] in '0123456789.+-':
-            lastpos = k+1
-        else:
-            break
-    try:
-        units = value[lastpos:].strip()
-        value = float(value[:lastpos].strip())
-    except Exception:
-        return None
-    if not units:
-        units = from_units
-    if units:
-        firstpos = None
-        for k in xrange(len(units)):
-            if units[k] in '0123456789.+-':
-                firstpos = k
-                break
-        if firstpos:
-            remainder = units[firstpos:].strip()
-            units = units[:k].strip()
-    for fromto in ['from', 'to']:
-        if fromto == 'to':
-            units = to
-        if units is None:
-            continue
-        mode = 'mul'
-        lastpos = 0
-        for pos in xrange(len(units)):
-            if units[pos] in '*/':
-                factor = convert_units_factor(units[lastpos:pos])
-                if factor is None:
-                    return None
-                value = convert_units_apply(value, factor, fromto, mode)
-                if units[pos] == '/':
-                    mode = 'div'
-                else:
-                    mode = 'mul'
-                lastpos = pos+1
-        factor = convert_units_factor(units[lastpos:])
-        if factor is None:
-            return None
-        value = convert_units_apply(value, factor, fromto, mode)
-    if remainder is not None:
-        value += convert_units(remainder, to, from_units)
-    return value
-
-
-def convert_units_apply(value, factor, fromto='from', mode='mul'):
-    """Apply a conversion factor to a value.  For plain factors, if ('from'
-     and 'mul') or ('to' and 'div'), the value is multipled by the factor,
-     otherwise the value is divided by the factor.
-    Enter: value: a floating point value to adjust.
-           factor: a factor to adjust it by.  This is either a number or a
-                   two tuple of (factor, offset).
-           fromto: 'from' or 'to'.  See above.
-           mode: 'mul' or 'div'.  See above.
-    Exit:  value: the converted value."""
-    offset = 0
-    if isinstance(factor, tuple):
-        (factor, offset) = factor
-    if (fromto, mode) in (('from', 'mul'), ('to', 'div')):
-        value = (value+offset)*factor
-    else:
-        value = value/factor-offset
-    return value
-
-
-def convert_units_factor(unitname):
-    """Return the factor associated with a specific unit name.
-    Enter: unitname: the name of the unit.  It must be in the UnitsTable.
-    Exit:  factor: the factor for the unit, or None if not found."""
-    for unit in UnitsTable:
-        for name in unit[0]:
-            if name == unitname:
-                return unit[2]
-    # prefixes = {
-    #     'Y': 1e24, 'Z': 1e21, 'E': 1e18, 'P': 1e15, 'T': 1e12, 'G': 1e9,
-    #     'M': 1e6, 'k': 1e3, 'h': 1e2, 'da': 1e1, 'd': 1e-1, 'c': 1e-2,
-    #     'm': 1e-3, 'u': 1e-6, 'n': 1e-9, 'p': 1e-12, 'f': 1e-15,
-    #     'a': 1e-18, 'z': 1e-21, 'y': 1e-22}
-    prefixes = {
-        'T': 1e12, 'G': 1e9, 'M': 1e6, 'k': 1e3, 'h': 1e2, 'd': 1e-1,
-        'c': 1e-2, 'm': 1e-3, 'u': 1e-6, 'n': 1e-9
-    }
-    if unitname[:1] in prefixes:
-        factor = prefixes[unitname[:1]]
-        base = unitname[1:]
-        for unit in UnitsTable:
-            if unit[1]:
-                for name in unit[0]:
-                    if name == base:
-                        return factor*unit[2]
-    return None
-
-
 def csv_row(data):
     """Convert a list to a single line of CSV.
     Enter: data: a list to convert.
@@ -1026,6 +845,7 @@ def find_unknown(initial_state, unknown):  # noqa - mccabe
     if Verbose >= 3:
         print '%s: %g,%g' % (unknown, minval, minerror)
     maxerror = trajectory_error(initial_state, unknown, maxval)
+    x2 = y2 = None
     if Verbose >= 3:
         print '%s: %g,%g %g,%g' % (unknown, minval, minerror, maxval, maxerror)
     if minerror is None or maxerror is None:
@@ -1039,21 +859,30 @@ def find_unknown(initial_state, unknown):  # noqa - mccabe
         foundval = maxval
     else:
         threshold = 10**(-PrecisionInDigits)
-        linear = True
         while True:
-            # value that linear interpolation predicts will be the correct
-            # point
-            intval = (minval*maxerror - maxval*minerror) / (maxerror-minerror)
+            # value halfway between last two tests
+            intval = midval = (minval+maxval)*0.5
+            # If we have three points, use an inverse quadradic interpolation,
+            # but only if it is between the last two points.
+            if x2 is not None:
+                x0, y0, x1, y1 = minval, minerror, maxval, maxerror
+                intval = (x0 * y2*y1 / (y0-y2) / (y0-y1) +
+                          x1 * y0*y2 / (y1-y0) / (y1-y2) +
+                          x2 * y1*y0 / (y2-y1) / (y2-y0))
+                # if it isn't between the last two points we should have picked
+                # the otehr root.  Rather, just use the mid point.
+                if ((minval > maxval and (
+                        intval > minval or intval < maxval)) or (
+                        minval < maxval and (
+                        intval < minval or intval > maxval))):
+                    intval = midval
+            # weight them; this helps prevent only updating one side
+            # repeatedly
+            intval = (intval*99+midval)/100
             if maxval-minval < intval*threshold:
                 foundval = intval
                 break
-            # value halfway between last two tests
-            midval = (minval+maxval)*0.5
-            # Alternate between the linear interpolation and the mid point;
-            # this helps prevent only updating one side repeatedly
-            if not linear:
-                intval = midval
-            linear = not linear
+
             interror = trajectory_error(initial_state, unknown, intval)
             if not interror:
                 foundval = intval
@@ -1063,11 +892,11 @@ def find_unknown(initial_state, unknown):  # noqa - mccabe
                         interror, math.log10(intval/(maxval-minval)))
                 break
             if interror*minerror > 0:
-                minerror = interror
-                minval = intval
+                minerror, y2 = interror, minerror
+                minval, x2 = intval, minval
             else:
-                maxerror = interror
-                maxval = intval
+                maxerror, y2 = interror, maxerror
+                maxval, x2 = intval, maxval
             if Verbose >= 3:
                 print '%s: %g,%g %g,%g %g,%g %3.1f' % (
                     unknown, minval, minerror, maxval, maxerror, intval,
@@ -1555,22 +1384,6 @@ def interpolate(xi, data, logx=False, method='tension'):  # noqa -mccabe
     return (yi, in_range)
 
 
-def line_break(text, line_len=79, indent=1):
-    """Split some text into an array of lines.
-    Enter: text: the text to split.
-           line_len: the maximum length of a line.
-           indent: hoe much to indent all but the first line.
-    Exit:  lines: an array of lines."""
-    lines = [text.rstrip()]
-    while len(lines[-1]) > line_len:
-        pos = lines[-1].rfind(' ', 0, line_len)
-        if pos < 0:
-            pos = line_len
-        lines[-1:] = [lines[-1][:pos].rstrip(), ' '*indent+lines[-1][
-            pos:].strip()]
-    return lines
-
-
 def list_materials(full=False):
     """List all of the materials in the materials table.  This also checks
      to make sure all material names are valid and distinct.
@@ -1597,43 +1410,6 @@ def list_materials(full=False):
         if dens is not None:
             desc += '  (%1.0f kg/m^3, %1.0f lb/ft^3)' % (
                 dens, convert_units(dens, 'lb/ft/ft/ft'))
-        lines = line_break(('%-'+str(nlen)+'s %s') % (name, desc), 79, nlen+2)
-        for line in lines:
-            print line
-
-
-def list_units(full=False):
-    """List all of the units in the units table.  This also checks to make
-     sure all unit names are valid and distinct.
-    Enter: full: if True, print all alternate names on their own line."""
-    units = {}
-    for (names, prefix, factor, desc) in UnitsTable:
-        for name in names:
-            if name in units:
-                print 'Duplicate unit: %s' % name
-                return
-            for k in name:
-                if not k.isalpha():
-                    print 'Invalid unit name: %s' % name
-                    return
-            if name == names[0]:
-                units[name] = (factor, desc, names[1:])
-            elif full == 'full':
-                units[name] = (None, 'See %s.' % names[0], [])
-    names = units.keys()
-    names.sort()
-    nlen = max([len(name) for name in names])
-    print ('%-'+str(nlen)+'s Description (factor to SI)') % 'Name'
-    for name in names:
-        desc = units[name][1]
-        if len(units[name][2]):
-            desc += '  Also called '+', '.join(units[name][2])+'.'
-        factor = units[name][0]
-        if factor is not None:
-            if isinstance(factor, tuple):
-                desc += '  '+str(factor)
-            else:
-                desc += '  (%g)' % factor
         lines = line_break(('%-'+str(nlen)+'s %s') % (name, desc), 79, nlen+2)
         for line in lines:
             print line
