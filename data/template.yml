@@ -1,0 +1,38 @@
+---
+# Each data source should have the following:
+# key: usually the last name of the author and the date concatenated together,
+# such as Anderson1848, often the base name of the file, too.
+key: nameDate  
+ref: Short reference, like would appear in a foot note
+cms: Chicago Manual of Style Bibliographic Reference
+link: URL to digital copy, if available 
+summary: A short description of the data
+details: Usually not directly present, if a companion (base file name).md file is adjacent to this file
+date: Of publication
+# Data is a list of dictionaries, each of which can also have a data entry 
+# which is a list of dictionaries.  Each distinct entry is a test that will be
+# processed.  Any factor from ballistics.py can be specified.  By default,
+# the unknown is power
+data: 
+  -
+    mass: 24 lb 6.5 oz
+    charge: 1 troyounces
+    distance: 14 chains 4 links
+    angle: 45 degrees
+    material: brass
+    desc: First trial
+    ref2: p. 41
+    date: Of test
+  -
+    mass: 24 lb 6.5 oz
+    charge: 1 troyounces
+    angle: 45 degrees
+    material: brass
+    ref2: p. 41
+    data:
+      -
+        distance: 11 chains 13 links
+        desc: Bad test
+      -
+        distance: 12 chains 46 links
+        desc: Good test

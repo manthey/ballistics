@@ -7,6 +7,15 @@ import math
 
 from formattext import line_break
 
+#   References:
+# Robertson, John, *A Treatise of Mathematical Instruments*, originally
+#   published London: printed for J. Nourse, 1775, reprinted by Arlington, VA:
+#   The Invisible College Press, 2002.
+# Stone, Edmund, *The Construction and Principal Uses of Mathematical
+#   Instruments, translated from the French of M. Bion*, originally published
+#   Lonndon: printed for J. Richardson, 1758, reprinted by Mendham, NJ:
+#   Astragal Press, 1995.
+
 
 # The units table is a list of tuples, each of which is ([list of names and
 # abbreviations], prefixes allowed, factor to SI, description).  The factor can
@@ -24,50 +33,62 @@ UnitsTable = [
      'Statute foot (British and American foot)'),
     (['yd', 'yard', 'yards'], False, 3*0.3048,
      'Statute yard (British and American yard)'),
-    (['m', 'meter', 'meters'], True, 1., 'SI meter'),
+    (['m', 'meter', 'meters'], True, 1.0, 'SI meter'),
     (['ch', 'chain', 'chains'], False, 66*0.3048,
      'Chain (100 links or 66 statute feet)'),
     (['mi', 'mile', 'miles'], False, 5280*0.3048,
      'Statute mile (British and American mile)'),
+
+    # Stone, p. 87.  Stone (Bion) has many conversions from the Foot Royal of
+    # Paris to various other linear measurements.
+    # Robertson, p. 140-141, gives it as 1 English foot = 0.9386 French feet
+    (['ftfr', 'parisfoot', 'frenchfoot', 'parisfeet', 'frenchfeet'], False,
+     0.3048 * 144 / 135, 'Paris foot'),
+
     # Mass (reference is kg)
-    (['gr', 'grain', 'grains'], False, 0.45359237/7000,
+    (['gr', 'grain', 'grains'], False, 0.45359237 / 7000,
      'Grain (1/7000th of a avoirdupois pound)'),
     (['g', 'gram', 'grams'], True, 0.001, 'SI grams'),
-    (['dr', 'dram', 'drams'], False, 0.45359237/256,
+    (['dr', 'dram', 'drams'], False, 0.45359237 / 256,
      'International avoirdupois dram (1/16 ounce)'),
-    (['oz', 'ounce', 'ounces'], False, 0.45359237/16,
+    (['oz', 'ounce', 'ounces'], False, 0.45359237 / 16,
      'International avoirdupois ounce'),
-    (['drt', 'troydram', 'troydrams'], False, 0.37324172/96,
+    (['drt', 'troydram', 'troydrams'], False, 0.37324172 / 96,
      'Troy dram (1/8 ounce - 60 grains)'),
-    (['ozt', 'troyounce', 'troyounces'], False, 0.37324172/12, 'Troy ounce'),
+    (['ozt', 'troyounce', 'troyounces'], False, 0.37324172 / 12, 'Troy ounce'),
     (['lb', 'pound', 'pounds'], False, 0.45359237,
      'International avoirdupois pound'),
     (['lbt', 'troypound', 'troypounds'], False, 0.37324172, 'Troy pound'),
-    (['kg', 'kilogram', 'kilograms'], False, 1., 'SI kilogram'),
+    (['kg', 'kilogram', 'kilograms'], False, 1.0, 'SI kilogram'),
+
+    # From Robertson, p. 140-141.
+    (['lbfr', 'parispound', 'frenchpound', 'parispounds', 'frenchpounds',
+      'livre', 'livres'], False, 0.45359237 / 0.926, 'Paris livre (pound)'),
+
     # Energy (reference is J)
-    (['J', 'Joule', 'Joules'], True, 1., 'SI Joule (kg*m*m/s/s)'),
+    (['J', 'Joule', 'Joules'], True, 1.0, 'SI Joule (kg*m*m/s/s)'),
     (['cal', 'calorie', 'calories'], True, 4.201681, 'gram calorie'),
     (['Cal', 'kcal', 'Calorie', 'Calories'], False, 4201.681,
      'kilogram Calorie'),
     (['ftton', 'footton', 'foottons'], False, 3037.03232,
      'Foot-ton, using the long ton'),
     # Angle (reference is radian)
-    (['deg', 'degree', 'degrees'], False, math.pi/180, 'Degree (angle)'),
-    (['rad', 'radian', 'radians'], False, 1., 'Radian'),
+    (['deg', 'degree', 'degrees'], False, math.pi / 180, 'Degree (angle)'),
+    (['rad', 'radian', 'radians'], False, 1.0, 'Radian'),
     # Time (reference is second)
-    (['s', 'sec', 'second', 'seconds'], True, 1., 'Second (time)'),
-    (['min', 'minute', 'minutes'], False, 60., 'Minute (time)'),
-    (['h', 'hour', 'hours'], False, 3600., 'Hour (time)'),
+    (['s', 'sec', 'second', 'seconds'], True, 1.0, 'Second (time)'),
+    (['min', 'minute', 'minutes'], False, 60.0, 'Minute (time)'),
+    (['h', 'hour', 'hours'], False, 3600.0, 'Hour (time)'),
     # Temperature (reference is K)
-    (['F', 'degF'], False, (5./9., 459.67), 'Degree Fahrenheit'),
-    (['Ra', 'Rankine'], False, 5./9., 'Rankine (temperature)'),
-    (['C', 'degC'], False, (1., 273.15), 'Degree Centigrade'),
-    (['K', 'Kelvin'], False, 1., 'Kelvin (temperature)'),
+    (['F', 'degF'], False, (5.0 / 9.0, 459.67), 'Degree Fahrenheit'),
+    (['Ra', 'Rankine'], False, 5.0 / 9.0, 'Rankine (temperature)'),
+    (['C', 'degC'], False, (1.0, 273.15), 'Degree Centigrade'),
+    (['K', 'Kelvin'], False, 1.0, 'Kelvin (temperature)'),
     # Pressure (reference is Pa)
-    (['Pa', 'Pascal', 'Pascals'], True, 1.,
+    (['Pa', 'Pascal', 'Pascals'], True, 1.0,
      'SI Pascal (1 N/m/m or 1 kg/m/s/s)'),
-    (['bar'], False, 10.e5, 'Pressure bar (100000 Pa)'),
-    (['atm', 'atmosphere', 'atmospheres'], False, 101325.,
+    (['bar'], False, 10.0e5, 'Pressure bar (100000 Pa)'),
+    (['atm', 'atmosphere', 'atmospheres'], False, 101325.0,
      'Standard atmospheric pressure (101,325 Pa)'),
     (['psi'], False, 689.48, 'Pounds of force per square inch'),
     (['mmHg'], False, 133.322387415, 'Pressure in millimeters of mercury'),

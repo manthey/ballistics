@@ -1,0 +1,46 @@
+---
+key: gentlemans1740
+ref: "Gentleman's Magazine, 1740"
+cms: "Urban, Slyvanus.  \"Historical Chronical, Friday, 20\" <i>The Gentleman's Magazine and Historical Chronical</i>, 10, no. 6 (June 1740): 315."
+link: http://www.bodley.ox.ac.uk/cgi-bin/ilej/image1.pl?item=page&seq=4&size=1&id=gm.1740.6.x.10.x.x.315
+summary: "Some captured Spanish gunpowder is compared to some English gunpowder that was reputed to be worse."
+date: "1740-06-20"
+data: 
+  -
+    mass: 20 lb 2 oz
+    material: iron  # assumed
+    charge: 2 drams
+    ref2: p. 315
+    desc: First test: raising a weight
+    data:
+      -
+        maxheight: 4 in
+        desc2: English powder
+      -
+        maxheight: 6.2 in  # "some tenths" I have guessed at being 0.2
+        desc2: English powder
+      -
+        maxheight: 1.9 in
+        desc2: Spanish powder
+  - 
+    mass: 12 lb
+    material: iron  # assumed
+    diameter: 5.667 in
+    charge: 0.25 oz
+    ref2: p. 315
+    desc: Second test: firing a mortar
+    skip: No data on this test
+  -
+    mass: 0.5 lb
+    material: iron  # assumed
+    charge: 2 drams
+    ref2: p. 315
+    desc: Third test: swivel gun
+    angle: 61 degrees
+    data:
+      -
+        range: 15.1428 ft
+        desc2: English powder
+      - 
+        skip: Insufficient data to calculate
+        desc2: Spanish powder
