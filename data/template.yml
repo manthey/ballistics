@@ -9,6 +9,9 @@ link: URL to digital copy, if available
 summary: A short description of the data
 details: Usually not directly present, if a companion (base file name).md file is adjacent to this file
 date: Of publication
+# Any data marked skip won't be processed.  If skip is at the root, such as
+# here, no output will be generated.
+skip: True 
 # Data is a list of dictionaries, each of which can also have a data entry 
 # which is a list of dictionaries.  Each distinct entry is a test that will be
 # processed.  Any factor from ballistics.py can be specified.  By default,

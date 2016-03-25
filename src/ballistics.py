@@ -1586,6 +1586,94 @@ def next_point(state, dt):
     return newstate
 
 
+def parse_arguments(argv, allowUnknownParams=False):  # noqa
+    """Parse command line arguments, read in the config file, and read in
+    environment configuration.
+    Enter: argv: command line arguments (excluding the program -- usually this
+                 is sys.argv[1:]).
+           allowUnknownParams: if False, ask for help if an unknown parameter
+                               is specified.
+    Exit:  params: program parameters.
+           state: initial calculation state.
+           help: True if the help must be shown."""
+    state = {'final_height': 0}
+    params = {}
+    help = False
+    argv[0:0] = read_config()
+    argv[0:0] = read_config_env()
+    i = 0
+    while i < len(argv):
+        arg = argv[i]
+        i += 1
+        if arg.startswith('--cdgraph='):
+            params['cdgraph'] = (params.get('cdgraph', '') + ',' +
+                                 arg.split('--cdgraph=', 1)[1]).strip(',')
+        elif arg.startswith('--comment='):
+            params['comment'] = arg.split('--comment=', 1)[1]
+        elif arg.startswith('--config='):
+            argv[i:i] = read_config(arg.split('--config=', 1)[1])
+        elif arg == '--graph':
+            params['graph'] = ''
+        elif arg.startswith('--graph='):
+            params['graph'] = arg.split('--graph=', 1)[1]
+        elif arg == '--materials':
+            params['materials'] = True
+        elif arg.startswith('--materials='):
+            params['materials'] = arg.split('--materials=', 1)[1]
+        elif arg.startswith('--method='):
+            method = arg.split('--method=', 1)[1]
+            UseRungeKutta = (method != 'simple')  # noqa
+        elif arg == '--nounknown':
+            if 'unknown' in params:
+                del params['unknown']
+        elif arg == '--output':
+            if 'output' not in params:
+                params['output'] = ''
+        elif arg.startswith('--output='):
+            params['output'] = (params.get('output', '') + ',' +
+                                arg.split('--output=', 1)[1]).strip(',')
+        elif arg.startswith('--precision='):
+            PrecisionInDigits = float(arg.split('--precision=', 1)[1])  # noqa
+        elif arg == '--units':
+            params['units'] = True
+        elif arg.startswith('--units='):
+            params['units'] = arg.split('--units=', 1)[1]
+        elif arg == '-v':
+            Verbose += 1  # noqa
+        elif arg == '--version':
+            params['version'] = True
+        else:
+            value = None
+            for key in Factors:
+                fac = Factors[key]
+                if 'long' in fac and arg.startswith('--%s=' % fac['long']):
+                    value = arg.split('--%s=' % fac['long'], 1)[1]
+                elif ('short' in fac and arg == '-'+fac['short'] and
+                        i < len(argv)):
+                    value = argv[i]
+                    i += 1
+                elif ('short' in fac and arg.startswith('-'+fac['short']) and
+                        len(arg) > 1+len(fac['short'])):
+                    value = arg.split('-'+fac['short'], 1)[1]
+                if value is not None:
+                    if (value == '?' and
+                            fac.get('method', 'binary') is not None):
+                        params['unknown'] = key
+                    else:
+                        state[key] = convert_units(value, to=fac.get(
+                            'units', None), from_units=fac.get('units', None))
+                    break
+            if value is None and not allowUnknownParams:
+                help = True
+    if not help:
+        help = True
+        for key in ('cdgraph', 'materials', 'output', 'units', 'unknown',
+                    'version'):
+            if key in params:
+                help = False
+    return params, state, help
+
+
 def parse_user_params(default_params={}, user_params=None):
     """Parse a comma-separated list of key=value parameters, and populate a
      dictionary with the values.
@@ -2029,83 +2117,9 @@ def warning(state, tag, message):
 
 
 if __name__ == '__main__':  # noqa - mccabe
-    state = {'final_height': 0}
-    params = {}
-    help = False
     argv = sys.argv[1:]
-    argv[0:0] = read_config()
-    argv[0:0] = read_config_env()
-    i = 0
-    while i < len(argv):
-        arg = argv[i]
-        i += 1
-        if arg.startswith('--cdgraph='):
-            params['cdgraph'] = (params.get('cdgraph', '') + ',' +
-                                 arg.split('--cdgraph=', 1)[1]).strip(',')
-        elif arg.startswith('--comment='):
-            params['comment'] = arg.split('--comment=', 1)[1]
-        elif arg.startswith('--config='):
-            argv[i:i] = read_config(arg.split('--config=', 1)[1])
-        elif arg == '--graph':
-            params['graph'] = ''
-        elif arg.startswith('--graph='):
-            params['graph'] = arg.split('--graph=', 1)[1]
-        elif arg == '--materials':
-            params['materials'] = True
-        elif arg.startswith('--materials='):
-            params['materials'] = arg.split('--materials=', 1)[1]
-        elif arg.startswith('--method='):
-            method = arg.split('--method=', 1)[1]
-            UseRungeKutta = (method != 'simple')
-        elif arg == '--nounknown':
-            if 'unknown' in params:
-                del params['unknown']
-        elif arg == '--output':
-            if 'output' not in params:
-                params['output'] = ''
-        elif arg.startswith('--output='):
-            params['output'] = (params.get('output', '') + ',' +
-                                arg.split('--output=', 1)[1]).strip(',')
-        elif arg.startswith('--precision='):
-            PrecisionInDigits = float(arg.split('--precision=', 1)[1])
-        elif arg == '--units':
-            params['units'] = True
-        elif arg.startswith('--units='):
-            params['units'] = arg.split('--units=', 1)[1]
-        elif arg == '-v':
-            Verbose += 1
-        elif arg == '--version':
-            params['version'] = True
-        else:
-            value = None
-            for key in Factors:
-                fac = Factors[key]
-                if 'long' in fac and arg.startswith('--%s=' % fac['long']):
-                    value = arg.split('--%s=' % fac['long'], 1)[1]
-                elif ('short' in fac and arg == '-'+fac['short'] and
-                        i < len(argv)):
-                    value = argv[i]
-                    i += 1
-                elif ('short' in fac and arg.startswith('-'+fac['short']) and
-                        len(arg) > 1+len(fac['short'])):
-                    value = arg.split('-'+fac['short'], 1)[1]
-                if value is not None:
-                    if (value == '?' and
-                            fac.get('method', 'binary') is not None):
-                        params['unknown'] = key
-                    else:
-                        state[key] = convert_units(value, to=fac.get(
-                            'units', None), from_units=fac.get('units', None))
-                    break
-            if value is None:
-                help = True
+    params, state, help = parse_arguments(argv)
     version_check()
-    if not help:
-        help = True
-        for key in ('cdgraph', 'materials', 'output', 'units', 'unknown',
-                    'version'):
-            if key in params:
-                help = False
     if help:
         print """Ballistics analysis.
 
