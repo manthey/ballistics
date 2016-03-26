@@ -1,0 +1,39 @@
+---
+key: robertson1775
+ref: "Robertson, 1775"
+cms: "Robertson, John, <i>A Treatise of Mathematical Instruments</i>, originally published London: printed for J. Nourse, 1775, reprinted by Arlington, VA: The Invisible College Press, 2002."
+summary: "Textbook problems with an unrealistic starting condition."
+date: "1775"
+data:
+  -
+    mass: 24 lb
+    material: iron
+    charge: 16 lb
+    range: 6750 yd
+    angle: 45 deg
+    theoretical: true
+    data:
+      -
+        ref2: p. 166
+        desc: "Main example"
+      -
+        ref2: p. 167
+        desc: "Example I"
+        angle: 25 deg
+        range: 5170 yd
+      -
+        ref2: p. 169
+        desc: "Example IV"
+        angle: 65 deg
+        range: 5170 yd
+      -
+        ref2: p. 169
+        desc: "Example V"
+        range: 5170 yd
+        charge: 12.25 lb
+      -
+        ref2: p. 170
+        desc: "Example VII"
+        range: 4680 yd
+        height: 973 yd  # 4680 yd * sin(12 deg)
+        angle: 51 deg

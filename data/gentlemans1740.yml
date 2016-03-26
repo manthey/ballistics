@@ -10,6 +10,7 @@ data:
     mass: 20 lb 2 oz
     material: iron  # assumed
     charge: 2 drams
+    angle: 90 deg
     ref2: p. 315
     desc: "First test: raising a weight"
     data:

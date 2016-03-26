@@ -1,6 +1,6 @@
 This is a short article that compares English with captured Spanish gunpowder.  The full text is below:
 
-I assume that when *drams* are specified, that these are drams avoirdupuis, and not Troy drams (the results are weak enough that the smaller unit seems more likely).
+I assume that when *drams* are specified, that these are drams avoirdupois, and not Troy drams (the results are weak enough that the smaller unit seems more likely).
 
 This powder gets terrible results, to the point that I suspect some gross error in the reported values.  The power between the lifting test and the swivel gun test is comparable, though.
 

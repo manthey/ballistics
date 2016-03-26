@@ -45,7 +45,7 @@ UnitsTable = [
      'Link (1/100th of a chain or 1/25 of a rod)'),
     (['ft', 'foot', 'feet'], False, 0.3048,
      'Statute foot (British and American foot)'),
-    (['yd', 'yard', 'yards'], False, 3*0.3048,
+    (['yd', 'yard', 'yards', 'yds'], False, 3*0.3048,
      'Statute yard (British and American yard)'),
     (['m', 'meter', 'meters'], True, 1.0, 'SI meter'),
     (['ch', 'chain', 'chains'], False, 66*0.3048,
@@ -70,7 +70,7 @@ UnitsTable = [
     (['drt', 'troydram', 'troydrams'], False, 0.37324172 / 96,
      'Troy dram (1/8 ounce - 60 grains)'),
     (['ozt', 'troyounce', 'troyounces'], False, 0.37324172 / 12, 'Troy ounce'),
-    (['lb', 'pound', 'pounds'], False, 0.45359237,
+    (['lb', 'pound', 'pounds', 'lbs'], False, 0.45359237,
      'International avoirdupois pound'),
     (['lbt', 'troypound', 'troypounds'], False, 0.37324172, 'Troy pound'),
     (['kg', 'kilogram', 'kilograms'], False, 1.0, 'SI kilogram'),
@@ -126,7 +126,7 @@ def convert_units(value, to=None, from_units=None):  # noqa - mccabe
     Exit:  value: the value in the 'to' units.  If no units are specified,
                   None is returned."""
     remainder = None
-    value = str(value)
+    value = str(value).strip()
     if to == 'string':
         return value
     lastpos = None

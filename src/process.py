@@ -30,6 +30,29 @@ import yaml
 import ballistics
 
 
+class FloatList:
+    """A special list for rendering floats in JSON with predictable precision
+    and in a controlled way."""
+    def __init__(self, newList=None, formatString='%0.10g'):
+        """Create a FloatList.
+        Enter: newList: array for the list.
+               formatString: default format string for floats."""
+        self.list = list(newList)
+        self.formatString = formatString
+
+    def __repr__(self):
+        return '[' + ','.join([
+            self.formatString % val if isinstance(val, float) else repr(val)
+            for val in self.list]) + ']'
+
+
+class FloatEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, FloatList):
+            return repr(o)
+        return super(FloatEncoder, self)(o)
+
+
 def process_cases(info, results):
     """
     Check if there are any data entries in the current level of the info.
@@ -56,18 +79,30 @@ def process_cases(info, results):
     if not max([info[key] == '?' for key in info]):
         args.append('--power=?')
     args.extend(['--%s=%s' % (key, info[key]) for key in info])
+    if ballistics.Verbose >= 2:
+        print ' '.join([('"%s"' if ' ' in arg else '%s') % arg
+                        for arg in args])
     verbose = ballistics.Verbose
     params, state, help = ballistics.parse_arguments(
         args, allowUnknownParams=True)
     ballistics.Verbose = verbose
-    unknown = params['unknown']
     if ballistics.Verbose >= 2:
         pprint.pprint(state)
     starttime = ballistics.get_cpu_time()
-    (newstate, points) = ballistics.find_unknown(state, unknown)
+    (newstate, points) = ballistics.find_unknown(
+        state, params['unknown'], params.get('unknown_scan'))
     newstate['computation_time'] = ballistics.get_cpu_time()-starttime
     if ballistics.Verbose >= 1:
         pprint.pprint(newstate)
+    if len(points) > 0:
+        subset = points[::10]
+        if subset[-1] != points[-1]:
+            subset.append(points[-1])
+        points = subset
+        points = {key: FloatList([point.get(key) for point in points], '%.6g')
+                  for key in points[0]}
+    else:
+        points = None
     results.append({'conditions': info, 'results': newstate, 'points': points})
 
 
@@ -106,11 +141,13 @@ def read_and_process_file(srcfile, outputPath, all=False):
             pass  # our source file.
         else:
             raise 'Unknown companion file %s\n' % file
+    if ballistics.Verbose >= 1:
+        print srcfile
     results = copy.deepcopy(info)
     results['results'] = []
     process_cases(info, results['results'])
-    json.dump(results, open(destpath, 'wb'), sort_keys=True, indent=2,
-              separators=(',', ': '))
+    json.dump(results, open(destpath, 'wb'), sort_keys=True, indent=1,
+              separators=(',', ': '), cls=FloatEncoder)
 
 
 if __name__ == '__main__':  # noqa - mccabe

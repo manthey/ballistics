@@ -44,8 +44,8 @@ wmi = False  # False to not even try
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-03-24v24'
-PROGRAM_SIGNATURE = '448aaab3dd993a4a07d99e15ebe57876'
+__version__ = '2016-03-25v24'
+PROGRAM_SIGNATURE = '72869fd838676edf2cbe0e49cc5fc4d8'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -321,8 +321,7 @@ Factors = {
         'short': 'Y',
         'units': 'm',
         'eng': 'ft',
-        'method':
-        'direct',
+        'method': 'direct',
         'title': 'Maximum Height',
         'desc': 'Maximum height of trajectory above sea level.'
     },
@@ -752,13 +751,15 @@ def display_status(state, params={}, last=False):
         drag.get('cd', 0), drag.get('Re', 0), drag.get('Mn', 0))
 
 
-def find_unknown(initial_state, unknown):  # noqa - mccabe
+def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
     """Based on an initial state and a specific unknown, try different
      values for the unknown until the computed trajectory matches to an
      acceptable level.
     Enter: initial_state: a dictionary of the initial state.  See comment
                           at the top of the program.
            unknown: name of the unknown value which will be varied.
+           unknown_scan: if specified, override the factor's normal method and
+                         use a scan with this step instead.
     Exit:  final_state: the final state of the projectile.  This includes
                         an 'error' item if there is insufficient data for
                         calculation.
@@ -774,6 +775,8 @@ def find_unknown(initial_state, unknown):  # noqa - mccabe
             print ('Trying to solve for %s is ill-conditioned; it may not ' +
                    'work.') % unknown
     method = Factors[unknown].get('method', 'binary')
+    if unknown_scan:
+        method = 'scan'
     if method == 'direct':
         (state, points) = trajectory(initial_state)
         return state, points
@@ -781,9 +784,11 @@ def find_unknown(initial_state, unknown):  # noqa - mccabe
     maxval = convert_units(Factors[unknown]['max'])
     lastval = None
     if method == 'scan':
-        step = convert_units(Factors[unknown]['step'])
+        step = convert_units(Factors[unknown].get('step')
+                             if not unknown_scan else unknown_scan)
         lasterror = None
-        for val in xrange(minval, maxval+step, step):
+        val = minval
+        while val < maxval + step:
             if val > maxval:
                 val = maxval
             error = trajectory_error(initial_state, unknown, val)
@@ -797,6 +802,7 @@ def find_unknown(initial_state, unknown):  # noqa - mccabe
                 break
             lasterror = error
             lastval = val
+            val += step
     minerror = trajectory_error(initial_state, unknown, minval)
     if Verbose >= 3:
         print '%s: %g,%g' % (unknown, minval, minerror)
@@ -1596,6 +1602,8 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
     Exit:  params: program parameters.
            state: initial calculation state.
            help: True if the help must be shown."""
+    global PrecisionInDigits, UseRungeKutta, Verbose
+
     state = {'final_height': 0}
     params = {}
     help = False
@@ -1607,22 +1615,22 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
         i += 1
         if arg.startswith('--cdgraph='):
             params['cdgraph'] = (params.get('cdgraph', '') + ',' +
-                                 arg.split('--cdgraph=', 1)[1]).strip(',')
+                                 arg.split('=', 1)[1]).strip(',')
         elif arg.startswith('--comment='):
-            params['comment'] = arg.split('--comment=', 1)[1]
+            params['comment'] = arg.split('=', 1)[1]
         elif arg.startswith('--config='):
-            argv[i:i] = read_config(arg.split('--config=', 1)[1])
+            argv[i:i] = read_config(arg.split('=', 1)[1])
         elif arg == '--graph':
             params['graph'] = ''
         elif arg.startswith('--graph='):
-            params['graph'] = arg.split('--graph=', 1)[1]
+            params['graph'] = arg.split('=', 1)[1]
         elif arg == '--materials':
             params['materials'] = True
         elif arg.startswith('--materials='):
-            params['materials'] = arg.split('--materials=', 1)[1]
+            params['materials'] = arg.split('=', 1)[1]
         elif arg.startswith('--method='):
-            method = arg.split('--method=', 1)[1]
-            UseRungeKutta = (method != 'simple')  # noqa
+            method = arg.split('=', 1)[1]
+            UseRungeKutta = (method != 'simple')
         elif arg == '--nounknown':
             if 'unknown' in params:
                 del params['unknown']
@@ -1631,13 +1639,15 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
                 params['output'] = ''
         elif arg.startswith('--output='):
             params['output'] = (params.get('output', '') + ',' +
-                                arg.split('--output=', 1)[1]).strip(',')
+                                arg.split('=', 1)[1]).strip(',')
         elif arg.startswith('--precision='):
-            PrecisionInDigits = float(arg.split('--precision=', 1)[1])  # noqa
+            PrecisionInDigits = float(arg.split('=', 1)[1])
+        elif arg.startswith('--scan='):
+            params['unknown_scan'] = arg.split('=', 1)[1]
         elif arg == '--units':
             params['units'] = True
         elif arg.startswith('--units='):
-            params['units'] = arg.split('--units=', 1)[1]
+            params['units'] = arg.split('=', 1)[1]
         elif arg == '-v':
             Verbose += 1  # noqa
         elif arg == '--version':
@@ -1647,7 +1657,7 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
             for key in Factors:
                 fac = Factors[key]
                 if 'long' in fac and arg.startswith('--%s=' % fac['long']):
-                    value = arg.split('--%s=' % fac['long'], 1)[1]
+                    value = arg.split('=', 1)[1]
                 elif ('short' in fac and arg == '-'+fac['short'] and
                         i < len(argv)):
                     value = argv[i]
@@ -1926,6 +1936,10 @@ def trajectory(state):  # noqa - mccabe
     final_state = copy.deepcopy(state)
     if laststate:
         a = offset/(offset-lastoffset)
+        if a > 2:
+            a = 2
+        if a < -1:
+            a = -1
         b = 1-a
         for key in ('x', 'y', 'vx', 'vy', 'ax', 'ay', 'time'):
             final_state[key] = b*state[key]+a*laststate[key]
@@ -2125,8 +2139,8 @@ if __name__ == '__main__':  # noqa - mccabe
 
 Syntax:  ballistics.py --cdgraph=(params) --comment=(comment) --config=(file)
     --graph[=(params)] --help --materials[=full] --method=(method)
-    --nounknown --output[=(params)] --precision=(digits) --units[=full] -v
-    --version (factors)
+    --nounknown --output[=(params)] --precision=(digits) --scan=(value)
+    --units[=full] -v --version (factors)
 
 If the environment variable 'BALLISTICS_CONF' is set, the value is treated as
  if it is on the command line prior to everything else.  The value is split on
@@ -2175,6 +2189,9 @@ If the environment variable 'BALLISTICS_CONF' is set, the value is treated as
  '--output=format=csv,header=all,blank=1,units=both,range,p:Cal/oz,comment'.
 --precision specifies the precision of the answer in number of digits.  I.e.,
  the error is expected to be less than 1x10^(-(# of digits))*(value).
+--scan requires that a scan of the solution space be performed using the
+ specified value (which can include units) as the step.   Otherwise, many
+ factors are solved using a simple binary search.
 --units shows a list of known units.  If 'full' is specified, a more verbose
  list is shown.  In addition to the listed units, most SI units can be prefixed
  with standand SI prefixes.
@@ -2212,11 +2229,11 @@ specified, power factor and charge will not be determined.  Factors:"""
         if 'output' in params:
             generate_output(None, params['output'], None)
         sys.exit(0)
-    unknown = params['unknown']
     if Verbose >= 2:
         pprint.pprint(state)
     starttime = get_cpu_time()
-    (newstate, points) = find_unknown(state, unknown)
+    (newstate, points) = find_unknown(
+        state, params['unknown'], params.get('unknown_scan'))
     newstate['computation_time'] = get_cpu_time()-starttime
     if Verbose >= 1:
         pprint.pprint(newstate)
