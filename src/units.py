@@ -18,6 +18,7 @@ Unit conversion functions and units definitions.
 """
 
 import math
+import sys
 
 from formattext import line_break
 
@@ -67,8 +68,10 @@ UnitsTable = [
      'International avoirdupois dram (1/16 ounce)'),
     (['oz', 'ounce', 'ounces'], False, 0.45359237 / 16,
      'International avoirdupois ounce'),
+    (['dwt', 'troypennyweight', 'pennyweight'], False, 0.37324172 / 240,
+     'Troy pennyweight (24 grains)'),
     (['drt', 'troydram', 'troydrams'], False, 0.37324172 / 96,
-     'Troy dram (1/8 ounce - 60 grains)'),
+     'Troy dram (1/8 ounce or 60 grains)'),
     (['ozt', 'troyounce', 'troyounces'], False, 0.37324172 / 12, 'Troy ounce'),
     (['lb', 'pound', 'pounds', 'lbs'], False, 0.45359237,
      'International avoirdupois pound'),
@@ -225,6 +228,7 @@ def convert_units_factor(unitname):
                 for name in unit[0]:
                     if name == base:
                         return factor*unit[2]
+    sys.stderr.write('Unknown unit "%s"\n' % unitname)
     return None
 
 

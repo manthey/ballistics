@@ -1,0 +1,3 @@
+This is a report from a group instructed to determine if all gunpowder is burnt when firing a gun, and also if all of the gunpowder has fired (inflamed) before the bullet has moved a significant distance.  Since not all of the gunpowder is burnt, they also conclude that it doesn't happen instantaneously.  As a follow up to this, they test how different short barrel lengths affect the range of a mortar.
+
+For this purpose, the committee had made three inserts that would fit into a mortar.  Each insert had a cylindrical powder chamber that held one ounce Troy of powder, but had different lengths and diameters.  Specifically, the chamber lengths were 3 inches, 1 1/2 inches, and 3/4 inch.  A few tests are made with each chamber.

@@ -1,0 +1,88 @@
+---
+key: anderson1696
+ref: "Anderson, 1696"
+cms: "Anderson, Robert. <i>The Making of Rockets.</i>  London: Printed for Robert Morden, 1696"
+summary: "Mostly a book on rockets, this also has some information on firing mortars."
+date: "1696"
+data:
+  -
+    date: "1691-06-01"
+    material: iron
+    diameter: 4 in
+    angle: 15 deg
+    desc: "Using a turned iron ball"
+    ref2: "p. 34"
+    data:
+      -
+        charge: 0.5 oz
+        range: 213 links
+      -
+        charge: 1 oz
+        range: 652 links
+      -
+        charge: 2 oz
+        range: 1640 links
+      -
+        charge: 4 oz
+        range: 3377 links
+  -
+    date: "1691-08-24"
+    material: iron
+    diameter: 3.5 in
+    angle: 15 deg
+    desc: "Using a turn'd iron ball"
+    ref2: "p. 35"
+    data:
+      -
+        desc2: "The chamber of the mortar shaped as the frustum of a cone"
+        data:
+          -
+            charge: 0.5 oz
+            range: 236 links
+          -
+            charge: 1 oz
+            range: 496 links
+          -
+            charge: 1.5 oz
+            range: 800 links
+          -
+            charge: 2 oz
+            range: 1482 links
+      -
+        desc2: "The chamber of the mortar shaped as the frustum of a sphere"
+        data:
+          -
+            charge: 0.5 oz
+            range: 144 links
+          -
+            charge: 1 oz
+            range: 304 links
+          -
+            charge: 1.5 oz
+            range: 1258 links
+          -
+            charge: 2 oz
+            range: 3394 links
+  -
+    date: "1692-04-21"
+    material: iron
+    diameter: 3.5 in
+    angle: 15 deg
+    desc: "Using a turn'd iron ball"
+    ref2: "p. 36"
+    data:
+      -
+        charge: 12 drams
+        range: 303 links
+      -
+        charge: 24 drams
+        range: 746 links
+      -
+        charge: 36 drams
+        range: 1176 links
+      -
+        charge: 48 drams
+        range: 1820 links
+      -
+        charge: 60 drams
+        range: 2698 links

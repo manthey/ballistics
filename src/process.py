@@ -75,6 +75,8 @@ def process_cases(info, results):
             subinfo.update(entry)
             process_cases(subinfo, results)
         return
+    if ballistics.Verbose >= 1:
+        pprint.pprint(info)
     args = []
     if not max([info[key] == '?' for key in info]):
         args.append('--power=?')
