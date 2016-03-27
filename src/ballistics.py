@@ -111,14 +111,13 @@ Verbose = 0
 # This table consists of a list of tuples of the form (Mach number, [List of
 # (Reynolds Number, Coefficient of Drag)], critial Reynolds number).  The data
 # for Mach number == 0 is taken from Munson, Bruce R., Donald F. Young, and
-# Theodore H. Okiishi, 'Fundamentals of Fluid Mechanics, Third Edition'. New
+# Theodore H. Okiishi. "Fundamentals of Fluid Mechanics, Third Edition."  New
 # York: John Wiley & Sons, Inc., 1998.  Fig. 9.21, p. 600.  The data for the
-# other Mach numbers is taken from Miller, Donald G., and Allan B. Bailey,
-# 'Sphere drag at Mach numbers from 0.3 to 2.0 at Reynolds Numbers approaching
-# 10^7', Journal of Fluid Mechanics,  Vol. 93, No. 3, 1979, p. 449-464.  Fig.
-# 4, p. 456.  Selected points on each graph were estimated to form these
-# tables; they should be viewed as approximations of the data from those
-# sources.
+# other Mach numbers is taken from Miller, Donald G., and Allan B. Bailey.
+# "Sphere drag at Mach numbers from 0.3 to 2.0 at Reynolds Numbers approaching
+# 10^7."  Journal of Fluid Mechanics.  93, no. 3 (1979): 449-464.  Fig. 4, p.
+# 456.  Selected points on each graph were estimated to form these tables; they
+# should be viewed as approximations of the data from those sources.
 MnReCdDataTable = [
     # data for Mach 0 as digitized from Munson
     # (0, [(1e-1, 124.9), (2e-1, 106.3), (4e-1, 54.95), (5e-1, 45.71),
@@ -467,7 +466,9 @@ def acceleration_from_gravity(state):
 
 def atmospheric_density(state):
     """Calculate the astmospheric density in kg/(m^3).  This is based on
-     temperature, pressure, and humidity.
+     temperature, pressure, and humidity.  See also Picard, A., R. S. Davis, M.
+     Glaser, and K. Fujii. "Revised formula for the density of moist air
+     (CIPM-2007)."  Metrologia. 45 (2008): 149-155.
     Enter: state: a dictionary of the current state.  See comment at the
                   top of the program.  This directly uses y, temp, rh,
                   pressure, and pressure_y0.
@@ -539,10 +540,9 @@ def atmospheric_viscosity(state):
      based on temperature and humidity.  I've used a relatively simple
      equation to combine the viscosities of dry air and water vapor, as
      listed in Melling, Adrian, Stefan Noppenberger, Martin Still, and
-     Holger Venzke, 'Interpolation Correlations for Fluid Properties of
-     Humid Air in the Temperature Range 100 degC to 200 degC', Journal of
-     Physical and Chemical Reference Data, Vol. 26, No. 4, 1997, p. 1111-
-     1123.
+     Holger Venzke.  "Interpolation Correlations for Fluid Properties of
+     Humid Air in the Temperature Range 100 degC to 200 degC."  Journal of
+     Physical and Chemical Reference Data.  26, no. 4 (1997): 1111-1123.
     Enter: state: a dictionary of the current state.  See comment at the
                   top of the program.
     Exit:  viscosity: atmospheric viscosity in kg/m/s."""
@@ -1833,9 +1833,9 @@ def rowreduce(w, h, matrix):  # noqa - mccabe
 
 def speed_of_sound(state):
     """Calculate the speed of sound in m/s based on the temperature and
-     humidity.  Taken from Bohn, Dennis A., 'Environmental Effects on the
-     Speed of Sound', Journal of the Audio Engineering Society, Vol. 36,
-     No. 4, April, 1988, p. 223-231.
+     humidity.  Taken from Bohn, Dennis A.  "Environmental Effects on the
+     Speed of Sound."  Journal of the Audio Engineering Society.  36, no. 4
+     (April, 1988): 223-231.
     Enter: state: a dictionary of the current state.  See comment at the
                   top of the program.
     Exit:  speed_of_sound: the speed of sound in m/s."""
@@ -2067,9 +2067,9 @@ def version_check():
 def viscosity_dry_air(T, density):
     """Calculate the viscosity of dry air based on a function of absolute
      temperature and density.  Taken from Kadoya, K., N. Matsunaga, and A.
-     Nagashima, 'Viscosity and Thermal Conductivity of Dry Air in the
-     Gaseous Phase', Journal of Physical and Chemical Reference Data, Vol.
-     14, No. 4, 1985, p. 947-970.
+     Nagashima.  "Viscosity and Thermal Conductivity of Dry Air in the
+     Gaseous Phase."  Journal of Physical and Chemical Reference Data.  14,
+     no. 4 (1985): 947-970.
     Enter: T: temperature in K
            density: density in kg/(m^3)
     Exit:  viscosity_air: viscosity in kg/m/s (Pa*s)"""
@@ -2091,9 +2091,9 @@ def viscosity_dry_air(T, density):
 def viscosity_water_vapor(T, density):
     """Calculate the viscosity of water vapor based on a function of
      absolute temperature and density.  Taken from Sengers, J. V. and B.
-     Kamgar-Parsi, 'Representative Equations for the Viscosity of Water
-     Substance', Journal of Physical and Chemical Reference Data, Vol. 13,
-     No. 1, 1984, p. 185-205.
+     Kamgar-Parsi.  "Representative Equations for the Viscosity of Water
+     Substance."  Journal of Physical and Chemical Reference Data.  13, no. 1
+     (1984): 185-205.
     Enter: T: temperature in K
            density: density in kg/(m^3)
     Exit:  viscosity_vapor: viscosity in kg/m/s (Pa*s)"""

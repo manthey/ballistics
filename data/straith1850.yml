@@ -1,0 +1,39 @@
+---
+key: straith1850
+ref: "Straith, 1775"
+cms: "Straith, Hector, <i>Treatise on Fortification and Artillery</i>, London: W. Allen and Company, 1850."
+summary: "Observations based on the author's experience in India."
+date: "1850"
+data:
+  -
+    mass: 68 lb
+    material: iron
+    diameter: 7.93 in
+    angle: 45 deg
+    data:
+      -
+        ref2: p. 543-544
+        charge: 2 oz
+        range: 187 ft
+        desc: "Proof charge for India powder, below which it is rejected."
+      -
+        ref2: p. 544
+        charge: 2 oz
+        range: 300 ft
+        desc: "Typical proof results for cannon powder."
+      -
+        ref2: p. 544
+        charge: 2 oz
+        range: 325 ft
+        desc: "Typical proof results for musketry powder."
+      -
+        ref2: p. 544
+        charge: 4 oz
+        range: 380 ft
+        desc: "Proof requirement for new English powder."
+      -
+        ref2: p. 544
+        charge: 4 oz
+        range: 350 ft
+        desc: "Proof requirement for restoved English powder."
+
