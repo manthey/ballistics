@@ -4,4 +4,4 @@ This program and data attempts to answer the question of how black powder has va
 
 The main focus is on the 18th century.  One question in particular is how the black powder we purchase today compares with the powder that was produced commercially in the 18th century.
 
-The scope of this research is focused on black powder as a relatively mature technology.  Î'm not particularly interested in the origin or invention of black powder; rather I'm interested in it as it was when it was a ubiquitous and required substance.
+The scope of this research is focused on black powder as a relatively mature technology.  I am not particularly interested in the origin or invention of black powder; rather I'm interested in it as it was when it was a ubiquitous and required substance.

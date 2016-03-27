@@ -53,7 +53,6 @@ UnitsTable = [
      'Chain (100 links or 66 statute feet)'),
     (['mi', 'mile', 'miles'], False, 5280*0.3048,
      'Statute mile (British and American mile)'),
-
     # Stone, p. 87.  Stone (Bion) has many conversions from the Foot Royal of
     # Paris to various other linear measurements.
     # Robertson, p. 140-141, gives it as 1 English foot = 0.9386 French feet
@@ -77,7 +76,6 @@ UnitsTable = [
      'International avoirdupois pound'),
     (['lbt', 'troypound', 'troypounds'], False, 0.37324172, 'Troy pound'),
     (['kg', 'kilogram', 'kilograms'], False, 1.0, 'SI kilogram'),
-
     # From Robertson, p. 140-141.
     (['lbfr', 'parispound', 'frenchpound', 'parispounds', 'frenchpounds',
       'livre', 'livres'], False, 0.45359237 / 0.926, 'Paris livre (pound)'),
@@ -89,18 +87,22 @@ UnitsTable = [
      'kilogram Calorie'),
     (['ftton', 'footton', 'foottons'], False, 3037.03232,
      'Foot-ton, using the long ton'),
+
     # Angle (reference is radian)
     (['deg', 'degree', 'degrees'], False, math.pi / 180, 'Degree (angle)'),
     (['rad', 'radian', 'radians'], False, 1.0, 'Radian'),
+
     # Time (reference is second)
     (['s', 'sec', 'second', 'seconds'], True, 1.0, 'Second (time)'),
     (['min', 'minute', 'minutes'], False, 60.0, 'Minute (time)'),
     (['h', 'hour', 'hours'], False, 3600.0, 'Hour (time)'),
+
     # Temperature (reference is K)
     (['F', 'degF'], False, (5.0 / 9.0, 459.67), 'Degree Fahrenheit'),
     (['Ra', 'Rankine'], False, 5.0 / 9.0, 'Rankine (temperature)'),
     (['C', 'degC'], False, (1.0, 273.15), 'Degree Centigrade'),
     (['K', 'Kelvin'], False, 1.0, 'Kelvin (temperature)'),
+
     # Pressure (reference is Pa)
     (['Pa', 'Pascal', 'Pascals'], True, 1.0,
      'SI Pascal (1 N/m/m or 1 kg/m/s/s)'),
