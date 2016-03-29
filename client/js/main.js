@@ -11,7 +11,25 @@
  * under the License.
  */
 
+/* Load a section based on an event or as specified by name.
+ * Enter: evt: the event that triggered this.  null or undefined to use the
+ *             section name.
+ *        section: the section to load, if no event. */
+function load_section(evt, section) {
+  if (evt) {
+    section = $(evt.target).closest('[data-section]').attr('data-section');
+  }
+  if (!templates[section]) {
+    return;
+  }
+  $('#b-content').empty().append(templates[section]());
+  $('.navbar .current').removeClass('current');
+  $('.navbar [data-section="' + section + '"]').closest('li').addClass(
+    'current');
+}
+
 $(function () {
   $('#b-header').append(templates.menu());
-  $('#b-content').append(templates.introduction());
+  load_section(undefined, $('.navbar .current>a').attr('data-section'));
+  $('.navbar [data-section]').on('click', load_section);
 });
