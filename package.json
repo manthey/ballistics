@@ -27,7 +27,8 @@
     "grunt-gitinfo": "~0.1",
     "grunt-shell": "~1.2",
     "jade": "~1.11",
-    "jquery": "~2.2"
+    "jquery": "~2.2",
+    "mathjax": "~2.6"
   },
   "devDependencies": {
     "eslint": "~2.5"

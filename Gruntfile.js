@@ -145,6 +145,7 @@ module.exports = function (grunt) {
                     'built/libs.min.js': [
                         'node_modules/jquery/dist/jquery.js',
                         'node_modules/d3/d3.js',
+                        'node_modules/mathjax/MathJax.js',
                         'client/lib/**/*.js'
                     ]
                 }
