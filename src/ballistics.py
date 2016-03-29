@@ -44,8 +44,8 @@ wmi = False  # False to not even try
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-03-26v25'
-PROGRAM_SIGNATURE = 'e0e0821a788ea1929447d43e64347081'
+__version__ = '2016-03-28v26'
+PROGRAM_SIGNATURE = '7108c7922086cf30979ca8d9d33fbce1'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -372,9 +372,9 @@ Factors = {
         'short': 'H',
         'units': None,
         'min': 0,
-        'max': 100,
+        'max': 1,
         'method': 'scan',
-        'step': 10,
+        'step': 0.1,
         'weak': True,
         'title': 'Relative Humidity',
         'desc': 'Relative humidity.'
@@ -493,7 +493,7 @@ def atmospheric_density(state):
     if 'rh' not in state:
         phi = 0
     else:
-        phi = state['rh']  # relative humidity in percent (0-100)
+        phi = state['rh'] * 100.0  # relative humidity in [0-1]
     # From 'Revised formula for the density of moist air (CIPM-2007)'
     t = T-273.15  # convert to centigrade
     R = 8.314472  # J/(mol*K), universal gass constant, from CIPM-2007
@@ -1669,6 +1669,8 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
                     if (value == '?' and
                             fac.get('method', 'binary') is not None):
                         params['unknown'] = key
+                    elif len(value) == 0 and key in state:
+                        del state[key]
                     else:
                         state[key] = convert_units(value, to=fac.get(
                             'units', None), from_units=fac.get('units', None))

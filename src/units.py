@@ -103,6 +103,9 @@ UnitsTable = [
     (['C', 'degC'], False, (1.0, 273.15), 'Degree Centigrade'),
     (['K', 'Kelvin'], False, 1.0, 'Kelvin (temperature)'),
 
+    # Percent
+    (['%', 'percent'], False, 0.01, 'Percent'),
+
     # Pressure (reference is Pa)
     (['Pa', 'Pascal', 'Pascals'], True, 1.0,
      'SI Pascal (1 N/m/m or 1 kg/m/s/s)'),
