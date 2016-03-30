@@ -1,0 +1,413 @@
+---
+key: anderson1862
+ref: "Anderson, 1862"
+cms: "Anderson, Colonel William and Lieutenant-Colonel Samuel Parlby. <i>Sketch of the mode of manufacturing gunpowder at the Ishapore mills in Bengal.</i> London: John Weale, 1862"
+summary: An excellent review of the technology used in India.
+date: "1862"
+data:
+  -
+    diameter: 8 in
+    charge: 2 oz
+    mass: 68 lb
+    angle: 45 degrees  # assumed
+    ref: "p. 80"
+    data:
+      -
+        date: 1836
+        desc: "Mortar No. 5 or 22, 1836"
+        data:
+          -
+            desc2: "Musketry powder, 100 revolutions"
+            range: 72 yds
+          -
+            desc2: "Musketry powder, 200 revolutions"
+            range: 79 yds
+          -
+            desc2: "Musketry powder, 300 revolutions"
+            range: 79 yds
+          -
+            desc2: "Musketry powder, 400 revolutions"
+            range: 75 yds
+          -
+            desc2: "Musketry powder, 500 revolutions"
+            range: 81 yds
+          -
+            desc2: "Musketry powder, 600 revolutions"
+            range: 79 yds
+          -
+            desc2: "Bombay musketry powder from 1835-1836"
+            range: 88 yds
+          -
+            desc2: "Ordnance powder, 100 revolutions"
+            range: 80 yds
+          -
+            desc2: "Ordnance powder, 200 revolutions"
+            range: 89 yds
+          -
+            desc2: "Ordnance powder, 300 revolutions"
+            range: 89 yds
+          -
+            desc2: "Ordnance powder, 400 revolutions"
+            range: 88 yds
+          -
+            desc2: "Ordnance powder, 500 revolutions"
+            range: 87 yds
+          -
+            desc2: "Ordnance powder, 600 revolutions"
+            range: 90 yds
+          -
+            desc2: "Bombay ordnance powder from 1835-1836"
+            range: 80 yds
+      -
+        date: 1837
+        desc: "Mortar No. 20, 1837"
+        data:
+          -
+            desc2: "Musketry powder, 100 revolutions"
+            range: 76 yds
+          -
+            desc2: "Musketry powder, 200 revolutions"
+            range: 76 yds
+          -
+            desc2: "Musketry powder, 300 revolutions"
+            range: 84 yds
+          -
+            desc2: "Musketry powder, 400 revolutions"
+            range: 79 yds
+          -
+            desc2: "Musketry powder, 500 revolutions"
+            range: 77 yds
+          -
+            desc2: "Musketry powder, 600 revolutions"
+            range: 83 yds
+          -
+            desc2: "Bombay musketry powder from 1835-1836"
+            range: 84 yds
+          -
+            desc2: "Ordnance powder, 100 revolutions"
+            range: 76 yds
+          -
+            desc2: "Ordnance powder, 200 revolutions"
+            range: 78 yds
+          -
+            desc2: "Ordnance powder, 300 revolutions"
+            range: 84 yds
+          -
+            desc2: "Ordnance powder, 400 revolutions"
+            range: 74 yds
+          -
+            desc2: "Ordnance powder, 500 revolutions"
+            range: 79 yds
+          -
+            desc2: "Ordnance powder, 600 revolutions"
+            range: 85 yds
+          -
+            desc2: "Bombay ordnance powder from 1835-1836"
+            range: 85 yds
+      -
+        date: 1838
+        desc: "Mortar No. 20, 1838"
+        data:
+          -
+            desc2: "Musketry powder, 100 revolutions"
+            range: 78 yds
+          -
+            desc2: "Musketry powder, 200 revolutions"
+            range: 72 yds
+          -
+            desc2: "Musketry powder, 300 revolutions"
+            range: 94 yds
+          -
+            desc2: "Musketry powder, 400 revolutions"
+            range: 81 yds
+          -
+            desc2: "Musketry powder, 500 revolutions"
+            range: 81 yds
+          -
+            desc2: "Musketry powder, 600 revolutions"
+            range: 81 yds
+          -
+            desc2: "Ordnance powder, 100 revolutions"
+            range: 86 yds
+          -
+            desc2: "Ordnance powder, 200 revolutions"
+            range: 89 yds
+          -
+            desc2: "Ordnance powder, 300 revolutions"
+            range: 93 yds
+          -
+            desc2: "Ordnance powder, 400 revolutions"
+            range: 86 yds
+          -
+            desc2: "Ordnance powder, 500 revolutions"
+            range: 92 yds
+          -
+            desc2: "Ordnance powder, 600 revolutions"
+            range: 92 yds
+      -
+        date: 1840
+        desc: "Mortar No. 20, 1840"
+        data:
+          -
+            desc2: "Musketry powder, 100 revolutions"
+            range: 67 yds
+          -
+            desc2: "Musketry powder, 200 revolutions"
+            range: 67 yds
+          -
+            desc2: "Musketry powder, 300 revolutions"
+            range: 80 yds
+          -
+            desc2: "Musketry powder, 400 revolutions"
+            range: 71 yds
+          -
+            desc2: "Musketry powder, 500 revolutions"
+            range: 68 yds
+          -
+            desc2: "Musketry powder, 600 revolutions"
+            range: 85 yds
+          -
+            desc2: "Ordnance powder, 100 revolutions"
+            range: 71 yds
+          -
+            desc2: "Ordnance powder, 200 revolutions"
+            range: 81 yds
+          -
+            desc2: "Ordnance powder, 300 revolutions"
+            range: 84 yds
+          -
+            desc2: "Ordnance powder, 400 revolutions"
+            range: 83 yds
+          -
+            desc2: "Ordnance powder, 500 revolutions"
+            range: 83 yds
+          -
+            desc2: "Ordnance powder, 600 revolutions"
+            range: 86 yds
+      -
+        date: 1843
+        desc: "Mortar No. 8, 1843"
+        data:
+          -
+            desc2: "Musketry powder, 100 revolutions"
+            range: 71 yds
+          -
+            desc2: "Musketry powder, 200 revolutions"
+            range: 64 yds
+          -
+            desc2: "Musketry powder, 300 revolutions"
+            range: 87 yds
+          -
+            desc2: "Musketry powder, 400 revolutions"
+            range: 70 yds
+          -
+            desc2: "Musketry powder, 500 revolutions"
+            range: 65 yds
+          -
+            desc2: "Musketry powder, 600 revolutions"
+            range: 74 yds
+          -
+            desc2: "Bombay musketry powder from 1835-1836"
+            range: 86 yds
+          -
+            desc2: "Ordnance powder, 100 revolutions"
+            range: 73 yds
+          -
+            desc2: "Ordnance powder, 200 revolutions"
+            range: 74 yds
+          -
+            desc2: "Ordnance powder, 300 revolutions"
+            range: 87 yds
+          -
+            desc2: "Ordnance powder, 400 revolutions"
+            range: 75 yds
+          -
+            desc2: "Ordnance powder, 500 revolutions"
+            range: 78 yds
+          -
+            desc2: "Ordnance powder, 600 revolutions"
+            range: 78 yds
+          -
+            desc2: "Bombay ordnance powder from 1835-1836"
+            range: 81 yds
+  -
+    diameter: 8 in
+    charge: 1 lb
+    mass: 65.5 lb
+    angle: 45 degrees  # assumed
+    ref: "p. 80"
+    data:
+      -
+        date: 1836
+        desc: "Mortar No. 5 or 22, 1836"
+        data:
+          -
+            desc2: "Musketry powder, 100 revolutions"
+            range: 727 yds
+          -
+            desc2: "Musketry powder, 200 revolutions"
+            range: 721 yds
+          -
+            desc2: "Musketry powder, 300 revolutions"
+            range: 753 yds
+          -
+            desc2: "Musketry powder, 400 revolutions"
+            range: 735 yds
+          -
+            desc2: "Musketry powder, 500 revolutions"
+            range: 768 yds
+          -
+            desc2: "Musketry powder, 600 revolutions"
+            range: 756 yds
+          -
+            desc2: "Bombay musketry powder from 1835-1836"
+            range: 790 yds
+          -
+            desc2: "Ordnance powder, 100 revolutions"
+            range: 611 yds
+          -
+            desc2: "Ordnance powder, 200 revolutions"
+            range: 585 yds
+          -
+            desc2: "Ordnance powder, 300 revolutions"
+            range: 592 yds
+          -
+            desc2: "Ordnance powder, 400 revolutions"
+            range: 586 yds
+          -
+            desc2: "Ordnance powder, 500 revolutions"
+            range: 584 yds
+          -
+            desc2: "Ordnance powder, 600 revolutions"
+            range: 602 yds
+          -
+            desc2: "Bombay ordnance powder from 1835-1836"
+            range: 592 yds
+      -
+        date: 1843
+        desc: "Mortar No. 8, 1843"
+        data:
+          -
+            desc2: "Musketry powder, 100 revolutions"
+            range: 650 yds
+          -
+            desc2: "Musketry powder, 200 revolutions"
+            range: 633 yds
+          -
+            desc2: "Musketry powder, 300 revolutions"
+            range: 757 yds
+          -
+            desc2: "Musketry powder, 400 revolutions"
+            range: 592 yds
+          -
+            desc2: "Musketry powder, 500 revolutions"
+            range: 651 yds
+          -
+            desc2: "Musketry powder, 600 revolutions"
+            range: 653 yds
+          -
+            desc2: "Bombay musketry powder from 1835-1836"
+            range: 721 yds
+          -
+            desc2: "Ordnance powder, 100 revolutions"
+            range: 504 yds
+          -
+            desc2: "Ordnance powder, 200 revolutions"
+            range: 492 yds
+          -
+            desc2: "Ordnance powder, 300 revolutions"
+            range: 605 yds
+          -
+            desc2: "Ordnance powder, 400 revolutions"
+            range: 485 yds
+          -
+            desc2: "Ordnance powder, 500 revolutions"
+            range: 492 yds
+          -
+            desc2: "Ordnance powder, 600 revolutions"
+            range: 492 yds
+          -
+            desc2: "Bombay ordnance powder from 1835-1836"
+            range: 528 yds
+    diameter: 8 in
+    charge: 3 oz
+    mass: 50 lb  # shell
+    angle: 45 degrees  # assumed
+    ref: "p. 81"
+    data:
+      -
+        desc: "Mill charge 60 lb.  Musketry powder"
+        data:
+          -
+            desc2: "100 revolutions"
+            range: 128 yds
+          -
+            desc2: "200 revolutions"
+            range: 150 yds
+          -
+            desc2: "300 revolutions"
+            range: 172 yds
+          -
+            desc2: "400 revolutions"
+            range: 162 yds
+      -
+        desc: "Mill charge 60 lb.  Ordnance powder"
+        data:
+          -
+            desc2: "100 revolutions"
+            range: 129 yds
+          -
+            desc2: "200 revolutions"
+            range: 144 yds
+          -
+            desc2: "300 revolutions"
+            range: 172 yds
+          -
+            desc2: "400 revolutions"
+            range: 158 yds
+      -
+        desc: "Mill charge 80 lb.  Musketry powder"
+        data:
+          -
+            desc2: "100 revolutions"
+            range: 128 yds
+          -
+            desc2: "200 revolutions"
+            range: 149 yds
+          -
+            desc2: "300 revolutions"
+            range: 167 yds
+          -
+            desc2: "400 revolutions"
+            range: 155 yds
+      -
+        desc: "Mill charge 60 lb.  Ordnance powder"
+        data:
+          -
+            desc2: "100 revolutions"
+            range: 119 yds
+          -
+            desc2: "200 revolutions"
+            range: 131 yds
+          -
+            desc2: "300 revolutions"
+            range: 158 yds
+          -
+            desc2: "400 revolutions"
+            range: 141 yds
+    diameter: 8 in
+    charge: 2 oz
+    mass: 68 lb
+    angle: 45 degrees  # assumed
+    ref: "p. 81"
+    data:
+      -
+        desc: "Mill charge 40 lbs, 300 revolutions musketry powder"
+        range: 95 yds
+      -
+        desc: "Mill charge 50 lbs, 300 revolutions musketry powder"
+        range: 95.25 yds
+      -
+        desc: "Mill charge 60 lbs, 300 revolutions musketry powder"
+        range: 95.167 yds
+# Processed through page 81

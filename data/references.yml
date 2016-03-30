@@ -2,11 +2,6 @@
 skip: True
 references:
   -
-    key: anderson1862
-    ref: "Anderson, 1862"
-    cms: "Anderson, Colonel William and Lieutenant-Colonel Samuel Parlby. <i>Sketch of the mode of manufacturing gunpowder at the Ishapore mills in Bengal.</i> London: John Weale, 1862"
-    summary: An excellent review of the technology used in India.
-  -
     key: berthelot1892
     ref: "Berthelot, 1892"
     cms: "Berthelot, M. <i>Explosives and their Power.</i> Translated by C. Napier Hake and William Macnab. London: John Murray, 1892."
