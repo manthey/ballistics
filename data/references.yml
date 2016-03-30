@@ -32,8 +32,8 @@ references:
   -
     key: diderot1751
     ref: "Diderot, 1751"
-    cms: "Diderot and d'Alembert, ed. <i>Encyclop\u00e9die, ou Dictionanaire Raisonn\u00e9 des Sciences, des Arts et des M\u00e9tiers, par une Soci\u00e9t\u00e9 de Gens de Lettres.</i> Paris: Briasson, David, Le Breton, Durand: 1751
-    summary: "This is an amazing compendium of knowledge.  It is one of the few mostly original encyclopias."
+    cms: "Diderot and d'Alembert, ed. <i>Encyclop\u00e9die, ou Dictionanaire Raisonn\u00e9 des Sciences, des Arts et des M\u00e9tiers, par une Soci\u00e9t\u00e9 de Gens de Lettres.</i> Paris: Briasson, David, Le Breton, Durand: 1751"
+    summary: "This is an amazing compendium of knowledge.  It is one of the few mostly original encyclopedias."
     link: http://encyclopedie.uchicago.edu/
   -
     key: engineeringtoolbox
