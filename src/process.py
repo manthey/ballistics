@@ -20,10 +20,13 @@ See help for details.
 """
 
 import copy
+import functools
 import json
 import markdown
+import multiprocessing
 import os
 import pprint
+import signal
 import sys
 import yaml
 
@@ -53,7 +56,7 @@ class FloatEncoder(json.JSONEncoder):
         return super(FloatEncoder, self)(o)
 
 
-def process_cases(info, results):
+def process_cases(info, results, verbose=0):
     """
     Check if there are any data entries in the current level of the info.
     If so, process each entry in turn.  If not, calculate the ballistics and
@@ -62,6 +65,7 @@ def process_cases(info, results):
                  is a list of sub-cases, each of which will be processed in
                  turn.
            results: a list to append results to.
+           verbose: verbosity for the ballistics program
     """
     if info.get('skip'):
         return
@@ -73,28 +77,28 @@ def process_cases(info, results):
         for entry in data:
             subinfo = copy.deepcopy(info)
             subinfo.update(entry)
-            process_cases(subinfo, results)
+            process_cases(subinfo, results, verbose)
         return
-    if ballistics.Verbose >= 1:
+    if verbose >= 1:
         pprint.pprint(info)
     args = []
     if not max([info[key] == '?' for key in info]):
         args.append('--power=?')
     args.extend(['--%s=%s' % (key, info[key]) for key in info])
-    if ballistics.Verbose >= 2:
+    if verbose >= 2:
         print ' '.join([('"%s"' if ' ' in arg else '%s') % arg
                         for arg in args])
-    verbose = ballistics.Verbose
+    ballistics.Verbose = verbose
     params, state, help = ballistics.parse_arguments(
         args, allowUnknownParams=True)
     ballistics.Verbose = verbose
-    if ballistics.Verbose >= 2:
+    if verbose >= 2:
         pprint.pprint(state)
     starttime = ballistics.get_cpu_time()
     (newstate, points) = ballistics.find_unknown(
         state, params['unknown'], params.get('unknown_scan'))
     newstate['computation_time'] = ballistics.get_cpu_time()-starttime
-    if ballistics.Verbose >= 1:
+    if verbose >= 1:
         pprint.pprint(newstate)
     if len(points) > 0:
         subset = points[::10]
@@ -108,7 +112,7 @@ def process_cases(info, results):
     results.append({'conditions': info, 'results': newstate, 'points': points})
 
 
-def read_and_process_file(srcfile, outputPath, all=False):
+def read_and_process_file(srcfile, outputPath, all=False, verbose=0):
     """
     Load a yaml file and any companion files.  For each non-skipped data set,
     calculate the ballistics result.  Output the results as a json file with
@@ -119,6 +123,7 @@ def read_and_process_file(srcfile, outputPath, all=False):
     Enter: srcfile: path of the yml file to load.
            outputPath: directory where the results will be stored.
            all: True to process regardless of results time.
+           verbose: verbosity for the ballistics program
     """
     srcdate = os.path.getmtime(srcfile)
     info = yaml.safe_load(open(srcfile))
@@ -143,28 +148,41 @@ def read_and_process_file(srcfile, outputPath, all=False):
             pass  # our source file.
         else:
             raise 'Unknown companion file %s\n' % file
-    if ballistics.Verbose >= 1:
+    if verbose >= 1:
         print srcfile
     results = copy.deepcopy(info)
     results['results'] = []
-    process_cases(info, results['results'])
+    process_cases(info, results['results'], verbose)
     json.dump(results, open(destpath, 'wb'), sort_keys=True, indent=1,
               separators=(',', ': '), cls=FloatEncoder)
+
+
+def worker_init():
+    """Supress the ctrl-c signal in the worker processes."""
+    signal.signal(signal.SIGINT, signal.SIG_IGN)
 
 
 if __name__ == '__main__':  # noqa - mccabe
     files = []
     allFiles = False
+    multi = False
     outputPath = None
+    verbose = 0
     help = False
     for arg in sys.argv[1:]:
         if arg == '--all':
             allFiles = True
+        elif arg == '--multi':
+            multi = True
+        elif arg.startswith('--multi='):
+            multi = int(arg.split('=', 1)[1])
+            if multi <= 1:
+                multi = False
         elif arg.startswith('--out='):
             outputPath = os.path.abspath(os.path.expanduser(
                 arg.split('=', 1)[1]))
         elif arg == '-v':
-            ballistics.Verbose += 1
+            verbose += 1
         elif arg.startswith('-'):
             help = True
         else:
@@ -181,14 +199,38 @@ if __name__ == '__main__':  # noqa - mccabe
             not os.path.isdir(outputPath)):
         print """Process yml and md files using the ballistics code.
 
-Syntax: process.py --out=(path) --all -v (input files ...)
+Syntax: process.py --out=(path) --all --multi[=(number of processes) -v
+                   (input files ...)
 
 If the input files are a directory, all yml files in that path are processed.
 Only files newer than the matching results are processed unless the
 --all flag is used.
+--multi runs parallel processes.  This uses the number of processors available
+ unless a number is specified.
 --out specifies an output directory, which must exist.
 -v increase verbosity.
 """
         sys.exit(0)
-    for file in files:
-        read_and_process_file(file, outputPath, allFiles)
+    if not multi:
+        for file in files:
+            read_and_process_file(file, outputPath, allFiles, verbose)
+    else:
+        pool = multiprocessing.Pool(processes=None if multi is True else multi,
+                                    initializer=worker_init)
+        mapfunc = functools.partial(read_and_process_file, *[], **{
+            'outputPath': outputPath,
+            'all': allFiles,
+            'verbose': verbose
+        })
+        try:
+            task = pool.map_async(mapfunc, files, 1)
+            while not task.ready():
+                task.wait(1)
+            pool.close()
+            pool.join()
+        except KeyboardInterrupt:
+            try:
+                pool.terminate()
+                pool.join()
+            except Exception:
+                pass

@@ -37,7 +37,7 @@ data:
             range: 7 chains 2 links
       -
         ref: p. 182
-        desc: "One-and-a-half-inch deep powder chamber.  This chamber didn't fit the morter as well, which might be the cause of variation."
+        desc: "One-and-a-half-inch deep powder chamber.  This chamber didn't fit the mortar as well, which might be the cause of variation."
         data:
           -
             range: 10 chains 40 links
