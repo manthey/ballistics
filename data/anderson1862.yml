@@ -424,25 +424,25 @@ data:
             desc2: "Musketry powder"
             data:
               -
-                date: 1834-12-06
+                date: "1834-12-06"
                 range: 725 yds
               -
-                date: 1834-12-19
+                date: "1834-12-19"
                 range: 753 yds
               -
-                date: 1835-01-12
+                date: "1835-01-12"
                 range: 688 yds
           -
             desc2: "Ordnance powder"
             data:
               -
-                date: 1834-12-06
+                date: "1834-12-06"
                 range: 554 yds
               -
-                date: 1834-12-19
+                date: "1834-12-19"
                 range: 593 yds
               -
-                date: 1835-01-12
+                date: "1835-01-12"
                 range: 511 yds
       -
         diameter: 7.85 in
@@ -453,31 +453,31 @@ data:
             desc2: "Musketry powder"
             data:
               -
-                date: 1834-12-06
+                date: "1834-12-06"
                 range: 88 yds
               -
-                date: 1834-12-19
+                date: "1834-12-19"
                 range: 75 yds
               -
-                date: 1835-01-12
+                date: "1835-01-12"
                 range: 75 yds
           -
             desc2: "Ordnance powder"
             data:
               -
-                date: 1834-12-06
+                date: "1834-12-06"
                 range: 94 yds
               -
-                date: 1834-12-19
+                date: "1834-12-19"
                 range: 79 yds
               -
-                date: 1835-01-12
+                date: "1835-01-12"
                 range: 76 yds
   -
     desc: "Powder milled by bullocks, 240 revolutions in 2 hours 40 minutes.  Average of five trials made on the first of every month to April"
     angle: 45 deg
     ref: "p. 82"
-    date: 1847-10
+    date: "1847-10"
     diameter: 7.85 in
     mass: 68 lb
     data:

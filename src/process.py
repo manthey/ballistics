@@ -53,7 +53,11 @@ class FloatEncoder(json.JSONEncoder):
     def default(self, o):
         if isinstance(o, FloatList):
             return repr(o)
-        return super(FloatEncoder, self)(o)
+        try:
+            return super(FloatEncoder, self)(o)
+        except TypeError:
+            print 'Can\'t encode: %r' % o
+            raise
 
 
 def process_cases(info, results, verbose=0):
@@ -147,7 +151,7 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0):
         elif ext == '.yml':
             pass  # our source file.
         else:
-            raise 'Unknown companion file %s\n' % file
+            raise Exception('Unknown companion file %s\n' % file)
     if verbose >= 1:
         print srcfile
     results = copy.deepcopy(info)
