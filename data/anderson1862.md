@@ -1,1 +1,3 @@
 This book has fairly thorough details of the gunpowder mills in Ishapore.  Much of the work examines manufacturing parameters and how they effect the quality of the resulting gunpowder.
+
+Anderson gives pendulum eprouvette values for nearly all of the tests.  However, he mentions (p. 294) that "The weight of the gun, length of the arms, centre of gravity, diameter of bore, and oscillation, are all elements in the calculation, and if these be not the same, not two \u00e9pouvettes will give an equal arc with the same charge of powder."  He then goes on to say that he thinks a single eprouvette will give consistent results, but doesn't include the pertinent information for his eprouvette to allow calculation of power based on it.

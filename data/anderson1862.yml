@@ -6,10 +6,10 @@ summary: An excellent review of the technology used in India.
 date: "1862"
 data:
   -
-    diameter: 8 in
+    diameter: 7.85 in  # from p. 115
     charge: 2 oz
     mass: 68 lb
-    angle: 45 degrees  # assumed
+    angle: 45 deg  # from p. 120
     ref: "p. 80"
     data:
       -
@@ -231,10 +231,10 @@ data:
             desc2: "Bombay ordnance powder from 1835-1836"
             range: 81 yds
   -
-    diameter: 8 in
+    diameter: 7.75 in  # if a 68 lb ball is 7.85
     charge: 1 lb
     mass: 65.5 lb
-    angle: 45 degrees  # assumed
+    angle: 45 deg  # from p. 120
     ref: "p. 80"
     data:
       -
@@ -329,10 +329,10 @@ data:
           -
             desc2: "Bombay ordnance powder from 1835-1836"
             range: 528 yds
-    diameter: 8 in
+    diameter: 7.85 in  # assumed
     charge: 3 oz
     mass: 50 lb  # shell
-    angle: 45 degrees  # assumed
+    angle: 45 deg  # from p. 120
     ref: "p. 81"
     data:
       -
@@ -395,10 +395,10 @@ data:
           -
             desc2: "400 revolutions"
             range: 141 yds
-    diameter: 8 in
+    diameter: 7.85 in  # from p. 115
     charge: 2 oz
     mass: 68 lb
-    angle: 45 degrees  # assumed
+    angle: 45 deg  # from p. 120
     ref: "p. 81"
     data:
       -
@@ -410,4 +410,117 @@ data:
       -
         desc: "Mill charge 60 lbs, 300 revolutions musketry powder"
         range: 95.167 yds
-# Processed through page 81
+  -
+    desc: "Powder milled by horses, 300 revolutions in 1 1/2 hours"
+    angle: 45 deg  # from p. 120
+    ref: "p. 82"
+    data:
+      -
+        diameter: 7.75 in
+        charge: 1 lb
+        mass: 65.5 lb
+        data:
+          -
+            desc2: "Musketry powder"
+            data:
+              -
+                date: 1834-12-06
+                range: 725 yds
+              -
+                date: 1834-12-19
+                range: 753 yds
+              -
+                date: 1835-01-12
+                range: 688 yds
+          -
+            desc2: "Ordnance powder"
+            data:
+              -
+                date: 1834-12-06
+                range: 554 yds
+              -
+                date: 1834-12-19
+                range: 593 yds
+              -
+                date: 1835-01-12
+                range: 511 yds
+      -
+        diameter: 7.85 in
+        charge: 2 oz
+        mass: 68 lb
+        data:
+          -
+            desc2: "Musketry powder"
+            data:
+              -
+                date: 1834-12-06
+                range: 88 yds
+              -
+                date: 1834-12-19
+                range: 75 yds
+              -
+                date: 1835-01-12
+                range: 75 yds
+          -
+            desc2: "Ordnance powder"
+            data:
+              -
+                date: 1834-12-06
+                range: 94 yds
+              -
+                date: 1834-12-19
+                range: 79 yds
+              -
+                date: 1835-01-12
+                range: 76 yds
+  -
+    desc: "Powder milled by bullocks, 240 revolutions in 2 hours 40 minutes.  Average of five trials made on the first of every month to April"
+    angle: 45 deg
+    ref: "p. 82"
+    date: 1847-10
+    diameter: 7.85 in
+    mass: 68 lb
+    data:
+      -
+        desc2: "Musketry powder"
+        charge: 1 lb
+        range: 784 yds
+      -
+        desc2: "Musketry powder"
+        charge: 2 oz
+        range: 102 yds
+      -
+        desc2: "Ordnance powder"
+        charge: 1 lb
+        range: 630 yds
+      -
+        desc2: "Ordnance powder"
+        charge: 2 oz
+        range: 101 yds
+  -
+    desc: "Tests varying the mill runners"
+    angle: 45 deg
+    diameter: 7.85 in
+    mass: 68 lb
+    charge: 2 oz
+    ref: "p. 84"
+    data:
+      -
+        desc2: "Heavy Bengal double cylinder mill, Cannon powder"
+        range: 313.333 ft
+      -
+        desc2: "Light Bombay double cylinder mill, Cannon powder"
+        range: 310.667 ft
+      -
+        desc2: "Light Bombay single cylinder mill, Cannon powder"
+        range: 306.667 ft
+      -
+        desc2: "Heavy Bengal double cylinder mill, Musketry powder"
+        range: 314.667 ft
+      -
+        desc2: "Light Bombay double cylinder mill, Musketry powder"
+        range: 320.333 ft
+      -
+        desc2: "Light Bombay single cylinder mill, Musketry powder"
+        range: 292.333 ft
+# Processed through page 87
