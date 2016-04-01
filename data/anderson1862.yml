@@ -523,4 +523,166 @@ data:
       -
         desc2: "Light Bombay single cylinder mill, Musketry powder"
         range: 292.333 ft
-# Processed through page 87
+  -
+    desc: "Tests of bruising powder, No. 1 Ishapore"
+    angle: 45 deg
+    diameter: 7.75 in
+    mass: 65.5 lb
+    charge: 1 lb
+    ref: "p. 88"
+    date: "1834-04-22"
+    data:
+      -
+        desc2: "Musketry Powder with only 50 revolutions in the mills"
+        range: 729 yds
+      -
+        desc2: "Musketry Powder with only 100 revolutions in the mills"
+        range: 754 yds
+      -
+        desc2: "Musketry Powder from dust, but not remilled"
+        range: 791 yds
+      -
+        desc2: "Musketry Powder from dust remilled with 50 revolutions"
+        range: 758 yds
+      -
+        desc2: "Musketry Powder from dust remilled with 100 revolutions"
+        range: 747 yds
+      -
+        desc2: "Musketry Powder from dust remilled with 150 revolutions"
+        range: 766 yds
+      -
+        desc2: "Ordnance Powder with only 50 revolutions in the mills"
+        range: 590 yds
+      -
+        desc2: "Ordnance Powder with only 100 revolutions in the mills"
+        range: 602 yds
+      -
+        desc2: "Ordnance Powder from dust, but not remilled"
+        range: 619 yds
+      -
+        desc2: "Ordnance Powder from dust remilled with 50 revolutions"
+        range: 605 yds
+      -
+        desc2: "Ordnance Powder from dust remilled with 100 revolutions"
+        range: 602 yds
+      -
+        desc2: "Ordnance Powder from dust remilled with 150 revolutions"
+        range: 618 yds
+  -
+    desc: "Tests of bruising powder, No. 2 Ishapore"
+    angle: 45 deg
+    ref: "p. 88"
+    date: "1834-05-01"
+    data:
+      -
+        diameter: 7.75 in
+        mass: 65.5 lb
+        charge: 1 lb
+        data:
+          -
+            desc2: "Musketry powder with 300 revolutions and no dust"
+            range: 747 yds
+          -
+            desc2: "Musketry powder with dust processed with 50 revolutions"
+            range: 731 yds
+          -
+            desc2: "Ordnance powder with 300 revolutions and no dust"
+            range: 549 yds
+          -
+            desc2: "Ordnance powder with dust processed with 50 revolutions"
+            range: 554 yds
+      -
+        diameter: 7.85 in
+        mass: 80 lb  # I'm surprised by the ball weight, as I would have expected the 68 lb ball here, but both page 88 and 89 have 80 lb.
+        charge: 2 oz
+        data:
+          -
+            desc2: "Musketry powder with 300 revolutions and no dust"
+            range: 94 yds
+          -
+            desc2: "Musketry powder with dust processed with 50 revolutions"
+            range: 94 yds
+          -
+            desc2: "Ordnance powder with 300 revolutions and no dust"
+            range: 98 yds
+          -
+            desc2: "Ordnance powder with dust processed with 50 revolutions"
+            range: 101 yds
+  -
+    desc: "Tests of bruising powder, No. 3 Ishapore"
+    angle: 45 deg
+    ref: "p. 89"
+    date: "1834-06-02"
+    data:
+      -
+        diameter: 7.75 in
+        mass: 65.5 lb
+        charge: 1 lb
+        data:
+          -
+            desc2: "Musketry powder from mix of fresh and dust, dust added at 260 revolutions"
+            range: 755 yds
+          -
+            desc2: "Musketry powder from mix of fresh and dust, made in the usual manner"
+            range: 744 yds
+          -
+            desc2: "Musketry Ishapore common manufacture delivery, No. 63"
+            range: 762 yds
+          -
+            desc2: "Musketry Ishapore common manufacture delivery, No. 64"
+            range: 754 yds
+          -
+            desc2: "Musketry Ishapore common manufacture delivery, No. 65"
+            range: 739 yds
+          -
+            desc2: "Ordnance powder from mix of fresh and dust, dust added at 260 revolutions"
+            range: 591 yds
+          -
+            desc2: "Ordnance powder from mix of fresh and dust, made in the usual manner"
+            range: 598 yds
+          -
+            desc2: "Ordnance Ishapore common manufacture delivery, No. 63"
+            range: 587 yds
+          -
+            desc2: "Ordnance Ishapore common manufacture delivery, No. 64"
+            range: 583 yds
+          -
+            desc2: "Ordnance Ishapore common manufacture delivery, No. 65"
+            range: 603 yds
+      -
+        diameter: 7.85 in
+        mass: 80 lb  # I'm surprised by the ball weight, as I would have expected the 68 lb ball here, but both page 88 and 89 have 80 lb.  80 lb is probably a brass ball, but it is a particulary dense brass
+        charge: 2 oz
+        data:
+          -
+            desc2: "Musketry powder from mix of fresh and dust, dust added at 260 revolutions"
+            range: 95 yds
+          -
+            desc2: "Musketry powder from mix of fresh and dust, made in the usual manner"
+            range: 95 yds
+          -
+            desc2: "Musketry Ishapore common manufacture delivery, No. 63"
+            range: 97 yds
+          -
+            desc2: "Musketry Ishapore common manufacture delivery, No. 64"
+            range: 100 yds
+          -
+            desc2: "Musketry Ishapore common manufacture delivery, No. 65"
+            range: 98 yds
+          -
+            desc2: "Ordnance powder from mix of fresh and dust, dust added at 260 revolutions"
+            range: 91 yds
+          -
+            desc2: "Ordnance powder from mix of fresh and dust, made in the usual manner"
+            range: 94 yds
+          -
+            desc2: "Ordnance Ishapore common manufacture delivery, No. 63"
+            range: 96 yds
+          -
+            desc2: "Ordnance Ishapore common manufacture delivery, No. 64"
+            range: 104 yds
+          -
+            desc2: "Ordnance Ishapore common manufacture delivery, No. 65"
+            range: 102 yds
+
+# Processed through page 102

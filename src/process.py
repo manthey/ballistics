@@ -33,6 +33,11 @@ import yaml
 import ballistics
 
 
+# Used to memoize computations.  When running in multiple processes, less
+# benefit is gained from this, but it still saves computation time.
+PreviousResults = {}
+
+
 class FloatList:
     """A special list for rendering floats in JSON with predictable precision
     and in a controlled way."""
@@ -88,31 +93,40 @@ def process_cases(info, results, verbose=0):
     args = []
     if not max([info[key] == '?' for key in info]):
         args.append('--power=?')
-    args.extend(['--%s=%s' % (key, info[key]) for key in info])
+    args.extend(sorted([
+        '--%s=%s' % (key, info[key]) for key in info if key not in (
+            'ref', 'ref2', 'ref3', 'desc', 'desc2', 'desc3')]))
+    hash = ' '.join([('"%s"' if ' ' in arg else '%s') % arg for arg in args])
     if verbose >= 2:
-        print ' '.join([('"%s"' if ' ' in arg else '%s') % arg
-                        for arg in args])
-    ballistics.Verbose = verbose
-    params, state, help = ballistics.parse_arguments(
-        args, allowUnknownParams=True)
-    ballistics.Verbose = verbose
-    if verbose >= 2:
-        pprint.pprint(state)
-    starttime = ballistics.get_cpu_time()
-    (newstate, points) = ballistics.find_unknown(
-        state, params['unknown'], params.get('unknown_scan'))
-    newstate['computation_time'] = ballistics.get_cpu_time()-starttime
-    if verbose >= 1:
-        pprint.pprint(newstate)
-    if len(points) > 0:
-        subset = points[::10]
-        if subset[-1] != points[-1]:
-            subset.append(points[-1])
-        points = subset
-        points = {key: FloatList([point.get(key) for point in points], '%.6g')
-                  for key in points[0]}
+        print hash
+    if hash in PreviousResults:
+        (newstate, points) = PreviousResults[hash]
+        if verbose >= 1:
+            print 'From hash'
     else:
-        points = None
+        ballistics.Verbose = verbose
+        params, state, help = ballistics.parse_arguments(
+            args, allowUnknownParams=True)
+        ballistics.Verbose = verbose
+        if verbose >= 2:
+            pprint.pprint(state)
+        starttime = ballistics.get_cpu_time()
+        (newstate, points) = ballistics.find_unknown(
+            state, params['unknown'], params.get('unknown_scan'))
+        newstate['computation_time'] = ballistics.get_cpu_time()-starttime
+        if verbose >= 1:
+            pprint.pprint(newstate)
+        if len(points) > 0:
+            subset = points[::10]
+            if subset[-1] != points[-1]:
+                subset.append(points[-1])
+            points = subset
+            points = {key: FloatList([
+                point.get(key) for point in points], '%.6g')
+                for key in points[0]}
+        else:
+            points = None
+        PreviousResults[hash] = (newstate, points)
     results.append({'conditions': info, 'results': newstate, 'points': points})
 
 

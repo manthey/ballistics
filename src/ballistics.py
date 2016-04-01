@@ -44,8 +44,8 @@ wmi = False  # False to not even try
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-03-28v26'
-PROGRAM_SIGNATURE = '7108c7922086cf30979ca8d9d33fbce1'
+__version__ = '2016-03-31v27'
+PROGRAM_SIGNATURE = 'f3f16caee55b83fcaba3a503c1db165e'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:

@@ -70,7 +70,7 @@ def determine_material(state, verbosity=0):
         else:
             state['diam'] = 2 * (float(state['mass']) / (
                 state['material_density'] * 4./3 * math.pi))**(1./3)
-    if 'material' not in state and 'diam' in 'state' and 'mass' in state:
+    if 'material' not in state and 'diam' in state and 'mass' in state:
         # determine material
         state['projectile_density'] = float(state['mass'])/(
             4./3 * math.pi * (state['diam']*0.5)**3)
