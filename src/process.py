@@ -35,7 +35,7 @@ import ballistics
 
 # Used to memoize computations.  When running in multiple processes, less
 # benefit is gained from this, but it still saves computation time.
-PreviousResults = {}
+PreviousResults = {'used': 0}
 
 
 class FloatList:
@@ -100,9 +100,10 @@ def process_cases(info, results, verbose=0):
     if verbose >= 2:
         print hash
     if hash in PreviousResults:
+        PreviousResults['used'] += 1
         (newstate, points) = PreviousResults[hash]
         if verbose >= 1:
-            print 'From hash'
+            print 'From hash', PreviousResults['used']
     else:
         ballistics.Verbose = verbose
         params, state, help = ballistics.parse_arguments(

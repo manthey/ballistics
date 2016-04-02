@@ -684,5 +684,930 @@ data:
           -
             desc2: "Ordnance Ishapore common manufacture delivery, No. 65"
             range: 102 yds
+  # Skipping data on page 103, as no ball diameter is specified and at least
+  # three different diameters have already been mentioned.
+  -
+    desc: "Minimum proof distance"
+    angle: 45 deg
+    ref: "p. 115"
+    diameter: 7.85 in
+    mass: 68 lb
+    charge: 2 oz
+    range: 63 yds
+  -
+    desc: "Ishapore Agency Proof Averages"
+    angle: 45 deg
+    diameter: 7.85 in
+    mass: 68 lb
+    charge: 2 oz
+    ref: "p. 117"
+    data:
+      -
+        desc2: "Musketry powder"
+        data:
+          -
+            date: "1845-12"
+            range: 98 yds
+          -
+            date: "1846-01"
+            range: 94 yds
+          -
+            date: "1846-02"
+            range: 90 yds
+          -
+            date: "1846-03"
+            range: 89 yds
+          -
+            date: "1846-04"
+            range: 93 yds
+          -
+            date: "1846-05"
+            range: 97 yds
+          -
+            date: "1846-06"
+            range: 89 yds
+          -
+            date: "1846-12"
+            range: 99 yds
+          -
+            date: "1847-01"
+            range: 98 yds
+          -
+            date: "1847-02"
+            range: 99 yds
+          -
+            date: "1847-03"
+            range: 96 yds
+          -
+            date: "1847-04"
+            range: 92 yds
+          -
+            date: "1847-05"
+            range: 94 yds
+          -
+            date: "1847-06"
+            range: 90 yds
+          -
+            date: "1847-12"
+            range: 105 yds
+          -
+            date: "1848-01"
+            range: 95 yds
+          -
+            date: "1848-02"
+            range: 100 yds
+          -
+            date: "1848-03"
+            range: 107 yds
+          -
+            date: "1848-04"
+            range: 106 yds
+          -
+            date: "1848-05"
+            range: 107 yds
+          -
+            date: "1848-06"
+            range: 105 yds
+      -
+        desc2: "Ordnance powder"
+        data:
+          -
+            date: "1845-12"
+            range: 94 yds
+          -
+            date: "1846-01"
+            range: 94 yds
+          -
+            date: "1846-02"
+            range: 94 yds
+          -
+            date: "1846-03"
+            range: 92 yds
+          -
+            date: "1846-04"
+            range: 93 yds
+          -
+            date: "1846-05"
+            range: 96 yds
+          -
+            date: "1846-06"
+            range: 97 yds
+          -
+            date: "1846-12"
+            range: 102 yds
+          -
+            date: "1847-01"
+            range: 99 yds
+          -
+            date: "1847-02"
+            range: 98 yds
+          -
+            date: "1847-03"
+            range: 98 yds
+          -
+            date: "1847-04"
+            range: 93 yds
+          -
+            date: "1847-05"
+            range: 96 yds
+          -
+            date: "1847-06"
+            range: 97 yds
+          -
+            date: "1847-12"
+            range: 107 yds
+          -
+            date: "1848-01"
+            range: 100 yds
+          -
+            date: "1848-02"
+            range: 97 yds
+          -
+            date: "1848-03"
+            range: 100 yds
+          -
+            date: "1848-04"
+            range: 103 yds
+          -
+            date: "1848-05"
+            range: 105 yds
+          -
+            date: "1848-06"
+            range: 101 yds
+  -
+    desc: "Averages of Ranges from the Commandant's Proof, taken when the gunpowder was one year old"
+    ref: "p. 120"
+    data:
+      -
+        angle: 45 deg
+        diameter: 7.85 in
+        mass: 68 lb
+        charge: 2 oz
+        desc2: "Musketry powder, 8-in mortar"
+        data:
+          -
+            date: 1838
+            range: 60 yds
+          -
+            date: 1839
+            range: 69 yds
+          -
+            date: 1840
+            range: 71 yds
+          -
+            date: 1841
+            range: 72.1 yds
+          -
+            date: 1842
+            range: 68.25 yds
+          -
+            date: 1843
+            range: 64.75 yds
+          -
+            date: 1844
+            range: 61 yds
+          -
+            date: 1845
+            range: 67 yds
+          -
+            date: 1846
+            range: 71 yds
+          -
+            date: 1847
+            range: 59.75 yds
+          -
+            date: 1848
+            range: 78 yds
+      -
+        angle: 45 deg
+        diameter: 7.85 in
+        mass: 68 lb
+        charge: 2 oz
+        desc2: "Ordnance powder, 8-in mortar"
+        data:
+          -
+            date: 1838
+            range: 62.5 yds
+          -
+            date: 1839
+            range: 64 yds
+          -
+            date: 1840
+            range: 72 yds
+          -
+            date: 1841
+            range: 68.4 yds
+          -
+            date: 1842
+            range: 70.75 yds
+          -
+            date: 1843
+            range: 61.5 yds
+          -
+            date: 1844
+            range: 64 yds
+          -
+            date: 1845
+            range: 64 yds
+          -
+            date: 1846
+            range: 71 yds
+          -
+            date: 1847
+            range: 71 yds
+          -
+            date: 1848
+            range: 75 yds
+      -
+        angle: 45 deg
+        diameter: 13 in
+        material: iron
+        charge: 2 lbs
+        desc2: "13-in mortar"
+        data:
+          -
+            date: 1838
+            range: 550 yds
+          -
+            date: 1839
+            range: 573 yds
+          -
+            date: 1840
+            range: 484 yds
+          -
+            date: 1841
+            range: 550 yds
+          -
+            date: 1842
+            range: 587 yds
+          -
+            date: 1843
+            range: 592 yds
+          -
+            date: 1844
+            range: 569 yds
+          -
+            date: 1845
+            range: 575 yds
+          -
+            date: 1846
+            range: 568 yds
+          -
+            date: 1847
+            range: 445 yds
+          -
+            date: 1848
+            range: 551 yds
+      -
+        angle: 45 deg
+        diameter: 10 in
+        material: iron
+        charge: 1 lb 8 oz
+        desc2: "10-in mortar"
+        data:
+          -
+            date: 1838
+            range: 739 yds
+          -
+            date: 1839
+            range: 804 yds
+          -
+            date: 1840
+            range: 808 yds
+          -
+            date: 1841
+            range: 729 yds
+          -
+            date: 1842
+            range: 771 yds
+          -
+            date: 1843
+            range: 719 yds
+          -
+            date: 1844
+            range: 573 yds
+          -
+            date: 1845
+            range: 790 yds
+          -
+            date: 1846
+            range: 742 yds
+          -
+            date: 1847
+            range: 590 yds
+          -
+            date: 1848
+            range: 693 yds
+      -
+        angle: 45 deg
+        diameter: 7.85 in
+        mass: 68 lb
+        charge: 1 lb 0 oz
+        desc2: "8-in mortar"
+        data:
+          -
+            date: 1838
+            range: 886 yds
+          -
+            date: 1839
+            range: 887 yds
+          -
+            date: 1840
+            range: 792 yds
+          -
+            date: 1841
+            range: 811 yds
+          -
+            date: 1842
+            range: 928 yds
+          -
+            date: 1843
+            range: 966 yds
+          -
+            date: 1844
+            range: 880 yds
+          -
+            date: 1845
+            range: 903 yds
+          -
+            date: 1846
+            range: 908 yds
+          -
+            date: 1847
+            range: 740 yds
+          -
+            date: 1848
+            range: 803 yds
+      -
+        angle: 45 deg
+        diameter: 5.5 in
+        material: iron
+        charge: 0 lb 8 oz
+        desc2: "5 1/2-in mortar"
+        data:
+          -
+            date: 1838
+            range: 1240 yds
+          -
+            date: 1839
+            range: 1167 yds
+          -
+            date: 1840
+            range: 1119 yds
+          -
+            date: 1841
+            range: 1077 yds
+          -
+            date: 1842
+            range: 1196 yds
+          -
+            date: 1843
+            range: 1134 yds
+          -
+            date: 1844
+            range: 1220 yds
+          -
+            date: 1845
+            range: 1179 yds
+          -
+            date: 1846
+            range: 1093 yds
+          -
+            date: 1847
+            range: 890 yds
+          -
+            date: 1848
+            range: 1154 yds
+      -
+        angle: 1 deg
+        mass: 24 lb
+        material: iron
+        charge: 8 lb 0 oz
+        desc2: "24-pounder, iron"
+        data:
+          -
+            date: 1838
+            range: 729 yds
+          -
+            date: 1839
+            range: 935 yds
+          -
+            date: 1840
+            range: 775 yds
+          -
+            date: 1841
+            range: 684 yds
+          -
+            date: 1842
+            range: 872 yds
+          -
+            date: 1843
+            range: 915 yds
+          -
+            date: 1844
+            range: 977 yds
+          -
+            date: 1845
+            range: 751 yds
+          -
+            date: 1846
+            range: 801 yds
+          -
+            date: 1847
+            range: 691 yds
+          -
+            date: 1848
+            range: 866 yds
+      -
+        angle: 1 deg
+        mass: 18 lb
+        material: iron
+        charge: 6 lb 0 oz
+        desc2: "18-pounder, iron"
+        data:
+          -
+            date: 1838
+            range: 720 yds
+          -
+            date: 1839
+            range: 927 yds
+          -
+            date: 1840
+            range: 738 yds
+          -
+            date: 1841
+            range: 704 yds
+          -
+            date: 1842
+            range: 745 yds
+          -
+            date: 1843
+            range: 854 yds
+          -
+            date: 1844
+            range: 992 yds
+          -
+            date: 1845
+            range: 789 yds
+          -
+            date: 1846
+            range: 737 yds
+          -
+            date: 1847
+            range: 648 yds
+          -
+            date: 1848
+            range: 970 yds
+      -
+        angle: 1 deg
+        mass: 12 lb
+        material: iron
+        charge: 4 lb 0 oz
+        desc2: "12-pounder, iron"
+        data:
+          -
+            date: 1838
+            range: 693 yds
+          -
+            date: 1839
+            range: 1020 yds
+          -
+            date: 1840
+            range: 776 yds
+          -
+            date: 1841
+            range: 730 yds
+          -
+            date: 1842
+            range: 1002.5 yds
+          -
+            date: 1843
+            range: 872.5 yds
+          -
+            date: 1844
+            range: 889 yds
+          -
+            date: 1845
+            range: 810 yds
+          -
+            date: 1846
+            range: 759 yds
+          -
+            date: 1847
+            range: 731 yds
+          -
+            date: 1848
+            range: 906 yds
+      -
+        angle: 5 deg
+        diameter: 10 in
+        material: iron
+        charge: 3 lb 0 oz
+        desc2: "10-inch iron howitzer.  Note that this test is probably performed will a hollow shell, but not knowing what it weighs, these results can't be trusted"
+        data:
+          -
+            date: 1838
+            range: 533 yds
+          -
+            date: 1839
+            range: 523 yds
+          -
+            date: 1840
+            range: 461 yds
+          -
+            date: 1841
+            range: 495 yds
+          -
+            date: 1842
+            range: 526 yds
+          -
+            date: 1843
+            range: 475 yds
+          -
+            date: 1844
+            range: 549 yds
+          -
+            date: 1845
+            range: 639 yds
+          -
+            date: 1846
+            range: 464 yds
+          -
+            date: 1847
+            range: 529 yds
+          -
+            date: 1848
+            range: 525 yds
+      -
+        angle: 5 deg
+        diameter: 8 in
+        material: iron
+        charge: 2 lb 0 oz
+        desc2: "8-inch iron howitzer.  Note that this test is probably performed will a hollow shell, but not knowing what it weighs, these results can't be trusted"
+        data:
+          -
+            date: 1838
+            range: 552 yds
+          -
+            date: 1839
+            range: 509 yds
+          -
+            date: 1840
+            range: 520 yds
+          -
+            date: 1841
+            range: 566 yds
+          -
+            date: 1842
+            range: 605 yds
+          -
+            date: 1843
+            range: 475 yds
+          -
+            date: 1844
+            range: 543 yds
+          -
+            date: 1845
+            range: 665 yds
+          -
+            date: 1846
+            range: 516 yds
+          -
+            date: 1847
+            range: 583 yds
+          -
+            date: 1848
+            range: 749 yds
+      -
+        angle: 5 deg
+        mass: 24 lb
+        material: iron
+        charge: 2 lb 0 oz
+        desc2: "24-pndr. brass howitzer"
+        data:
+          -
+            date: 1838
+            range: 1163 yds
+          -
+            date: 1839
+            range: 970 yds
+          -
+            date: 1840
+            range: 961 yds
+          -
+            date: 1841
+            range: 941 yds
+          -
+            date: 1842
+            range: 1054.8 yds
+          -
+            date: 1843
+            range: 1164.4 yds
+          -
+            date: 1844
+            range: 1271 yds
+          -
+            date: 1845
+            range: 993 yds
+          -
+            date: 1846
+            range: 952 yds
+          -
+            date: 1847
+            range: 1115 yds
+          -
+            date: 1848
+            range: 1069 yds
+      -
+        angle: 1 deg
+        mass: 9 lb
+        material: iron
+        charge: 2 lb 4 oz
+        desc2: "9-pounder brass gun"
+        data:
+          -
+            date: 1838
+            range: 674 yds
+          -
+            date: 1839
+            range: 694 yds
+          -
+            date: 1840
+            range: 660 yds
+          -
+            date: 1841
+            range: 605 yds
+          -
+            date: 1842
+            range: 674 yds
+          -
+            date: 1843
+            range: 736 yds
+          -
+            date: 1844
+            range: 786 yds
+          -
+            date: 1845
+            range: 697 yds
+          -
+            date: 1846
+            range: 639 yds
+          -
+            date: 1847
+            range: 760 yds
+          -
+            date: 1848
+            range: 708 yds
+      -
+        angle: 1 deg
+        mass: 6 lb
+        material: iron
+        charge: 1 lb 8 oz
+        desc2: "6-pounder brass gun"
+        data:
+          -
+            date: 1838
+            range: 638 yds
+          -
+            date: 1839
+            range: 737 yds
+          -
+            date: 1840
+            range: 638 yds
+          -
+            date: 1841
+            range: 672 yds
+          -
+            date: 1842
+            range: 611.8 yds
+          -
+            date: 1843
+            range: 716.6 yds
+          -
+            date: 1844
+            range: 738 yds
+          -
+            date: 1845
+            range: 676 yds
+          -
+            date: 1846
+            range: 621 yds
+          -
+            date: 1847
+            range: 644 yds
+          -
+            date: 1848
+            range: 648 yds
+      -
+        angle: 0 deg
+        initial_height: 5 ft  # my assumption
+        mass: 1 oz 2 dr  # from p. 194
+        diameter: 0.75 in  # from p. 194
+        material: lead
+        charge: 6 dr
+        desc2: "Common musket"
+        data:
+          -
+            date: 1838
+            range: 156 yds
+          -
+            date: 1839
+            range: 139 yds
+          -
+            date: 1840
+            range: 147 yds
+          -
+            date: 1841
+            range: 161 yds
+          -
+            date: 1842
+            range: 220 yds
+          -
+            date: 1843
+            range: 183 yds
+          -
+            date: 1844
+            range: 228 yds
+          -
+            date: 1845
+            range: 239 yds
+          -
+            date: 1846
+            range: 266 yds
+          -
+            date: 1847
+            range: 220 yds
+          -
+            date: 1848
+            range: 201 yds
+      -
+        angle: 0 deg
+        initial_height: 5 ft  # my assumption
+        mass: 1 oz 2 dr  # from p. 194, assuming that the common musket is the New Land Pattern
+        diameter: 0.75 in  # from p. 194
+        material: lead
+        charge: 6 dr
+        desc2: "Light infantry musket"
+        data:
+          -
+            date: 1838
+            range: 176 yds
+          -
+            date: 1839
+            range: 127 yds
+          -
+            date: 1840
+            range: 155 yds
+          -
+            date: 1841
+            range: 142 yds
+          -
+            date: 1842
+            range: 248 yds
+          -
+            date: 1843
+            range: 311 yds
+          -
+            date: 1844
+            range: 178 yds
+          -
+            date: 1845
+            range: 239 yds
+          -
+            date: 1846
+            range: 181 yds
+          -
+            date: 1847
+            range: 180 yds
+          -
+            date: 1848
+            range: 133 yds
+      -
+        angle: 0 deg
+        initial_height: 5 ft  # my assumption
+        mass: 11 dr  # from p. 194
+        diameter: 0.64 in  # from p. 194
+        material: lead
+        charge: 4 dr
+        desc2: "Artillery fusil"
+        data:
+          -
+            date: 1838
+            range: 155 yds
+          -
+            date: 1839
+            range: 106 yds
+          -
+            date: 1840
+            range: 148 yds
+          -
+            date: 1841
+            range: 103 yds
+          -
+            date: 1842
+            range: 193 yds
+          -
+            date: 1843
+            range: 225 yds
+          -
+            date: 1844
+            range: 213 yds
+          -
+            date: 1845
+            range: 226 yds
+          -
+            date: 1846
+            range: 167 yds
+          -
+            date: 1847
+            range: 164 yds
+          -
+            date: 1848
+            range: 122 yds
+      -
+        angle: 0 deg
+        initial_height: 5 ft  # my assumption
+        mass: 11 dr  # from p. 194
+        diameter: 0.64 in  # from p. 194
+        material: lead
+        charge: 4 dr
+        desc2: "Pistol"
+        data:
+          -
+            date: 1838
+            range: 59 yds
+          -
+            date: 1839
+            range: 89 yds
+          -
+            date: 1840
+            range: 94 yds
+          -
+            date: 1841
+            range: 85 yds
+          -
+            date: 1842
+            range: 111 yds
+          -
+            date: 1843
+            range: 230 yds
+          -
+            date: 1844
+            range: 239 yds
+          -
+            date: 1845
+            range: 191 yds
+          -
+            date: 1846
+            range: 167 yds
+          -
+            date: 1847
+            range: 106 yds
+          -
+            date: 1848
+            range: 167 yds
+      -
+        angle: 0 deg
+        initial_height: 5 ft  # my assumption
+        mass: 11 dr  # from p. 194
+        diameter: 0.64 in  # from p. 194
+        material: lead
+        charge: 3 dr
+        desc2: "Pistol"
+        data:
+          -
+            date: 1838
+            range: 64 yds
+          -
+            date: 1839
+            range: 94 yds
+          -
+            date: 1840
+            range: 85 yds
+          -
+            date: 1841
+            range: 91 yds
+          -
+            date: 1842
+            range: 79 yds
+          -
+            date: 1843
+            range: 143 yds
+          -
+            date: 1844
+            range: 129 yds
+          -
+            date: 1845
+            range: 213 yds
+          -
+            date: 1846
+            range: 101 yds
+          -
+            date: 1847
+            range: 83 yds
+          -
+            date: 1848
+            range: 92 yds
 
-# Processed through page 102
+
+# Processed through page 123
