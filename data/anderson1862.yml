@@ -684,8 +684,58 @@ data:
           -
             desc2: "Ordnance Ishapore common manufacture delivery, No. 65"
             range: 102 yds
-  # Skipping data on page 103, as no ball diameter is specified and at least
-  # three different diameters have already been mentioned.
+  -
+    desc: "Comparison of grain sizes"
+    ref: "p. 103"
+    mass: 65.5 lb  # best guess of the two standard sizes
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    data:
+      -
+        desc2: "Kuukur powder.  13 mesh size."
+        data:
+          -
+            charge: 2 oz
+            range: 77 yds
+          -
+            charge: 1 lb
+            range: 453 yds
+      -
+        desc2: "Ordnance powder.  17 mesh size."
+        data:
+          -
+            charge: 2 oz
+            range: 90 yds
+          -
+            charge: 1 lb
+            range: 618 yds
+      -
+        desc2: "Musketry powder.  24 mesh size."
+        data:
+          -
+            charge: 2 oz
+            range: 94 yds
+          -
+            charge: 1 lb
+            range: 793 yds
+      -
+        desc2: "Rifle powder.  34 mesh size."
+        data:
+          -
+            charge: 2 oz
+            range: 95 yds
+          -
+            charge: 1 lb
+            range: 827 yds
+      -
+        desc2: "Fine powder.  54 mesh size."
+        data:
+          -
+            charge: 2 oz
+            range: 89 yds
+          -
+            charge: 1 lb
+            range: 437 yds
   -
     desc: "Minimum proof distance"
     angle: 45 deg
@@ -1609,5 +1659,4 @@ data:
             date: 1848
             range: 92 yds
 
-
-# Processed through page 123
+# Continued in anderson1862b.yml
