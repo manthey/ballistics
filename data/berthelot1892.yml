@@ -1,0 +1,87 @@
+---
+key: berthelot1892
+ref: "Berthelot, 1892"
+cms: "Berthelot, M., C. Napier Hake, trans., and William MacNab, trans.  <i>Explosives and Their Power: translated and condensed from the French of M. Berthelot.</i>  London: John Murray, 1892."
+summary: "A chemical analysis of explosives with some measurements of released heat."
+date: "1892"
+data:
+  -
+    desc: "Heat liberated per kilogram of powder in a closed vessel calorimeter."
+    ref: "p. 509"
+    data:
+      -
+        desc: "Bunsen and Schiskhoff"
+        power: "619.5 Cal/kg"
+      -
+        desc: "Roux and Sarrau"
+        data:
+          -
+            desc2: "Cannon powder"
+            power: "753 Cal/kg"
+          -
+            desc2: "Fine sporting powder"
+            power: "807 Cal/kg"
+          -
+            desc2: "B rifle powder"
+            power: "731 Cal/kg"
+          -
+            desc2: "Powder of commerce"
+            power: "694 Cal/kg"
+          -
+            desc2: "Blasting powder"
+            power: "570 Cal/kg"
+      -
+        desc: "Tromeneuc"
+        data:
+          -
+            desc2: "Ordnance powder"
+            power: "840 Cal/kg"
+          -
+            desc2: "English powder"
+            power: "891 Cal/kg"
+          -
+            desc2: "Blasting powder"
+            power: "729 Cal/kg"
+      -
+        desc: "Noble and Abel"
+        data:
+          -
+            desc2: "RLG, low"
+            power: "696 Cal/kg"
+          -
+            desc2: "RLG, high"
+            power: "706 Cal/kg"
+          -
+            desc2: "FG, low"
+            power: "701 Cal/kg"
+          -
+            desc2: "FG, low"
+            power: "706 Cal/kg"
+      -
+        desc: "Noble and Abel, 1 grm of powder supposed perfectly dry"
+        data: # This data is repeated on p. 511
+          -
+            desc2: "Pebble powder"
+            power: "721.4 cal/g"
+          -
+            desc2: "R.L.G., W.A. powder"
+            power: "725.7 cal/g"
+          -
+            desc2: "F.G., W.A. powder"
+            power: "738.3 cal/g"
+          -
+            desc2: "No. 6 Curtis and Harvey's powder"
+            power: "764.4 cal/g"
+          -
+            desc2: "No. 6 Curtis and Harvey's powder, low"
+            power: "733 cal/g"
+          -
+            desc2: "No. 6 Curtis and Harvey's powder, high"
+            power: "784 cal/g"
+          -
+            desc2: "Blasting powder"
+            power: "516.8 cal/g"
+          -
+            desc2: "Spanish spherical"
+            power: "767.3 cal/g"
+

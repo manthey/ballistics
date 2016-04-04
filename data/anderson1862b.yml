@@ -1,0 +1,252 @@
+---
+key: anderson1862
+ref: "Anderson, 1862"
+cms: "Anderson, Colonel William and Lieutenant-Colonel Samuel Parlby. <i>Sketch of the mode of manufacturing gunpowder at the Ishapore mills in Bengal.</i> London: John Weale, 1862"
+summary: An excellent review of the technology used in India.
+date: "1862"
+# Continued from anderson1862.yml
+data:
+  -
+    ref: "p. 124"
+    mass: 65.5 lb  # best guess of the two standard sizes
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    date: "1845"
+    data:
+      -
+        desc: "Bengal Musketry powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 71 yds
+          -
+            charge: 1 lb
+            range: 838 yds
+      -
+        desc: "Bengal Ordnance powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 76 yds
+          -
+            charge: 1 lb
+            range: 665 yds
+      -
+        desc: "Madras Musketry powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 74 yds
+          -
+            charge: 1 lb
+            range: 783 yds
+      -
+        desc: "Madras Ordnance powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 71 yds
+          -
+            charge: 1 lb
+            range: 590 yds
+      -
+        desc: "Bombay Musketry powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 63 yds
+          -
+            charge: 1 lb
+            range: 763 yds
+      -
+        desc: "Bombay Ordnance powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 66 yds
+          -
+            charge: 1 lb
+            range: 551 yds
+      -
+        desc: "Bengal Musketry powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 80 yds
+          -
+            charge: 1 lb
+            range: 828 yds
+      -
+        desc: "Bengal Ordnance powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 77 yds
+          -
+            charge: 1 lb
+            range: 649 yds
+      -
+        desc: "Madras Musketry powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 82 yds
+          -
+            charge: 1 lb
+            range: 813 yds
+      -
+        desc: "Madras Ordnance powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 81 yds
+          -
+            charge: 1 lb
+            range: 567 yds
+      -
+        desc: "Bombay Musketry powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 82 yds
+          -
+            charge: 1 lb
+            range: 814 yds
+      -
+        desc: "Bombay Ordnance powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 76 yds
+          -
+            charge: 1 lb
+            range: 659 yds
+      -
+        desc: "Bengal Musketry powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 100 yds
+          -
+            charge: 0.5 lb
+            range: 382 yds
+      -
+        desc: "Bengal Ordnance powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 97 yds
+          -
+            charge: 0.5 lb
+            range: 309 yds
+      -
+        desc: "Madras Musketry powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 98 yds
+          -
+            charge: 0.5 lb
+            range: 257 yds
+      -
+        desc: "Madras Ordnance powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 93 yds
+          -
+            charge: 0.5 lb
+            range: 279 yds
+      -
+        desc: "Bombay Musketry powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 98 yds
+          -
+            charge: 0.5 lb
+            range: 352 yds
+      -
+        desc: "Bombay Ordnance powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 92 yds
+          -
+            charge: 0.5 lb
+            range: 298 yds
+  -
+    ref: "p. 125"
+    mass: 65.5 lb  # best guess of the two standard sizes
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz
+    humidity: "95%"  # My estimate
+    data:
+      -
+        date: "1845-09"
+        temperature: 87.5 F  # from p. 126
+        data:
+          -
+            desc: "Wet weather proof of Bengal Musketry powder tested in Bengal"
+            range: 69 yds
+          -
+            desc: "Wet weather proof of Bengal Ordnance powder tested in Bengal"
+            range: 72 yds
+          -
+            desc: "Wet weather proof of Madras Musketry powder tested in Bengal"
+            range: 66 yds
+          -
+            desc: "Wet weather proof of Madras Ordnance powder tested in Bengal"
+            range: 71 yds
+          -
+            desc: "Wet weather proof of Bombay Musketry powder tested in Bengal"
+            range: 57 yds
+          -
+            desc: "Wet weather proof of Bombay Ordnance powder tested in Bengal"
+            range: 63 yds
+      -
+        date: "1845-12"
+        temperature: 80.5 F  # from p. 126
+        data:
+          -
+            desc: "Wet weather proof of Bengal Musketry powder tested in Madras"
+            range: 75 yds
+          -
+            desc: "Wet weather proof of Bengal Ordnance powder tested in Madras"
+            range: 70 yds
+          -
+            desc: "Wet weather proof of Madras Musketry powder tested in Madras"
+            range: 74 yds
+          -
+            desc: "Wet weather proof of Madras Ordnance powder tested in Madras"
+            range: 74 yds
+          -
+            desc: "Wet weather proof of Bombay Musketry powder tested in Madras"
+            range: 64 yds
+          -
+            desc: "Wet weather proof of Bombay Ordnance powder tested in Madras"
+            range: 70 yds
+      -
+        date: "1845-07"
+        temperature: 85 F  # from p. 126
+        data:
+          -
+            desc: "Wet weather proof of Bengal Musketry powder tested in Bombay"
+            range: 96 yds
+          -
+            desc: "Wet weather proof of Bengal Ordnance powder tested in Bombay"
+            range: 96 yds
+          -
+            desc: "Wet weather proof of Madras Musketry powder tested in Bombay"
+            range: 87 yds
+          -
+            desc: "Wet weather proof of Madras Ordnance powder tested in Bombay"
+            range: 94 yds
+          -
+            desc: "Wet weather proof of Bombay Musketry powder tested in Bombay"
+            range: 94 yds
+          -
+            desc: "Wet weather proof of Bombay Ordnance powder tested in Bombay"
+            range: 97 yds
+# Processed through page 127

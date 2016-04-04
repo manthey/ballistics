@@ -44,8 +44,8 @@ wmi = False  # False to not even try
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-03-31v27'
-PROGRAM_SIGNATURE = 'f3f16caee55b83fcaba3a503c1db165e'
+__version__ = '2016-04-03v28'
+PROGRAM_SIGNATURE = 'bfd96eaf0032df8baa604dc6114f2d20'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -774,6 +774,8 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
         if Verbose >= 1:
             print ('Trying to solve for %s is ill-conditioned; it may not ' +
                    'work.') % unknown
+    if initial_state.get(unknown):
+        return initial_state, []
     method = Factors[unknown].get('method', 'binary')
     if unknown_scan:
         method = 'scan'
