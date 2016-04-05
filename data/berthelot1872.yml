@@ -1,0 +1,25 @@
+---
+key: berthelot1872
+ref: "Berthelot, 1872"
+cms: "Berthelot, Marcelin.  <i>Sur la force de la poudre et mati\u00e8re explosives, Deuxi\u00e8me \u00C9dition</i>  Paris: Gauthier-Villars, 1872."
+summary: "A chemical analysis of explosives with some measurements of released heat."
+date: "1872"
+data:
+  -
+    desc: "Heat liberated per kilogram of powder in a closed vessel calorimeter."
+    ref: "p. 190"
+    technique: "calorimeter"
+    data:
+      -
+        desc: "Poudre de chasse"
+        power: "641000 cal/kg"
+      -
+        desc: "Poudre de geurre"
+        power: "608000 cal/kg"
+      -
+        desc: "Poudre de mine"
+        power: "510000 cal/kg"
+      -
+        desc: "Poudre avec exc\u00e8d de nitre"
+        power: "673000 cal/kg"
+

@@ -88,7 +88,7 @@ def process_cases(info, results, verbose=0):
             subinfo.update(entry)
             process_cases(subinfo, results, verbose)
         return
-    if verbose >= 1:
+    if verbose >= 2:
         pprint.pprint(info)
     args = []
     if not max([info[key] == '?' for key in info]):
@@ -97,25 +97,25 @@ def process_cases(info, results, verbose=0):
         '--%s=%s' % (key, info[key]) for key in info if key not in (
             'ref', 'ref2', 'ref3', 'desc', 'desc2', 'desc3')]))
     hash = ' '.join([('"%s"' if ' ' in arg else '%s') % arg for arg in args])
-    if verbose >= 2:
+    if verbose >= 3:
         print hash
     if hash in PreviousResults:
         PreviousResults['used'] += 1
         (newstate, points) = PreviousResults[hash]
-        if verbose >= 1:
+        if verbose >= 2:
             print 'From hash', PreviousResults['used']
     else:
-        ballistics.Verbose = verbose
+        ballistics.Verbose = max(0, verbose - 1)
         params, state, help = ballistics.parse_arguments(
             args, allowUnknownParams=True)
-        ballistics.Verbose = verbose
-        if verbose >= 2:
+        ballistics.Verbose = max(0, verbose - 1)
+        if verbose >= 3:
             pprint.pprint(state)
         starttime = ballistics.get_cpu_time()
         (newstate, points) = ballistics.find_unknown(
             state, params['unknown'], params.get('unknown_scan'))
         newstate['computation_time'] = ballistics.get_cpu_time()-starttime
-        if verbose >= 1:
+        if verbose >= 2:
             pprint.pprint(newstate)
         if len(points) > 0:
             subset = points[::10]

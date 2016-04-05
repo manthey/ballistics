@@ -11,7 +11,7 @@ data:
     charge: 16 lb
     range: 6750 yd
     angle: 45 deg
-    theoretical: true
+    technique: "theory"
     data:
       -
         ref2: p. 166

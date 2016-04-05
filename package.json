@@ -13,6 +13,11 @@
   },
   "dependencies": {
     "d3": "~3.5",
+    "jquery": "~2.2",
+    "mathjax": "~2.6"
+  },
+  "devDependencies": {
+    "eslint": "~2.5",
     "express": "~4.13",
     "grunt": "~0.4",
     "grunt-cli": "~1.1",
@@ -26,14 +31,10 @@
     "grunt-file-creator": "~0.1",
     "grunt-gitinfo": "~0.1",
     "grunt-shell": "~1.2",
-    "jade": "~1.11",
-    "jquery": "~2.2",
-    "mathjax": "~2.6"
-  },
-  "devDependencies": {
-    "eslint": "~2.5"
+    "jade": "~1.11"
   },
   "scripts": {
-    "postinstall": "grunt init && grunt"
+    "postinstall": "grunt init && grunt",
+    "serve": "grunt default && grunt serve"
   }
 }

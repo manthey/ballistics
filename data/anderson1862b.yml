@@ -249,4 +249,135 @@ data:
           -
             desc: "Wet weather proof of Bombay Ordnance powder tested in Bombay"
             range: 97 yds
-# Processed through page 127
+  -
+    ref: "p. 129"
+    mass: 65.5 lb  # best guess of the two standard sizes
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz  # this seems like it has to be based on the ranges
+    desc: "Results from prolonged glazing of Ordnance Powder at Ishapore"
+    data:
+      -
+        desc2: "3 hours, the usual time"
+        range: 102 yds
+      -
+        desc2: "6 hours"
+        range: 103.667 yds
+      -
+        desc2: "9 hours"
+        range: 103.333 yds
+      -
+        desc2: "12 hours"
+        range: 106 yds
+      -
+        desc2: "15 hours"
+        range: 105.333 yds
+      -
+        desc2: "18 hours"
+        range: 106 yds
+      -
+        desc2: "24 hours"
+        range: 105 yds
+      -
+        desc2: "27 hours"
+        range: 108.667 yds
+      -
+        desc2: "30 hours"
+        range: 107.333 yds
+      -
+        desc2: "33 hours"
+        range: 104.667 yds
+      -
+        desc2: "36 hours"
+        range: 105.333 yds
+  -
+    ref: "p. 130"
+    mass: 65.5 lb  # best guess of the two standard sizes
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz  # this seems like it has to be based on the ranges
+    desc: "Glazing and exposure"
+    data:
+      -
+        desc2: "Glazed 3 hours, before exposure"
+        range: 102 yds
+      -
+        desc2: "Glazed 3 hours, after boarded floor"
+        range: 89 yds
+      -
+        # I think pucka means a brick floor
+        desc2: "Glazed 3 hours, after pucka floor"
+        range: 80 yds
+      -
+        desc2: "Glazed 36 hours, before exposure"
+        range: 105.333 yds
+      -
+        desc2: "Glazed 36 hours, after boarded floor"
+        range: 96 yds
+      -
+        desc2: "Glazed 36 hours, after pucka floor"
+        range: 82 yds
+  -
+    ref: "p. 131"
+    mass: 65.5 lb  # best guess of the two standard sizes
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz
+    desc: "Proof report of Musketry powder with different glazing"
+    data:
+      -
+        date: "1848-06-01"
+        data:
+          -
+            desc2: "Unglazed"
+            range: 104 yds
+          -
+            desc2: "Glazed 3 hours"
+            range: 105 yds
+          -
+            desc2: "Glazed 6 hours"
+            range: 104 yds
+          -
+            desc2: "Glazed 12 hours"
+            range: 105 yds
+          -
+            desc2: "Glazed 24 hours"
+            range: 106 yds
+      -
+        date: "1848-10"  # either the 27th or 31st
+        data:
+          -
+            desc2: "Unglazed"
+            range: 95 yds
+          -
+            desc2: "Glazed 3 hours"
+            range: 97 yds
+          -
+            desc2: "Glazed 6 hours"
+            range: 95 yds
+          -
+            desc2: "Glazed 12 hours"
+            range: 96 yds
+          -
+            desc2: "Glazed 24 hours"
+            range: 95 yds
+      -
+        date: "1848-01"  # either the 1st or 2nd
+        data:
+          -
+            desc2: "Unglazed"
+            range: 95 yds
+          -
+            desc2: "Glazed 3 hours"
+            range: 92 yds
+          -
+            desc2: "Glazed 6 hours"
+            range: 97 yds
+          -
+            desc2: "Glazed 12 hours"
+            range: 97 yds
+          -
+            desc2: "Glazed 24 hours"
+            range: 97 yds
+
+# Processed through page 133

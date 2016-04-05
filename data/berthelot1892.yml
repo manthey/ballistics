@@ -8,6 +8,7 @@ data:
   -
     desc: "Heat liberated per kilogram of powder in a closed vessel calorimeter."
     ref: "p. 509"
+    technique: "calorimeter"
     data:
       -
         desc: "Bunsen and Schiskhoff"

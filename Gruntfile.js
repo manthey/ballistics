@@ -146,6 +146,7 @@ module.exports = function (grunt) {
                         'node_modules/jquery/dist/jquery.js',
                         'node_modules/d3/d3.js',
                         'node_modules/mathjax/MathJax.js',
+                        'node_modules/mathjax/config/TeX-AMS_HTML.js',
                         'client/lib/**/*.js'
                     ]
                 }
@@ -179,7 +180,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-file-creator');
     grunt.loadNpmTasks('grunt-gitinfo');
     grunt.loadNpmTasks('grunt-shell');
-    grunt.loadNpmTasks('grunt-string-replace');
 
     grunt.registerTask('version-info', [
         'gitinfo',

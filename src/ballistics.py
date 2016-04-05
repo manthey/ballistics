@@ -44,8 +44,8 @@ wmi = False  # False to not even try
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-04-03v28'
-PROGRAM_SIGNATURE = 'bfd96eaf0032df8baa604dc6114f2d20'
+__version__ = '2016-04-04v29'
+PROGRAM_SIGNATURE = '4f35096feadbb364e854d8fbc7ca4c88'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -926,8 +926,9 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
             item = subparts[0]
             diff = subparts[1]
         for key in Factors:
-            if (item == key or item == Factors[key].get('long', '') or
-                    item == Factors[key].get('short', '')):
+            if (item in (key,
+                         Factors[key].get('long', ''),
+                         Factors[key].get('short', ''))):
                 if len(parts) == 1:
                     lastuunits = None
                     for u in ('eng', 'si'):
