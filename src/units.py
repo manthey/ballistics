@@ -58,6 +58,8 @@ UnitsTable = [
     # Robertson, p. 140-141, gives it as 1 English foot = 0.9386 French feet
     (['ftfr', 'parisfoot', 'frenchfoot', 'parisfeet', 'frenchfeet'], False,
      0.3048 * 144 / 135, 'Paris foot'),
+    (['infr', 'parisinch', 'frenchinch', 'parisinches', 'frenchinches'], False,
+     0.3048 * 144 / 135 / 12, 'Paris foot'),
 
     # Mass (reference is kg)
     (['gr', 'grain', 'grains'], False, 0.45359237 / 7000,

@@ -1,0 +1,410 @@
+---
+key: blondel1683
+ref: "Blondel, 1683"
+cms: "Blondel. <i>L'Art de Jetter les Bombes.</i>  Paris: Nicholas Langlois: 1683"
+summary: "A book on throwing shells comaring various ballistic theories."
+date: "1683"
+data:
+  -
+    ref: "p. 53"
+    diameter: 12 infr
+    material: iron
+    angle: 45 deg
+    technique: "theory"
+    data:
+      -
+        charge: 2 lbfr
+        range: 2160 ftfr
+      -
+        charge: 2.5 lbfr
+        range: 2700 ftfr
+      -
+        charge: 3 lbfr
+        range: 3240 ftfr
+  -
+    ref: "p. 54"
+    diameter: 12 infr
+    material: iron
+    technique: "theory"
+    data:
+      -
+        charge: 2 lbfr
+        data:
+          -
+            angle: 5 deg
+            range: 240 ftfr
+          -
+            angle: 10 deg
+            range: 480 ftfr
+          -
+            angle: 11 deg
+            range: 528 ftfr
+          -
+            angle: 12 deg
+            range: 576 ftfr
+          -
+            angle: 13 deg
+            range: 624 ftfr
+          -
+            angle: 14 deg
+            range: 672 ftfr
+          -
+            angle: 15 deg
+            range: 720 ftfr
+          -
+            angle: 16 deg
+            range: 768 ftfr
+          -
+            angle: 17 deg
+            range: 816 ftfr
+          -
+            angle: 18 deg
+            range: 864 ftfr
+          -
+            angle: 19 deg
+            range: 912 ftfr
+          -
+            angle: 20 deg
+            range: 960 ftfr
+          -
+            angle: 21 deg
+            range: 1008 ftfr
+          -
+            angle: 22 deg
+            range: 1056 ftfr
+          -
+            angle: 23 deg
+            range: 1104 ftfr
+          -
+            angle: 24 deg
+            range: 1152 ftfr
+          -
+            angle: 25 deg
+            range: 1200 ftfr
+          -
+            angle: 26 deg
+            range: 1248 ftfr
+          -
+            angle: 27 deg
+            range: 1296 ftfr
+          -
+            angle: 28 deg
+            range: 1344 ftfr
+          -
+            angle: 29 deg
+            range: 1392 ftfr
+          -
+            angle: 30 deg
+            range: 1440 ftfr
+          -
+            angle: 31 deg
+            range: 1488 ftfr
+          -
+            angle: 32 deg
+            range: 1536 ftfr
+          -
+            angle: 33 deg
+            range: 1584 ftfr
+          -
+            angle: 34 deg
+            range: 1632 ftfr
+          -
+            angle: 35 deg
+            range: 1680 ftfr
+          -
+            angle: 36 deg
+            range: 1728 ftfr
+          -
+            angle: 37 deg
+            range: 1776 ftfr
+          -
+            angle: 38 deg
+            range: 1824 ftfr
+          -
+            angle: 39 deg
+            range: 1872 ftfr
+          -
+            angle: 40 deg
+            range: 1920 ftfr
+          -
+            angle: 41 deg
+            range: 1968 ftfr
+          -
+            angle: 42 deg
+            range: 2016 ftfr
+          -
+            angle: 43 deg
+            range: 2064 ftfr
+          -
+            angle: 44 deg
+            range: 2112 ftfr
+          -
+            angle: 45 deg
+            range: 2160 ftfr
+      -
+        charge: 2.5 lbfr
+        data:
+          -
+            angle: 36 deg
+            range: 2160 ftfr
+          -
+            angle: 37 deg
+            range: 2220 ftfr
+          -
+            angle: 38 deg
+            range: 2280 ftfr
+          -
+            angle: 39 deg
+            range: 2340 ftfr
+          -
+            angle: 40 deg
+            range: 2400 ftfr
+          -
+            angle: 41 deg
+            range: 2460 ftfr
+          -
+            angle: 42 deg
+            range: 2520 ftfr
+          -
+            angle: 43 deg
+            range: 2580 ftfr
+          -
+            angle: 44 deg
+            range: 2640 ftfr
+          -
+            angle: 45 deg
+            range: 2700 ftfr
+      -
+        charge: 3 lbfr
+        data:
+          -
+            angle: 37 deg
+            range: 2664 ftfr
+          -
+            angle: 38 deg
+            range: 2736 ftfr
+          -
+            angle: 39 deg
+            range: 2808 ftfr
+          -
+            angle: 40 deg
+            range: 2880 ftfr
+          -
+            angle: 41 deg
+            range: 2952 ftfr
+          -
+            angle: 42 deg
+            range: 3024 ftfr
+          -
+            angle: 43 deg
+            range: 3096 ftfr
+          -
+            angle: 44 deg
+            range: 3168 ftfr
+          -
+            angle: 45 deg
+            range: 3240 ftfr
+  -
+    ref: "p. 57"
+    diameter: 8 infr
+    material: iron
+    technique: "theory"
+    data:
+      -
+        charge: 20.5 lbfr
+        data:
+          -
+            angle: 5 deg
+            range: 210 ftfr
+          -
+            angle: 10 deg
+            range: 420 ftfr
+          -
+            angle: 11 deg
+            range: 462 ftfr
+          -
+            angle: 12 deg
+            range: 504 ftfr
+          -
+            angle: 13 deg
+            range: 546 ftfr
+          -
+            angle: 14 deg
+            range: 588 ftfr
+          -
+            angle: 15 deg
+            range: 630 ftfr
+          -
+            angle: 16 deg
+            range: 672 ftfr
+          -
+            angle: 17 deg
+            range: 714 ftfr
+          -
+            angle: 18 deg
+            range: 756 ftfr
+          -
+            angle: 19 deg
+            range: 798 ftfr
+          -
+            angle: 20 deg
+            range: 840 ftfr
+          -
+            angle: 21 deg
+            range: 882 ftfr
+          -
+            angle: 22 deg
+            range: 924 ftfr
+          -
+            angle: 23 deg
+            range: 966 ftfr
+          -
+            angle: 24 deg
+            range: 1008 ftfr
+          -
+            angle: 25 deg
+            range: 1050 ftfr
+          -
+            angle: 26 deg
+            range: 1092 ftfr
+          -
+            angle: 27 deg
+            range: 1134 ftfr
+          -
+            angle: 28 deg
+            range: 1176 ftfr
+          -
+            angle: 29 deg
+            range: 1218 ftfr
+          -
+            angle: 30 deg
+            range: 1260 ftfr
+          -
+            angle: 31 deg
+            range: 1302 ftfr
+          -
+            angle: 32 deg
+            range: 1344 ftfr
+          -
+            angle: 33 deg
+            range: 1386 ftfr
+          -
+            angle: 34 deg
+            range: 1428 ftfr
+          -
+            angle: 35 deg
+            range: 1470 ftfr
+          -
+            angle: 36 deg
+            range: 1512 ftfr
+          -
+            angle: 37 deg
+            range: 1554 ftfr
+          -
+            angle: 38 deg
+            range: 1596 ftfr
+          -
+            angle: 39 deg
+            range: 1638 ftfr
+          -
+            angle: 40 deg
+            range: 1680 ftfr
+          -
+            angle: 41 deg
+            range: 1722 ftfr
+          -
+            angle: 42 deg
+            range: 1764 ftfr
+          -
+            angle: 43 deg
+            range: 1806 ftfr
+          -
+            angle: 44 deg
+            range: 1846 ftfr  # this should be 1848
+          -
+            angle: 45 deg
+            range: 1870 ftfr  # this should be 1890
+      -
+        charge: 0.75 lbfr
+        data:
+          -
+            angle: 31 deg
+            range: 1922 ftfr
+          -
+            angle: 32 deg
+            range: 1984 ftfr
+          -
+            angle: 33 deg
+            range: 2046 ftfr
+          -
+            angle: 34 deg
+            range: 2108 ftfr
+          -
+            angle: 35 deg
+            range: 2170 ftfr
+          -
+            angle: 36 deg
+            range: 2232 ftfr
+          -
+            angle: 37 deg
+            range: 2294 ftfr
+          -
+            angle: 38 deg
+            range: 2356 ftfr
+          -
+            angle: 39 deg
+            range: 2418 ftfr
+          -
+            angle: 40 deg
+            range: 2480 ftfr
+          -
+            angle: 41 deg
+            range: 2542 ftfr
+          -
+            angle: 42 deg
+            range: 2604 ftfr
+          -
+            angle: 43 deg
+            range: 2666 ftfr
+          -
+            angle: 44 deg
+            range: 2728 ftfr
+          -
+            angle: 45 deg
+            range: 2790 ftfr
+      -
+        charge: 1 lbfr
+        data:
+          -
+            angle: 35 deg
+            range: 2870 ftfr
+          -
+            angle: 36 deg
+            range: 2952 ftfr
+          -
+            angle: 37 deg
+            range: 3034 ftfr
+          -
+            angle: 38 deg
+            range: 3116 ftfr
+          -
+            angle: 39 deg
+            range: 3198 ftfr
+          -
+            angle: 40 deg
+            range: 3280 ftfr
+          -
+            angle: 41 deg
+            range: 3362 ftfr
+          -
+            angle: 42 deg
+            range: 3444 ftfr
+          -
+            angle: 43 deg
+            range: 3526 ftfr
+          -
+            angle: 44 deg
+            range: 3608 ftfr
+          -
+            angle: 45 deg
+            range: 3690 ftfr

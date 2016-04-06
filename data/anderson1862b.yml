@@ -379,5 +379,163 @@ data:
           -
             desc2: "Glazed 24 hours"
             range: 97 yds
+  -
+    ref: "p. 134"
+    mass: 8 lb
+    diameter: 4.5 in
+    angle: 45 deg  # assumption
+    charge: 1 ozt
+    desc: "Braddock's report showing powder at elevated temperature"
+    data:
+      -
+        range: 141 yds
+      -
+        desc2: "Power heated to 400 degF in a copper pan"
+        range: 242 yds
+  -
+    ref: "p. 134"
+    mass: 24 lb
+    material: iron
+    desc: "Study of overcharging"
+    data:
+      -
+        charge: 6 lbs
+        data:
+          # Note that there is a "point-blank" entry.  This is almost certainly
+          # at a small angle, such as 0.75 degrees or so, but not knowing the
+          # exact value prevents using the entry
+          -
+            angle: 2 deg
+            range: 1100 yds
+          -
+            angle: 2.25 deg
+            range: 1155 yds
+          -
+            angle: 2.5 deg
+            range: 1210 yds
+          -
+            angle: 3.75 deg
+            range: 1496 yds
+          -
+            angle: 4 deg
+            range: 1552 yds
+          -
+            angle: 4.25 deg
+            range: 1599 yds
+          -
+            angle: 4.5 deg
+            range: 1646 yds
+          -
+            angle: 4.75 deg
+            range: 1690 yds
+          -
+            angle: 5 deg
+            range: 1746 yds
+      -
+        charge: 10 lbs
+        data:
+          # Note that there is a "point-blank" entry.  This is almost certainly
+          # at a small angle, such as 0.75 degrees or so, but not knowing the
+          # exact value prevents using the entry
+          -
+            angle: 2 deg
+            range: 1100 yds
+          -
+            angle: 2.25 deg
+            range: 1158 yds
+          -
+            angle: 2.5 deg
+            range: 1216 yds
+          -
+            angle: 3.75 deg
+            range: 1497 yds
+          -
+            angle: 4 deg
+            range: 1552 yds
+          -
+            angle: 4.25 deg
+            range: 1599 yds
+          -
+            angle: 4.5 deg
+            range: 1646 yds
+          -
+            angle: 4.75 deg
+            range: 1693 yds
+          -
+            angle: 5 deg
+            range: 1740 yds
+  -
+    ref: "p. 136"
+    mass: 65 lb
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    charge: 1 lb
+    desc: "Comparison on density"
+    data:
+      -
+        desc2: "Musketry soft mill cake"
+        range: 955 yds
+      -
+        desc2: "Ordnance soft mill cake"
+        range: 940 yds
+      -
+        desc2: "Musketry hard mill cake"
+        range: 875 yds
+      -
+        desc2: "Ordnance hard mill cake"
+        range: 699 yds
+      -
+        desc2: "Musketry medium pressed cake"
+        range: 835 yds
+      -
+        desc2: "Ordnance medium pressed cake"
+        range: 674 yds
+      -
+        desc2: "Musketry hard pressed cake"
+        range: 786 yds
+      -
+        desc2: "Ordnance hard pressed cake"
+        range: 620 yds
+  -
+    ref: "p. 146"
+    mass: 45 lb  # shell filled with sand
+    diameter: 8 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz
+    date: "1846-07-16"
+    desc: "Proof taken at Kussoor"
+    data:
+      -
+        desc2: "Bengal powder"
+        data:
+          - range: 78 yds
+          - range: 80 yds
+          - range: 65 yds
+          - range: 75 yds
+          - range: 75 yds
+          - range: 80 yds
+      -
+        desc2: "Sekh powder"
+        data:
+          - range: 14 yds
+          - range: 31 yds
+          - range: 13 yds
+          - range: 18 yds
+          - range: 20 yds
+          - range: 19 yds
+  -
+    ref: "p. 146"
+    mass: 67 lb
+    diameter: 8 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz
+    date: "1849"
+    data:
+      -
+        desc: "Matchlock horn powder from 1842"
+        range: 53 yds
+      -
+        desc: "Bengal powder"
+        range: 94 yds
 
-# Processed through page 133
+# Processed through page 149
