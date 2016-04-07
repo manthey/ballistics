@@ -6,7 +6,7 @@ summary: "A book on throwing shells comaring various ballistic theories."
 date: "1683"
 data:
   -
-    ref: "p. 53"
+    ref2: "p. 53"
     diameter: 12 infr
     material: iron
     angle: 45 deg
@@ -22,7 +22,7 @@ data:
         charge: 3 lbfr
         range: 3240 ftfr
   -
-    ref: "p. 54"
+    ref2: "p. 54"
     diameter: 12 infr
     material: iron
     technique: "theory"
@@ -205,7 +205,7 @@ data:
             angle: 45 deg
             range: 3240 ftfr
   -
-    ref: "p. 57"
+    ref2: "p. 57"
     diameter: 8 infr
     material: iron
     technique: "theory"

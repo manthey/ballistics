@@ -13,7 +13,7 @@ data:
     angle: 45 deg
     data:
       -
-        ref: p. 181-182
+        ref2: p. 181-182
         desc: "Three-inch deep powder chamber"
         data:
           -
@@ -26,7 +26,7 @@ data:
           -
             range: 11 chains 10 links
       -
-        ref: p. 182
+        ref2: p. 182
         desc: "Three-quarter-inch deep powder chamber"
         data:
           -
@@ -36,7 +36,7 @@ data:
           -
             range: 7 chains 2 links
       -
-        ref: p. 182
+        ref2: p. 182
         desc: "One-and-a-half-inch deep powder chamber.  This chamber didn't fit the mortar as well, which might be the cause of variation."
         data:
           -

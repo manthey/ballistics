@@ -36,16 +36,16 @@ from units import convert_units, list_units
 # Modules that will get loaded if needed.  None of these are required.
 csv = None
 matplotlib = None
+psutil = None
 StringIO = None
-wmi = False  # False to not even try
 
 # The version auto updates using the version_check() function.  The version is
 # the date of the last update followed by a build number.  The program
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-04-04v29'
-PROGRAM_SIGNATURE = '4f35096feadbb364e854d8fbc7ca4c88'
+__version__ = '2016-04-06v29'
+PROGRAM_SIGNATURE = '4a29ade5d8e4a9dd7c4951557aa4119e'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -102,6 +102,8 @@ PROGRAM_SIGNATURE = '4f35096feadbb364e854d8fbc7ca4c88'
 #      in_range: True if cd was interpolated, false if extrapolated
 # If the trajectory calculation fails, it can also contain:
 #  error: the error that stopped the trajectory calculation.
+
+GET_CPU_TIME = True
 
 MinPointInterval = 0.01
 PrecisionInDigits = 6
@@ -774,8 +776,9 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
         if Verbose >= 1:
             print ('Trying to solve for %s is ill-conditioned; it may not ' +
                    'work.') % unknown
-    if initial_state.get(unknown):
-        return initial_state, []
+    direct_state = find_unknown_direct(unknown, initial_state)
+    if direct_state:
+        return direct_state, []
     method = Factors[unknown].get('method', 'binary')
     if unknown_scan:
         method = 'scan'
@@ -869,6 +872,25 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
     state[unknown] = foundval
     (state, points) = trajectory(state)
     return state, points
+
+
+def find_unknown_direct(unknown, state):
+    """Check if the unknown was given or can be solved directly.
+    Enter: unknown: the unknown to solve for.
+           state; the initial state.
+    Exit:  solved_state: the answer state if solved, None if not.
+    """
+    if state.get(unknown):
+        return state
+    state = copy.deepcopy(state)
+    state = determine_material(state, Verbose)
+    # This could be extended to directly solve for any direct solution
+    if (unknown == 'power_factor' and state.get('initial_velocity') and
+            state.get('charge') and state.get('mass')):
+        state[unknown] = ((state['initial_velocity']**2) * state['mass'] /
+                          (2 * state['charge']))
+        return state
+    return None
 
 
 def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
@@ -1092,40 +1114,15 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
 
 
 def get_cpu_time():
-    """Return a time that should increase with cpu time.  If there is no
-     better choice, this just returns the current time.  Note: using WMI,
-     in theorym should let us get the time spent by the Windows process
-     ignoring slow down due to other cpu activity.  In practice, it takes
-     anywhere from 80 to 200 ms to make the query, which, in general,
-     produces worse results than just using time.time().  Even a shell call
-     to WMI is not much slower.
+    """Return a time that should increase with cpu time.
     Exit:  time: the current time or a cpu-relative time."""
-    global wmi, WMI
-    if wmi is None:
-        WMI = None
-        try:
-            import wmi
-            WMI = wmi.WMI()
-        except Exception:
-            wmi = False
-    if not wmi or not WMI:
+    if not GET_CPU_TIME:
         return time.time()
-    try:
-        keys = ['PercentProcessorTime', 'PercentUserTime']
-        data = {}
-        for p in WMI.Win32_PerfRawData_PerfProc_Process(IDProcess=os.getpid()):
-            for key in keys:
-                data[key] = getattr(p, key)
-            break
-        t = float(data['PercentUserTime'])*1e-7
-        # t = float(os.popen(
-        #     'WMIC path Win32_PerfRawData_PerfProc_Process WHERE ('
-        #     'IDProcess=%d) get PercentUserTIme' % os.getpid()).readlines(
-        #     )[1].strip())*1e-7
-        return t
-    except Exception:
-        WMI = None
-        return time.time()
+    global psutil
+    if psutil is None:
+        import psutil
+    cpu_times = psutil.cpu_times()
+    return cpu_times.user + cpu_times.system
 
 
 def graph_coefficient_of_drag(user_params=None):
@@ -2028,6 +2025,9 @@ def version_check():
         src = open(path, 'rb').read()
     except Exception:
         sys.stderr.write('Can\'t read source file to determine version.\n')
+        return
+    # If I've left a debug comment in the source, don't update the version
+    if ('DWM' + '::') in src:
         return
     sigstart = 'PROGRAM_SIGNATURE = \''
     sigpos = src.find(sigstart)

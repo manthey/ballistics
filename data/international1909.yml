@@ -1,0 +1,18 @@
+---
+key: international1909
+ref: "International Congress, 1909"
+cms: "VIIth International Congress of Applied Chemistry, Explosives Section, <i>The Rise and Progress of the British Explosives Industry.</i>  London: Whittaker and Co.: 1909"
+summary: "A history of the explosives industry with a chapter about researches on gunpowder by G. W. MacDonald."
+date: "1909"
+data:
+  -
+    desc: "Robins ballistic pendulum results"
+    ref2: "p. 41"
+    material: lead  # assumed
+    diameter: 0.25 in
+    angle: 0 deg
+    initial_velocity: 2400 ft/s
+    charge: 36 dwt
+  # Results from Hutton are listed on page 42, but they are obfuscated and
+  # can't be used.  Specifically, it lists three weights of shot, and measured
+  # velocities without units.

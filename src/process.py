@@ -26,6 +26,7 @@ import markdown
 import multiprocessing
 import os
 import pprint
+import psutil
 import signal
 import sys
 import yaml
@@ -236,6 +237,12 @@ Only files newer than the matching results are processed unless the
     else:
         pool = multiprocessing.Pool(processes=None if multi is True else multi,
                                     initializer=worker_init)
+        priorityLevel = (psutil.BELOW_NORMAL_PRIORITY_CLASS
+                         if sys.platform == 'win32' else 10)
+        parent = psutil.Process()
+        parent.nice(priorityLevel)
+        for child in parent.children():
+            child.nice(priorityLevel)
         mapfunc = functools.partial(read_and_process_file, *[], **{
             'outputPath': outputPath,
             'all': allFiles,

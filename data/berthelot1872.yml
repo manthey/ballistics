@@ -7,7 +7,7 @@ date: "1872"
 data:
   -
     desc: "Heat liberated per kilogram of powder in a closed vessel calorimeter."
-    ref: "p. 190"
+    ref2: "p. 190"
     technique: "calorimeter"
     data:
       -
