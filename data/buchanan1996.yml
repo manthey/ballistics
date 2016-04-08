@@ -1,0 +1,68 @@
+---
+key: buchanan1996
+ref: "Buchanan, 1996"
+cms: "Buchanan, Brenda J.  <i>Gunpowder: The History of an International Technology. Claverton Down,</i> Bath: Bath University Press, 1996."
+summary: "A report of comparing copper and wooden barrels from 1815."
+date: "1996"
+data:
+  -
+    ref2: "p. 256-257"
+    material: iron
+    mass: 68 lbs
+    charge: 1.25 oz
+    angle: 45 deg
+    date: "1815-09-05"
+    data:
+      -
+        desc2: "Copper barrel, No. 443.  The powder was packaged in flannel cartridges, which were well preserved"
+        data:
+          - range: 151 ft
+          - range: 157 ft
+      -
+        desc2: "Copper barrel, No. 441.  The podwer looked the same as barrel 443"
+        data:
+          - range: 148 ft
+          - range: 149 ft
+          - range: 146 ft
+      -
+        desc2: "Wooden barrel, No. 2.  The barrel contained cannon powder which was very lumpy and dusty, and unfit for service"
+        data:
+          - range: 127 ft
+          - range: 127 ft
+          - range: 124 ft
+      -
+        desc2: "Wooden barrel, No. 17.  The powder was in the same unserviceable state as barrel No. 2"
+        data:
+          - range: 130 ft
+          - range: 128 ft
+          - range: 123 ft
+      -
+        desc2: "Copper half barrel, No. 318.  This barrel contained loose priming powder, and was in the most perfect state of preservation without a single lump."
+        data:
+          - range: 157 ft
+          - range: 155 ft
+          - range: 154 ft
+      -
+        desc2: "Wooden half barrel, No. 2.  This barrel contained priming powder, which formed nearly a solid lump."
+        data:
+          - range: 132 ft
+          - range: 128 ft
+          - range: 134 ft
+      -
+        desc2: "Copper barrel, No. 76.  This barrel was on a voyage from April 1812 to November 1813."
+        data:
+          - range: 158 ft
+          - range: 163 ft
+          - range: 160 ft
+      -
+        desc2: "Wooden barrel.  This barrel was on a voyage from April 1812 to November 1813."
+        data:
+          - range: 148 ft
+          - range: 150 ft
+          - range: 146 ft
+      -
+        desc2: "Wooden barrel.  This is brand new powder that has never voyaged."
+        data:
+          - range: 162 ft
+          - range: 162 ft
+          - range: 159 ft

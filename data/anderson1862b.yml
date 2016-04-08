@@ -265,6 +265,217 @@ data:
       -
         charge: 16 oz
         range: 723 yds
+  -
+    diameter: 7.91 in
+    angle: 45 deg  # from p. 120
+    ref2: "p. 155"
+    desc: "Comparative proof taken at Ishapore with a brass ball, Diameter 7.91 in, by Reducing the Ball Internally to the following weights"
+    data:
+      -
+        charge: 2 oz
+        data:
+          -
+            mass: 60 lb
+            range: 95 yds
+          -
+            mass: 55 lb
+            range: 105 yds
+          -
+            mass: 50 lb
+            range: 115 yds
+          -
+            mass: 45 lb
+            range: 122 yds
+          -
+            mass: 40 lb
+            range: 132 yds
+          -
+            mass: 35 lb
+            range: 147 yds
+          -
+            mass: 30 lb
+            range: 165 yds
+          -
+            mass: 25 lb
+            range: 185 yds
+          -
+            mass: 20 lb
+            range: 206 yds
+          -
+            mass: 15 lb
+            range: 223 yds
+          -
+            mass: 10 lb
+            range: 245 yds
+          -
+            mass: 5 lb
+            range: 268 yds
+          -
+            mass: 1 lb
+            range: 289 yds
+          -
+            mass: 0.01667 lb  # The last entry is 1/60 of a pound
+            range: 295 yds
+        charge: 1 lb
+        data:
+          -
+            mass: 60 lb
+            range: 793 yds
+          -
+            mass: 55 lb
+            range: 853 yds
+          -
+            mass: 50 lb
+            range: 876 yds
+          -
+            mass: 45 lb
+            range: 902 yds
+          -
+            mass: 40 lb
+            range: 922 yds
+          -
+            mass: 35 lb
+            range: 947 yds
+          -
+            mass: 30 lb
+            range: 1058 yds
+          -
+            mass: 25 lb
+            range: 1123 yds
+  -
+    angle: 45 deg  # from p. 120
+    ref2: "p. 159"
+    desc: "Windage: Comparative proof by reducing the ball externally to the following diameters"
+    data:
+      -
+        charge: 2 oz
+        desc2: "8.02 in mortar"
+        data:
+          -
+            diameter: 7.92 in
+            mass: 67 lb 12 oz
+            range: 100 yds
+          -
+            diameter: 7.78 in
+            mass: 62 lb 11 oz
+            range: 51 yds
+          -
+            diameter: 7.67 in
+            mass: 60 lb 2 oz
+            range: 34 yds
+          -
+            diameter: 7.59 in
+            mass: 58 lb
+            range: 24 yds
+          -
+            diameter: 7.47 in
+            mass: 55 lb
+            range: 12 yds
+          -
+            diameter: 7.37 in
+            mass: 52 lb 7 oz
+            range: 19 yds
+      -
+        charge: 2 oz
+        desc2: "8.04 in mortar"
+        data:
+          -
+            diameter: 7.67 in
+            mass: 60 lb 2 oz
+            range: 30 yds
+          -
+            diameter: 7.59 in
+            mass: 58 lb
+            range: 20 yds
+          -
+            diameter: 7.47 in
+            mass: 55 lb
+            range: 13 yds
+          -
+            diameter: 7.37 in
+            mass: 52 lb 7 oz
+            range: 17 yds
+      -
+        charge: 1 lb
+        desc2: "8.04 in mortar"
+        data:
+          -
+            diameter: 7.92 in
+            mass: 67 lb 12 oz
+            range: 780 yds
+          -
+            diameter: 7.78 in
+            mass: 62 lb 11 oz
+            range: 646 yds
+          -
+            diameter: 7.67 in
+            mass: 60 lb 2 oz
+            range: 566 yds
+          -
+            diameter: 7.59 in
+            mass: 58 lb
+            range: 487 yds
+          -
+            diameter: 7.47 in
+            mass: 55 lb
+            range: 426 yds
+          -
+            diameter: 7.37 in
+            mass: 52 lb 7 oz
+            range: 462 yds
+  -
+    ref2: "p. 163"
+    desc: "Comparative proof of Elevation"
+    mass: 67 lb
+    diameter: 7.92 in
+    charge: 2 oz
+    data:
+      -
+        angle: 16 deg
+        range: 46 yds
+      -
+        angle: 25 deg
+        range: 64 yds
+      -
+        angle: 35 deg
+        range: 78 yds
+      -
+        angle: 45 deg
+        range: 83 yds
+      -
+        angle: 55 deg
+        range: 76 yds
+      -
+        angle: 65 deg
+        range: 62 yds
+      -
+        angle: 75 deg
+        range: 38 yds
+      -
+        angle: 77 deg 25 arcmin
+        range: 32 yds
+      -
+        angle: 77 deg 25 arcmin
+        maxheight: 42 yds
+  -
+    ref2: "p. 165"
+    desc: "Recoil"
+    angle: 45 deg
+    mass: 67 lb
+    diameter: 7.92 in
+    charge: 2 oz
+    data:
+      -
+        desc2: "Platform of sleepers atop pucka brick work, over these 2 1/2 in plank"
+        range: 86 yds
+      -
+        desc2: "Platform of fascines 1 1/4 feet in diameter, with a plank on top under each cheek of mortar bed"
+        range: 86 yds
+      -
+        desc2: "Platform of fascines 1 1/4 feet in diameter, with the mortar directly on the fascines"
+        range: 86 yds
+      -
+        desc2: "Mortar directly on light soil covered with nature grass"
+        range: 88 yds
 
-
-# Processed through page 151
+# Processed through page 168
