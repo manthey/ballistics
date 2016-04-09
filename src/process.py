@@ -29,9 +29,13 @@ import pprint
 import psutil
 import signal
 import sys
+import time
 import yaml
 
 import ballistics
+
+
+Pool = None
 
 
 # Used to memoize computations.  When running in multiple processes, less
@@ -66,7 +70,140 @@ class FloatEncoder(json.JSONEncoder):
             raise
 
 
-def process_cases(info, results, verbose=0):
+def calculate_case(hash, args, info, verbose):
+    """
+    Process an individual case.
+
+    Enter: hash: hash value used to memoize results.
+           args: arguments formulated for the ballistics routines.
+           info: info that was used to construct the arguments.
+           verbose: verbosity for the ballistics program
+    Exit:  hash: the input hash value.
+           state: final state from the ballistics routines.
+           points: time series of trajectory.
+    """
+    if verbose >= 3:
+        pprint.pprint(info)
+    if verbose >= 3:
+        print hash
+    if hash in PreviousResults:
+        PreviousResults['used'] += 1
+        if verbose >= 3:
+            print 'From hash', PreviousResults['used']
+        return PreviousResults[hash]
+    ballistics.Verbose = max(0, verbose - 2)
+    params, state, help = ballistics.parse_arguments(
+        args, allowUnknownParams=True)
+    ballistics.Verbose = max(0, verbose - 2)
+    if verbose >= 4:
+        pprint.pprint(state)
+    starttime = ballistics.get_cpu_time()
+    (newstate, points) = ballistics.find_unknown(
+        state, params['unknown'], params.get('unknown_scan'))
+    newstate['computation_time'] = ballistics.get_cpu_time()-starttime
+    if verbose >= 3:
+        pprint.pprint(newstate)
+    if len(points) > 0:
+        subset = points[::10]
+        if subset[-1] != points[-1]:
+            subset.append(points[-1])
+        points = subset
+        points = {key: FloatList([
+            point.get(key) for point in points], '%.6g')
+            for key in points[0]}
+    else:
+        points = None
+    PreviousResults[hash] = (hash, newstate, points)
+    if verbose >= 2:
+        print hash, '-->', newstate.get('power_factor')
+    return hash, newstate, points
+
+
+def calculate_cases(results, cases, verbose, multi):
+    """
+    Given a set of cases, generate results for each, possibly using
+    multiprocessing.
+
+    Enter: results: array to store results.
+           cases: cases to process:
+           verbose: verbosity for the ballistics program.
+           multi: False to run in a single process.  True to run with the
+                  number of available processors.  An integer to run with that
+                  many processors.
+    Exit:  success: False for cancelled
+    """
+    hashes = [item[-1] for item in sorted([(cases[hash]['position'], hash)
+              for hash in cases])]
+    if multi is False:
+        for hash in hashes:
+            hash, state, points = calculate_case(
+                hash, cases[hash]['args'], cases[hash]['info'], verbose)
+            calculate_cases_results(hash, state, points, results)
+    else:
+        pool = get_multiprocess_pool(multi)
+        tasks = []
+        try:
+            for hash in hashes:
+                tasks.append(pool.apply_async(calculate_case, (
+                    hash, cases[hash]['args'], cases[hash]['info'], verbose)))
+            while len(tasks):
+                for pos in xrange(len(tasks) - 1, -1, -1):
+                    task = tasks[pos]
+                    if task.ready():
+                        hash, state, points = task.get()
+                        calculate_cases_results(hash, state, points, results)
+                        del tasks[pos]
+                        if verbose >= 1:
+                            print '%d/%d left' % (len(tasks), len(hashes))
+                if len(tasks):
+                    tasks[0].wait(0.1)
+            pool.close()
+            pool.join()
+        except KeyboardInterrupt:
+            try:
+                pool.terminate()
+                pool.join()
+            except Exception:
+                pass
+            raise
+    return True
+
+
+def calculate_cases_results(hash, state, points, results):
+    """
+    Store results from a processed case.
+
+    Enter: hash: hash of the case.
+           state: final state of the case.
+           points: trajectory points of the case.
+           results: array to store results.
+    """
+    for res in results['results']:
+        if res.get('hash') == hash:
+            res['results'] = state
+            res['points'] = points
+            del res['hash']
+
+
+def get_multiprocess_pool(multi):
+    """
+    Get a multiprocessing pool.
+
+    Enter: multi: the number of processors to use ot True to use them all.
+    Exit:  pool: a multiprocess pool.
+    """
+    pool = multiprocessing.Pool(processes=None if multi is True else multi,
+                                initializer=worker_init)
+    priorityLevel = (psutil.BELOW_NORMAL_PRIORITY_CLASS
+                     if sys.platform == 'win32' else 10)
+    parent = psutil.Process()
+    parent.nice(priorityLevel)
+    for child in parent.children():
+        child.nice(priorityLevel)
+    return pool
+
+
+def process_cases(info, results, cases, verbose=0):
     """
     Check if there are any data entries in the current level of the info.
     If so, process each entry in turn.  If not, calculate the ballistics and
@@ -75,6 +212,7 @@ def process_cases(info, results, verbose=0):
                  is a list of sub-cases, each of which will be processed in
                  turn.
            results: a list to append results to.
+           cases: a dictionary to collect cases in
            verbose: verbosity for the ballistics program
     """
     if info.get('skip'):
@@ -87,10 +225,8 @@ def process_cases(info, results, verbose=0):
         for entry in data:
             subinfo = copy.deepcopy(info)
             subinfo.update(entry)
-            process_cases(subinfo, results, verbose)
+            process_cases(subinfo, results, cases, verbose)
         return
-    if verbose >= 2:
-        pprint.pprint(info)
     args = []
     if not max([info[key] == '?' for key in info]):
         args.append('--power=?')
@@ -98,41 +234,14 @@ def process_cases(info, results, verbose=0):
         '--%s=%s' % (key, info[key]) for key in info if key not in (
             'ref', 'ref2', 'ref3', 'desc', 'desc2', 'desc3')]))
     hash = ' '.join([('"%s"' if ' ' in arg else '%s') % arg for arg in args])
-    if verbose >= 3:
-        print hash
-    if hash in PreviousResults:
-        PreviousResults['used'] += 1
-        (newstate, points) = PreviousResults[hash]
-        if verbose >= 2:
-            print 'From hash', PreviousResults['used']
-    else:
-        ballistics.Verbose = max(0, verbose - 1)
-        params, state, help = ballistics.parse_arguments(
-            args, allowUnknownParams=True)
-        ballistics.Verbose = max(0, verbose - 1)
-        if verbose >= 3:
-            pprint.pprint(state)
-        starttime = ballistics.get_cpu_time()
-        (newstate, points) = ballistics.find_unknown(
-            state, params['unknown'], params.get('unknown_scan'))
-        newstate['computation_time'] = ballistics.get_cpu_time()-starttime
-        if verbose >= 2:
-            pprint.pprint(newstate)
-        if len(points) > 0:
-            subset = points[::10]
-            if subset[-1] != points[-1]:
-                subset.append(points[-1])
-            points = subset
-            points = {key: FloatList([
-                point.get(key) for point in points], '%.6g')
-                for key in points[0]}
-        else:
-            points = None
-        PreviousResults[hash] = (newstate, points)
-    results.append({'conditions': info, 'results': newstate, 'points': points})
+    if hash not in cases:
+        cases[hash] = {'info': info, 'args': args, 'position': len(cases),
+                       'hash': hash}
+        results.append({'conditions': info, 'hash': hash})
 
 
-def read_and_process_file(srcfile, outputPath, all=False, verbose=0):
+def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
+                          multi=False):
     """
     Load a yaml file and any companion files.  For each non-skipped data set,
     calculate the ballistics result.  Output the results as a json file with
@@ -143,7 +252,10 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0):
     Enter: srcfile: path of the yml file to load.
            outputPath: directory where the results will be stored.
            all: True to process regardless of results time.
-           verbose: verbosity for the ballistics program
+           verbose: verbosity for the ballistics program.
+           multi: False to run in a single process.  True to run with the
+                  number of available processors.  An integer to run with that
+                  many processors.
     """
     srcdate = os.path.getmtime(srcfile)
     info = yaml.safe_load(open(srcfile))
@@ -172,9 +284,11 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0):
         print srcfile
     results = copy.deepcopy(info)
     results['results'] = []
-    process_cases(info, results['results'], verbose)
-    json.dump(results, open(destpath, 'wb'), sort_keys=True, indent=1,
-              separators=(',', ': '), cls=FloatEncoder)
+    cases = {}
+    process_cases(info, results['results'], cases, verbose)
+    if calculate_cases(results, cases, verbose, multi):
+        json.dump(results, open(destpath, 'wb'), sort_keys=True, indent=1,
+                  separators=(',', ': '), cls=FloatEncoder)
 
 
 def worker_init():
@@ -186,6 +300,7 @@ if __name__ == '__main__':  # noqa - mccabe
     files = []
     allFiles = False
     multi = False
+    multiFile = True
     outputPath = None
     verbose = 0
     help = False
@@ -198,6 +313,10 @@ if __name__ == '__main__':  # noqa - mccabe
             multi = int(arg.split('=', 1)[1])
             if multi <= 1:
                 multi = False
+        elif arg == '--multicase':
+            multiFile = False
+        elif arg == '--multifile':
+            multiFile = True
         elif arg.startswith('--out='):
             outputPath = os.path.abspath(os.path.expanduser(
                 arg.split('=', 1)[1]))
@@ -220,29 +339,25 @@ if __name__ == '__main__':  # noqa - mccabe
         print """Process yml and md files using the ballistics code.
 
 Syntax: process.py --out=(path) --all --multi[=(number of processes) -v
-                   (input files ...)
+        --multifile|--multicase (input files ...)
 
 If the input files are a directory, all yml files in that path are processed.
 Only files newer than the matching results are processed unless the
 --all flag is used.
 --multi runs parallel processes.  This uses the number of processors available
  unless a number is specified.
+--multifile runs a process per input file, --multicase runs a process per
+ basllistics case (these only matter if --multi is also specified).
 --out specifies an output directory, which must exist.
 -v increase verbosity.
 """
         sys.exit(0)
-    if not multi:
+    starttime = time.time()
+    if not multi or not multiFile:
         for file in files:
-            read_and_process_file(file, outputPath, allFiles, verbose)
+            read_and_process_file(file, outputPath, allFiles, verbose, multi)
     else:
-        pool = multiprocessing.Pool(processes=None if multi is True else multi,
-                                    initializer=worker_init)
-        priorityLevel = (psutil.BELOW_NORMAL_PRIORITY_CLASS
-                         if sys.platform == 'win32' else 10)
-        parent = psutil.Process()
-        parent.nice(priorityLevel)
-        for child in parent.children():
-            child.nice(priorityLevel)
+        pool = get_multiprocess_pool(multi)
         mapfunc = functools.partial(read_and_process_file, *[], **{
             'outputPath': outputPath,
             'all': allFiles,
@@ -260,3 +375,5 @@ Only files newer than the matching results are processed unless the
                 pool.join()
             except Exception:
                 pass
+    if verbose >= 1:
+        print 'Total computation time: %4.2f s' % (time.time() - starttime)
