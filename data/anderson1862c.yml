@@ -1,0 +1,81 @@
+---
+key: anderson1862
+ref: "Anderson, 1862"
+cms: "Anderson, Colonel William and Lieutenant-Colonel Samuel Parlby. <i>Sketch of the mode of manufacturing gunpowder at the Ishapore mills in Bengal.</i> London: John Weale, 1862"
+summary: An excellent review of the technology used in India.
+date: "1862"
+# Continued from anderson1862b.yml
+data:
+  -
+    ref2: "p. 169"
+    desc: "This is a comparison of windage taken fron d'Antoni's \"A Treatise on Gunpowder and Firearms\" of 1789.  In that work, the translator says (p. xxxiii) that all units have been converted to English units.  Despite this, some units are unconverted.  The units are too small to be Sardinia atomi, so for know, the material and weight are being used to compute a diameter."
+    date: "1789"
+    charge: 4 lb 2 oz
+    angle: 0 deg
+    initial_height: 5 ft
+    data:
+      -
+        mass: 16.333 lb
+        material: "iron"
+        # diameter: 784 of unknown units
+        data:
+          -
+            desc2: "From a gun with a bore of 813 units"
+            data:
+              - range: 188 yds
+              - range: 198 yds
+              - range: 196.75 yds
+              - range: 198.25 yds
+              - range: 224.333 yds
+              - range: 197 yds
+          -
+            desc2: "From a gun with a bore of 819 units"
+            data:
+              - range: 249 yds
+              - range: 197.75 yds
+              - range: 224.5 yds
+              - range: 245 yds
+              - range: 248.333 yds
+              - range: 213.5 yds
+      -
+        mass: 16.1667 lb
+        material: "iron"
+        # diameter: 774 units
+        data:
+          -
+            desc2: "From a gun with a bore of 813 units"
+            data:
+              - range: 221.667 yds
+              - range: 193 yds
+              - range: 226 yds
+              - range: 223 yds
+          -
+            desc2: "From a gun with a bore of 819 units"
+            data:
+              - range: 199.333 yds
+              - range: 213 yds
+              - range: 199.667 yds
+              - range: 199 yds
+  -
+    ref2: "p. 175"
+    desc: "This is a comparison of muzzle velocity compared to barrel length in msukets taken fron d'Antoni's \"A Treatise on Gunpowder and Firearms\" of 1789."
+    date: "1789"
+    charge: 7 dr
+    angle: 0 deg
+    mass: 1 oz
+    material: "lead"
+    data:
+      -
+        desc2: "11 in barrel"
+        velocity: 1037 ft/s
+      -
+        desc2: "1 ft 11 in barrel"
+        velocity: 1390 ft/s
+      -
+        desc2: "3 ft 8 in barrel"
+        velocity: 1736 ft/s
+      -
+        desc2: "4 ft 8 in barrel"
+        velocity: 1815 ft/s
+
+# Processed through page 193

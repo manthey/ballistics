@@ -30,7 +30,20 @@ from formattext import line_break
 #   Instruments, translated from the French of M. Bion*, originally published
 #   Lonndon: printed for J. Richardson, 1758, reprinted by Mendham, NJ:
 #   Astragal Press, 1995.
+# Clarke, F. W.  *Weights, Measures, and Money, of All Nations*,  New York:
+#   D. Appleton and Company: 1891.
 
+StatuteFootInMeters = 0.3048
+# Stone, p. 87.  Stone (Bion) has many conversions from the Foot Royal of
+# Paris to various other linear measurements.
+# Robertson, p. 140-141, gives it as 1 English foot = 0.9386 French feet
+ParisFootInMeters = StatuteFootInMeters * 144 / 135
+# From Clarke, p. 67.
+SardiniaFootInMeters = StatuteFootInMeters * 20.228 / 12
+
+AvoirdupoisPoundInKilograms = 0.45359237
+TroyPoundInKilograms = AvoirdupoisPoundInKilograms * 5760 / 7000
+ParisPoundInKilograms = AvoirdupoisPoundInKilograms / 0.926
 
 # The units table is a list of tuples, each of which is ([list of names and
 # abbreviations], prefixes allowed, factor to SI, description).  The factor can
@@ -40,47 +53,59 @@ from formattext import line_break
 # to the unit names as needed.
 UnitsTable = [
     # Distance (reference is meter)
-    (['in', 'inch', 'inches'], False, 0.0254,
+    (['in', 'inch', 'inches'], False, StatuteFootInMeters / 12,
      'Statute inch (British and American inch)'),
-    (['lk', 'link', 'links'], False, 0.66*0.3048,
+    (['lk', 'link', 'links'], False, 0.66 * StatuteFootInMeters,
      'Link (1/100th of a chain or 1/25 of a rod)'),
-    (['ft', 'foot', 'feet'], False, 0.3048,
+    (['ft', 'foot', 'feet'], False, StatuteFootInMeters,
      'Statute foot (British and American foot)'),
-    (['yd', 'yard', 'yards', 'yds'], False, 3*0.3048,
+    (['yd', 'yard', 'yards', 'yds'], False, 3 * StatuteFootInMeters,
      'Statute yard (British and American yard)'),
     (['m', 'meter', 'meters'], True, 1.0, 'SI meter'),
-    (['ch', 'chain', 'chains'], False, 66*0.3048,
+    (['ch', 'chain', 'chains'], False, 66 * StatuteFootInMeters,
      'Chain (100 links or 66 statute feet)'),
-    (['mi', 'mile', 'miles'], False, 5280*0.3048,
+    (['mi', 'mile', 'miles'], False, 5280 * StatuteFootInMeters,
      'Statute mile (British and American mile)'),
-    # Stone, p. 87.  Stone (Bion) has many conversions from the Foot Royal of
-    # Paris to various other linear measurements.
-    # Robertson, p. 140-141, gives it as 1 English foot = 0.9386 French feet
+
     (['ftfr', 'parisfoot', 'frenchfoot', 'parisfeet', 'frenchfeet'], False,
-     0.3048 * 144 / 135, 'Paris foot'),
+     ParisFootInMeters, 'Paris foot'),
     (['infr', 'parisinch', 'frenchinch', 'parisinches', 'frenchinches'], False,
-     0.3048 * 144 / 135 / 12, 'Paris foot'),
+     ParisFootInMeters / 12, 'Paris foot'),
+
+    (['ftit', 'italianfoot', 'sardiniafoot', 'italianfeet', 'sardiniafeet',
+      'pieliprando'], False, SardiniaFootInMeters,
+     'Sardinia foot (pie liprando)'),
+    (['init', 'italianinch', 'sardiniainch', 'italianinches', 'sardiniainches',
+      'oncia', 'oncie'], False, SardiniaFootInMeters / 12,
+     'Sardinia inch (oncia)'),
+    (['italianline', 'sardinialine', 'italianlines', 'sardinialines', 'punto',
+      'punti'], False, SardiniaFootInMeters / 144, 'Sardinia line (punto)'),
+    (['italianatomi', 'sardiniaatomi', 'atomi'], False,
+     SardiniaFootInMeters / 1728, 'Sardinia atomi (1/12 line or punto)'),
 
     # Mass (reference is kg)
-    (['gr', 'grain', 'grains'], False, 0.45359237 / 7000,
+    (['gr', 'grain', 'grains'], False, AvoirdupoisPoundInKilograms / 7000,
      'Grain (1/7000th of a avoirdupois pound)'),
     (['g', 'gram', 'grams'], True, 0.001, 'SI grams'),
-    (['dr', 'dram', 'drams'], False, 0.45359237 / 256,
+    (['dr', 'dram', 'drams'], False, AvoirdupoisPoundInKilograms / 256,
      'International avoirdupois dram (1/16 ounce)'),
-    (['oz', 'ounce', 'ounces'], False, 0.45359237 / 16,
+    (['oz', 'ounce', 'ounces'], False, AvoirdupoisPoundInKilograms / 16,
      'International avoirdupois ounce'),
-    (['dwt', 'troypennyweight', 'pennyweight'], False, 0.37324172 / 240,
-     'Troy pennyweight (24 grains)'),
-    (['drt', 'troydram', 'troydrams'], False, 0.37324172 / 96,
+    (['dwt', 'troypennyweight', 'pennyweight'], False,
+     TroyPoundInKilograms / 240, 'Troy pennyweight (24 grains)'),
+    (['drt', 'troydram', 'troydrams'], False, TroyPoundInKilograms / 96,
      'Troy dram (1/8 ounce or 60 grains)'),
-    (['ozt', 'troyounce', 'troyounces'], False, 0.37324172 / 12, 'Troy ounce'),
-    (['lb', 'pound', 'pounds', 'lbs'], False, 0.45359237,
+    (['ozt', 'troyounce', 'troyounces'], False, TroyPoundInKilograms / 12,
+     'Troy ounce'),
+    (['lb', 'pound', 'pounds', 'lbs'], False, AvoirdupoisPoundInKilograms,
      'International avoirdupois pound'),
-    (['lbt', 'troypound', 'troypounds'], False, 0.37324172, 'Troy pound'),
+    (['lbt', 'troypound', 'troypounds'], False, TroyPoundInKilograms,
+     'Troy pound'),
     (['kg', 'kilogram', 'kilograms'], False, 1.0, 'SI kilogram'),
     # From Robertson, p. 140-141.
     (['lbfr', 'parispound', 'frenchpound', 'parispounds', 'frenchpounds',
-      'livre', 'livres'], False, 0.45359237 / 0.926, 'Paris livre (pound)'),
+      'livre', 'livres'], False, ParisPoundInKilograms,
+     'Paris livre (pound)'),
 
     # Energy (reference is J)
     (['J', 'Joule', 'Joules'], True, 1.0, 'SI Joule (kg*m*m/s/s)'),

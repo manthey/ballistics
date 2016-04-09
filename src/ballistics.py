@@ -44,8 +44,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-04-06v29'
-PROGRAM_SIGNATURE = '4a29ade5d8e4a9dd7c4951557aa4119e'
+__version__ = '2016-04-09v31'
+PROGRAM_SIGNATURE = '31458e5a4a2219fa7eb3b737cdf7efe4'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -201,10 +201,10 @@ Factors = {
     #  method: calculation method.  Either 'direct', 'scan', 'binary' (the
     #      default), or None.  See trajectory_error for details.
     #  min: the minimum value used for binary or scan calculation.  This may be
-    #      a number if it is in the internal units of the factor, or be a string
-    #      with units to explicitly specity the units.
-    #  max: the maximum value used for binary or scan calculation.  See comments
-    #      on min.
+    #      a number if it is in the internal units of the factor, or be a
+    #      string with units to explicitly specity the units.
+    #  max: the maximum value used for binary or scan calculation.  See
+    #      comments on min.
     #  step: the step used in scan calculation.  See comments on min.
     #  weak: if True, solving for this parameter is ill-conditioned.
     # units, 'desc': description, 'method': calculation method, either direct,
@@ -271,7 +271,7 @@ Factors = {
         'desc': 'Initial angle from horizontal.'
     },
     'initial_height': {
-        'long': 'initial_height',
+        'long': 'initialheight',
         'short': 'i',
         'units': 'm',
         'eng': 'ft',
@@ -1656,7 +1656,9 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
             value = None
             for key in Factors:
                 fac = Factors[key]
-                if 'long' in fac and arg.startswith('--%s=' % fac['long']):
+                if arg.startswith('--%s=' % key):
+                    value = arg.split('=', 1)[1]
+                elif 'long' in fac and arg.startswith('--%s=' % fac['long']):
                     value = arg.split('=', 1)[1]
                 elif ('short' in fac and arg == '-'+fac['short'] and
                         i < len(argv)):

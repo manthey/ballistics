@@ -7,6 +7,537 @@ date: "1862"
 # Continued from anderson1862.yml
 data:
   -
+    ref2: "p. 124"
+    mass: 65.5 lb  # best guess of the two standard sizes
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    date: "1845"
+    data:
+      -
+        desc: "Bengal Musketry powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 71 yds
+          -
+            charge: 1 lb
+            range: 838 yds
+      -
+        desc: "Bengal Ordnance powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 76 yds
+          -
+            charge: 1 lb
+            range: 665 yds
+      -
+        desc: "Madras Musketry powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 74 yds
+          -
+            charge: 1 lb
+            range: 783 yds
+      -
+        desc: "Madras Ordnance powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 71 yds
+          -
+            charge: 1 lb
+            range: 590 yds
+      -
+        desc: "Bombay Musketry powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 63 yds
+          -
+            charge: 1 lb
+            range: 763 yds
+      -
+        desc: "Bombay Ordnance powder tested in Bengal"
+        data:
+          -
+            charge: 2 oz
+            range: 66 yds
+          -
+            charge: 1 lb
+            range: 551 yds
+      -
+        desc: "Bengal Musketry powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 80 yds
+          -
+            charge: 1 lb
+            range: 828 yds
+      -
+        desc: "Bengal Ordnance powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 77 yds
+          -
+            charge: 1 lb
+            range: 649 yds
+      -
+        desc: "Madras Musketry powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 82 yds
+          -
+            charge: 1 lb
+            range: 813 yds
+      -
+        desc: "Madras Ordnance powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 81 yds
+          -
+            charge: 1 lb
+            range: 567 yds
+      -
+        desc: "Bombay Musketry powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 82 yds
+          -
+            charge: 1 lb
+            range: 814 yds
+      -
+        desc: "Bombay Ordnance powder tested in Madras"
+        data:
+          -
+            charge: 2 oz
+            range: 76 yds
+          -
+            charge: 1 lb
+            range: 659 yds
+      -
+        desc: "Bengal Musketry powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 100 yds
+          -
+            charge: 0.5 lb
+            range: 382 yds
+      -
+        desc: "Bengal Ordnance powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 97 yds
+          -
+            charge: 0.5 lb
+            range: 309 yds
+      -
+        desc: "Madras Musketry powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 98 yds
+          -
+            charge: 0.5 lb
+            range: 257 yds
+      -
+        desc: "Madras Ordnance powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 93 yds
+          -
+            charge: 0.5 lb
+            range: 279 yds
+      -
+        desc: "Bombay Musketry powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 98 yds
+          -
+            charge: 0.5 lb
+            range: 352 yds
+      -
+        desc: "Bombay Ordnance powder tested in Bombay"
+        data:
+          -
+            charge: 2 oz
+            range: 92 yds
+          -
+            charge: 0.5 lb
+            range: 298 yds
+  -
+    ref2: "p. 125"
+    mass: 65.5 lb  # best guess of the two standard sizes
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz
+    humidity: "95%"  # My estimate
+    data:
+      -
+        date: "1845-09"
+        temperature: 87.5 F  # from p. 126
+        data:
+          -
+            desc: "Wet weather proof of Bengal Musketry powder tested in Bengal"
+            range: 69 yds
+          -
+            desc: "Wet weather proof of Bengal Ordnance powder tested in Bengal"
+            range: 72 yds
+          -
+            desc: "Wet weather proof of Madras Musketry powder tested in Bengal"
+            range: 66 yds
+          -
+            desc: "Wet weather proof of Madras Ordnance powder tested in Bengal"
+            range: 71 yds
+          -
+            desc: "Wet weather proof of Bombay Musketry powder tested in Bengal"
+            range: 57 yds
+          -
+            desc: "Wet weather proof of Bombay Ordnance powder tested in Bengal"
+            range: 63 yds
+      -
+        date: "1845-12"
+        temperature: 80.5 F  # from p. 126
+        data:
+          -
+            desc: "Wet weather proof of Bengal Musketry powder tested in Madras"
+            range: 75 yds
+          -
+            desc: "Wet weather proof of Bengal Ordnance powder tested in Madras"
+            range: 70 yds
+          -
+            desc: "Wet weather proof of Madras Musketry powder tested in Madras"
+            range: 74 yds
+          -
+            desc: "Wet weather proof of Madras Ordnance powder tested in Madras"
+            range: 74 yds
+          -
+            desc: "Wet weather proof of Bombay Musketry powder tested in Madras"
+            range: 64 yds
+          -
+            desc: "Wet weather proof of Bombay Ordnance powder tested in Madras"
+            range: 70 yds
+      -
+        date: "1845-07"
+        temperature: 85 F  # from p. 126
+        data:
+          -
+            desc: "Wet weather proof of Bengal Musketry powder tested in Bombay"
+            range: 96 yds
+          -
+            desc: "Wet weather proof of Bengal Ordnance powder tested in Bombay"
+            range: 96 yds
+          -
+            desc: "Wet weather proof of Madras Musketry powder tested in Bombay"
+            range: 87 yds
+          -
+            desc: "Wet weather proof of Madras Ordnance powder tested in Bombay"
+            range: 94 yds
+          -
+            desc: "Wet weather proof of Bombay Musketry powder tested in Bombay"
+            range: 94 yds
+          -
+            desc: "Wet weather proof of Bombay Ordnance powder tested in Bombay"
+            range: 97 yds
+  -
+    ref2: "p. 129"
+    mass: 65.5 lb  # best guess of the two standard sizes
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz  # this seems like it has to be based on the ranges
+    desc: "Results from prolonged glazing of Ordnance Powder at Ishapore"
+    data:
+      -
+        desc2: "3 hours, the usual time"
+        range: 102 yds
+      -
+        desc2: "6 hours"
+        range: 103.667 yds
+      -
+        desc2: "9 hours"
+        range: 103.333 yds
+      -
+        desc2: "12 hours"
+        range: 106 yds
+      -
+        desc2: "15 hours"
+        range: 105.333 yds
+      -
+        desc2: "18 hours"
+        range: 106 yds
+      -
+        desc2: "24 hours"
+        range: 105 yds
+      -
+        desc2: "27 hours"
+        range: 108.667 yds
+      -
+        desc2: "30 hours"
+        range: 107.333 yds
+      -
+        desc2: "33 hours"
+        range: 104.667 yds
+      -
+        desc2: "36 hours"
+        range: 105.333 yds
+  -
+    ref2: "p. 130"
+    mass: 65.5 lb  # best guess of the two standard sizes
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz  # this seems like it has to be based on the ranges
+    desc: "Glazing and exposure"
+    data:
+      -
+        desc2: "Glazed 3 hours, before exposure"
+        range: 102 yds
+      -
+        desc2: "Glazed 3 hours, after boarded floor"
+        range: 89 yds
+      -
+        # I think pucka means a brick floor
+        desc2: "Glazed 3 hours, after pucka floor"
+        range: 80 yds
+      -
+        desc2: "Glazed 36 hours, before exposure"
+        range: 105.333 yds
+      -
+        desc2: "Glazed 36 hours, after boarded floor"
+        range: 96 yds
+      -
+        desc2: "Glazed 36 hours, after pucka floor"
+        range: 82 yds
+  -
+    ref2: "p. 131"
+    mass: 65.5 lb  # best guess of the two standard sizes
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz
+    desc: "Proof report of Musketry powder with different glazing"
+    data:
+      -
+        date: "1848-06-01"
+        data:
+          -
+            desc2: "Unglazed"
+            range: 104 yds
+          -
+            desc2: "Glazed 3 hours"
+            range: 105 yds
+          -
+            desc2: "Glazed 6 hours"
+            range: 104 yds
+          -
+            desc2: "Glazed 12 hours"
+            range: 105 yds
+          -
+            desc2: "Glazed 24 hours"
+            range: 106 yds
+      -
+        date: "1848-10"  # either the 27th or 31st
+        data:
+          -
+            desc2: "Unglazed"
+            range: 95 yds
+          -
+            desc2: "Glazed 3 hours"
+            range: 97 yds
+          -
+            desc2: "Glazed 6 hours"
+            range: 95 yds
+          -
+            desc2: "Glazed 12 hours"
+            range: 96 yds
+          -
+            desc2: "Glazed 24 hours"
+            range: 95 yds
+      -
+        date: "1848-01"  # either the 1st or 2nd
+        data:
+          -
+            desc2: "Unglazed"
+            range: 95 yds
+          -
+            desc2: "Glazed 3 hours"
+            range: 92 yds
+          -
+            desc2: "Glazed 6 hours"
+            range: 97 yds
+          -
+            desc2: "Glazed 12 hours"
+            range: 97 yds
+          -
+            desc2: "Glazed 24 hours"
+            range: 97 yds
+  -
+    ref2: "p. 134"
+    mass: 8 lb
+    diameter: 4.5 in
+    angle: 45 deg  # assumption
+    charge: 1 ozt
+    desc: "Braddock's report showing powder at elevated temperature"
+    data:
+      -
+        range: 141 yds
+      -
+        desc2: "Power heated to 400 degF in a copper pan"
+        range: 242 yds
+  -
+    ref2: "p. 134"
+    mass: 24 lb
+    material: iron
+    desc: "Study of overcharging"
+    data:
+      -
+        charge: 6 lbs
+        data:
+          # Note that there is a "point-blank" entry.  This is almost certainly
+          # at a small angle, such as 0.75 degrees or so, but not knowing the
+          # exact value prevents using the entry
+          -
+            angle: 2 deg
+            range: 1100 yds
+          -
+            angle: 2.25 deg
+            range: 1155 yds
+          -
+            angle: 2.5 deg
+            range: 1210 yds
+          -
+            angle: 3.75 deg
+            range: 1496 yds
+          -
+            angle: 4 deg
+            range: 1552 yds
+          -
+            angle: 4.25 deg
+            range: 1599 yds
+          -
+            angle: 4.5 deg
+            range: 1646 yds
+          -
+            angle: 4.75 deg
+            range: 1690 yds
+          -
+            angle: 5 deg
+            range: 1746 yds
+      -
+        charge: 10 lbs
+        data:
+          # Note that there is a "point-blank" entry.  This is almost certainly
+          # at a small angle, such as 0.75 degrees or so, but not knowing the
+          # exact value prevents using the entry
+          -
+            angle: 2 deg
+            range: 1100 yds
+          -
+            angle: 2.25 deg
+            range: 1158 yds
+          -
+            angle: 2.5 deg
+            range: 1216 yds
+          -
+            angle: 3.75 deg
+            range: 1497 yds
+          -
+            angle: 4 deg
+            range: 1552 yds
+          -
+            angle: 4.25 deg
+            range: 1599 yds
+          -
+            angle: 4.5 deg
+            range: 1646 yds
+          -
+            angle: 4.75 deg
+            range: 1693 yds
+          -
+            angle: 5 deg
+            range: 1740 yds
+  -
+    ref2: "p. 136"
+    mass: 65 lb
+    diameter: 7.75 in
+    angle: 45 deg  # from p. 120
+    charge: 1 lb
+    desc: "Comparison on density"
+    data:
+      -
+        desc2: "Musketry soft mill cake"
+        range: 955 yds
+      -
+        desc2: "Ordnance soft mill cake"
+        range: 940 yds
+      -
+        desc2: "Musketry hard mill cake"
+        range: 875 yds
+      -
+        desc2: "Ordnance hard mill cake"
+        range: 699 yds
+      -
+        desc2: "Musketry medium pressed cake"
+        range: 835 yds
+      -
+        desc2: "Ordnance medium pressed cake"
+        range: 674 yds
+      -
+        desc2: "Musketry hard pressed cake"
+        range: 786 yds
+      -
+        desc2: "Ordnance hard pressed cake"
+        range: 620 yds
+  -
+    ref2: "p. 146"
+    mass: 45 lb  # shell filled with sand
+    diameter: 8 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz
+    date: "1846-07-16"
+    desc: "Proof taken at Kussoor"
+    data:
+      -
+        desc2: "Bengal powder"
+        data:
+          - range: 78 yds
+          - range: 80 yds
+          - range: 65 yds
+          - range: 75 yds
+          - range: 75 yds
+          - range: 80 yds
+      -
+        desc2: "Sekh powder"
+        data:
+          - range: 14 yds
+          - range: 31 yds
+          - range: 13 yds
+          - range: 18 yds
+          - range: 20 yds
+          - range: 19 yds
+  -
+    ref2: "p. 146"
+    mass: 67 lb
+    diameter: 8 in
+    angle: 45 deg  # from p. 120
+    charge: 2 oz
+    date: "1849"
+    data:
+      -
+        desc: "Matchlock horn powder from 1842"
+        range: 53 yds
+      -
+        desc: "Bengal powder"
+        range: 94 yds
+  -
     diameter: 7.92 in
     mass: 68 lb
     angle: 45 deg  # from p. 120
@@ -478,4 +1009,4 @@ data:
         desc2: "Mortar directly on light soil covered with nature grass"
         range: 88 yds
 
-# Processed through page 168
+# Continued in anderson1862c.yml
