@@ -462,5 +462,256 @@ data:
               -
                 angle: 2 deg
                 range: 1125 yds
+  -
+    ref2: "p. 201"
+    desc: "Average of the Proof Report of 1850-51"
+    angle: 45 deg
+    diameter: 7.92 in  # assumed
+    mass: 68 lb        # assumed
+    date: "1851"
+    data:
+      -
+        desc2: "Honnslow proportions, heavy, dull, density high"
+        data:
+          -
+            desc3: "Musketry powder"
+            data:
+              -
+                charge: 2 oz
+                range: 81 yds
+              -
+                charge: 1 lb
+                range: 586 yds
+          -
+            desc3: "Ordnance powder"
+            data:
+              -
+                charge: 2 oz
+                range: 85 yds
+              -
+                charge: 1 lb
+                range: 406 yds
+      -
+        desc2: "Madras proportions, Cake very hard; less specks visible than in common manufacture"
+        data:
+          -
+            desc3: "Musketry powder"
+            data:
+              -
+                charge: 2 oz
+                range: 91 yds
+              -
+                charge: 1 lb
+                range: 721 yds
+          -
+            desc3: "Ordnance powder"
+            data:
+              -
+                charge: 2 oz
+                range: 94 yds
+              -
+                charge: 1 lb
+                range: 588 yds
+      -
+        desc2: "Experimental -- additional charcoal.  Much as usual"
+        data:
+          -
+            desc3: "Musketry powder"
+            data:
+              -
+                charge: 2 oz
+                range: 94 yds
+              -
+                charge: 1 lb
+                range: 698 yds
+          -
+            desc3: "Ordnance powder"
+            data:
+              -
+                charge: 2 oz
+                range: 92 yds
+              -
+                charge: 1 lb
+                range: 477 yds
+      -
+        desc2: "From old teak charcoal.  Cake as usual, but light coloured"
+        data:
+          -
+            desc3: "Musketry powder"
+            data:
+              -
+                charge: 2 oz
+                range: 77 yds
+              -
+                charge: 1 lb
+                range: 532 yds
+          -
+            desc3: "Ordnance powder"
+            data:
+              -
+                charge: 2 oz
+                range: 79 yds
+              -
+                charge: 1 lb
+                range: 386 yds
+      -
+        desc2: "Unfused nitre.  Cake not quite so hard as common powder"
+        data:
+          -
+            desc3: "Musketry powder"
+            data:
+              -
+                charge: 2 oz
+                range: 103 yds
+              -
+                charge: 1 lb
+                range: 855 yds
+          -
+            desc3: "Ordnance powder"
+            data:
+              -
+                charge: 2 oz
+                range: 101 yds
+              -
+                charge: 1 lb
+                range: 653 yds
+      -
+        desc2: "Unpulverised composition, 600 rev.  Cake very hard, but many specks visiable of saltpetre; dark colour"
+        data:
+          -
+            desc3: "Musketry powder"
+            data:
+              -
+                charge: 2 oz
+                range: 103 yds
+              -
+                charge: 1 lb
+                range: 931 yds
+          -
+            desc3: "Ordnance powder"
+            data:
+              -
+                charge: 2 oz
+                range: 106 yds
+              -
+                charge: 1 lb
+                range: 702 yds
+  -
+    ref2: "p. 201"
+    desc: "Average from Proog Reports, 1853"
+    angle: 45 deg
+    diameter: 7.92 in  # assumed
+    mass: 68 lb        # assumed
+    date: "1853"
+    data:
+      -
+        desc2: "All wire seive powder.  Cake not dense, structure coarse, specks of sulphur very visible, also some of saltpetre"
+        date: "1853-02-04"
+        data:
+          -
+            desc3: "Musketry powder"
+            data:
+              -
+                charge: 2 oz
+                range: 97 yds
+              -
+                charge: 1 lb
+                range: 820 yds
+          -
+            desc3: "Ordnance powder"
+            charge: 2 oz
+            range: 96 yds
+      -
+        desc2: "Sulphur silk powder.  Structure less coarse, specks of saltpetre visible"
+        date: "1853-02-17"
+        data:
+          -
+            desc3: "Musketry powder"
+            data:
+              -
+                charge: 2 oz
+                range: 104 yds
+              -
+                charge: 1 lb
+                range: 938 yds
+          -
+            desc3: "Ordnance powder"
+            data:
+              -
+                charge: 2 oz
+                range: 105 yds
+              -
+                charge: 1 lb
+                range: 774 yds
+      -
+        desc2: "Iron Mill.  Not quite so dense as common manufacture"
+        date: "1853-01"
+        data:
+          -
+            desc3: "Musketry powder"
+            data:
+              -
+                charge: 2 oz
+                range: 103 yds
+              -
+                charge: 1 lb
+                range: 831 yds
+          -
+            desc3: "Ordnance powder"
+            charge: 2 oz
+            range: 103 yds
+  -
+    ref2: "p. 207"
+    desc: "Comparative Report."
+    angle: 45 deg
+    diameter: 7.92 in
+    mass: 68 lb
+    data:
+      -
+        desc2: "Common manufacture, average of 1849-1850"
+        date: "1850"
+        data:
+          -
+            desc3: "Musketry powder"
+            data:
+              -
+                charge: 2 oz
+                range: 95 yds
+              -
+                charge: 1 lb
+                range: 719 yds
+          -
+            desc3: "Ordnance powder"
+            data:
+              -
+                charge: 2 oz
+                range: 93 yds
+              -
+                charge: 1 lb
+                range: 473 yds
+      -
+        desc2: "Cast iron mill, average from one barrel"
+        date: "1853-01"
+        data:
+          -
+            desc3: "Musketry powder"
+            data:
+              -
+                charge: 2 oz
+                range: 103.5 yds
+              -
+                charge: 1 lb
+                range: 831 yds
+          -
+            desc3: "Ordnance powder"
+            charge: 2 oz
+            range: 103 yds
+  -
+    ref2: "p. 222"
+    desc: "Sir William Armstrong fires a gun using electrical ignition at multiple spots in the charge"
+    mass: 12 lb
+    material: iron  # assumed
+    charge: 2 lb
+    initial_velocity: 1740 ft/s
 
-# Processed through page 200
+# Processed through page 237.  More data on 238-240, 247-260, 265-9

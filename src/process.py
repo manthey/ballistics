@@ -116,10 +116,10 @@ def calculate_case(hash, args, info, verbose):
     PreviousResults[hash] = (hash, newstate, points)
     if verbose >= 2:
         print hash, '-->', newstate.get('power_factor')
-    return hash, newstate, points
+    return PreviousResults[hash]
 
 
-def calculate_cases(results, cases, verbose, multi):
+def calculate_cases(results, cases, verbose, pool=None):
     """
     Given a set of cases, generate results for each, possibly using
     multiprocessing.
@@ -127,45 +127,32 @@ def calculate_cases(results, cases, verbose, multi):
     Enter: results: array to store results.
            cases: cases to process:
            verbose: verbosity for the ballistics program.
-           multi: False to run in a single process.  True to run with the
-                  number of available processors.  An integer to run with that
-                  many processors.
+           pool: if not None, use this multiprocessing pool.
     Exit:  success: False for cancelled
     """
     hashes = [item[-1] for item in sorted([(cases[hash]['position'], hash)
               for hash in cases])]
-    if multi is False:
+    if pool is None:
         for hash in hashes:
             hash, state, points = calculate_case(
                 hash, cases[hash]['args'], cases[hash]['info'], verbose)
             calculate_cases_results(hash, state, points, results)
     else:
-        pool = get_multiprocess_pool(multi)
         tasks = []
-        try:
-            for hash in hashes:
-                tasks.append(pool.apply_async(calculate_case, (
-                    hash, cases[hash]['args'], cases[hash]['info'], verbose)))
-            while len(tasks):
-                for pos in xrange(len(tasks) - 1, -1, -1):
-                    task = tasks[pos]
-                    if task.ready():
-                        hash, state, points = task.get()
-                        calculate_cases_results(hash, state, points, results)
-                        del tasks[pos]
-                        if verbose >= 1:
-                            print '%d/%d left' % (len(tasks), len(hashes))
-                if len(tasks):
-                    tasks[0].wait(0.1)
-            pool.close()
-            pool.join()
-        except KeyboardInterrupt:
-            try:
-                pool.terminate()
-                pool.join()
-            except Exception:
-                pass
-            raise
+        for hash in hashes:
+            tasks.append(pool.apply_async(calculate_case, (
+                hash, cases[hash]['args'], cases[hash]['info'], verbose)))
+        while len(tasks):
+            for pos in xrange(len(tasks) - 1, -1, -1):
+                task = tasks[pos]
+                if task.ready():
+                    hash, state, points = task.get()
+                    calculate_cases_results(hash, state, points, results)
+                    del tasks[pos]
+                    if verbose >= 1:
+                        print '%d/%d left' % (len(tasks), len(hashes))
+            if len(tasks):
+                tasks[0].wait(0.1)
     return True
 
 
@@ -237,11 +224,11 @@ def process_cases(info, results, cases, verbose=0):
     if hash not in cases:
         cases[hash] = {'info': info, 'args': args, 'position': len(cases),
                        'hash': hash}
-        results.append({'conditions': info, 'hash': hash})
+    results.append({'conditions': info, 'hash': hash})
 
 
 def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
-                          multi=False):
+                          pool=None):
     """
     Load a yaml file and any companion files.  For each non-skipped data set,
     calculate the ballistics result.  Output the results as a json file with
@@ -253,9 +240,7 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
            outputPath: directory where the results will be stored.
            all: True to process regardless of results time.
            verbose: verbosity for the ballistics program.
-           multi: False to run in a single process.  True to run with the
-                  number of available processors.  An integer to run with that
-                  many processors.
+           pool: if not None, use this multiprocessing pool.
     """
     srcdate = os.path.getmtime(srcfile)
     info = yaml.safe_load(open(srcfile))
@@ -286,7 +271,7 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
     results['results'] = []
     cases = {}
     process_cases(info, results['results'], cases, verbose)
-    if calculate_cases(results, cases, verbose, multi):
+    if calculate_cases(results, cases, verbose, pool):
         json.dump(results, open(destpath, 'wb'), sort_keys=True, indent=1,
                   separators=(',', ': '), cls=FloatEncoder)
 
@@ -353,27 +338,33 @@ Only files newer than the matching results are processed unless the
 """
         sys.exit(0)
     starttime = time.time()
-    if not multi or not multiFile:
-        for file in files:
-            read_and_process_file(file, outputPath, allFiles, verbose, multi)
-    else:
+    if multi:
         pool = get_multiprocess_pool(multi)
-        mapfunc = functools.partial(read_and_process_file, *[], **{
-            'outputPath': outputPath,
-            'all': allFiles,
-            'verbose': verbose
-        })
-        try:
+    else:
+        pool = None
+    try:
+        if not multi or not multiFile:
+            for file in files:
+                read_and_process_file(file, outputPath, allFiles, verbose,
+                                      pool)
+        else:
+            mapfunc = functools.partial(read_and_process_file, *[], **{
+                'outputPath': outputPath,
+                'all': allFiles,
+                'verbose': verbose
+            })
             task = pool.map_async(mapfunc, files, 1)
             while not task.ready():
                 task.wait(1)
             pool.close()
             pool.join()
-        except KeyboardInterrupt:
+    except KeyboardInterrupt:
+        if pool:
             try:
                 pool.terminate()
                 pool.join()
             except Exception:
                 pass
+        print "Cancelled via keyboard interrupt"
     if verbose >= 1:
         print 'Total computation time: %4.2f s' % (time.time() - starttime)
