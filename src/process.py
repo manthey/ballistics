@@ -292,16 +292,16 @@ if __name__ == '__main__':  # noqa - mccabe
     for arg in sys.argv[1:]:
         if arg == '--all':
             allFiles = True
-        elif arg == '--multi':
+        elif arg.startswith('--multi'):
             multi = True
-        elif arg.startswith('--multi='):
-            multi = int(arg.split('=', 1)[1])
-            if multi <= 1:
-                multi = False
-        elif arg == '--multicase':
-            multiFile = False
-        elif arg == '--multifile':
-            multiFile = True
+            if '=' in arg:
+                multi = int(arg.split('=', 1)[1])
+                if multi <= 1:
+                    multi = False
+            if 'multicase' in arg:
+                multiFile = False
+            if 'multifile' in arg:
+                multiFile = True
         elif arg.startswith('--out='):
             outputPath = os.path.abspath(os.path.expanduser(
                 arg.split('=', 1)[1]))
@@ -323,16 +323,16 @@ if __name__ == '__main__':  # noqa - mccabe
             not os.path.isdir(outputPath)):
         print """Process yml and md files using the ballistics code.
 
-Syntax: process.py --out=(path) --all --multi[=(number of processes) -v
-        --multifile|--multicase (input files ...)
+Syntax: process.py --out=(path) --all -v
+        --multi|--multifile|--multicase[=(number of processes)]
+        (input files ...)
 
 If the input files are a directory, all yml files in that path are processed.
 Only files newer than the matching results are processed unless the
 --all flag is used.
 --multi runs parallel processes.  This uses the number of processors available
- unless a number is specified.
---multifile runs a process per input file, --multicase runs a process per
- basllistics case (these only matter if --multi is also specified).
+  unless a number is specified.  --multifile runs a process per input file,
+  --multicase runs a process per basllistics case.
 --out specifies an output directory, which must exist.
 -v increase verbosity.
 """

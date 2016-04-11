@@ -713,5 +713,720 @@ data:
     material: iron  # assumed
     charge: 2 lb
     initial_velocity: 1740 ft/s
-
-# Processed through page 237.  More data on 238-240, 247-260, 265-9
+  -
+    desc: "Comparative Proof of Gunpowder taken at Ishapore on the 22nd of November, 1844, of powder of different sizes of grains, that was passed through the upper and retained by the next lower sieve."
+    ref2: "p. 238"
+    angle: 45 deg  # from p. 120
+    date: "1844-11-22"
+    data:
+      -
+        desc2: "Kunkur powder.  Firm sharp grain."
+        data:
+          -
+            mass: 65.5 lb
+            diameter: 7.85 in
+            charge: 1 lb
+            range: 453 yds
+          -
+            mass: 68 lb
+            diameter: 7.92 in
+            charge: 2 oz
+            range: 77 yds
+      -
+        desc2: "Ordnance.  Similar and regular grain."
+        data:
+          -
+            mass: 65.5 lb
+            diameter: 7.85 in
+            charge: 1 lb
+            range: 618 yds
+          -
+            mass: 68 lb
+            diameter: 7.92 in
+            charge: 2 oz
+            range: 87 yds
+      -
+        desc2: "Musketry.  Long and flat, less round grain."
+        data:
+          -
+            mass: 65.5 lb
+            diameter: 7.85 in
+            charge: 1 lb
+            range: 793 yds
+          -
+            mass: 68 lb
+            diameter: 7.92 in
+            charge: 2 oz
+            range: 93 yds
+      -
+        desc2: "Rifle.  Rounder and smaller grain."
+        data:
+          -
+            mass: 65.5 lb
+            diameter: 7.85 in
+            charge: 1 lb
+            range: 827 yds
+          -
+            mass: 68 lb
+            diameter: 7.92 in
+            charge: 2 oz
+            range: 89 yds
+      -
+        desc2: "Fine.  Dusty; brownish colour, small grain."
+        data:
+          -
+            mass: 65.5 lb
+            diameter: 7.85 in
+            charge: 1 lb
+            range: 437 yds
+          -
+            mass: 68 lb
+            diameter: 7.92 in
+            charge: 2 oz
+            range: 53 yds
+      -
+        desc2: "Dust.  Dust, with a few minute grains, brown colour"
+        data:
+          -
+            mass: 65.5 lb
+            diameter: 7.85 in
+            charge: 1 lb
+            range: 288 yds
+          -
+            mass: 68 lb
+            diameter: 7.92 in
+            charge: 2 oz
+            range: 35 yds
+  -
+    desc: "Comparative Proof of Gunpowder taken at Ishapore Powder Manufactory, on the 3rd December, 1844, with powder passed through the following sieves, all the larger grain extracted being the complement of the run of the Corning House."
+    ref2: "p. 238"
+    angle: 45 deg  # from p. 120
+    date: "1844-12-03"
+    data:
+      -
+        desc2: "O, M, R, F, Dust.  Unglazed, colour darkish brown."
+        data:
+          -
+            mass: 65.5 lb
+            diameter: 7.85 in
+            charge: 1 lb
+            range: 685 yds
+          -
+            mass: 68 lb
+            diameter: 7.92 in
+            charge: 2 oz
+            range: 68 yds
+      -
+        desc2: "M, R, F, Dust.  Unglazed dark slate colour."
+        data:
+          -
+            mass: 65.5 lb
+            diameter: 7.85 in
+            charge: 1 lb
+            range: 678 yds
+          -
+            mass: 68 lb
+            diameter: 7.92 in
+            charge: 2 oz
+            range: 76 yds
+      -
+        desc2: "R, F, and Dust.  Unglazed, dark black colour."
+        data:
+          -
+            mass: 65.5 lb
+            diameter: 7.85 in
+            charge: 1 lb
+            range: 486 yds
+          -
+            mass: 68 lb
+            diameter: 7.92 in
+            charge: 2 oz
+            range: 52 yds
+      -
+        desc2: "F and Dust.  Unglazed, black colour."
+        data:
+          -
+            mass: 65.5 lb
+            diameter: 7.85 in
+            charge: 1 lb
+            range: 340 yds
+          -
+            mass: 68 lb
+            diameter: 7.92 in
+            charge: 2 oz
+            range: 38 yds
+      -
+        desc2: "Dust.  Unglazed, black colour."
+        data:
+          -
+            mass: 65.5 lb
+            diameter: 7.85 in
+            charge: 1 lb
+            range: 356 yds
+          -
+            mass: 68 lb
+            diameter: 7.92 in
+            charge: 2 oz
+            range: 43 yds
+  -
+    desc: "Experiments with very large grain sizes."
+    ref2: "p. 239"
+    angle: 45 deg  # from p. 120
+    mass: 68 lb
+    diameter: 7.92 in
+    charge: 2 oz
+    data:
+      -
+        desc2: "Press cake, 10 pieces (totalling 2 oz)."
+        range: 12 yds
+      -
+        desc2: "Press cake, 20 pieces (totalling 2 oz)."
+        range: 16 yds
+      -
+        desc2: "Press cake, 30 pieces (totalling 2 oz)."
+        range: 20 yds
+      -
+        desc2: "Press cake, 40 pieces (totalling 2 oz)."
+        range: 24 yds
+      -
+        desc2: "Press cake, 50 pieces (totalling 2 oz)."
+        range: 27 yds
+  -
+    desc: "Experiments on mixing grain sizes."
+    ref2: "p. 239"
+    angle: 45 deg  # from p. 120
+    mass: 68 lb
+    diameter: 7.92 in
+    charge: 2 oz
+    data:
+      -
+        desc2: "Average proof of officer on duty of Ordnance powder"
+        range: 96 yds
+      -
+        desc2: "Average proof of officer on duty of Musketry powder"
+        range: 97 yds
+      -
+        desc2: "7/8 Ordnance, 1/8 Musketry powder"
+        range: 105 yds
+      -
+        desc2: "6/8 Ordnance, 2/8 Musketry powder"
+        range: 110 yds
+      -
+        desc2: "5/8 Ordnance, 3/8 Musketry powder"
+        range: 102 yds
+      -
+        desc2: "4/8 Ordnance, 4/8 Musketry powder"
+        range: 99 yds
+      -
+        desc2: "3/8 Ordnance, 5/8 Musketry powder"
+        range: 92 yds
+      -
+        desc2: "2/8 Ordnance, 6/8 Musketry powder"
+        range: 90 yds
+      -
+        desc2: "1/8 Ordnance, 7/8 Musketry powder"
+        range: 96 yds
+      -
+        desc2: "2.54/8 Ordnance, 2.54/8 Musketry, 2.52/8 Rifle powder (I think this is intended to be 1/3 of each kind, but the fractions don't add up)"
+        range: 96 yds
+      -
+        desc2: "4/8 Ordnance, 2/8 Musketry, 2/8 Rifle powder"
+        range: 97 yds
+      -
+        desc2: "2/8 Ordnance, 4/8 Musketry, 2/8 Rifle powder"
+        range: 89 yds
+      -
+        desc2: "2/8 Ordnance, 2/8 Musketry, 4/8 Rifle powder"
+        range: 89 yds
+      -
+        desc2: "4/8 Ordnance, 4/8 Rifle powder"
+        range: 89 yds
+      -
+        desc2: "2/8 Ordnance, 6/8 Rifle powder"
+        range: 93 yds
+      -
+        desc2: "1/8 Ordnance, 7/8 Rifle powder"
+        range: 90 yds
+      -
+        desc2: "Rifle powder"
+        range: 92 yds
+  -
+    desc: "To indicate the improvment by a slight mixture of musketry powder with the ordnance powder; the difference would be infinitely more remarkable in long charges.  From a very inferior, bad mortar, rejected for proof, No. 173.  This mortar is 20 yards in range inferior to No. 8."
+    ref2: "p. 239"
+    angle: 45 deg  # from p. 120
+    mass: 68 lb
+    diameter: 7.92 in
+    charge: 2 oz
+    data:
+      -
+        desc2: "Musketry powder"
+        range: 66 yds
+      -
+        desc2: "5.35/8 Musketry, 2.65/8 Ordnance powder"
+        range: 59 yds
+      -
+        desc2: "4/8 Musketry, 4/8 Ordnance powder"
+        range: 66 yds
+      -
+        desc2: "Ordnance powder"
+        range: 69 yds
+      -
+        desc2: "2.65/8 Musketry, 5.25/8 Ordnance powder"
+        range: 70 yds
+  -
+    desc: "Comparison between English and Ishapore powders with identical grain sizes."
+    ref2: "p. 240"
+    angle: 45 deg  # from p. 120
+    mass: 68 lb
+    diameter: 7.92 in
+    charge: 2 oz
+    data:
+      -
+        desc2: "English war powder, 6 years old"
+        range: 107.2 yds
+      -
+        desc2: "Ishapore similar to the above"
+        range: 91.6 yds
+  # On page 259 there is a comparison of rifled ordnance.  Since these fire
+  # elogated shot, the current ballistics program is incapbable of modelling
+  # the behavior properly, and these tests are skipped.
+  -
+    desc: "Trial of Allahabad Powder dried by Stream Heat.  All trials are with Ordnance powder.  The notes indicate that the Allahabad powder also used very good charcoal and exceptionally pure saltpetre."
+    angle: 45 deg  # from p. 120
+    data:
+    -
+      date: "1828-01-14"
+      ref2: "p. 265"
+      diameter: 10 in
+      charge: 2 oz
+      mass: 85 lb 13 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 39.667 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 32.778 yds
+        -
+          desc2: "Madras, 1825"
+          range: 28.333 yds
+        -
+          desc2: "Bombay, 1825"
+          range: 6 yds  # the entry read 5 2/2
+    -
+      date: "1828-01-15"
+      ref2: "p. 265"
+      diameter: 10 in
+      charge: 1 lb
+      mass: 85 lb 13 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 354.667 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 255 yds
+        -
+          desc2: "Madras, 1824-1825"
+          range: 253 yds
+        -
+          desc2: "Bombay, 1825"
+          range: 68.222 yds
+    -
+      date: "1828-01-15"
+      ref2: "p. 265"
+      diameter: 10 in
+      charge: 1 lb 12 oz
+      mass: 85 lb 13 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 671.667 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 461.333 yds
+        -
+          desc2: "Madras, 1824-1825"
+          range: 558.5 yds
+        -
+          desc2: "Bombay, 1824-1825"
+          range: 154.444 yds
+    -
+      date: "1828-01-15"
+      ref2: "p. 265"
+      diameter: 8 in
+      charge: 2 oz
+      mass: 41 lb 10 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 65 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 46.222 yds
+        -
+          desc2: "Madras, 1825"
+          range: 39.778 yds
+        -
+          desc2: "Bombay, 1825"
+          range: 10.333 yds
+    -
+      date: "1828-01-17"
+      ref2: "p. 266"
+      diameter: 8 in
+      charge: 1 lb
+      mass: 41 lb 11 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 557.333 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 318.333 yds
+        -
+          desc2: "Madras, 1825"
+          range: 419.667 yds
+        -
+          desc2: "Bombay, 1825"
+          range: 97.111 yds
+    -
+      date: "1828-01-17"
+      ref2: "p. 266"
+      diameter: 8 in
+      charge: 1 lb 11 oz
+      mass: 41 lb 11 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 1168.667 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 709.333 yds
+        -
+          desc2: "Madras, 1825"
+          range: 1148 yds
+        -
+          desc2: "Bombay, 1825"
+          range: 371 yds
+    -
+      date: "1828-01-17"
+      ref2: "p. 266"
+      diameter: 7.85 in
+      charge: 2 oz
+      mass: 65.5 lb
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 55.778 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 41.111 yds
+        -
+          desc2: "Madras, 1824-1825"
+          range: 42.222 yds
+        -
+          desc2: "Bombay, 1824-1825"
+          range: 11.8333 yds
+    -
+      date: "1828-01-21"
+      ref2: "p. 266"
+      diameter: 7.85 in
+      charge: 1 lb
+      mass: 65.5 lb
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 501.667 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 358.778 yds
+        -
+          desc2: "Madras, 1824-1825"
+          range: 449.111 yds
+        -
+          desc2: "Bombay, 1824-1825"
+          range: 113.667 yds
+    -
+      date: "1828-01-22"
+      ref2: "p. 266"
+      diameter: 7.85 in
+      charge: 1 lb 12 oz
+      mass: 65.5 lb
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 1142.5 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 721.667 yds
+        -
+          desc2: "Madras, 1825"
+          range: 1135 yds
+        -
+          desc2: "Bombay, 1825"
+          range: 407.875 yds
+    -
+      date: "1828-01-17"
+      ref2: "p. 266"
+      diameter: 8 in
+      charge: 1 lb
+      mass: 68.5 lb
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 336 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 255 yds
+    -
+      date: "1828-01-17"
+      ref2: "p. 267"
+      diameter: 10 in
+      charge: 1 lb
+      mass: 85 lb 13 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 496 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 384.667 yds
+    -
+      date: "1828-01-17"
+      ref2: "p. 267"
+      diameter: 8 in
+      charge: 1 lb
+      mass: 41 lb 13 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 808 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 606 yds
+    -
+      date: "1828-03-20"
+      ref2: "p. 267"
+      diameter: 10 in
+      charge: 2 oz
+      mass: 85 lb 12 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 51.667 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 32 yds
+    -
+      date: "1828-03-20"
+      ref2: "p. 267"
+      diameter: 8 in
+      charge: 2 oz
+      mass: 41 lb 11 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 79.333 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 50.667 yds
+    -
+      date: "1828-03-20"
+      ref2: "p. 267"
+      diameter: 8 in
+      charge: 2 oz
+      mass: 68.5 lb
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 85 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 56.333 yds
+    -
+      date: "1828-03-21"
+      ref2: "p. 267"
+      diameter: 10 in
+      charge: 4 oz
+      mass: 85 lb 13 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 96 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 73.667 yds
+    -
+      date: "1828-03-21"
+      ref2: "p. 268"
+      diameter: 8 in
+      charge: 4 oz
+      mass: 41 lb 11 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 185 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 129 yds
+    -
+      date: "1828-03-21"
+      ref2: "p. 268"
+      diameter: 8 in
+      charge: 4 oz
+      mass: 68.5 lb
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 177 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 141 yds
+    -
+      date: "1828-03-21"
+      ref2: "p. 268"
+      diameter: 10 in
+      charge: 8 oz
+      mass: 85 lb 12 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 226 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 184 yds
+    -
+      date: "1828-03-21"
+      ref2: "p. 268"
+      diameter: 8 in
+      charge: 8 oz
+      mass: 41 lb 11 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 353 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 251.333 yds
+    -
+      date: "1828-03-21"
+      ref2: "p. 268"
+      diameter: 10 in
+      charge: 2 lb
+      mass: 85 lb 13 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 1102 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 848.333 yds
+    -
+      date: "1828-03-21"
+      ref2: "p. 268"
+      diameter: 8 in
+      charge: 2 lb
+      mass: 41 lb 11 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 1755.667 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 1465.333 yds
+#############
+    -
+      date: "1828-08-19"
+      ref2: "p. 269"
+      diameter: 7.85 in
+      charge: 2 oz
+      mass: 65.5 lb
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 59.5 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 46.667 yds
+        -
+          desc2: "Madras, 1825"
+          range: 39.333 yds
+        -
+          desc2: "Bombay, 1825"
+          range: 20.333 yds
+    -
+      date: "1828-08-19"
+      ref2: "p. 269"
+      diameter: 7.85 in
+      charge: 1 lb
+      mass: 65.5 lb
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 649 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 515 yds
+        -
+          desc2: "Madras, 1825"
+          range: 561 yds
+        -
+          desc2: "Bombay, 1825"
+          range: 312 yds
+    -
+      date: "1828-08-19"
+      ref2: "p. 269"
+      diameter: 10 in
+      charge: 2 oz
+      mass: 85 lb 13 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 41.333 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 30.333 yds
+        -
+          desc2: "Madras, 1824-1825"
+          range: 34.667 yds
+        -
+          desc2: "Bombay, 1825"
+          range: 13.667 yds
+    -
+      date: "1828-08-19"
+      ref2: "p. 269"
+      diameter: 10 in
+      charge: 1 lb
+      mass: 85 lb 13 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 438.333 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 299.333 yds
+        -
+          desc2: "Madras, 1825"
+          range: 333 yds
+        -
+          desc2: "Bombay, 1825"
+          range: 154.333 yds
+    -
+      date: "1828-08-19"
+      ref2: "p. 269"
+      diameter: 8 in
+      charge: 1 lb
+      mass: 41 lb 11 oz
+      data:
+        -
+          desc2: "Allahabad, 1824-25"
+          range: 758.125 yds
+        -
+          desc2: "Ishapore, 1824-25"
+          range: 587 yds
+        -
+          desc2: "Madras, 1824-1825"
+          range: 571 yds
+        -
+          desc2: "Bombay, 1824-1825"
+          range: 278 yds
