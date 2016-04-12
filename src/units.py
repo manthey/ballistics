@@ -38,12 +38,16 @@ StatuteFootInMeters = 0.3048
 # Paris to various other linear measurements.
 # Robertson, p. 140-141, gives it as 1 English foot = 0.9386 French feet
 ParisFootInMeters = StatuteFootInMeters * 144 / 135
-# From Clarke, p. 67.
-SardiniaFootInMeters = StatuteFootInMeters * 20.228 / 12
+# Clarke, p. 67, gives 20.228 in.  Captain Thompson (d'Antoni, 1789) gives
+# 20.23457 in., seemingly with better justification.
+SardiniaFootInMeters = StatuteFootInMeters * 20.23457 / 12
 
 AvoirdupoisPoundInKilograms = 0.45359237
 TroyPoundInKilograms = AvoirdupoisPoundInKilograms * 5760 / 7000
+# From Robertson, p. 140-141.
 ParisPoundInKilograms = AvoirdupoisPoundInKilograms / 0.926
+# Captain Thompson (d'Antoni, 1789) gives 0.82.  Clarke gives 0.81332.
+PeidmontPoundInKilograms = AvoirdupoisPoundInKilograms * 0.81332
 
 # The units table is a list of tuples, each of which is ([list of names and
 # abbreviations], prefixes allowed, factor to SI, description).  The factor can
@@ -102,10 +106,19 @@ UnitsTable = [
     (['lbt', 'troypound', 'troypounds'], False, TroyPoundInKilograms,
      'Troy pound'),
     (['kg', 'kilogram', 'kilograms'], False, 1.0, 'SI kilogram'),
-    # From Robertson, p. 140-141.
+
     (['lbfr', 'parispound', 'frenchpound', 'parispounds', 'frenchpounds',
       'livre', 'livres'], False, ParisPoundInKilograms,
      'Paris livre (pound)'),
+
+    (['lbit', 'italianpound', 'piedmontesepound', 'italianpounds',
+      'piedmontesepounds', 'libbre'], False, PeidmontPoundInKilograms,
+     'Peidmont libbre (pound)'),
+    (['ozit', 'italianounce', 'piedmonteseounce', 'italianounces',
+      'piedmonteseounces'], False, PeidmontPoundInKilograms / 12,
+     'Peidmont once (ounce)'),
+    (['italiandenari', 'piedmontesedenari', 'denari'], False,
+     PeidmontPoundInKilograms / 12 / 24, 'Peidmont denari (dram)'),
 
     # Energy (reference is J)
     (['J', 'Joule', 'Joules'], True, 1.0, 'SI Joule (kg*m*m/s/s)'),

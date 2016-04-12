@@ -1,0 +1,3 @@
+This is a treatise on gunpowder in Italian by Alessandro Vittorio Papacino d'Antoni, the director of the Artillery School in Turin.
+
+Starting on page 210 (article 164), the author describes a very clever method of measuring the speed of a bullet.  A wheel has a rim of paper that sticks out on one side, and is sent spinning at a known rate.  A gun is fired such that the bullet passed along the diameter of the wheel, but next to it so that it pierces the paper at the two opposite rims without striking anything in between.  Knowing the speed of the wheel, you can see how much it has revolved between the bullet piercing the near and far points, from which you can calculate the time of transit.

@@ -1,0 +1,216 @@
+---
+key: dantoni1765
+ref: "d'Antoni, 1765"
+cms: "d'Antoni, Alessandro Vittorio Papacino.  <i>Esame Della Polvere,</i> Torino: Nella Stamperia Reale, 1765."
+summary: "A treatise on gunpowder and how it works chemically and physically."
+date: "1765"
+data:
+  -
+    desc: "Comparison of shot fired at a perfect level to ascertain the greatest range of each gun."
+    ref2: "p. 95-100"
+    date: "1746-03-30"
+    material: iron
+    angle: 0 deg
+    initial_height: 17 ftit
+    data:
+      -
+        mass: 4 lbit
+        data:
+          -
+            charge: 1.75 lbit
+            range: 852 ftit
+          -
+            charge: 2 lbit
+            range: 870 ftit
+          -
+            charge: 2.5 lbit
+            range: 840 ftit
+      -
+        mass: 8 lbit
+        data:
+          -
+            charge: 3 lbit
+            range: 912 ftit
+          -
+            charge: 4 lbit
+            range: 948 ftit
+          -
+            charge: 5 lbit
+            range: 948 ftit
+      -
+        mass: 16 lbit
+        data:
+          -
+            charge: 4 lbit
+            range: 900 ftit
+          -
+            charge: 5.333 lbit
+            range: 936 ftit
+          -
+            charge: 6 lbit
+            range: 930 ftit
+      -
+        mass: 32 lbit
+        data:
+          -
+            charge: 8 lbit
+            range: 864 ftit
+          -
+            charge: 10.667 lbit
+            range: 876 ftit
+          -
+            charge: 12 lbit
+            range: 870 ftit
+  -
+    desc: "Comparison of shot fired at the maximum elevation of each gun.  Degli sperimenti fatti nella Primavera del 1750."
+    ref2: "p. 114-115"
+    date: "1750-04"
+    material: iron
+    data:
+      -
+        mass: 4 lbit
+        angle: 14 deg
+        data:
+          -
+            charge: 2.5 lbit
+            range: 4232 ftit
+          -
+            charge: 3 lbit
+            range: 3948 ftit
+          -
+            charge: 3.5 lb
+            range: 4310 ftit
+          -
+            charge: 4 lb
+            range: 4495 ftit
+      -
+        mass: 8 lbit
+        angle: 11 deg
+        data:
+          -
+            charge: 4 lbit
+            range: 4130 ftit
+          -
+            charge: 5 lbit
+            range: 4382 ftit
+          -
+            charge: 6 lbit
+            range: 4424 ftit
+          -
+            charge: 7 lbit
+            range: 4232 ftit
+          -
+            charge: 8 lbit
+            range: 4760 ftit
+      -
+        mass: 16 lbit
+        angle: 12 deg
+        data:
+          -
+            charge: 7 lbit
+            range: 4732 ftit
+          -
+            charge: 8 lbit
+            range: 5090 ftit
+          -
+            charge: 9 lbit
+            range: 4738 ftit
+          -
+            charge: 10 lbit
+            range: 5000 ftit
+          -
+            charge: 11 lbit
+            range: 4918 ftit
+          -
+            charge: 12 lbit
+            range: 5146 ftit
+      -
+        mass: 32 lbit
+        angle: 11.5 deg
+        data:
+          -
+            charge: 14 lbit
+            range: 5644 ftit
+          -
+            charge: 16 lbit
+            range: 5396 ftit
+          -
+            charge: 18 lbit
+            range: 5330 ftit
+          -
+            charge: 20 lbit
+            range: 5730 ftit
+          -
+            charge: 22 lbit
+            range: 5488 ftit
+  -
+    desc: "Velocities of musket bullets measured by a wheel chronometer."
+    ref2: "p. 216"
+    material: lead
+    angle: 0 deg
+    range: 10 ftit 12 init
+    charge: 9 italiandenari
+    # Gun #1
+    # mass: 2.5 ozit
+    # diameter: 6 punti 8 atomi
+    # Gun #2
+    # mass: 3.5 ozit
+    # diameter: 7 punti 5 atomi
+    # Gun #3
+    # mass: 0.708333 ozit   # 5.667/8 oz
+    # Gun #4 (Musket)
+    # mass: 1 ozit
+    # diameter: 4 punti 10 atomi
+    mass: 1 ozit
+    diameter: 4 punti 10 atomi
+    data:
+      -
+        desc2: "In tempo molto umido."
+        humidity: 95%
+        data:
+          -
+            desc3: "Polvere ordinaria da guerra"
+            final_velocity: 826 ftit/sec
+          -
+            desc3: "Polvere fina da guerra"
+            final_velocity: 931 ftit/sec
+          -
+            desc3: "Polvere da caccia"
+            final_velocity: 929 ftit/sec
+          -
+            desc3: "Polvere da guerra giuoco"
+            final_velocity: 929 ftit/sec
+      -
+        desc2: "Nello stato mezzano dell'atmosfera."
+        humidity: 50%
+        data:
+          -
+            desc3: "Polvere ordinaria da guerra"
+            final_velocity: 915 ftit/sec
+          -
+            desc3: "Polvere fina da guerra"
+            final_velocity: 1030 ftit/sec
+          -
+            desc3: "Polvere da caccia"
+            final_velocity: 1010 ftit/sec
+          -
+            desc3: "Polvere da guerra giuoco"
+            final_velocity: 1012 ftit/sec
+      -
+        desc2: "In tempo molto secco."
+        humidity: 5%
+        data:
+          -
+            desc3: "Polvere ordinaria da guerra"
+            final_velocity: 960 ftit/sec
+          -
+            desc3: "Polvere fina da guerra"
+            final_velocity: 1085 ftit/sec
+          -
+            desc3: "Polvere da caccia"
+            final_velocity: 1058 ftit/sec
+          -
+            desc3: "Polvere da guerra giuoco"
+            final_velocity: 1055 ftit/sec
+
+# processed through page 216

@@ -8,14 +8,14 @@ date: "1862"
 data:
   -
     ref2: "p. 169"
-    desc: "This is a comparison of windage taken fron d'Antoni's \"A Treatise on Gunpowder and Firearms\" of 1789.  In that work, the translator says (p. xxxiii) that all units have been converted to English units.  Despite this, some units are unconverted.  The units are too small to be Sardinia atomi, so for now, the material and weight are being used to compute a diameter."
+    desc: "This is a comparison of windage taken fron d'Antoni's \"A Treatise on Gunpowder and Firearms\" of 1789.  In that work, the translator says (p. xxxiii) that all units have been converted to English units.  Despite this, some units are unconverted, such as gun weights.  The diameter units are too small to be Sardinia atomi, so for now, the material and weight are being used to compute a diameter."
     date: "1789"
     charge: 4 lb 2 oz
     angle: 0 deg
     initial_height: 5 ft
     data:
       -
-        mass: 16.333 lb
+        mass: 16.333 lbit
         material: "iron"
         # diameter: 784 of unknown units
         data:
@@ -38,7 +38,7 @@ data:
               - range: 248.333 yds
               - range: 213.5 yds
       -
-        mass: 16.1667 lb
+        mass: 16.1667 lbit
         material: "iron"
         # diameter: 774 units
         data:
