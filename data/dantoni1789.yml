@@ -150,14 +150,6 @@ data:
     angle: 0 deg
     range: 20 ft
     charge: 7 drams
-    # Gun #1
-    # mass: 2.5 ozit
-    # Gun #2
-    # mass: 3.5 ozit
-    # Gun #3
-    # mass: 0.875 ozit
-    # Gun #4 (Musket)
-    # mass: 1 ozit
     mass: 1 ozit
     data:
       -
@@ -208,5 +200,322 @@ data:
           -
             desc3: "Fire-work powder"
             final_velocity: 1779 ft/sec
+  -
+    desc: "Testing guns of different lengths and calibres with different powders to show that fine war powder is the strongest."
+    ref2: "p. 80"
+    material: lead
+    angle: 0 deg
+    range: 20 ft
+    humidity: 50%
+    data:
+      -
+        desc2: "A musket 1 ft 10 in length of bore"
+        mass: 1 ozit
+        charge: 7 drams
+        data:
+          -
+            desc3: "Fine war powder"
+            final_velocity: 1390 ft/sec
+          -
+            desc3: "Fowling powder"
+            final_velocity: 1367 ft/sec
+          -
+            desc3: "Fire-work powder"
+            final_velocity: 1372 ft/sec
+      -
+        desc2: "Rifled carbine"
+        mass: 0.875 ozit
+        charge: 7 drams
+        data:
+          -
+            desc3: "Fine war powder"
+            final_velocity: 1956 ft/sec
+          -
+            desc3: "Fowling powder"
+            final_velocity: 1920 ft/sec
+          -
+            desc3: "Fire-work powder"
+            final_velocity: 1934 ft/sec
+      -
+        desc2: "A Wall-piece carrying a leaden bullet, in weight 2 1/2 oz"
+        mass: 2.5 ozit
+        charge: 20 drams
+        data:
+          -
+            desc3: "Fine war powder"
+            final_velocity: 1956 ft/sec
+          -
+            desc3: "Fowling powder"
+            final_velocity: 1928 ft/sec
+          -
+            desc3: "Fire-work powder"
+            final_velocity: 1923 ft/sec
+      -
+        desc2: "A musket 3 ft 6 in length of bore"
+        mass: 1 ozit
+        charge: 7 drams
+        data:
+          -
+            desc3: "Fine war powder"
+            final_velocity: 1736 ft/sec
+  -
+    desc: "Comparing powder types with a mortar"
+    ref2: "p. 81"
+    date: "1761-08"
+    material: iron
+    angle: 45 deg
+    mass: 27 lb
+    charge: 1 ozit
+    data:
+      -
+        desc2: "Musquet powder"
+        range: 249 yds
+      -
+        desc2: "Fine war powder"
+        range: 298 yds
+      -
+        desc2: "Fowling powder"
+        range: 294 yds
+      -
+        desc2: "Fire-work powder"
+        range: 296 yds
+  -
+    desc: "Comparing windage and shot density."
+    ref2: "p. 81"
+    material: lead
+    angle: 0 deg
+    range: 20 ft
+    data:
+      -
+        desc2: "Wall-piece"
+        charge: 23 drams
+        data:
+          -
+            desc3: "First kind"
+            mass: 3.5 ozit
+            final_velocity: 1770 ft/sec
+          -
+            desc3: "Second kind"
+            mass: 3 ozit
+            final_velocity: 1855 ft/sec
+          # There isn't enough information in the text to compute the third
+          # kind, as the diameter is not given
+      -
+        desc2: "Musquet"
+        charge: 7 drams
+        data:
+          -
+            desc3: "First kind"
+            mass: 1 ozit
+            final_velocity: 1736 ft/sec
+          -
+            desc3: "Second kind"
+            mass: 0.875 ozit
+            final_velocity: 1834 ft/sec
+          # I don't have enough information for the third kind
+  -
+    desc: "Comparing charges."
+    ref2: "p. 82"
+    material: lead
+    angle: 0 deg
+    range: 20 ft
+    humidity: 50%
+    data:
+      -
+        desc2: "Musquet"
+        mass: 1 ozit
+        data:
+          -
+            charge: 5 drams
+            final_velocity: 1399 ft/s
+          -
+            charge: 7 drams
+            final_velocity: 1736 ft/s
+          -
+            charge: 10 drams
+            final_velocity: 1984 ft/s
+      -
+        desc2: "Wall-piece, weight of bullet 2 1/2 oz"
+        mass: 2.5 ozit
+        data:
+          -
+            charge: 11.5 drams
+            final_velocity: 1504 ft/s
+          -
+            charge: 18 drams
+            final_velocity: 2056 ft/s
+          -
+            charge: 25 drams
+            final_velocity: 2060 ft/s
+  -
+    desc: "Comparing barrel lengths."
+    ref2: "p. 83"
+    material: lead
+    angle: 0 deg
+    range: 20 ft
+    humidity: 50%
+    charge: 7 drams
+    mass: 1 ozit
+    data:
+      -
+        desc2: "Barrel 0 ft 11 in"
+        final_velocity: 1337 ft/s
+      -
+        desc2: "Barrel 1 ft 10 in"
+        final_velocity: 1390 ft/s
+      -
+        desc2: "Barrel 3 ft 8 in"
+        final_velocity: 1736 ft/s
+      -
+        desc2: "Barrel 4 ft 8 in"
+        final_velocity: 1815 ft/s
+  -
+    desc: "Ranges of shot from guns fired at angles compared to their theoreticalranges in vacuum"
+    ref2: "p. 93"
+    material: lead
+    pressure: 29 inHg
+    date: "1764-06"
+    data:
+      -
+        desc2: "Rifled carbine"
+        mass: 0.875 ozit
+        charge: 7 drams
+        data:
+          -
+            angle: 15 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 901 yds
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 19903 yds
+          -
+            angle: 24 deg 20 arcmin
+            data:
+              -
+                desc3: "Experiment"
+                range: 938 yds
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 29854 yds
+          -
+            angle: 45 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 895 yds
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 39805 yds
+      -
+        desc2: "Musquet"
+        mass: 1 ozit
+        charge: 7 drams
+        data:
+          -
+            angle: 7 deg 15 arcmin
+            data:
+              -
+                desc3: "Experiment"
+                range: 948 yds
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 7845 yds
+          -
+            angle: 15 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 1305 yds
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 15691 yds
+          -
+            angle: 24 deg 20 arcmin
+            data:
+              -
+                desc3: "Experiment"
+                range: 1335 yds
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 23537 yds
+          -
+            angle: 45 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 1181 yds
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 17897 yds
+      -
+        desc2: "Wall-piece with 3 oz ball"
+        mass: 3 ozit
+        charge: 23 drams
+        data:
+          -
+            angle: 15 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 1433 yds
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 17897 yds
+          -
+            angle: 24 deg 20 arcmin
+            data:
+              -
+                desc3: "Experiment"
+                range: 1753 yds
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 26734 yds
+          -
+            angle: 45 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 1629 yds
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 35794 yds
+      -
+        desc2: "Wall-piece with 3 1/2 oz ball"
+        mass: 3.5 ozit
+        charge: 23 drams
+        data:
+          -
+            angle: 15 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 1699 yds
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 16307 yds
+    # There is insufficient data for the final condition
 
-# processed through page 49

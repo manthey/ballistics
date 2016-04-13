@@ -44,8 +44,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-04-09v31'
-PROGRAM_SIGNATURE = '31458e5a4a2219fa7eb3b737cdf7efe4'
+__version__ = '2016-04-12v32'
+PROGRAM_SIGNATURE = '0109d88a38cd26012b15ca9fc9d6c9ab'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -436,6 +436,10 @@ def acceleration_from_drag(state):
     Exit:  accel: magintude of total acceleration from drag in m/s/s.
            ax: acceleration in the x direction.
            ay: acceleration in the y direction."""
+    # If we were told the pressure was zero, treat this as a vacuum with no
+    # drag
+    if state.get('pressure') == 0:
+        return (0, 0, 0)
     density = atmospheric_density(state)
     cd = coefficient_of_drag(state, density)
     velocity_sq = state['vx']**2+state['vy']**2

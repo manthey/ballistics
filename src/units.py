@@ -156,8 +156,10 @@ UnitsTable = [
      'Standard atmospheric pressure (101,325 Pa)'),
     (['psi'], False, 689.48, 'Pounds of force per square inch'),
     (['mmHg'], False, 133.322387415, 'Pressure in millimeters of mercury'),
-    (['mHg'], True, 0.133322387415, 'Pressure in meters of mercury'),
+    (['mHg'], True, 133322.387415, 'Pressure in meters of mercury'),
     (['inHg'], False, 3386.388, 'Pressure in inches of mercury'),
+    (['initHg'], False, 3386.388 * SardiniaFootInMeters / StatuteFootInMeters,
+     'Pressure in Italian inches of mercury'),
     ]
 
 

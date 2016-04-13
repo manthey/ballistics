@@ -28,6 +28,8 @@ from units import convert_units
 # abbreviations], typical density in kg/m^3, minimum density, maximum density,
 # description).  Some data was taken from http://www.engineeringtoolbox.com/
 # metal-alloys-densities-d_50.html
+#  This could be expanded if necessary.  Davies, 1748 gives a greater range for
+# each material's density as well as values for steel, copper, and others.
 MaterialsTable = [
     # Brass - Robertson: 8104, Natco: 8441
     (['brass'], 8520, 8100, 8700, 'Brass'),

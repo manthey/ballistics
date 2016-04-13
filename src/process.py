@@ -285,7 +285,7 @@ if __name__ == '__main__':  # noqa - mccabe
     files = []
     allFiles = False
     multi = False
-    multiFile = True
+    multiFile = False
     outputPath = None
     verbose = 0
     help = False

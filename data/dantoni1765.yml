@@ -150,17 +150,6 @@ data:
     angle: 0 deg
     range: 10 ftit 12 init
     charge: 9 italiandenari
-    # Gun #1
-    # mass: 2.5 ozit
-    # diameter: 6 punti 8 atomi
-    # Gun #2
-    # mass: 3.5 ozit
-    # diameter: 7 punti 5 atomi
-    # Gun #3
-    # mass: 0.708333 ozit   # 5.667/8 oz
-    # Gun #4 (Musket)
-    # mass: 1 ozit
-    # diameter: 4 punti 10 atomi
     mass: 1 ozit
     diameter: 4 punti 10 atomi
     data:
@@ -212,5 +201,353 @@ data:
           -
             desc3: "Polvere da guerra giuoco"
             final_velocity: 1055 ftit/sec
+  -
+    desc: "Testing guns of different lengths and calibres with different powders, 'che le polvere fina da guerra \u00e8 la pi\u00f9 forte.'"
+    ref2: "p. 218"
+    material: lead
+    angle: 0 deg
+    range: 10 ftit 12 init
+    humidity: 50%
+    data:
+      -
+        desc2: "Canna de schioppo di lunghezza nell'anima piedi 1 : 1 : 5"
+        mass: 1 ozit
+        diameter: 4 punti 10 atomi
+        charge: 9 italiandenari
+        data:
+          -
+            desc3: "Polvere fina da guerra"
+            final_velocity: 825 ftit/sec
+          -
+            desc3: "Polvere da caccia"
+            final_velocity: 811 ftit/sec
+          -
+            desc3: "Polvere da guerra giuoco"
+            final_velocity: 814 ftit/sec
+      -
+        desc2: "Canna sigata"
+        mass: 0.708333 ozit   # 5.667/8 oz
+        charge: 9 italiandenari
+        data:
+          -
+            desc3: "Polvere fina da guerra"
+            final_velocity: 1160 ftit/sec
+          -
+            desc3: "Polvere da caccia"
+            final_velocity: 1138 ftit/sec
+          -
+            desc3: "Polvere da guerra giuoco"
+            final_velocity: 1147 ftit/sec
+      -
+        desc2: "Canna da spingarda del calibri di once 2 1/2"
+        mass: 2.5 ozit
+        diameter: 6 punti 8 atomi
+        charge: 22.5 italiandenari
+        data:
+          -
+            desc3: "Polvere fina da guerra"
+            final_velocity: 1160 ftit/sec
+          -
+            desc3: "Polvere da caccia"
+            final_velocity: 1143 ftit/sec
+          -
+            desc3: "Polvere da guerra giuoco"
+            final_velocity: 1140 ftit/sec
+      -
+        desc2: "Canna de schioppo di lunga nell'anima piedi 2 : 1 : 7"
+        mass: 1 ozit
+        diameter: 4 punti 10 atomi
+        charge: 9 italiandenari
+        data:
+          -
+            desc3: "Polvere fina da guerra"
+            final_velocity: 1030 ftit/sec
+  -
+    desc: "Comparing powder types with a mortar"
+    ref2: "p. 219"
+    date: "1761-08"
+    material: iron
+    angle: 45 deg
+    mass: 33 lbit 4 ozit
+    charge: 1 ozit
+    data:
+      -
+        desc2: "Polvere moschetto"
+        range: 444 ftit
+      -
+        desc2: "Polvere fina da guerra"
+        range: 531 ftit
+      -
+        desc2: "Polvere da caccia"
+        range: 524 ftit
+      -
+        desc2: "Polvere da guerra giuoco"
+        range: 528 ftit
+  -
+    desc: "Comparing windage and shot density."
+    ref2: "p. 221"
+    material: lead
+    angle: 0 deg
+    range: 10 ftit 12 init
+    data:
+      -
+        desc2: "Spingarda"
+        charge: 30 italiandenari
+        data:
+          -
+            desc3: "1a sorta"
+            diameter: 7 punti 5 atomi
+            mass: 82.5 italiandenari
+            final_velocity: 1050 ftit/sec
+          -
+            desc3: "2a sorta"
+            diameter: 7 punti 1 atomi
+            mass: 70 italiandenari
+            final_velocity: 1100 ftit/sec
+          -
+            desc3: "3. sorta"
+            diameter: 7 punti 5 atomi
+            mass: 70 italiandenari
+            final_velocity: 1227 ftit/sec
+      -
+        desc2: "Schioppo"
+        charge: 9 italiandenari
+        data:
+          -
+            desc3: "1a sorta"
+            diameter: 4 punti 10 atomi
+            mass: 1 ozit
+            final_velocity: 1030 ftit/sec
+          -
+            desc3: "2a sorta"
+            mass: 0.875 ozit
+            final_velocity: 1088 ftit/sec
+          # I don't have enough information for the third sort
+  -
+    desc: "Comparing charges."
+    ref2: "p. 222"
+    material: lead
+    angle: 0 deg
+    range: 10 ftit 12 init
+    humidity: 50%
+    data:
+      -
+        desc2: "Canna da schiioppo"
+        mass: 1 ozit
+        diameter: 4 punti 10 atomi
+        data:
+          -
+            charge: 6 italiandenari
+            final_velocity: 830 ftit/sec
+          -
+            charge: 9 italiandenari
+            final_velocity: 1030 ftit/sec
+          -
+            charge: 12 italiandenari
+            final_velocity: 1177 ftit/sec
+      -
+        desc2: "Canna da spingarda"
+        mass: 2.5 ozit
+        diameter: 6 punti 8 atomi
+        data:
+          -
+            charge: 15 italiandenari
+            final_velocity: 892 ftit/sec
+          -
+            charge: 22.5 italiandenari
+            final_velocity: 1120 ftit/sec
+          -
+            charge: 30 italiandenari
+            final_velocity: 1222 ftit/sec
+  -
+    desc: "Comparing barrel lengths."
+    ref2: "p. 225"
+    material: lead
+    angle: 0 deg
+    range: 10 ftit 12 init
+    humidity: 50%
+    mass: 1 ozit
+    diameter: 4 punti 10 atomi
+    charge: 9 italiandenari
+    data:
+      -
+        desc2: "Piedi 0 : 6 : 1"
+        final_velocity: 615 ftit/sec
+      -
+        desc2: "Piedi 1 : 0 : 2"
+        final_velocity: 825 ftit/sec
+      -
+        desc2: "Piedi 2 : 0 : 4"
+        final_velocity: 1030 ftit/sec
+      -
+        desc2: "Piedi 2 : 10 :"
+        final_velocity: 1077 ftit/sec
+  -
+    desc: "Ranges of shot from guns fired at angles compared to their theoreticalranges in vacuum"
+    ref2: "p. 251"
+    material: lead
+    pressure: 17.5 initHg
+    date: "1764-06"
+    data:
+      -
+        desc2: "Carbina rigara"
+        mass: 0.708333 ozit   # 5.667/8 oz
+        charge: 9 italiandenari
+        data:
+          -
+            angle: 15 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 1596 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 35410 ftit
+          -
+            angle: 24.333 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 1662 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 53115 ftit
+          -
+            angle: 45 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 1584 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 70821 ftit
+      -
+        desc2: "Schioppo"
+        mass: 23.333 italiandenari
+        diameter: 4 punti 10 atomi
+        charge: 9 italiandenari
+        data:
+          -
+            angle: 7.25 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 1680 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 13959 ftit
+          -
+            angle: 15 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 2310 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 27918 ftit
+          -
+            angle: 24.333 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 2364 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 41877 ftit
+          -
+            angle: 45 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 2090 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 55836 ftit
+      -
+        desc2: "Spingarda"
+        mass: 3 ozit
+        diameter: 7 punti 1 atomi
+        charge: 30 italiandenari
+        data:
+          -
+            angle: 15 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 2544 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 31842 ftit
+          -
+            angle: 24.333 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 3102 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 47563 ftit
+          -
+            angle: 45 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 2940 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 63684 ftit
+      -
+        desc2: "Spingarda"
+        mass: 3.5 ozit
+        diameter: 7 punti 5 atomi
+        charge: 30 italiandenari
+        data:
+          -
+            angle: 15 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 3006 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 29103 ftit
+      -
+        desc2: "Spingarda"
+        diameter: 7 punti 5 atomi
+        mass: 70 italiandenari
+        charge: 30 italiandenari
+        data:
+          -
+            angle: 15 deg
+            data:
+              -
+                desc3: "Experiment"
+                range: 2890 ftit
+              -
+                desc3: "Theortical in vacuum"
+                technique: "theory"
+                pressure: 0
+                range: 36619 ftit
 
-# processed through page 216
