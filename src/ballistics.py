@@ -19,7 +19,6 @@ Ballistics program for spherical projectiles.
 See help for details.
 """
 
-import copy
 import math
 import md5
 import os
@@ -747,9 +746,10 @@ def display_status(state, params={}, last=False):
         LastDisplayStatus = time
     if not time:
         print 'Time,x,y,vx,vy,ax,ay,cd,Re,Mn'
-    state = copy.deepcopy(state)
-    for key in params:
-        state[key] = params[key]
+    if params and len(params):
+        state = state.copy()
+        for key in params:
+            state[key] = params[key]
     drag = state.get('drag_data', {})
     print '%5.3f %3.1f,%3.1f %3.1f,%3.1f %3.1f,%3.1f %5.3f %1.0f %4.2f' % (
         time, state.get('x', 0), state.get('y', 0), state.get('vx', 0),
@@ -872,7 +872,7 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
                 print '%s: %g,%g %g,%g %g,%g %3.1f' % (
                     unknown, minval, minerror, maxval, maxerror, intval,
                     interror, math.log10(intval/(maxval-minval)))
-    state = copy.deepcopy(initial_state)
+    state = initial_state.copy()
     state[unknown] = foundval
     (state, points) = trajectory(state)
     return state, points
@@ -886,7 +886,7 @@ def find_unknown_direct(unknown, state):
     """
     if state.get(unknown):
         return state
-    state = copy.deepcopy(state)
+    state = state.copy()
     state = determine_material(state, Verbose)
     # This could be extended to directly solve for any direct solution
     if (unknown == 'power_factor' and state.get('initial_velocity') and
@@ -1541,7 +1541,7 @@ def next_point(state, dt):
                   velocity, and other properties.
            dt: time delta in seconds.
     Exit:  newstate: the updated state."""
-    newstate = copy.deepcopy(state)
+    newstate = state.copy()
     x = state.get('x', 0)
     y = state.get('y', 0)
     vx = state.get('vx', 0)
@@ -1707,7 +1707,7 @@ def parse_user_params(default_params={}, user_params=None):
            other_params: a dictionary of parameters that were not present
                          in the default dictionary.
            items: a list of keys without values."""
-    params = copy.copy(default_params)
+    params = default_params.copy()
     other_params = {}
     items = []
     if user_params:
@@ -1715,7 +1715,7 @@ def parse_user_params(default_params={}, user_params=None):
             try:
                 key, value = param.split('=', 1)
                 if key not in params:
-                    item_params[key] = value
+                    params[key] = value
                     continue
                 if isinstance(params[key], int):
                     params[key] = int(value)
@@ -1870,7 +1870,7 @@ def trajectory(state):  # noqa - mccabe
                         an 'error' item if there is insufficient data for
                         calculation.
            points: a list of points along the trajectory."""
-    state = copy.deepcopy(state)
+    state = state.copy()
     # Set up the initial conditions
     state['time'] = 0
     state['x'] = 0
@@ -1941,7 +1941,7 @@ def trajectory(state):  # noqa - mccabe
         state = next_point(state, delta)
         if Verbose >= 4:
             pprint.pprint(state)
-    final_state = copy.deepcopy(state)
+    final_state = state.copy()
     if laststate:
         a = offset/(offset-lastoffset)
         if a > 2:
@@ -1978,7 +1978,7 @@ def trajectory_error(initial_state, unknown, unknown_value):
     Exit:  error: a metric of how far off the trajectory is from the
                     expected outcome."""
     global Verbose
-    state = copy.deepcopy(initial_state)
+    state = initial_state.copy()
     state[unknown] = unknown_value
     Verbose -= 2
     (state, points) = trajectory(state)
