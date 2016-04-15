@@ -312,7 +312,7 @@ if __name__ == '__main__':  # noqa - mccabe
         else:
             path = os.path.abspath(os.path.expanduser(arg))
             if not os.path.exists(path):
-                raise 'Input path %s does not exist' % path
+                raise Exception('Input path %s does not exist' % path)
             if os.path.isdir(path):
                 files.extend(sorted([os.path.abspath(os.path.join(path, file))
                                      for file in os.listdir(path)

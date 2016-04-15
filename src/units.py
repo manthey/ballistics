@@ -75,6 +75,8 @@ UnitsTable = [
      ParisFootInMeters, 'Paris foot'),
     (['infr', 'parisinch', 'frenchinch', 'parisinches', 'frenchinches'], False,
      ParisFootInMeters / 12, 'Paris foot'),
+    (['toise', 'toises', 'frenchfathom', 'frenchfathoms'], False,
+     ParisFootInMeters * 6, 'Paris toise (fathom)'),
 
     (['ftit', 'italianfoot', 'sardiniafoot', 'italianfeet', 'sardiniafeet',
       'pieliprando'], False, SardiniaFootInMeters,
@@ -86,6 +88,8 @@ UnitsTable = [
       'punti'], False, SardiniaFootInMeters / 144, 'Sardinia line (punto)'),
     (['italianatomi', 'sardiniaatomi', 'atomi'], False,
      SardiniaFootInMeters / 1728, 'Sardinia atomi (1/12 line or punto)'),
+    (['trabucco', 'trabucchi', 'trabucci', 'italianfathom', 'italianfathoms'],
+     False, SardiniaFootInMeters * 6, 'Sardinia trabucco (fathom)'),
 
     # Mass (reference is kg)
     (['gr', 'grain', 'grains'], False, AvoirdupoisPoundInKilograms / 7000,

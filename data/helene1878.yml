@@ -1,0 +1,22 @@
+---
+key: helene1878
+ref: "Helene, 1878"
+cms: "H\u00e9l\u00e8ne, Maxime.  <i>La Poudre a Canon et les Nouveaux Corps Explosifs.</i>  Paris: Librarie Hachette et Cie., 1878"
+summary: "An overview of a variety of explosives."
+date: "1878"
+data:
+  -
+    desc: "A mortar eprovette and the various expected proof values."
+    ref2: "p. 58-61"
+    angle: 45 deg
+    charge: 92 g
+    diameter: 191 mm
+    mass: 29.400 kg
+    data:
+      -
+        desc: "Poudre excellente"
+        range: 260 m
+      -
+        desc: "Poudre minima"
+        range: 225 m
+

@@ -1,0 +1,210 @@
+---
+key: dantoni1780
+ref: "d'Antoni, 1780"
+cms: "d'Antoni, Alessandro Vittorio Papacino.  <i>Dell'Uso Delle Armi Da Fuoco,</i> Torino: Nella Stamperia Reale, 1780."
+summary: "A treatise on fire arms."
+date: "1780"
+data:
+  -
+    desc: "A 32-pounder was fired with different amounts of saluting powder"
+    angle: 22.5 deg
+    mass: 32 lbit
+    material: iron
+    ref2: "p. 53"
+    date: "1759-08"
+    data:
+      -
+        charge: 12 lbit
+        range: 1172 trabucchi
+      -
+        charge: 16 lbit
+        range: 1316 trabucchi
+      -
+        charge: 20 lbit
+        range: 1376 trabucchi
+  -
+    ref2: "p. 78"
+    desc: "A comparison of the effects of windage between two 16 pounders."
+    date: "1759-07"
+    charge: 5 lbit
+    angle: 0 deg
+    initial_height: 2.75 ftit
+    data:
+      -
+        mass: 16.333 lbit
+        material: "iron"
+        # diameter: 784 of unknown units, possible 1/2 atomi
+        data:
+          -
+            desc2: "From a gun with a bore of 813 units"
+            data:
+              - range: 336 ftit
+              - range: 353 ftit
+              - range: 349.5 ftit
+              - range: 353.25 ftit
+              - range: 339.667 ftit
+              - range: 351 ftit
+          -
+            desc2: "From a gun with a bore of 819 units"
+            data:
+              - range: 444 ftit
+              - range: 352.5 ftit
+              - range: 425.667 ftit
+              - range: 436 ftit
+              - range: 442.333 ftit
+              - range: 379.5 ftit
+      -
+        mass: 16.1667 lbit
+        material: "iron"
+        # diameter: 774 units
+        data:
+          -
+            desc2: "From a gun with a bore of 813 units"
+            data:
+              - range: 394.333 ftit
+              - range: 344 ftit
+              - range: 403.667 ftit
+              - range: 397 ftit
+          -
+            desc2: "From a gun with a bore of 819 units"
+            data:
+              - range: 354.667 ftit
+              - range: 379 ftit
+              - range: 355.667 ftit
+              - range: 355 ftit
+  -
+    desc: "Ranges of French guns"
+    ref2: "p. 96"
+    angle: 45 deg
+    material: iron
+    data:
+      -
+        desc2: "French 24 pounder"
+        data:
+          -
+            mass: 24 lbfr
+            charge: 16 lbfr
+            range: 2250 toises
+          -
+            mass: 32 lbit
+            charge: 21.333 lbit
+            range: 1422.8333 trabucchi
+      -
+        desc2: "French 16 pounder"
+        data:
+          -
+            mass: 16 lbfr
+            charge: 10.667 lbfr
+            range: 2020 toises
+          -
+            mass: 21.333 lbit
+            charge: 14.222 lbit
+            range: 1277.333 trabucchi
+      -
+        desc2: "French 12 pounder"
+        data:
+          -
+            mass: 12 lbfr
+            charge: 8 lbfr
+            range: 1870 toises
+          -
+            mass: 16 lbit
+            charge: 10.667 lbit
+            range: 1182.5 trabucchi
+      -
+        desc2: "French 8 pounder"
+        data:
+          -
+            mass: 8 lbfr
+            charge: 5.667 lbfr
+            range: 1660 toises
+          -
+            mass: 10.667 lbit
+            charge: 7.111 lbit
+            range: 1049.667 trabucchi
+      -
+        desc2: "French 4 pounder"
+        data:
+          -
+            mass: 4 lbfr
+            charge: 2.667 lbfr
+            range: 1520 toises
+          -
+            mass: 5.333 lbit
+            charge: 3.555 lbit
+            range: 961.667 trabucchi
+  -
+    desc: "Some initial velocities given in a table for calculating damage to fortifications."
+    ref2: "p. 270, 290"
+    material: iron
+    angle: 0 deg
+    technique: theory
+    data:
+      -
+        mass: 32 lbit
+        diameter: 41 punti
+        data:
+          -
+            charge: 16 lbit
+            initial_velocity: 900 ftit/sec
+          -
+            charge: 12 lbit
+            initial_velocity: 800 ftit/sec
+      -
+        mass: 16 lbit
+        diameter: 32.5 punti
+        data:
+          -
+            charge: 8 lbit
+            initial_velocity: 960 ftit/sec
+          -
+            charge: 6 lbit
+            initial_velocity: 840 ftit/sec
+          -
+            charge: 3 lbit
+            initial_velocity: 735 ftit/sec
+      -
+        mass: 8 lbit
+        diameter: 26 punti
+        data:
+          -
+            charge: 6 lbit
+            initial_velocity: 1000 ftit/sec
+          -
+            charge: 4 lbit
+            initial_velocity: 860 ftit/sec
+          -
+            charge: 2 lbit
+            initial_velocity: 750 ftit/sec
+          -
+            charge: 2 lbit
+            initial_velocity: 716 ftit/sec
+          -
+            charge: 1.333 lbit
+            initial_velocity: 580 ftit/sec
+          -
+            charge: 1.333 lbit
+            initial_velocity: 400 ftit/sec
+      -
+        mass: 4 lbit
+        diameter: 20.5 punti
+        data:
+          -
+            charge: 3 lbit
+            initial_velocity: 1020 ftit/sec
+          -
+            charge: 2 lbit
+            initial_velocity: 870 ftit/sec
+          -
+            charge: 1 lbit
+            initial_velocity: 760 ftit/sec
+          -
+            charge: 1 lbit
+            initial_velocity: 714 ftit/sec
+          -
+            charge: 0.667 lbit
+            initial_velocity: 580 ftit/sec
+          -
+            charge: 0.667 lbit
+            initial_velocity: 400 ftit/sec
+  # Pages 294 and 296 repeat information from pages 270 and 290

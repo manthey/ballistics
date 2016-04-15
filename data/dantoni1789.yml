@@ -518,4 +518,200 @@ data:
                 pressure: 0
                 range: 16307 yds
     # There is insufficient data for the final condition
+  -
+    desc: "A 32 pounder was fired with different amounts of saluting powder"
+    angle: 22.5 deg
+    mass: 32 lbit
+    material: iron
+    ref2: "p. 117"
+    date: "1759-08"
+    data:
+      -
+        charge: 9 lb 4 oz
+        range: 3968 yds
+      -
+        charge: 13 lb 2 oz
+        range: 4456 yds
+      -
+        charge: 16 lb 6 oz
+        range: 4659 yds
+  -
+    ref2: "p. 125"
+    desc: "A comparison of the effects of windage between two 16 pounders."
+    date: "1759-07"
+    charge: 4 lb 2 oz
+    angle: 0 deg
+    initial_height: 5 ft
+    data:
+      -
+        mass: 16.333 lbit
+        material: "iron"
+        # diameter: 784 of unknown units
+        data:
+          -
+            desc2: "From a gun with a bore of 813 units"
+            data:
+              - range: 188 yds
+              - range: 198 yds
+              - range: 196.75 yds
+              - range: 198.25 yds
+              - range: 224.333 yds
+              - range: 197 yds
+          -
+            desc2: "From a gun with a bore of 819 units"
+            data:
+              - range: 249 yds
+              - range: 197.75 yds
+              - range: 224.5 yds
+              - range: 245 yds
+              - range: 248.333 yds
+              - range: 213.5 yds
+      -
+        mass: 16.1667 lbit
+        material: "iron"
+        # diameter: 774 units
+        data:
+          -
+            desc2: "From a gun with a bore of 813 units"
+            data:
+              - range: 221.667 yds
+              - range: 193 yds
+              - range: 226.667 yds
+              - range: 223 yds
+          -
+            desc2: "From a gun with a bore of 819 units"
+            data:
+              - range: 199.333 yds
+              - range: 213 yds
+              - range: 199.667 yds
+              - range: 199 yds
+  -
+    desc: "Ranges of French guns"
+    ref2: "p. 131"
+    angle: 45 deg
+    material: iron
+    data:
+      -
+        desc2: "French 24 pounder"
+        mass: 24 lbfr
+        charge: 16 lbfr
+        range: 4817 yds
+      -
+        desc2: "French 16 pounder"
+        mass: 16 lbfr
+        charge: 10.667 lbfr
+        range: 4324 yds
+      -
+        desc2: "French 12 pounder"
+        mass: 12 lbfr
+        charge: 8 lbfr
+        range: 4002 yds
+      -
+        desc2: "French 8 pounder"
+        mass: 8 lbfr
+        charge: 5.667 lbfr
+        range: 3552 yds
+      -
+        desc2: "French 4 pounder"
+        mass: 4 lbfr
+        charge: 2.667 lbfr
+        range: 3254 yds
+  -
+    desc: "Some initial velocities given in a table for calculating damage to fortifications."
+    ref2: "p. 192, 199"
+    material: iron
+    angle: 0 deg
+    technique: theory
+    data:
+      -
+        mass: 32 lbit
+        diameter: 5.760 in
+        data:
+          -
+            charge: 13 lb 2 oz
+            initial_velocity: 1517 ft/sec
+          -
+            charge: 9 lb 13.5 oz
+            initial_velocity: 1350 ft/sec
+      -
+        mass: 16 lbit
+        diameter: 4.566 in
+        data:
+          -
+            charge: 6 lb 9 oz
+            initial_velocity: 1618 ft/sec
+          -
+            charge: 4 lb 14.5 oz
+            initial_velocity: 1416 ft/sec
+          -
+            charge: 3 lb 10.75 oz
+            initial_velocity: 1240 ft/sec
+      -
+        mass: 8 lbit
+        diameter: 3.653 in
+        data:
+          -
+            charge: 4 lb 14.75 oz
+            initial_velocity: 1696 ft/sec
+          -
+            charge: 3 lb 4.5 oz
+            initial_velocity: 1450 ft/sec
+          -
+            charge: 2 lb 7.5 oz
+            initial_velocity: 1265 ft/sec
+          -
+            charge: 2 lb 7.5 oz
+            initial_velocity: 1206 ft/sec
+          -
+            charge: 1 lb 10.75 oz
+            initial_velocity: 978 ft/sec
+          -
+            charge: 1 lb 10.75 oz
+            initial_velocity: 675 ft/sec
+      -
+        mass: 4 lbit
+        diameter: 2.881 in
+        data:
+          -
+            charge: 2 lb 7.5 oz
+            initial_velocity: 1720 ft/sec
+          -
+            charge: 1 lb 10.75 oz
+            initial_velocity: 1465 ft/sec
+          -
+            charge: 1 lb 3.75 oz
+            initial_velocity: 1283 ft/sec
+          -
+            charge: 1 lb 3.75 oz
+            initial_velocity: 1222 ft/sec
+          -
+            charge: 0 lb 13.25 oz
+            initial_velocity: 978 ft/sec
+          -
+            charge: 0 lb 13.25 oz
+            initial_velocity: 675 ft/sec
+  # Pages 201 and 202 repeat values from 191 and 199
+  -
+    desc: "Maximum ranges of guns.  I've assumed a 45 degree angle, but this probably isn't the case, as I would expect longer ranges from such an angle."
+    # The values for musquets, wall-pieces, and mortars is insufficient for
+    # calculation
+    angle: 45 deg  # assumed
+    material: iron
+    data:
+      -
+        mass: 4 lbit
+        charge: 2 lbit
+        range: 3035 yds
+      -
+        mass: 8 lbit
+        charge: 4 lbit
+        range: 3272 yds
+      -
+        mass: 16 lbit
+        charge: 6 lbit
+        range: 3541 yds
+      -
+        mass: 32 lbit
+        charge: 12 lbit
+        range: 4046 yds
 
