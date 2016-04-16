@@ -1,6 +1,6 @@
 ---
 key: helie1865
-ref: "Helie, 1878"
+ref: "H\u00e9lie, 1878"
 cms: "H\u00e9lie.  <i>Trait\u00e9 de Balistique Exp\u00e9rimentle.</i>  Paris: Librarie Militaire, 1865."
 summary: "A discussion of ballistics effects."
 date: "1865"
@@ -564,5 +564,30 @@ data:
           -
             charge: 2.00 kg
             initial_velocity: 560 m/s
+  -
+    desc: "Comparison of intitial velocity with weight of shell."
+    ref2: "p. 116"
+    angle: 0 deg
+    date: "1852"
+    data:
+      -
+        diameter: 0.928 dm
+        charge: 1 kg
+        data:
+          -
+            mass: 1.5 kg
+            initial_velocity: 641 m/s
+          -
+            mass: 2.0 kg
+            initial_velocity: 567 m/s
+          -
+            mass: 2.5 kg
+            initial_velocity: 517 m/s
+          -
+            mass: 3.0 kg
+            initial_velocity: 477 m/s
+          -
+            mass: 3.5 kg
+            initial_velocity: 443 m/s
 
-# Through page 115
+# Through page 116

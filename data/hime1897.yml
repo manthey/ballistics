@@ -1,0 +1,62 @@
+---
+key: hime1897
+ref: "Hime, 1897"
+cms: "Hime, H. W. L., <i>Stray Military Papers</i>, London: Longmans, Green, and Co., 1897"
+summary: "This includes a chapter on field artillery and a section of proofs."
+date: "1897"
+data:
+  -
+    ref2: "p. 120"
+    desc: "Muzzle velocities of modern guns compared to 17th century guns"
+    data:
+      -
+        desc2: "Demi-culverin, from Light to the Art of Gunnery"
+        mass: 9 lb
+        diameter: 4.3 in
+        charge: 6.25 lb
+        initial_velocity: 1140 ft/s
+      -
+        desc2: "9 Pr. S.B., 1862"
+        mass: 9 lb
+        diameter: 4.2 in
+        charge: 2.5 lb
+        initial_velocity: 1613 ft/s
+      -
+        desc2: "Saker, from Light to the Art of Gunnery"
+        mass: 4.75 lb
+        diameter: 3.58 in
+        charge: 3.25 lb
+        initial_velocity: 1050 ft/s
+      -
+        desc2: "6 Pr. S.B., 1862"
+        mass: 6 lb
+        diameter: 3.6 in
+        charge: 1.5 lb
+        initial_velocity: 1485 ft/s
+  -
+    ref2: "p. 127"
+    desc: "Proof ranges of modern guns compared to 17th century guns"
+    material: iron
+    data:
+      -
+        desc2: "9 Pr. S.B., 1858"
+        date: "1858"
+        mass: 9 lb
+        charge: 2.5 lb
+        angle: 1 deg
+        range: 714 yds
+      -
+        desc2: "6 Pr. S.B., 1856"
+        date: "1856"
+        mass: 6 lb
+        charge: 1.5 lb
+        angle: 1.5 deg
+        range: 688 yds
+      -
+        desc2: "4 3/4 Pr. Saker, 1640"
+        date: "1640"
+        mass: 4.75 lb
+        charge: 3.0 lb
+        angle: 5 deg
+        range: 703 yds
+

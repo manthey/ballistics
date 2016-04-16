@@ -143,14 +143,15 @@ def calculate_cases(results, cases, verbose, pool=None):
             tasks.append(pool.apply_async(calculate_case, (
                 hash, cases[hash]['args'], cases[hash]['info'], verbose)))
         while len(tasks):
+            lentasks = len(tasks)
             for pos in xrange(len(tasks) - 1, -1, -1):
                 task = tasks[pos]
                 if task.ready():
                     hash, state, points = task.get()
                     calculate_cases_results(hash, state, points, results)
                     del tasks[pos]
-                    if verbose >= 1:
-                        print '%d/%d left' % (len(tasks), len(hashes))
+            if verbose >= 1 and len(tasks) < lentasks:
+                print '%d/%d left' % (len(tasks), len(hashes))
             if len(tasks):
                 tasks[0].wait(0.1)
     return True
