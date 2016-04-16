@@ -1,0 +1,568 @@
+---
+key: helie1865
+ref: "Helie, 1878"
+cms: "H\u00e9lie.  <i>Trait\u00e9 de Balistique Exp\u00e9rimentle.</i>  Paris: Librarie Militaire, 1865."
+summary: "A discussion of ballistics effects."
+date: "1865"
+data:
+  -
+    desc: "Comparison of diametre due mandrin de la gargousse (of the diameter of the form of cartridges containing powder)."
+    date: "1843"
+    ref2: "p. 38"
+    angle: 0 deg
+    diameter: 1.596 dm
+    mass: 15.100 kg
+    data:
+      -
+        desc2: "118 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 245.4 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 356.7 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 404.2 m/s
+          -
+            charge: 5.00 kg
+            initial_velocity: 427.9 m/s
+      -
+        desc2: "128 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 247.3 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 359.2 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 405.2 m/s
+          -
+            charge: 5.00 kg
+            initial_velocity: 433.2 m/s
+      -
+        desc2: "138 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 247.3 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 367.4 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 411.6 m/s
+          -
+            charge: 5.00 kg
+            initial_velocity: 449.4 m/s
+      -
+        desc2: "148 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 249.3 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 367.5 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 426.8 m/s
+          -
+            charge: 5.00 kg
+            initial_velocity: 456.5 m/s
+      -
+        desc2: "158 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 249.2 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 374.9 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 420.2 m/s
+          -
+            charge: 5.00 kg
+            initial_velocity: 449.4 m/s
+  -
+    desc: "Comparison of diametre due mandrin de la gargousse (of the diameter of the form of cartridges containing powder), second set of experiments."
+    date: "1844"
+    ref2: "p. 45"
+    angle: 0 deg
+    diameter: 1.607 dm
+    mass: 10.610 kg
+    data:
+      -
+        desc2: "118 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 297.9 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 442.7 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 498.0 m/s
+      -
+        desc2: "128 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 304.0 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 447.4 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 508.4 m/s
+      -
+        desc2: "138 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 303.4 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 462.6 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 509.2 m/s
+      -
+        desc2: "148 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 309.4 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 476.4 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 529.8 m/s
+      -
+        desc2: "158 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 310.4 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 473.4 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 523.8 m/s
+  -
+    desc: "Comparison of diametre due mandrin de la gargousse (of the diameter of the form of cartridges containing powder), third set of experiments."
+    ref2: "p. 49"
+    angle: 0 deg
+    diameter: 1.607 dm
+    mass: 10.610 kg
+    data:
+      -
+        desc2: "118 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 310.7 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 448.4 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 502.3 m/s  # suspect.  The text reads 5 2.3
+      -
+        desc2: "128 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 311.9 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 453.4 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 512.0 m/s
+      -
+        desc2: "138 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 313.0 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 459.1 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 506.3 m/s
+      -
+        desc2: "148 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 314.4 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 482.6 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 534.8 m/s
+      -
+        desc2: "158 mm diametre mandrin"
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 312.1 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 479.1 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 536.0 m/s
+  -
+    desc: "Comparison of windage."
+    ref2: "p. 57-59"
+    angle: 0 deg
+    data:
+      -
+        diameter: 1.636 dm
+        mass: 15.398 kg
+        data:
+          -
+            charge: 1.0 kg
+            initial_velocity: 288.3 m/s
+          -
+            charge: 2.5 kg
+            initial_velocity: 415.6 m/s
+          -
+            charge: 5.0 kg
+            initial_velocity: 482.1 m/s
+      -
+        diameter: 1.613 dm
+        mass: 15.402 kg
+        data:
+          -
+            charge: 1.0 kg
+            initial_velocity: 268.3 m/s
+          -
+            charge: 2.5 kg
+            initial_velocity: 396.5 m/s
+          -
+            charge: 5.0 kg
+            initial_velocity: 465.8 m/s
+      -
+        diameter: 1.590 dm
+        mass: 15.410 kg
+        data:
+          -
+            charge: 1.0 kg
+            initial_velocity: 247.2 m/s
+          -
+            charge: 2.5 kg
+            initial_velocity: 373.6 m/s
+          -
+            charge: 5.0 kg
+            initial_velocity: 417.0 m/s
+      -
+        diameter: 1.568 dm
+        mass: 15.405 kg
+        data:
+          -
+            charge: 1.0 kg
+            initial_velocity: 222.7 m/s
+          -
+            charge: 2.5 kg
+            initial_velocity: 352.7 m/s
+          -
+            charge: 5.0 kg
+            initial_velocity: 420.7 m/s
+  -
+    desc: "Comparison of windage with solid shot."
+    ref2: "p. 62"
+    angle: 0 deg
+    data:
+      -
+        charge: 1.0 kg
+        data:
+          -
+            diameter: 1.636 dm
+            mass: 15.424 kg
+            initial_velocity: 280.1 m/s
+          -
+            diameter: 1.613 dm
+            mass: 15.366 kg
+            initial_velocity: 268.0 m/s
+          -
+            diameter: 1.590 dm
+            mass: 15.397 kg
+            initial_velocity: 243.9 m/s
+          -
+            diameter: 1.568 dm
+            mass: 15.405 kg
+            initial_velocity: 219.6 m/s
+      -
+        charge: 2.5 kg
+        data:
+          -
+            diameter: 1.636 dm
+            mass: 15.424 kg
+            initial_velocity: 433.3 m/s
+          -
+            diameter: 1.613 dm
+            mass: 15.385 kg
+            initial_velocity: 412.0 m/s
+          -
+            diameter: 1.590 dm
+            mass: 15.396 kg
+            initial_velocity: 386.3 m/s
+          -
+            diameter: 1.568 dm
+            mass: 15.393 kg
+            initial_velocity: 363.2 m/s
+      -
+        charge: 5.0 kg
+        data:
+          -
+            diameter: 1.636 dm
+            mass: 15.410 kg
+            initial_velocity: 513.6 m/s
+          -
+            diameter: 1.613 dm
+            mass: 15.416 kg
+            initial_velocity: 494.8 m/s
+          -
+            diameter: 1.590 dm
+            mass: 15.403 kg
+            initial_velocity: 477.4 m/s
+          -
+            diameter: 1.568 dm
+            mass: 15.394 kg
+            initial_velocity: 488.0 m/s
+  -
+    desc: "Comparison of windage with shells."
+    ref2: "p. 65"
+    angle: 0 deg
+    data:
+      -
+        charge: 1.0 kg
+        data:
+          -
+            diameter: 1.636 dm
+            mass: 10.829 kg
+            initial_velocity: 342.7 m/s
+          -
+            diameter: 1.607 dm
+            mass: 10.829 kg
+            initial_velocity: 314.5 m/s
+          -
+            diameter: 1.580 dm
+            mass: 10.829 kg
+            initial_velocity: 284.3 m/s
+          -
+            diameter: 1.550 dm
+            mass: 10.826 kg
+            initial_velocity: 255.2 m/s
+          -
+            diameter: 1.500 dm
+            mass: 10.828 kg
+            initial_velocity: 203.0 m/s
+      -
+        charge: 2.5 kg
+        data:
+          -
+            diameter: 1.636 dm
+            mass: 10.827 kg
+            initial_velocity: 408.8 m/s
+          -
+            diameter: 1.607 dm
+            mass: 10.825 kg
+            initial_velocity: 470.7 m/s
+          -
+            diameter: 1.580 dm
+            mass: 10.826 kg
+            initial_velocity: 442.2 m/s
+          -
+            diameter: 1.550 dm
+            mass: 10.825 kg
+            initial_velocity: 413.1 m/s
+          -
+            diameter: 1.500 dm
+            mass: 10.820 kg
+            initial_velocity: 360.3 m/s
+      -
+        charge: 3.75 kg
+        data:
+          -
+            diameter: 1.636 dm
+            mass: 10.830 kg
+            initial_velocity: 533.6 m/s
+          -
+            diameter: 1.607 dm
+            mass: 10.827 kg
+            initial_velocity: 518.6 m/s
+          -
+            diameter: 1.580 dm
+            mass: 10.826 kg
+            initial_velocity: 491.7 m/s
+          -
+            diameter: 1.550 dm
+            mass: 10.825 kg
+            initial_velocity: 466.5 m/s
+          -
+            diameter: 1.500 dm
+            mass: 10.826 kg
+            initial_velocity: 416.3 m/s
+      -
+        charge: 5.0 kg
+        data:
+          -
+            diameter: 1.636 dm
+            mass: 10.827 kg
+            initial_velocity: 569.8 m/s
+          -
+            diameter: 1.607 dm
+            mass: 10.829 kg
+            initial_velocity: 536.3 m/s
+          -
+            diameter: 1.580 dm
+            mass: 10.825 kg
+            initial_velocity: 511.1 m/s
+          -
+            diameter: 1.550 dm
+            mass: 10.825 kg
+            initial_velocity: 491.3 m/s
+          -
+            diameter: 1.500 dm
+            mass: 10.827 kg
+            initial_velocity: 456.2 m/s
+  -
+    desc: "Comparison of cannon performance with theory.  I've only recorded the measured data, not the theoretical values."
+    ref2: "p. 113"
+    angle: 0 deg
+    date: "1842"
+    data:
+      -
+        desc2: "Canon de 24"
+        diameter: 1.483 dm
+        mass: 12.030 kg
+        data:
+          -
+            charge: 1.0 kg
+            initial_velocity: 281 m/s
+          -
+            charge: 1.5 kg
+            initial_velocity: 359 m/s
+          -
+            charge: 2.0 kg
+            initial_velocity: 395 m/s
+          -
+            charge: 2.5 kg
+            initial_velocity: 423 m/s
+          -
+            charge: 3.0 kg
+            initial_velocity: 467 m/s
+          -
+            charge: 4.0 kg
+            initial_velocity: 489 m/s
+          -
+            charge: 5.0 kg
+            initial_velocity: 552 m/s
+      -
+        desc2: "Canon de 16"
+        diameter: 1.293 dm
+        mass: 8.070 kg
+        data:
+          -
+            charge: 0.5 kg
+            initial_velocity: 245 m/s
+          -
+            charge: 1.0 kg
+            initial_velocity: 359 m/s
+          -
+            charge: 1.333 kg
+            initial_velocity: 404 m/s
+          -
+            charge: 1.5 kg
+            initial_velocity: 423 m/s
+          -
+            charge: 2.0 kg
+            initial_velocity: 463 m/s
+          -
+            charge: 2.667 kg
+            initial_velocity: 495 m/s
+          -
+            charge: 3.00 kg
+            initial_velocity: 513 m/s
+          -
+            charge: 3.500 kg
+            initial_velocity: 533 m/s
+          -
+            charge: 4.00 kg
+            initial_velocity: 552 m/s
+      -
+        desc2: "Canon de 12 de place"
+        diameter: 1.182 dm
+        mass: 6.070 kg
+        data:
+          -
+            charge: 0.375 kg
+            initial_velocity: 249 m/s
+          -
+            charge: 0.500 kg
+            initial_velocity: 294 m/s
+          -
+            charge: 0.750 kg
+            initial_velocity: 356 m/s
+          -
+            charge: 1.00 kg
+            initial_velocity: 422 m/s
+          -
+            charge: 1.25 kg
+            initial_velocity: 462 m/s
+          -
+            charge: 1.5 kg
+            initial_velocity: 491 m/s
+          -
+            charge: 2.0 kg
+            initial_velocity: 539 m/s
+          -
+            charge: 2.5 kg
+            initial_velocity: 556 m/s
+          -
+            charge: 3.0 kg
+            initial_velocity: 561 m/s
+      -
+        desc2: "Canon de 8 de place"
+        diameter: 1.029 dm
+        mass: 4.056 kg
+        data:
+          -
+            charge: 0.250 kg
+            initial_velocity: 241 m/s
+          -
+            charge: 0.50 kg
+            initial_velocity: 370 m/s
+          -
+            charge: 0.75 kg
+            initial_velocity: 448 m/s
+          -
+            charge: 1.00 kg
+            initial_velocity: 489 m/s
+          -
+            charge: 1.25 kg
+            initial_velocity: 507 m/s
+          -
+            charge: 1.50 kg
+            initial_velocity: 528 m/s
+          -
+            charge: 1.75 kg
+            initial_velocity: 549 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 560 m/s
+
+# Through page 115
