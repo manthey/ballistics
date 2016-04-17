@@ -17,7 +17,7 @@ data:
       -
         mass: 16.333 lbit
         material: "iron"
-        # diameter: 784 of unknown units
+        diameter_note: 784 of unknown units
         data:
           -
             desc2: "From a gun with a bore of 813 units"
@@ -40,7 +40,7 @@ data:
       -
         mass: 16.1667 lbit
         material: "iron"
-        # diameter: 774 units
+        diameter_note: 774 units
         data:
           -
             desc2: "From a gun with a bore of 813 units"
@@ -83,7 +83,8 @@ data:
     material: "iron"
     charge: 2 oz
     mass: 67 lb 12 oz
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     data:
       -
         desc2: "Bombay powder, received from Dum Dum"
@@ -151,8 +152,9 @@ data:
       -
         desc2: "Ishapore ridle, 30 hours glazed"
         range: 93 yds
-  # on p. 194 are some results, which are just averages from p. 120, and
-  # therefore have not been repeated
+  -
+    skip: true
+    skip_note: "on p. 194 are some results, which are just averages from p. 120, and therefore have not been repeated"
   -
     ref2: "p. 195-197"
     desc: "Recorded ranges of gunpowder, taken from different authorities"
@@ -277,8 +279,9 @@ data:
             mass: 41 lb 10 oz
             charge: 1 lb 0 oz 0 dr
             range: 652 yds
-          # There is a point blank record, but I have insufficient data to use
-          # it in a meaningful way
+          -
+            skip: true
+            skip_note: "There is a point blank record, but I have insufficient data to use it in a meaningful way"
           -
             angle: 1.5 deg
             mass: 24 lb
@@ -295,8 +298,9 @@ data:
             mass: 41 lb 10 oz
             charge: 1 lb 0 oz 0 dr
             range: 589 yds
-          # There is a point blank record, but I have insufficient data to use
-          # it in a meaningful way
+          -
+            skip: true
+            skip_note: "There is a point blank record, but I have insufficient data to use it in a meaningful way"
           -
             angle: 1.5 deg
             mass: 24 lb
@@ -355,8 +359,9 @@ data:
             mass: 46 lb 0 oz
             charge: 1 lb 0 oz 4 dr
             range: 786 yds
-          # There is a point blank record, but I have insufficient data to use
-          # it in a meaningful way
+          -
+            skip: true
+            skip_note: "There is a point blank record, but I have insufficient data to use it in a meaningful way"
           -
             angle: 2 deg
             mass: 24 lb
@@ -379,8 +384,9 @@ data:
             mass: 46 lb 0 oz
             charge: 1 lb 0 oz 0 dr
             range: 866 yds
-          # There is a point blank record, but I have insufficient data to use
-          # it in a meaningful way
+          -
+            skip: true
+            skip_note: "There is a point blank record, but I have insufficient data to use it in a meaningful way"
           -
             angle: 2 deg
             mass: 24 lb
@@ -436,7 +442,7 @@ data:
           -
             angle: 45 deg
             diameter: 8 in
-            # Was this a shell?
+            diameter_note: Was this a shell?
             charge: 1 lb 0 oz 0 dr
             range: 863 yds
       -
@@ -450,8 +456,9 @@ data:
             mass: 45 lb 0 oz
             charge: 1 lb 0 oz 0 dr
             range: 750 yds
-          # There is a point blank record, but I have insufficient data to use
-          # it in a meaningful way
+          -
+            skip: true
+            skip_note: "There is a point blank record, but I have insufficient data to use it in a meaningful way"
           -
             mass: 24 lb
             charge: 8 lb
@@ -466,8 +473,10 @@ data:
     ref2: "p. 201"
     desc: "Average of the Proof Report of 1850-51"
     angle: 45 deg
-    diameter: 7.92 in  # assumed
-    mass: 68 lb        # assumed
+    diameter: 7.92 in
+    diameter_note: assumed
+    mass: 68 lb
+    mass_note: assumed
     date: "1851"
     data:
       -
@@ -600,8 +609,10 @@ data:
     ref2: "p. 201"
     desc: "Average from Proog Reports, 1853"
     angle: 45 deg
-    diameter: 7.92 in  # assumed
-    mass: 68 lb        # assumed
+    diameter: 7.92 in
+    diameter_note: assumed
+    mass: 68 lb
+    mass_note: assumed
     date: "1853"
     data:
       -
@@ -710,13 +721,15 @@ data:
     ref2: "p. 222"
     desc: "Sir William Armstrong fires a gun using electrical ignition at multiple spots in the charge"
     mass: 12 lb
-    material: iron  # assumed
+    material: iron
+    material_note: assumed
     charge: 2 lb
     initial_velocity: 1740 ft/s
   -
     desc: "Comparative Proof of Gunpowder taken at Ishapore on the 22nd of November, 1844, of powder of different sizes of grains, that was passed through the upper and retained by the next lower sieve."
     ref2: "p. 238"
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     date: "1844-11-22"
     data:
       -
@@ -800,7 +813,8 @@ data:
   -
     desc: "Comparative Proof of Gunpowder taken at Ishapore Powder Manufactory, on the 3rd December, 1844, with powder passed through the following sieves, all the larger grain extracted being the complement of the run of the Corning House."
     ref2: "p. 238"
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     date: "1844-12-03"
     data:
       -
@@ -871,7 +885,8 @@ data:
   -
     desc: "Experiments with very large grain sizes."
     ref2: "p. 239"
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     mass: 68 lb
     diameter: 7.92 in
     charge: 2 oz
@@ -894,7 +909,8 @@ data:
   -
     desc: "Experiments on mixing grain sizes."
     ref2: "p. 239"
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     mass: 68 lb
     diameter: 7.92 in
     charge: 2 oz
@@ -953,7 +969,8 @@ data:
   -
     desc: "To indicate the improvment by a slight mixture of musketry powder with the ordnance powder; the difference would be infinitely more remarkable in long charges.  From a very inferior, bad mortar, rejected for proof, No. 173.  This mortar is 20 yards in range inferior to No. 8."
     ref2: "p. 239"
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     mass: 68 lb
     diameter: 7.92 in
     charge: 2 oz
@@ -976,7 +993,8 @@ data:
   -
     desc: "Comparison between English and Ishapore powders with identical grain sizes."
     ref2: "p. 240"
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     mass: 68 lb
     diameter: 7.92 in
     charge: 2 oz
@@ -987,12 +1005,13 @@ data:
       -
         desc2: "Ishapore similar to the above"
         range: 91.6 yds
-  # On page 259 there is a comparison of rifled ordnance.  Since these fire
-  # elogated shot, the current ballistics program is incapbable of modelling
-  # the behavior properly, and these tests are skipped.
+  -
+    skip: true
+    skip_note: "On page 259 there is a comparison of rifled ordnance.  Since these fire elogated shot, the current ballistics program is incapbable of modelling the behavior properly, and these tests are skipped."
   -
     desc: "Trial of Allahabad Powder dried by Stream Heat.  All trials are with Ordnance powder.  The notes indicate that the Allahabad powder also used very good charcoal and exceptionally pure saltpetre."
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     data:
     -
       date: "1828-01-14"
@@ -1012,7 +1031,8 @@ data:
           range: 28.333 yds
         -
           desc2: "Bombay, 1825"
-          range: 6 yds  # the entry read 5 2/2
+          range: 6 yds
+          range_note: "the entry read 5 2/2"
     -
       date: "1828-01-15"
       ref2: "p. 265"
@@ -1334,7 +1354,6 @@ data:
         -
           desc2: "Ishapore, 1824-25"
           range: 1465.333 yds
-#############
     -
       date: "1828-08-19"
       ref2: "p. 269"

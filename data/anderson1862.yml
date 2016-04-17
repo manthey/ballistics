@@ -6,10 +6,12 @@ summary: An excellent review of the technology used in India.
 date: "1862"
 data:
   -
-    diameter: 7.85 in  # from p. 115
+    diameter: 7.85 in
+    diameter_note: from p. 115
     charge: 2 oz
     mass: 68 lb
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     ref2: "p. 80"
     data:
       -
@@ -231,10 +233,12 @@ data:
             desc2: "Bombay ordnance powder from 1835-1836"
             range: 81 yds
   -
-    diameter: 7.75 in  # if a 68 lb ball is 7.85
+    diameter: 7.75 in
+    diameter_note: "if a 68 lb ball is 7.85"
     charge: 1 lb
     mass: 65.5 lb
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     ref2: "p. 80"
     data:
       -
@@ -329,10 +333,13 @@ data:
           -
             desc2: "Bombay ordnance powder from 1835-1836"
             range: 528 yds
-    diameter: 7.85 in  # assumed
+    diameter: 7.85 in
+    diameter_note: assumed
     charge: 3 oz
-    mass: 50 lb  # shell
-    angle: 45 deg  # from p. 120
+    mass: 50 lb
+    mass_note: shell
+    angle: 45 deg
+    angle_note: from p. 120
     ref2: "p. 81"
     data:
       -
@@ -395,10 +402,12 @@ data:
           -
             desc2: "400 revolutions"
             range: 141 yds
-    diameter: 7.85 in  # from p. 115
+    diameter: 7.85 in
+    diameter_note: from p. 115
     charge: 2 oz
     mass: 68 lb
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     ref2: "p. 81"
     data:
       -
@@ -412,7 +421,8 @@ data:
         range: 95.167 yds
   -
     desc: "Powder milled by horses, 300 revolutions in 1 1/2 hours"
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     ref2: "p. 82"
     data:
       -
@@ -593,7 +603,8 @@ data:
             range: 554 yds
       -
         diameter: 7.85 in
-        mass: 80 lb  # I'm surprised by the ball weight, as I would have expected the 68 lb ball here, but both page 88 and 89 have 80 lb.
+        mass: 80 lb
+        mass_note: "I'm surprised by the ball weight, as I would have expected the 68 lb ball here, but both page 88 and 89 have 80 lb."
         charge: 2 oz
         data:
           -
@@ -651,7 +662,8 @@ data:
             range: 603 yds
       -
         diameter: 7.85 in
-        mass: 80 lb  # I'm surprised by the ball weight, as I would have expected the 68 lb ball here, but both page 88 and 89 have 80 lb.  80 lb is probably a brass ball, but it is a particulary dense brass
+        mass: 80 lb
+        mass_note: "I'm surprised by the ball weight, as I would have expected the 68 lb ball here, but both page 88 and 89 have 80 lb.  80 lb is probably a brass ball, but it is a particulary dense brass"
         charge: 2 oz
         data:
           -
@@ -687,9 +699,11 @@ data:
   -
     desc: "Comparison of grain sizes"
     ref2: "p. 103"
-    mass: 65.5 lb  # best guess of the two standard sizes
+    mass: 65.5 lb
+    mass_note: "best guess of the two standard sizes"
     diameter: 7.75 in
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     data:
       -
         desc2: "Kunkur powder.  13 mesh size."
@@ -1450,9 +1464,12 @@ data:
             range: 648 yds
       -
         angle: 0 deg
-        initial_height: 5 ft  # my assumption
-        mass: 1 oz 2 dr  # from p. 194
-        diameter: 0.75 in  # from p. 194
+        initial_height: 5 ft
+        initial_height_note: "my assumption"
+        mass: 1 oz 2 dr
+        mass_note: "from p. 194"
+        diameter: 0.75 in
+        diameter_note: "from p. 194"
         material: lead
         charge: 6 dr
         desc2: "Common musket"
@@ -1492,9 +1509,12 @@ data:
             range: 201 yds
       -
         angle: 0 deg
-        initial_height: 5 ft  # my assumption
-        mass: 1 oz 2 dr  # from p. 194, assuming that the common musket is the New Land Pattern
-        diameter: 0.75 in  # from p. 194
+        initial_height: 5 ft
+        initial_height_note: "my assumption"
+        mass: 1 oz 2 dr
+        mass_note: "from p. 194, assuming that the common musket is the New Land Pattern"
+        diameter: 0.75 in
+        diameter_note: from p. 194
         material: lead
         charge: 6 dr
         desc2: "Light infantry musket"
@@ -1534,9 +1554,12 @@ data:
             range: 133 yds
       -
         angle: 0 deg
-        initial_height: 5 ft  # my assumption
-        mass: 11 dr  # from p. 194
-        diameter: 0.64 in  # from p. 194
+        initial_height: 5 ft
+        initial_height_note: my assumption
+        mass: 11 dr
+        mass_note: from p. 194
+        diameter: 0.64 in
+        diameter_note: from p. 194
         material: lead
         charge: 4 dr
         desc2: "Artillery fusil"
@@ -1576,9 +1599,12 @@ data:
             range: 122 yds
       -
         angle: 0 deg
-        initial_height: 5 ft  # my assumption
-        mass: 11 dr  # from p. 194
-        diameter: 0.64 in  # from p. 194
+        initial_height: 5 ft
+        initial_height_note: my assumption
+        mass: 11 dr
+        mass_note: from p. 194
+        diameter: 0.64 in
+        diameter_note: from p. 194
         material: lead
         charge: 4 dr
         desc2: "Pistol"
@@ -1618,9 +1644,12 @@ data:
             range: 167 yds
       -
         angle: 0 deg
-        initial_height: 5 ft  # my assumption
-        mass: 11 dr  # from p. 194
-        diameter: 0.64 in  # from p. 194
+        initial_height: 5 ft
+        initial_height_note: my assumption
+        mass: 11 dr
+        mass_note: from p. 194
+        diameter: 0.64 in
+        diameter_note: from p. 194
         material: lead
         charge: 3 dr
         desc2: "Pistol"

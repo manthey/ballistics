@@ -60,7 +60,10 @@ data:
             power: "706 Cal/kg"
       -
         desc: "Noble and Abel, 1 grm of powder supposed perfectly dry"
-        data: # This data is repeated on p. 511
+        data:
+          -
+            skip: true
+            skip_note: This data is repeated on p. 511
           -
             desc2: "Pebble powder"
             power: "721.4 cal/g"

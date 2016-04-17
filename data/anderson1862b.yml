@@ -8,9 +8,11 @@ date: "1862"
 data:
   -
     ref2: "p. 124"
-    mass: 65.5 lb  # best guess of the two standard sizes
+    mass: 65.5 lb
+    mass_note: best guess of the two standard sizes
     diameter: 7.75 in
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     date: "1845"
     data:
       -
@@ -177,15 +179,19 @@ data:
             range: 298 yds
   -
     ref2: "p. 125"
-    mass: 65.5 lb  # best guess of the two standard sizes
+    mass: 65.5 lb
+    mass_note: best guess of the two standard sizes
     diameter: 7.75 in
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     charge: 2 oz
-    humidity: "95%"  # My estimate
+    humidity: "95%"
+    humidity_note: My estimate
     data:
       -
         date: "1845-09"
-        temperature: 87.5 F  # from p. 126
+        temperature: 87.5 F
+        temperature_note: from p. 126
         data:
           -
             desc: "Wet weather proof of Bengal Musketry powder tested in Bengal"
@@ -207,7 +213,8 @@ data:
             range: 63 yds
       -
         date: "1845-12"
-        temperature: 80.5 F  # from p. 126
+        temperature: 80.5 F
+        temperature_note: from p. 126
         data:
           -
             desc: "Wet weather proof of Bengal Musketry powder tested in Madras"
@@ -229,7 +236,8 @@ data:
             range: 70 yds
       -
         date: "1845-07"
-        temperature: 85 F  # from p. 126
+        temperature: 85 F
+        temperature_note: from p. 126
         data:
           -
             desc: "Wet weather proof of Bengal Musketry powder tested in Bombay"
@@ -251,10 +259,13 @@ data:
             range: 97 yds
   -
     ref2: "p. 129"
-    mass: 65.5 lb  # best guess of the two standard sizes
+    mass: 65.5 lb
+    mass_note: best guess of the two standard sizes
     diameter: 7.75 in
-    angle: 45 deg  # from p. 120
-    charge: 2 oz  # this seems like it has to be based on the ranges
+    angle: 45 deg
+    angle_note: from p. 120
+    charge: 2 oz
+    charge_note: this seems like it has to be 2 oz based on the ranges
     desc: "Results from prolonged glazing of Ordnance Powder at Ishapore"
     data:
       -
@@ -292,10 +303,13 @@ data:
         range: 105.333 yds
   -
     ref2: "p. 130"
-    mass: 65.5 lb  # best guess of the two standard sizes
+    mass: 65.5 lb
+    mass_note: best guess of the two standard sizes
     diameter: 7.75 in
-    angle: 45 deg  # from p. 120
-    charge: 2 oz  # this seems like it has to be based on the ranges
+    angle: 45 deg
+    angle_note: from p. 120
+    charge: 2 oz
+    charge_note: this seems like it has to be 2 oz based on the ranges
     desc: "Glazing and exposure"
     data:
       -
@@ -305,8 +319,7 @@ data:
         desc2: "Glazed 3 hours, after boarded floor"
         range: 89 yds
       -
-        # I think pucka means a brick floor
-        desc2: "Glazed 3 hours, after pucka floor"
+        desc2: "Glazed 3 hours, after pucka (brick) floor"
         range: 80 yds
       -
         desc2: "Glazed 36 hours, before exposure"
@@ -319,9 +332,11 @@ data:
         range: 82 yds
   -
     ref2: "p. 131"
-    mass: 65.5 lb  # best guess of the two standard sizes
+    mass: 65.5 lb
+    mass_note: best guess of the two standard sizes
     diameter: 7.75 in
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     charge: 2 oz
     desc: "Proof report of Musketry powder with different glazing"
     data:
@@ -344,7 +359,8 @@ data:
             desc2: "Glazed 24 hours"
             range: 106 yds
       -
-        date: "1848-10"  # either the 27th or 31st
+        date: "1848-10"
+        date_note: either the 27th or 31st
         data:
           -
             desc2: "Unglazed"
@@ -362,7 +378,8 @@ data:
             desc2: "Glazed 24 hours"
             range: 95 yds
       -
-        date: "1848-01"  # either the 1st or 2nd
+        date: "1848-01"
+        date_note: either the 1st or 2nd
         data:
           -
             desc2: "Unglazed"
@@ -383,7 +400,8 @@ data:
     ref2: "p. 134"
     mass: 8 lb
     diameter: 4.5 in
-    angle: 45 deg  # assumption
+    angle: 45 deg
+    angle_note: assumption
     charge: 1 ozt
     desc: "Braddock's report showing powder at elevated temperature"
     data:
@@ -401,9 +419,9 @@ data:
       -
         charge: 6 lbs
         data:
-          # Note that there is a "point-blank" entry.  This is almost certainly
-          # at a small angle, such as 0.75 degrees or so, but not knowing the
-          # exact value prevents using the entry
+          -
+            skip: true
+            skip_note: "Note that there is a \"point-blank\" entry.  This is almost certainly at a small angle, such as 0.75 degrees or so, but not knowing the exact value prevents using the entry"
           -
             angle: 2 deg
             range: 1100 yds
@@ -434,9 +452,9 @@ data:
       -
         charge: 10 lbs
         data:
-          # Note that there is a "point-blank" entry.  This is almost certainly
-          # at a small angle, such as 0.75 degrees or so, but not knowing the
-          # exact value prevents using the entry
+          -
+            skip: true
+            skip_note: "Note that there is a \"point-blank\" entry.  This is almost certainly at a small angle, such as 0.75 degrees or so, but not knowing the exact value prevents using the entry"
           -
             angle: 2 deg
             range: 1100 yds
@@ -468,7 +486,8 @@ data:
     ref2: "p. 136"
     mass: 65 lb
     diameter: 7.75 in
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     charge: 1 lb
     desc: "Comparison on density"
     data:
@@ -498,9 +517,11 @@ data:
         range: 620 yds
   -
     ref2: "p. 146"
-    mass: 45 lb  # shell filled with sand
+    mass: 45 lb
+    mass_note: shell filled with sand
     diameter: 8 in
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     charge: 2 oz
     date: "1846-07-16"
     desc: "Proof taken at Kussoor"
@@ -527,7 +548,8 @@ data:
     ref2: "p. 146"
     mass: 67 lb
     diameter: 8 in
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     charge: 2 oz
     date: "1849"
     data:
@@ -540,7 +562,8 @@ data:
   -
     diameter: 7.92 in
     mass: 68 lb
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     ref2: "p. 150"
     desc: "Comparative proof by a progressive increase of drams of Ordnance powder, 1844-1845"
     date: "1845"
@@ -740,14 +763,15 @@ data:
   -
     diameter: 7.92 in
     mass: 68 lb
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     ref2: "p. 151"
     desc: "Comparative proof by a progressive increase of ounces"
     date: "1845"
-    # The data from this table is converted into a regular series on page 153.
-    # I have omitted that series, as it is just a smoothing function over the
-    # actual data.
     data:
+      -
+        skip: true
+        skip_note: "The data from this table is converted into a regular series on page 153.  I have omitted that series, as it is just a smoothing function over the actual data."
       -
         charge: 1 oz
         range: 47 yds
@@ -798,7 +822,8 @@ data:
         range: 723 yds
   -
     diameter: 7.91 in
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     ref2: "p. 155"
     desc: "Comparative proof taken at Ishapore with a brass ball, Diameter 7.91 in, by Reducing the Ball Internally to the following weights"
     data:
@@ -845,7 +870,8 @@ data:
             mass: 1 lb
             range: 289 yds
           -
-            mass: 0.01667 lb  # The last entry is 1/60 of a pound
+            mass: 0.01667 lb
+            mass_note: The last entry is 1/60 of a pound
             range: 295 yds
         charge: 1 lb
         data:
@@ -874,7 +900,8 @@ data:
             mass: 25 lb
             range: 1123 yds
   -
-    angle: 45 deg  # from p. 120
+    angle: 45 deg
+    angle_note: from p. 120
     ref2: "p. 159"
     desc: "Windage: Comparative proof by reducing the ball externally to the following diameters"
     data:

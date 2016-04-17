@@ -320,10 +320,12 @@ data:
             range: 1806 ftfr
           -
             angle: 44 deg
-            range: 1846 ftfr  # this should be 1848
+            range: 1846 ftfr
+            range_note: this should be 1848
           -
             angle: 45 deg
-            range: 1870 ftfr  # this should be 1890
+            range: 1870 ftfr
+            range_note: this should be 1890
       -
         charge: 0.75 lbfr
         data:

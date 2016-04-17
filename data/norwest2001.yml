@@ -15,8 +15,10 @@ data:
     data:
       -
         diameter: 0.490 in
-        material: lead  # assumed
-        charge: 70 grains  # by volume
+        material: lead
+        material_note: assumed
+        charge: 70 grains
+        charge_note: by volume
         desc: "Thompson Center, .50 caliber percussion 'Hawken' rifle"
         data:
           -
@@ -48,8 +50,10 @@ data:
             desc2: "Low for Elephant"
       -
         diameter: 0.610 in
-        material: lead  # assumed
-        charge: 100 grains  # by volume
+        material: lead
+        material_note: assumed
+        charge: 100 grains
+        charge_note: by volume
         desc: "Burke Custom, .62 caliber flintlock rifle"
         data:
           -
@@ -81,7 +85,8 @@ data:
             desc2: "Low for Elephant"
       -
         diameter: 0.600 in
-        material: lead  # assumed
+        material: lead
+        material_note: assumed
         charge: 70 grains
         desc: "20 gauge (.62 caliber) reproduction flintlock Tulle de Chasse"
         data:
@@ -114,7 +119,8 @@ data:
             desc2: "Low for Elephant"
       -
         diameter: 0.530 in
-        material: lead  # assumed
+        material: lead
+        material_note: assumed
         charge: 85 grains
         desc: "Bayha custom built percussion rifle"
         data:

@@ -174,7 +174,8 @@ data:
             initial_velocity: 448.4 m/s
           -
             charge: 3.75 kg
-            initial_velocity: 502.3 m/s  # suspect.  The text reads 5 2.3
+            initial_velocity: 502.3 m/s
+            initial_velocity_note: "suspect value.  The text reads 5 2.3"
       -
         desc2: "128 mm diametre mandrin"
         data:
@@ -589,5 +590,59 @@ data:
           -
             mass: 3.5 kg
             initial_velocity: 443 m/s
+  -
+    desc: "Comparison of using a sabot."
+    ref2: "p. 123-124"
+    angle: 0 deg
+    data:
+      -
+        diameter: 1.648 dm
+        diameter_note: "from p. 53"
+        mass: 10.610 kg
+        mass_note: Ball only, not including 0.204 kg sabot
+        data:
+          -
+            charge: 1.00 kg
+            data:
+              -
+                desc2: "ball only"
+                initial_velocity: 310.3 m/s
+              -
+                desc2: "with sabot"
+                initial_velocity: 315.2 m/s
+          -
+            charge: 2.5 kg
+            data:
+              -
+                desc2: "ball only"
+                initial_velocity: 4773 m/s
+              -
+                desc2: "with sabot"
+                initial_velocity: 483.2 m/s
+          -
+            charge: 3.75 kg
+            data:
+              -
+                desc2: "ball only"
+                initial_velocity: 530.4 m/s
+              -
+                desc2: "with sabot"
+                initial_velocity: 539.0 m/s
+      -
+        diameter: 1.648 dm
+        diameter_note: "from p. 53"
+        mass: 11.5 kg
+        mass_note: Ball only, not including 0.204 kg sabot
+        charge: 1.60 kg
+        data:
+          -
+            desc2: "ball only"
+            initial_velocity: 355.7 m/s
+          -
+            desc2: "with sabot"
+            initial_velocity: 353.0 m/s
+      -
+        skip: true
+        skip_note: "There are some tests on the lower half of p. 123 from 1858 with a Canon de 36 modele 1856, but I'm not sure what its diameter is, so I have not used those values."
 
-# Through page 116
+# Through page 126

@@ -226,7 +226,8 @@ data:
             final_velocity: 814 ftit/sec
       -
         desc2: "Canna sigata"
-        mass: 0.708333 ozit   # 5.667/8 oz
+        mass: 0.708333 ozit
+        mass_note: 5.667/8 oz
         charge: 9 italiandenari
         data:
           -
@@ -322,7 +323,9 @@ data:
             desc3: "2a sorta"
             mass: 0.875 ozit
             final_velocity: 1088 ftit/sec
-          # I don't have enough information for the third sort
+          -
+            skip: true
+            skip_note: I don't have enough information for the third sort
   -
     desc: "Comparing charges."
     ref2: "p. 222"
@@ -391,7 +394,8 @@ data:
     data:
       -
         desc2: "Carbina rigara"
-        mass: 0.708333 ozit   # 5.667/8 oz
+        mass: 0.708333 ozit
+        mass_note: 5.667/8 oz
         charge: 9 italiandenari
         data:
           -

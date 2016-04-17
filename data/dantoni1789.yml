@@ -298,8 +298,9 @@ data:
             desc3: "Second kind"
             mass: 3 ozit
             final_velocity: 1855 ft/sec
-          # There isn't enough information in the text to compute the third
-          # kind, as the diameter is not given
+          -
+            skip: true
+            skip_note: "There isn't enough information in the text to compute the third kind, as the diameter is not given"
       -
         desc2: "Musquet"
         charge: 7 drams
@@ -312,7 +313,9 @@ data:
             desc3: "Second kind"
             mass: 0.875 ozit
             final_velocity: 1834 ft/sec
-          # I don't have enough information for the third kind
+          -
+            skip: true
+            skip_note: "I don't have enough information for the third kind"
   -
     desc: "Comparing charges."
     ref2: "p. 82"
@@ -517,7 +520,9 @@ data:
                 technique: "theory"
                 pressure: 0
                 range: 16307 yds
-    # There is insufficient data for the final condition
+      -
+        skip: true
+        skip_note: "There is insufficient data for the final condition"
   -
     desc: "A 32 pounder was fired with different amounts of saluting powder"
     angle: 22.5 deg
@@ -546,7 +551,7 @@ data:
       -
         mass: 16.333 lbit
         material: "iron"
-        # diameter: 784 of unknown units
+        diameter_note: 784 of unknown units
         data:
           -
             desc2: "From a gun with a bore of 813 units"
@@ -569,7 +574,7 @@ data:
       -
         mass: 16.1667 lbit
         material: "iron"
-        # diameter: 774 units
+        diameter_note: 774 units
         data:
           -
             desc2: "From a gun with a bore of 813 units"
@@ -690,14 +695,18 @@ data:
           -
             charge: 0 lb 13.25 oz
             initial_velocity: 675 ft/sec
-  # Pages 201 and 202 repeat values from 191 and 199
+  -
+    skip: true
+    skip_note: Pages 201 and 202 repeat values from 191 and 199
   -
     desc: "Maximum ranges of guns.  I've assumed a 45 degree angle, but this probably isn't the case, as I would expect longer ranges from such an angle."
-    # The values for musquets, wall-pieces, and mortars is insufficient for
-    # calculation
-    angle: 45 deg  # assumed
+    angle: 45 deg
+    angle_note: assumed
     material: iron
     data:
+      -
+        skip: true
+        skip_note: "The values for musquets, wall-pieces, and mortars is insufficient for calculation"
       -
         mass: 4 lbit
         charge: 2 lbit
