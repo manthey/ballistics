@@ -441,6 +441,37 @@ data:
             mass: 10.827 kg
             initial_velocity: 456.2 m/s
   -
+    desc: "A summary of initial velocities."
+    ref2: "p. 81"
+    angle: 0 deg
+    diameter: 1.596 dm
+    diameter_note: "I don't see the diameter of the ball, so I'm using a value used elsewhere with this particular cannon."
+    data:
+      -
+        mass: 15.400 kg
+        data:
+          -
+            charge: 1.0 kg
+            initial_velocity: 303.5 m/s
+          -
+            charge: 2.5 kg
+            initial_velocity: 448.3 m/s
+          -
+            charge: 5.0 kg
+            initial_velocity: 525.1 m/s
+      -
+        mass: 10.827 kg
+        data:
+          -
+            charge: 1.0 kg
+            initial_velocity: 355.3 m/s
+          -
+            charge: 2.5 kg
+            initial_velocity: 516.7 m/s
+          -
+            charge: 5.0 kg
+            initial_velocity: 575.4 m/s
+  -
     desc: "Comparison of cannon performance with theory.  I've only recorded the measured data, not the theoretical values."
     ref2: "p. 113"
     angle: 0 deg
@@ -644,5 +675,121 @@ data:
       -
         skip: true
         skip_note: "There are some tests on the lower half of p. 123 from 1858 with a Canon de 36 modele 1856, but I'm not sure what its diameter is, so I have not used those values."
+  -
+    skip: true
+    skip_note: "The data on page 127 is for \"Boulets ogivaux\" and therefore the ballistics model I am using does not apply"
+  -
+    desc: "Comparison of using valets (wads)."
+    ref2: "p. 129"
+    angle: 0 deg
+    diameter: 1.596 dm
+    diameter_note: "There is a mistake in the text where the diameter is listed as 1.696 dm, which is larger than the bore of the cannon.  The diameter is listed on p. 130 as 1.596 dm."
+    mass: 15.1 kg
+    date: "1858"
+    data:
+      -
+        charge: 3.500 kg
+        data:
+          -
+            desc2: "Sans valet"
+            initial_velocity: 458.5 m/s
+          -
+            desc2: "Un valet de 0.55 kg"
+            initial_velocity: 454.6 m/s
+          -
+            desc2: "Un valet de 1.10 kg"
+            initial_velocity: 448.8 m/s
+          -
+            desc2: "Un valet de 1.10 kg, un valet de 0.55 kg"
+            initial_velocity: 445.3 m/s
+          -
+            desc2: "Duex valets de 1.10 kg"
+            initial_velocity: 436.9 m/s
+      -
+        charge: 5.000 kg
+        data:
+          -
+            desc2: "Sans valet"
+            initial_velocity: 486.5 m/s
+          -
+            desc2: "Un valet de 0.55 kg"
+            initial_velocity: 487.5 m/s
+          -
+            desc2: "Un valet de 1.10 kg"
+            initial_velocity: 489.4 m/s
+          -
+            desc2: "Un valet de 1.10 kg, un valet de 0.55 kg"
+            initial_velocity: 477.7 m/s
+          -
+            desc2: "Duex valets de 1.10 kg"
+            initial_velocity: 474.4 m/s
+  -
+    desc: "Comparison of different ignition points"
+    ref2: "p. 130"
+    angle: 0 deg
+    diameter: 1.596 dm
+    mass: 15.05 kg
+    charge: 5 kg
+    data:
+      -
+        date: "1859-11-09"
+        desc2: "Feu par l'arri\u00e8re"
+        initial_velocity: 498.7 m/s
+      -
+        date: "1859-11-09"
+        desc2: "Feu par l'avant"
+        initial_velocity: 487.1 m/s
+      -
+        date: "1859-11-14"
+        desc2: "Feu par l'arri\u00e8re"
+        initial_velocity: 494.8 m/s
+      -
+        date: "1859-11-14"
+        desc2: "Vide de 8 cm Feu par l'arri\u00e8re."
+        initial_velocity: 497.3 m/s
+      -
+        date: "1859-12-01"
+        desc2: "Feu par l'arri\u00e8re (avec Vide de 8 cm)"
+        initial_velocity: 497.1 m/s
+      -
+        date: "1859-12-01"
+        desc2: "Feu par l'avant (avec Vide de 8 cm)"
+        initial_velocity: 509.3 m/s
+      -
+        date: "1860-01-02"
+        desc2: "Feu par l'avant (avec Vide de 8 cm)"
+        initial_velocity: 507.5 m/s
+      -
+        date: "1860-01-02"
+        desc2: "Vide de 4 cm, Feu par l'avant"
+        initial_velocity: 510.8 m/s
+  -
+    skip: true
+    skip_note: "Some of the values from p. 130 are repeated on p. 131."
+  -
+    desc: "Experment of using tompions between the charge and the ball in morters to fill the remaining space in the powder chamber"
+    ref2: "p. 135"
+    angle: 0 deg
+    diameter: 1.489 dm
+    mass: 7.7 kg
+    data:
+      -
+        desc2: "Avec 0.8 dm tampon"
+        charge: 0.50 kg
+        initial_velocity: 274.4 m/s
+      -
+        desc2: "Avec 0.48 dm tampon"
+        charge: 0.75 kg
+        initial_velocity: 330.3 m/s
+      -
+        desc2: "Avec 0.2 dm tampon"
+        charge: 1.00 kg
+        initial_velocity: 368.4 m/s
+      -
+        skip: true
+        skip_note: "the lower table is a calculation, not an experiment"
+  -
+    skip: true
+    skip_note: "The values given on p. 140 are the same as those on p. 81"
 
-# Through page 126
+# Through page 139
