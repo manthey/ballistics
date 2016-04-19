@@ -767,7 +767,7 @@ data:
     skip: true
     skip_note: "Some of the values from p. 130 are repeated on p. 131."
   -
-    desc: "Experment of using tompions between the charge and the ball in morters to fill the remaining space in the powder chamber"
+    desc: "Experiment of using tompions between the charge and the ball in morters to fill the remaining space in the powder chamber"
     ref2: "p. 135"
     angle: 0 deg
     diameter: 1.489 dm
@@ -791,5 +791,467 @@ data:
   -
     skip: true
     skip_note: "The values given on p. 140 are the same as those on p. 81"
+  -
+    desc: "Experiment to determine if the initial velocity is substantially changed by the initial angle"
+    ref2: "p. 142"
+    diameter: 0.928 dm
+    mass: 2.864 kg
+    charge: 1.0 kg
+    data:
+      -
+        angle: 0 deg
+        initial_velocity: 486.2 m/s
+      -
+        angle: 2 deg
+        initial_velocity: 485.4 m/s
+      -
+        angle: 4 deg
+        initial_velocity: 483.9 m/s
+      -
+        angle: 10 deg
+        initial_velocity: 486.5 m/s
+  -
+    desc: "Experiment to determine if the initial velocity is substantially changed by the initial angle"
+    ref2: "p. 142"
+    material: iron
+    mass: 12 kg
+    data:
+      -
+        angle: 0 deg
+        data:
+          -
+            charge: 0.100 kg
+            initial_velocity: 71.5 m/s
+          -
+            charge: 0.200 kg
+            charge_note: "The text reads 2.200 kg, but clearly should be 0.200 kg"
+            initial_velocity: 116.0 m/s
+          -
+            charge: 0.250 kg
+            initial_velocity: 133.7 m/s
+          -
+            charge: 0.300 kg
+            initial_velocity: 153.17 m/s
+      -
+        angle: 45 deg
+        data:
+          -
+            charge: 0.100 kg
+            initial_velocity: 71.75 m/s
+          -
+            charge: 0.200 kg
+            charge_note: "The text reads 2.200 kg, but clearly should be 0.200 kg"
+            initial_velocity: 114.2 m/s
+          -
+            charge: 0.250 kg
+            initial_velocity: 134.4 m/s
+          -
+            charge: 0.300 kg
+            initial_velocity: 154.10 m/s
+  -
+    desc: "Experiment with a 32 cm mortar"
+    date: "1859"
+    ref2: "p. 149"
+    diameter: 320.66 mm
+    mass: 91 kg
+    data:
+      -
+        date: "1859-07-27"
+        angle: 5 deg 30 arcmin
+        charge: 2.0 kg
+        initial_velocity: 109.8 m/s
+      -
+        date: "1859-07-27"
+        angle: 5 deg 30 arcmin
+        charge: 5.00 kg
+        initial_velocity: 185.5 m/s
+      -
+        date: "1859-08-09"
+        angle: 6 deg
+        charge: 10.0 kg
+        initial_velocity: 257.5 m/s
+      -
+        date: "1859-08-01"
+        angle: 6 deg 30 arcmin
+        charge: 13.0 kg
+        initial_velocity: 269.4 m/s
+  -
+    desc: "Effect of pulverized powder"
+    ref2: "p. 150"
+    diameter: 1.607 dm
+    mass: 10.610 kg
+    angle: 0 deg
+    charge: 2.5 kg
+    data:
+      -
+        initial_velocity: 388.5 m/s
+      -
+        desc2: "Regular corned powder"
+        initial_velocity: 480 m/s
+  -
+    desc: "Computed muzzle velocities for different powders and cannons."
+    ref2: "p. 154-9"
+    technique: theory
+    angle: 0 deg
+    data:
+      -
+        desc2: "Canon de 30 Mod\u00e8le de 1856, Boulets Massifs"
+        diameter: 169.2 mm
+        mass: 17.9 kg
+        data:
+          -
+            desc3: "Poudre de Ripault 1842"
+            data:
+              -
+                charge: 1.0 kg
+                initial_velocity: 236.5 m/s
+              -
+                charge: 1.2 kg
+                initial_velocity: 259.9 m/s
+              -
+                charge: 1.4 kg
+                initial_velocity: 281.2 m/s
+              -
+                charge: 1.6 kg
+                initial_velocity: 300.9 m/s
+              -
+                charge: 1.8 kg
+                initial_velocity: 319.1 m/s
+              -
+                charge: 2.0 kg
+                initial_velocity: 336.1 m/s
+              -
+                charge: 2.2 kg
+                initial_velocity: 351.9 m/s
+              -
+                charge: 2.4 kg
+                initial_velocity: 367.0 m/s
+              -
+                charge: 2.6 kg
+                initial_velocity: 380.9 m/s
+              -
+                charge: 2.8 kg
+                initial_velocity: 394.1 m/s
+              -
+                charge: 3.0 kg
+                initial_velocity: 406.7 m/s
+              -
+                charge: 3.2 kg
+                initial_velocity: 417.1 m/s
+              -
+                charge: 3.4 kg
+                initial_velocity: 426.6 m/s
+              -
+                charge: 3.6 kg
+                initial_velocity: 435.4 m/s
+              -
+                charge: 3.8 kg
+                initial_velocity: 443.5 m/s
+              -
+                charge: 4.0 kg
+                initial_velocity: 450.9 m/s
+              -
+                charge: 4.2 kg
+                initial_velocity: 457.6 m/s
+              -
+                charge: 4.4 kg
+                initial_velocity: 462.7 m/s
+              -
+                charge: 4.5 kg
+                initial_velocity: 466.7 m/s
+              -
+                charge: 4.6 kg
+                initial_velocity: 469.2 m/s
+              -
+                charge: 4.8 kg
+                initial_velocity: 473.8 m/s
+              -
+                charge: 5.0 kg
+                initial_velocity: 478.1 m/s
+              -
+                charge: 5.2 kg
+                initial_velocity: 481.8 m/s
+              -
+                charge: 5.4 kg
+                initial_velocity: 485.3 m/s
+              -
+                charge: 5.6 kg
+                initial_velocity: 488.5 m/s
+              -
+                charge: 6.0 kg
+                initial_velocity: 493.7 m/s
+              -
+                charge: 6.5 kg
+                initial_velocity: 498.0 m/s
+              -
+                charge: 7.0 kg
+                initial_velocity: 502.3 m/s
+          -
+            desc3: "Poudre Pont-de-Buis 1837"
+            data:
+              -
+                charge: 1.0 kg
+                initial_velocity: 234.6 m/s
+              -
+                charge: 1.2 kg
+                initial_velocity: 257.1 m/s
+              -
+                charge: 1.4 kg
+                initial_velocity: 277.3 m/s
+              -
+                charge: 1.6 kg
+                initial_velocity: 295.7 m/s
+              -
+                charge: 1.8 kg
+                initial_velocity: 312.4 m/s
+              -
+                charge: 2.0 kg
+                initial_velocity: 327.6 m/s
+              -
+                charge: 2.2 kg
+                initial_velocity: 344.5 m/s
+              -
+                charge: 2.4 kg
+                initial_velocity: 354.5 m/s
+              -
+                charge: 2.6 kg
+                initial_velocity: 366.0 m/s
+              -
+                charge: 2.8 kg
+                initial_velocity: 376.7 m/s
+              -
+                charge: 3.0 kg
+                initial_velocity: 386.5 m/s
+              -
+                charge: 3.2 kg
+                initial_velocity: 395.1 m/s
+              -
+                charge: 3.4 kg
+                initial_velocity: 402.9 m/s
+              -
+                charge: 3.6 kg
+                initial_velocity: 409.8 m/s
+              -
+                charge: 3.8 kg
+                initial_velocity: 415.9 m/s
+              -
+                charge: 4.0 kg
+                initial_velocity: 421.4 m/s
+              -
+                charge: 4.2 kg
+                initial_velocity: 426.0 m/s
+              -
+                charge: 4.4 kg
+                initial_velocity: 430.0 m/s
+              -
+                charge: 4.5 kg
+                initial_velocity: 431.8 m/s
+              -
+                charge: 4.6 kg
+                initial_velocity: 434.0 m/s
+              -
+                charge: 4.8 kg
+                initial_velocity: 438.5 m/s
+              -
+                charge: 5.0 kg
+                initial_velocity: 442.6 m/s
+              -
+                charge: 5.2 kg
+                initial_velocity: 446.3 m/s
+              -
+                charge: 5.4 kg
+                initial_velocity: 449.7 m/s
+              -
+                charge: 5.6 kg
+                initial_velocity: 452.0 m/s
+              -
+                charge: 6.0 kg
+                initial_velocity: 458.1 m/s
+              -
+                charge: 6.5 kg
+                initial_velocity: 464.4 m/s
+              -
+                charge: 7.0 kg
+                initial_velocity: 467.3 m/s
+      -
+        desc2: "Canon de 30 Mod\u00e8le de 1856, Boulets Creux"
+        diameter: 170.4 mm
+        mass: 14 kg
+        data:
+          -
+            desc3: "Poudre de Ripault 1842"
+            data:
+              -
+                charge: 1.0 kg
+                initial_velocity: 280.4 m/s
+              -
+                charge: 1.2 kg
+                initial_velocity: 306.4 m/s
+              -
+                charge: 1.4 kg
+                initial_velocity: 329.8 m/s
+              -
+                charge: 1.6 kg
+                initial_velocity: 351.3 m/s
+              -
+                charge: 1.8 kg
+                initial_velocity: 370.9 m/s
+              -
+                charge: 2.0 kg
+                initial_velocity: 389.0 m/s
+              -
+                charge: 2.2 kg
+                initial_velocity: 405.8 m/s
+              -
+                charge: 2.4 kg
+                initial_velocity: 424.5 m/s
+              -
+                charge: 2.6 kg
+                initial_velocity: 436.0 m/s
+              -
+                charge: 2.8 kg
+                initial_velocity: 449.6 m/s
+              -
+                charge: 3.0 kg
+                initial_velocity: 462.4 m/s
+              -
+                charge: 3.2 kg
+                initial_velocity: 472.7 m/s
+              -
+                charge: 3.4 kg
+                initial_velocity: 482.0 m/s
+              -
+                charge: 3.6 kg
+                initial_velocity: 490.4 m/s
+              -
+                charge: 3.8 kg
+                initial_velocity: 498.1 m/s
+              -
+                charge: 4.0 kg
+                initial_velocity: 504.9 m/s
+              -
+                charge: 4.2 kg
+                initial_velocity: 511.1 m/s
+              -
+                charge: 4.4 kg
+                initial_velocity: 516.4 m/s
+              -
+                charge: 4.5 kg
+                initial_velocity: 519.0 m/s
+              -
+                charge: 4.6 kg
+                initial_velocity: 521.2 m/s
+              -
+                charge: 4.8 kg
+                initial_velocity: 524.0 m/s
+              -
+                charge: 5.0 kg
+                initial_velocity: 528.2 m/s
+              -
+                charge: 5.2 kg
+                initial_velocity: 531.0 m/s
+              -
+                charge: 5.4 kg
+                initial_velocity: 533.4 m/s
+              -
+                charge: 5.6 kg
+                initial_velocity: 535.5 m/s
+              -
+                charge: 6.0 kg
+                initial_velocity: 539.4 m/s
+              -
+                charge: 6.5 kg
+                initial_velocity: 540.9 m/s
+              -
+                charge: 7.0 kg
+                initial_velocity: 541.4 m/s
+          -
+            desc3: "Poudre Pont-de-Buis 1837"
+            data:
+              -
+                charge: 1.0 kg
+                initial_velocity: 276.9 m/s
+              -
+                charge: 1.2 kg
+                initial_velocity: 301.9 m/s
+              -
+                charge: 1.4 kg
+                initial_velocity: 324.0 m/s
+              -
+                charge: 1.6 kg
+                initial_velocity: 343.9 m/s
+              -
+                charge: 1.8 kg
+                initial_velocity: 362.1 m/s
+              -
+                charge: 2.0 kg
+                initial_velocity: 378.2 m/s
+              -
+                charge: 2.2 kg
+                initial_velocity: 392.9 m/s
+              -
+                charge: 2.4 kg
+                initial_velocity: 406.1 m/s
+              -
+                charge: 2.6 kg
+                initial_velocity: 418.2 m/s
+              -
+                charge: 2.8 kg
+                initial_velocity: 429.0 m/s
+              -
+                charge: 3.0 kg
+                initial_velocity: 438.8 m/s
+              -
+                charge: 3.2 kg
+                initial_velocity: 447.2 m/s
+              -
+                charge: 3.4 kg
+                initial_velocity: 457.7 m/s
+              -
+                charge: 3.6 kg
+                initial_velocity: 461.1 m/s
+              -
+                charge: 3.8 kg
+                initial_velocity: 466.8 m/s
+              -
+                charge: 4.0 kg
+                initial_velocity: 471.5 m/s
+              -
+                charge: 4.2 kg
+                initial_velocity: 475.5 m/s
+              -
+                charge: 4.4 kg
+                initial_velocity: 478.7 m/s
+              -
+                charge: 4.5 kg
+                initial_velocity: 480.0 m/s
+              -
+                charge: 4.6 kg
+                initial_velocity: 481.4 m/s
+              -
+                charge: 4.8 kg
+                initial_velocity: 485.6 m/s
+              -
+                charge: 5.0 kg
+                initial_velocity: 488.7 m/s
+              -
+                charge: 5.2 kg
+                initial_velocity: 491.6 m/s
+              -
+                charge: 5.4 kg
+                initial_velocity: 494.1 m/s
+              -
+                charge: 5.6 kg
+                initial_velocity: 496.3 m/s
+              -
+                charge: 6.0 kg
+                initial_velocity: 499.7 m/s
+              -
+                charge: 6.5 kg
+                initial_velocity: 502.3 m/s
+              -
+                charge: 7.0 kg
+                initial_velocity: 503.4 m/s
 
-# Through page 139
+
+# Through page 154
