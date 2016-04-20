@@ -1252,6 +1252,310 @@ data:
               -
                 charge: 7.0 kg
                 initial_velocity: 503.4 m/s
+      -
+        desc2: "Canon de 30 Mod\u00e8le de 1820, Boulets Massifs, Poudre du Ripault, 1842"
+        diameter: 159.6 dm
+        mass: 15.100 kg
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 252.5 m/s
+          -
+            charge: 1.20 kg
+            initial_velocity: 278.1 m/s
+          -
+            charge: 1.40 kg
+            initial_velocity: 301.3 m/s
+          -
+            charge: 1.50 kg
+            initial_velocity: 312.0 m/s
+          -
+            charge: 1.60 kg
+            initial_velocity: 322.3 m/s
+          -
+            charge: 1.80 kg
+            initial_velocity: 341.5 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 359.2 m/s
+          -
+            charge: 2.20 kg
+            initial_velocity: 375.6 m/s
+          -
+            charge: 2.40 kg
+            initial_velocity: 390.7 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 397.5 m/s
+          -
+            charge: 2.60 kg
+            initial_velocity: 403.5 m/s
+          -
+            charge: 2.80 kg
+            initial_velocity: 414.6 m/s
+          -
+            charge: 3.00 kg
+            initial_velocity: 424.6 m/s
+          -
+            charge: 3.20 kg
+            initial_velocity: 433.6 m/s
+          -
+            charge: 3.40 kg
+            initial_velocity: 441.8 m/s
+          -
+            charge: 3.50 kg
+            charge_note: "The table has two entries for 3.4 and.  I've adjusted as I think it should have been, but I could be wrong."
+            initial_velocity: 445.6 m/s
+          -
+            charge: 3.60 kg
+            initial_velocity: 449.1 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 455.1 m/s
+          -
+            charge: 3.80 kg
+            initial_velocity: 456.6 m/s
+          -
+            charge: 4.00 kg
+            initial_velocity: 462.2 m/s
+          -
+            charge: 4.20 kg
+            initial_velocity: 467.3 m/s
+          -
+            charge: 4.40 kg
+            initial_velocity: 472.1 m/s
+          -
+            charge: 4.50 kg
+            initial_velocity: 474.4 m/s
+          -
+            charge: 4.60 kg
+            initial_velocity: 476.6 m/s
+          -
+            charge: 4.80 kg
+            initial_velocity: 480.8 m/s
+          -
+            charge: 5.00 kg
+            initial_velocity: 484.7 m/s
+          -
+            charge: 5.20 kg
+            initial_velocity: 488.4 m/s
+          -
+            charge: 5.40 kg
+            initial_velocity: 491.9 m/s
+          -
+            charge: 5.50 kg
+            initial_velocity: 493.6 m/s
+          -
+            charge: 5.75 kg
+            initial_velocity: 497.6 m/s
+          -
+            charge: 6.00 kg
+            initial_velocity: 501.2 m/s
+          -
+            charge: 6.25 kg
+            initial_velocity: 504.5 m/s
+      -
+        desc2: "Canon de 30 Mod\u00e8le de 1820, Boulets Creux, Poudre du Ripault, 1842"
+        diameter: 160.2 dm
+        mass: 10.610 kg
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 311.5 m/s
+          -
+            charge: 1.20 kg
+            initial_velocity: 340.4 m/s
+          -
+            charge: 1.40 kg
+            initial_velocity: 366.1 m/s
+          -
+            charge: 1.50 kg
+            initial_velocity: 378.0 m/s
+          -
+            charge: 1.60 kg
+            initial_velocity: 389.6 m/s
+          -
+            charge: 1.80 kg
+            initial_velocity: 409.9 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 428.8 m/s
+          -
+            charge: 2.20 kg
+            initial_velocity: 445.9 m/s
+          -
+            charge: 2.40 kg
+            initial_velocity: 461.5 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 468.4 m/s
+          -
+            charge: 2.60 kg
+            initial_velocity: 474.2 m/s
+          -
+            charge: 2.80 kg
+            initial_velocity: 485.0 m/s
+          -
+            charge: 3.00 kg
+            initial_velocity: 494.5 m/s
+          -
+            charge: 3.20 kg
+            initial_velocity: 502.8 m/s
+          -
+            charge: 3.40 kg
+            initial_velocity: 509.8 m/s
+          -
+            charge: 3.50 kg
+            charge_note: "The table has two entries for 3.4 and.  I've adjusted as I think it should have been, but I could be wrong."
+            initial_velocity: 513.2 m/s
+          -
+            charge: 3.60 kg
+            initial_velocity: 516.0 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 521.1 m/s
+          -
+            charge: 3.80 kg
+            initial_velocity: 522.2 m/s
+          -
+            charge: 4.00 kg
+            initial_velocity: 526.3 m/s
+          -
+            charge: 4.20 kg
+            initial_velocity: 529.7 m/s
+          -
+            charge: 4.40 kg
+            initial_velocity: 532.7 m/s
+          -
+            charge: 4.50 kg
+            initial_velocity: 534.1 m/s
+          -
+            charge: 4.60 kg
+            initial_velocity: 535.3 m/s
+          -
+            charge: 4.80 kg
+            initial_velocity: 537.5 m/s
+          -
+            charge: 5.00 kg
+            initial_velocity: 539.5 m/s
+          -
+            charge: 5.20 kg
+            initial_velocity: 541.1 m/s
+          -
+            charge: 5.40 kg
+            initial_velocity: 543.5 m/s
+          -
+            charge: 5.50 kg
+            initial_velocity: 543.1 m/s
+      -
+        desc2: "Canon de 30 No. 2, Boulets Massifs, Poudre du Ripault, 1842"
+        diameter: 159.6 dm
+        mass: 15.10 kg
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 252.5 m/s
+          -
+            charge: 1.50 kg
+            initial_velocity: 311.7 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 357.9 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 394.9 m/s
+          -
+            charge: 3.00 kg
+            initial_velocity: 421.0 m/s
+          -
+            charge: 3.50 kg
+            initial_velocity: 439.9 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 446.1 m/s
+          -
+            charge: 4.00 kg
+            initial_velocity: 452.6 m/s
+          -
+            charge: 4.50 kg
+            initial_velocity: 464.0 m/s
+          -
+            charge: 5.00 kg
+            initial_velocity: 473.7 m/s
+      -
+        desc2: "Canon de 30 No. 2, Boulets Creux, Poudre du Ripault, 1842"
+        diameter: 160.2 dm
+        mass: 10.61 kg
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 310.8 m/s
+          -
+            charge: 1.50 kg
+            initial_velocity: 376.3 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 425.6 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 463.3 m/s
+          -
+            charge: 3.00 kg
+            initial_velocity: 487.9 m/s
+          -
+            charge: 3.50 kg
+            initial_velocity: 503.7 m/s
+          -
+            charge: 3.75 kg
+            initial_velocity: 507.7 m/s
+          -
+            charge: 4.00 kg
+            initial_velocity: 512.0 m/s
+          -
+            charge: 4.50 kg
+            initial_velocity: 518.5 m/s
+          -
+            charge: 5.00 kg
+            initial_velocity: 522.8 m/s
+      -
+        desc2: "Canon de 30 No. 3, Boulets Massifs, Poudre du Ripault, 1842"
+        diameter: 159.6 dm
+        mass: 15.10 kg
+        data:
+          -
+            charge: 1.50 kg
+            initial_velocity: 317.4 m/s
+          -
+            charge: 1.75 kg
+            initial_velocity: 341.3 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 362.6 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 394.8 m/s
+          -
+            charge: 3.00 kg
+            initial_velocity: 417.8 m/s
+      -
+        desc2: "Canon de 30 No. 3, Boulets Creux, Poudre du Ripault, 1842"
+        diameter: 160.2 dm
+        mass: 10.61 kg
+        data:
+          -
+            charge: 1.50 kg
+            initial_velocity: 380.6 m/s
+          -
+            charge: 1.75 kg
+            initial_velocity: 406.0 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 428.2 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 459.8 m/s
+          -
+            charge: 3.00 kg
+            initial_velocity: 480.5 m/s
 
-
-# Through page 154
+# Through page 156

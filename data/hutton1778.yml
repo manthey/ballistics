@@ -1,0 +1,285 @@
+---
+key: hutton1778
+ref: "Hutton, 1778"
+cms: "Hutton, Charles.  \"The Force of Fired Gun-Powder, and the initial Velocities of Cannon Balls, determined by Experiments; from which is also deduced the Relation of the initial Velocity to the Weight of the short and the Quantity of Powder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 68 (1778): 50-85."
+summary: "Hutton's initial experiments with a ballistic pendulum."
+date: "1778"
+data:
+  -
+    desc: "First experiment with the ballistic pendulum"
+    ref2: "p. 67"
+    date: "1775-05-13"
+    angle: 0 deg
+    range: 29.5 ft
+    range_note: "Hutton reports the range to be between 29 and 30 feet"
+    humidity: 15%
+    humidity_note: A clear, dry day.
+    data:
+      -
+        charge: 2 oz
+        diameter: 1.98 in
+        mass: 17.5 oz
+        material: iron
+        final_velocity: 458 ft/s
+      -
+        charge: 2 oz
+        diameter: 1.98 in
+        mass: 17.5 oz
+        material: iron
+        final_velocity: 631 ft/s
+      -
+        charge: 2 oz
+        diameter: 1.98 in
+        mass: 17.5 oz
+        material: iron
+        final_velocity: 650 ft/s
+      -
+        charge: 2 oz
+        diameter: 1.97 in
+        mass: 17.25 oz
+        material: iron
+        final_velocity: 646 ft/s
+      -
+        charge: 2 oz
+        diameter: 1.97 in
+        mass: 17.25 oz
+        material: iron
+        final_velocity: 604 ft/s
+      -
+        charge: 2 oz
+        diameter: 1.96 in
+        mass: 17 oz
+        material: iron
+        final_velocity: 598 ft/s
+      -
+        charge: 4 oz
+        diameter: 1.97 in
+        mass: 17.25 oz
+        material: iron
+        final_velocity: 881 ft/s
+      -
+        charge: 4 oz
+        diameter: 1.96 in
+        mass: 17 oz
+        material: iron
+        final_velocity: 950 ft/s
+  -
+    desc: "Second experiment with the ballistic pendulum.  Accuracy is doubtful due to the wind moving the measuring tape"
+    ref2: "p. 69"
+    date: "1775-06-03"
+    angle: 0 deg
+    range: 29.5 ft
+    range_note: "Hutton reports the range to be between 29 and 30 feet"
+    humidity: 15%
+    humidity_note: A clear, dry, windy day.
+    data:
+      -
+        charge: 2 oz
+        diameter: 2.08 in
+        mass: 19.5 oz
+        material: iron
+        final_velocity: 800 ft/s
+      -
+        charge: 2 oz
+        diameter: 2.08 in
+        mass: 19.5 oz
+        material: iron
+        final_velocity: 1003 ft/s
+      -
+        charge: 2 oz
+        diameter: 2.08 in
+        mass: 19.5 oz
+        material: iron
+        final_velocity: 943 ft/s
+      -
+        skip: true
+        skip_note: "The last two trials were done with cylindrical shot, so our ballistics model isn't valid."
+  -
+    desc: "Third experiment with the ballistic pendulum."
+    ref2: "p. 72"
+    date: "1775-06-12"
+    angle: 0 deg
+    range: 29.5 ft
+    range_note: "Hutton reports the range to be between 29 and 30 feet"
+    humidity: 15%
+    humidity_note: A clear, dry, calm day.
+    data:
+      -
+        charge: 2 oz
+        diameter: 2.080 in
+        mass: 19.5 oz
+        material: iron
+        final_velocity: 700 ft/s
+      -
+        charge: 2 oz
+        diameter: 2.036 in
+        mass: 18.25 oz
+        material: iron
+        final_velocity: 799 ft/s
+      -
+        charge: 2 oz
+        diameter: 2.045 in
+        mass: 18.5 oz
+        material: iron
+        final_velocity: 715 ft/s
+      -
+        charge: 4 oz
+        diameter: 2.062 in
+        mass: 19 oz
+        material: iron
+        final_velocity: 880 ft/s
+      -
+        charge: 4 oz
+        diameter: 2.046 in
+        mass: 18.25 oz
+        material: iron
+        final_velocity: 1163 ft/s
+      -
+        charge: 4 oz
+        diameter: 2.045 in
+        mass: 18.5 oz
+        material: iron
+        final_velocity: 1087 ft/s
+  -
+    desc: "First experiment with the second ballistic pendulum."
+    ref2: "p. 76"
+    date: "1775-07-20"
+    angle: 0 deg
+    range: 29.5 ft
+    range_note: "Hutton doesn't say otherwise, so I'm using the same range as the first pendulum"
+    humidity: 50%
+    humidity_note: A fine, clear day.
+    material: lead
+    data:
+      -
+        charge: 2 oz
+        diameter: 2.021 in
+        mass: 28.25 oz
+        final_velocity: 612 ft/s
+      -
+        charge: 4 oz
+        diameter: 2.021 in
+        mass: 28.25 oz
+        final_velocity: 879 ft/s
+      -
+        charge: 8 oz
+        diameter: 2.032 in
+        mass: 28.5 oz
+        final_velocity: 1164 ft/s
+      -
+        charge: 2 oz
+        diameter: 2.026 in
+        mass: 28.5 oz
+        final_velocity: 622 ft/s
+      -
+        charge: 4 oz
+        diameter: 2.026 in
+        mass: 28.5 oz
+        final_velocity: 871 ft/s
+      -
+        charge: 8 oz
+        diameter: 2.032 in
+        mass: 28.75 oz
+        final_velocity: 1154 ft/s
+      -
+        charge: 2 oz
+        diameter: 2.021 in
+        mass: 28.25 oz
+        final_velocity: 605 ft/s
+      -
+        charge: 4 oz
+        diameter: 2.026 in
+        mass: 28.5 oz
+        final_velocity: 870 ft/s
+      -
+        charge: 8 oz
+        diameter: 2.026 in
+        mass: 28.5 oz
+        final_velocity: 1169 ft/s
+  -
+    desc: "Second experiment with the second ballistic pendulum."
+    ref2: "p. 80"
+    date: "1775-09-21"
+    angle: 0 deg
+    range: 29.5 ft
+    range_note: "Hutton doesn't say otherwise, so I'm using the same range as the first pendulum"
+    humidity: 50%
+    humidity_note: Fine clear weather, but a little windy.
+    material: iron
+    data:
+      -
+        charge: 2 oz
+        diameter: 2.062 in
+        mass: 19 oz 0 dr
+        final_velocity: 702 ft/s
+      -
+        charge: 4 oz
+        diameter: 2.062 in
+        mass: 19 oz 0 dr
+        final_velocity: 1068 ft/s
+      -
+        charge: 8 oz
+        diameter: 2.062 in
+        mass: 19 oz 0 dr
+        final_velocity: 1419 ft/s
+      -
+        charge: 2 oz
+        diameter: 2.070 in
+        mass: 19 oz 3.5 dr
+        final_velocity: 682 ft/s
+      -
+        charge: 4 oz
+        diameter: 2.080 in
+        mass: 19 oz 8.5 dr
+        final_velocity: 1020 ft/s
+      -
+        charge: 8 oz
+        diameter: 2.064 in
+        mass: 19 oz 0.75 dr
+        final_velocity: 1352 ft/s
+      -
+        charge: 2 oz
+        diameter: 2.060 in
+        mass: 18 oz 15 dr
+        final_velocity: 695 ft/s
+      -
+        charge: 4 oz
+        diameter: 2.058 in
+        mass: 18 oz 14 dr
+        final_velocity: 948 ft/s
+      -
+        charge: 8 oz
+        diameter: 2.049 in
+        mass: 18 oz 9.75 dr
+        final_velocity: 1443 ft/s
+      -
+        charge: 2 oz
+        diameter: 2.047 in
+        mass: 18 oz 9 dr
+        final_velocity: 703 ft/s
+      -
+        charge: 4 oz
+        diameter: 2.037 in
+        mass: 18 oz 4.333 dr
+        final_velocity: 973 ft/s
+      -
+        charge: 8 oz
+        diameter: 2.036 in
+        mass: 18 oz 3.75 dr
+        final_velocity: 1360 ft/s
+      -
+        charge: 2 oz
+        diameter: 2.034 in
+        mass: 18 oz 3 dr
+        final_velocity: 725 ft/s
+      -
+        charge: 4 oz
+        diameter: 2.034 in
+        mass: 18 oz 3 dr
+        final_velocity: 957 ft/s
+      -
+        charge: 8 oz
+        diameter: 2.041 in
+        mass: 18 oz 1.5 dr
+        final_velocity: 1412 ft/s
+

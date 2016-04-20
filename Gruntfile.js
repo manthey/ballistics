@@ -14,10 +14,6 @@
 module.exports = function (grunt) {
     var path = require('path');
 
-    var defaultTasks = [
-        'stylus', 'build-js', 'copy:static',
-    ];
-
     var port = Number(grunt.option('port') || '8082');
 
     /* Returns a json string containing information from the current git
@@ -104,6 +100,16 @@ module.exports = function (grunt) {
             }
         },
 
+        yaml: {
+            core: {
+                files: {
+                    'built/references.json': [
+                        'data/references.yaml',
+                    ]
+                }
+            }
+        },
+
         concat: {
             options: {
                 separator: ';',
@@ -180,6 +186,14 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-file-creator');
     grunt.loadNpmTasks('grunt-gitinfo');
     grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-yaml');
+
+    var defaultTasks = [
+        'stylus',
+        'build-js',
+        'yaml',
+        'copy:static',
+    ];
 
     grunt.registerTask('version-info', [
         'gitinfo',
