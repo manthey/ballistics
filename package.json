@@ -30,13 +30,19 @@
     "grunt-contrib-uglify": "~1.0",
     "grunt-express": "~1.4",
     "grunt-file-creator": "~0.1",
+    "grunt-folder-list": "~1.1",
     "grunt-gitinfo": "~0.1",
     "grunt-shell": "~1.2",
     "grunt-yaml": "~0.4",
-    "jade": "~1.11"
+    "jade": "~1.11",
+
+    "grunt-contrib-watch": "~1.0",
+    "grunt-parallel": "~0.4"
   },
   "scripts": {
-    "postinstall": "grunt init && grunt",
+    "postinstall": "grunt init default",
+    "buildall": "grunt init default",
+    "build": "grunt default",
     "serve": "grunt default && grunt serve"
   }
 }

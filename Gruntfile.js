@@ -60,6 +60,12 @@ module.exports = function (grunt) {
         },
 
         copy: {
+            results: {
+                expand: true,
+                cwd: 'results',
+                src: ['**/*.json'],
+                dest: 'built/results'
+            },
             static: {
                 expand: true,
                 cwd: 'client/static',
@@ -75,6 +81,15 @@ module.exports = function (grunt) {
                     Xserver: 'testing/test-runners/server.js',
                     bases: ['built']
                 }
+            }
+        },
+
+        folder_list: {
+            results: {
+                options: { files: true, folders: false },
+                cwd: 'built/',
+                src: ['results/**/*.json'],
+                dest: 'built/resultslist.json'
             }
         },
 
@@ -104,7 +119,7 @@ module.exports = function (grunt) {
             core: {
                 files: {
                     'built/references.json': [
-                        'data/references.yaml',
+                        'data/references.yml',
                     ]
                 }
             }
@@ -184,6 +199,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-express');
     grunt.loadNpmTasks('grunt-file-creator');
+    grunt.loadNpmTasks('grunt-folder-list');
     grunt.loadNpmTasks('grunt-gitinfo');
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-yaml');
@@ -193,6 +209,8 @@ module.exports = function (grunt) {
         'build-js',
         'yaml',
         'copy:static',
+        'copy:results',
+        'folder_list:results'
     ];
 
     grunt.registerTask('version-info', [
