@@ -1757,5 +1757,69 @@ data:
           -
             charge: 4.25 kg
             initial_velocity: 553.9 m/s
+      -
+        desc2: "Canon de 18, No. 1, Boulets Massifs, Poudre du Ripault, 1842"
+        diameter: 134.2 dm
+        mass: 9.023 kg
+        data:
+          -
+            charge: 1.25 kg
+            initial_velocity: 365.9 m/s
+          -
+            charge: 1.50 kg
+            initial_velocity: 398.6 m/s
+          -
+            charge: 1.75 kg
+            initial_velocity: 425.4 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 445.9 m/s
+          -
+            charge: 2.25 kg
+            initial_velocity: 452.9 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 476.7 m/s
+          -
+            charge: 2.75 kg
+            initial_velocity: 487.4 m/s
+          -
+            charge: 3.00 kg
+            initial_velocity: 496.7 m/s
+          -
+            charge: 3.25 kg
+            initial_velocity: 505.0 m/s
+      -
+        desc2: "Canon de 18, No. 1, Boulets Creux, Poudre du Ripault, 1842"
+        diameter: 134.8 dm
+        mass: 6.230 kg
+        data:
+          -
+            charge: 1.25 kg
+            initial_velocity: 442.7 m/s
+          -
+            charge: 1.50 kg
+            initial_velocity: 447.0 m/s
+          -
+            charge: 1.75 kg
+            initial_velocity: 503.9 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 523.3 m/s
+          -
+            charge: 2.25 kg
+            initial_velocity: 538.2 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 549.1 m/s
+          -
+            charge: 2.75 kg
+            initial_velocity: 556.4 m/s
+          -
+            charge: 3.00 kg
+            initial_velocity: 561.8 m/s
+          -
+            charge: 3.25 kg
+            initial_velocity: 565.9 m/s
 
-# Through page 157
+# Through page 158

@@ -11,6 +11,26 @@
  * under the License.
  */
 
+var References, Results;
+
+/* Load the references if they haven't been loaded.  Either way, return a
+ * promise object.
+ * Exit: promise: a promise that resolves when the references are loaded. */
+function load_references() {
+  if (!References) {
+    References = {};
+    References.fetch = $.getJSON('references.json').done(function (results) {
+      var data = results.references;
+      References.references = {};
+      $.each(data, function (idx, item) {
+        References.references[item.key] = item;
+      });
+      References.fetch = $.when();
+    });
+  }
+  return References.fetch;
+}
+
 /* Load a section based on an event or as specified by name.
  * Enter: evt: the event that triggered this.  null or undefined to use the
  *             section name.
@@ -32,4 +52,6 @@ $(function () {
   $('#b-header').append(templates.menu());
   load_section(undefined, $('.navbar .current>a').attr('data-section'));
   $('.navbar [data-section]').on('click', load_section);
+
+  load_references();
 });
