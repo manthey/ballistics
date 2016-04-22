@@ -1799,7 +1799,7 @@ data:
             initial_velocity: 442.7 m/s
           -
             charge: 1.50 kg
-            initial_velocity: 447.0 m/s
+            initial_velocity: 477.0 m/s
           -
             charge: 1.75 kg
             initial_velocity: 503.9 m/s
@@ -1821,5 +1821,190 @@ data:
           -
             charge: 3.25 kg
             initial_velocity: 565.9 m/s
+      -
+        desc2: "Canon de 18, No. 2, Boulets Massifs, Poudre du Ripault, 1842"
+        diameter: 134.2 dm
+        mass: 9.023 kg
+        data:
+          -
+            charge: 1.25 kg
+            initial_velocity: 364.9 m/s
+          -
+            charge: 1.50 kg
+            initial_velocity: 396.9 m/s
+          -
+            charge: 1.75 kg
+            initial_velocity: 422.4 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 440.5 m/s
+          -
+            charge: 2.25 kg
+            initial_velocity: 456.2 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 468.3 m/s
+          -
+            charge: 2.75 kg
+            initial_velocity: 478.4 m/s
+          -
+            charge: 3.00 kg
+            initial_velocity: 487.3 m/s
+          -
+            charge: 3.25 kg
+            initial_velocity: 495.2 m/s
+      -
+        desc2: "Canon de 18, No. 2, Boulets Creux, Poudre du Ripault, 1842"
+        diameter: 134.8 dm
+        mass: 6.230 kg
+        data:
+          -
+            charge: 1.25 kg
+            initial_velocity: 440.0 m/s
+          -
+            charge: 1.50 kg
+            initial_velocity: 473.2 m/s
+          -
+            charge: 1.75 kg
+            initial_velocity: 498.3 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 515.9 m/s
+          -
+            charge: 2.25 kg
+            initial_velocity: 529.1 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 536.5 m/s
+          -
+            charge: 2.75 kg
+            initial_velocity: 542.7 m/s
+          -
+            charge: 3.00 kg
+            initial_velocity: 547.2 m/s
+          -
+            charge: 3.25 kg
+            initial_velocity: 550.5 m/s
+      -
+        desc2: "Canon de 12, Boulets Massifs, Poudre du Ripault, 1842"
+        diameter: 117.3 dm
+        mass: 6.093 kg
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 403.8 m/s
+          -
+            charge: 1.25 kg
+            initial_velocity: 440.6 m/s
+          -
+            charge: 1.50 kg
+            initial_velocity: 467.0 m/s
+          -
+            charge: 1.75 kg
+            initial_velocity: 485.8 m/s
+          -
+            charge: 2.00 kg
+            initial_velocity: 499.7 m/s
+          -
+            charge: 2.25 kg
+            initial_velocity: 514.2 m/s
+          -
+            charge: 2.50 kg
+            initial_velocity: 520.7 m/s
+      -
+        desc2: "Canon de 12, Boulets Creux, Poudre du Ripault, 1842"
+        diameter: 118.4 dm
+        mass: 4.310 kg
+        data:
+          -
+            charge: 1.00 kg
+            initial_velocity: 483.0 m/s
+          -
+            charge: 1.50 kg
+            initial_velocity: 516.4 m/s
+  -
+    desc: "Ranges based on angles of a Canon De 30 No. 3"
+    ref2: "p. 258"
+    diameter: 0.1596 m
+    material_density: 7.152 g/cm/cm/cm
+    data:
+      -
+        charge: 3.00 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 415 m/s
+          -
+            angle: 37 arcmin 47 arcsec
+            range: 323 m
+          -
+            angle: 1 deg 45 arcmin 19 arcsec
+            range: 718 m
+          -
+            angle: 5 deg 26 arcmin 18 arcsec
+            range: 1647 m
+          -
+            angle: 10 deg 15 arcmin 56 arcsec
+            range: 2489 m
+      -
+        charge: 2.5 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 392 m/s
+          -
+            angle: 39 arcmin 40 arcsec
+            range: 307 m
+          -
+            angle: 1 deg 44 arcmin 5 arcsec
+            range: 981 m
+          -
+            angle: 5 deg 25 arcmin 50 arcsec
+            range: 1594 m
+          -
+            angle: 10 deg 17 arcmin 40 arcsec
+            range: 2234 m
+  -
+    desc: "Ranges based on angles of a Canon De 30 No. 4"
+    ref2: "p. 259"
+    diameter: 0.1596 m
+    material_density: 7.152 g/cm/cm/cm
+    data:
+      -
+        charge: 2.5 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 393 m/s
+          -
+            angle: 44 arcmin
+            range: 314 m
+          -
+            angle: 2 deg 22 arcmin 45 arcsec
+            range: 861 m
+          -
+            angle: 5 deg 23 arcmin 25 arcsec
+            range: 1563 m
+          -
+            angle: 10 deg 20 arcmin
+            range: 2276 m
+      -
+        charge: 2.0 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 363 m/s
+          -
+            angle: 46 arcmin 58 arcsec
+            range: 305.4 m
+          -
+            angle: 2 deg 32 arcmin 10 arcsec
+            range: 799 m
+          -
+            angle: 5 deg 28 arcmin 10 arcsec
+            range: 1484 m
+          -
+            angle: 10 deg 23 arcmin 20 arcsec
+            range: 2123 m
 
-# Through page 158
+# Through page 260

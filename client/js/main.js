@@ -14,14 +14,13 @@
 var References, Results;
 
 /* Load the references if they haven't been loaded.  Either way, return a
- * promise object.
+ *  promise object.
  * Exit: promise: a promise that resolves when the references are loaded. */
 function load_references() {
   if (!References) {
-    References = {};
+    References = {references: {}};
     References.fetch = $.getJSON('references.json').done(function (results) {
       var data = results.references;
-      References.references = {};
       $.each(data, function (idx, item) {
         References.references[item.key] = item;
       });
@@ -29,6 +28,39 @@ function load_references() {
     });
   }
   return References.fetch;
+}
+
+/* Load the results if they haven't been loaded.  Either way, return a promise
+ *  object.  This also loads the references and adds the results to the
+ *  references.
+ * Exit: promise: a promise that resolves when the results are loaded. */
+function load_results() {
+  if (!Results) {
+    Results = {results: {}, total: []};
+    Results.fetch = $.Deferred();
+    load_references().done(function () {
+      $.getJSON('resultslist.json').done(function (results) {
+        Results.resultslist = results;
+        var calls = [];
+        $.each(results, function (idx, item) {
+          calls.push($.getJSON(item.location).done(function (results) {
+            Results.results[results.key] = results;
+            References.references[results.key] = results;
+            $.each(results.results, function (idx, res) {
+              res.key = results.key;
+              res.idx = idx;
+              Results.total.push(res);
+            });
+          }));
+        });
+        $.when(calls).always(function () {
+          Results.fetch.resolve();
+          Results.fetch = $.when();
+        });
+      });
+    });
+  }
+  return Results.fetch;
 }
 
 /* Load a section based on an event or as specified by name.
@@ -52,6 +84,8 @@ $(function () {
   $('#b-header').append(templates.menu());
   load_section(undefined, $('.navbar .current>a').attr('data-section'));
   $('.navbar [data-section]').on('click', load_section);
-
-  load_references();
+  load_results().done(function () {
+    console.log(References);
+    console.log(Results);
+  });
 });

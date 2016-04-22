@@ -136,6 +136,8 @@ UnitsTable = [
     (['deg', 'degree', 'degrees'], False, math.pi / 180, 'Degree (angle)'),
     (['arcmin', 'arcminute', 'arcminutes'], False, math.pi / 180 / 60,
      'Minutes (angle)'),
+    (['arcsec', 'arcsecond', 'arcseconds'], False, math.pi / 180 / 60 / 60,
+     'Seconds (angle)'),
     (['rad', 'radian', 'radians'], False, 1.0, 'Radian'),
 
     # Time (reference is second)
