@@ -53,7 +53,7 @@ function load_results() {
             });
           }));
         });
-        $.when(calls).always(function () {
+        $.when.apply(this, calls).always(function () {
           Results.fetch.resolve();
           Results.fetch = $.when();
         });

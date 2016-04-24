@@ -646,7 +646,7 @@ data:
             data:
               -
                 desc2: "ball only"
-                initial_velocity: 4773 m/s
+                initial_velocity: 477 m/s
               -
                 desc2: "with sabot"
                 initial_velocity: 483.2 m/s
@@ -2006,5 +2006,83 @@ data:
           -
             angle: 10 deg 23 arcmin 20 arcsec
             range: 2123 m
+  -
+    desc: "Ranges based on angles of a Canon De 30 No. 1 and No. 2, averaged together"
+    ref2: "p. 261"
+    diameter: 0.1596 m
+    material_density: 7.199 g/cm/cm/cm
+    data:
+      -
+        charge: 4.90 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 443 m/s
+          -
+            angle: 44 arcmin 54 arcsec
+            range: 401.5 m
+          -
+            angle: 2 deg 7 arcmin 23 arcsec
+            range: 906 m
+          -
+            angle: 5 deg 18 arcmin 15 arcsec
+            range: 1658 m
+          -
+            angle: 10 deg 34 arcmin 47 arcsec
+            range: 2595 m
+      -
+        charge: 3.67 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 415 m/s
+          -
+            angle: 46 arcmin 47 arcsec
+            range: 381 m
+          -
+            angle: 2 deg 16 arcmin 42 arcsec
+            range: 835 m
+          -
+            angle: 5 deg 19 arcmin 20 arcsec
+            range: 1565 m
+          -
+            angle: 10 deg 39 arcmin
+            range: 2414 m
+      -
+        charge: 2.94 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 394 m/s
+          -
+            angle: 52 arcmin 5 arcsec
+            range: 369.5 m
+          -
+            angle: 2 deg 25 arcmin
+            range: 805 m
+          -
+            angle: 5 deg 23 arcmin 5 arcsec
+            range: 1490 m
+          -
+            angle: 10 deg 31 arcmin 20 arcsec
+            range: 2353 m
+      -
+        charge: 2.45 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 372 m/s
+          -
+            angle: 51 arcmin 36 arcsec
+            range: 342.5 m
+          -
+            angle: 2 deg 16 arcmin 15 arcsec
+            range: 769.5 m
+          -
+            angle: 5 deg 20 arcmin 30 arcsec
+            range: 1405 m
+          -
+            angle: 10 deg 35 arcmin 50 arcsec
+            range: 2305 m
 
-# Through page 260
+# Through page 262

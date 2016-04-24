@@ -43,6 +43,7 @@
     "postinstall": "grunt init default",
     "buildall": "grunt init default",
     "build": "grunt default",
-    "serve": "grunt default && grunt serve"
+    "buildserve": "grunt default && grunt serve"
+    "serve": "grunt serve"
   }
 }

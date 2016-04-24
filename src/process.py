@@ -191,7 +191,7 @@ def get_multiprocess_pool(multi):
     return pool
 
 
-def process_cases(info, results, cases, verbose=0):
+def process_cases(info, results, cases, verbose=0, nextcaseindex=0):
     """
     Check if there are any data entries in the current level of the info.
     If so, process each entry in turn.  If not, calculate the ballistics and
@@ -202,31 +202,37 @@ def process_cases(info, results, cases, verbose=0):
            results: a list to append results to.
            cases: a dictionary to collect cases in
            verbose: verbosity for the ballistics program
+    Exit:  nextcaseindex: the index of the next case that will be generated.
     """
     if info.get('skip'):
-        return
+        return nextcaseindex
     info = copy.deepcopy(info)
-    for key in ('date', 'details', 'key', 'link', 'summary', 'cms'):
-        info.pop(key, None)
     if isinstance(info.get('data'), list):
         data = info.pop('data')
         for entry in data:
             subinfo = copy.deepcopy(info)
             subinfo.update(entry)
-            process_cases(subinfo, results, cases, verbose)
-        return
+            nextcaseindex = process_cases(subinfo, results, cases, verbose,
+                                          nextcaseindex)
+        return nextcaseindex
+    infokey = info['key']
+    for key in ('key', 'details', 'link', 'summary', 'cms'):
+        info.pop(key, None)
     args = []
     if not max([info[key] == '?' for key in info]):
         args.append('--power=?')
     args.extend(sorted([
         '--%s=%s' % (key, info[key]) for key in info if key not in (
-            'ref', 'ref2', 'ref3', 'desc', 'desc2', 'desc3') and
+            'date', 'ref', 'ref2', 'ref3', 'desc', 'desc2', 'desc3') and
         not key.endswith('_note')]))
     hash = ' '.join([('"%s"' if ' ' in arg else '%s') % arg for arg in args])
     if hash not in cases:
         cases[hash] = {'info': info, 'args': args, 'position': len(cases),
                        'hash': hash}
-    results.append({'conditions': info, 'hash': hash})
+    results.append({'conditions': info, 'hash': hash, 'key': infokey,
+                    'idx': nextcaseindex})
+    nextcaseindex += 1
+    return nextcaseindex
 
 
 def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
