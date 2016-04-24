@@ -87,5 +87,25 @@ $(function () {
   load_results().done(function () {
     console.log(References);
     console.log(Results);
+    /*
+    Results.plot = {
+      marker: {size: 5},
+      mode: 'markers',
+      type: 'scatter',
+      x: [],
+      y: [],
+      text: []
+    };
+    $.each(Results.total, function (idx, res) {
+      if (res.conditions.technique) {
+        return;
+      }
+      Results.plot.x.push(parseInt(res.conditions.date));
+      Results.plot.y.push(res.results.power_factor);
+      Results.plot.text.push(res.conditions.ref + ', ' + res.conditions.ref2);
+    });
+    $('#b-content').empty();
+    Plotly.newPlot('b-content', [Results.plot]);
+    */
   });
 });

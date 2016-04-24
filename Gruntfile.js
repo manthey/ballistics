@@ -59,6 +59,10 @@ module.exports = function (grunt) {
             }
         },
 
+        clean: {
+            all: ['built']
+        },
+
         copy: {
             results: {
                 expand: true,
@@ -165,9 +169,9 @@ module.exports = function (grunt) {
                 files: {
                     'built/libs.min.js': [
                         'node_modules/jquery/dist/jquery.js',
-                        'node_modules/d3/d3.js',
-                        'node_modules/mathjax/MathJax.js',
-                        'node_modules/mathjax/config/TeX-AMS_HTML.js',
+                        //'node_modules/d3/d3.js',
+                        //'node_modules/mathjax/MathJax.js',
+                        //'node_modules/mathjax/config/TeX-AMS_HTML.js',
                         'node_modules/plotly.js/dist/plotly.js',
                         'client/lib/**/*.js'
                     ]
@@ -193,6 +197,7 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jade');

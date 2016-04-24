@@ -2007,7 +2007,7 @@ data:
             angle: 10 deg 23 arcmin 20 arcsec
             range: 2123 m
   -
-    desc: "Ranges based on angles of a Canon De 30 No. 1 and No. 2, averaged together"
+    desc: "Ranges based on angles of Canon De 30 No. 1 and No. 2, averaged together"
     ref2: "p. 261"
     diameter: 0.1596 m
     material_density: 7.199 g/cm/cm/cm
@@ -2084,5 +2084,119 @@ data:
           -
             angle: 10 deg 35 arcmin 50 arcsec
             range: 2305 m
+  -
+    desc: "Ranges based on angles of Canon De 18 No. 1 and No. 2, averaged together"
+    ref2: "p. 263"
+    diameter: 0.1344 m
+    material_density: 7.149 g/cm/cm/cm
+    data:
+      -
+        charge: 2.94 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 457 m/s
+          -
+            angle: 44 arcmin 27 arcsec
+            range: 383 m
+          -
+            angle: 2 deg 40 arcmin 56 arcsec
+            range: 896 m
+          -
+            angle: 5 deg 25 arcmin 55 arcsec
+            range: 1567 m
+          -
+            angle: 10 deg 18 arcmin 30 arcsec
+            range: 2300 m
+      -
+        charge: 2.20 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 429 m/s
+          -
+            angle: 42 arcmin 8 arcsec
+            range: 358 m
+          -
+            angle: 2 deg 12 arcmin 32 arcsec
+            range: 852 m
+          -
+            angle: 5 deg 29 arcmin 50 arcsec
+            range: 1522 m
+          -
+            angle: 10 deg 21 arcmin 30 arcsec
+            range: 2355 m
+      -
+        charge: 1.76 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 406 m/s
+          -
+            angle: 49 arcmin 47 arcsec
+            range: 382 m
+          -
+            angle: 2 deg 15 arcmin 30 arcsec
+            range: 792 m
+          -
+            angle: 5 deg 31 arcmin 20 arcsec
+            range: 1481 m
+          -
+            angle: 10 deg 28 arcmin 20 arcsec
+            range: 2344 m
+      -
+        charge: 1.47 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 382 m/s
+          -
+            angle: 47 arcmin 5 arcsec
+            range: 333 m
+          -
+            angle: 2 deg 7 arcmin 42 arcsec
+            range: 723 m
+          -
+            angle: 5 deg 33 arcmin 30 arcsec
+            range: 1440 m
+          -
+            angle: 10 deg 28 arcmin 20 arcsec
+            range: 2270 m
+  -
+    desc: "Ranges based on angles of several Canon De 12 averaged together"
+    ref2: "p. 264"
+    diameter: 0.1173 m
+    material_density: 7.137 g/cm/cm/cm
+    data:
+      -
+        charge: 1.500 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 455 m/s
+          -
+            angle: 36 arcmin 41 arcsec
+            range: 343.3 m
+          -
+            angle: 2 deg 21 arcmin 1 arcsec
+            range: 896.1 m
+          -
+            angle: 5 deg 14 arcmin 14 arcsec
+            range: 1509 m
+      -
+        charge: 1.00 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 395 m/s
+          -
+            angle: 39 arcmin 8 arcsec
+            range: 303.7 m
+          -
+            angle: 2 deg 28 arcmin 45 arcsec
+            range: 838 m
+          -
+            angle: 5 deg 9 arcmin 26 arcsec
+            range: 1368 m
 
-# Through page 262
+# Through page 264

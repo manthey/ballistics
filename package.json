@@ -22,6 +22,7 @@
     "express": "~4.13",
     "grunt": "~0.4",
     "grunt-cli": "~1.1",
+    "grunt-contrib-clean": "~1.0",
     "grunt-contrib-concat": "~1.0",
     "grunt-contrib-copy": "~1.0",
     "grunt-contrib-cssmin": "~1.0",
@@ -43,7 +44,8 @@
     "postinstall": "grunt init default",
     "buildall": "grunt init default",
     "build": "grunt default",
-    "buildserve": "grunt default && grunt serve"
+    "buildserve": "grunt default && grunt serve",
+    "clean": "grunt clean",
     "serve": "grunt serve"
   }
 }
