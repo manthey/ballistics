@@ -43,8 +43,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-04-13v33'
-PROGRAM_SIGNATURE = '6fc567669c4bdd05cc72383a2449c475'
+__version__ = '2016-04-24v34'
+PROGRAM_SIGNATURE = '440c5d401f147eef468829915b6e6ac7'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -54,6 +54,8 @@ PROGRAM_SIGNATURE = '6fc567669c4bdd05cc72383a2449c475'
 #  final_velocity: the final velocity at the ending range in m/s
 #  initial_height: initial height above sea level in m
 #  final_height: final height above sea level in m
+#  rising_height: final height above sea level in m, but the projectile is
+#      still gaining altitude.
 #  power_factor: power factor of the powder in J/kg
 #  range: total distance travelled by projectile in m
 #  final_time: duration of flight in s
@@ -208,6 +210,15 @@ Factors = {
     #  weak: if True, solving for this parameter is ill-conditioned.
     # units, 'desc': description, 'method': calculation method, either direct,
     # scan, or binary (the default), 'min':
+    'atmospheric_density': {
+        'long': 'atmosphericdensity',
+        'short': 'A',
+        'units': 'kg/m/m/m',
+        'eng': 'lb/in/in/in',
+        'weak': True,
+        'title': 'Atmospheric Density',
+        'desc': 'Atmospheric density (mass per volume).'
+    },
     'charge': {
         'long': 'charge',
         'short': 'c',
@@ -380,6 +391,17 @@ Factors = {
         'title': 'Relative Humidity',
         'desc': 'Relative humidity.'
     },
+    'rising_height': {
+        'long': 'risingheight',
+        'short': 'R',
+        'units': 'm',
+        'eng': 'ft',
+        'min': 0,
+        'max': 8848,
+        'title': 'Rising Final Height',
+        'desc': 'Final height above sea level where the projectile is still '
+        'gaining altitude.'
+    },
     'time_delta': {
         'long': 'delta',
         'short': 'z',
@@ -467,6 +489,33 @@ def acceleration_from_gravity(state):
     # gravity should decrease
     g = g0*(re/(re+y))**2
     return g
+
+
+def adjust_for_density(state):
+    """Given the atmospheric density, adjust the initial pressure altitude so
+     that we are at an atmosphere of that desnity.
+    Enter: state: a dictionary of the current state.
+    Exit:  state: adjusted state."""
+    state = state.copy()
+    if not state.get('pressure'):
+        state['pressure'] = pressure_from_altitude(0)
+    pa_given = state['atmospheric_density']
+    state['pressure_y0'] = yl = -5000
+    pal = atmospheric_density(state)
+    state['pressure_y0'] = yh = 5000
+    pah = atmospheric_density(state)
+    while (pal - pa_given) * (pah - pa_given) < 0:
+        state['pressure_y0'] = y = (yl + yh) / 2
+        pa = atmospheric_density(state)
+        if abs(pa - pa_given) < 0.001:
+            break
+        if (pal - pa_given) * (pa - pa_given) < 0:
+            pah = pa
+            yh = y
+        else:
+            pal = pa
+            yl = y
+    return state
 
 
 def atmospheric_density(state):
@@ -783,6 +832,8 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
     direct_state = find_unknown_direct(unknown, initial_state)
     if direct_state:
         return direct_state, []
+    if initial_state.get('atmospheric_density'):
+        initial_state = adjust_for_density(initial_state)
     method = Factors[unknown].get('method', 'binary')
     if unknown_scan:
         method = 'scan'
@@ -1901,23 +1952,25 @@ def trajectory(state):  # noqa - mccabe
     state['ay'] = ay
     delta = state.get('time_delta', 0.01)
     final_y = state.get('final_height', None)
+    if 'rising_height' in state:
+        final_y = None
     max_range = state.get('range', None)
     max_time = state.get('final_time', None)
     min_velocity = state.get('final_velocity', None)
     if (final_y is None and max_range is None and max_time is None and
             min_velocity is None):
         state['error'] = ('Failed - at least one of final_height, range, '
-                          'final_time, or final_velocity must be specified '
-                          'to compute the trajectory.')
+                          'final_time, or final_velocity must be specified to '
+                          'compute the trajectory.')
         return (state, [])
-    # Now compute the trajectory in a series of steps until the end condition is
-    # reached.
+    # Now compute the trajectory in a series of steps until the end condition
+    # is reached.
     laststate = None
     points = []
     while True:
         proceed = 'check'
         if final_y is not None:
-            offset = state['y']-final_y
+            offset = state['y'] - final_y
             if state['vy'] >= 0:
                 proceed = True
         elif max_range is not None:
@@ -1992,21 +2045,25 @@ def trajectory_error(initial_state, unknown, unknown_value):
             initial_state.get('final_velocity', None) is not None):
         v0 = initial_state['final_velocity']
         v = (state['vx']**2+state['vy']**2)**0.5
-        return v-v0
+        return v - v0
+    if initial_state.get('rising_height', None) is not None:
+        y0 = initial_state['rising_height']
+        y = state['y']
+        return y - y0
     if unknown != 'range' and initial_state.get('range', None) is not None:
         x0 = initial_state['range']
         x = state['x']
-        return x-x0
+        return x - x0
     if (unknown != 'final_time' and
             initial_state.get('final_time', None) is not None):
         t0 = initial_state['final_time']
         t = state['time']
-        return t-t0
+        return t - t0
     if (unknown != 'max_height' and
             initial_state.get('max_height', None) is not None):
         y0 = initial_state['max_height']
         y = state['max_height']
-        return y-y0
+        return y - y0
     print 'Cannot calculate trajectory error - nothing to solve for'
     return None
 

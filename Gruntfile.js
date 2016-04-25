@@ -169,10 +169,10 @@ module.exports = function (grunt) {
                 files: {
                     'built/libs.min.js': [
                         'node_modules/jquery/dist/jquery.js',
-                        //'node_modules/d3/d3.js',
+                        'node_modules/d3/d3.js',
                         //'node_modules/mathjax/MathJax.js',
                         //'node_modules/mathjax/config/TeX-AMS_HTML.js',
-                        'node_modules/plotly.js/dist/plotly.js',
+                        //'node_modules/plotly.js/dist/plotly.js',
                         'client/lib/**/*.js'
                     ]
                 }

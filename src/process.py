@@ -236,7 +236,7 @@ def process_cases(info, results, cases, verbose=0, nextcaseindex=0):
 
 
 def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
-                          pool=None):
+                          pool=None, reverse=False):
     """
     Load a yaml file and any companion files.  For each non-skipped data set,
     calculate the ballistics result.  Output the results as a json file with
@@ -249,6 +249,7 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
            all: True to process regardless of results time.
            verbose: verbosity for the ballistics program.
            pool: if not None, use this multiprocessing pool.
+           reverse: if True, calculate the cases in the file in reverse order.
     """
     srcdate = os.path.getmtime(srcfile)
     info = yaml.safe_load(open(srcfile))
@@ -279,6 +280,9 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
     results['results'] = []
     cases = {}
     process_cases(info, results['results'], cases, verbose)
+    if reverse:
+        for hash in cases:
+            cases[hash]['position'] *= -1
     if calculate_cases(results, cases, verbose, pool):
         json.dump(results, open(destpath, 'wb'), sort_keys=True, indent=1,
                   separators=(',', ': '), cls=FloatEncoder)
@@ -295,6 +299,7 @@ if __name__ == '__main__':  # noqa - mccabe
     multi = False
     multiFile = False
     outputPath = None
+    reverse = False
     verbose = 0
     help = False
     for arg in sys.argv[1:]:
@@ -313,6 +318,8 @@ if __name__ == '__main__':  # noqa - mccabe
         elif arg.startswith('--out='):
             outputPath = os.path.abspath(os.path.expanduser(
                 arg.split('=', 1)[1]))
+        elif arg == '--reverse':
+            reverse = True
         elif arg == '-v':
             verbose += 1
         elif arg.startswith('-'):
@@ -331,7 +338,7 @@ if __name__ == '__main__':  # noqa - mccabe
             not os.path.isdir(outputPath)):
         print """Process yml and md files using the ballistics code.
 
-Syntax: process.py --out=(path) --all -v
+Syntax: process.py --out=(path) --all --reverse -v
         --multi|--multifile|--multicase[=(number of processes)]
         (input files ...)
 
@@ -342,6 +349,8 @@ Only files newer than the matching results are processed unless the
   unless a number is specified.  --multifile runs a process per input file,
   --multicase runs a process per basllistics case.
 --out specifies an output directory, which must exist.
+--reverse calculates the last conditions in a file first.  The output is
+  identical to the forward calculation.
 -v increase verbosity.
 """
         sys.exit(0)
@@ -354,12 +363,13 @@ Only files newer than the matching results are processed unless the
         if not multi or not multiFile:
             for file in files:
                 read_and_process_file(file, outputPath, allFiles, verbose,
-                                      pool)
+                                      pool, reverse=reverse)
         else:
             mapfunc = functools.partial(read_and_process_file, *[], **{
                 'outputPath': outputPath,
                 'all': allFiles,
-                'verbose': verbose
+                'verbose': verbose,
+                'reverse': reverse
             })
             task = pool.map_async(mapfunc, files, 1)
             while not task.ready():

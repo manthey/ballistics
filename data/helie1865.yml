@@ -2198,5 +2198,192 @@ data:
           -
             angle: 5 deg 9 arcmin 26 arcsec
             range: 1368 m
+  -
+    desc: "Ranges based on angles of a 22 cm mortar using a shell"
+    ref2: "p. 271"
+    diameter: 0.2202 m
+    mass: 27 kg
+    material_density: 4.841 g/cm/cm/cm
+    data:
+      -
+        charge: 3.5 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 380 m/s
+          -
+            angle: 1 deg 55 arcmin 52 arcsec
+            range: 707 m
+          -
+            angle: 5 deg 28 arcmin 10 arcsec
+            range: 1465 m
+          -
+            angle: 10 deg 11 arcmin 35 arcsec
+            range: 2257 m
+  -
+    desc: "Ranges based on angles of Canons de 30 using shells"
+    ref2: "p. 272"
+    diameter: 0.1602 m
+    mass: 11.48 kg
+    material_density: 5.363 g/cm/cm/cm
+    data:
+      -
+        charge: 2.50 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 448 m/s
+          -
+            angle: 2 deg 4 arcmin 32 arcsec
+            range: 839 m
+          -
+            angle: 5 deg 24 arcmin 10 arcsec
+            range: 1571 m
+          -
+            angle: 10 deg 17 arcmin 30 arcsec
+            range: 2142 m
+  -
+    desc: "Ranges based on angles of Canons de 12 using shells"
+    ref2: "p. 272"
+    diameter: 0.1184 m
+    mass: 4.310 kg
+    material_density: 4.970 g/cm/cm/cm
+    data:
+      -
+        charge: 1.5 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 510 m/s
+          -
+            angle: 2 deg 28 arcmin 51 arcsec
+            range: 934.2 m
+          -
+            angle: 5 deg 7 arcmin 53 arcsec
+            range: 1415 m
+      -
+        charge: 1.0 kg
+        data:
+          -
+            angle: 0 deg
+            initial_velocity: 483 m/s
+          -
+            angle: 2 deg 17 arcmin 20 arcsec
+            range: 828.5 m
+          -
+            angle: 5 deg 3 arcmin 17 arcsec
+            range: 1304 m
+  -
+    desc: "Heights along a trajectory measured in Russia, First series"
+    ref2: "p. 277"
+    angle: 1 deg 45 arcmin
+    charge: 3.276 kg
+    diameter: 1.493 dm
+    mass: 12.174 kg
+    atmospheric_density: 0.001187 g/cm/cm/cm
+    data:
+      -
+        initial_velocity: 521.1 m/s
+      -
+        range: 11.121 m
+        rising_height: 0.3401 m
+      -
+        range: 106.7 m
+        rising_height: 3.078 m
+      -
+        range: 213.4 m
+        rising_height: 5.745 m
+      -
+        range: 320.6 m
+        rising_height: 7.549 m
+      -
+        range: 426.8 m
+        rising_height: 8.741 m
+      -
+        range: 533.5 m
+        rising_height: 8.966 m
+      -
+        range: 640.2 m
+        final_height: 8.198 m
+      -
+        range: 746.9 m
+        final_height: 6.196 m
+      -
+        range: 853.6 m
+        final_height: 2.974 m
+      -
+        range: 960.3 m
+        final_height: -1.667 m
+  -
+    desc: "Heights along a trajectory measured in Russia, Second series"
+    ref2: "p. 278"
+    angle: 2 deg
+    charge: 2.048 kg
+    diameter: 1.486 dm
+    mass: 12.015 kg
+    atmospheric_density: 0.001287 g/cm/cm/cm
+    atmospheric_density_note: "I'm ususpicious of these densities, as the only difference between them is precisely 0.0001."
+    data:
+      -
+        initial_velocity: 415.3 m/s
+      -
+        range: 11.121 m
+        rising_height: 0.3965 m
+      -
+        range: 106.7 m
+        rising_height: 3.523 m
+      -
+        range: 213.4 m
+        rising_height: 6.327 m
+      -
+        range: 320.6 m
+        rising_height: 8.006 m
+      -
+        range: 426.8 m
+        rising_height: 8.665 m
+      -
+        range: 533.5 m
+        final_height: 8.325 m
+      -
+        range: 640.2 m
+        final_height: 6.001 m
+      -
+        range: 746.9 m
+        final_height: 2.892 m
+  -
+    desc: "Heights along a trajectory measured in Russia, Third series"
+    ref2: "p. 278"
+    angle: 2 deg 30 arcmin
+    charge: 1.220 kg
+    diameter: 1.493 dm
+    mass: 12.159 kg
+    atmospheric_density: 0.001187 g/cm/cm/cm
+    data:
+      -
+        initial_velocity: 327.4 m/s
+      -
+        range: 11.121 m
+        rising_height: 0.4910 m
+      -
+        range: 106.7 m
+        rising_height: 4.295 m
+      -
+        range: 213.4 m
+        rising_height: 7.427 m
+      -
+        range: 320.6 m
+        rising_height: 9.098 m
+      -
+        range: 426.8 m
+        rising_height: 9.338 m
+      -
+        range: 533.5 m
+        final_height: 7.763 m
+      -
+        range: 640.2 m
+        final_height: 4.498 m
+      -
+        range: 746.9 m
+        final_height: -0.741 m
 
-# Through page 264
+# Through page 280
