@@ -1981,6 +1981,9 @@ def trajectory(state):  # noqa - mccabe
             offset = (state['vx']**2+state['vy']**2)**0.5-min_velocity
         if offset < 0 and proceed == 'check':
             break
+        if (state['y'] < min(state.get('initial_height', 0),
+                             state.get('final_height', 0)) - 5000):
+            break
         if state['y'] > state['max_height']:
             state['max_height'] = state['y']
         if (not len(points) or

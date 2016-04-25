@@ -2285,35 +2285,38 @@ data:
       -
         initial_velocity: 521.1 m/s
       -
-        range: 11.121 m
-        rising_height: 0.3401 m
-      -
-        range: 106.7 m
-        rising_height: 3.078 m
-      -
-        range: 213.4 m
-        rising_height: 5.745 m
-      -
-        range: 320.6 m
-        rising_height: 7.549 m
-      -
-        range: 426.8 m
-        rising_height: 8.741 m
-      -
-        range: 533.5 m
-        rising_height: 8.966 m
-      -
-        range: 640.2 m
-        final_height: 8.198 m
-      -
-        range: 746.9 m
-        final_height: 6.196 m
-      -
-        range: 853.6 m
-        final_height: 2.974 m
-      -
-        range: 960.3 m
-        final_height: -1.667 m
+        technique: trajectory
+        data:
+          -
+            range: 11.121 m
+            rising_height: 0.3401 m
+          -
+            range: 106.7 m
+            rising_height: 3.078 m
+          -
+            range: 213.4 m
+            rising_height: 5.745 m
+          -
+            range: 320.6 m
+            rising_height: 7.549 m
+          -
+            range: 426.8 m
+            rising_height: 8.741 m
+          -
+            range: 533.5 m
+            rising_height: 8.966 m
+          -
+            range: 640.2 m
+            final_height: 8.198 m
+          -
+            range: 746.9 m
+            final_height: 6.196 m
+          -
+            range: 853.6 m
+            final_height: 2.974 m
+          -
+            range: 960.3 m
+            final_height: -1.667 m
   -
     desc: "Heights along a trajectory measured in Russia, Second series"
     ref2: "p. 278"
@@ -2327,29 +2330,32 @@ data:
       -
         initial_velocity: 415.3 m/s
       -
-        range: 11.121 m
-        rising_height: 0.3965 m
-      -
-        range: 106.7 m
-        rising_height: 3.523 m
-      -
-        range: 213.4 m
-        rising_height: 6.327 m
-      -
-        range: 320.6 m
-        rising_height: 8.006 m
-      -
-        range: 426.8 m
-        rising_height: 8.665 m
-      -
-        range: 533.5 m
-        final_height: 8.325 m
-      -
-        range: 640.2 m
-        final_height: 6.001 m
-      -
-        range: 746.9 m
-        final_height: 2.892 m
+        technique: trajectory
+        data:
+          -
+            range: 11.121 m
+            rising_height: 0.3965 m
+          -
+            range: 106.7 m
+            rising_height: 3.523 m
+          -
+            range: 213.4 m
+            rising_height: 6.327 m
+          -
+            range: 320.6 m
+            rising_height: 8.006 m
+          -
+            range: 426.8 m
+            rising_height: 8.665 m
+          -
+            range: 533.5 m
+            final_height: 8.325 m
+          -
+            range: 640.2 m
+            final_height: 6.001 m
+          -
+            range: 746.9 m
+            final_height: 2.892 m
   -
     desc: "Heights along a trajectory measured in Russia, Third series"
     ref2: "p. 278"
@@ -2362,28 +2368,31 @@ data:
       -
         initial_velocity: 327.4 m/s
       -
-        range: 11.121 m
-        rising_height: 0.4910 m
-      -
-        range: 106.7 m
-        rising_height: 4.295 m
-      -
-        range: 213.4 m
-        rising_height: 7.427 m
-      -
-        range: 320.6 m
-        rising_height: 9.098 m
-      -
-        range: 426.8 m
-        rising_height: 9.338 m
-      -
-        range: 533.5 m
-        final_height: 7.763 m
-      -
-        range: 640.2 m
-        final_height: 4.498 m
-      -
-        range: 746.9 m
-        final_height: -0.741 m
+        technique: trajectory
+        data:
+          -
+            range: 11.121 m
+            rising_height: 0.4910 m
+          -
+            range: 106.7 m
+            rising_height: 4.295 m
+          -
+            range: 213.4 m
+            rising_height: 7.427 m
+          -
+            range: 320.6 m
+            rising_height: 9.098 m
+          -
+            range: 426.8 m
+            rising_height: 9.338 m
+          -
+            range: 533.5 m
+            final_height: 7.763 m
+          -
+            range: 640.2 m
+            final_height: 4.498 m
+          -
+            range: 746.9 m
+            final_height: -0.741 m
 
 # Through page 280

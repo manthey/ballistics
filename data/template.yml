@@ -26,7 +26,8 @@ data:
     desc: First trial
     ref2: p. 41
     date: Of test
-    technique: "theory"   # one of theory, calorimeter, ballistics
+    # technique is one of range, theory, calorimeter, trajectory
+    technique: "theory"
   -
     mass: 24 lb 6.5 oz
     charge: 1 troyounces
