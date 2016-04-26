@@ -139,6 +139,11 @@ UnitsTable = [
     (['arcsec', 'arcsecond', 'arcseconds'], False, math.pi / 180 / 60 / 60,
      'Seconds (angle)'),
     (['rad', 'radian', 'radians'], False, 1.0, 'Radian'),
+    (['tangent'], False, (lambda x: math.atan(x), lambda x: math.tan(x)),
+     'Tangent of angle'),
+    (['%slope', 'percentslope'], False, (
+     lambda x: math.atan(x * 0.01), lambda x: math.tan(x) * 100),
+     'Percent slope'),
 
     # Time (reference is second)
     (['s', 'sec', 'second', 'seconds'], True, 1.0, 'Second (time)'),
@@ -250,6 +255,11 @@ def convert_units_apply(value, factor, fromto='from', mode='mul'):
     Exit:  value: the converted value."""
     offset = 0
     if isinstance(factor, tuple):
+        if callable(factor[0]):
+            if (fromto, mode) in (('from', 'mul'), ('to', 'div')):
+                return factor[0](value)
+            else:
+                return factor[1](value)
         (factor, offset) = factor
     if (fromto, mode) in (('from', 'mul'), ('to', 'div')):
         value = (value+offset)*factor

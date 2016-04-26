@@ -2394,5 +2394,56 @@ data:
           -
             range: 746.9 m
             final_height: -0.741 m
+  -
+    desc: "Experiments with Fusils d'Infantrie"
+    ref2: "p. 280"
+    angle: 0.00338 tangent
+    charge: 9.0 g
+    diameter: 0.167 dm
+    mass: 0.0268 kg
+    date: "1849"
+    data:
+      -
+        initial_velocity: 446 m/s
+      -
+        technique: trajectory
+        ref2: "p. 281"
+        data:
+          -
+            range: 25 m
+            rising_height: 0.05 m
+          -
+            range: 50 m
+            rising_height: 0.09 m
+          -
+            range: 75 m
+            rising_height: 0.12 m
+          -
+            range: 100 m
+            final_height: 0.02 m
+          -
+            range: 125 m
+            final_height: -0.18 m
+          -
+            range: 150 m
+            final_height: -0.42 m
+          -
+            range: 175 m
+            final_height: -0.73 m
+          -
+            range: 200 m
+            final_height: -1.00 m
+          -
+            range: 250 m
+            final_height: -2.76 m
+          -
+            range: 300 m
+            final_height: -4.87 m
+          -
+            range: 400 m
+            final_height: -11.85 m
+  -
+    skip: true
+    skip_note: "On pages 301-304 are tables of computed ranges that have been greatly simplified."
 
-# Through page 280
+# Through page 304
