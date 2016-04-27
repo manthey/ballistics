@@ -2445,5 +2445,202 @@ data:
   -
     skip: true
     skip_note: "On pages 301-304 are tables of computed ranges that have been greatly simplified."
+  -
+    desc: "Comparison of theory to experiment with l'obusier de montagne"
+    ref2: "p. 307"
+    charge: 270 g
+    diameter: 1.184 dm
+    mass: 4.310 kg
+    date: "1854-11-27"
+    data:
+      -
+        technique: theory
+        data:
+          -
+            angle: 20 deg
+            range: 1926 m
+          -
+            angle: 25 deg
+            range: 2124 m
+          -
+            angle: 30 deg
+            range: 2254 m
+          -
+            angle: 38 deg
+            angle_note: "My copy is smudged and this may read 48 degrees"
+            range: 2342 m
+      -
+        angle: 30 deg
+        range: 1880 m
+      -
+        angle: 35 deg
+        charge: 306 g
+        range: 1770 m
+  -
+    desc: "Effect of off-axis center of mass on range"
+    ref2: "p. 312"
+    diameter: 220.2 mm
+    mass: 27.6 kg
+    data:
+      -
+        desc2: "Le centre de gravit\u00e8 au-dessous de l'axe (below)"
+        data:
+          -
+            charge: 2.0 kg
+            data:
+              -
+                angle: 2 deg
+                range: 587 m
+              -
+                angle: 5 deg
+                range: 946 m
+              -
+                angle: 10 deg
+                range: 1463 m
+          -
+            charge: 3.5 kg
+            data:
+              -
+                angle: 2 deg
+                range: 784 m
+              -
+                angle: 5 deg
+                range: 1209 m
+              -
+                angle: 10 deg
+                range: 1774 m
+      -
+        desc2: "Le centre de gravit\u00e8 au-dessus de l'axe (above)"
+        data:
+          -
+            charge: 2.0 kg
+            data:
+              -
+                angle: 2 deg
+                range: 717 m
+              -
+                angle: 5 deg
+                range: 1253 m
+              -
+                angle: 10 deg
+                range: 2094 m
+          -
+            charge: 3.5 kg
+            data:
+              -
+                angle: 2 deg
+                range: 843 m
+              -
+                angle: 5 deg
+                range: 1546 m
+              -
+                angle: 10 deg
+                range: 2528 m
+      -
+        desc2: "A gauche"
+        angle: 5 deg
+        ref2: "p. 313"
+        data:
+          -
+            charge: 2.0 kg
+            range: 990 m
+          -
+            charge: 3.5 kg
+            range: 1305 m
+      -
+        desc2: "A droite"
+        angle: 5 deg
+        ref2: "p. 313"
+        data:
+          -
+            charge: 2.0 kg
+            range: 1004 m
+          -
+            charge: 3.5 kg
+            range: 1299 m
+      -
+        desc2: "Le centre de gravit\u00e8 au-dessous de l'axe (below)"
+        ref2: "p. 313"
+        angle: 45 deg
+        date: "1844"
+        data:
+          -
+            charge: 0.300 kg
+            range: 335 m
+          -
+            charge: 0.600 kg
+            range: 749 m
+      -
+        desc2: "Le centre de gravit\u00e8 au-dessus de l'axe (above)"
+        ref2: "p. 313"
+        angle: 45 deg
+        date: "1844"
+        data:
+          -
+            charge: 0.300 kg
+            range: 355 m
+          -
+            charge: 0.600 kg
+            range: 794 m
+      -
+        desc2: "Le centre de gravit\u00e8 au-dessus de l'axe (above)"
+        ref2: "p. 314"
+        charge: 3.50 kg
+        date: "1844"
+        data:
+          -
+            mass: 27.76 kg
+            data:
+              -
+                angle: 15 deg
+                range: 3197 m
+              -
+                angle: 20 deg
+                range: 3796 m
+              -
+                angle: 25 deg
+                range: 4114 m
+              -
+                angle: 30 deg
+                range: 4159 m
+              -
+                angle: 37 deg
+                range: 4175 m
+          -
+            mass: 26.510 kg
+            data:
+              -
+                angle: 30 deg
+                range: 3514 m
+              -
+                angle: 37 deg
+                range: 3687 m
+  -
+    skip: true
+    skip_note: "On page 315, some semi-spherical projectiles are used.  Our ballistics model doesn't apply."
+  -
+    desc2: "Experiments with eccentric projectiles.  The results included are for the ordinary projectiles."
+    ref2: "p. 316"
+    diameter: 274.4 mm
+    mass: 48.8 kg
+    charge: 5 kg
+    data:
+      -
+        angle: 15 deg
+        range: 2653 m
+      -
+        angle: 25 deg
+        range: 3400 m
+      -
+        angle: 30 deg
+        range: 3552 m
+  -
+    desc2: "Study of deviation of trajectory."
+    ref2: "p. 329"
+    date: "1858-06-01"
+    diameter: 159.6 mm
+    charge: 2.0 kg
+    mass: 15.1 kg
+    angle: 5 deg 35 arcmin 50 arcsec
+    range: 1071 m
 
-# Through page 304
