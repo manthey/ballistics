@@ -1,0 +1,52 @@
+---
+key: hutton1812
+ref: "Hutton, 1812"
+cms: "Hutton, Charles.  <i>Tracts on Mathematical and Philosophical Subjects, Vol II.</i>  London: F. C. and J Rivington, et al., 1812"
+summary: "Tract XXXIV: New Experiments in Gunnery; for Determining the Force of Fired Gunpowder, the initial velocity of cannon balls, the ranged of projectiles at different elevations, the resistance of air to projectiles, the effect of different lengths of guns, and of different quantities of powder, &c, &c."
+date: "1812"
+data:
+  -
+    skip: true
+    skip_node: "The experiments up to page 351 show the recoil of the gun, not the muzzle velocity, so they haven't been used."
+  -
+    ref2: "p. 352"
+    desc2: "Gun No. 1"
+    date: "1783-06-30"
+    angle: 0 deg
+    charge: 16 oz
+    mass: 16 oz 13 dr
+    diameter: 1.95 in
+    humidity: 15%
+    humidity_note: "My estimate for 'clear, dry, and hot'"
+    pressure: 30.34 inHg
+    temperature: 74 F
+    range: 32 ft
+    range_note: "p. 337"
+    data:
+      - final_velocity: 1392 ft/s
+      - final_velocity: 1534 ft/s
+      - final_velocity: 1426 ft/s
+      - final_velocity: 1530 ft/s
+      - final_velocity: 1445 ft/s
+      - final_velocity: 1412 ft/s
+  -
+    ref2: "p. 356"
+    desc2: "Gun No. 3"
+    date: "1783-07-12"
+    angle: 0 deg
+    charge: 16 oz
+    mass: 16 oz 13 dr
+    diameter: 1.96 in
+    humidity: 15%
+    humidity_note: "My estimate for 'Fine, clear, hot weather'"
+    range: 32 ft
+    range_note: "p. 337"
+    data:
+      - final_velocity: 2151 ft/s
+      - final_velocity: 1960 ft/s
+      - final_velocity: 2076 ft/s
+      - final_velocity: 1958 ft/s
+      - final_velocity: 2028 ft/s
+      - final_velocity: 2005 ft/s
+
+# Through page 356
