@@ -223,7 +223,8 @@ def process_cases(info, results, cases, verbose=0, nextcaseindex=0):
         args.append('--power=?')
     args.extend(sorted([
         '--%s=%s' % (key, info[key]) for key in info if key not in (
-            'date', 'ref', 'ref2', 'ref3', 'desc', 'desc2', 'desc3') and
+            'date', 'ref', 'ref2', 'ref3', 'desc', 'desc2', 'desc3',
+            'technique') and
         not key.endswith('_note')]))
     hash = ' '.join([('"%s"' if ' ' in arg else '%s') % arg for arg in args])
     if hash not in cases:

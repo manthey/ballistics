@@ -151,6 +151,7 @@ data:
     range: 20 ft
     charge: 7 drams
     mass: 1 ozit
+    technique: "wheel_chronograph"
     data:
       -
         desc2: "Very moist weather"
@@ -207,6 +208,7 @@ data:
     angle: 0 deg
     range: 20 ft
     humidity: 50%
+    technique: "wheel_chronograph"
     data:
       -
         desc2: "A musket 1 ft 10 in length of bore"
@@ -285,6 +287,7 @@ data:
     material: lead
     angle: 0 deg
     range: 20 ft
+    technique: "wheel_chronograph"
     data:
       -
         desc2: "Wall-piece"
@@ -323,6 +326,7 @@ data:
     angle: 0 deg
     range: 20 ft
     humidity: 50%
+    technique: "wheel_chronograph"
     data:
       -
         desc2: "Musquet"
@@ -359,6 +363,7 @@ data:
     humidity: 50%
     charge: 7 drams
     mass: 1 ozit
+    technique: "wheel_chronograph"
     data:
       -
         desc2: "Barrel 0 ft 11 in"

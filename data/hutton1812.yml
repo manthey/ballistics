@@ -4,10 +4,11 @@ ref: "Hutton, 1812"
 cms: "Hutton, Charles.  <i>Tracts on Mathematical and Philosophical Subjects, Vol II.</i>  London: F. C. and J Rivington, et al., 1812"
 summary: "Tract XXXIV: New Experiments in Gunnery; for Determining the Force of Fired Gunpowder, the initial velocity of cannon balls, the ranged of projectiles at different elevations, the resistance of air to projectiles, the effect of different lengths of guns, and of different quantities of powder, &c, &c."
 date: "1812"
+technique: "double_pendulum"
 data:
   -
     skip: true
-    skip_node: "The experiments up to page 351 show the recoil of the gun, not the muzzle velocity, so they haven't been used."
+    skip_note: "The experiments up to page 351 show the recoil of the gun, not the muzzle velocity, so they haven't been used."
   -
     ref2: "p. 352"
     desc2: "Gun No. 1"
@@ -48,5 +49,673 @@ data:
       - final_velocity: 1958 ft/s
       - final_velocity: 2028 ft/s
       - final_velocity: 2005 ft/s
+  -
+    ref2: "p. 357-358"
+    desc2: "Gun No. 1"
+    date: "1783-07-17"
+    angle: 0 deg
+    pressure: 30.23 inHg
+    temperature: 72 F
+    range: 32 ft
+    range_note: "p. 337"
+    charge: 8 oz
+    mass: 16 oz 13 dr
+    diameter: 1.96 in
+    data:
+      - final_velocity: 1450 ft/s
+      - final_velocity: 1534 ft/s
+      - final_velocity: 1423 ft/s
+      - final_velocity: 1462 ft/s
+      - final_velocity: 1460 ft/s
+      - final_velocity: 1497 ft/s
+  -
+    ref2: "p. 359"
+    desc2: "Gun No. 3"
+    date: "1783-07-18"
+    angle: 0 deg
+    pressure: 30.28 inHg
+    temperature: 68 F
+    range: 32 ft
+    range_note: "p. 337"
+    mass: 16 oz 13 dr
+    diameter: 1.96 in
+    data:
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 1764 ft/s
+          - final_velocity: 1765 ft/s
+          - final_velocity: 1768 ft/s
+      -
+        charge: 4 oz
+        data:
+          - final_velocity: 1380 ft/s
+          - final_velocity: 1352 ft/s
+          - final_velocity: 1327 ft/s
+  -
+    ref2: "p. 361"
+    date: "1783-07-19"
+    angle: 0 deg
+    pressure: 30.12 inHg
+    temperature: 70 F
+    range: 32 ft
+    range_note: "p. 337"
+    mass: 16 oz 13 dr
+    diameter: 1.96 in
+    data:
+      -
+        desc2: "Gun No. 1"
+        charge: 4 oz
+        data:
+          - final_velocity: 1065 ft/s
+          - final_velocity: 1111 ft/s
+          - final_velocity: 1137 ft/s
+          - final_velocity: 1122 ft/s
+      -
+        desc2: "Gun No. 1"
+        charge: 2 oz
+        data:
+          - final_velocity: 783 ft/s
+          - final_velocity: 803 ft/s
+          - final_velocity: 805 ft/s
+      -
+        desc2: "Gun No. 3"
+        charge: 2 oz
+        data:
+          - final_velocity: 930 ft/s
+          - final_velocity: 881 ft/s
+          - final_velocity: 901 ft/s
+          - final_velocity: 881 ft/s
+  -
+    ref2: "p. 363"
+    date: "1783-07-23"
+    angle: 0 deg
+    pressure: 29.85 inHg
+    temperature: 70 F
+    range: 32 ft
+    range_note: "p. 337"
+    mass: 16 oz 13.5 dr
+    diameter: 1.96 in
+    desc2: "Gun No. 2"
+    data:
+      -
+        charge: 16 oz
+        data:
+          - final_velocity: 1693 ft/s
+          - final_velocity: 1610 ft/s
+          - final_velocity: 1736 ft/s
+          - final_velocity: 1603 ft/s
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 1607 ft/s
+          - final_velocity: 1538 ft/s
+          - final_velocity: 1553 ft/s
+      -
+        charge: 4 oz
+        data:
+          - final_velocity: 1159 ft/s
+          - final_velocity: 1127 ft/s
+          - final_velocity: 1120 ft/s
+      -
+        charge: 2 oz
+        data:
+          - final_velocity: 722 ft/s
+          - final_velocity: 847 ft/s
+          - final_velocity: 727 ft/s
+          - final_velocity: 878 ft/s
+  -
+    ref2: "p. 366"
+    date: "1783-07-29"
+    angle: 0 deg
+    pressure: 29.90 inHg
+    temperature: 72 F
+    range: 32 ft
+    range_note: "p. 337"
+    mass: 16 oz 13 dr
+    diameter: 1.96 in
+    desc2: "Gun No. 4"
+    data:
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 1946 ft/s
+          - final_velocity: 1902 ft/s
+          - final_velocity: 1959 ft/s
+      -
+        charge: 16 oz
+        desc3: "These rounds are rather doubtful, owing to the wind blowing and entangling the tape."
+        data:
+          - final_velocity: 2219 ft/s
+          - final_velocity: 2058 ft/s
+          -
+            mass: 16 oz 12.5 dr
+            final_velocity: 2207 ft/s
+  -
+    ref2: "p. 367"
+    date: "1783-07-30"
+    angle: 0 deg
+    pressure: 30.06 inHg
+    temperature: 69 F
+    range: 32 ft
+    range_note: "p. 337"
+    mass: 16 oz 13 dr
+    diameter: 1.96 in
+    desc2: "Gun No. 4"
+    data:
+      -
+        charge: 4 oz
+        data:
+          - final_velocity: 1376 ft/s
+          - final_velocity: 1380 ft/s
+          - final_velocity: 1368 ft/s
+      -
+        charge: 2 oz
+        data:
+          - final_velocity: 960 ft/s
+          -
+            mass: 16 oz 12 dr
+            final_velocity: 993 ft/s
+          -
+            mass: 16 oz 12 dr
+            final_velocity: 951 ft/s
+  -
+    ref2: "p. 368"
+    date: "1783-07-31"
+    angle: 0 deg
+    pressure: 30.3 inHg
+    temperature: 69 F
+    range: 32 ft
+    range_note: "p. 337"
+    mass: 16 oz 13 dr
+    diameter: 1.96 in
+    desc2: "Gun No. 1"
+    data:
+      -
+        charge: 16 oz
+        data:
+          - final_velocity: 1379 ft/s
+          - final_velocity: 1453 ft/s
+          - final_velocity: 1268 ft/s
+      -
+        charge: 12 oz
+        data:
+          - final_velocity: 1387 ft/s
+          -
+            mass: 16 oz 12.5 dr
+            final_velocity: 1477 ft/s
+          -
+            mass: 16 oz 12.5 dr
+            final_velocity: 1371 ft/s
+  -
+    ref2: "p. 370"
+    date: "1783-08-12"
+    angle: 0 deg
+    pressure: 30.0 inHg
+    temperature: 64 F
+    range: 32 ft
+    range_note: "p. 337"
+    mass: 16 oz 12.5 dr
+    diameter: 1.96 in
+    data:
+      -
+        desc2: "Gun No. 1"
+        charge: 16 oz
+        data:
+          - final_velocity: 1411 ft/s
+          - final_velocity: 1424 ft/s
+      -
+        desc2: "Gun No. 2"
+        charge: 16 oz
+        data:
+          - final_velocity: 1689 ft/s
+          - final_velocity: 1572 ft/s
+          - final_velocity: 1644 ft/s
+          - final_velocity: 1765 ft/s
+          - final_velocity: 1714 ft/s
+  -
+    ref2: "p. 372"
+    date: "1783-08-13"
+    angle: 0 deg
+    pressure: 30.17 inHg
+    temperature: 64 F
+    humidity: 90%
+    humidity_note: "cloudy and misty, but it did not rain"
+    range: 32 ft
+    range_note: "p. 337"
+    mass: 16 oz 12.5 dr
+    diameter: 1.96 in
+    desc2: "Gun No. 3"
+    data:
+      -
+        charge: 16 oz
+        angle: 17.5 arcmin
+        angle_note: "the gun had from 15' to 20' elevation"
+        data:
+          - final_velocity: 1922 ft/s
+          - final_velocity: 1940 ft/s
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 1735 ft/s
+          - final_velocity: 1872 ft/s
+  -
+    ref2: "p. 373"
+    date: "1783-09-08"
+    angle: 0 deg
+    pressure: 30.03 inHg
+    temperature: 61 F
+    humidity: 90%
+    humidity_note: "windy and cloudy, with some drops of rain"
+    range: 32 ft
+    range_note: "p. 337"
+    mass: 16 oz 13 dr
+    diameter: 1.96 in
+    desc2: "Gun No. 3"
+    data:
+      -
+        charge: 4 oz
+        data:
+          - final_velocity: 1281 ft/s
+          - final_velocity: 1369 ft/s
+          - final_velocity: 1363 ft/s
+          -
+            angle: 15 arcmin
+            final_velocity: 1321 ft/s
+      -
+        charge: 2 oz
+        angle: 15 arcmin
+        data:
+          - final_velocity: 906 ft/s
+          - final_velocity: 937 ft/s
+          - final_velocity: 936 ft/s
+  -
+    ref2: "p. 375"
+    date: "1783-09-10"
+    angle: 0 deg
+    pressure: 29.7 inHg
+    temperature: 60 F
+    range: 32 ft
+    range_note: "p. 337"
+    mass: 16 oz 12.5 dr
+    diameter: 1.96 in
+    desc2: "Gun No. 3"
+    data:
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 1315 ft/s
+          - final_velocity: 1394 ft/s
+          - final_velocity: 1351 ft/s
+      -
+        charge: 4 oz
+        data:
+          - final_velocity: 1075 ft/s
+          - final_velocity: 1050 ft/s
+          - final_velocity: 1136 ft/s
+      -
+        charge: 2 oz
+        data:
+          - final_velocity: 787 ft/s
+          - final_velocity: 774 ft/s
+          - final_velocity: 795 ft/s
+  -
+    ref2: "p. 376"
+    date: "1783-09-11"
+    angle: 0 deg
+    pressure: 29.93 inHg
+    temperature: 60 F
+    range: 32 ft
+    range_note: "p. 337"
+    mass: 16 oz 12.5 dr
+    diameter: 1.96 in
+    desc2: "Gun No. 2"
+    data:
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 1590 ft/s
+          - final_velocity: 1589 ft/s
+          - final_velocity: 1535 ft/s
+      -
+        charge: 4 oz
+        data:
+          - final_velocity: 1253 ft/s
+      -
+        charge: 4 oz
+        angle: -10 arcmin
+        data:
+          - final_velocity: 1230 ft/s
+          - final_velocity: 1233 ft/s
+      -
+        charge: 2 oz
+        angle: -10 arcmin
+        data:
+          - final_velocity: 849 ft/s
+          - final_velocity: 864 ft/s
+          - final_velocity: 855 ft/s
+  -
+    ref2: "p. 378"
+    date: "1783-09-18"
+    angle: 0 deg
+    pressure: 30.08 inHg
+    temperature: 64 F
+    range: 32 ft
+    range_note: "p. 337"
+    diameter: 1.96 in
+    desc2: "Gun No. 1"
+    data:
+      -
+        charge: 24 oz
+        mass: 16 oz 12.5 dr
+        final_velocity: 1194 ft/s
+      -
+        charge: 32 oz
+        mass: 16 oz 12.5 dr
+        final_velocity: 880 ft/s
+      -
+        charge: 36 oz
+        mass: 16 oz 12.5 dr
+        final_velocity: 838 ft/s
+      -
+        charge: 20 oz
+        mass: 16 oz 12.5 dr
+        final_velocity: 1144 ft/s
+      -
+        charge: 12 oz
+        mass: 16 oz 12.5 dr
+        final_velocity: 1371 ft/s
+      -
+        charge: 14 oz
+        mass: 16 oz 12.5 dr
+        final_velocity: 1202 ft/s
+        desc3: "doubtful"
+      -
+        charge: 10 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1409 ft/s
+      -
+        charge: 14 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1357 ft/s
+      -
+        charge: 16 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1262 ft/s
+        desc3: "doubtful"
+      -
+        charge: 8 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1436 ft/s
+      -
+        charge: 6 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1237 ft/s
+      -
+        charge: 10 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1333 ft/s
+      -
+        charge: 12 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1434 ft/s
+      -
+        charge: 14 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1318 ft/s
+      -
+        charge: 8 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1360 ft/s
+      -
+        charge: 12 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1420 ft/s
+      -
+        charge: 10 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1409 ft/s
+      -
+        charge: 8 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1354 ft/s
+      -
+        charge: 16 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1231 ft/s
+        desc3: "doubtful"
+      -
+        charge: 16 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1223 ft/s
+        desc3: "doubtful"
+      -
+        charge: 14 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1457 ft/s
+  -
+    ref2: "p. 380"
+    date: "1783-09-25"
+    angle: 0 deg
+    pressure: 29.93 inHg
+    temperature: 59 F
+    range: 32 ft
+    range_note: "p. 337"
+    diameter: 1.96 in
+    desc2: "Gun No. 2"
+    data:
+      -
+        charge: 8 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1632 ft/s
+      -
+        charge: 10 oz
+        mass: 16 oz 13 dr
+        final_velocity: 1593 ft/s
+      -
+        charge: 12 oz
+        mass: 16 oz 12.5 dr
+        final_velocity: 1532 ft/s
+      -
+        charge: 14 oz
+        mass: 16 oz 12.5 dr
+        final_velocity: 1491 ft/s
+        desc3: "doubtful"
+      -
+        charge: 16 oz
+        mass: 16 oz 12.5 dr
+        final_velocity: 1662 ft/s
+      -
+        charge: 18 oz
+        mass: 16 oz 12.5 dr
+        final_velocity: 1472 ft/s
+      -
+        charge: 20 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1499 ft/s
+      -
+        charge: 22 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1492 ft/s
+        desc3: "doubtful"
+      -
+        charge: 24 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1468 ft/s
+      -
+        charge: 28 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1266 ft/s
+        desc3: "doubtful"
+      -
+        charge: 32 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1419 ft/s
+      -
+        charge: 8 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1562 ft/s
+      -
+        charge: 10 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1624 ft/s
+      -
+        charge: 12 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1638 ft/s
+      -
+        charge: 14 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1517 ft/s
+      -
+        charge: 16 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1667 ft/s
+      -
+        charge: 8 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1441 ft/s
+        desc3: "doubtful"
+      -
+        charge: 8 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1512 ft/s
+      -
+        charge: 10 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1431 ft/s
+        desc3: "doubtful"
+      -
+        charge: 12 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1675 ft/s
+      -
+        charge: 14 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1302 ft/s
+        desc3: "doubtful"
+      -
+        charge: 16 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1149 ft/s
+        desc3: "doubtful"
+      -
+        charge: 8 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1070 ft/s
+        desc3: "doubtful"
+  -
+    ref2: "p. 382"
+    date: "1783-09-29"
+    angle: 0 deg
+    pressure: 30.28 inHg
+    temperature: 64 F
+    range: 32 ft
+    range_note: "p. 337"
+    diameter: 1.96 in
+    desc2: "Gun No. 2"
+    data:
+      -
+        charge: 6 oz
+        mass: 16 oz 11.5 dr
+        final_velocity: 1448 ft/s
+      -
+        charge: 8 oz
+        mass: 16 oz 11.5 dr
+        final_velocity: 1561 ft/s
+      -
+        charge: 10 oz
+        mass: 16 oz 11.5 dr
+        final_velocity: 1618 ft/s
+      -
+        charge: 12 oz
+        mass: 16 oz 11.5 dr
+        final_velocity: 1669 ft/s
+      -
+        charge: 14 oz
+        mass: 16 oz 11.5 dr
+        final_velocity: 1763 ft/s
+      -
+        charge: 16 oz
+        mass: 16 oz 11.5 dr
+        final_velocity: 1566 ft/s
+        desc3: "doubtful"
+      -
+        charge: 16 oz
+        mass: 16 oz 11.5 dr
+        final_velocity: 1707 ft/s
+      -
+        charge: 18 oz
+        mass: 16 oz 11.5 dr
+        final_velocity: 1343 ft/s
+        desc3: "doubtful"
+      -
+        charge: 18 oz
+        mass: 16 oz 11.5 dr
+        final_velocity: 1598 ft/s
+      -
+        charge: 20 oz
+        mass: 16 oz 11 dr
+        final_velocity: 1639 ft/s
+      -
+        charge: 14 oz
+        mass: 16 oz 11 dr
+        final_velocity: 1561 ft/s
+  -
+    ref2: "p. 383"
+    date: "1783-09-30"
+    angle: 0 deg
+    pressure: 30.25 inHg
+    temperature: 64 F
+    range: 32 ft
+    range_note: "p. 337"
+    diameter: 1.96 in
+    desc2: "Gun No. 1"
+    mass: 16 oz 14 dr
+    data:
+      -
+        charge: 10 oz
+        final_velocity: 1383 ft/s
+      -
+        charge: 12 oz
+        final_velocity: 1472 ft/s
+      -
+        charge: 8 oz
+        final_velocity: 1351 ft/s
+      -
+        charge: 14 oz
+        final_velocity: 1403 ft/s
+      -
+        charge: 6 oz
+        final_velocity: 1320 ft/s
+      -
+        charge: 10 oz
+        final_velocity: 1403 ft/s
+      -
+        charge: 12 oz
+        final_velocity: 1398 ft/s
+      -
+        charge: 8 oz
+        final_velocity: 1360 ft/s
+      -
+        charge: 14 oz
+        final_velocity: 1405 ft/s
+      -
+        charge: 6 oz
+        final_velocity: 1349 ft/s
+      -
+        charge: 10 oz
+        final_velocity: 1420 ft/s
+      -
+        charge: 12 oz
+        final_velocity: 1490 ft/s
+      -
+        charge: 8 oz
+        final_velocity: 1447 ft/s
+      -
+        charge: 14 oz
+        final_velocity: 1399 ft/s
+      -
+        charge: 6 oz
+        final_velocity: 1323 ft/s
 
-# Through page 356

@@ -152,6 +152,7 @@ data:
     charge: 9 italiandenari
     mass: 1 ozit
     diameter: 4 punti 10 atomi
+    technique: "wheel_chronograph"
     data:
       -
         desc2: "In tempo molto umido."
@@ -208,6 +209,7 @@ data:
     angle: 0 deg
     range: 10 ftit 12 init
     humidity: 50%
+    technique: "wheel_chronograph"
     data:
       -
         desc2: "Canna de schioppo di lunghezza nell'anima piedi 1 : 1 : 5"
@@ -290,6 +292,7 @@ data:
     material: lead
     angle: 0 deg
     range: 10 ftit 12 init
+    technique: "wheel_chronograph"
     data:
       -
         desc2: "Spingarda"
@@ -333,6 +336,7 @@ data:
     angle: 0 deg
     range: 10 ftit 12 init
     humidity: 50%
+    technique: "wheel_chronograph"
     data:
       -
         desc2: "Canna da schiioppo"
@@ -372,6 +376,7 @@ data:
     mass: 1 ozit
     diameter: 4 punti 10 atomi
     charge: 9 italiandenari
+    technique: "wheel_chronograph"
     data:
       -
         desc2: "Piedi 0 : 6 : 1"
