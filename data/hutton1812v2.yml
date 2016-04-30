@@ -292,7 +292,7 @@ data:
         angle: 17.5 arcmin
         angle_note: "the gun had from 15' to 20' elevation"
         data:
-          - final_velocity: 1922 ft/s
+          - final_velocity: 1992 ft/s
           - final_velocity: 1940 ft/s
       -
         charge: 8 oz
