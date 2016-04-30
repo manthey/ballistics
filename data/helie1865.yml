@@ -2325,7 +2325,7 @@ data:
     diameter: 1.486 dm
     mass: 12.015 kg
     atmospheric_density: 0.001287 g/cm/cm/cm
-    atmospheric_density_note: "I'm ususpicious of these densities, as the only difference between them is precisely 0.0001."
+    atmospheric_density_note: "I'm suspicious of these densities, as the only difference between them is precisely 0.0001."
     data:
       -
         initial_velocity: 415.3 m/s

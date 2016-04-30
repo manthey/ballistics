@@ -29,6 +29,7 @@ import time
 import types
 
 from cod_collins import coefficient_of_drag_collins  # noqa
+from cod_henderson import coefficient_of_drag_henderson  # noqa
 from cod_miller import coefficient_of_drag_miller
 from cod_morrison import coefficient_of_drag_morrison  # noqa
 from formattext import line_break
@@ -46,8 +47,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-04-29v36'
-PROGRAM_SIGNATURE = 'bee57a6386980358a91b4e9e2ce271d6'
+__version__ = '2016-04-29v37'
+PROGRAM_SIGNATURE = 'a9dfc73e9b476cc51b0145f4de1db268'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:

@@ -29,6 +29,12 @@ references:
     ref: "Clarke, 1891"
     cms: "Clarke, F. W.  <i>Weights, Measures, and Money, of All Nations.</i>  New York: D. Appleton and Company: 1891."
   -
+    key: collins2016
+    ref: "Collins, 2016"
+    cms: "Collins, A. R. <i>SphereDrag.  Calculation of aerodynamic drag coefficient for a sphere at speeds near the speed of sound.</i>  Accessed April 29, 2016.  http://arc.id.au/CannonballDrag.html"
+    summary: "This is a javascript program that calculates drag based on Reynolds and Mach numbers based on the paper from Miller.  It is a different implementation than I created and gives slightly different results."
+    link: http://arc.id.au/CannonballDrag.html
+  -
     key: diderot1751
     ref: "Diderot, 1751"
     cms: "Diderot and d'Alembert, ed. <i>Encyclop\u00e9die, ou Dictionanaire Raisonn\u00e9 des Sciences, des Arts et des M\u00e9tiers, par une Soci\u00e9t\u00e9 de Gens de Lettres.</i> Paris: Briasson, David, Le Breton, Durand: 1751"
@@ -40,6 +46,12 @@ references:
     cms: "\"Metals and Alloys - Densities.\" Metals and Alloys - Densities. Accessed February 19, 2013. http://www.engineeringtoolbox.com/metal-alloys-densities-d_50.html."
     link: http://www.engineeringtoolbox.com/metal-alloys-densities-d_50.html
     summary: A list of common material densities.
+  -
+    key: henderson1976
+    ref: "Henderson, 1976"
+    cms: "Henderson, Charles B.  \"Drag Coefficients of Spheres in Continuum and Rarefied Flows.\"  AIAA Journal.  14, no. 6 (1976): 707-708."
+    summary: Some equations for drag on spheres.
+    link: http://arc.aiaa.org/doi/abs/10.2514/3.61409?journalCode=aiaaj
   -
     key: kadoya1985
     ref: "Kadoya, 1985"
@@ -57,6 +69,12 @@ references:
     ref: "Miller, 1979"
     cms: "Miller, Donald G., and Allan B. Bailey. \"Sphere drag at Mach numbers from 0.3 to 2.0 at Reynolds Numbers approaching 10^7.\" <i>Journal of Fluid Mechanics.</i> 93, no. 3 (1979): 449-464."
     summary: This is the best source I found for coefficient of drag based on Reynolds and Mach numbers in the range of typical projectiles.
+  -
+    key: morrison2013
+    ref: "Morrison, 2013"
+    cms: "Morrison, Faith A.  <i>Data Correlation for Drag Coefficient for Sphere.</i>  Accessed April 29, 2016.  http://www.chem.mtu.edu/~fmorriso/DataCorrelationForSphereDrag2013.pdf"
+    summary: "This has an equation for the Coefficient of drag based on the Reynolds number, but it only applies at low speeds."
+    link: http://www.chem.mtu.edu/~fmorriso/DataCorrelationForSphereDrag2013.pdf
   -
     key: munson1998
     ref: "Munson, 1998"
