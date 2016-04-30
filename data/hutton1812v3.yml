@@ -1,0 +1,30 @@
+---
+key: hutton1812v3
+ref: "Hutton, 1812, Vol. III"
+cms: "Hutton, Charles.  <i>Tracts on Mathematical and Philosophical Subjects, Vol III.</i>  London: F. C. and J Rivington, et al., 1812"
+summary: "Tract XXXIV, continued.  Tract XXXV: On a new Gunpowder Eprouvette.  Tract XXXVI: Determination of the Air's Resistance to Bodies in motion, as determined by the Whirling Machine.  Tract XXXVII: On the theory and Practice of Gunnery, as dependent on the Resistance of the Air."
+date: "1812"
+data:
+  -
+    technique: "double_pendulum"
+    ref2: "p. 3"
+    date: "1784-08-04"
+    humdity: 90%
+    humdity_note: "Frequent showers of rain"
+    angle: 0 deg
+    range: 32 ft
+    range_note: "Vol. II, p. 337"
+    diameter: 1.96 in
+    desc2: "Gun No. 1"
+    mass: 16 oz 14 dr
+    charge: 6 oz
+    data:
+      - final_velocity: 1313 ft/s
+      - final_velocity: 1192 ft/s
+      - final_velocity: 1303 ft/s
+      - final_velocity: 1254 ft/s
+      - final_velocity: 1291 ft/s
+      - final_velocity: 1280 ft/s
+      - final_velocity: 1329 ft/s
+
+# Processed through page 5
