@@ -102,7 +102,7 @@ def coefficient_of_drag_miller(state, only_in_range=False):
                   mach numbers.
            only_in_range: if True, return None if the values are outside of
                           what we can interpolate.
-    Exit:  cd: the coefficient of drag."""
+    Exit:  Cd: the coefficient of drag."""
     Re = state['drag_data']['Re']
     Mn = state['drag_data']['Mn']
     # Estimate the critical point based on Mach number
@@ -133,26 +133,26 @@ def coefficient_of_drag_miller(state, only_in_range=False):
         # critical point looks sane and smooth on a graph
         adjusted_re = 10**(math.log10(Re) - math.log10(critical_Re) +
                            math.log10(crit))
-        (cd, in_range) = interpolate(adjusted_re, reynolds_data, True)
+        (Cd, in_range) = interpolate(adjusted_re, reynolds_data, True)
         if in_range:
-            mach_data.append((mach, cd))
+            mach_data.append((mach, Cd))
         else:
-            mach_data_oor.append((mach, cd))
+            mach_data_oor.append((mach, Cd))
     if (Mn > 0.3 and len(mach_data) < 2) or not len(mach_data):
         if only_in_range:
             state['drag_data']['in_range'] = False
             return None
     if not len(mach_data):
         mach_data = mach_data_oor
-        (cd, in_range) = interpolate(Mn, mach_data, method='linear')
+        (Cd, in_range) = interpolate(Mn, mach_data, method='linear')
         in_range = False
     else:
-        (cd, in_range) = interpolate(Mn, mach_data, method='linear')
-    state['drag_data']['cd'] = cd
+        (Cd, in_range) = interpolate(Mn, mach_data, method='linear')
+    state['drag_data']['cd'] = Cd
     state['drag_data']['in_range'] = in_range
     if not in_range and only_in_range:
         return None
-    return cd
+    return Cd
 
 
 def cubic_roots(a, b, c, d):

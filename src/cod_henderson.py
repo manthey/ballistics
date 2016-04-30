@@ -55,6 +55,5 @@ def coefficient_of_drag_henderson(state, only_in_range=False):
     else:
         f = (Mn - 1) / 0.75
         Cd = (1 - f) * Cdlow + f * Cdhigh
-        print Cdlow, Cdhigh, f, Cd
     state['drag_data']['cd'] = Cd
     return Cd
