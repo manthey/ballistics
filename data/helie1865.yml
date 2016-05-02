@@ -2281,6 +2281,7 @@ data:
     diameter: 1.493 dm
     mass: 12.174 kg
     atmospheric_density: 0.001187 g/cm/cm/cm
+    group: "Trajectory 1"
     data:
       -
         initial_velocity: 521.1 m/s
@@ -2326,6 +2327,7 @@ data:
     mass: 12.015 kg
     atmospheric_density: 0.001287 g/cm/cm/cm
     atmospheric_density_note: "I'm suspicious of these densities, as the only difference between them is precisely 0.0001."
+    group: "Trajectory 2"
     data:
       -
         initial_velocity: 415.3 m/s
@@ -2364,6 +2366,7 @@ data:
     diameter: 1.493 dm
     mass: 12.159 kg
     atmospheric_density: 0.001187 g/cm/cm/cm
+    group: "Trajectory 3"
     data:
       -
         initial_velocity: 327.4 m/s
@@ -2402,6 +2405,7 @@ data:
     diameter: 0.167 dm
     mass: 0.0268 kg
     date: "1849"
+    group: "Trajectory 4"
     data:
       -
         initial_velocity: 446 m/s

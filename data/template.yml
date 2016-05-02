@@ -29,6 +29,13 @@ data:
     # technique is one of range, theory, calorimeter, trajectory, pendulum,
     # double_pedulum, chronograph, wheel_chronograph
     technique: "theory"
+    # A group is a way of clustering experiments that are all from the same
+    # test.  For instance, if the trajectory of a test is measured at multiple
+    # points, or if both the range and the time-of-flight is given, then those
+    # are groups.  If the data is accurate, then all calculations done on the
+    # group should yield the same pwoer factor.  If not, then the ballistics
+    # model is at variance with the real-world conditions.
+    group: "Group 1"
   -
     mass: 24 lb 6.5 oz
     charge: 1 troyounces

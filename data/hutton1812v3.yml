@@ -1,7 +1,7 @@
 ---
 key: hutton1812v3
 ref: "Hutton, 1812, Vol. III"
-cms: "Hutton, Charles.  <i>Tracts on Mathematical and Philosophical Subjects, Vol III.</i>  London: F. C. and J Rivington, et al., 1812"
+cms: "Hutton, Charles.  <i>Tracts on Mathematical and Philosophical Subjects, Vol. III.</i>  London: F. C. and J Rivington, et al., 1812"
 summary: "Tract XXXIV, continued.  Tract XXXV: On a new Gunpowder Eprouvette.  Tract XXXVI: Determination of the Air's Resistance to Bodies in motion, as determined by the Whirling Machine.  Tract XXXVII: On the theory and Practice of Gunnery, as dependent on the Resistance of the Air."
 date: "1812"
 data:
@@ -228,5 +228,114 @@ data:
       - final_velocity: 1398 ft/s
       - final_velocity: 1369 ft/s
       - final_velocity: 1390 ft/s
+  -
+    technique: "double_pendulum"
+    ref2: "p. 20"
+    date: "1784-09-21"
+    angle: 0 deg
+    range: 32 ft
+    range_note: "Vol. II, p. 337"
+    desc2: "Gun No. 1"
+    diameter: 1.965 in
+    mass: 16 oz 2 dr
+    data:
+      -
+        charge: 4 oz
+        data:
+          - final_velocity: 1125 ft/s
+          - final_velocity: 1107 ft/s
+          - final_velocity: 1140 ft/s
+      -
+        charge: 6 oz
+        data:
+          - final_velocity: 1357 ft/s
+          - final_velocity: 1371 ft/s
+          - final_velocity: 1310 ft/s
+          - final_velocity: 1388 ft/s
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 1420 ft/s
+          - final_velocity: 1471 ft/s
+  -
+    technique: "double_pendulum"
+    ref2: "p. 22"
+    date: "1784-10-04"
+    angle: 0 deg
+    range: 32 ft
+    range_note: "Vol. II, p. 337"
+    desc2: "Gun No. 1"
+    diameter: 1.96 in
+    mass: 16 oz 12 dr
+    data:
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 1440 ft/s
+          - final_velocity: 1482 ft/s
+          - final_velocity: 1482 ft/s
+          - final_velocity: 1425 ft/s
+          - final_velocity: 1517 ft/s
+          - final_velocity: 1482 ft/s
+      -
+        charge: 6 oz
+        data:
+          - final_velocity: 1367 ft/s
+          - final_velocity: 1323 ft/s
+          - final_velocity: 1289 ft/s
+          - final_velocity: 1321 ft/s
+      -
+        charge: 4 oz
+        data:
+          - final_velocity: 1124 ft/s
+          - final_velocity: 1041 ft/s
+          - final_velocity: 1059 ft/s
+      -
+        charge: 2 oz
+        data:
+          - final_velocity: 747 ft/s
+          - final_velocity: 762 ft/s
+          - final_velocity: 768 ft/s
+      -
+        charge: 4 oz
+        final_velocity: 1124 ft/s
+  -
+    technique: "double_pendulum"
+    ref2: "p. 23"
+    date: "1784-10-05"
+    angle: 0 deg
+    range: 32 ft
+    range_note: "Vol. II, p. 337"
+    desc2: "Gun No. 1"
+    diameter: 1.96 in
+    mass: 16 oz 14 dr
+    charge: 8 oz
+    data:
+      -
+        mass: 16 oz 12 dr
+        final_velocity: 1404 ft/s
+      - final_velocity: 1468 ft/s
+      - final_velocity: 1443 ft/s
+      - final_velocity: 1414 ft/s
+      - final_velocity: 1367 ft/s
+      - final_velocity: 1374 ft/s
+  -
+    technique: "double_pendulum"
+    ref2: "p. 24"
+    date: "1784-10-06"
+    angle: 0 deg
+    range: 32 ft
+    range_note: "Vol. II, p. 337"
+    desc2: "Gun No. 1.  Test with tight fitting wads shows a slight improvement with the wads."
+    diameter: 1.95 in
+    mass: 16 oz 9 dr
+    charge: 8 oz
+    data:
+      - final_velocity: 1416 ft/s
+      - final_velocity: 1375 ft/s
+      - final_velocity: 1426 ft/s
+      - final_velocity: 1390 ft/s
+      - final_velocity: 1442 ft/s
+      - final_velocity: 1566 ft/s
 
-# Processed through page 19
+# Processed through page 25
