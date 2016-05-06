@@ -59,6 +59,7 @@ for method in methods[1:]:
 
         ballistics.determine_material(state)
         acc = ballistics.acceleration_from_drag(state)[0]
+
         accgrav = -ballistics.acceleration_from_gravity(state)
         kgforce = state['mass'] * acc / accgrav
 

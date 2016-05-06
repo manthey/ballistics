@@ -326,7 +326,7 @@ data:
     angle: 0 deg
     range: 32 ft
     range_note: "Vol. II, p. 337"
-    desc2: "Gun No. 1.  Test with tight fitting wads shows a slight improvement with the wads."
+    desc2: "Gun No. 1.  Test with tight-fitting wads shows a slight improvement with the wads."
     diameter: 1.95 in
     mass: 16 oz 9 dr
     charge: 8 oz
@@ -337,5 +337,129 @@ data:
       - final_velocity: 1390 ft/s
       - final_velocity: 1442 ft/s
       - final_velocity: 1566 ft/s
+  -
+    technique: "double_pendulum"
+    ref2: "p. 26"
+    date: "1784-10-11"
+    angle: 0 deg
+    range: 32 ft
+    range_note: "Vol. II, p. 337"
+    desc2: "Gun No. 1.  Test with tight-fitting wads, which show no perceptible effect."
+    diameter: 1.95 in
+    charge: 8 oz
+    data:
+      -
+        mass: 16 oz 9 dr
+        data:
+          - final_velocity: 1357 ft/s
+          - final_velocity: 1569 ft/s
+      -
+        mass: 16 oz 8 dr
+        data:
+          - final_velocity: 1465 ft/s
+          - final_velocity: 1470 ft/s
+          - final_velocity: 1433 ft/s
+          - final_velocity: 1432 ft/s
+          - final_velocity: 1472 ft/s
+          - final_velocity: 1467 ft/s
+      -
+        mass: 16 oz 5 dr
+        data:
+          - final_velocity: 1436 ft/s
+          - final_velocity: 1379 ft/s
+          - final_velocity: 1392 ft/s
+          - final_velocity: 1459 ft/s
+  -
+    technique: "double_pendulum"
+    ref2: "p. 27"
+    date: "1784-10-12"
+    angle: 0 deg
+    range: 32 ft
+    range_note: "Vol. II, p. 337"
+    desc2: "Gun No. 4"
+    diameter: 1.96 in
+    charge: 16 oz
+    mass: 16 oz 11 dr
+    data:
+      - final_velocity: 2047 ft/s
+      - final_velocity: 2187 ft/s
+      - final_velocity: 2011 ft/s
+      -
+        final_velocity: 1505 ft/s
+        desc3: "doubtful"
+      - final_velocity: 1994 ft/s
+      - final_velocity: 2062 ft/s
+      - final_velocity: 2061 ft/s
+  -
+    ref2: "p. 33"
+    date: "1785-09-02"
+    desc2: "Gun No. 2"
+    diameter: 1.965 in
+    charge: 8 oz
+    mass: 16 oz 13 dr
+    pressure: 29.8 inHg
+    temperature: 66 F
+    data:
+      -
+        technique: "pendulum"
+        angle: 0 deg
+        range: 35 ft
+        data:
+          - final_velocity: 1438 ft/s
+          - final_velocity: 1479 ft/s
+          - final_velocity: 1428 ft/s
+          - final_velocity: 1444 ft/s
+          - final_velocity: 1557 ft/s
+          - final_velocity: 1675 ft/s
+          - final_velocity: 1543 ft/s
+          - final_velocity: 1457 ft/s
+      -
+        angle: 15 deg
+        data:
+          -
+            group: "Range 33-1"
+            data:
+              - final_time: 14 s
+              - range: 6110 ft
+          - range: 6060 ft
+          - range: 5760 ft
+          - range: 5735 ft
+  -
+    ref2: "p. 36"
+    date: "1785-09-02"
+    desc2: "Gun No. 2"
+    diameter: 1.96 in
+    charge: 8 oz
+    mass: 16 oz 12 dr
+    pressure: 30.02 inHg
+    temperature: 65 F
+    angle: 15 deg
+    data:
+      -
+        group: "Range 36-1"
+        data:
+          - final_time: 14 s
+          - range: 6460 ft
+      - range: 6080 ft
+      -
+        group: "Range 36-4"
+        data:
+          - final_time: 15 s
+          - range: 6040 ft
+      -
+        group: "Range 36-5"
+        data:
+          - final_time: 15.5 s
+          - range: 6540 ft
+      -
+        group: "Range 36-6"
+        data:
+          - final_time: 15 s
+          - range: 6460 ft
+      -
+        group: "Range 36-7"
+        data:
+          - final_time: 14 s
+          - range: 5720 ft
 
-# Processed through page 25
+# Processed through page 36
