@@ -426,7 +426,7 @@ data:
           - range: 5735 ft
   -
     ref2: "p. 36"
-    date: "1785-09-02"
+    date: "1785-09-08"
     desc2: "Gun No. 2"
     diameter: 1.96 in
     charge: 8 oz
@@ -461,5 +461,505 @@ data:
         data:
           - final_time: 14 s
           - range: 5720 ft
+  -
+    ref2: "p. 37"
+    date: "1785-09-09"
+    desc2: "Gun No. 2"
+    diameter: 1.965 in
+    charge: 4 oz
+    mass: 16 oz 12 dr
+    pressure: 29.93 inHg
+    temperature: 66 F
+    technique: "pendulum"
+    angle: 0 deg
+    range: 35 ft
+    data:
+      - final_velocity: 1162 ft/s
+      - final_velocity: 1208 ft/s
+      - final_velocity: 1218 ft/s
+      - final_velocity: 1228 ft/s
+  -
+    ref2: "p. 39"
+    date: "1785-09-14"
+    desc2: "Gun No. 2"
+    diameter: 1.96 in
+    charge: 4 oz
+    mass: 16 oz 12 dr
+    pressure: 30.5 inHg
+    temperature: 67 F
+    angle: 15 deg
+    data:
+      -
+        group: "Range 39-3"
+        data:
+          - final_time: 10 s
+          - range: 4730 ft
+      -
+        group: "Range 39-4"
+        data:
+          - final_time: 7.25 s
+          - range: 4030 ft
+      -
+        group: "Range 39-5"
+        data:
+          - final_time: 8 s
+          - range: 4450 ft
+      - range: 4380 ft
+  -
+    ref2: "p. 41"
+    date: "1785-09-28"
+    diameter: 1.97 in
+    pressure: 30.35 inHg
+    temperature: 60 F
+    data:
+      -
+        mass: 16 oz 10 dr
+        angle: 15 deg
+        charge: 4 oz
+        range: 5180 ft
+      -
+        mass: 16 oz 10 dr
+        angle: 15 deg
+        charge: 4 oz
+        group: "Range 41-2"
+        data:
+          - final_time: 8.75 s
+          - range: 4370 ft
+      -
+        mass: 16 oz 7 dr
+        angle: 15 deg
+        charge: 4 oz
+        group: "Range 41-4"
+        data:
+          - final_time: 7.75 s
+          - range: 4020 ft
+      -
+        mass: 16 oz 7 dr
+        angle: 45 deg
+        charge: 2 oz
+        range: 5120 ft
+      -
+        mass: 16 oz 7 dr
+        angle: 45 deg
+        charge: 2 oz
+        group: "Range 41-6"
+        data:
+          - final_time: 21.5 s
+          - range: 5300 ft
+      -
+        mass: 16 oz 7 dr
+        angle: 45 deg
+        charge: 2 oz
+        group: "Range 41-7"
+        data:
+          - final_time: 21 s
+          - range: 5200 ft
+      -
+        mass: 16 oz 7 dr
+        angle: 45 deg
+        charge: 2 oz
+        range: 4120 ft
+      -
+        mass: 16 oz 11 dr
+        diameter: 1.95 in
+        angle: 15 deg
+        charge: 4 oz
+        group: "Range 41-10"
+        desc3: "doubtful"
+        data:
+          - final_time: 13.5 s
+          - range: 5770 ft
+      -
+        mass: 16 oz 7 dr
+        angle: 45 deg
+        charge: 2 oz
+        group: "Range 41-11"
+        data:
+          - final_time: 23 s
+          - range: 5600 ft
+  -
+    ref2: "p. 42"
+    date: "1785-09-29"
+    diameter: 1.95 in
+    pressure: 30.35 inHg
+    temperature: 60 F
+    mass: 16 oz 12 dr
+    data:
+      -
+        angle: 45 deg
+        charge: 2 oz
+        data:
+          -
+            group: "Range 42-1"
+            data:
+              - final_time: 20 s
+              - range: 5120 ft
+          -
+            group: "Range 42-2"
+            data:
+              - final_time: 19 s
+              - range: 4730 ft
+          -
+            group: "Range 42-3"
+            data:
+              - final_time: 20.5 s
+              - range: 5370 ft
+          -
+            group: "Range 42-4"
+            data:
+              - final_time: 20 s
+              - range: 5120 ft
+          -
+            group: "Range 42-5"
+            data:
+              - final_time: 22.5 s
+              - range: 5510 ft
+          -
+            group: "Range 42-6"
+            data:
+              - final_time: 20 s
+              - range: 5050 ft
+      -
+        angle: 15 deg
+        charge: 12 oz
+        data:
+          -
+            group: "Range 42-7"
+            data:
+              - final_time: 17 s
+              - range: 7120 ft
+          -
+            group: "Range 42-8"
+            desc3: "doubtful"
+            data:
+              - final_time: 10 s
+              - range: 4860 ft
+          -
+            group: "Range 42-9"
+            desc3: "doubtful"
+            data:
+              - final_time: 9 s
+              - range: 4880 ft
+          -
+            group: "Range 42-10"
+            data:
+              - final_time: 14 s
+              - range: 6660 ft
+          - range: 5500 ft
+          - range: 7520 ft
+  -
+    ref2: "p. 43"
+    date: "1785-10-04"
+    diameter: 1.96 in
+    pressure: 29.93 inHg
+    mass: 15 oz 3 dr
+    angle: 15 deg
+    charge: 8 oz
+    desc2: "Gun No. 3"
+    data:
+      - range: 6330 ft
+      - range: 5770 ft
+      -
+        group: "Range 43-4"
+        data:
+          - final_time: 8.5 s
+          - range: 4800 ft
+      - range: 5600 ft
+  -
+    ref2: "p. 44"
+    date: "1785-10-11"
+    diameter: 1.96 in
+    pressure: 29.83 inHg
+    temperature: 60 F
+    mass: 15 oz 12 dr
+    angle: 15 deg
+    charge: 8 oz
+    desc2: "Gun No. 3"
+    data:
+      - range: 5380 ft
+      -
+        group: "Range 44-3"
+        data:
+          - final_time: 10.25 s
+          - range: 5270 ft
+      - range: 5990 ft
+      -
+        group: "Range 44-5"
+        data:
+          - final_time: 9 s
+          - range: 4910 ft
+      -
+        group: "Range 44-6"
+        data:
+          - final_time: 11 s
+          - range: 5750 ft
+      -
+        group: "Range 44-7"
+        data:
+          - final_time: 9.5 s
+          - range: 6140 ft
+      -
+        group: "Range 44-8"
+        data:
+          - final_time: 11 s
+          - range: 5700 ft
+  -
+    ref2: "p. 45"
+    date: "1786-06-12"
+    pressure: 29.89 inHg
+    temperature: 63 F
+    angle: 15 deg
+    charge: 2 oz
+    desc2: "Gun No. 2"
+    data:
+      -
+        group: "Range 45-2"
+        diameter: 1.96 in
+        mass: 16 oz 6 dr
+        desc3: "doubtful"
+        data:
+          - final_time: 14 s
+          - range: 5000 ft
+      -
+        diameter: 1.96 in
+        mass: 16 oz 6 dr
+        desc3: "doubtful"
+        range: 5040 ft
+      -
+        group: "Range 45-4"
+        diameter: 1.96 in
+        mass: 16 oz 6 dr
+        data:
+          - final_time: 8 s
+          - range: 3920 ft
+      -
+        group: "Range 45-5"
+        diameter: 1.97 in
+        mass: 16 oz 7 dr
+        data:
+          - final_time: 7.5 s
+          - range: 3560 ft
+      -
+        group: "Range 45-6"
+        diameter: 1.96 in
+        mass: 16 oz 5 dr
+        data:
+          - final_time: 8.5 s
+          - range: 3910 ft
+      -
+        group: "Range 45-7"
+        diameter: 1.96 in
+        mass: 16 oz 5 dr
+        data:
+          - final_time: 10.54 s
+          - range: 4450 ft
+      -
+        group: "Range 45-8"
+        diameter: 1.96 in
+        mass: 16 oz 5 dr
+        data:
+          - final_time: 9.5 s
+          - range: 4280 ft
+      -
+        group: "Range 45-9"
+        diameter: 1.95 in
+        mass: 16 oz 5 dr
+        data:
+          - final_time: 8.5 s
+          - range: 3910 ft
+      -
+        group: "Range 45-10"
+        diameter: 1.96 in
+        mass: 16 oz 4 dr
+        desc3: "doubtful"
+        data:
+          - final_time: 15 s
+          - range: 5600 ft
+      -
+        group: "Range 45-11"
+        diameter: 1.96 in
+        mass: 16 oz 4 dr
+        data:
+          - final_time: 8.5 s
+          - range: 3910 ft
+      -
+        group: "Range 45-12"
+        diameter: 1.96 in
+        mass: 16 oz 4 dr
+        data:
+          - final_time: 11.5 s
+          - range: 4750 ft
+      -
+        group: "Range 45-13"
+        diameter: 1.96 in
+        mass: 16 oz 4 dr
+        data:
+          - final_time: 9.5 s
+          - range: 4270 ft
+      -
+        group: "Range 45-14"
+        diameter: 1.96 in
+        mass: 16 oz 4 dr
+        data:
+          - final_time: 10 s
+          - range: 4230 ft
+      -
+        group: "Range 45-15"
+        diameter: 1.96 in
+        mass: 16 oz 4 dr
+        data:
+          - final_time: 9.5 s
+          - range: 4000 ft
+      -
+        group: "Range 45-16"
+        diameter: 1.95 in
+        mass: 16 oz 3 dr
+        desc3: "doubtful"
+        range: 4960 ft
+      -
+        group: "Range 45-17"
+        diameter: 1.95 in
+        mass: 16 oz 9 dr
+        data:
+          - final_time: 9.5 s
+          - range: 4420 ft
+      -
+        group: "Range 45-18"
+        charge: 4 oz
+        diameter: 1.95 in
+        mass: 16 oz 3 dr
+        range: 4840 ft
+      -
+        group: "Range 45-19"
+        charge: 4 oz
+        diameter: 1.96 in
+        mass: 16 oz 3 dr
+        data:
+          - final_time: 11.5 s
+          - range: 4690 ft
+      -
+        group: "Range 45-20"
+        charge: 4 oz
+        diameter: 1.96 in
+        mass: 16 oz 2 dr
+        data:
+          - final_time: 10.5 s
+          - range: 5650 ft
+  -
+    technique: "pendulum"
+    ref2: "p. 82"
+    date: "1787-09-11"
+    angle: 0 deg
+    pressure: 30.33 inHg
+    temperature: 58 F
+    diameter: 2 in
+    mass: 18 oz 0 dr
+    data:
+      -
+        range: 30 ft
+        data:
+          -
+            charge: 8 oz
+            data:
+              - final_velocity: 1728 ft/s
+              - final_velocity: 1638 ft/s
+          -
+            charge: 2 oz
+            data:
+              -
+                final_velocity: 847 ft/s
+                desc3: "doubtful"
+              - final_velocity: 981 ft/s
+              - final_velocity: 961 ft/s
+          -
+            charge: 8 oz
+            final_velocity: 1738 ft/s
+      -
+        range: 90 ft
+        data:
+          -
+            charge: 8 oz
+            final_velocity: 1527 ft/s
+            desc3: "doubtful"
+          -
+            charge: 2 oz
+            final_velocity: 917 ft/s
+          -
+            charge: 8 oz
+            final_velocity: 1539 ft/s
+            desc3: "doubtful"
+          -
+            charge: 2 oz
+            final_velocity: 952 ft/s
+          -
+            charge: 8 oz
+            final_velocity: 1632 ft/s
+          -
+            charge: 2 oz
+            final_velocity: 934 ft/s
+  -
+    technique: "pendulum"
+    ref2: "p. 83"
+    date: "1787-09-12"
+    angle: 0 deg
+    pressure: 30.31 inHg
+    temperature: 57 F
+    diameter: 2 in
+    data:
+      -
+        range: 150 ft
+        data:
+          -
+            charge: 8 oz
+            mass: 18 oz 0 dr
+            final_velocity: 1481 ft/s
+            desc3: "doubtful"
+          -
+            charge: 2 oz
+            mass: 18 oz 1 dr
+            final_velocity: 909 ft/s
+          -
+            charge: 8 oz
+            mass: 18 oz 1 dr
+            final_velocity: 1603 ft/s
+          -
+            charge: 2 oz
+            mass: 18 oz 1 dr
+            final_velocity: 883 ft/s
+          -
+            charge: 8 oz
+            mass: 18 oz 1 dr
+            final_velocity: 1503 ft/s
+          -
+            charge: 2 oz
+            mass: 18 oz 1 dr
+            final_velocity: 920 ft/s
+      -
+        range: 210 ft
+        data:
+          -
+            charge: 8 oz
+            mass: 18 oz 1 dr
+            final_velocity: 1519 ft/s
+          -
+            charge: 2 oz
+            mass: 18 oz 1 dr
+            final_velocity: 866 ft/s
+          -
+            charge: 8 oz
+            mass: 18 oz 1 dr
+            final_velocity: 1439 ft/s
+          -
+            charge: 2 oz
+            mass: 18 oz 2 dr
+            final_velocity: 887 ft/s
+          -
+            charge: 8 oz
+            mass: 18 oz 0 dr
+            final_velocity: 1519 ft/s
+          -
+            charge: 2 oz
+            mass: 18 oz 1 dr
+            final_velocity: 902 ft/s
 
-# Processed through page 36
+# Processed through page 83
