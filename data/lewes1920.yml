@@ -1,0 +1,14 @@
+---
+key: lewes1920
+ref: "Lewes, 1920"
+cms: "Lewes, Vivian B. and J. S. S. Brame.  <i>Service Chemistry, being a short manual of chemistru and metallurgy and their application in the naval and military service.</i>  London: Edward Arnold, 1920."
+summary: "A few calorimeter results are listed."
+date: "1920"
+data:
+  -
+    technique: "calorimeter"
+    ref2: "p. 251"
+    desc: "Experimenting with Waltham Abbey powders Nobel and Abel estimated the heat developed on explosion."
+    data:
+      - power: "721 cal/g"
+      - power: "738 cal/g"

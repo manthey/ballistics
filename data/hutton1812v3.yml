@@ -961,5 +961,541 @@ data:
             charge: 2 oz
             mass: 18 oz 1 dr
             final_velocity: 902 ft/s
+  -
+    technique: "pendulum"
+    ref2: "p. 84"
+    date: "1787-09-13"
+    angle: 0 deg
+    pressure: 30.25 inHg
+    temperature: 56 F
+    diameter: 2 in
+    data:
+      -
+        range: 300 ft
+        data:
+          -
+            charge: 8 oz
+            mass: 18 oz 1 dr
+            final_velocity: 1354 ft/s
+          -
+            charge: 8 oz
+            mass: 18 oz 1 dr
+            final_velocity: 1445 ft/s
+          -
+            charge: 8 oz
+            mass: 18 oz 1 dr
+            final_velocity: 1273 ft/s
+            desc3: "doubtful"
+          -
+            charge: 8 oz
+            mass: 18 oz 2 dr
+            final_velocity: 1331 ft/s
+            desc3: "doubtful"
+          -
+            charge: 8 oz
+            mass: 18 oz 2 dr
+            final_velocity: 1310 ft/s
+            desc3: "doubtful"
+          -
+            charge: 8 oz
+            mass: 18 oz 1 dr
+            final_velocity: 1339 ft/s
+            desc3: "doubtful"
+          -
+            charge: 2 oz
+            mass: 17 oz 15 dr
+            final_velocity: 814 ft/s
+            desc3: "doubtful"
+          -
+            charge: 2 oz
+            mass: 17 oz 15 dr
+            final_velocity: 840 ft/s
+          -
+            charge: 2 oz
+            mass: 17 oz 15 dr
+            final_velocity: 823 ft/s
+          -
+            charge: 2 oz
+            mass: 17 oz 15 dr
+            final_velocity: 838 ft/s
+      -
+        range: 378 ft
+        data:
+          -
+            charge: 8 oz
+            mass: 17 oz 15 dr
+            final_velocity: 1277 ft/s
+          -
+            charge: 2 oz
+            mass: 17 oz 15 dr
+            final_velocity: 806 ft/s
+  -
+    ref2: "p. 86"
+    date: "1787-09-20"
+    pressure: 29.64 inHg
+    temperature: 61 F
+    angle: 45 deg
+    desc2: "Mortar tests with different density projectiles"
+    data:
+      -
+        desc3: "Shells filled with lead"
+        diameter: 4.43 in
+        mass: 14 lb 4 oz
+        data:
+          -
+            charge: 1 oz
+            data:
+              - range: 259 ft
+              -
+                group: "86-2"
+                data:
+                  - final_time: 4 sec
+                  - range: 255 ft
+              -
+                group: "86-3"
+                data:
+                  - final_time: 4.5 sec
+                  - range: 254 ft
+          -
+            charge: 2 oz
+            group: "86-4"
+            data:
+              - final_time: 7 s
+              - range: 870 ft
+      -
+        desc3: "Solid iron balls"
+        diameter: 4.49 in
+        mass: 12 lb 14 oz
+        data:
+          -
+            charge: 1 oz
+            group: "86-5"
+            data:
+              - final_time: 5 s
+              - range: 376 ft
+          -
+            charge: 1 oz
+            group: "86-6"
+            data:
+              - final_time: 5 s
+              - range: 399 ft
+          -
+            charge: 1 oz
+            group: "86-7"
+            data:
+              - final_time: 5 s
+              - range: 354 ft
+          -
+            charge: 2 oz
+            group: "86-8"
+            data:
+              - final_time: 8 s
+              - range: 1068 ft
+      -
+        desc3: "Shells filled with water"
+        diameter: 4.43 in
+        data:
+          -
+            charge: 1 oz
+            mass: 8 lb 12 oz
+            group: "86-9"
+            data:
+              - final_time: 5 s
+              - range: 342 ft
+          -
+            charge: 1 oz
+            mass: 8 lb 11 oz
+            group: "86-10"
+            data:
+              - final_time: 5 s
+              - range: 345 ft
+          -
+            charge: 1 oz
+            mass: 8 lb 10 oz
+            group: "86-11"
+            data:
+              - final_time: 5 s
+              - range: 409 ft
+          -
+            charge: 2 oz
+            mass: 8 lb 9 oz
+            group: "86-12"
+            data:
+              - final_time: 9 s
+              - range: 1083 ft
+      -
+        desc3: "Empty shells"
+        diameter: 4.44 in
+        charge: 1 oz
+        mass: 8 lb 5.5 oz
+        data:
+          -
+            group: "86-13"
+            data:
+              - final_time: 5.5 s
+              - range: 410 ft
+          -
+            group: "86-14"
+            data:
+              - final_time: 6 s
+              - range: 432 ft
+          -
+            group: "86-15"
+            data:
+              - final_time: 5.5 s
+              - range: 435 ft
+      -
+        desc3: "Oaken balls"
+        diameter: 4.40 in
+        mass: 1 lb 6 oz
+        charge: 1 oz
+        data:
+          -
+            group: "86-16"
+            data:
+              - final_time: 5.5 s
+              - range: 487 ft
+          -
+            group: "86-17"
+            data:
+              - final_time: 5.5 s
+              - range: 460 ft
+          -
+            group: "86-18"
+            data:
+              - final_time: 7 s
+              - range: 567 ft
+      -
+        desc3: "Paper balls rubbed over with whiting"
+        diameter: 4.40 in
+        mass: 0 lb 7.25 oz
+        charge: 1 oz
+        data:
+          -
+            group: "86-20"
+            data:
+              - final_time: 5.5 s
+              - range: 311 ft
+          -
+            group: "86-21"
+            data:
+              - final_time: 5 s
+              - range: 364 ft
+          -
+            group: "86-22"
+            data:
+              - final_time: 5 s
+              - range: 300 ft
+      -
+        desc3: "Paper balls without whiting"
+        diameter: 4.40 in
+        mass: 0 lb 6.25 oz
+        charge: 1 oz
+        data:
+          -
+            group: "86-23"
+            data:
+              - final_time: 5 s
+              - range: 366 ft
+          -
+            group: "86-24"
+            data:
+              - final_time: 6 s
+              - range: 396 ft
+          - range: 447 ft
+      -
+        desc3: "Paper balls rubbed over with whiting"
+        diameter: 4.40 in
+        mass: 0 lb 7.25 oz
+        charge: 2 oz
+        range: 450 ft
+  -
+    technique: "pendulum"
+    ref2: "p. 89"
+    date: "1788-08-06"
+    angle: 0 deg
+    pressure: 30.17 inHg
+    temperature: 64 F
+    diameter: 1.965 in
+    desc2: "Gun No. 2"
+    data:
+      -
+        range: 30 ft
+        data:
+          -
+            charge: 2 oz
+            mass: 16 oz 9.5 dr
+            final_velocity: 840 ft/s
+            desc3: "doubtful"
+          -
+            charge: 2 oz
+            mass: 16 oz 10.5 dr
+            final_velocity: 882 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 10.5 dr
+            final_velocity: 884 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 13.5 dr
+            final_velocity: 864 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 9 dr
+            final_velocity: 1573 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 8.5 dr
+            final_velocity: 1620 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 10.5 dr
+            final_velocity: 1568 ft/s
+      -
+        range: 60 ft
+        data:
+          -
+            charge: 2 oz
+            mass: 16 oz 8.5 dr
+            final_velocity: 793 ft/s
+            desc3: "doubtful"
+          -
+            charge: 2 oz
+            mass: 16 oz 7.5 dr
+            final_velocity: 833 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 7 dr
+            final_velocity: 872 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 10 dr
+            final_velocity: 844 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 10.5 dr
+            final_velocity: 1633 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 9.5 dr
+            final_velocity: 1550 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 9.5 dr
+            final_velocity: 1483 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 8.5 dr
+            final_velocity: 1530 ft/s
+      -
+        range: 120 ft
+        data:
+          -
+            charge: 2 oz
+            mass: 16 oz 11 dr
+            final_velocity: 825 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 6.5 dr
+            final_velocity: 869 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 7.5 dr
+            final_velocity: 837 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 8.5 dr
+            final_velocity: 1555 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 15.5 dr
+            final_velocity: 1554 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 12.5 dr
+            final_velocity: 1450 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 6 dr
+            final_velocity: 1480 ft/s
+  -
+    technique: "pendulum"
+    ref2: "p. 90"
+    date: "1788-08-07"
+    angle: 0 deg
+    pressure: 30.13 inHg
+    temperature: 60 F
+    diameter: 1.965 in
+    desc2: "Gun No. 2"
+    data:
+      -
+        range: 180 ft
+        data:
+          -
+            charge: 2 oz
+            mass: 16 oz 7.5 dr
+            final_velocity: 804 ft/s
+          -
+            charge: 2 oz
+            mass: 17 oz 0 dr
+            final_velocity: 814 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 15 dr
+            final_velocity: 800 ft/s
+          -
+            charge: 2 oz
+            mass: 17 oz 0 dr
+            final_velocity: 799 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 7 dr
+            final_velocity: 1458 ft/s
+          -
+            charge: 8 oz
+            mass: 17 oz 0 dr
+            final_velocity: 1466 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 10 dr
+            final_velocity: 1264 ft/s
+            desc3: "doubtful"
+          -
+            charge: 8 oz
+            mass: 16 oz 7.5 dr
+            final_velocity: 1445 ft/s
+      -
+        range: 240 ft
+        data:
+          -
+            charge: 2 oz
+            mass: 16 oz 11.5 dr
+            final_velocity: 787 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 8 dr
+            final_velocity: 767 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 7 dr
+            final_velocity: 776 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 8 dr
+            final_velocity: 805 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 8 dr
+            final_velocity: 1360 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 14 dr
+            final_velocity: 1376 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 15 dr
+            final_velocity: 1283 ft/s
+            desc3: "doubtful"
+          -
+            charge: 8 oz
+            mass: 16 oz 13 dr
+            final_velocity: 1305 ft/s
+            desc3: "doubtful"
+      -
+        range: 300 ft
+        data:
+          -
+            charge: 2 oz
+            mass: 16 oz 11 dr
+            final_velocity: 736 ft/s
+            desc3: "doubtful"
+          -
+            charge: 2 oz
+            mass: 16 oz 6 dr
+            final_velocity: 786 ft/s
+          -
+            charge: 2 oz
+            mass: 17 oz 0 dr
+            final_velocity: 772 ft/s
+  -
+    technique: "pendulum"
+    ref2: "p. 91"
+    date: "1788-08-09"
+    angle: 0 deg
+    pressure: 30.16 inHg
+    temperature: 60 F
+    diameter: 1.965 in
+    desc2: "Gun No. 2"
+    data:
+      -
+        range: 300 ft
+        data:
+          -
+            charge: 2 oz
+            mass: 16 oz 10.5 dr
+            final_velocity: 766 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 11 dr
+            final_velocity: 775 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 11 dr
+            final_velocity: 769 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 10 dr
+            final_velocity: 1225 ft/s
+            desc3: "doubtful"
+          -
+            charge: 8 oz
+            mass: 16 oz 10 dr
+            final_velocity: 1317 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 12 dr
+            final_velocity: 1224 ft/s
+            desc3: "doubtful"
+          -
+            charge: 8 oz
+            mass: 16 oz 11 dr
+            final_velocity: 1241 ft/s
+      -
+        range: 360 ft
+        data:
+          -
+            charge: 2 oz
+            mass: 16 oz 11 dr
+            final_velocity: 727 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 12 dr
+            final_velocity: 721 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 9 dr
+            final_velocity: 731 ft/s
+          -
+            charge: 2 oz
+            mass: 16 oz 11 dr
+            final_velocity: 760 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 11 dr
+            final_velocity: 1332 ft/s
+            desc3: "doubtful"
+          -
+            charge: 8 oz
+            mass: 16 oz 10 dr
+            final_velocity: 1270 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 11 dr
+            final_velocity: 1227 ft/s
+          -
+            charge: 8 oz
+            mass: 16 oz 9 dr
+            final_velocity: 1134 ft/s
+            desc3: "doubtful"
 
-# Processed through page 83
+# Processed through page 93
