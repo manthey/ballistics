@@ -1497,5 +1497,621 @@ data:
             mass: 16 oz 9 dr
             final_velocity: 1134 ft/s
             desc3: "doubtful"
+  -
+    technique: "pendulum"
+    ref2: "p. 95"
+    date: "1788-08-20"
+    angle: 0 deg
+    pressure: 29.80 inHg
+    temperature: 64 F
+    diameter: 1.965 in
+    range: 30 ft
+    desc2: "Gun No. 3"
+    data:
+      -
+        charge: 16 oz
+        mass: 16 oz 11 dr
+        final_velocity: 1837 ft/s
+      -
+        charge: 4 oz
+        mass: 16 oz 11 dr
+        final_velocity: 1315 ft/s
+      -
+        charge: 4 oz
+        mass: 16 oz 6 dr
+        final_velocity: 1365 ft/s
+      -
+        charge: 4 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1350 ft/s
+      -
+        charge: 4 oz
+        mass: 16 oz 10 dr
+        final_velocity: 1353 ft/s
+      -
+        charge: 3 oz
+        mass: 16 oz 12 dr
+        final_velocity: 1178 ft/s
+      -
+        charge: 3 oz
+        mass: 16 oz 11 dr
+        final_velocity: 1215 ft/s
+      -
+        charge: 3 oz
+        mass: 16 oz 9 dr
+        final_velocity: 1276 ft/s
+        desc3: "doubtful"
+      -
+        charge: 3 oz
+        mass: 16 oz 9 dr
+        final_velocity: 1165 ft/s
+      -
+        charge: 1 oz
+        mass: 16 oz 9 dr
+        final_velocity: 620 ft/s
+        desc3: "doubtful"
+      -
+        charge: 1 oz
+        mass: 16 oz 11 dr
+        final_velocity: 641 ft/s
+      -
+        charge: 1 oz
+        mass: 16 oz 10 dr
+        final_velocity: 621 ft/s
+        desc3: "doubtful"
+      -
+        charge: 1 oz
+        mass: 16 oz 14 dr
+        final_velocity: 658 ft/s
+      -
+        charge: 12 dr
+        mass: 16 oz 9 dr
+        final_velocity: 547 ft/s
+      -
+        charge: 12 dr
+        mass: 16 oz 13 dr
+        final_velocity: 569 ft/s
+      -
+        charge: 12 dr
+        mass: 16 oz 9 dr
+        final_velocity: 522 ft/s
+      -
+        charge: 12 dr
+        mass: 16 oz 9 dr
+        final_velocity: 506 ft/s
+        desc3: "doubtful"
+      -
+        charge: 8 dr
+        mass: 16 oz 12.5 dr
+        final_velocity: 421 ft/s
+      -
+        charge: 8 dr
+        mass: 16 oz 10 dr
+        final_velocity: 450 ft/s
+      -
+        charge: 8 dr
+        mass: 16 oz 8 dr
+        final_velocity: 467 ft/s
+      -
+        charge: 8 dr
+        mass: 16 oz 9 dr
+        final_velocity: 457 ft/s
+      -
+        charge: 4 dr
+        mass: 16 oz 10 dr
+        final_velocity: 313 ft/s
+      -
+        charge: 4 dr
+        mass: 16 oz 9 dr
+        final_velocity: 339 ft/s
+      -
+        charge: 4 dr
+        mass: 16 oz 10 dr
+        final_velocity: 340 ft/s
+      -
+        charge: 4 dr
+        mass: 16 oz 11 dr
+        final_velocity: 341 ft/s
+  -
+    technique: "pendulum"
+    date: "1788-08-21"
+    angle: 0 deg
+    pressure: 30.00 inHg
+    temperature: 65 F
+    diameter: 1.965 in
+    desc2: "Gun No. 3"
+    mass: 16 oz 11.05 dr
+    data:
+      -
+        ref2: "p. 96"
+        range: 60 ft
+        data:
+          -
+            charge: 4 oz
+            data:
+              - final_velocity: 1363 ft/s
+              - final_velocity: 1306 ft/s
+              - final_velocity: 1323 ft/s
+              - final_velocity: 1323 ft/s
+          -
+            charge: 3 oz
+            data:
+              -
+                final_velocity: 1088 ft/s
+                desc3: "doubtful"
+              -
+                final_velocity: 1092 ft/s
+                desc3: "doubtful"
+              - final_velocity: 1102 ft/s
+              - final_velocity: 1118 ft/s
+          -
+            charge: 1 oz
+            data:
+              -
+                final_velocity: 604 ft/s
+                desc3: "doubtful"
+              -
+                final_velocity: 583 ft/s
+                desc3: "doubtful"
+              - final_velocity: 634 ft/s
+              - final_velocity: 637 ft/s
+          -
+            charge: 8 dr
+            data:
+              -
+                final_velocity: 386 ft/s
+                desc3: "doubtful"
+              - final_velocity: 421 ft/s
+              - final_velocity: 414 ft/s
+              - final_velocity: 433 ft/s
+          -
+            charge: 4 dr
+            data:
+              - final_velocity: 290 ft/s
+              -
+                final_velocity: 259 ft/s
+                desc3: "doubtful"
+              - final_velocity: 285 ft/s
+              -
+                final_velocity: 269 ft/s
+                desc3: "doubtful"
+          -
+            charge: 6 dr
+            data:
+              - final_velocity: 400 ft/s
+              - final_velocity: 376 ft/s
+              - final_velocity: 371 ft/s
+              - final_velocity: 363 ft/s
+      -
+        ref2: "p. 96"
+        range: 120 ft
+        data:
+          -
+            charge: 4 oz
+            data:
+              - final_velocity: 1263 ft/s
+              - final_velocity: 1240 ft/s
+              - final_velocity: 1237 ft/s
+              - final_velocity: 1250 ft/s
+          -
+            charge: 3 oz
+            data:
+              - final_velocity: 1068 ft/s
+              - final_velocity: 1058 ft/s
+              - final_velocity: 1057 ft/s
+              - final_velocity: 1106 ft/s
+          -
+            charge: 1 oz
+            data:
+              - final_velocity: 607 ft/s
+              - final_velocity: 628 ft/s
+              - final_velocity: 582 ft/s
+              - final_velocity: 603 ft/s
+      -
+        ref2: "p. 97"
+        range: 120 ft
+        data:
+          -
+            charge: 8 dr
+            data:
+              - final_velocity: 400 ft/s
+              - final_velocity: 433 ft/s
+              -
+                final_velocity: 356 ft/s
+                desc3: "doubtful"
+              - final_velocity: 436 ft/s
+              - final_velocity: 409 ft/s
+          -
+            charge: 12 dr
+            data:
+              - final_velocity: 527 ft/s
+              - final_velocity: 524 ft/s
+              - final_velocity: 555 ft/s
+              - final_velocity: 486 ft/s
+          -
+            charge: 6 dr
+            data:
+              - final_velocity: 354 ft/s
+              - final_velocity: 310 ft/s
+              - final_velocity: 347 ft/s
+              - final_velocity: 414 ft/s
+          -
+            charge: 4 dr
+            data:
+              - final_velocity: 289 ft/s
+              - final_velocity: 287 ft/s
+              -
+                final_velocity: 306 ft/s
+                desc3: "doubtful"
+              - final_velocity: 287 ft/s
+      -
+        ref2: "p. 97"
+        range: 60 ft
+        data:
+          -
+            charge: 12 dr
+            data:
+              - final_velocity: 534 ft/s
+              - final_velocity: 571 ft/s
+              - final_velocity: 532 ft/s
+              - final_velocity: 538 ft/s
+  -
+    technique: "pendulum"
+    date: "1788-09-01"
+    angle: 0 deg
+    pressure: 29.87 inHg
+    temperature: 62 F
+    diameter: 1.965 in
+    desc2: "Gun No. 3"
+    ref2: "p. 98"
+    range: 180 ft
+    data:
+      -
+        charge: 4 oz
+        data:
+          -
+            mass: 16 oz 15 dr
+            final_velocity: 1216 ft/s
+          -
+            mass: 16 oz 10 dr
+            final_velocity: 1160 ft/s
+          -
+            mass: 16 oz 10.5 dr
+            final_velocity: 1169 ft/s
+          -
+            mass: 16 oz 10 dr
+            final_velocity: 1150 ft/s
+            desc3: "doubtful"
+      -
+        charge: 3 oz
+        data:
+          -
+            mass: 16 oz 14 dr
+            final_velocity: 1042 ft/s
+          -
+            mass: 16 oz 12 dr
+            final_velocity: 1070 ft/s
+          -
+            mass: 16 oz 8 dr
+            final_velocity: 1050 ft/s
+          -
+            mass: 16 oz 11.5 dr
+            final_velocity: 1083 ft/s
+            desc3: "doubtful"
+      -
+        charge: 1 oz
+        data:
+          -
+            mass: 16 oz 11 dr
+            final_velocity: 622 ft/s
+          -
+            mass: 16 oz 12 dr
+            final_velocity: 611 ft/s
+          -
+            mass: 16 oz 11 dr
+            final_velocity: 594 ft/s
+          -
+            mass: 16 oz 9.5 dr
+            final_velocity: 623 ft/s
+      -
+        charge: 12 dr
+        data:
+          -
+            mass: 16 oz 11 dr
+            final_velocity: 513 ft/s
+          -
+            mass: 16 oz 11 dr
+            final_velocity: 516 ft/s
+          -
+            mass: 16 oz 10 dr
+            final_velocity: 507 ft/s
+          -
+            mass: 16 oz 10 dr
+            final_velocity: 536 ft/s
+      -
+        charge: 8 dr
+        data:
+          -
+            mass: 16 oz 10 dr
+            final_velocity: 442 ft/s
+            desc3: "doubtful"
+          -
+            mass: 16 oz 14 dr
+            final_velocity: 393 ft/s
+          -
+            mass: 16 oz 13 dr
+            final_velocity: 407 ft/s
+          -
+            mass: 16 oz 12 dr
+            final_velocity: 421 ft/s
+      -
+        charge: 6 dr
+        data:
+          -
+            mass: 16 oz 10 dr
+            final_velocity: 375 ft/s
+          -
+            mass: 16 oz 14 dr
+            final_velocity: 344 ft/s
+  -
+    technique: "pendulum"
+    date: "1788-09-02"
+    angle: 0 deg
+    pressure: 30 inHg
+    temperature: 65 F
+    diameter: 1.965 in
+    desc2: "Gun No. 3"
+    ref2: "p. 99"
+    mass: 16 oz 11.7 dr
+    data:
+      -
+        range: 180 ft
+        charge: 6 dr
+        data:
+          - final_velocity: 370 ft/s
+          - final_velocity: 375 ft/s
+      -
+        range: 240 ft
+        data:
+          -
+            charge: 4 oz
+            data:
+              - final_velocity: 1120 ft/s
+              - final_velocity: 1115 ft/s
+              - final_velocity: 1117 ft/s
+              - final_velocity: 1165 ft/s
+          -
+            charge: 3 oz
+            data:
+              - final_velocity: 969 ft/s
+              - final_velocity: 928 ft/s
+              - final_velocity: 1056 ft/s
+              - final_velocity: 1079 ft/s
+          -
+            charge: 1 oz
+            data:
+              - final_velocity: 568 ft/s
+              - final_velocity: 622 ft/s
+              - final_velocity: 608 ft/s
+              - final_velocity: 610 ft/s
+  -
+    technique: "pendulum"
+    date: "1788-09-03"
+    angle: 0 deg
+    pressure: 30 inHg
+    temperature: 65 F
+    diameter: 1.965 in
+    desc2: "Gun No. 3"
+    ref2: "p. 100"
+    mass: 16 oz 11.7 dr
+    data:
+      -
+        range: 300 ft
+        data:
+          -
+            charge: 4 oz
+            data:
+              - final_velocity: 1086 ft/s
+              - final_velocity: 1076 ft/s
+              - final_velocity: 1069 ft/s
+              - final_velocity: 1077 ft/s
+          -
+            charge: 3 oz
+            data:
+              - final_velocity: 947 ft/s
+              - final_velocity: 951 ft/s
+              - final_velocity: 970 ft/s
+              -
+                final_velocity: 938 ft/s
+                desc3: "doubtful"
+      -
+        range: 360 ft
+        data:
+          -
+            charge: 4 oz
+            data:
+              - final_velocity: 1050 ft/s
+              -
+                final_velocity: 1008 ft/s
+                desc3: "doubtful"
+              - final_velocity: 1040 ft/s
+              - final_velocity: 1040 ft/s
+          -
+            charge: 3 oz
+            data:
+              - final_velocity: 894 ft/s
+              - final_velocity: 954 ft/s
+              - final_velocity: 934 ft/s
+              - final_velocity: 962 ft/s
+  -
+    technique: "pendulum"
+    date: "1788-09-04"
+    angle: 0 deg
+    pressure: 29.82 inHg
+    temperature: 74 F
+    diameter: 1.965 in
+    desc2: "Gun No. 3"
+    ref2: "p. 101"
+    mass: 16 oz 10.86 dr
+    data:
+      -
+        range: 360 ft
+        data:
+          -
+            charge: 16 oz
+            data:
+              - final_velocity: 1483 ft/s
+              - final_velocity: 1681 ft/s
+              -
+                final_velocity: 1425 ft/s
+                desc3: "doubtful"
+              -
+                final_velocity: 1416 ft/s
+                desc3: "doubtful"
+          -
+            charge: 12 oz
+            data:
+              - final_velocity: 1476 ft/s
+              - final_velocity: 1512 ft/s
+              - final_velocity: 1487 ft/s
+              -
+                final_velocity: 1414 ft/s
+                desc3: "doubtful"
+      -
+        range: 300 ft
+        data:
+          -
+            charge: 16 oz
+            data:
+              - final_velocity: 1613 ft/s
+              -
+                final_velocity: 1522 ft/s
+                desc3: "doubtful"
+              - final_velocity: 1645 ft/s
+              - final_velocity: 1685 ft/s
+          -
+            charge: 12 oz
+            data:
+              - final_velocity: 1652 ft/s
+              - final_velocity: 1584 ft/s
+              - final_velocity: 1530 ft/s
+              - final_velocity: 1521 ft/s
+      -
+        range: 240 ft
+        data:
+          -
+            charge: 16 oz
+            data:
+              - final_velocity: 1781 ft/s
+              - final_velocity: 1645 ft/s
+              -
+                final_velocity: 1404 ft/s
+                desc3: "doubtful"
+              -
+                final_velocity: 1397 ft/s
+                desc3: "doubtful"
+              -
+                final_velocity: 1524 ft/s
+                desc3: "doubtful"
+  -
+    technique: "pendulum"
+    date: "1788-09-15"
+    angle: 0 deg
+    pressure: 30.09 inHg
+    temperature: 60 F
+    diameter: 1.965 in
+    desc2: "Gun No. 3"
+    ref2: "p. 102"
+    charge: 16 oz
+    mass: 16 oz 10.7 dr
+    data:
+      -
+        range: 30 ft
+        data:
+          -
+            final_velocity: 1855 ft/s
+            desc3: "doubtful"
+          - final_velocity: 2100 ft/s
+          - final_velocity: 2143 ft/s
+          - final_velocity: 2202 ft/s
+          - final_velocity: 2133 ft/s
+          - final_velocity: 2093 ft/s
+      -
+        range: 60 ft
+        data:
+          -
+            final_velocity: 1929 ft/s
+            desc3: "doubtful"
+          - final_velocity: 2040 ft/s
+          - final_velocity: 2010 ft/s
+          -
+            final_velocity: 1920 ft/s
+            desc3: "doubtful"
+          - final_velocity: 1973 ft/s
+      -
+        range: 120 ft
+        data:
+          - final_velocity: 1899 ft/s
+          -
+            final_velocity: 2071 ft/s
+            desc3: "doubtful"
+          - final_velocity: 1935 ft/s
+          - final_velocity: 1839 ft/s
+          - final_velocity: 1913 ft/s
+      -
+        range: 180 ft
+        data:
+          - final_velocity: 1825 ft/s
+          -
+            final_velocity: 1643 ft/s
+            desc3: "doubtful"
+          - final_velocity: 1855 ft/s
+          - final_velocity: 1953 ft/s
+          -
+            final_velocity: 1653 ft/s
+            desc3: "doubtful"
+          - final_velocity: 1745 ft/s
+          -
+            final_velocity: 1507 ft/s
+            desc3: "doubtful"
+          - final_velocity: 1792 ft/s
+      -
+        range: 240 ft
+        data:
+          - final_velocity: 1808 ft/s
+          - final_velocity: 1643 ft/s
+          - final_velocity: 1819 ft/s
+          - final_velocity: 1623 ft/s
+          - final_velocity: 1815 ft/s
+  -
+    technique: "pendulum"
+    date: "1788-09-25"
+    angle: 0 deg
+    pressure: 30 inHg
+    temperature: 57 F
+    diameter: 2.84 in
+    desc2: "3 pounder guns, brass"
+    ref2: "p. 104"
+    mass: 3 lb 1 oz 4 dr
+    range: 60 ft
+    data:
+      -
+        charge: 4 oz
+        data:
+          - final_velocity: 710 ft/s
+          - final_velocity: 773 ft/s
+          - final_velocity: 695 ft/s
+          - final_velocity: 771 ft/s
+          - final_velocity: 720 ft/s
+          - final_velocity: 798 ft/s
+      -
+        charge: 16 oz
+        data:
+          - final_velocity: 1614 ft/s
+          - final_velocity: 1354 ft/s
+          - final_velocity: 1580 ft/s
+          - final_velocity: 1341 ft/s
+          - final_velocity: 1574 ft/s
+          - final_velocity: 1300 ft/s
 
-# Processed through page 93
+# Processed through page 109
