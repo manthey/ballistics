@@ -165,6 +165,16 @@ Factors = {
         'title': 'Diameter',
         'desc': 'Diameter of projectile.'
     },
+    'final_angle': {
+        'long': 'finalangle',
+        'units': 'deg',
+        'min': 0.01,
+        'max': 89.99,
+        'method': 'scan',
+        'step': 5,
+        'title': 'Final Angle',
+        'desc': 'Final angle from horizontal (positive is downward).'
+    },
     'final_height': {
         'long': 'height',
         'short': 'h',
@@ -1455,11 +1465,13 @@ def trajectory(state):  # noqa - mccabe
     max_range = state.get('range', None)
     max_time = state.get('final_time', None)
     min_velocity = state.get('final_velocity', None)
+    final_angle = state.get('final_angle', None)
     if (final_y is None and max_range is None and max_time is None and
-            min_velocity is None):
-        state['error'] = ('Failed - at least one of final_height, range, '
-                          'final_time, or final_velocity must be specified to '
-                          'compute the trajectory.')
+            min_velocity is None and final_angle is None):
+        state['error'] = (
+            'Failed - at least one of final_height, range, final_time, '
+            'final_velocity, or final_angle must be specified to compute the '
+            'trajectory.')
         return (state, [])
     # Now compute the trajectory in a series of steps until the end condition
     # is reached.
@@ -1477,6 +1489,12 @@ def trajectory(state):  # noqa - mccabe
             offset = time-state['time']
         elif min_velocity is not None:
             offset = (state['vx']**2+state['vy']**2)**0.5-min_velocity
+        elif final_angle is not None:
+            curangle = -math.atan2(state['vy'], state['vx']) * 180 / math.pi
+            offset = final_angle - curangle
+            print offset  # ##DWM::
+            if state['vy'] >= 0:
+                proceed = True
         if offset < 0 and proceed == 'check':
             break
         if (state['y'] < min(state.get('initial_height', 0),
@@ -1565,6 +1583,11 @@ def trajectory_error(initial_state, unknown, unknown_value):
         y0 = initial_state['max_height']
         y = state['max_height']
         return y - y0
+    if (unknown != 'final_angle' and
+            initial_state.get('final_angle', None) is not None):
+        x0 = initial_state['final_angle']
+        x = -math.atan2(state.get('vy', 0), state.get('vx', 0)) * 180 / math.pi
+        return x - x0
     print 'Cannot calculate trajectory error - nothing to solve for'
     return None
 

@@ -2113,5 +2113,362 @@ data:
           - final_velocity: 1341 ft/s
           - final_velocity: 1574 ft/s
           - final_velocity: 1300 ft/s
+  -
+    technique: "pendulum"
+    date: "1789-10-19"
+    angle: 0 deg
+    pressure: 29.64 inHg
+    diameter: 2.78 in
+    desc2: "3 pounder guns"
+    ref2: "p. 111"
+    mass: 2 lb 15 oz
+    range: 30 ft
+    charge: 16 oz
+    data:
+      - final_velocity: 1371 ft/s
+      - final_velocity: 1584 ft/s
+  -
+    technique: "pendulum"
+    date: "1789-10-20"
+    angle: 0 deg
+    pressure: 29.82 inHg
+    diameter: 2.78 in
+    desc2: "3 pounder guns"
+    ref2: "p. 112"
+    mass: 2 lb 15 oz
+    charge: 16 oz
+    data:
+      -
+        range: 30 ft
+        desc3: "Short gun"
+        final_velocity: 1353 ft/s
+      -
+        desc3: "Long gun"
+        data:
+          -
+            range: 80 ft
+            final_velocity: 1490 ft/s
+          -
+            range: 130 ft
+            final_velocity: 1487 ft/s
+          -
+            range: 180 ft
+            final_velocity: 1422 ft/s
+          -
+            range: 230 ft
+            final_velocity: 1393 ft/s
+  -
+    technique: "pendulum"
+    date: "1789-10-21"
+    angle: 0 deg
+    pressure: 29.82 inHg
+    diameter: 2.78 in
+    desc2: "3 pounder guns.  Long gun"
+    ref2: "p. 113"
+    mass: 2 lb 15 oz
+    charge: 16 oz
+    data:
+      -
+        range: 330 ft
+        final_velocity: 1330 ft/s
+      -
+        range: 430 ft
+        final_velocity: 1227 ft/s
+  -
+    technique: "pendulum"
+    date: "1789-10-22"
+    angle: 0 deg
+    pressure: 29.97 inHg
+    temperature: 58 F
+    diameter: 2.78 in
+    desc2: "3 pounder guns.  Long gun"
+    ref2: "p. 113"
+    mass: 2 lb 15 oz
+    charge: 8 oz
+    data:
+      -
+        range: 30 ft
+        final_velocity: 1062 ft/s
+      -
+        range: 80 ft
+        final_velocity: 1043 ft/s
+      -
+        range: 130 ft
+        final_velocity: 1016 ft/s
+      -
+        range: 180 ft
+        final_velocity: 1016 ft/s
+  -
+    technique: "pendulum"
+    date: "1789-10-23"
+    angle: 0 deg
+    pressure: 30 inHg
+    temperature: 58 F
+    ref2: "p. 113"
+    data:
+      -
+        diameter: 2.78 in
+        desc2: "3 pounder guns.  Long gun"
+        mass: 2 lb 15 oz
+        charge: 8 oz
+        data:
+          -
+            range: 230 ft
+            final_velocity: 960 ft/s
+          -
+            range: 330 ft
+            final_velocity: 924 ft/s
+          -
+            range: 430 ft
+            final_velocity: 902 ft/s
+      -
+        diameter: 3.48 in
+        desc2: "6-pounder gun"
+        mass: 5 lb 13 oz
+        range: 80 ft
+        data:
+          -
+            charge: 8 oz
+            final_velocity: 703 ft/s
+          -
+            charge: 16 oz
+            final_velocity: 990 ft/s
+          -
+            charge: 24 oz
+            final_velocity: 1222 ft/s
+  -
+    ref2: "p. 117"
+    date: "1789-10-26"
+    angle: 60 deg
+    desc2: "Mortar tests"
+    data:
+      -
+        desc3: "8-inch mortar"
+        diameter: 7.69 in
+        charge: 2 lb 4.875 oz
+        data:
+          -
+            group: "117-1-1"
+            mass: 64.25 lb
+            data:
+              - final_time: 25 sec
+              - range: 1500 yd
+          -
+            group: "117-1-2"
+            mass: 63.75 lb
+            data:
+              - final_time: 24 sec
+              - range: 1400 yd
+          -
+            group: "117-1-3"
+            mass: 48 lb
+            data:
+              - final_time: 26.25 sec
+              - range: 1675 yd
+          -
+            group: "117-1-4"
+            mass: 48 lb
+            data:
+              - final_time: 27 sec
+              - range: 1625 yd
+      -
+        desc3: "10-inch mortar"
+        diameter: 9.74 in
+        charge: 4 lb 8 oz
+        data:
+          -
+            group: "117-1-5"
+            mass: 129 lb
+            data:
+              - final_time: 25.5 sec
+              - range: 1850 yd
+          -
+            group: "117-1-6"
+            mass: 127.25 lb
+            data:
+              - final_time: 25.5 sec
+              - range: 1635 yd
+          -
+            group: "117-1-7"
+            mass: 96 lb
+            data:
+              - final_time: 27 sec
+              - range: 1770 yd
+          -
+            mass: 96 lb
+            range: 2075 yd
+  -
+    ref2: "p. 117"
+    date: "1789-10-27"
+    pressure: 30 inHg
+    desc2: "Range tests, long 3 pounder gun"
+    mass: 2 lb 15 oz
+    data:
+      -
+        angle: 45 deg
+        charge: 8 oz
+        diameter: 2.78 in
+        data:
+          - range: 2420 yd
+          - range: 2400 yd
+          - range: 3270 yd
+      -
+        angle: 45 deg
+        charge: 4 oz
+        data:
+          -
+            diameter: 2.78 in
+            range: 3160 yd
+          -
+            diameter: 2.70 in
+            final_time: 23 s
+      -
+        angle: 45 deg
+        charge: 2 oz
+        diameter: 2.70 in
+        group: "117-2-6"
+        data:
+          - final_time: 16 sec
+          - range: 1290 yd
+      -
+        angle: 45 deg
+        charge: 4 oz
+        diameter: 2.78 in
+        group: "117-2-7"
+        data:
+          - final_time: 22.5 sec
+          - range: 1950 yd
+      -
+        angle: 30 deg
+        charge: 8 oz
+        diameter: 2.78 in
+        group: "117-2-8"
+        data:
+          - final_time: 22 sec
+          - range: 2560 yd
+      -
+        angle: 20 deg
+        charge: 8 oz
+        diameter: 2.78 in
+        group: "117-2-9"
+        data:
+          - final_time: 12 sec
+          - range: 1600 yd
+  -
+    ref2: "p. 117"
+    date: "1789-10-28"
+    desc2: "Range tests, long 3 pounder gun"
+    angle: 45 deg
+    diameter: 2.78 in
+    data:
+      -
+        charge: 8 oz
+        mass: 3 lb 0 oz
+        data:
+          - range: 2450 yd
+          - range: 2420 yd
+          - range: 2330 yd
+          - range: 2220 yd
+      -
+        charge: 16 oz
+        data:
+          -
+            mass: 3 lb 0 oz
+            data:
+              -
+                group: "117-3-5"
+                data:
+                  - range: 2640 yd
+                  - final_angle: 61 deg
+              - range: 2720 yd
+          -
+            mass: 2 lb 15.75 oz
+            data:
+              - range: 2640 yd
+              -
+                group: "117-3-8"
+                data:
+                  - range: 2840 yd
+                  - final_angle: 61.5 deg
+      -
+        charge: 24 oz
+        mass: 2 lb 15.5 oz
+        range: 2640 yd
+  -
+    ref2: "p. 118"
+    data:
+      -
+        date: "1789-10-28"
+        desc2: "The 8-inch mortar"
+        diameter: 7.69 in
+        diameter_note: assumed
+        mass: 64.25 lb
+        mass_note: assumed
+        charge: 24 oz
+        data:
+          -
+            group: "118-1"
+            angle: 35 deg
+            data:
+              - final_angle: 53 deg
+              - range: 1900 yds
+          -
+            group: "118-2"
+            angle: 35 deg
+            data:
+              - final_angle: 51 deg
+              - range: 2200 yds
+          -
+            group: "118-3"
+            angle: 55 deg
+            data:
+              - final_angle: 61.5 deg
+              - range: 1700 yds
+      -
+        date: "1789-11-10"
+        desc2: "The 8-inch mortar"
+        diameter: 7.69 in
+        diameter_note: assumed
+        mass: 64.25 lb
+        mass_note: assumed
+        charge: 32 oz
+        angle: 45 deg
+        data:
+          - range: 1920 yds
+          - range: 2020 yds
+          - range: 2120 yds
+          - range: 1960 yds
+          - range: 2120 yds
+          - range: 1930 yds
+          - range: 2070 yds
+          - range: 2080 yds
+          - range: 1920 yds
+      -
+        date: "1789-11-10"
+        desc2: "The 3-lb gun"
+        diameter: 2.78 in
+        diameter_note: assumed
+        mass: 3 lb 0 oz
+        mass_note: assumed
+        angle: 45 deg
+        angle_note: "The text reads 75 deg, but this seems impossible, as it would require power factors that are orders of magnitude greater than in other tests."
+        data:
+          -
+            charge: 8 oz
+            data:
+              - range: 1920 yds
+              - range: 2050 yds
+          -
+            charge: 16 oz
+            data:
+              - range: 1890 yds
+              - range: 2070 yds
+              - range: 1270 yds
+          -
+            charge: 24 oz
+            data:
+              - range: 1870 yds
+              - range: 2300 yds
+              - range: 1740 yds
 
-# Processed through page 109
+# Processed through page 118
