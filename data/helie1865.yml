@@ -1254,7 +1254,7 @@ data:
                 initial_velocity: 503.4 m/s
       -
         desc2: "Canon de 30 Mod\u00e8le de 1820, Boulets Massifs, Poudre du Ripault, 1842"
-        diameter: 159.6 dm
+        diameter: 159.6 mm
         mass: 15.100 kg
         data:
           -
@@ -1356,7 +1356,7 @@ data:
             initial_velocity: 504.5 m/s
       -
         desc2: "Canon de 30 Mod\u00e8le de 1820, Boulets Creux, Poudre du Ripault, 1842"
-        diameter: 160.2 dm
+        diameter: 160.2 mm
         mass: 10.610 kg
         data:
           -
@@ -1449,7 +1449,7 @@ data:
             initial_velocity: 543.1 m/s
       -
         desc2: "Canon de 30 No. 2, Boulets Massifs, Poudre du Ripault, 1842"
-        diameter: 159.6 dm
+        diameter: 159.6 mm
         mass: 15.10 kg
         data:
           -
@@ -1484,7 +1484,7 @@ data:
             initial_velocity: 473.7 m/s
       -
         desc2: "Canon de 30 No. 2, Boulets Creux, Poudre du Ripault, 1842"
-        diameter: 160.2 dm
+        diameter: 160.2 mm
         mass: 10.61 kg
         data:
           -
@@ -1519,7 +1519,7 @@ data:
             initial_velocity: 522.8 m/s
       -
         desc2: "Canon de 30 No. 3, Boulets Massifs, Poudre du Ripault, 1842"
-        diameter: 159.6 dm
+        diameter: 159.6 mm
         mass: 15.10 kg
         data:
           -
@@ -1539,7 +1539,7 @@ data:
             initial_velocity: 417.8 m/s
       -
         desc2: "Canon de 30 No. 3, Boulets Creux, Poudre du Ripault, 1842"
-        diameter: 160.2 dm
+        diameter: 160.2 mm
         mass: 10.61 kg
         data:
           -
@@ -1559,7 +1559,7 @@ data:
             initial_velocity: 480.5 m/s
       -
         desc2: "Canon de 30 No. 4, Boulets Massifs, Poudre du Ripault, 1842"
-        diameter: 159.6 dm
+        diameter: 159.6 mm
         mass: 15.100 kg
         data:
           -
@@ -1627,7 +1627,7 @@ data:
             initial_velocity: 418.7 m/s
       -
         desc2: "Canon de 30 No. 4, Boulets Creux, Poudre du Ripault, 1842"
-        diameter: 160.2 dm
+        diameter: 160.2 mm
         mass: 11.480 kg
         data:
           -
@@ -1695,7 +1695,7 @@ data:
             initial_velocity: 467.0 m/s
       -
         desc2: "Canon de 24, Boulets Massifs, Poudre du Ripault, 1842"
-        diameter: 147.4 dm
+        diameter: 147.4 mm
         mass: 11.93 kg
         data:
           -
@@ -1727,7 +1727,7 @@ data:
             initial_velocity: 497.4 m/s
       -
         desc2: "Canon de 24, Boulets Creux, Poudre du Ripault, 1842"
-        diameter: 148.5 dm
+        diameter: 148.5 mm
         mass: 8.67 kg
         data:
           -
@@ -1759,7 +1759,7 @@ data:
             initial_velocity: 553.9 m/s
       -
         desc2: "Canon de 18, No. 1, Boulets Massifs, Poudre du Ripault, 1842"
-        diameter: 134.2 dm
+        diameter: 134.2 mm
         mass: 9.023 kg
         data:
           -
@@ -1791,7 +1791,7 @@ data:
             initial_velocity: 505.0 m/s
       -
         desc2: "Canon de 18, No. 1, Boulets Creux, Poudre du Ripault, 1842"
-        diameter: 134.8 dm
+        diameter: 134.8 mm
         mass: 6.230 kg
         data:
           -
@@ -1823,7 +1823,7 @@ data:
             initial_velocity: 565.9 m/s
       -
         desc2: "Canon de 18, No. 2, Boulets Massifs, Poudre du Ripault, 1842"
-        diameter: 134.2 dm
+        diameter: 134.2 mm
         mass: 9.023 kg
         data:
           -
@@ -1855,7 +1855,7 @@ data:
             initial_velocity: 495.2 m/s
       -
         desc2: "Canon de 18, No. 2, Boulets Creux, Poudre du Ripault, 1842"
-        diameter: 134.8 dm
+        diameter: 134.8 mm
         mass: 6.230 kg
         data:
           -
@@ -1887,7 +1887,7 @@ data:
             initial_velocity: 550.5 m/s
       -
         desc2: "Canon de 12, Boulets Massifs, Poudre du Ripault, 1842"
-        diameter: 117.3 dm
+        diameter: 117.3 mm
         mass: 6.093 kg
         data:
           -
@@ -1913,7 +1913,7 @@ data:
             initial_velocity: 520.7 m/s
       -
         desc2: "Canon de 12, Boulets Creux, Poudre du Ripault, 1842"
-        diameter: 118.4 dm
+        diameter: 118.4 mm
         mass: 4.310 kg
         data:
           -
