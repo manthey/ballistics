@@ -1473,6 +1473,11 @@ def trajectory(state):  # noqa - mccabe
             'final_velocity, or final_angle must be specified to compute the '
             'trajectory.')
         return (state, [])
+    cutoff_height = min(state.get('initial_height', 0),
+                        state.get('final_height', 0))
+    if cutoff_height is None:
+        cutoff_height = 0
+    cutoff_height -= 5000
     # Now compute the trajectory in a series of steps until the end condition
     # is reached.
     laststate = None
@@ -1497,8 +1502,7 @@ def trajectory(state):  # noqa - mccabe
                 proceed = True
         if offset < 0 and proceed == 'check':
             break
-        if (state['y'] < min(state.get('initial_height', 0),
-                             state.get('final_height', 0)) - 5000):
+        if state['y'] < cutoff_height:
             break
         if state['y'] > state['max_height']:
             state['max_height'] = state['y']

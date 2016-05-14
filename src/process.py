@@ -64,7 +64,7 @@ class FloatEncoder(json.JSONEncoder):
         if isinstance(o, FloatList):
             return repr(o)
         try:
-            return super(FloatEncoder, self)(o)
+            return super(FloatEncoder, self).default(o)
         except TypeError:
             print 'Can\'t encode: %r' % o
             raise
@@ -101,6 +101,16 @@ def calculate_case(hash, args, info, verbose):
     (newstate, points) = ballistics.find_unknown(
         state, params['unknown'], params.get('unknown_scan'))
     newstate['computation_time'] = ballistics.get_cpu_time()-starttime
+    for key, technique in [
+            ('final_velocity', 'chronograph'),
+            ('rising_height', 'trajectory'),
+            ('range', 'range'),
+            ('final_time', 'time'),
+            ('max_height', 'height'),
+            ('final_angle', 'final_angle'),
+            ]:
+        if newstate.get('technique') is None and key in newstate:
+            newstate['technique'] = technique
     if verbose >= 3:
         pprint.pprint(newstate)
     if len(points) > 0:

@@ -35,8 +35,10 @@ for file in os.listdir(basedir):  # noqa
                         item['final_%s_%s' % (key.rsplit(
                             '_data', 1)[0], subkey)] = entry[
                                 'results'][key][subkey]
-            item['date'] = str(item['date'])
+            item['date'] = str(item.get('given_date', item['date']))
             item['year'] = int(item['date'].split('-')[0])
+            item['date_filled'] = '-'.join((item['date'].split('-') +
+                                            ['01', '01'])[:3])
             for basekey in ('res', 'desc'):
                 for i in range(1, 10):
                     key = '%s%d' % (basekey, i)
@@ -45,10 +47,11 @@ for file in os.listdir(basedir):  # noqa
                                          item.get(basekey) else '') + item[key]
                         del item[key]
             if entry.get('points'):
-                item['trajectory'] = {
-                    'x': entry['points']['x'],
-                    'y': entry['points']['y'],
-                }
+                item['trajectory_x'] = entry['points']['x']
+                item['trajectory_y'] = entry['points']['y']
+            for key in ('date', 'power_factor'):
+                if item.get(key) is None:
+                    raise Exception('Missing parameter %s' % key)
             total.append(item)
         except Exception:
             print 'Failed on %s: %d\n%r' % (file, entry.get('idx', 0),
