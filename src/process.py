@@ -102,6 +102,7 @@ def calculate_case(hash, args, info, verbose):
         state, params['unknown'], params.get('unknown_scan'))
     newstate['computation_time'] = ballistics.get_cpu_time()-starttime
     for key, technique in [
+            ('initial_velocity', 'given_velocity'),
             ('final_velocity', 'chronograph'),
             ('rising_height', 'trajectory'),
             ('range', 'range'),

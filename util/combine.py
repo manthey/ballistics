@@ -9,7 +9,7 @@ import traceback
 total = []
 
 basedir = "results"
-for file in os.listdir(basedir):  # noqa
+for file in sorted(os.listdir(basedir)):  # noqa
     path = os.path.join(basedir, file)
     try:
         data = json.load(open(path))
@@ -49,7 +49,9 @@ for file in os.listdir(basedir):  # noqa
             if entry.get('points'):
                 item['trajectory_x'] = entry['points']['x']
                 item['trajectory_y'] = entry['points']['y']
-            for key in ('date', 'power_factor'):
+            if 'technique' not in item and 'given_technique' in item:
+                item['technique'] = item['given_technique']
+            for key in ('date', 'power_factor', 'technique', 'ref'):
                 if item.get(key) is None:
                     raise Exception('Missing parameter %s' % key)
             total.append(item)
