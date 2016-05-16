@@ -2450,7 +2450,7 @@ data:
         diameter_note: assumed
         mass: 3 lb 0 oz
         mass_note: assumed
-        angle: 45 deg
+        angle: 65 deg
         angle_note: "The text reads 75 deg, but this seems impossible, as it would require power factors that are orders of magnitude greater than in other tests."
         data:
           -
@@ -2470,5 +2470,571 @@ data:
               - range: 1870 yds
               - range: 2300 yds
               - range: 1740 yds
-
-# Processed through page 118
+  -
+    ref2: "p. 119"
+    date: "1789-11-16"
+    technique: pendulum
+    pressure: 29.4 inHg
+    temperature: 51 F
+    desc: "Pendulum tests with larger rounds"
+    angle: 0 deg
+    data:
+      -
+        mass: 3 lb 0 oz
+        diameter: 2.78 in
+        charge: 24 oz
+        data:
+          -
+            range: 30 ft
+            final_velocity: 1727 ft/s
+          -
+            range: 80 ft
+            final_velocity: 1700 ft/s
+          -
+            range: 130 ft
+            final_velocity: 1609 ft/s
+      -
+        mass: 4 lb 1.5 oz
+        diameter: 3.09 in
+        charge: 21.375 oz
+        range: 90 ft
+        final_velocity: 1268 ft/s
+  -
+    ref2: "p. 120"
+    date: "1789-11-17"
+    technique: pendulum
+    pressure: 29.96 inHg
+    temperature: 51 F
+    desc: "Pendulum tests with larger rounds"
+    diameter: 2.78 in
+    charge: 24 oz
+    angle: 0 deg
+    data:
+      -
+        mass: 3 lb 0 oz
+        range: 180 ft
+        final_velocity: 1586 ft/s
+      -
+        mass: 2 lb 15.75 oz
+        mass_note: "average of two each at 3 lb 0 oz and 2 lb 15.5 oz"
+        range: 230 ft
+        final_velocity: 1550 ft/s
+      -
+        mass: 2 lb 15.333 oz
+        mass_note: "average of 2 lb 15.5 oz and two at 2 lb 15 oz"
+        range: 330 ft
+        final_velocity: 1520 ft/s
+      -
+        mass: 2 lb 15 oz
+        range: 430 ft
+        final_velocity: 1323 ft/s
+  -
+    ref2: "p. 121"
+    date: "1789-11-18"
+    technique: pendulum
+    pressure: 29.33 inHg
+    temperature: 48 F
+    desc: "Pendulum tests with larger rounds"
+    diameter: 2.78 in
+    angle: 0 deg
+    data:
+      -
+        charge: 4 oz
+        data:
+          -
+            mass: 2 lb 14.91667 oz
+            mass_note: "two rounds at 2 lb 15 oz, one at 2 lb 14.75 oz"
+            range: 30 ft
+            final_velocity: 669 ft/s
+          -
+            mass: 2 lb 14.75 oz
+            range: 80 ft
+            final_velocity: 670 ft/s
+          -
+            mass: 2 lb 14.75 oz
+            range: 130 ft
+            final_velocity: 651 ft/s
+          -
+            mass: 2 lb 14.75 oz
+            range: 180 ft
+            final_velocity: 651 ft/s
+          -
+            mass: 2 lb 14.53333 oz
+            mass_note: "two rounds at 2 lb 14.5 oz, one at 2 lb 14.75 oz"
+            range: 230 ft
+            final_velocity: 653 ft/s
+      -
+        charge: 4 oz
+        mass: 2 lb 14.5 oz
+        data:
+          -
+            range: 30 ft
+            final_velocity: 1296 ft/s
+          -
+            range: 80 ft
+            final_velocity: 1247 ft/s
+          -
+            range: 130 ft
+            final_velocity: 1226 ft/s
+          -
+            range: 180 ft
+            final_velocity: 1214 ft/s
+          -
+            range: 230 ft
+            final_velocity: 1205 ft/s
+  -
+    ref2: "p. 122"
+    date: "1789-11-19"
+    technique: pendulum
+    pressure: 29.50 inHg
+    temperature: 46 F
+    desc: "Pendulum tests with larger rounds"
+    diameter: 2.78 in
+    angle: 0 deg
+    data:
+      -
+        charge: 4 oz
+        mass: 2 lb 14 oz
+        range: 330 ft
+        final_velocity: 1119 ft/s
+      -
+        skip: true
+        skip_note: "Some tests were performed with the ball palced at different distances along the muzzle.  The test show that less force is imparted the closer to the end the ball starts, but without calculating the actual velocities."
+  -
+    ref2: "p. 133"
+    date: "1791-07-14"
+    technique: double_pendulum
+    pressure: 30.0 inHg
+    temperature: 66 F
+    desc: "Pendulum tests with long six pounder"
+    diameter: 3.55 in
+    mass: 6 lb 1.5 oz
+    range: 30 ft
+    angle: 0 deg
+    data:
+      -
+        charge: 32 oz
+        data:
+          - final_velocity: 1686 ft/s
+          - final_velocity: 1620 ft/s
+          - final_velocity: 1658 ft/s
+      -
+        charge: 24 oz
+        data:
+          - final_velocity: 1588 ft/s
+          - final_velocity: 1508 ft/s
+          - final_velocity: 1517 ft/s
+  -
+    ref2: "p. 134"
+    date: "1791-07-16"
+    technique: double_pendulum
+    pressure: 30 inHg
+    temperature: 69 F
+    desc: "Pendulum tests with long six pounder"
+    diameter: 3.55 in
+    mass: 6 lb 1.5 oz
+    range: 30 ft
+    angle: 0 deg
+    data:
+      -
+        charge: 16 oz
+        data:
+          - final_velocity: 1312 ft/s
+          - final_velocity: 1287 ft/s
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 911 ft/s
+          - final_velocity: 884 ft/s
+  -
+    ref2: "p. 136"
+    date: "1791-07-21"
+    technique: double_pendulum
+    pressure: 29.89 inHg
+    temperature: 67 F
+    desc: "Pendulum tests with medium six pounder"
+    diameter: 3.55 in
+    mass: 6 lb 1.5 oz
+    range: 30 ft
+    angle: 0 deg
+    data:
+      -
+        charge: 32 oz
+        data:
+          - final_velocity: 1586 ft/s
+          - final_velocity: 1585 ft/s
+      -
+        charge: 24 oz
+        data:
+          - final_velocity: 1527 ft/s
+          - final_velocity: 1490 ft/s
+          - final_velocity: 1430 ft/s
+      -
+        charge: 16 oz
+        data:
+          - final_velocity: 1298 ft/s
+          - final_velocity: 1224 ft/s
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 874 ft/s
+          - final_velocity: 882 ft/s
+  -
+    ref2: "p. 138"
+    date: "1791-09-14"
+    technique: double_pendulum
+    pressure: 30.2 inHg
+    temperature: 70 F
+    desc: "Pendulum tests with long six pounder"
+    diameter: 3.55 in
+    mass: 6 lb 1.5 oz
+    range: 200 ft
+    angle: 0 deg
+    data:
+      -
+        charge: 32 oz
+        data:
+          - final_velocity: 1560 ft/s
+          -
+            final_velocity: 1529 ft/s
+            desc3: "doubtful"
+          - final_velocity: 1614 ft/s
+      -
+        charge: 24 oz
+        data:
+          - final_velocity: 1362 ft/s
+          -
+            final_velocity: 1328 ft/s
+            desc3: "doubtful"
+          - final_velocity: 1425 ft/s
+      -
+        charge: 16 oz
+        data:
+          - final_velocity: 1238 ft/s
+          - final_velocity: 1174 ft/s
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 886 ft/s
+          - final_velocity: 872 ft/s
+  -
+    ref2: "p. 139"
+    date: "1791-09-22"
+    technique: pendulum
+    pressure: 30 inHg
+    temperature: 60 F
+    desc: "Pendulum tests with long and short six pounders on ship-gun carriages"
+    diameter: 3.56 in
+    mass: 6 lb 1.5 oz
+    range: 30 ft
+    angle: 0 deg
+    data:
+      -
+        desc2: "long gun"
+        data:
+          -
+            charge: 3 lb
+            data:
+              - final_velocity: 1749 ft/s
+              - final_velocity: 1826 ft/s
+          -
+            charge: 2 lb
+            data:
+              - final_velocity: 1596 ft/s
+              - final_velocity: 1669 ft/s
+      -
+        desc2: "short gun"
+        data:
+          -
+            charge: 3 lb
+            data:
+              -
+                final_velocity: 1728 ft/s
+                desc3: "doubtful"
+              - final_velocity: 1607 ft/s
+              - final_velocity: 1614 ft/s
+          -
+            charge: 2 lb
+            data:
+              - final_velocity: 1558 ft/s
+              - final_velocity: 1550 ft/s
+  -
+    ref2: "p. 140"
+    date: "1791-09-24"
+    technique: pendulum
+    pressure: 29.98 inHg
+    temperature: 60 F
+    desc: "Pendulum tests with medium and light six pounders on ship-gun carriages"
+    diameter: 3.56 in
+    mass: 6 lb 1.5 oz
+    range: 30 ft
+    charge: 1.5 lb
+    angle: 0 deg
+    data:
+      -
+        desc2: "medium gun"
+        data:
+          - final_velocity: 1416 ft/s
+          - final_velocity: 1420 ft/s
+      -
+        desc2: "light gun"
+        data:
+          - final_velocity: 1420 ft/s
+          - final_velocity: 1465 ft/s
+  -
+    ref2: "p. 141"
+    date: "1791-09-30"
+    technique: pendulum
+    pressure: 30.15 inHg
+    temperature: 53 F
+    desc: "The long six pounder from 115 ft using small-grained powder"
+    diameter: 3.55 in
+    mass: 6 lb 1.5 oz
+    range: 115 ft
+    angle: 0 deg
+    data:
+      -
+        charge: 48 oz
+        data:
+          -
+            final_velocity: 1597 ft/s
+            desc3: "doubtful"
+          - final_velocity: 1771 ft/s
+          - final_velocity: 1715 ft/s
+      -
+        charge: 32 oz
+        data:
+          - final_velocity: 1616 ft/s
+          - final_velocity: 1637 ft/s
+      -
+        charge: 24 oz
+        data:
+          -
+            final_velocity: 1491 ft/s
+            desc3: "doubtful"
+          - final_velocity: 1405 ft/s
+          - final_velocity: 1433 ft/s
+      -
+        charge: 16 oz
+        data:
+          - final_velocity: 1223 ft/s
+          - final_velocity: 1207 ft/s
+      -
+        charge: 8 oz
+        data:
+          - final_velocity: 863 ft/s
+          - final_velocity: 857 ft/s
+  -
+    ref2: "p. 142"
+    date: "1791-10-10"
+    technique: pendulum
+    pressure: 29.97 inHg
+    temperature: 57 F
+    desc: "The long six pounder from 285 ft"
+    diameter: 3.55 in
+    mass: 6 lb 1.75 oz
+    range: 285 ft
+    angle: 0 deg
+    data:
+      -
+        charge: 48 oz
+        data:
+          -
+            final_velocity: 1571 ft/s
+            desc3: "doubtful"
+          -
+            final_velocity: 1674 ft/s
+            desc3: "doubtful"
+          - final_velocity: 1641 ft/s
+      -
+        charge: 32 oz
+        data:
+          - final_velocity: 1496 ft/s
+          -
+            final_velocity: 1513 ft/s
+            desc3: "doubtful"
+      -
+        charge: 24 oz
+        final_velocity: 1329 ft/s
+        desc3: "doubtful"
+  -
+    ref2: "p. 143"
+    date: "1791-10-27"
+    technique: pendulum
+    pressure: 29.96 inHg
+    temperature: 46 F
+    desc: "The long six pounder from 285 ft"
+    diameter: 3.56 in
+    mass: 6 lb 1.75 oz
+    range: 285 ft
+    angle: 0 deg
+    data:
+      -
+        charge: 32 oz
+        data:
+          -
+            final_velocity: 1412 ft/s
+            desc3: "doubtful"
+          - final_velocity: 1471 ft/s
+          - final_velocity: 1428 ft/s
+      -
+        charge: 24 oz
+        data:
+          - final_velocity: 1330 ft/s
+          - final_velocity: 1339 ft/s
+      -
+        charge: 16 oz
+        data:
+          - final_velocity: 1150 ft/s
+          - final_velocity: 1127 ft/s
+  -
+    ref2: "p. 259"
+    technique: theory
+    desc: "Initial velocity of balls based on proportion of tehir weight in powder"
+    desc_note: "I've included Hutton's explicit examples of a 1 lb and 24 lb ball"
+    material: iron
+    data:
+      -
+        mass: 1 lb
+        data:
+          -
+            charge: 0.05 lb
+            initial_velocity: 506 ft/s
+          -
+            charge: 0.05263 lb
+            initial_velocity: 519 ft/s
+          -
+            charge: 0.05556 lb
+            initial_velocity: 533 ft/s
+          -
+            charge: 0.05882 lb
+            initial_velocity: 549 ft/s
+          -
+            charge: 0.0625 lb
+            initial_velocity: 566 ft/s
+          -
+            charge: 0.06667 lb
+            initial_velocity: 584 ft/s
+          -
+            charge: 0.07143 lb
+            initial_velocity: 605 ft/s
+          -
+            charge: 0.07692 lb
+            initial_velocity: 628 ft/s
+          -
+            charge: 0.08333 lb
+            initial_velocity: 653 ft/s
+          -
+            charge: 0.09091 lb
+            initial_velocity: 682 ft/s
+          -
+            charge: 0.1 lb
+            initial_velocity: 716 ft/s
+          -
+            charge: 0.1111 lb
+            initial_velocity: 755 ft/s
+          -
+            charge: 0.125 lb
+            initial_velocity: 800 ft/s
+          -
+            charge: 0.1429 lb
+            initial_velocity: 855 ft/s
+          -
+            charge: 0.1667 lb
+            initial_velocity: 924 ft/s
+          -
+            charge: 0.2 lb
+            initial_velocity: 1012 ft/s
+          -
+            charge: 0.25 lb
+            initial_velocity: 1131 ft/s
+          -
+            charge: 0.333 lb
+            initial_velocity: 1306 ft/s
+          -
+            charge: 0.5 lb
+            initial_velocity: 1600 ft/s
+          -
+            charge: 1 lb
+            initial_velocity: 2263 ft/s
+      -
+        mass: 24 lb
+        data:
+          -
+            charge: 1.2 lb
+            initial_velocity: 506 ft/s
+          -
+            charge: 1.2632 lb
+            initial_velocity: 519 ft/s
+          -
+            charge: 1.3333 lb
+            initial_velocity: 533 ft/s
+          -
+            charge: 1.4117 lb
+            initial_velocity: 549 ft/s
+          -
+            charge: 1.5 lb
+            initial_velocity: 566 ft/s
+          -
+            charge: 1.6 lb
+            initial_velocity: 584 ft/s
+          -
+            charge: 1.7143 lb
+            initial_velocity: 605 ft/s
+          -
+            charge: 1.8462 lb
+            initial_velocity: 628 ft/s
+          -
+            charge: 2 lb
+            initial_velocity: 653 ft/s
+          -
+            charge: 2.1818 lb
+            initial_velocity: 682 ft/s
+          -
+            charge: 2.4 lb
+            initial_velocity: 716 ft/s
+          -
+            charge: 2.667 lb
+            initial_velocity: 755 ft/s
+          -
+            charge: 3 lb
+            initial_velocity: 800 ft/s
+          -
+            charge: 3.429 lb
+            initial_velocity: 855 ft/s
+          -
+            charge: 4 lb
+            initial_velocity: 924 ft/s
+          -
+            charge: 4.8 lb
+            initial_velocity: 1012 ft/s
+          -
+            charge: 6 lb
+            initial_velocity: 1131 ft/s
+          -
+            charge: 8 lb
+            initial_velocity: 1306 ft/s
+          -
+            charge: 12 lb
+            initial_velocity: 1600 ft/s
+          -
+            charge: 24 lb
+            initial_velocity: 2263 ft/s
+  -
+    ref2: "p. 263"
+    technique: theory
+    desc: "The angle a 24-lb ball charged with 6 lb of powder needs to be fired to hit a target 1000 ft away"
+    material: iron
+    mass: 24 lb
+    charge: 6 lb
+    range: 1000 ft
+    angle: 55 arcmin
+  -
+    ref2: "p. 264"
+    technique: theory
+    desc: "Elevation of a 12-lb gun charged with 4 lb powder to hit an object 500 yards distance."
+    material: iron
+    mass: 12 lb
+    charge: 4 lb
+    range: 500 yds
+    angle: 1 deg 18 arcmin

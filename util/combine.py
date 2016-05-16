@@ -5,8 +5,12 @@ This compares all of the results files and collapses them into a simple array.
 import json
 import os
 import traceback
+import yaml
 
 total = []
+
+references = yaml.safe_load(open('data/references.yml'))['references']
+references = {item['key']: item for item in references}
 
 basedir = "results"
 for file in sorted(os.listdir(basedir)):  # noqa
@@ -16,11 +20,15 @@ for file in sorted(os.listdir(basedir)):  # noqa
     except Exception:
         print 'Failed to parse file %s' % path
         continue
+    references.setdefault(data['key'], {})
+    for key in ('key', 'ref', 'cms', 'summary', 'link', 'details'):
+        if key in data:
+            references[data['key']][key] = data[key]
     for entry in data['results']:
         try:
             item = {}
             for key in data:
-                if key not in ('data', 'results'):
+                if key not in ('data', 'results', 'summary', 'details', 'cms'):
                     item[key] = data[key]
             for key in entry:
                 if key not in ('conditions', 'points', 'results'):
@@ -39,13 +47,23 @@ for file in sorted(os.listdir(basedir)):  # noqa
             item['year'] = int(item['date'].split('-')[0])
             item['date_filled'] = '-'.join((item['date'].split('-') +
                                             ['01', '01'])[:3])
-            for basekey in ('res', 'desc'):
-                for i in range(1, 10):
-                    key = '%s%d' % (basekey, i)
-                    if key in item:
-                        item[basekey] = (item[basekey] + ', ' if
-                                         item.get(basekey) else '') + item[key]
-                        del item[key]
+            for basekey in ('ref', 'desc'):
+                for i in range(0, 10):
+                    for prefix in ('', 'given_'):
+                        if i:
+                            key = '%s%s%d' % (prefix, basekey, i)
+                        else:
+                            key = '%s%s' % (prefix, basekey)
+                        if item.get(key):
+                            if item[key] not in item.get(basekey, ''):
+                                if item.get(basekey):
+                                    item[basekey] += (
+                                        '  ' if item[basekey].endswith('.')
+                                        else ', ')
+                                else:
+                                    item[basekey] = ''
+                                item[basekey] += item[key]
+                            del item[key]
             if entry.get('points'):
                 item['trajectory_x'] = entry['points']['x']
                 item['trajectory_y'] = entry['points']['y']
@@ -62,3 +80,8 @@ for file in sorted(os.listdir(basedir)):  # noqa
 destpath = 'built/totallist.json'
 json.dump(total, open(destpath, 'wb'), sort_keys=True, indent=1,
           separators=(',', ': '))
+print len(total)
+refpath = 'built/references.json'
+json.dump(references, open(refpath, 'wb'), sort_keys=True, indent=1,
+          separators=(',', ': '))
+print len(references)

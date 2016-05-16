@@ -1,0 +1,318 @@
+---
+key: montagu1792
+ref: "Montagu, 1792"
+cms: "Montagu, George, <i>The Sportsman's Directory, or Tractate on Gunpowder</i>, London: R. Faulder, 1792"
+summary: "The author tests different powders with the desire to find the best sporting powder."
+date: "1792"
+data:
+  -
+    ref2: "p. 5-6"
+    desc: "Range from a small mortar"
+    diameter: 3 in
+    material: iron
+    angle: 45 deg
+    charge: 0.25 oz
+    data:
+      -
+        desc2: "Double Battel powder as used for fowling"
+        range: 16 yds
+      -
+        desc2: "Single Battel powder as used for fowling"
+        range: 10 yds
+      -
+        desc2: "Ordnance powder, as issued to the army in ball cartridges"
+        range: 13 yds
+      -
+        desc2: "Ordnance powder, the fine grains only"
+        range: 23 yds
+      -
+        desc2: "Ordnance powder, as delived in barrel for exercise, fine grains"
+        range: 21 yds
+  -
+    ref2: "p. 7"
+    desc: "Single Battel compared to army powder"
+    diameter: 3 in
+    material: iron
+    angle: 55 deg
+    charge: 70 gr
+    data:
+      -
+        desc2: "Government ball cartridge powder, whole grains"
+        range: 30 ft
+      -
+        desc2: "Single Battel powder, whole grains"
+        range: 28 ft
+      -
+        desc2: "Government ball cartridge powder, reduced partly to dust by bruising"
+        range: 51 ft
+      -
+        desc2: "Single Battel powder, reduced partly to dust by bruising"
+        range: 66 ft
+  -
+    ref2: "p. 8"
+    desc: "Tests with a smaller mortar with an adjustable powder chamber"
+    diameter: 1.5 in
+    material: iron
+    angle: 55 deg
+    charge: 15 gr
+    data:
+      -
+        desc2: "Double Battel powder"
+        range: 43 ft
+      -
+        desc2: "Single Battel powder"
+        range: 25 ft
+      -
+        desc2: "Ball cartridge powder, large grains"
+        range: 28 ft
+      -
+        desc2: "Ball cartridge powder, small grains"
+        range: 54 ft
+      -
+        desc2: "Ordnance exercise powder, large grains"
+        range: 22 ft
+      -
+        desc2: "Ordanance exercise powder, small grains"
+        range: 43 ft
+  -
+    ref2: "p. 11-12"
+    desc: "Tests with the three inch mortar reduced in length to 1/2 caliber, the powder chamber filled with barley if the powder doesn't fill it"
+    diameter: 3 in
+    material: iron
+    angle: 58 deg
+    charge: 3 dr
+    data:
+      -
+        desc2: "The coarse grains only of ordnance exercise powder"
+        range: 48 yds
+      -
+        desc2: "Single Battel powder"
+        range: 124 yds
+      -
+        desc2: "Ordnance exercise powder passed thro' a fine sieve, without separating the dest after grinding"
+        range: 120 yds
+      -
+        desc2: "Single Battel powder, partially pulverised"
+        range: 140 yds
+      -
+        desc2: "Ordnance exercise, in large grains"
+        range: 54 yds
+      -
+        desc2: "Single Battel, as bought"
+        range: 120 yds
+      -
+        desc2: "Single Battel, partly pulverised"
+        range: 140 yds
+      -
+        desc2: "Ordnance exercise, partly pulverised and separated from the large grains"
+        range: 132 yds
+  -
+    ref2: "p. 15"
+    desc: "Tests with the three inch mortar reduced in length to 1/2 caliber, the powder chamber with only the powder in it, and that not rammed"
+    diameter: 3 in
+    material: iron
+    angle: 58 deg
+    charge: 3 dr
+    data:
+      -
+        desc2: "Single Battel powder pulverised"
+        range: 21 yds
+      -
+        desc2: "Government exercise powder pulverised"
+        range: 24 yds
+      -
+        desc2: "Single Battel whole grains"
+        range: 3 yds
+      -
+        desc2: "Government exercise powder pulverised"
+        range: 26 yds
+      -
+        desc2: "Battle powder pulverised"
+        range: 33 yds
+  -
+    ref2: "p. 16"
+    desc: "Tests with ball cartridge powder"
+    diameter: 3 in
+    material: iron
+    angle: 60 deg
+    charge: 3 dr
+    data:
+      -
+        desc2: "Powder reduced tolerably fine by trituration"
+        range: 150 yds
+      -
+        desc2: "Small grains without dust"
+        range: 140 yds
+      -
+        desc2: "Large grains without dust"
+        range: 120 yds
+      -
+        desc2: "Powder reduced tolerably fine by trituration"
+        range: 148 yds
+      -
+        desc2: "Small grains without dust"
+        range: 132 yds
+      -
+        desc2: "Large grains without dust"
+        range: 126 yds
+  -
+    ref2: "p. 18"
+    desc: "Comparing powders with the spare space in the chamber left empty"
+    diameter: 3 in
+    material: iron
+    angle: 60 deg
+    charge: 0.5 oz
+    data:
+      -
+        desc2: "Government ball cartridge powder, in grains"
+        range: 76 yds
+      -
+        desc2: "Single Battel, whole grains"
+        range: 52 yds
+      -
+        desc2: "Single Battel, pulversized"
+        range: 120 yds
+        range_note: "The 1 in 120 is very faint"
+      -
+        desc2: "Government, pulverised"
+        range: 120 yds
+        range_note: "The 1 in 120 is very faint"
+      -
+        desc2: "Government, whole grains"
+        range: 86 yds
+  -
+    ref2: "p. 20"
+    desc: "Comparing powders with the spare space in the chamber filled with barley meal"
+    diameter: 3 in
+    material: iron
+    angle: 60 deg
+    charge: 0.25 oz
+    data:
+      -
+        desc2: "Government ball cartridge powder, large grains, same as the last experiment"
+        range: 76 yds
+      -
+        desc2: "Government ball cartridge powder, fine grains"
+        range: 89 yds
+      -
+        desc2: "Single Battel, whole grains"
+        range: 76 yds
+      -
+        desc2: "Single Battel, partly pulverised"
+        range: 81 yds
+  -
+    ref2: "p. 23"
+    desc: "Comparing powder reduced completely to dust"
+    diameter: 3 in
+    material: iron
+    angle: 60 deg
+    charge: 0.25 oz
+    data:
+      -
+        desc2: "Battel powder, fine grains separated from the coarse"
+        range: 89 yds
+      -
+        desc2: "Battel powder, coarse grains, from the above"
+        range: 67 yds
+      -
+        desc2: "Battel, finely pulverised"
+        range: 32 yds
+      -
+        desc2: "Battel, to which the addition of four to the hundred of nitre, and one of charcoal, was mixed, and reduced together to an impalpable powder"
+        range: 75 yds
+      -
+        desc2: "Government ball cartridge powder, finely pulversised"
+        range: 32 yds
+      -
+        desc2: "Battel powder, not quite so finely pulverised as before"
+        range: 50 yds
+  -
+    ref2: "p. 32-33"
+    desc: "Tests with dust and small grains"
+    diameter: 3 in
+    material: iron
+    angle: 60 deg
+    charge: 0.25 oz
+    data:
+      -
+        desc2: "Ball cartridge powder, very fine, without dust"
+        range: 91 yds
+      -
+        desc2: "The miners powder, freed from dust, and passed through the same sieve as the last"
+        range: 57 yds
+      -
+        desc2: "Government ball cartridge powder, mixed with an equal quantity of dust"
+        range: 55 yds
+      -
+        desc2: "Single Battel, small grains, separated as above, and mixed with equal parts of dust"
+        range: 41 yds
+  -
+    ref2: "p. 33-34"
+    diameter: 3 in
+    material: iron
+    angle: 60 deg
+    charge: 0.25 oz
+    data:
+      -
+        desc2: "Government ball cartridge powder, as delivered from the ordnance stores"
+        range: 78 yds
+      -
+        desc2: "Government ball cartridge powder, fine grains"
+        range: 80 yds
+      -
+        desc2: "Government ball cartridge powder, finer grains"
+        range: 90 yds
+      -
+        desc2: "Government ball cartridge powder, fine grains"
+        range: 82 yds
+      -
+        desc2: "Government ball cartridge powder, very fine grains"
+        range: 95 yds
+      -
+        desc2: "Battel powder in dust"
+        range: 24 yds
+      -
+        desc2: "Battel powder in dust, not pressed down"
+        range: 32 yds
+  -
+    ref2: "p. 35"
+    diameter: 3 in
+    material: iron
+    angle: 60 deg
+    desc: "Comaprison of superfine powder and different weights of other powder"
+    data:
+      -
+        desc2: "Double Battel, superfine grains"
+        charge: 0.25 oz
+        range: 129 yds
+      -
+        desc2: "Single Battel, superfine grains"
+        charge: 0.25 oz
+        range: 93 yds
+      -
+        desc2: "Government best, superfine grains"
+        charge: 0.25 oz
+        range: 118 yds
+      -
+        desc2: "Government powder, as delivered from the store"
+        data:
+          -
+            charge: 0.25 oz 14 gr
+            range: 85 yds
+          -
+            charge: 0.25 oz 20 gr
+            range: 94 yds
+          -
+            charge: 0.25 oz 30 gr
+            range: 107 yds
+          -
+            charge: 0.25 oz 40 gr
+            range: 113 yds
+          -
+            charge: 0.25 oz 50 gr
+            range: 119 yds
+          -
+            charge: 0.25 oz 55 gr
+            range: 126 yds
+
+# processed through p. 35
