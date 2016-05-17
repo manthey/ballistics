@@ -13,6 +13,7 @@ references = yaml.safe_load(open('data/references.yml'))['references']
 references = {item['key']: item for item in references}
 
 basedir = "results"
+sources = 0
 for file in sorted(os.listdir(basedir)):  # noqa
     path = os.path.join(basedir, file)
     try:
@@ -20,6 +21,7 @@ for file in sorted(os.listdir(basedir)):  # noqa
     except Exception:
         print 'Failed to parse file %s' % path
         continue
+    sources += 1
     references.setdefault(data['key'], {})
     for key in ('key', 'ref', 'cms', 'summary', 'link', 'details'):
         if key in data:
@@ -67,7 +69,7 @@ for file in sorted(os.listdir(basedir)):  # noqa
             if entry.get('points'):
                 item['trajectory_x'] = entry['points']['x']
                 item['trajectory_y'] = entry['points']['y']
-            if 'technique' not in item and 'given_technique' in item:
+            if 'given_technique' in item:
                 item['technique'] = item['given_technique']
             for key in ('date', 'power_factor', 'technique', 'ref'):
                 if item.get(key) is None:
@@ -80,8 +82,8 @@ for file in sorted(os.listdir(basedir)):  # noqa
 destpath = 'built/totallist.json'
 json.dump(total, open(destpath, 'wb'), sort_keys=True, indent=1,
           separators=(',', ': '))
-print len(total)
+print '%d samples from %d sources' % (len(total), sources)
 refpath = 'built/references.json'
 json.dump(references, open(refpath, 'wb'), sort_keys=True, indent=1,
           separators=(',', ': '))
-print len(references)
+print '%d references' % len(references)

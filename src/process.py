@@ -110,7 +110,7 @@ def calculate_case(hash, args, info, verbose):
             ('max_height', 'height'),
             ('final_angle', 'final_angle'),
             ]:
-        if newstate.get('technique') is None and key in newstate:
+        if newstate.get('technique') is None and key in state:
             newstate['technique'] = technique
     if verbose >= 3:
         pprint.pprint(newstate)
