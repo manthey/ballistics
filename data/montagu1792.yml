@@ -4,6 +4,7 @@ ref: "Montagu, 1792"
 cms: "Montagu, George, <i>The Sportsman's Directory, or Tractate on Gunpowder</i>, London: R. Faulder, 1792"
 summary: "The author tests different powders with the desire to find the best sporting powder."
 date: "1792"
+charge_note: "I believe that the author is using Troy ounces and drams, as on p. 39 he states that 'I loaded the same mortar as in the last, but with one dram more of powder, this being three drams', where ther previous account used 1/4 ounce."
 data:
   -
     ref2: "p. 5-6"
@@ -11,7 +12,7 @@ data:
     diameter: 3 in
     material: iron
     angle: 45 deg
-    charge: 0.25 oz
+    charge: 0.25 ozt
     data:
       -
         desc2: "Double Battel powder as used for fowling"
@@ -80,7 +81,7 @@ data:
     diameter: 3 in
     material: iron
     angle: 58 deg
-    charge: 3 dr
+    charge: 3 drt
     data:
       -
         desc2: "The coarse grains only of ordnance exercise powder"
@@ -112,7 +113,7 @@ data:
     diameter: 3 in
     material: iron
     angle: 58 deg
-    charge: 3 dr
+    charge: 3 drt
     data:
       -
         desc2: "Single Battel powder pulverised"
@@ -135,7 +136,7 @@ data:
     diameter: 3 in
     material: iron
     angle: 60 deg
-    charge: 3 dr
+    charge: 3 drt
     data:
       -
         desc2: "Powder reduced tolerably fine by trituration"
@@ -161,7 +162,7 @@ data:
     diameter: 3 in
     material: iron
     angle: 60 deg
-    charge: 0.5 oz
+    charge: 0.5 ozt
     data:
       -
         desc2: "Government ball cartridge powder, in grains"
@@ -186,7 +187,7 @@ data:
     diameter: 3 in
     material: iron
     angle: 60 deg
-    charge: 0.25 oz
+    charge: 0.25 ozt
     data:
       -
         desc2: "Government ball cartridge powder, large grains, same as the last experiment"
@@ -206,7 +207,7 @@ data:
     diameter: 3 in
     material: iron
     angle: 60 deg
-    charge: 0.25 oz
+    charge: 0.25 ozt
     data:
       -
         desc2: "Battel powder, fine grains separated from the coarse"
@@ -232,7 +233,7 @@ data:
     diameter: 3 in
     material: iron
     angle: 60 deg
-    charge: 0.25 oz
+    charge: 0.25 ozt
     data:
       -
         desc2: "Ball cartridge powder, very fine, without dust"
@@ -251,7 +252,7 @@ data:
     diameter: 3 in
     material: iron
     angle: 60 deg
-    charge: 0.25 oz
+    charge: 0.25 ozt
     data:
       -
         desc2: "Government ball cartridge powder, as delivered from the ordnance stores"
@@ -279,40 +280,125 @@ data:
     diameter: 3 in
     material: iron
     angle: 60 deg
-    desc: "Comaprison of superfine powder and different weights of other powder"
+    desc: "Comparison of superfine powder and different weights of other powder"
     data:
       -
         desc2: "Double Battel, superfine grains"
-        charge: 0.25 oz
+        charge: 0.25 ozt
         range: 129 yds
       -
         desc2: "Single Battel, superfine grains"
-        charge: 0.25 oz
+        charge: 0.25 ozt
         range: 93 yds
       -
         desc2: "Government best, superfine grains"
-        charge: 0.25 oz
+        charge: 0.25 ozt
         range: 118 yds
       -
         desc2: "Government powder, as delivered from the store"
         data:
           -
-            charge: 0.25 oz 14 gr
+            charge: 0.25 ozt 14 gr
             range: 85 yds
           -
-            charge: 0.25 oz 20 gr
+            charge: 0.25 ozt 20 gr
             range: 94 yds
           -
-            charge: 0.25 oz 30 gr
+            charge: 0.25 ozt 30 gr
             range: 107 yds
           -
-            charge: 0.25 oz 40 gr
+            charge: 0.25 ozt 40 gr
             range: 113 yds
           -
-            charge: 0.25 oz 50 gr
+            charge: 0.25 ozt 50 gr
             range: 119 yds
           -
-            charge: 0.25 oz 55 gr
+            charge: 0.25 ozt 55 gr
             range: 126 yds
+  -
+    ref2: "p. 37"
+    diameter: 3 in
+    material: iron
+    angle: 60 deg
+    desc: "Comparison of fine grains"
+    charge: 0.25 ozt
+    data:
+      -
+        desc2: "Government exercise powder, fine grains"
+        range: 74 yds
+      -
+        desc2: "Government exercise powder, extremely fine, with some little dust"
+        range: 49 yds
+      -
+        desc2: "Government exercise powder, fine grains"
+        range: 80 yds
+      -
+        desc2: "Government exercise powder, fine grains, only what little dust remained was separated as well as the minute grains"
+        range: 86 yds
+      -
+        desc2: "Government exercise powder, finer grains"
+        range: 105 yds
+      -
+        desc2: "Government exercise powder, even finer grains"
+        range: 103 yds
+  -
+    ref2: "p. 39"
+    diameter: 3 in
+    material: iron
+    angle: 60 deg
+    desc: "Comparison of miners powder"
+    charge: 3 drt
+    data:
+      -
+        desc2: "Government powder, as delivered from the stores"
+        range: 93 yds
+      -
+        desc2: "The miners powder, as bought"
+        range: 85 yds
+      -
+        desc2: "The miners powder, the small grains and dust passed through a fine sieve, after grinding."
+        range: 86 yds
+      -
+        desc2: "The miners powder, the small grains and dust passed through a fine sieve, the dust removed."
+        range: 97 yds
+  -
+    ref2: "p. 41"
+    skip: true
+    skip_note: "The author has obtained a different mortar, but he doesn't say what size it is , only that's its chamber could hold 3/4 oz of powder but he is using 3 drams."
+  -
+    ref2: "p. 50-51"
+    diameter: 4.5 in
+    material: iron
+    angle: 45 deg
+    desc: "Different ways of loading powder"
+    charge_note: "The chamber can hold 'rather more than four ounces of musket powder'.  For this purpose, I'll suppose this to be 4.2 oz Troy."
+    data:
+      -
+        desc2: "A given weight of coarse powder, which filled rather more than half the chamber, without any intermediate substance, except a small bit of paper."
+        charge: 2.2 ozt
+        range: 120 yds
+      -
+        desc2: "Ditto, the same quantity of powder with a plug (box wood) of hard wood at the bottom of the chamber, so as to bring the powder very near the shell"
+        charge: 2.2 ozt
+        range: 110 yds
+      -
+        desc2: "Ditto, the same, with a small bit of paper between the powder and the shell"
+        charge: 2.2 ozt
+        range: 120 yds
+      -
+        desc2: "The same quantity of powder, with no plug at the bottom, but the vacancy at top filled with earch"
+        charge: 2.2 ozt
+        range: 630 yds
+      -
+        desc2: "One fifth more powder than those preceding, and no intermediate body"
+        charge: 2.75 ozt
+        range: 200 yds
+      -
+        desc2: "The same quantity of powder as before, with a square chump of wood on the top reaching to the mouth of the chamber"
+        charge: 2.2 ozt
+        range: 350 yds
+      -
+        desc2: "The same quantity of powder as the last, but finer grains of the same powder, with the same chump on the top"
+        charge: 2.2 ozt
+        range: 320 yds
 
-# processed through p. 35

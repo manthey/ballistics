@@ -1,0 +1,45 @@
+---
+key: mordecai1845
+ref: "Mondecai, 1845"
+cms: "Mondecai, Alfred, <i>Report of Experiments on Gunpowder, made at Washington Arsenal, in 1843 and 1844</i>, Washington: J. and G. S. Gideon, 1845."
+summary: "The first of two large sets of experiments on gunpowder."
+date: "1845"
+data:
+  -
+    ref2: "p. 46-47"
+    desc: "Experiments firing the 32-lb cannon before the ballistic pendulum was erected.  All shots using powder 'a' (cannon powder)."
+    material: iron
+    angle: 0 deg
+    date: "1843-04-07"
+    data:
+      -
+        group: "46-1"
+        charge: 4 lb
+        diameter: 6.268 in
+        mass: 32.73 lb
+        data:
+          -
+            technique: "gun_pendulum"
+            initial_velocity: 1225 ft/s
+          -
+            technique: "trajectory"
+            range: 1098 ft
+            final_height: -17 ft
+      -
+        group: "46-2"
+        charge: 4 lb
+        diameter: 6.268 in
+        mass: 32.60 lb
+        data:
+          -
+            technique: "gun_pendulum"
+            initial_velocity: 1235 ft/s
+          -
+            technique: "trajectory"
+            range: 1098 ft
+            final_height: -13.14 ft
+          -
+            range: 1350 ft
+            final_height: -22.15 ft
+
+# Processed through page 45
