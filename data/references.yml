@@ -86,6 +86,11 @@ references:
     cms: "Munson, Bruce R., Donald F. Young, and Theodore H. Okiishi. <i>Fundamentals of Fluid Mechanics, Third Edition.</i> New York: John Wiley & Sons, Inc., 1998."
     summary: A general text book.
   -
+    key: parish1977
+    ref: "Parish, 1977"
+    cms: "Parish, O. Owen and Terril W. Putnam. <i>Equations for the Determination of Humidity from Dewpoint and Psychrometric Data.</i>  Washington, D.C.: National Aeronautics and Space Administration, 1977."
+    summary: "Equations for calculating humidity."
+  -
     key: picard2008
     ref: "Picard, 2008"
     cms: "Picard, A., R. S. Davis, M. Gl\u00e4ser, and K. Fujii. \"Revised formula for the density of moist air (CIPM-2007).\" <i>Metrologia.</i> 45 (2008): 149-155."

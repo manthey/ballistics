@@ -69,8 +69,10 @@ PROGRAM_SIGNATURE = 'a9dfc73e9b476cc51b0145f4de1db268'
 # These values are specified initially and used directly in calculations:
 #  diam: diameter in m
 #  T: temperature in Kelvin
+#  Tdp: dew point in Kelvin
+#  Twb: wet bulb temperature in Kelvin
 #  mass: mass in kilograms
-#  rh: relative humidity, 0-100 (optional) (often called phi)
+#  rh: relative humidity, 0-1 (optional) (often called phi)
 #  pressure: atmospheric pressure in Pa at pressure_y0 (optional)
 #  pressure_y0: altitude of the specified pressure above sea level in m
 #  material: the material of the projectile.  A text string.
@@ -337,15 +339,6 @@ Factors = {
         'desc': 'Final height above sea level where the projectile is still '
         'gaining altitude.'
     },
-    'time_delta': {
-        'long': 'delta',
-        'short': 'z',
-        'units': 's',
-        'method': None,
-        'title': 'Time Step',
-        'desc': 'Time step for calculations.  A small value such as 10ms is '
-        'appropriate.  0.1s will be faster, but can affect accuracy.'
-    },
     'T': {
         'long': 'temperature',
         'short': 'T',
@@ -359,6 +352,42 @@ Factors = {
         'weak': True,
         'title': 'Temperature',
         'desc': 'Ambient air temperature.'
+    },
+    'Tdp': {
+        'long': 'dewpoint',
+        'short': 'D',
+        'units': 'K',
+        'si': 'C',
+        'eng': 'F',
+        'min': '-50F',
+        'max': '150F',
+        'method': 'scan',
+        'step': '10F',
+        'weak': True,
+        'title': 'Dewpoint',
+        'desc': 'Dewpoint temperature.'
+    },
+    'time_delta': {
+        'long': 'delta',
+        'short': 'z',
+        'units': 's',
+        'method': None,
+        'title': 'Time Step',
+        'desc': 'Time step for calculations.  A small value such as 10ms is '
+        'appropriate.  0.1s will be faster, but can affect accuracy.'
+    },
+    'Twb': {
+        'long': 'wetbulb',
+        'units': 'K',
+        'si': 'C',
+        'eng': 'F',
+        'min': '-50F',
+        'max': '150F',
+        'method': 'scan',
+        'step': '10F',
+        'weak': True,
+        'title': 'Wet Bulb',
+        'desc': 'Wet bulb temperature.'
     },
 }
 
@@ -492,10 +521,6 @@ def atmospheric_density(state):
     else:
         p = p_y
     # calculate the partial pressure of dry air and water vapor
-    if 'rh' not in state:
-        phi = 0
-    else:
-        phi = state['rh'] * 100.0  # relative humidity in [0-1]
     # From 'Revised formula for the density of moist air (CIPM-2007)'
     t = T-273.15  # convert to centigrade
     R = 8.314472  # J/(mol*K), universal gass constant, from CIPM-2007
@@ -514,17 +539,17 @@ def atmospheric_density(state):
     gamma = 5.6e-7  # 1/(K^2)
     f = alpha+beta*p+gamma*t**2
     # Now we can calculate xv, the mole fraction of water vapor
-    h = phi*0.01  # convert relative humidity to the range 0-1
+    h = relative_humidity(state)  # relative humidity to the range 0-1
     xv = h*f*psv/p
     # Calculate Z, the compressibility factor (from CIPM-2007)
     a0 = 1.58123e-6  # K/Pa
     a1 = -2.9331e-8  # 1/Pa
-    a2 = 1.1043e-10  # 1/(K Pa),
-    b0 = 5.707e-6  # K/Pa,
-    b1 = -2.051e-8  # 1/Pa,
-    c0 = 1.9898e-4  # K/Pa,
-    c1 = -2.376e-6  # 1/Pa,
-    d = 1.83e-11  # (K/Pa)^2,
+    a2 = 1.1043e-10  # 1/(K Pa)
+    b0 = 5.707e-6  # K/Pa
+    b1 = -2.051e-8  # 1/Pa
+    c0 = 1.9898e-4  # K/Pa
+    c1 = -2.376e-6  # 1/Pa
+    d = 1.83e-11  # (K/Pa)^2
     e = -0.765e-8  # (K/Pa)^2
     Z = (1 - p/T * (a0 + a1*t + a2*t**2 + (b0+b1*t)*xv + (c0+c1*t)*xv**2) +
          p**2 / T**2*(d+e*xv**2))
@@ -1396,6 +1421,47 @@ def read_config_env():
         return args
     args = env.strip().split(' ')
     return args
+
+
+def relative_humidity(state):
+    """Return the relative humidity [0-1] based on the state.  If we haven't
+     been given the relative humidity, but we have the temperature and either
+     the wet bulb temperature (preferred) or the dew point, calculate the
+     relative humidity.  Calculations are taken from Parish, O. Owen and Terril
+     W. Putnam, <i>Equations for the Determination of Humidity from Dewpoint
+     and Psychrometric Data.</i>  Washington, D.C.: National Aeronautics and
+     Space Administration, 1977.
+    Enter: state: a dictionary of the current state.  See comment at the
+                  top of the program.
+    Exit:  phi: the relative humidity on a scale of [0-1]."""
+    if 'rh' in state:
+        return state['rh']
+    if 'T' not in state or ('Twb' not in state and 'Tdp' not in state):
+        return 0
+    T = state['T']
+    # constants from the paper
+    a = a1 = -4.9283
+    b = b1 = -2937.4
+    c = c1 = 23.5518
+    d = 273
+    f = 6.600e-4
+    g = 7.570e-7
+    if state.get('Twb', state.get('Tdp', 0)) < 273.15:
+        a = -0.32286
+        b = -2705.21
+        c = 11.4816
+    if 'Twb' in state:
+        Twb = state['Twb']
+        if 'pressure' in state:
+            p = state['pressure']
+        else:
+            p = pressure_from_altitude(state.get('initial_height', 0))
+        return math.pow(10, -(c1 + b1 / T)) * math.pow(T, -a1) * (
+            math.pow(10, c + b / Twb) * math.pow(Twb, a) -
+            (f + g * (Twb - d) * p * (T - Twb)))
+    Tdp = state['Tdp']
+    return (math.pow(T, -a1) * math.pow(Tdp, a) *
+            math.pow(10, (c - c1) + b / Tdp - b1 / T))
 
 
 def speed_of_sound(state):

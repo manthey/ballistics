@@ -10,36 +10,284 @@ data:
     desc: "Experiments firing the 32-lb cannon before the ballistic pendulum was erected.  All shots using powder 'a' (cannon powder)."
     material: iron
     angle: 0 deg
-    date: "1843-04-07"
     data:
       -
-        group: "46-1"
-        charge: 4 lb
-        diameter: 6.268 in
-        mass: 32.73 lb
+        date: "1843-04-07"
+        temperature: 50 F
+        wetbulb: 48 F
+        temperature_note: "Using shade value, as the wet bulb and dew points correspond to that"
+        pressure: 30.124 inHg
         data:
           -
-            technique: "gun_pendulum"
-            initial_velocity: 1225 ft/s
+            group: "46-1"
+            charge: 4 lb
+            diameter: 6.268 in
+            mass: 32.51 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1225 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -17 ft
           -
-            technique: "trajectory"
-            range: 1098 ft
-            final_height: -17 ft
+            group: "46-2"
+            charge: 4 lb
+            diameter: 6.268 in
+            mass: 32.37 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1235 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -13.14 ft
+              -
+                range: 1350 ft
+                final_height: -22.15 ft
+          -
+            group: "46-3"
+            charge: 5.333 lb
+            diameter: 6.260 in
+            mass: 32.27 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1404 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -11.23 ft
+              -
+                range: 1437 ft
+                final_height: -21.83 ft
       -
-        group: "46-2"
-        charge: 4 lb
-        diameter: 6.268 in
-        mass: 32.60 lb
+        date: "1843-04-07"
+        temperature: 58 F
+        wetbulb: 56 F
+        pressure: 30.093 inHg
         data:
           -
-            technique: "gun_pendulum"
-            initial_velocity: 1235 ft/s
+            group: "46-4"
+            charge: 5.333 lb
+            diameter: 6.260 in
+            mass: 32.21 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1387 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -10.56 ft
+              -
+                range: 1467 ft
+                final_height: -21.67 ft
           -
-            technique: "trajectory"
-            range: 1098 ft
-            final_height: -13.14 ft
+            group: "46-5"
+            charge: 6.4 lb
+            diameter: 6.255 in
+            mass: 31.97 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1462 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -9.12 ft
+              -
+                range: 1555 ft
+                final_height: -21.64 ft
           -
-            range: 1350 ft
-            final_height: -22.15 ft
+            group: "46-6"
+            charge: 6.4 lb
+            diameter: 6.255 in
+            mass: 32.05 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1484 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -11.08 ft
+              -
+                range: 1479 ft
+                final_height: -21.60 ft
+          -
+            group: "46-7"
+            charge: 8 lb
+            diameter: 6.253 in
+            mass: 32.18 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1579 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -8.40 ft
+              -
+                range: 1615 ft
+                final_height: -21.56 ft
+          -
+            group: "46-8"
+            charge: 8 lb
+            diameter: 6.250 in
+            mass: 32.07 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1578 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -8.14 ft
+              -
+                range: 1646 ft
+                final_height: -21.48 ft
+          -
+            group: "46-9"
+            charge: 10.666 lb
+            diameter: 6.245 in
+            mass: 32.12 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1684 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -8.40 ft
+              -
+                range: 1665 ft
+                final_height: -21.48 ft
+          -
+            group: "46-10"
+            charge: 10.666 lb
+            diameter: 6.245 in
+            mass: 32.19 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1698 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -7.64 ft
+              -
+                range: 1712 ft
+                final_height: -21.44 ft
+      -
+        date: "1843-04-17"
+        temperature: 66 F
+        wetbulb: 61 F
+        pressure: 29.869 inHg
+        data:
+          -
+            group: "46-11"
+            charge: 4 lb
+            diameter: 6.265 in
+            mass: 32.27 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1179 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -14.56 ft
+              -
+                range: 1270 ft
+                final_height: -20.61 ft
+          -
+            group: "46-12"
+            charge: 4 lb
+            diameter: 6.268 in
+            mass: 32.38 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1233 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -10.96 ft
+              -
+                range: 1412 ft
+                final_height: -20.77 ft
+          -
+            group: "46-13"
+            charge: 6.4 lb
+            diameter: 6.255 in
+            mass: 32.07 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1430 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -6.26 ft
+              -
+                range: 1640 ft
+                final_height: -21.09 ft
+          -
+            group: "46-14"
+            charge: 6.4 lb
+            diameter: 6.255 in
+            mass: 32.08 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1470 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -9.36 ft
+              -
+                range: 1530 ft
+                final_height: -21.09 ft
+      -
+        date: "1843-04-17"
+        temperature: 73 F
+        wetbulb: 64 F
+        pressure: 29.835 inHg
+        data:
+          -
+            group: "46-15"
+            charge: 8 lb
+            diameter: 6.250 in
+            mass: 32.33 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1580 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -10.66 ft
+              -
+                range: 1503 ft
+                final_height: -21.25 ft
+          -
+            group: "46-16"
+            charge: 8 lb
+            diameter: 6.255 in
+            mass: 31.94 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1552 ft/s
+              -
+                technique: "trajectory"
+                range: 1098 ft
+                final_height: -8.51 ft
+              -
+                range: 1620 ft
+                final_height: -21.41 ft
 
-# Processed through page 45
+# Processed through page 47
