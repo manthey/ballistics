@@ -7,7 +7,7 @@ date: "1845"
 data:
   -
     ref2: "p. 46-47"
-    desc: "Experiments firing the 32-lb cannon before the ballistic pendulum was erected.  All shots using powder 'a' (Dupont uneven cannon powder)."
+    desc: "Experiments firing the 32-lb cannon before the ballistic pendulum was erected.  All shots using powder 'a' (Dupont uneven cannon)"
     material: iron
     angle: 0 deg
     data:
@@ -297,7 +297,7 @@ data:
     data:
       -
         date: "1843-04-29"
-        desc2: "Powder 'a' (Dupont uneven cannon powder)."
+        desc2: "Powder 'a' (Dupont uneven cannon)"
         data:
           -
             group: "54-1"
@@ -327,7 +327,7 @@ data:
                 final_velocity: 1513 ft/s
       -
         date: "1843-05-03"
-        desc2: "Powder 'a' (Dupont uneven cannon powder)."
+        desc2: "Powder 'a' (Dupont uneven cannon)"
         temperature: 59 F
         wetbulb: 50 F
         pressure: 30.28 inHg
@@ -373,7 +373,7 @@ data:
                 final_velocity: 1337 ft/s
       -
         date: "1843-05-05"
-        desc2: "Powder 'a' (Dupont uneven cannon powder)."
+        desc2: "Powder 'a' (Dupont uneven cannon)"
         temperature: 56 F
         wetbulb: 48 F
         pressure: 30.389 inHg
@@ -406,7 +406,7 @@ data:
                 final_velocity: 1460 ft/s
       -
         date: "1843-05-05"
-        desc2: "Powder 'a' (Dupont uneven cannon powder)."
+        desc2: "Powder 'a' (Dupont uneven cannon)"
         temperature: 65 F
         wetbulb: 54 F
         pressure: 30.257 inHg
@@ -465,7 +465,7 @@ data:
                 final_velocity: 1676 ft/s
       -
         date: "1843-05-16"
-        desc2: "Powder 'a' (Dupont uneven cannon powder)."
+        desc2: "Powder 'a' (Dupont uneven cannon)"
         temperature: 78 F
         wetbulb: 73 F
         pressure: 29.957 inHg
@@ -485,7 +485,7 @@ data:
                 final_velocity: 1705 ft/s
       -
         date: "1843-05-19"
-        desc2: "Powder 'W' (Bussard uneven cannon powder)."
+        desc2: "Powder 'W' (Bussard uneven cannon)"
         temperature: 60 F
         wetbulb: 55 F
         pressure: 30.168 inHg
@@ -505,7 +505,7 @@ data:
                 final_velocity: 1567 ft/s
       -
         date: "1843-05-27"
-        desc2: "Powder 'W' (Bussard uneven cannon powder)."
+        desc2: "Powder 'W' (Bussard uneven cannon)"
         data:
           -
             group: "54-15"
@@ -547,7 +547,7 @@ data:
         data:
           -
             group: "58-1"
-            desc2: "Powder 'A' (Dupont uneven cannon powder)."
+            desc2: "Powder 'A' (Dupont uneven cannon)"
             diameter: 6.268 in
             mass: 32.38 lb
             data:
@@ -560,7 +560,7 @@ data:
                 final_velocity: 1241 ft/s
           -
             group: "58-2"
-            desc2: "Powder 'B' (Garesche uneven cannon powder)."
+            desc2: "Powder 'B' (Garesche uneven cannon)"
             diameter: 6.268 in
             mass: 32.21 lb
             data:
@@ -573,7 +573,7 @@ data:
                 final_velocity: 1189 ft/s
           -
             group: "58-3"
-            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon powder)."
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
             diameter: 6.268 in
             mass: 31.87 lb
             data:
@@ -586,7 +586,7 @@ data:
                 final_velocity: 1176 ft/s
           -
             group: "58-4"
-            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon powder)."
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
             diameter: 6.269 in
             mass: 32.10 lb
             data:
@@ -606,7 +606,7 @@ data:
         data:
           -
             group: "58-5"
-            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon powder)."
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
             diameter: 6.266 in
             mass: 32.15 lb
             data:
@@ -620,7 +620,7 @@ data:
         data:
           -
             group: "58-6"
-            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon powder)."
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
             diameter: 6.268 in
             mass: 31.99 lb
             data:
@@ -634,7 +634,7 @@ data:
         data:
           -
             group: "58-7"
-            desc2: "Powder 'B' (Garesche uneven cannon powder)."
+            desc2: "Powder 'B' (Garesche uneven cannon)"
             diameter: 6.268 in
             mass: 32.52 lb
             data:
@@ -654,7 +654,7 @@ data:
         data:
           -
             group: "58-8"
-            desc2: "Powder 'A' (Dupont uneven cannon powder)."
+            desc2: "Powder 'A' (Dupont uneven cannon)"
             diameter: 6.268 in
             mass: 32.44 lb
             data:
@@ -667,7 +667,7 @@ data:
                 final_velocity: 1256 ft/s
           -
             group: "58-9"
-            desc2: "Powder 'A' (Dupont uneven cannon powder)."
+            desc2: "Powder 'A' (Dupont uneven cannon)"
             diameter: 6.260 in
             mass: 32.38 lb
             data:
@@ -680,7 +680,7 @@ data:
                 final_velocity: 1199 ft/s
           -
             group: "58-10"
-            desc2: "Powder 'B' (Garesche uneven cannon powder)."
+            desc2: "Powder 'B' (Garesche uneven cannon)"
             diameter: 6.265 in
             mass: 32.23 lb
             data:
@@ -693,7 +693,7 @@ data:
                 final_velocity: 1186 ft/s
           -
             group: "58-11"
-            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon powder)."
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
             diameter: 6.260 in
             mass: 32.29 lb
             data:
@@ -706,7 +706,7 @@ data:
                 final_velocity: 1179 ft/s
           -
             group: "58-12"
-            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon powder)."
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
             diameter: 6.260 in
             mass: 32.34 lb
             data:
@@ -726,7 +726,7 @@ data:
         data:
           -
             group: "58-13"
-            desc2: "Powder 'A' (Dupont uneven cannon powder)."
+            desc2: "Powder 'A' (Dupont uneven cannon)"
             diameter: 6.260 in
             mass: 32.31 lb
             data:
@@ -739,7 +739,7 @@ data:
                 final_velocity: 1415 ft/s
           -
             group: "58-14"
-            desc2: "Powder 'B' (Garesche uneven cannon powder)."
+            desc2: "Powder 'B' (Garesche uneven cannon)"
             diameter: 6.260 in
             mass: 32.04 lb
             data:
@@ -752,7 +752,7 @@ data:
                 final_velocity: 1317 ft/s
           -
             group: "58-15"
-            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon powder)."
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
             diameter: 6.260 in
             mass: 32.37 lb
             data:
@@ -765,7 +765,7 @@ data:
                 final_velocity: 1358 ft/s
           -
             group: "58-16"
-            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon powder)."
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
             diameter: 6.260 in
             mass: 31.80 lb
             data:
@@ -778,7 +778,7 @@ data:
                 final_velocity: 1401 ft/s
           -
             group: "58-17"
-            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon powder)."
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
             diameter: 6.260 in
             mass: 32.12 lb
             data:
@@ -791,7 +791,7 @@ data:
                 final_velocity: 1375 ft/s
           -
             group: "58-18"
-            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon powder)."
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
             diameter: 6.260 in
             mass: 32.19 lb
             data:
@@ -811,7 +811,7 @@ data:
         data:
           -
             group: "58-19"
-            desc2: "Powder 'B' (Garesche uneven cannon powder)."
+            desc2: "Powder 'B' (Garesche uneven cannon)"
             diameter: 6.260 in
             mass: 32.13 lb
             data:
@@ -824,7 +824,7 @@ data:
                 final_velocity: 1356 ft/s
           -
             group: "58-20"
-            desc2: "Powder 'A' (Dupont uneven cannon powder)."
+            desc2: "Powder 'A' (Dupont uneven cannon)"
             diameter: 6.260 in
             mass: 32.18 lb
             data:
@@ -837,7 +837,7 @@ data:
                 final_velocity: 1418 ft/s
           -
             group: "58-21"
-            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon powder)."
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
             diameter: 6.260 in
             mass: 32.37 lb
             data:
@@ -850,7 +850,7 @@ data:
                 final_velocity: 1362 ft/s
           -
             group: "58-22"
-            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon powder)."
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
             diameter: 6.260 in
             mass: 32.25 lb
             data:
@@ -863,7 +863,7 @@ data:
                 final_velocity: 1371 ft/s
           -
             group: "58-23"
-            desc2: "Powder 'A' (Dupont uneven cannon powder)."
+            desc2: "Powder 'A' (Dupont uneven cannon)"
             diameter: 6.258 in
             mass: 32.32 lb
             data:
@@ -876,7 +876,7 @@ data:
                 final_velocity: 1411 ft/s
           -
             group: "58-24"
-            desc2: "Powder 'B' (Garesche uneven cannon powder)."
+            desc2: "Powder 'B' (Garesche uneven cannon)"
             diameter: 6.258 in
             mass: 32.29 lb
             data:
@@ -896,7 +896,7 @@ data:
         data:
           -
             group: "58-25"
-            desc2: "Powder 'A' (Dupont uneven cannon powder)."
+            desc2: "Powder 'A' (Dupont uneven cannon)"
             diameter: 6.255 in
             mass: 32.03 lb
             data:
@@ -909,7 +909,7 @@ data:
                 final_velocity: 1606 ft/s
           -
             group: "58-26"
-            desc2: "Powder 'A' (Dupont uneven cannon powder)."
+            desc2: "Powder 'A' (Dupont uneven cannon)"
             diameter: 6.25 in
             mass: 32.11 lb
             data:
@@ -922,7 +922,7 @@ data:
                 final_velocity: 1616 ft/s
           -
             group: "58-27"
-            desc2: "Powder 'B' (Garesche uneven cannon powder)."
+            desc2: "Powder 'B' (Garesche uneven cannon)"
             diameter: 6.255 in
             mass: 32.16 lb
             data:
@@ -935,7 +935,7 @@ data:
                 final_velocity: 1531 ft/s
           -
             group: "58-28"
-            desc2: "Powder 'B' (Garesche uneven cannon powder)."
+            desc2: "Powder 'B' (Garesche uneven cannon)"
             diameter: 6.25 in
             mass: 32.15 lb
             data:
@@ -948,7 +948,7 @@ data:
                 final_velocity: 1498 ft/s
           -
             group: "58-29"
-            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon powder)."
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
             diameter: 6.255 in
             mass: 32.25 lb
             data:
@@ -961,7 +961,7 @@ data:
                 final_velocity: 1558 ft/s
           -
             group: "58-30"
-            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon powder)."
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
             diameter: 6.25 in
             mass: 32.10 lb
             data:
@@ -974,7 +974,7 @@ data:
                 final_velocity: 1550 ft/s
           -
             group: "58-31"
-            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon powder)."
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
             diameter: 6.256 in
             mass: 32.31 lb
             data:
@@ -987,7 +987,7 @@ data:
                 final_velocity: 1588 ft/s
           -
             group: "58-32"
-            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon powder)."
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
             diameter: 6.25 in
             mass: 32.06 lb
             data:
@@ -1010,7 +1010,7 @@ data:
         wetbulb: 75 F
         pressure: 29.825 inHg
         charge: 5.333 lb
-        desc2: "Powder 'A' (Dupont uneven cannon powder)."
+        desc2: "Powder 'A' (Dupont uneven cannon)"
         data:
           -
             group: "62-1"
@@ -1057,7 +1057,7 @@ data:
         data:
           -
             group: "62-4"
-            desc2: "Powder 'A' (Dupont uneven cannon powder)."
+            desc2: "Powder 'A' (Dupont uneven cannon)"
             diameter: 6.25 in
             mass: 23.85 lb
             data:
@@ -1070,7 +1070,7 @@ data:
                 final_velocity: 1408 ft/s
           -
             group: "62-5"
-            desc2: "Powder 'A' (Dupont uneven cannon powder)."
+            desc2: "Powder 'A' (Dupont uneven cannon)"
             diameter: 6.265 in
             mass: 23.92 lb
             data:
@@ -1083,7 +1083,7 @@ data:
                 final_velocity: 1397 ft/s
           -
             group: "62-6"
-            desc2: "Powder 'A' (Dupont uneven cannon powder)."
+            desc2: "Powder 'A' (Dupont uneven cannon)"
             diameter: 6.25 in
             mass: 23.95 lb
             data:
@@ -1096,7 +1096,7 @@ data:
                 final_velocity: 1406 ft/s
           -
             group: "62-7"
-            desc2: "Powder 'G1' (Dupont large cannon powder)."
+            desc2: "Powder 'G1' (Dupont large cannon)"
             diameter: 6.255 in
             mass: 23.82 lb
             data:
@@ -1109,7 +1109,7 @@ data:
                 final_velocity: 1375 ft/s
           -
             group: "62-8"
-            desc2: "Powder 'G1' (Dupont large cannon powder)."
+            desc2: "Powder 'G1' (Dupont large cannon)"
             diameter: 6.268 in
             mass: 23.91 lb
             data:
@@ -1122,7 +1122,7 @@ data:
                 final_velocity: 1389 ft/s
           -
             group: "62-9"
-            desc2: "Powder 'G1' (Dupont large cannon powder)."
+            desc2: "Powder 'G1' (Dupont large cannon)"
             diameter: 6.255 in
             mass: 23.79 lb
             data:
@@ -1133,5 +1133,591 @@ data:
                 technique: "pendulum"
                 range: 55 ft
                 final_velocity: 1394 ft/s
+      -
+        date: "1843-08-01"
+        temperature: 75 F
+        wetbulb: 64 F
+        pressure: 29.911 inHg
+        charge: 5.333 lb
+        desc2: "Powder 'G1' (Dupont large cannon)"
+        data:
+          -
+            group: "62-10"
+            diameter: 6.255 in
+            mass: 23.83 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1586 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1570 ft/s
+          -
+            group: "62-11"
+            diameter: 6.26 in
+            mass: 23.76 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1586 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1573 ft/s
+          -
+            group: "62-12"
+            diameter: 6.25 in
+            mass: 23.79 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1580 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1564 ft/s
+      -
+        date: "1843-08-02"
+        temperature: 73 F
+        wetbulb: 68 F
+        pressure: 29.865 inHg
+        charge: 5.333 lb
+        data:
+          -
+            group: "62-13"
+            desc2: "Powder 'G6' (Dupont sporting)"
+            diameter: 6.26 in
+            mass: 23.745 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1658 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1663 ft/s
+          -
+            group: "62-14"
+            desc2: "Powder 'G6' (Dupont sporting)"
+            diameter: 6.26 in
+            mass: 23.7 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1668 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1664 ft/s
+          -
+            group: "62-15"
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            diameter: 6.26 in
+            mass: 23.75 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1515 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1502 ft/s
+          -
+            group: "62-16"
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            diameter: 6.265 in
+            mass: 23.73 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1549 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1532 ft/s
+          -
+            group: "62-17"
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            diameter: 6.250 in
+            mass: 23.805 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1493 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1483 ft/s
+      -
+        date: "1843-08-02"
+        temperature: 81 F
+        wetbulb: 72 F
+        pressure: 29.825 inHg
+        charge: 4.000 lb
+        data:
+          -
+            group: "62-18"
+            desc2: "Powder 'G6' (Dupont sporting)"
+            diameter: 6.26 in
+            mass: 23.73 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1493 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1483 ft/s
+          -
+            group: "62-19"
+            desc2: "Powder 'G6' (Dupont sporting)"
+            diameter: 6.25 in
+            mass: 23.69 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1454 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1458 ft/s
+          -
+            group: "62-20"
+            desc2: "Powder 'G6' (Dupont sporting)"
+            diameter: 6.25 in
+            mass: 23.71 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1451 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1453 ft/s
+          -
+            group: "62-21"
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            diameter: 6.258 in
+            mass: 23.655 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1361 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1350 ft/s
+          -
+            group: "62-22"
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            diameter: 6.260 in
+            mass: 23.71 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1351 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1334 ft/s
+          -
+            group: "62-23"
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            diameter: 6.248 in
+            mass: 23.7 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1338 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1338 ft/s
+  -
+    ref2: "p. 64-65"
+    desc: "Comparing different powders with shells"
+    material: iron
+    angle: 0 deg
+    data:
+      -
+        date: "1843-08-03"
+        temperature: 81.5 F
+        wetbulb: 66 F
+        pressure: 30.100 inHg
+        data:
+          -
+            charge: 10.666 lb
+            desc2: "Powder 'A' (Dupont uneven cannon)"
+            group: "64-1"
+            diameter: 6.248 in
+            mass: 32.23 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1792 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1739 ft/s
+          -
+            charge: 5.333 lb
+            desc2: "Powder 'E5' (Dupont rifle)"
+            group: "64-2"
+            diameter: 6.260 in
+            mass: 23.76 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1571 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1541 ft/s
+          -
+            charge: 5.333 lb
+            desc2: "Powder 'E5' (Dupont rifle)"
+            group: "64-3"
+            diameter: 6.260 in
+            mass: 23.84 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1584 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1555 ft/s
+          -
+            charge: 5.333 lb
+            desc2: "Powder 'E1' (Dupont large cannon)"
+            group: "64-4"
+            diameter: 6.248 in
+            mass: 23.60 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1492 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1469 ft/s
+      -
+        date: "1843-08-03"
+        temperature: 79.5 F
+        wetbulb: 67 F
+        pressure: 30.108 inHg
+        data:
+          -
+            charge: 5.333 lb
+            desc2: "Powder 'E1' (Dupont large cannon)"
+            group: "64-5"
+            diameter: 6.260 in
+            mass: 23.71 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1502 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1464 ft/s
+          -
+            charge: 4.000 lb
+            desc2: "Powder 'E5' (Dupont rifle)"
+            group: "64-6"
+            diameter: 6.255 in
+            mass: 23.82 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1361 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1342 ft/s
+          -
+            charge: 4.000 lb
+            desc2: "Powder 'E5' (Dupont rifle)"
+            group: "64-7"
+            diameter: 6.250 in
+            mass: 23.86 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1361 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1342 ft/s
+          -
+            charge: 4.000 lb
+            desc2: "Powder 'E1' (Dupont large cannon)"
+            group: "64-8"
+            diameter: 6.250 in
+            mass: 23.71 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1266 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1246 ft/s
+          -
+            charge: 4.000 lb
+            desc2: "Powder 'E1' (Dupont large cannon)"
+            group: "64-9"
+            diameter: 6.260 in
+            mass: 23.86 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1288 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1260 ft/s
+      -
+        date: "1843-08-04"
+        temperature: 75 F
+        wetbulb: 68 F
+        pressure: 30.147 inHg
+        data:
+          -
+            charge: 5.333 lb
+            desc2: "Powder 'E' (Dupont uneven cannon)"
+            group: "64-10"
+            diameter: 6.265 in
+            mass: 23.76 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1495 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1470 ft/s
+          -
+            charge: 5.333 lb
+            desc2: "Powder 'E' (Dupont uneven cannon)"
+            group: "64-11"
+            diameter: 6.250 in
+            mass: 23.64 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1494 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1468 ft/s
+          -
+            charge: 5.333 lb
+            desc2: "Powder 'E' (Dupont uneven cannon)"
+            group: "64-12"
+            diameter: 6.248 in
+            mass: 23.81 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1488 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1459 ft/s
+          -
+            charge: 5.333 lb
+            desc2: "Powder 'F' (Dupont uneven cannon)"
+            group: "64-13"
+            diameter: 6.260 in
+            mass: 23.66 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1541 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1519 ft/s
+          -
+            charge: 5.333 lb
+            desc2: "Powder 'F' (Dupont uneven cannon)"
+            group: "64-14"
+            diameter: 6.250 in
+            mass: 23.73 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1514 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1486 ft/s
+          -
+            charge: 5.333 lb
+            desc2: "Powder 'F' (Dupont uneven cannon)"
+            group: "64-15"
+            diameter: 6.255 in
+            mass: 23.69 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1546 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1527 ft/s
+          -
+            charge: 4.000 lb
+            desc2: "Powder 'E' (Dupont uneven cannon)"
+            group: "64-16"
+            diameter: 6.26 in
+            mass: 23.85 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1295 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1274 ft/s
+      -
+        date: "1843-08-04"
+        temperature: 82 F
+        wetbulb: 67 F
+        pressure: 30.229 inHg
+        charge: 4.000 lb
+        data:
+          -
+            desc2: "Powder 'E' (Dupont uneven cannon)"
+            group: "64-17"
+            diameter: 6.25 in
+            mass: 23.76 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1291 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1269 ft/s
+          -
+            desc2: "Powder 'F' (Dupont uneven cannon)"
+            group: "64-18"
+            diameter: 6.25 in
+            mass: 23.68 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1352 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1335 ft/s
+          -
+            desc2: "Powder 'F' (Dupont uneven cannon)"
+            group: "64-19"
+            diameter: 6.248 in
+            mass: 23.79 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1361 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1352 ft/s
+          -
+            desc2: "Powder 'F' (Dupont uneven cannon)"
+            group: "64-20"
+            diameter: 6.25 in
+            mass: 23.73 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1346 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1328 ft/s
+  -
+    ref2: "p. 68-69"
+    desc: "Comparing different powders with balls"
+    material: iron
+    angle: 0 deg
+    charge: 4 lb
+    data:
+      -
+        date: "1843-08-08"
+        temperature: 82 F
+        wetbulb: 76 F
+        pressure: 29.980 inHg
+        data:
+          -
+            desc2: "Powder 'E' (Dupont uneven cannon)"
+            group: "68-1"
+            diameter: 6.265 in
+            mass: 31.98 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1133 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1126 ft/s
+          -
+            desc2: "Powder 'E' (Dupont uneven cannon)"
+            group: "68-2"
+            diameter: 6.25 in
+            mass: 32.55 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1114 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1098 ft/s
+          -
+            desc2: "Powder 'F' (Dupont uneven cannon)"
+            group: "68-3"
+            diameter: 6.268 in
+            mass: 32.33 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1174 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1156 ft/s
+          -
+            desc2: "Powder 'F' (Dupont uneven cannon)"
+            group: "68-4"
+            diameter: 6.25 in
+            mass: 32.31 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1147 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1135 ft/s
+          -
+            desc2: "Powder 'E1' (Dupont large cannon)"
+            group: "68-5"
+            diameter: 6.27 in
+            mass: 32.09 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1129 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1104 ft/s
 
-# Processed through page 62, line 9
+# Processed through page 68, line 5
