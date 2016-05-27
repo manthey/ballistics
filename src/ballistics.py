@@ -47,8 +47,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-04-29v37'
-PROGRAM_SIGNATURE = 'a9dfc73e9b476cc51b0145f4de1db268'
+__version__ = '2016-05-26v38'
+PROGRAM_SIGNATURE = '93d65816fb53284adc325470106d7e46'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -1076,11 +1076,11 @@ def graph_coefficient_of_drag(user_params=None):
     global matplotlib, pyplot
     if not matplotlib:
         try:
-            import matplotlib
             import matplotlib.pyplot as plt
         except Exception:
             sys.stderr.write('Cannot import matplotlib, cannot make a graph.\n')
             return
+    from cod_miller import MnReCdDataTable
     remin = round(math.log10(params['remin'])-0.0499, 1)
     remax = round(math.log10(params['remax'])+0.05, 1)
     reint = 1.
@@ -1124,7 +1124,6 @@ def graph_trajectory(points, user_params=None):
     global matplotlib, pyplot
     if not matplotlib:
         try:
-            import matplotlib
             import matplotlib.pyplot as plt
         except Exception:
             sys.stderr.write('Cannot import matplotlib, cannot make a graph.\n')
@@ -1219,7 +1218,7 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
            help: True if the help must be shown."""
     global PrecisionInDigits, UseRungeKutta, Verbose
 
-    state = {'final_height': 0}
+    state = {'final_height': '0'}
     params = {}
     help = False
     argv[0:0] = read_config()
@@ -1312,6 +1311,10 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
                         state['settings'][key] = value
             if value is None and not allowUnknownParams:
                 help = True
+    if state.get('final_height') == '0':
+        state['final_height'] = 0
+        if state.get('final_velocity') and state.get('range'):
+            del state['final_height']
     if not help:
         help = True
         for key in ('cdgraph', 'materials', 'output', 'units', 'unknown',
@@ -1563,7 +1566,6 @@ def trajectory(state):  # noqa - mccabe
         elif final_angle is not None:
             curangle = -math.atan2(state['vy'], state['vx']) * 180 / math.pi
             offset = final_angle - curangle
-            print offset  # ##DWM::
             if state['vy'] >= 0:
                 proceed = True
         if offset < 0 and proceed == 'check':
@@ -1577,6 +1579,9 @@ def trajectory(state):  # noqa - mccabe
             point = {}
             for key in ('x', 'y', 'vx', 'vy', 'ax', 'ay', 'time'):
                 point[key] = state[key]
+            if 'drag_data' in state:
+                for key in ('Re', 'Mn'):
+                    point[key] = state['drag_data'][key]
             points.append(point)
         laststate = state
         lastoffset = offset
@@ -1593,6 +1598,10 @@ def trajectory(state):  # noqa - mccabe
         b = 1-a
         for key in ('x', 'y', 'vx', 'vy', 'ax', 'ay', 'time'):
             final_state[key] = b*state[key]+a*laststate[key]
+        if 'drag_data' in state and 'drag_date' in laststate:
+            for key in ('Re', 'Mn'):
+                final_state['drag_data'][key] = (b*state['drag_data'][key] +
+                                                 a*laststate['drag_data'][key])
         if final_y is not None:
             final_state['y'] = final_y
         elif max_range is not None:
@@ -1602,6 +1611,9 @@ def trajectory(state):  # noqa - mccabe
         point = {}
         for key in ('x', 'y', 'vx', 'vy', 'ax', 'ay', 'time'):
             point[key] = final_state[key]
+        if 'drag_data' in final_state:
+            for key in ('Re', 'Mn'):
+                point[key] = final_state['drag_data'][key]
         points.append(point)
     if Verbose >= 2:
         display_status(final_state, last=True)
