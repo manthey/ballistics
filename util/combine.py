@@ -11,10 +11,20 @@ import yaml
 
 
 Groups = {}
+GroupsRe = {}
 GroupsGrid = {}
 
 
 def combine(opts):  # noqa
+    """
+    Combine all of the results and references, output one file with all the
+    references and one with all the results.  The results are flattened into a
+    single array of objects with no subobjects.
+
+    Enter: opts: a dictionary of options for processing.
+    Exit:  ReMnGrid: a grid  indicating which Mach and Reynolds number were
+                     used in computation.
+    """
     total = []
 
     references = yaml.safe_load(open('data/references.yml'))['references']
@@ -119,12 +129,23 @@ def combine(opts):  # noqa
     return ReMnGrid
 
 
-def compile_grid(grid, entry, opts, item):
+def compile_grid(grid, entry, opts, item):  # noqa
+    """
+    Compile the usage of grid and reynolds numbers from a grid, always
+    excluding theoretical values and possibly non-group values.
+
+    Enter: grid: collected grid information.  Modified.
+           entry: the individual entry to add to the grid.
+           opts: program options for how to collate the grid.
+           item: the individual item that is being processed.
+    """
     if item['technique'] == 'theory':
         return
     group = entry['conditions'].get('group')
-    if group not in Groups:
+    groupset = False
+    if group and group not in Groups:
         Groups[group] = item['power_factor']
+        groupset = True
     if (not entry.get('points') or 'Re' not in entry['points'] or
             'Mn' not in entry['points']):
         return
@@ -143,7 +164,9 @@ def compile_grid(grid, entry, opts, item):
         if mn not in grid:
             grid[mn] = {}
         grid[mn][re] = grid[mn].get(re, 0) + 1
-    if (group and item['power_factor'] != Groups[group] and
+    if groupset:
+        GroupsRe[group] = {'re': ReList, 'mn': MnList}
+    if (group and not groupset and
             0.5 < item['power_factor'] / Groups[group] < 2):
         factor = 1 if item['power_factor'] < Groups[group] else -1
         for i in xrange(len(ReList)):
@@ -154,9 +177,27 @@ def compile_grid(grid, entry, opts, item):
             if mn not in GroupsGrid:
                 GroupsGrid[mn] = {}
             GroupsGrid[mn][re] = GroupsGrid[mn].get(re, 0) + factor
+        if group in GroupsRe:
+            factor *= -1
+            for i in xrange(len(GroupsRe[group]['re'])):
+                Re = GroupsRe[group]['re'][i]
+                Mn = GroupsRe[group]['mn'][i]
+                re = int(round(math.log10(Re) * res))
+                mn = int(round(Mn * res))
+                if mn not in GroupsGrid:
+                    GroupsGrid[mn] = {}
+                GroupsGrid[mn][re] = GroupsGrid[mn].get(re, 0) + factor
 
 
 def show_grid(grid, opts, usemin=True):
+    """
+    Output a collected grid to stdout.
+
+    Enter: grid: the collected grid information.
+           opts: program options for how the grid was collated.
+           usemin: if True, use the minimum points option.  If False, show all
+                   points.
+    """
     res = int(opts.get('gridres', 10))
     gridmin = int(opts.get('gridmin', 2))
     if gridmin and usemin:
@@ -218,8 +259,15 @@ if __name__ == '__main__':  # noqa - mccabe
         print """Combine results into a single file plus a references file.
 
 Syntax:  combine.py --grid --nopoints --res=(grid resolution) --min=(grid min)
+                    --group
 --grid outputs a grid of used Re/Mn values to stdout.
+--group outputs only the grid for groups that are present.
+--min specified how many points are required before a grid is output (default
+  2).
 --nopoints excludes trajectory information in the output.
+--res indicates the group resolution (default 10).  This is the inverse of the
+  increment between Mach values and between base-10 powers of the Reynolds
+  number.
 """
         sys.exit(0)
     grid = combine(opts)
