@@ -4568,5 +4568,666 @@ data:
                 technique: "pendulum"
                 range: 55 ft
                 final_velocity: 1651 ft/s
+  -
+    ref2: "p. 98-99"
+    desc: "Experiments with the 24-pounder gun pendulum"
+    material: iron
+    angle: 0 deg
+    diameter: 5.68 in
+    data:
+      -
+        date: "1844-04-22"
+        temperature: 63.5 F
+        wetbulb: 62 F
+        pressure: 30.059 inHg
+        data:
+          -
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            charge: 3 lb
+            data:
+              -
+                group: "98-1"
+                mass: 24.14 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1203 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1198 ft/s
+              -
+                group: "98-2"
+                mass: 24.17 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1186 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1173 ft/s
+              -
+                group: "98-3"
+                mass: 23.81 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1212 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1204 ft/s
+              -
+                group: "98-4"
+                mass: 24.24 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1183 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1167 ft/s
+              -
+                group: "98-5"
+                mass: 24.12 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1214 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1209 ft/s
+              -
+                group: "98-6"
+                mass: 23.91 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1208 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1198 ft/s
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            charge: 6 lb
+            data:
+              -
+                group: "98-7"
+                mass: 24.27 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1745 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1738 ft/s
+              -
+                group: "98-8"
+                mass: 24.24 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1748 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1738 ft/s
+      -
+        date: "1844-04-22"
+        temperature: 69 F
+        wetbulb: 65 F
+        pressure: 30.038 inHg
+        data:
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            charge: 6 lb
+            data:
+              -
+                group: "98-9"
+                mass: 24.24 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1738 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1722 ft/s
+              -
+                group: "98-10"
+                mass: 24.26 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1754 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1760 ft/s
+              -
+                group: "98-11"
+                mass: 24.19 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1719 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1700 ft/s
+              -
+                group: "98-12"
+                mass: 24.28 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1735 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1721 ft/s
+          -
+            desc2: "Powder 'H' (Waltham Abbey uneven cannon from 1812)"
+            charge: 3 lb
+            data:
+              -
+                group: "98-13"
+                mass: 24.10 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1218 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1211 ft/s
+              -
+                group: "98-14"
+                mass: 24.32 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1221 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1218 ft/s
+              -
+                group: "98-15"
+                mass: 24.02 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1220 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1213 ft/s
+          -
+            desc2: "Powder 'H' (Waltham Abbey uneven cannon from 1812)"
+            charge: 6 lb
+            data:
+              -
+                group: "98-16"
+                mass: 24.13 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1629 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1591 ft/s
+              -
+                group: "98-17"
+                mass: 24.33 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1637 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1600 ft/s
+              -
+                group: "98-18"
+                mass: 24.05 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1652 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1615 ft/s
+      -
+        date: "1844-04-23"
+        temperature: 64.5 F
+        wetbulb: 61 F
+        pressure: 30.181 inHg
+        charge: 6 lb
+        data:
+          -
+            group: "98-19"
+            desc2: "Powder 'F2' (Dupont medium cannon)"
+            mass: 23.91 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1546 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1520 ft/s
+          -
+            group: "98-20"
+            desc2: "Powder 'F2' (Dupont medium cannon)"
+            mass: 24.31 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1523 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1489 ft/s
+          -
+            group: "98-21"
+            desc2: "Powder 'E5' (Dupont rifle)"
+            mass: 24.03 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1673 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1638 ft/s
+          -
+            group: "98-22"
+            desc2: "Powder 'E5' (Dupont rifle)"
+            mass: 24.23 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1671 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1646 ft/s
+          -
+            group: "98-23"
+            desc2: "Powder 'A3' (Dupont small cannon)"
+            mass: 24.08 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1677 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1648 ft/s
+      -
+        date: "1844-04-23"
+        temperature: 70.5 F
+        wetbulb: 66 F
+        pressure: 30.090 inHg
+        charge: 6 lb
+        data:
+          -
+            group: "98-24"
+            desc2: "Powder 'A3' (Dupont small cannon)"
+            mass: 24.21 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1659 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1619 ft/s
+          -
+            group: "98-25"
+            desc2: "Powder 'B3' (Garesche small cannon)"
+            mass: 24.19 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1641 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1606 ft/s
+          -
+            group: "98-26"
+            desc2: "Powder 'B3' (Garesche small cannon)"
+            mass: 24.23 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1645 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1611 ft/s
+          -
+            group: "98-27"
+            desc2: "Powder 'C3' (Loomises, Hazard, and Co. small cannon)"
+            mass: 24.02 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1665 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1616 ft/s
+          -
+            group: "98-28"
+            desc2: "Powder 'C3' (Loomises, Hazard, and Co. small cannon)"
+            mass: 24.27 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1651 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1606 ft/s
+          -
+            group: "98-29"
+            desc2: "Powder 'D3' (Masters, Swith, and Co. small cannon)"
+            mass: 24.01 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1654 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1625 ft/s
+          -
+            group: "98-30"
+            desc2: "Powder 'D3' (Masters, Swith, and Co. small cannon)"
+            mass: 24.34 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1649 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1617 ft/s
+          -
+            group: "98-31"
+            desc2: "Powder 'E3' (Dupont small cannon)"
+            mass: 24.01 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1621 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1571 ft/s
+          -
+            group: "98-32"
+            desc2: "Powder 'E3' (Dupont small cannon)"
+            mass: 24.31 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1639 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1601 ft/s
+          -
+            group: "98-33"
+            desc2: "Powder 'F0' (Dupont very large)"
+            mass: 24.15 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1457 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1451 ft/s
+          -
+            group: "98-34"
+            desc2: "Powder 'F0' (Dupont very large)"
+            mass: 24.04 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1512 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1514 ft/s
+          -
+            group: "98-35"
+            desc2: "Powder 'A0' (Dupont very large)"
+            mass: 24.00 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1699 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1653 ft/s
+          -
+            group: "98-36"
+            desc2: "Powder 'A0' (Dupont very large)"
+            mass: 24.25 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1715 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1674 ft/s
+          -
+            group: "98-37"
+            desc2: "Powder 'A' (Dupont uneven cannon)"
+            mass: 24.07 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1561 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1567 ft/s
+          -
+            group: "98-38"
+            desc2: "Powder 'A' (Dupont uneven cannon)"
+            mass: 24.00 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1580 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1570 ft/s
+          -
+            group: "98-39"
+            desc2: "Powder 'E2' (Dupont medium cannon)"
+            mass: 24.14 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1589 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1544 ft/s
+  -
+    ref2: "p. 100-101"
+    desc: "Experiments with the 24-pounder gun pendulum"
+    material: iron
+    angle: 0 deg
+    data:
+      -
+        date: "1844-04-25"
+        temperature: 72.5 F
+        wetbulb: 61 F
+        pressure: 30.057 inHg
+        data:
+          -
+            group: "100-1"
+            desc2: "Powder 'A1&2' (Dupont large and medium cannon)"
+            diameter: 5.808 in
+            charge: 4 lb
+            mass: 25.06 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1587 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1582 ft/s
+          -
+            desc2: "Powder 'A' (Dupont uneven cannon)"
+            diameter: 5.68 in
+            data:
+              -
+                group: "100-2"
+                charge: 3 lb
+                mass: 24.10 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1254 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1232 ft/s
+              -
+                group: "100-3"
+                charge: 3 lb
+                mass: 24.03 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1266 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1253 ft/s
+              -
+                group: "100-4"
+                charge: 3 lb
+                mass: 24.20 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1254 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1240 ft/s
+              -
+                group: "100-5"
+                charge: 6 lb
+                mass: 24.28 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1697 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1669 ft/s
+              -
+                group: "100-6"
+                charge: 6 lb
+                mass: 24.23 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1727 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1709 ft/s
+              -
+                group: "100-7"
+                charge: 6 lb
+                mass: 24.17 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1714 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1678 ft/s
+      -
+        date: "1844-04-25"
+        temperature: 70 F
+        wetbulb: 61 F
+        pressure: 30.036 inHg
+        desc2: "Powder 'A' (Dupont uneven cannon)"
+        diameter: 5.68 in
+        data:
+          -
+            group: "100-8"
+            charge: 6 lb
+            mass: 24.12 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1671 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1642 ft/s
+          -
+            group: "100-9"
+            charge: 10 lb
+            mass: 24.33 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1774 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1807 ft/s
+          -
+            group: "100-10"
+            charge: 10 lb
+            mass: 23.98 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1989 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1957 ft/s
+          -
+            group: "100-11"
+            charge: 10 lb
+            mass: 24.44 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2001 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1964 ft/s
 
-# Processed through page 97
+# Processed through page 101
