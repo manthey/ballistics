@@ -5229,5 +5229,70 @@ data:
                 technique: "pendulum"
                 range: 55 ft
                 final_velocity: 1964 ft/s
+  -
+    ref2: "p. 104-105"
+    desc: "Experiments on the use of wads, with a 24-pounder gun"
+    desc2: "Powder 'W' (Bussard's uneven cannon)"
+    material: iron
+    angle: 0 deg
+    diameter: 5.69 in
+    charge: 6 lb
+    date: "1844-05-28"
+    range: 1004 ft
+    data:
+      -
+        mass: 24.39 lb
+        final_height: -16.27 ft/s
+      -
+        mass: 24.28 lb
+        final_height: -8.02 ft/s
+      -
+        mass: 24.18 lb
+        final_height: -6.32 ft/s
+      -
+        mass: 24.12 lb
+        final_height: -2.37 ft/s
+      -
+        mass: 24.16 lb
+        final_height: -5.72 ft/s
+      -
+        mass: 24.08 lb
+        final_height: -10.37 ft/s
+      -
+        mass: 24.16 lb
+        final_height: -3.17 ft/s
+      -
+        mass: 24.17 lb
+        final_height: -4.62 ft/s
+      -
+        mass: 24.15 lb
+        final_height: -5.72 ft/s
+      -
+        mass: 24.54 lb
+        final_height: -3.32 ft/s
+      -
+        mass: 24.02 lb
+        final_height: -5.52 ft/s
+      -
+        mass: 24.16 lb
+        final_height: -5.07 ft/s
+      -
+        mass: 24.12 lb
+        final_height: -4.62 ft/s
+      -
+        mass: 24.10 lb
+        final_height: -4.37 ft/s
+      -
+        mass: 24.16 lb
+        final_height: -6.92 ft/s
+      -
+        mass: 24.07 lb
+        final_height: -7.52 ft/s
+      -
+        mass: 24.09 lb
+        final_height: -8.52 ft/s
+      -
+        mass: 23.98 lb
+        final_height: -16.42 ft/s
 
-# Processed through page 101
+# Processed through page 105

@@ -43,7 +43,8 @@ Hutton = {  # Hutton, 1812, Vol. III, p. 318
     2000: 1637.8,
 }
 
-methods = ['hutton', 'miller', 'collins', 'henderson', 'morrison']
+methods = ['hutton', 'miller', 'collins', 'henderson',  # 'morrison',
+           'adjusted']
 results = {}
 for vel in Hutton:
     results[vel] = {'hutton': Hutton[vel]}

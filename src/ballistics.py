@@ -28,6 +28,7 @@ import sys
 import time
 import types
 
+from cod_adjusted import coefficient_of_drag_adjusted  # noqa
 from cod_collins import coefficient_of_drag_collins  # noqa
 from cod_henderson import coefficient_of_drag_henderson  # noqa
 from cod_miller import coefficient_of_drag_miller
@@ -47,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-05-26v38'
-PROGRAM_SIGNATURE = '93d65816fb53284adc325470106d7e46'
+__version__ = '2016-06-04v42'
+PROGRAM_SIGNATURE = '65763c51814b03f7a49c27243f57f3e9'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -400,7 +401,8 @@ Settings = {
     'drag_method': {
         'long': 'dragmethod',
         'title': 'Drag Method',
-        'desc': 'One of "miller" (default), "morrison", "collins".',
+        'desc': 'One of "miller" (default), "morrison", "collins", '
+                '"henderson", or "adjusted".',
     },
 }
 
@@ -608,7 +610,7 @@ def coefficient_of_drag(state=None, density=None, reynolds=None, mach=None,
              only_in_range: if True, return None if the values are outside of
                             what we can interpolate.
     Exit:  cd: the coefficient of drag."""
-    if state:
+    if state and 'vx' in state:
         if density is None:
             density = atmospheric_density(state)
         viscosity = atmospheric_viscosity(state)
@@ -618,6 +620,8 @@ def coefficient_of_drag(state=None, density=None, reynolds=None, mach=None,
         Mn = velocity/sos
         state['drag_data'] = {'Re': Re, 'sos': sos, 'Mn': Mn}
     else:
+        if not state:
+            state = {}
         Re = reynolds
         if mach is not None:
             Mn = mach
@@ -1091,6 +1095,7 @@ def graph_coefficient_of_drag(user_params=None):
     mnmin = params['mnmin']
     mnmax = params['mnmax']
     mnint = params['mnint']
+    method = params.get('method', 'miller')
     substep = 100
     for mni in xrange(int((mnmax-mnmin)/mnint)+1):
         mn = mni*mnint+mnmin
@@ -1098,8 +1103,9 @@ def graph_coefficient_of_drag(user_params=None):
         datay = []
         for rei in xrange(int((remax-remin)/(reint/substep))+1):
             re = rei*reint/substep+remin
-            cd = coefficient_of_drag(reynolds=10**re, mach=mn,
-                                     only_in_range=True)
+            cd = coefficient_of_drag(
+                state={'settings': {'drag_method': method}},
+                reynolds=10**re, mach=mn, only_in_range=True)
             if cd is not None:
                 datax.append(re)
                 datay.append(cd)

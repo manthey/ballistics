@@ -33,6 +33,8 @@ def coefficient_of_drag_henderson(state, only_in_range=False):
     SHtable = {'lead': 0.160, 'brass': 0.380}
     SH = SHtable.get(state.get('material'), 0.444)
     gamma = SH / SHair
+    if Mn == 0:
+        Mn = 1e-6
     S = Mn * (gamma / 2) ** 0.5
 
     Cdlow = (

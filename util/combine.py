@@ -9,6 +9,11 @@ import sys
 import traceback
 import yaml
 
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),
+                                             os.pardir)))
+
+from src import cod_adjusted  # noqa
+
 
 Groups = {}
 GroupsRe = {}
@@ -112,7 +117,7 @@ def combine(opts):  # noqa
                     if item.get(key) is None:
                         raise Exception('Missing parameter %s' % key)
                 total.append(item)
-                if opts.get('grid'):
+                if opts.get('grid') or opts.get('adjust'):
                     compile_grid(ReMnGrid, entry, opts, item)
             except Exception:
                 print 'Failed on %s: %d\n%r' % (file, entry.get('idx', 0),
@@ -177,7 +182,7 @@ def compile_grid(grid, entry, opts, item):  # noqa
             if mn not in GroupsGrid:
                 GroupsGrid[mn] = {}
             GroupsGrid[mn][re] = GroupsGrid[mn].get(re, 0) + factor
-        if group in GroupsRe:
+        if group in GroupsRe:  # ##DWM::
             factor *= -1
             for i in xrange(len(GroupsRe[group]['re'])):
                 Re = GroupsRe[group]['re'][i]
@@ -243,7 +248,9 @@ if __name__ == '__main__':  # noqa - mccabe
     help = False
     opts = {}
     for arg in sys.argv[1:]:
-        if arg == '--grid':
+        if arg == '--adjust':
+            opts['adjust'] = True
+        elif arg == '--grid':
             opts['grid'] = True
         elif arg == '--group':
             opts['group'] = True
@@ -270,7 +277,44 @@ Syntax:  combine.py --grid --nopoints --res=(grid resolution) --min=(grid min)
   number.
 """
         sys.exit(0)
+    if opts.get('adjust'):
+        opts['gridres'] = cod_adjusted.Resolution
     grid = combine(opts)
     if opts.get('grid'):
         show_grid(grid, opts)
         show_grid(GroupsGrid, opts, False)
+    if opts.get('adjust'):
+        path = 'src/cod_adjusted.json'
+        if os.path.exists(path):
+            adjust = json.load(open(path))
+        else:
+            adjust = {'version': 0, 'table': {}}
+        table = adjust.get('table', {}).copy()
+        total = count = weight = absweight = 0
+        for mn in GroupsGrid:
+            if str(mn) not in table:
+                table[str(mn)] = {}
+            for re in GroupsGrid[mn]:
+                factor = GroupsGrid[mn][re] / max(abs(GroupsGrid[mn][re]), 1)
+                total += factor
+                weight += GroupsGrid[mn][re]
+                absweight += abs(GroupsGrid[mn][re])
+                count += 1
+                factor *= 0.001
+                if factor:
+                    factor *= max(1, min(50 - adjust.get('version', 0),
+                                         abs(GroupsGrid[mn][re])))
+                table[str(mn)][str(re)] = (
+                    table[str(mn)].get(str(re), 0) - factor)  # ##DWM:: + factor?
+        if len(adjust.get('table', {})):
+            adjust['table_%d' % adjust.get('version', 0)] = adjust['table']
+        adjust['version'] = adjust.get('version', 0) + 1
+        adjust['table'] = table
+        adjust['resolution'] = cod_adjusted.Resolution
+
+        adjust = {'version': adjust['version'], 'table': table}
+
+        json.dump(adjust, open(path, 'wb'), sort_keys=True, indent=1,
+                  separators=(',', ': '))
+        print 'Adjustment: delta %d  weight %d |%d|  groups %d  version %d' % (
+            total, weight, absweight, count, adjust['version'])
