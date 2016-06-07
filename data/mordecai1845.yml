@@ -6257,5 +6257,922 @@ data:
                     technique: "pendulum"
                     range: 55 ft
                     final_velocity: 1648 ft/s
+  -
+    ref2: "p. 126"
+    desc: "Experiments with the musket pendulum"
+    material: iron
+    angle: 0 deg
+    diameter: 0.6415 in
+    range: 6 ft
+    technique: pendulum
+    data:
+      -
+        date: "1844-05-08"
+        desc2: "Powder 'G6' (Dupont sporting)"
+        charge: 175 gr
+        mass: 401 gr
+        data:
+          - final_velocity: 2034 ft/s
+          - final_velocity: 2032 ft/s
+      -
+        date: "1844-05-10"
+        desc2: "Powder 'G6' (Dupont sporting)"
+        mass: 401 gr
+        data:
+          -
+            charge: 150 gr
+            data:
+              - final_velocity: 1652 ft/s
+              - final_velocity: 1793 ft/s
+              - final_velocity: 1621 ft/s
+              - final_velocity: 1868 ft/s
+              - final_velocity: 1837 ft/s
+          -
+            charge: 120 gr
+            data:
+              - final_velocity: 1384 ft/s
+              - final_velocity: 1559 ft/s
+              - final_velocity: 1384 ft/s
+              - final_velocity: 1272 ft/s
+              - final_velocity: 1533 ft/s
+          -
+            charge: 100 gr
+            data:
+              - final_velocity: 1228 ft/s
+              - final_velocity: 1147 ft/s
+              - final_velocity: 1252 ft/s
+              - final_velocity: 1391 ft/s
+              - final_velocity: 1270 ft/s
+      -
+        date: "1844-05-11"
+        desc2: "Powder 'A4' (Dupont musket)"
+        mass: 399 gr
+        data:
+          -
+            charge: 150 gr
+            data:
+              - final_velocity: 1432 ft/s
+              - final_velocity: 1477 ft/s
+              - final_velocity: 1381 ft/s
+              - final_velocity: 1415 ft/s
+              - final_velocity: 1415 ft/s
+          -
+            charge: 120 gr
+            data:
+              - final_velocity: 1228 ft/s
+              - final_velocity: 1241 ft/s
+              - final_velocity: 1228 ft/s
+              - final_velocity: 1258 ft/s
+              - final_velocity: 1269 ft/s
+          -
+            charge: 100 gr
+            data:
+              - final_velocity: 1070 ft/s
+              - final_velocity: 1085 ft/s
+              - final_velocity: 1074 ft/s
+              - final_velocity: 1104 ft/s
+              - final_velocity: 1111 ft/s
+  -
+    ref2: "p. 128"
+    desc: "Experiments with the musket pendulum"
+    material: iron
+    angle: 0 deg
+    diameter: 0.641 in
+    range: 6 ft
+    technique: pendulum
+    mass: 399 gr
+    date: "1844-05-13"
+    data:
+      -
+        desc2: "French sporting powder proof"
+        charge: 77 gr
+        final_velocity: 1306 ft/s
+      -
+        desc2: "Powder 'G6' (Dupont sporting)"
+        charge: 77 gr
+        data:
+          - final_velocity: 1024 ft/s
+          - final_velocity: 1003 ft/s
+          - final_velocity: 1022 ft/s
+          - final_velocity: 988 ft/s
+          - final_velocity: 971 ft/s
+          - final_velocity: 1024 ft/s
+          - final_velocity: 998 ft/s
+          - final_velocity: 988 ft/s
+          - final_velocity: 1005 ft/s
+          - final_velocity: 987 ft/s
+      -
+        desc2: "Powder 'A4' (Dupont musket)"
+        charge: 140 gr
+        data:
+          - final_velocity: 1405 ft/s
+          - final_velocity: 1362 ft/s
+          - final_velocity: 1429 ft/s
+          - final_velocity: 1362 ft/s
+          - final_velocity: 1368 ft/s
+          - final_velocity: 1409 ft/s
+      -
+        desc2: "French sporting powder"
+        charge: 77 gr
+        data:
+          - final_velocity: 1029 ft/s
+          - final_velocity: 1038 ft/s
+          - final_velocity: 1019 ft/s
+          - final_velocity: 981 ft/s
+      -
+        desc2: "French musket powder"
+        charge: 140 gr
+        data:
+          - final_velocity: 1325 ft/s
+          - final_velocity: 1347 ft/s
+          - final_velocity: 1301 ft/s
+          - final_velocity: 1351 ft/s
+          - final_velocity: 1310 ft/s
+  -
+    ref2: "p. 129"
+    desc: "Experiments with the musket pendulum"
+    material: iron
+    angle: 0 deg
+    diameter: 0.641 in
+    diameter_note: "Assumed based on context"
+    range: 6 ft
+    technique: pendulum
+    data:
+      -
+        date: "1844-05-14"
+        mass: 399 gr
+        mass_note: "Assumed based on context"
+        charge: 77 gr
+        desc2: "Powder 'G6' (Dupont sporting).  Average of three shots"
+        final_velocity: 971 ft/s
+      -
+        date: "1844-05-16"
+        data:
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            mass: 401 gr
+            charge: 175 gr
+            final_velocity: 2059 ft/s
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            mass: 399 gr
+            charge: 77 gr
+            data:
+              - final_velocity: 1019 ft/s
+              - final_velocity: 1120 ft/s
+              - final_velocity: 1178 ft/s
+              - final_velocity: 974 ft/s
+              - final_velocity: 961 ft/s
+              - final_velocity: 993 ft/s
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            mass: 399 gr
+            charge: 175 gr
+            final_velocity: 1930 ft/s
+          -
+            desc2: "Powder 'A4' (Dupont musket)"
+            mass: 399 gr
+            charge: 140 gr
+            data:
+              - final_velocity: 1342 ft/s
+              - final_velocity: 1278 ft/s
+  -
+    ref2: "p. 130"
+    desc: "Experiments with the musket pendulum"
+    material: iron
+    angle: 0 deg
+    diameter: 0.641 in
+    diameter_note: "Assumed"
+    range: 6 ft
+    technique: pendulum
+    date: "1844-05-17"
+    mass: 399 gr
+    mass_note: "Assumed"
+    data:
+      -
+        charge: 77 gr
+        desc2: "Powder 'G6' (Dupont sporting)"
+        final_velocity: 1030 ft/s
+      -
+        charge: 140 gr
+        desc2: "Powder 'A4' (Dupont musket)"
+        data:
+          - final_velocity: 1430 ft/s
+          - final_velocity: 1419 ft/s
+      -
+        charge: 77 gr
+        desc2: "Hall's sporting powder"
+        final_velocity: 1051 ft/s
+      -
+        charge: 77 gr
+        desc2: "Powder 'G6' (Dupont sporting)"
+        data:
+          - final_velocity: 1004 ft/s
+          - final_velocity: 1029 ft/s
+      -
+        charge: 175 gr
+        desc2: "Powder 'G6' (Dupont sporting)"
+        final_velocity: 2131 ft/s
+      -
+        charge: 140 gr
+        desc2: "Powder 'A4' (Dupont musket)"
+        data:
+          - final_velocity: 1470 ft/s
+          - final_velocity: 1400 ft/s
+  -
+    ref2: "p. 131"
+    desc: "Experiments with the musket pendulum"
+    material: iron
+    angle: 0 deg
+    diameter: 0.641 in
+    diameter_note: "Assumed"
+    range: 6 ft
+    technique: pendulum
+    mass: 399 gr
+    mass_note: "Assumed"
+    data:
+      -
+        date: "1844-05-20"
+        data:
+          -
+            charge: 77 gr
+            desc2: "Powder 'G6' (Dupont sporting)"
+            data:
+              - final_velocity: 1082 ft/s
+              - final_velocity: 1066 ft/s
+          -
+            charge: 154 gr
+            desc2: "Powder 'G6' (Dupont sporting)"
+            final_velocity: 1925 ft/s
+          -
+            charge: 175 gr
+            desc2: "Powder 'G6' (Dupont sporting)"
+            final_velocity: 2027 ft/s
+          -
+            charge: 140 gr
+            desc2: "Powder 'A4' (Dupont musket)"
+            data:
+              - final_velocity: 1478 ft/s
+              - final_velocity: 1489 ft/s
+              - final_velocity: 1476 ft/s
+      -
+        date: "1844-05-22"
+        data:
+          -
+            charge: 140 gr
+            desc2: "Powder 'A4' (Dupont musket)"
+            data:
+              - final_velocity: 1550 ft/s
+              - final_velocity: 1481 ft/s
+              - final_velocity: 1538 ft/s
+          -
+            charge: 77 gr
+            desc2: "Powder 'G6' (Dupont sporting)"
+            final_velocity: 1137 ft/s
+  -
+    ref2: "p. 132"
+    desc: "Experiments with the musket pendulum.  Different wads"
+    material: iron
+    angle: 0 deg
+    diameter: 0.641 in
+    diameter_note: "Assumed"
+    range: 6 ft
+    technique: pendulum
+    mass: 399 gr
+    mass_note: "Assumed"
+    date: "1844-05-24"
+    data:
+      -
+        desc2: "Powder 'G6' (Dupont sporting)"
+        charge: 77 gr
+        data:
+          - final_velocity: 1119 ft/s
+          - final_velocity: 1308 ft/s
+          - final_velocity: 1377 ft/s
+          - final_velocity: 1482 ft/s
+          - final_velocity: 1346 ft/s
+      -
+        desc2: "Powder 'A4' (Dupont musket)"
+        charge: 140 gr
+        data:
+          - final_velocity: 1547 ft/s
+          - final_velocity: 1586 ft/s
+          - final_velocity: 1560 ft/s
+          - final_velocity: 1606 ft/s
+          - final_velocity: 1628 ft/s
+          - final_velocity: 1516 ft/s
+          - final_velocity: 1460 ft/s
+          - final_velocity: 1504 ft/s
+          - final_velocity: 1510 ft/s
+          - final_velocity: 1553 ft/s
+          - final_velocity: 1532 ft/s
+          - final_velocity: 1587 ft/s
+          - final_velocity: 1591 ft/s
+          - final_velocity: 1619 ft/s
+  -
+    ref2: "p. 134"
+    desc: "Experiments with the musket pendulum.  Different wads"
+    material: iron
+    angle: 0 deg
+    diameter: 0.641 in
+    diameter_note: "Assumed"
+    range: 6 ft
+    technique: pendulum
+    mass: 399 gr
+    mass_note: "Assumed"
+    date: "1844-05-27"
+    data:
+      -
+        desc2: "French sporting powder"
+        charge: 77.17 gr
+        data:
+          - final_velocity: 1096 ft/s
+          - final_velocity: 1169 ft/s
+          - final_velocity: 1200 ft/s
+          - final_velocity: 1088 ft/s
+      -
+        desc2: "Powder 'G6' (Dupont sporting)"
+        charge: 77.17 gr
+        data:
+          - final_velocity: 1100 ft/s
+          - final_velocity: 1079 ft/s
+          - final_velocity: 1193 ft/s
+          - final_velocity: 1106 ft/s
+          - final_velocity: 1190 ft/s
+          - final_velocity: 1187 ft/s
+          - final_velocity: 1280 ft/s
+          - final_velocity: 1330 ft/s
+          - final_velocity: 1159 ft/s
+          - final_velocity: 1181 ft/s
+      -
+        desc2: "French musket powder"
+        charge: 154.33 gr
+        data:
+          - final_velocity: 1628 ft/s
+          - final_velocity: 1553 ft/s
+          - final_velocity: 1690 ft/s
+          - final_velocity: 1655 ft/s
+      -
+        desc2: "Powder 'A4' (Dupont musket)"
+        charge: 154.33 gr
+        data:
+          - final_velocity: 1655 ft/s
+          - final_velocity: 1795 ft/s
+          - final_velocity: 1615 ft/s
+          - final_velocity: 1718 ft/s
+  -
+    ref2: "p. 135"
+    desc: "Experiments with the musket pendulum.  Lighter pendulum"
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    date: "1844-05-29"
+    diameter: 0.64 in
+    technique: pendulum
+    mass: 397.5 gr
+    charge: 154.33 gr
+    data:
+      -
+        desc2: "French musket powder"
+        data:
+          - final_velocity: 1663 ft/s
+          - final_velocity: 1577 ft/s
+          - final_velocity: 1605 ft/s
+      -
+        desc2: "Powder 'A4' (Dupont musket)"
+        final_velocity: 1757 ft/s
+  -
+    ref2: "p. 136"
+    desc: "Experiments with the musket pendulum.  Different pendulum cores"
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    diameter: 0.64 in
+    technique: pendulum
+    mass: 397.5 gr
+    data:
+      -
+        date: "1844-05-31"
+        data:
+          -
+            desc2: "Powder 'A4' (Dupont musket)"
+            charge: 154.33 gr
+            data:
+              - final_velocity: 1746 ft/s
+              - final_velocity: 1730 ft/s
+              - final_velocity: 1811 ft/s
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            charge: 77.17 gr
+            data:
+              - final_velocity: 1408 ft/s
+              - final_velocity: 1417 ft/s
+              - final_velocity: 1057 ft/s
+              - final_velocity: 1044 ft/s
+          -
+            desc2: "Powder 'A4' (Dupont musket)"
+            charge: 154.33 gr
+            data:
+              - final_velocity: 1650 ft/s
+              - final_velocity: 1606 ft/s
+        date: "1844-06-01"
+        data:
+          -
+            desc2: "Powder 'A4' (Dupont musket)"
+            charge: 154.33 gr
+            final_velocity: 1774 ft/s
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            charge: 77.17 gr
+            data:
+              - final_velocity: 1288 ft/s
+              - final_velocity: 1333 ft/s
+          -
+            desc2: "Powder 'A4' (Dupont musket)"
+            charge: 154.33 gr
+            data:
+              - final_velocity: 1842 ft/s
+              - final_velocity: 1772 ft/s
+              - final_velocity: 1713 ft/s
+              - final_velocity: 1748 ft/s
+  -
+    ref2: "p. 140"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    diameter: 0.64 in
+    mass: 397.5 gr
+    technique: pendulum
+    charge: 120 gr
+    date: "1844-06-05"
+    data:
+      -
+        desc2: "Powder 'A4' (Dupont musket).  Percussion lock"
+        data:
+          - final_velocity: 1469 ft/s
+          - final_velocity: 1438 ft/s
+          - final_velocity: 1506 ft/s
+          - final_velocity: 1531 ft/s
+          - final_velocity: 1475 ft/s
+      -
+        desc2: "Powder 'G6' (Dupont sporting).  Percussion lock"
+        data:
+          - final_velocity: 1812 ft/s
+          - final_velocity: 1886 ft/s
+          - final_velocity: 1896 ft/s
+          - final_velocity: 1937 ft/s
+          - final_velocity: 1907 ft/s
+      -
+        desc2: "Powder 'G6' (Dupont sporting).  Match ignition"
+        data:
+          - final_velocity: 1844 ft/s
+          - final_velocity: 1852 ft/s
+          - final_velocity: 1895 ft/s
+          - final_velocity: 1868 ft/s
+          - final_velocity: 1863 ft/s
+      -
+        desc2: "Powder 'A4' (Dupont musket).  Match ignition"
+        data:
+          - final_velocity: 1439 ft/s
+          - final_velocity: 1472 ft/s
+          - final_velocity: 1455 ft/s
+          - final_velocity: 1532 ft/s
+          - final_velocity: 1451 ft/s
+  -
+    ref2: "p. 141"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    technique: pendulum
+    charge: 120 gr
+    diameter: 0.64 in
+    mass: 397.5 gr
+    data:
+      -
+        date: "1844-06-05"
+        data:
+          -
+            desc2: "Powder 'A4' (Dupont musket)"
+            data:
+              - final_velocity: 1488 ft/s
+              - final_velocity: 1432 ft/s
+              - final_velocity: 1515 ft/s
+              - final_velocity: 1549 ft/s
+              - final_velocity: 1512 ft/s
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            data:
+              - final_velocity: 1841 ft/s
+              - final_velocity: 1845 ft/s
+              - final_velocity: 1845 ft/s
+              - final_velocity: 1892 ft/s
+      -
+        date: "1844-06-06"
+        pressure: 29.897 inHg
+        temperature: 78 F
+        wetbulb: 74 F
+        data:
+          -
+            desc2: "Powder 'A' (Dupont uneven cannon)"
+            data:
+              - final_velocity: 1212 ft/s
+              - final_velocity: 1267 ft/s
+              - final_velocity: 1259 ft/s
+              - final_velocity: 1265 ft/s
+              - final_velocity: 1299 ft/s
+          -
+            desc2: "Powder 'B' (Garesche uneven cannon)"
+            data:
+              - final_velocity: 1312 ft/s
+              - final_velocity: 1461 ft/s
+              - final_velocity: 1365 ft/s
+              - final_velocity: 1293 ft/s
+              - final_velocity: 1448 ft/s
+          -
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
+            data:
+              - final_velocity: 1411 ft/s
+              - final_velocity: 1497 ft/s
+              - final_velocity: 1367 ft/s
+              - final_velocity: 1370 ft/s
+              - final_velocity: 1324 ft/s
+  -
+    ref2: "p. 142"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    technique: pendulum
+    charge: 120 gr
+    diameter: 0.64 in
+    mass: 397.5 gr
+    data:
+      -
+        date: "1844-06-06"
+        pressure: 29.897 inHg
+        temperature: 78 F
+        wetbulb: 74 F
+        data:
+          -
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
+            data:
+              - final_velocity: 1256 ft/s
+              - final_velocity: 1169 ft/s
+              - final_velocity: 1296 ft/s
+              - final_velocity: 1176 ft/s
+              - final_velocity: 1247 ft/s
+          -
+            desc2: "Powder 'F' (Dupont uneven cannon)"
+            data:
+              - final_velocity: 1475 ft/s
+              - final_velocity: 1389 ft/s
+              - final_velocity: 1447 ft/s
+              - final_velocity: 1534 ft/s
+              - final_velocity: 1472 ft/s
+      -
+        date: "1844-06-07"
+        pressure: 29.883 inHg
+        temperature: 79 F
+        wetbulb: 75 F
+        data:
+          -
+            desc2: "Powder 'A1' (Dupont large cannon)"
+            data:
+              - final_velocity: 1169 ft/s
+              - final_velocity: 1240 ft/s
+              - final_velocity: 1296 ft/s
+              - final_velocity: 1274 ft/s
+              - final_velocity: 1299 ft/s
+          -
+            desc2: "Powder 'B1' (Garesche large cannon)"
+            data:
+              - final_velocity: 1259 ft/s
+              - final_velocity: 1299 ft/s
+              - final_velocity: 1219 ft/s
+              - final_velocity: 1296 ft/s
+              - final_velocity: 1271 ft/s
+      -
+        date: "1844-06-07"
+        pressure: 29.851 inHg
+        temperature: 83 F
+        wetbulb: 76 F
+        data:
+          -
+            desc2: "Powder 'C1' (Loomises, Hazard, and Co. large cannon)"
+            data:
+              - final_velocity: 1327 ft/s
+              - final_velocity: 1287 ft/s
+              - final_velocity: 1271 ft/s
+              - final_velocity: 1277 ft/s
+              - final_velocity: 1234 ft/s
+  -
+    ref2: "p. 143"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    technique: pendulum
+    charge: 120 gr
+    diameter: 0.64 in
+    mass: 397.5 gr
+    data:
+      -
+        date: "1844-06-07"
+        pressure: 29.853 inHg
+        temperature: 76 F
+        wetbulb: 69 F
+        data:
+          -
+            desc2: "Powder 'D1' (Masters, Swith, and Co. large cannon)"
+            data:
+              - final_velocity: 1154 ft/s
+              - final_velocity: 1185 ft/s
+              - final_velocity: 1194 ft/s
+              - final_velocity: 1214 ft/s
+              - final_velocity: 1190 ft/s
+          -
+            desc2: "Powder 'E1' (Dupont large cannon)"
+            data:
+              - final_velocity: 1058 ft/s
+              - final_velocity: 1084 ft/s
+              - final_velocity: 1129 ft/s
+              - final_velocity: 1098 ft/s
+              - final_velocity: 1123 ft/s
+          -
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            data:
+              - final_velocity: 1276 ft/s
+              - final_velocity: 1406 ft/s
+              - final_velocity: 1438 ft/s
+              - final_velocity: 1426 ft/s
+              - final_velocity: 1471 ft/s
+          -
+            desc2: "Powder 'G1' (Dupont large cannon)"
+            data:
+              - final_velocity: 1237 ft/s
+              - final_velocity: 1305 ft/s
+              - final_velocity: 1250 ft/s
+              - final_velocity: 1289 ft/s
+              - final_velocity: 1271 ft/s
+          -
+            desc2: "Powder 'E5' (Dupont rifle)"
+            data:
+              - final_velocity: 1318 ft/s
+              - final_velocity: 1395 ft/s
+              - final_velocity: 1389 ft/s
+              - final_velocity: 1361 ft/s
+              - final_velocity: 1293 ft/s
+  -
+    ref2: "p. 144"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    technique: pendulum
+    charge: 120 gr
+    diameter: 0.64 in
+    mass: 397.5 gr
+    data:
+      -
+        date: "1844-06-10"
+        pressure: 29.932 inHg
+        temperature: 77.5 F
+        wetbulb: 69 F
+        data:
+          -
+            desc2: "Powder 'F2' (Dupont medium cannon)"
+            data:
+              - final_velocity: 1429 ft/s
+              - final_velocity: 1441 ft/s
+              - final_velocity: 1392 ft/s
+              - final_velocity: 1401 ft/s
+              - final_velocity: 1466 ft/s
+          -
+            desc2: "Powder 'A3' (Dupont small cannon)"
+            data:
+              - final_velocity: 1299 ft/s
+              - final_velocity: 1349 ft/s
+              - final_velocity: 1318 ft/s
+              - final_velocity: 1361 ft/s
+              - final_velocity: 1352 ft/s
+      -
+        date: "1844-06-10"
+        pressure: 29.918 inHg
+        temperature: 78 F
+        wetbulb: 68 F
+        data:
+          -
+            desc2: "Powder 'B3' (Garesche small cannon)"
+            data:
+              - final_velocity: 1401 ft/s
+              - final_velocity: 1454 ft/s
+              - final_velocity: 1446 ft/s
+              - final_velocity: 1398 ft/s
+              - final_velocity: 1515 ft/s
+          -
+            desc2: "Powder 'C3' (Loomises, Hazard, and Co. small cannon)"
+            data:
+              - final_velocity: 1392 ft/s
+              - final_velocity: 1559 ft/s
+              - final_velocity: 1447 ft/s
+              - final_velocity: 1507 ft/s
+              - final_velocity: 1410 ft/s
+          -
+            desc2: "Powder 'D3' (Masters, Swith, and Co. small cannon)"
+            data:
+              - final_velocity: 1429 ft/s
+              - final_velocity: 1358 ft/s
+              - final_velocity: 1389 ft/s
+              - final_velocity: 1392 ft/s
+              - final_velocity: 1296 ft/s
+  -
+    ref2: "p. 145"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    technique: pendulum
+    charge: 120 gr
+    diameter: 0.64 in
+    mass: 397.5 gr
+    data:
+      -
+        date: "1844-06-10"
+        pressure: 29.918 inHg
+        temperature: 78 F
+        wetbulb: 68 F
+        data:
+          -
+            desc2: "Powder 'E3' (Dupont small cannon)"
+            data:
+              - final_velocity: 1166 ft/s
+              - final_velocity: 1157 ft/s
+              - final_velocity: 1176 ft/s
+              - final_velocity: 1222 ft/s
+              - final_velocity: 1216 ft/s
+          -
+            desc2: "Powder 'F0' (Dupont very large)"
+            data:
+              - final_velocity: 1361 ft/s
+              - final_velocity: 1395 ft/s
+              - final_velocity: 1352 ft/s
+              - final_velocity: 1385 ft/s
+          -
+            desc2: "Powder 'A0' (Dupont very large)"
+            data:
+              - final_velocity: 1363 ft/s
+              - final_velocity: 1340 ft/s
+              - final_velocity: 1376 ft/s
+              - final_velocity: 1314 ft/s
+          -
+            desc2: "Powder 'H' (Waltham Abbey uneven cannon from 1812)"
+            data:
+              - final_velocity: 1240 ft/s
+              - final_velocity: 1330 ft/s
+              - final_velocity: 1355 ft/s
+              - final_velocity: 1361 ft/s
+              - final_velocity: 1305 ft/s
+      -
+        date: "1844-06-11"
+        pressure: 30.282 inHg
+        temperature: 62.5 F
+        wetbulb: 52 F
+        data:
+          -
+            desc2: "Powder 'K1r' (Dupont large cannon, rough)"
+            data:
+              - final_velocity: 1250 ft/s
+              - final_velocity: 1250 ft/s
+              - final_velocity: 1253 ft/s
+              - final_velocity: 1311 ft/s
+              - final_velocity: 1259 ft/s
+  -
+    ref2: "p. 146"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    technique: pendulum
+    charge: 120 gr
+    diameter: 0.64 in
+    mass: 397.5 gr
+    data:
+      -
+        date: "1844-06-11"
+        pressure: 30.282 inHg
+        temperature: 62.5 F
+        wetbulb: 52 F
+        data:
+          -
+            desc2: "Powder 'K1g' (Dupont large cannon, glazed)"
+            data:
+              - final_velocity: 1154 ft/s
+              - final_velocity: 1216 ft/s
+              - final_velocity: 1207 ft/s
+              - final_velocity: 1213 ft/s
+              - final_velocity: 1244 ft/s
+      -
+        date: "1844-06-11"
+        pressure: 30.256 inHg
+        temperature: 69.5 F
+        wetbulb: 59.5 F
+        data:
+          -
+            desc2: "Powder 'L1' (Dupont large cannon)"
+            data:
+              - final_velocity: 1197 ft/s
+              - final_velocity: 1203 ft/s
+              - final_velocity: 1234 ft/s
+              - final_velocity: 1250 ft/s
+              - final_velocity: 1259 ft/s
+          -
+            desc2: "Powder 'M1' (Dupont large cannon)"
+            data:
+              - final_velocity: 1210 ft/s
+              - final_velocity: 1271 ft/s
+              - final_velocity: 1376 ft/s
+              - final_velocity: 1299 ft/s
+              - final_velocity: 1277 ft/s
+          -
+            desc2: "Powder 'N' (Dupont uneven cannon)"
+            data:
+              - final_velocity: 1407 ft/s
+              - final_velocity: 1447 ft/s
+              - final_velocity: 1426 ft/s
+              - final_velocity: 1382 ft/s
+              - final_velocity: 1463 ft/s
+          -
+            desc2: "Powder 'R15' (Dupont large cannon)"
+            data:
+              - final_velocity: 1361 ft/s
+              - final_velocity: 1392 ft/s
+              - final_velocity: 1345 ft/s
+              - final_velocity: 1407 ft/s
+              - final_velocity: 1373 ft/s
+  -
+    ref2: "p. 147"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    technique: pendulum
+    charge: 120 gr
+    diameter: 0.64 in
+    mass: 397.5 gr
+    data:
+      -
+        date: "1844-06-11"
+        pressure: 30.256 inHg
+        temperature: 69.5 F
+        wetbulb: 59.5 F
+        data:
+          -
+            desc2: "Powder 'R30' (Dupont large cannon)"
+            data:
+              - final_velocity: 1503 ft/s
+              - final_velocity: 1472 ft/s
+              - final_velocity: 1450 ft/s
+              - final_velocity: 1447 ft/s
+              - final_velocity: 1481 ft/s
+          -
+            desc2: "Powder 'R60' (Dupont large cannon)"
+            data:
+              - final_velocity: 1379 ft/s
+              - final_velocity: 1475 ft/s
+              - final_velocity: 1429 ft/s
+              - final_velocity: 1429 ft/s
+              - final_velocity: 1457 ft/s
+          -
+            desc2: "Powder 'R90' (Dupont large cannon)"
+            data:
+              - final_velocity: 1324 ft/s
+              - final_velocity: 1311 ft/s
+              - final_velocity: 1407 ft/s
+              - final_velocity: 1429 ft/s
+              - final_velocity: 1463 ft/s
+      -
+        date: "1844-06-12"
+        pressure: 30.354 inHg
+        temperature: 69.5 F
+        wetbulb: 62 F
+        data:
+          -
+            desc2: "English cannon powder"
+            data:
+              - final_velocity: 1305 ft/s
+              - final_velocity: 1339 ft/s
+              - final_velocity: 1330 ft/s
+              - final_velocity: 1423 ft/s
+              - final_velocity: 1389 ft/s
+          -
+            desc2: "English musket powder"
+            data:
+              - final_velocity: 1549 ft/s
+              - final_velocity: 1602 ft/s
+              - final_velocity: 1538 ft/s
+              - final_velocity: 1574 ft/s
+              - final_velocity: 1543 ft/s
 
-# Processed through page 125
+# Processed through page 147
