@@ -7482,5 +7482,116 @@ data:
               - final_velocity: 1407 ft/s
               - final_velocity: 1472 ft/s
               - final_velocity: 1404 ft/s
+  -
+    ref2: "p. 156"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    technique: pendulum
+    diameter: 0.64 in
+    mass: 397.5 gr
+    data:
+      -
+        date: "1844-12-10"
+        pressure: 30.059 inHg
+        temperature: 34 F
+        wetbulb: 32 F
+        charge: 120 gr
+        data:
+          -
+            desc2: "Powder 'Xp4' (Dupont musket)"
+            data:
+              - final_velocity: 1531 ft/s
+              - final_velocity: 1497 ft/s
+              - final_velocity: 1586 ft/s
+              - final_velocity: 1568 ft/s
+              - final_velocity: 1559 ft/s
+          -
+            desc2: "Powder 'Xp4' (Dupont musket)"
+            data:
+              - final_velocity: 1389 ft/s
+              - final_velocity: 1330 ft/s
+              - final_velocity: 1345 ft/s
+              - final_velocity: 1449 ft/s
+              - final_velocity: 1344 ft/s
+          -
+            desc2: "Powder 'Xp5' (Dupont musket)"
+            data:
+              - final_velocity: 1688 ft/s
+              - final_velocity: 1819 ft/s
+              - final_velocity: 1788 ft/s
+              - final_velocity: 1753 ft/s
+              - final_velocity: 1700 ft/s
+      -
+        date: "1844-12-12"
+        pressure: 30.092 inHg
+        temperature: 37 F
+        wetbulb: 31 F
+        charge: 110 gr
+        data:
+          -
+            desc2: "Powder 'Xp4' (Dupont musket)"
+            data:
+              - final_velocity: 1425 ft/s
+              - final_velocity: 1444 ft/s
+              - final_velocity: 1478 ft/s
+              - final_velocity: 1398 ft/s
+              - final_velocity: 1413 ft/s
+  -
+    ref2: "p. 157"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    technique: pendulum
+    desc2: "Powder 'Xp4' (Dupont musket)"
+    data:
+      -
+        date: "1844-12-12"
+        pressure: 30.092 inHg
+        temperature: 37 F
+        wetbulb: 31 F
+        charge: 100 gr
+        diameter: 0.64 in
+        mass: 397.5 gr
+        data:
+          - final_velocity: 1299 ft/s
+          - final_velocity: 1290 ft/s
+          - final_velocity: 1308 ft/s
+          - final_velocity: 1348 ft/s
+          - final_velocity: 1333 ft/s
+      -
+        date: "1844-12-12"
+        pressure: 29.973 inHg
+        temperature: 43.5 F
+        wetbulb: 40 F
+        diameter: 0.65 in
+        mass: 410.2 gr
+        data:
+          -
+            charge: 120 gr
+            data:
+              - final_velocity: 1462 ft/s
+              - final_velocity: 1543 ft/s
+              - final_velocity: 1544 ft/s
+              - final_velocity: 1515 ft/s
+              - final_velocity: 1471 ft/s
+          -
+            charge: 110 gr
+            data:
+              - final_velocity: 1418 ft/s
+              - final_velocity: 1399 ft/s
+              - final_velocity: 1465 ft/s
+              - final_velocity: 1447 ft/s
+              - final_velocity: 1420 ft/s
+          -
+            charge: 100 gr
+            data:
+              - final_velocity: 1319 ft/s
+              - final_velocity: 1310 ft/s
+              - final_velocity: 1307 ft/s
+              - final_velocity: 1323 ft/s
+              - final_velocity: 1361 ft/s
 
-# Processed through page 154
+# Processed through page 157
