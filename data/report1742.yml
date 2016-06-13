@@ -4,7 +4,7 @@ ref: "Committee of the Royal Society, 1742"
 cms: "Committee of the Royal Society. \"Report of the Committee of the Royal Society appointed to examine some Questions in Gunnery.\" <i>Philosophical Transactions of the Royal Society</i>, XVII, no. 465 (October and November 1742): 172-183."
 link: http://rstl.royalsocietypublishing.org/content/by/year
 summary: "The committee analyzes how much gunpowder remains unburnt after firing and what effect chamber length has on range."
-date: 1742
+date: "1742"
 data:
   -
     mass: 24 lb 6.5 oz

@@ -2,6 +2,7 @@
 This compares all of the results files and collapses them into a simple array.
 """
 
+import csv
 import json
 import math
 import os
@@ -72,7 +73,7 @@ def combine(opts):  # noqa
                 item = {}
                 for key in data:
                     if key not in ('data', 'results', 'summary', 'details',
-                                   'cms'):
+                                   'cms', 'link'):
                         item[key] = data[key]
                 for key in entry:
                     if key not in ('conditions', 'points', 'results'):
@@ -123,14 +124,19 @@ def combine(opts):  # noqa
                 print 'Failed on %s: %d\n%r' % (file, entry.get('idx', 0),
                                                 entry.get('conditions'))
                 print traceback.format_exc().strip()
-    destpath = 'built/totallist.json'
-    json.dump(total, open(destpath, 'wb'), sort_keys=True, indent=1,
-              separators=(',', ': '))
+    if opts.get('json', True):
+        destpath = 'built/totallist.json'
+        json.dump(total, open(destpath, 'wb'), sort_keys=True, indent=1,
+                  separators=(',', ': '))
     print '%d samples from %d sources' % (len(total), sources)
-    refpath = 'built/references.json'
-    json.dump(references, open(refpath, 'wb'), sort_keys=True, indent=1,
-              separators=(',', ': '))
+    if opts.get('json', True):
+        refpath = 'built/references.json'
+        json.dump(references, open(refpath, 'wb'), sort_keys=True, indent=1,
+                  separators=(',', ': '))
     print '%d references' % len(references)
+    if opts.get('csv'):
+        csv_dump(total, 'built/totallist.csv')
+        csv_dump(references, 'built/references.csv')
     return ReMnGrid
 
 
@@ -182,7 +188,7 @@ def compile_grid(grid, entry, opts, item):  # noqa
             if mn not in GroupsGrid:
                 GroupsGrid[mn] = {}
             GroupsGrid[mn][re] = GroupsGrid[mn].get(re, 0) + factor
-        if group in GroupsRe:  # ##DWM::
+        if group in GroupsRe:
             factor *= -1
             for i in xrange(len(GroupsRe[group]['re'])):
                 Re = GroupsRe[group]['re'][i]
@@ -192,6 +198,34 @@ def compile_grid(grid, entry, opts, item):  # noqa
                 if mn not in GroupsGrid:
                     GroupsGrid[mn] = {}
                 GroupsGrid[mn][re] = GroupsGrid[mn].get(re, 0) + factor
+
+
+def csv_dump(data, path):
+    """
+    Write to a csv file.  Data is sorted by key and idx.
+
+    Enter: data: list or dictionary to write.
+           path: path to write.
+    """
+    if isinstance(data, dict):
+        data = [data[key] for key in sorted(data.keys())]
+    else:
+        data = [val[-1] for val in sorted([(
+            row.get('key'), row.get('idx'), row) for row in data])]
+    keys = {}
+    for entry in data:
+        keys.update(entry)
+    keys = [val[-1] for val in sorted([(
+        key != 'key', key != 'idx', key != 'power_factor', key)
+        for key in keys])]
+    with open(path, 'wb') as csvfile:
+        writer = csv.writer(csvfile, quoting=csv.QUOTE_NONNUMERIC)
+        writer.writerow(keys)
+        for entry in data:
+            row = [entry.get(key) for key in keys]
+            row = [val.encode('utf8') if isinstance(val, unicode) else val
+                   for val in row]
+            writer.writerow(row)
 
 
 def show_grid(grid, opts, usemin=True):
@@ -246,16 +280,24 @@ def show_grid(grid, opts, usemin=True):
 
 if __name__ == '__main__':  # noqa - mccabe
     help = False
-    opts = {}
+    opts = {'json': True}
     for arg in sys.argv[1:]:
         if arg == '--adjust':
             opts['adjust'] = True
+        elif arg == '--csv':
+            opts['csv'] = True
         elif arg == '--grid':
             opts['grid'] = True
         elif arg == '--group':
             opts['group'] = True
+        elif arg == '--json':
+            opts['json'] = True
         elif arg.startswith('--min='):
             opts['gridmin'] = int(arg.split('=', 1)[1])
+        elif arg == '--nocsv':
+            opts['csv'] = False
+        elif arg == '--nojson':
+            opts['json'] = False
         elif arg == '--nopoints':
             opts['points'] = False
         elif arg.startswith('--res='):
@@ -266,9 +308,12 @@ if __name__ == '__main__':  # noqa - mccabe
         print """Combine results into a single file plus a references file.
 
 Syntax:  combine.py --grid --nopoints --res=(grid resolution) --min=(grid min)
-                    --group
+                    --group --csv|--nocsv --json|--nojson --adjust
+--adjust adjusts the json file used with cod_adjusted.
+--csv outputs csv files in the built directory.
 --grid outputs a grid of used Re/Mn values to stdout.
 --group outputs only the grid for groups that are present.
+--json ouputs json files to the built directory (default).
 --min specified how many points are required before a grid is output (default
   2).
 --nopoints excludes trajectory information in the output.
@@ -305,7 +350,7 @@ Syntax:  combine.py --grid --nopoints --res=(grid resolution) --min=(grid min)
                     factor *= max(1, min(50 - adjust.get('version', 0),
                                          abs(GroupsGrid[mn][re])))
                 table[str(mn)][str(re)] = (
-                    table[str(mn)].get(str(re), 0) - factor)  # ##DWM:: + factor?
+                    table[str(mn)].get(str(re), 0) - factor)  # ##DWM:: +factor?
         if len(adjust.get('table', {})):
             adjust['table_%d' % adjust.get('version', 0)] = adjust['table']
         adjust['version'] = adjust.get('version', 0) + 1
