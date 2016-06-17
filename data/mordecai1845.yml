@@ -7593,5 +7593,158 @@ data:
               - final_velocity: 1307 ft/s
               - final_velocity: 1323 ft/s
               - final_velocity: 1361 ft/s
+  -
+    ref2: "p. 158"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    technique: pendulum
+    desc2: "Powder 'Xp4' (Dupont musket)"
+    date: "1844-12-13"
+    pressure: 29.682 inHg
+    temperature: 49.5 F
+    wetbulb: 46.5 F
+    charge: 110 gr
+    diameter: 0.65 in
+    mass: 410.2 gr
+    data:
+      - final_velocity: 1503 ft/s
+      - final_velocity: 1506 ft/s
+      - final_velocity: 1493 ft/s
+      - final_velocity: 1558 ft/s
+      - final_velocity: 1534 ft/s
+      - final_velocity: 1428 ft/s
+      - final_velocity: 1477 ft/s
+      - final_velocity: 1518 ft/s
+      - final_velocity: 1471 ft/s
+      - final_velocity: 1627 ft/s
+  -
+    ref2: "p. 159"
+    desc: "Experiments with the musket pendulum.  Pistol"
+    material: iron
+    angle: 0 deg
+    range: 2 ft
+    technique: pendulum
+    desc2: "Powder 'Xp5' (Dupont rifle)"
+    date: "1844-12-13"
+    pressure: 29.682 inHg
+    temperature: 49.5 F
+    wetbulb: 46.5 F
+    charge: 35 gr
+    diameter: 0.525 in
+    mass: 218.5 gr
+    data:
+      - final_velocity: 932 ft/s
+      - final_velocity: 943 ft/s
+      - final_velocity: 908 ft/s
+      - final_velocity: 989 ft/s
+      - final_velocity: 963 ft/s
+  -
+    ref2: "p. 161"
+    desc: "Experiments with the musket pendulum."
+    material: iron
+    angle: 0 deg
+    range: 6 ft
+    technique: pendulum
+    date: "1844-12-19"
+    data:
+      -
+        pressure: 30.226 inHg
+        temperature: 28 F
+        desc2: "Powder 'Xp4' (Dupont musket)"
+        charge: 110 gr
+        diameter: 0.65 in
+        mass: 410.2 gr
+        data:
+          - final_velocity: 1404 ft/s
+          - final_velocity: 1432 ft/s
+          - final_velocity: 1432 ft/s
+          - final_velocity: 1373 ft/s
+          - final_velocity: 1396 ft/s
+          - final_velocity: 1396 ft/s
+          - final_velocity: 1431 ft/s
+          - final_velocity: 1373 ft/s
+          - final_velocity: 1483 ft/s
+          - final_velocity: 1440 ft/s
+      -
+        pressure: 29.909 inHg
+        temperature: 42 F
+        wetbulb: 40 F
+        desc2: "Powder 'Xp5' (Dupont rifle)"
+        charge: 80 gr
+        diameter: 0.525 in
+        mass: 218.3 gr
+        data:
+          - final_velocity: 1758 ft/s
+          - final_velocity: 1801 ft/s
+          - final_velocity: 1821 ft/s
+          - final_velocity: 1825 ft/s
+          - final_velocity: 1824 ft/s
+  -
+    ref2: "p. 163"
+    desc: "Experiments with the musket"
+    material: iron
+    angle: 0 deg
+    charge: 110 gr
+    desc2: "Powder 'Xp4' (Dupont musket)"
+    diameter: 0.64 in
+    diameter_note: "based on windage"
+    mass: 397.5 gr
+    mass_note: "based on diameter, which is based on windage"
+    technique: "trajectory"
+    data:
+      -
+        date: "1845-01-14"
+        range: 80 yds
+        data:
+          - final_height: -7.25 in
+          - final_height: -10 in
+          - final_height: -4.5 in
+          - final_height: -6.5 in
+          - final_height: -10.25 in
+          - final_height: -18 in
+      -
+        date: "1845-01-15"
+        range: 120 yds
+        data:
+          - final_height: -18.5 in
+          - final_height: -22 in
+          - final_height: -26.5 in
+          - final_height: -30.25 in
+          - final_height: -17 in
+          - final_height: -26.25 in
+          - final_height: -17.25 in
+          - final_height: -20.25 in
+          - final_height: -38 in
+          - final_height: -14.25 in
+      -
+        date: "1845-01-15"
+        range: 150 yds
+        data:
+          - final_height: -25.9 in
+          - final_height: -30.25 in
+          - final_height: -40.5 in
+          - final_height: -31.75 in
+          - final_height: -28.4 in
+          - final_height: -26 in
+          - final_height: -30 in
+          - final_height: -43 in
+      -
+        date: "1845-01-16"
+        range: 200 yds
+        angle: 36 arcmin
+        data:
+          - final_height: -27 in
+          - final_height: 0 in
+          - final_height: 18.25 in
+          - final_height: -5.5 in
+          - final_height: -8 in
+          - final_height: 16.25 in
+      -
+        date: "1845-01-16"
+        range: 500 yds
+        angle: 3 deg 15 arcmin
+        range_note: "approximate, as the actual height isn't given"
 
-# Processed through page 157
+# Processed through page 163
