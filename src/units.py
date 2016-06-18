@@ -146,6 +146,7 @@ UnitsTable = [
      'Percent slope'),
 
     # Time (reference is second)
+    (['third', 'thirds'], False, 1.0 / 60, 'Third (time)'),
     (['s', 'sec', 'second', 'seconds'], True, 1.0, 'Second (time)'),
     (['min', 'minute', 'minutes'], False, 60.0, 'Minute (time)'),
     (['h', 'hour', 'hours'], False, 3600.0, 'Hour (time)'),
