@@ -1,7 +1,7 @@
 ---
 key: mordecai1845
-ref: "Mondecai, 1845"
-cms: "Mondecai, Alfred, <i>Report of Experiments on Gunpowder, made at Washington Arsenal, in 1843 and 1844</i>, Washington: J. and G. S. Gideon, 1845."
+ref: "Mordecai, 1845"
+cms: "Mordecai, Alfred, <i>Report of Experiments on Gunpowder, made at Washington Arsenal, in 1843 and 1844</i>, Washington: J. and G. S. Gideon, 1845."
 summary: "The first of two large sets of experiments on gunpowder."
 date: "1845"
 data:
@@ -6260,7 +6260,7 @@ data:
   -
     ref2: "p. 126"
     desc: "Experiments with the musket pendulum"
-    material: iron
+    material: lead
     angle: 0 deg
     diameter: 0.6415 in
     range: 6 ft
@@ -6335,7 +6335,7 @@ data:
   -
     ref2: "p. 128"
     desc: "Experiments with the musket pendulum"
-    material: iron
+    material: lead
     angle: 0 deg
     diameter: 0.641 in
     range: 6 ft
@@ -6391,7 +6391,7 @@ data:
   -
     ref2: "p. 129"
     desc: "Experiments with the musket pendulum"
-    material: iron
+    material: lead
     angle: 0 deg
     diameter: 0.641 in
     diameter_note: "Assumed based on context"
@@ -6439,7 +6439,7 @@ data:
   -
     ref2: "p. 130"
     desc: "Experiments with the musket pendulum"
-    material: iron
+    material: lead
     angle: 0 deg
     diameter: 0.641 in
     diameter_note: "Assumed"
@@ -6482,7 +6482,7 @@ data:
   -
     ref2: "p. 131"
     desc: "Experiments with the musket pendulum"
-    material: iron
+    material: lead
     angle: 0 deg
     diameter: 0.641 in
     diameter_note: "Assumed"
@@ -6532,7 +6532,7 @@ data:
   -
     ref2: "p. 132"
     desc: "Experiments with the musket pendulum.  Different wads"
-    material: iron
+    material: lead
     angle: 0 deg
     diameter: 0.641 in
     diameter_note: "Assumed"
@@ -6572,7 +6572,7 @@ data:
   -
     ref2: "p. 134"
     desc: "Experiments with the musket pendulum.  Different wads"
-    material: iron
+    material: lead
     angle: 0 deg
     diameter: 0.641 in
     diameter_note: "Assumed"
@@ -6623,7 +6623,7 @@ data:
   -
     ref2: "p. 135"
     desc: "Experiments with the musket pendulum.  Lighter pendulum"
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     date: "1844-05-29"
@@ -6644,7 +6644,7 @@ data:
   -
     ref2: "p. 136"
     desc: "Experiments with the musket pendulum.  Different pendulum cores"
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     diameter: 0.64 in
@@ -6698,7 +6698,7 @@ data:
   -
     ref2: "p. 140"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     diameter: 0.64 in
@@ -6742,7 +6742,7 @@ data:
   -
     ref2: "p. 141"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -6801,7 +6801,7 @@ data:
   -
     ref2: "p. 142"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -6870,7 +6870,7 @@ data:
   -
     ref2: "p. 143"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -6927,7 +6927,7 @@ data:
   -
     ref2: "p. 144"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -6990,7 +6990,7 @@ data:
   -
     ref2: "p. 145"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -7051,7 +7051,7 @@ data:
   -
     ref2: "p. 146"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -7114,7 +7114,7 @@ data:
   -
     ref2: "p. 147"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -7177,7 +7177,7 @@ data:
   -
     ref2: "p. 148"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -7241,7 +7241,7 @@ data:
   -
     ref2: "p. 149"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -7290,7 +7290,7 @@ data:
   -
     ref2: "p. 150"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -7424,7 +7424,7 @@ data:
   -
     ref2: "p. 153"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -7485,7 +7485,7 @@ data:
   -
     ref2: "p. 156"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -7541,7 +7541,7 @@ data:
   -
     ref2: "p. 157"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -7596,7 +7596,7 @@ data:
   -
     ref2: "p. 158"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -7622,7 +7622,7 @@ data:
   -
     ref2: "p. 159"
     desc: "Experiments with the musket pendulum.  Pistol"
-    material: iron
+    material: lead
     angle: 0 deg
     range: 2 ft
     technique: pendulum
@@ -7643,7 +7643,7 @@ data:
   -
     ref2: "p. 161"
     desc: "Experiments with the musket pendulum."
-    material: iron
+    material: lead
     angle: 0 deg
     range: 6 ft
     technique: pendulum
@@ -8678,5 +8678,1114 @@ data:
               - range: 303 yds
               - range: 319 yds
               - range: 313 yds
+          -
+            desc2: "Powder 'K1r' (Dupont large cannon, rough)"
+            data:
+              - range: 279 yds
+              - range: 288 yds
+              - range: 288 yds
+          -
+            desc2: "Powder 'K1g' (Dupont large cannon, glazed)"
+            data:
+              - range: 257 yds
+              - range: 272 yds
+              - range: 279 yds
+          -
+            desc2: "Powder 'L1' (Dupont large cannon)"
+            data:
+              - range: 240 yds
+              - range: 243 yds
+              - range: 240 yds
+          -
+            desc2: "Powder 'M1' (Dupont large cannon)"
+            data:
+              - range: 258 yds
+              - range: 280 yds
+              - range: 282 yds
+      -
+        ref2: "p. 176"
+        date: "1844-06-20"
+        pressure: 29.850 inHg
+        temperature: 80 F
+        wetbulb: 73.5 F
+        data:
+          -
+            desc2: "Powder 'N' (Dupont uneven cannon)"
+            data:
+              - range: 281 yds
+              - range: 300 yds
+              - range: 300 yds
+          -
+            desc2: "Powder 'R15' (Dupont large cannon)"
+            data:
+              - range: 290 yds
+              - range: 308 yds
+              - range: 310 yds
+          -
+            desc2: "Powder 'R30' (Dupont large cannon)"
+            data:
+              - range: 298 yds
+              - range: 314 yds
+              - range: 320 yds
+          -
+            desc2: "Powder 'R60' (Dupont large cannon)"
+            data:
+              -
+                group: "176-R60-1"
+                data:
+                  - range: 300 yds
+                  - final_time: 7 s 56 thirds
+              -
+                group: "176-R60-2"
+                data:
+                  - range: 311 yds
+                  - final_time: 8 s 24 thirds
+              -
+                group: "176-R60-3"
+                data:
+                  - range: 316 yds
+                  - final_time: 8 s 20 thirds
+          -
+            desc2: "Powder 'R90' (Dupont large cannon)"
+            data:
+              -
+                group: "176-R90-1"
+                data:
+                  - range: 279 yds
+                  - final_time: 7 s 33 thirds
+              -
+                group: "176-R90-2"
+                data:
+                  - range: 296 yds
+                  - final_time: 8 s
+              -
+                group: "176-R90-3"
+                data:
+                  - range: 303 yds
+                  - final_time: 8 s 10 thirds
+          -
+            desc2: "Powder 'S' (Dupont uneven blasting)"
+            data:
+              -
+                group: "176-S-1"
+                data:
+                  - range: 282 yds
+                  - final_time: 7 s 59 thirds
+              -
+                group: "176-S-2"
+                data:
+                  - range: 300 yds
+                  - final_time: 8 s 17 thirds
+              -
+                group: "176-S-3"
+                data:
+                  - range: 300 yds
+                  - final_time: 8 s 8 thirds
+      -
+        ref2: "p. 176"
+        date: "1844-06-20"
+        pressure: 29.826 inHg
+        temperature: 79.5 F
+        wetbulb: 74 F
+        data:
+          -
+            desc2: "Powder 'T' (Sumaneytown large blasting)"
+            data:
+              - range: 56 yds
+              -
+                group: "176-T-2"
+                data:
+                  - range: 56 yds
+                  - final_time: 3 s 17 thirds
+              -
+                group: "176-T-3"
+                data:
+                  - range: 52 yds
+                  - final_time: 3 s 4 thirds
+          -
+            desc2: "Powder 'C5' (Loomises, Hazard, and Co. rifle)"
+            data:
+              -
+                group: "176-C5-1"
+                data:
+                  - range: 288 yds
+                  - final_time: 7 s 52 thirds
+              -
+                group: "176-C5-2"
+                data:
+                  - range: 310 yds
+                  - final_time: 8 s 14 thirds
+              -
+                group: "176-C5-3"
+                data:
+                  - range: 316 yds
+                  - final_time: 8 s 18 thirds
+          -
+            desc2: "French sporting powder"
+            data:
+              -
+                group: "176-frsp-1"
+                data:
+                  - range: 296 yds
+                  - final_time: 8 s 27 thirds
+              -
+                group: "176-frsp-2"
+                data:
+                  - range: 321 yds
+                  - final_time: 8 s 19 thirds
+              -
+                group: "176-frsp-3"
+                data:
+                  - range: 325 yds
+                  - final_time: 8 s 25 thirds
+          -
+            desc2: "Swedish musket powder"
+            data:
+              -
+                group: "176-swmu-1"
+                data:
+                  - range: 247 yds
+                  - final_time: 7 s 19 thirds
+              -
+                group: "176-swmu-2"
+                data:
+                  - range: 272 yds
+                  - final_time: 7 s 35 thirds
+              -
+                group: "176-swmu-3"
+                data:
+                  - range: 273 yds
+                  - final_time: 7 s 36 thirds
+          -
+            desc2: "Powder from old musket cartridges"
+            data:
+              -
+                group: "176-old-1"
+                data:
+                  - range: 267 yds
+                  - final_time: 7 s 49 thirds
+              -
+                group: "176-old-2"
+                data:
+                  - range: 284 yds
+                  - final_time: 8 s 2 thirds
+              -
+                group: "176-old-3"
+                data:
+                  - range: 287 yds
+                  - final_time: 8 s 10 thirds
+  -
+    desc: "Experiments with the French mortar eprouvette."
+    material: iron
+    angle: 45 deg
+    diameter: 7.4634 in
+    mass: 64.6 lb
+    charge: 92 g
+    data:
+      -
+        ref2: "p. 178"
+        date: "1843-09-18"
+        pressure: 30.040 inHg
+        temperature: 74.5 F
+        wetbulb: 71 F
+        data:
+          -
+            desc2: "Powder 'A' (Dupont uneven cannon)"
+            data:
+              - range: 211 yds
+              - range: 211 yds
+              - range: 219 yds
+          -
+            desc2: "Powder 'B' (Garesche uneven cannon)"
+            data:
+              - range: 240 yds
+              - range: 249 yds
+              - range: 251 yds
+          -
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
+            data:
+              - range: 206 yds
+              - range: 214 yds
+              - range: 227 yds
+          -
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
+            data:
+              - range: 216 yds
+              - range: 211 yds
+              - range: 229 yds
+          -
+            desc2: "Powder 'A' (Dupont uneven cannon)"
+            data:
+              - range: 221 yds
+              - range: 241 yds
+              - range: 237 yds
+          -
+            desc2: "Powder 'B' (Garesche uneven cannon)"
+            data:
+              - range: 242 yds
+              - range: 256 yds
+              - range: 263 yds
+      -
+        ref2: "p. 178"
+        date: "1843-09-18"
+        pressure: 30.032 inHg
+        temperature: 87.5 F
+        wetbulb: 76 F
+        data:
+          -
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
+            data:
+              - range: 230 yds
+              - range: 234 yds
+              - range: 236 yds
+          -
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
+            data:
+              - range: 230 yds
+              - range: 243 yds
+              - range: 245 yds
+          -
+            desc2: "Powder 'E' (Dupont uneven cannon)"
+            data:
+              - range: 159 yds
+              - range: 173 yds
+              - range: 172 yds
+          -
+            desc2: "Powder 'F' (Dupont uneven cannon)"
+            data:
+              - range: 254 yds
+              - range: 267 yds
+              - range: 268 yds
+          -
+            desc2: "Powder 'A1' (Dupont large cannon)"
+            data:
+              - range: 208 yds
+              - range: 221 yds
+              - range: 253 yds
+          -
+            desc2: "Powder 'B1' (Garesche large cannon)"
+            data:
+              - range: 230 yds
+              - range: 238 yds
+              - range: 241 yds
+          -
+            desc2: "Powder 'C1' (Loomises, Hazard, and Co. large cannon)"
+            data:
+              - range: 181 yds
+              - range: 192 yds
+              - range: 192 yds
+      -
+        ref2: "p. 178"
+        date: "1843-09-19"
+        pressure: 30.117 inHg
+        temperature: 85 F
+        wetbulb: 74 F
+        data:
+          -
+            desc2: "Powder 'D1' (Masters, Swith, and Co. large cannon)"
+            data:
+              - range: 226 yds
+              - range: 242 yds
+              - range: 214 yds
+          -
+            desc2: "Powder 'E1' (Dupont large cannon)"
+            data:
+              - range: 150 yds
+              - range: 165 yds
+              - range: 161 yds
+          -
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            data:
+              - range: 251 yds
+              - range: 264 yds
+              - range: 264 yds
+          -
+            desc2: "Powder 'G1' (Dupont large cannon)"
+            data:
+              - range: 199 yds
+              - range: 216 yds
+              - range: 216 yds
+      -
+        ref2: "p. 178"
+        date: "1843-09-20"
+        pressure: 30.250 inHg
+        temperature: 75 F
+        wetbulb: 68 F
+        data:
+          -
+            desc2: "Powder 'A2' (Dupont medium cannon)"
+            data:
+              - range: 233 yds
+              - range: 227 yds
+              - range: 246 yds
+          -
+            desc2: "Powder 'B2' (Garesche medium cannon)"
+            data:
+              - range: 251 yds
+              - range: 252 yds
+              - range: 242 yds
+          -
+            desc2: "Powder 'C2' (Loomises, Hazard, and Co. medium cannon)"
+            data:
+              - range: 226 yds
+              - range: 249 yds
+              - range: 223 yds
+          -
+            desc2: "Powder 'D2' (Masters, Swith, and Co. medium cannon)"
+            data:
+              - range: 241 yds
+              - range: 262 yds
+              - range: 261 yds
+          -
+            desc2: "Powder 'E2' (Dupont medium cannon)"
+            data:
+              - range: 158 yds
+              - range: 174 yds
+              - range: 168 yds
+          -
+            desc2: "Powder 'F2' (Dupont medium cannon)"
+            data:
+              - range: 241 yds
+              - range: 258 yds
+              - range: 255 yds
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            data:
+              - range: 241 yds
+              - range: 254 yds
+              - range: 255 yds
+          -
+            desc2: "Powder 'E5' (Dupont rifle)"
+            data:
+              - range: 231 yds
+              - range: 220 yds
+              - range: 244 yds
+          -
+            desc2: "Powder 'A3' (Dupont small cannon)"
+            data:
+              - range: 257 yds
+              - range: 247 yds
+              - range: 278 yds
+      -
+        ref2: "p. 178"
+        date: "1843-09-20"
+        pressure: 30.297 inHg
+        temperature: 82 F
+        wetbulb: 72 F
+        data:
+          -
+            desc2: "Powder 'B3' (Garesche small cannon)"
+            data:
+              - range: 246 yds
+              - range: 261 yds
+              - range: 268 yds
+          -
+            desc2: "Powder 'C3' (Loomises, Hazard, and Co. small cannon)"
+            data:
+              - range: 233 yds
+              - range: 268 yds
+              - range: 259 yds
+      -
+        ref2: "p. 179"
+        date: "1843-09-20"
+        pressure: 30.297 inHg
+        temperature: 82 F
+        wetbulb: 72 F
+        data:
+          -
+            desc2: "Powder 'D3' (Masters, Swith, and Co. small cannon)"
+            data:
+              - range: 251 yds
+              - range: 253 yds
+              - range: 266 yds
+          -
+            desc2: "Powder 'E3' (Dupont small cannon)"
+            data:
+              - range: 175 yds
+              - range: 191 yds
+              - range: 208 yds
+          -
+            desc2: "Powder 'F0' (Dupont very large)"
+            data:
+              - range: 251 yds
+              - range: 257 yds
+              - range: 260 yds
+          -
+            desc2: "Powder 'A0' (Dupont very large)"
+            data:
+              - range: 238 yds
+              - range: 257 yds
+              - range: 255 yds
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            range: 274 yds
+          -
+            desc2: "Powder 'E5' (Dupont rifle)"
+            range: 278 yds
+          -
+            desc2: "Powder 'E3' (Dupont small cannon)"
+            range: 236 yds
+      -
+        ref2: "p. 179"
+        date: "1843-09-13"
+        pressure: 30.155 inHg
+        temperature: 61 F
+        wetbulb: 56 F
+        data:
+          -
+            desc2: "French cannon powder"
+            data:
+              - range: 257 yds
+              - range: 256 yds
+              - range: 257 yds
+      -
+        ref2: "p. 179"
+        date: "1843-09-19"
+        pressure: 30.117 inHg
+        temperature: 85 F
+        wetbulb: 74 F
+        data:
+          -
+            desc2: "French cannon powder"
+            data:
+              - range: 274 yds
+              - range: 259 yds
+          -
+            desc2: "French musket powder"
+            data:
+              - range: 251 yds
+              - range: 264 yds
+              - range: 249 yds
+          -
+            desc2: "English cannon powder"
+            data:
+              - range: 203 yds
+              - range: 231 yds
+              - range: 223 yds
+          -
+            desc2: "English musket powder"
+            data:
+              - range: 255 yds
+              - range: 268 yds
+              - range: 271 yds
+          -
+            desc2: "English rifle powder"
+            data:
+              - range: 243 yds
+              - range: 257 yds
+              - range: 268 yds
+      -
+        ref2: "p. 179"
+        date: "1844-06-21"
+        pressure: 29.786 inHg
+        temperature: 82 F
+        wetbulb: 71 F
+        data:
+          -
+            desc2: "Powder 'H' (Waltham Abbey uneven cannon from 1812)"
+            data:
+              -
+                group: "179-H-1"
+                data:
+                  - range: 222 yds
+                  - final_time: 6 s 38 thirds
+              -
+                group: "179-H-2"
+                data:
+                  - range: 239 yds
+                  - final_time: 6 s 56 thirds
+              -
+                group: "179-H-3"
+                data:
+                  - range: 232 yds
+                  - final_time: 7 s 20 thirds
+          -
+            desc2: "Powder 'A4' (Dupont musket)"
+            data:
+              -
+                group: "179-A4-1"
+                data:
+                  - range: 248 yds
+                  - final_time: 7 s 31 thirds
+              -
+                group: "179-A4-2"
+                data:
+                  - range: 267 yds
+                  - final_time: 7 s 44 thirds
+              -
+                group: "179-A4-3"
+                data:
+                  - range: 265 yds
+                  - final_time: 7 s 50 thirds
+          -
+            desc2: "Powder 'K1r' (Dupont large cannon, rough)"
+            data:
+              -
+                group: "179-K1r-1"
+                data:
+                  - range: 230 yds
+                  - final_time: 7 s 24 thirds
+              -
+                group: "179-K1r-2"
+                data:
+                  - range: 240 yds
+                  - final_time: 7 s 16 thirds
+              -
+                group: "179-K1r-3"
+                data:
+                  - range: 239 yds
+                  - final_time: 7 s 7 thirds
+          -
+            desc2: "Powder 'K1g' (Dupont large cannon, glazed)"
+            data:
+              -
+                group: "179-K1g-1"
+                data:
+                  - range: 206 yds
+                  - final_time: 6 s 47 thirds
+              -
+                group: "179-K1g-2"
+                data:
+                  - range: 214 yds
+                  - final_time: 6 s 58 thirds
+              -
+                group: "179-K1g-3"
+                data:
+                  - range: 214 yds
+                  - final_time: 7 s 4 thirds
+          -
+            desc2: "Powder 'L1' (Dupont large cannon)"
+            data:
+              -
+                group: "179-L1-1"
+                data:
+                  - range: 196 yds
+                  - final_time: 6 s 40 thirds
+              -
+                group: "179-L1-2"
+                data:
+                  - range: 216 yds
+                  - final_time: 7 s 20 thirds
+              -
+                group: "179-L1-3"
+                data:
+                  - range: 209 yds
+                  - final_time: 6 s 58 thirds
+          -
+            desc2: "Powder 'M1' (Dupont large cannon)"
+            data:
+              -
+                group: "179-M1-1"
+                data:
+                  - range: 224 yds
+                  - final_time: 7 s 18 thirds
+              -
+                group: "179-M1-2"
+                data:
+                  - range: 232 yds
+                  - final_time: 7 s 12 thirds
+              -
+                group: "179-M1-3"
+                data:
+                  - range: 230 yds
+                  - final_time: 7 s
+          -
+            desc2: "Powder 'N' (Dupont uneven cannon)"
+            data:
+              -
+                group: "179-N-1"
+                data:
+                  - range: 226 yds
+                  - final_time: 7 s 8 thirds
+              -
+                group: "179-N-2"
+                data:
+                  - range: 239 yds
+                  - final_time: 7 s 12 thirds
+              -
+                group: "179-N-3"
+                data:
+                  - range: 238 yds
+                  - final_time: 7 s 18 thirds
+          -
+            desc2: "Powder 'R15' (Dupont large cannon)"
+            data:
+              -
+                group: "179-R15-1"
+                data:
+                  - range: 250 yds
+                  - final_time: 7 s 34 thirds
+              -
+                group: "179-R15-2"
+                data:
+                  - range: 260 yds
+                  - final_time: 7 s 52 thirds
+              -
+                group: "179-R15-3"
+                data:
+                  - range: 260 yds
+                  - final_time: 7 s 42 thirds
+          -
+            desc2: "Powder 'R90' (Dupont large cannon)"
+            data:
+              -
+                group: "179-R90-1"
+                data:
+                  - range: 222 yds
+                  - final_time: 7 s 8 thirds
+              -
+                group: "179-R90-2"
+                data:
+                  - range: 234 yds
+                  - final_time: 7 s 12 thirds
+              -
+                group: "179-R90-3"
+                data:
+                  - range: 239 yds
+                  - final_time: 7 s 16 thirds
+          -
+            desc2: "Powder 'S' (Dupont uneven blasting)"
+            data:
+              -
+                group: "179-S-1"
+                data:
+                  - range: 242 yds
+                  - final_time: 7 s 30 thirds
+              -
+                group: "179-S-2"
+                data:
+                  - range: 244 yds
+                  - final_time: 7 s 36 thirds
+              -
+                group: "179-S-3"
+                data:
+                  - range: 240 yds
+                  - final_time: 7 s 36 thirds
+          -
+            desc2: "Powder 'T' (Sumaneytown large blasting)"
+            data:
+              -
+                group: "179-T-1"
+                data:
+                  - range: 49 yds
+                  - final_time: 3 s 11 thirds
+              -
+                group: "179-T-2"
+                data:
+                  - range: 48 yds
+                  - final_time: 3 s 17 thirds
+              -
+                group: "179-T-3"
+                data:
+                  - range: 70 yds
+                  - final_time: 4 s 8 thirds
+  -
+    desc: "Experiments with the Alger's eprouvette."
+    material: iron
+    angle: 60 deg
+    diameter: 6 in
+    mass: 30 lb
+    charge: 0.5 oz
+    ref2: "p. 185"
+    data:
+      -
+        date: "1843-10-06"
+        pressure: 29.908 inHg
+        temperature: 50 F
+        data:
+          -
+            desc2: "Powder 'A' (Dupont uneven cannon)"
+            data:
+              - range: 131 yds
+              - range: 95 yds
+              - range: 88 yds
+          -
+            desc2: "Powder 'B' (Garesche uneven cannon)"
+            data:
+              - range: 142 yds
+              - range: 88 yds
+              - range: 93 yds
+          -
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
+            data:
+              - range: 96 yds
+              - range: 100 yds
+              - range: 105 yds
+          -
+            desc2: "Powder 'F' (Dupont uneven cannon)"
+            data:
+              - range: 100 yds
+              - range: 145 yds
+              - range: 137 yds
+          -
+            desc2: "Powder 'E' (Dupont uneven cannon)"
+            data:
+              - range: 100 yds
+              - range: 112 yds
+              - range: 113 yds
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            data:
+              - range: 160 yds
+              - range: 126 yds
+              - range: 124 yds
+      -
+        date: "1843-10-06"
+        pressure: 29.818 inHg
+        temperature: 63 F
+        data:
+          -
+            desc2: "Powder 'E5' (Dupont rifle)"
+            data:
+              - range: 154 yds
+              - range: 147 yds
+              - range: 144 yds
+          -
+            desc2: "Powder 'A1' (Dupont large cannon)"
+            data:
+              - range: 138 yds
+              - range: 140 yds
+              - range: 138 yds
+          -
+            desc2: "Powder 'B1' (Garesche large cannon)"
+            data:
+              - range: 97 yds
+              - range: 144 yds
+              - range: 90 yds
+      -
+        date: "1843-10-07"
+        pressure: 30 inHg
+        temperature: 53 F
+        data:
+          -
+            desc2: "Powder 'C1' (Loomises, Hazard, and Co. large cannon)"
+            data:
+              - range: 126 yds
+              - range: 128 yds
+              - range: 128 yds
+          -
+            desc2: "Powder 'D1' (Masters, Swith, and Co. large cannon)"
+            data:
+              - range: 132 yds
+              - range: 131 yds
+              - range: 131 yds
+          -
+            desc2: "Powder 'E1' (Dupont large cannon)"
+            data:
+              - range: 110 yds
+              - range: 108 yds
+              - range: 111 yds
+          -
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            data:
+              - range: 143 yds
+              - range: 114 yds
+              - range: 139 yds
+          -
+            desc2: "Powder 'G1' (Dupont large cannon)"
+            data:
+              - range: 122 yds
+              - range: 138 yds
+              - range: 138 yds
+          -
+            desc2: "Powder 'F0' (Dupont very large)"
+            data:
+              - range: 128 yds
+              - range: 130 yds
+          -
+            desc2: "Powder 'A0' (Dupont very large)"
+            data:
+              - range: 113 yds
+              - range: 109 yds
+      -
+        date: "1843-10-07"
+        pressure: 29.97 inHg
+        temperature: 52 F
+        data:
+          -
+            desc2: "Powder 'A' (Dupont uneven cannon)"
+            data:
+              - range: 151 yds
+              - range: 155 yds
+              - range: 157 yds
+          -
+            desc2: "Powder 'B' (Garesche uneven cannon)"
+            data:
+              - range: 152 yds
+              - range: 152 yds
+              - range: 118 yds
+          -
+            desc2: "Powder 'C' (Loomises, Hazard, and Co. uneven cannon)"
+            data:
+              - range: 141 yds
+              - range: 148 yds
+              - range: 129 yds
+          -
+            desc2: "Powder 'D' (Masters, Swith, and Co. uneven cannon)"
+            data:
+              - range: 145 yds
+              - range: 149 yds
+              - range: 105 yds
+          -
+            desc2: "Powder 'A2' (Dupont medium cannon)"
+            data:
+              - range: 141 yds
+              - range: 155 yds
+              - range: 113 yds
+          -
+            desc2: "Powder 'A3' (Dupont small cannon)"
+            data:
+              - range: 162 yds
+              - range: 155 yds
+              - range: 158 yds
+          -
+            desc2: "Powder 'E2' (Dupont medium cannon)"
+            data:
+              - range: 120 yds
+              - range: 123 yds
+              - range: 119 yds
+          -
+            desc2: "Powder 'F2' (Dupont medium cannon)"
+            data:
+              - range: 157 yds
+              - range: 155 yds
+              - range: 148 yds
+  -
+    desc: "Trial with the musket pendulum of powder after exposure to air saturated with moisture."
+    material: lead
+    angle: 0 deg
+    range: 6 ft
+    diameter: 0.64 in
+    mass: 397.5 gr
+    charge: 120 gr
+    technique: pendulum
+    data:
+      -
+        ref2: "p. 205"
+        date: "1844-07-09"
+        pressure: 29.910 inHg
+        temperature: 82.5 F
+        wetbulb: 74 F
+        data:
+          -
+            desc2: "Powder 'A1' (Dupont large cannon)"
+            data:
+              - final_velocity: 903 ft/s
+              - final_velocity: 879 ft/s
+          -
+            desc2: "Powder 'B1' (Garesche large cannon)"
+            data:
+              - final_velocity: 1197 ft/s
+              - final_velocity: 1182 ft/s
+          -
+            desc2: "Powder 'E1' (Dupont large cannon)"
+            data:
+              - final_velocity: 1188 ft/s
+              - final_velocity: 1148 ft/s
+      -
+        ref2: "p. 206"
+        date: "1844-07-09"
+        pressure: 29.910 inHg
+        temperature: 82.5 F
+        wetbulb: 74 F
+        data:
+          -
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            data:
+              - final_velocity: 1299 ft/s
+              - final_velocity: 1330 ft/s
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            data:
+              - final_velocity: 1438 ft/s
+              - final_velocity: 1506 ft/s
+          -
+            desc2: "Powder 'E5' (Dupont rifle)"
+            data:
+              - final_velocity: 1475 ft/s
+              - final_velocity: 1469 ft/s
+          -
+            desc2: "Powder 'H' (Waltham Abbey uneven cannon from 1812)"
+            data:
+              - final_velocity: 1114 ft/s
+              - final_velocity: 1043 ft/s
+          -
+            desc2: "Powder 'K1g' (Dupont large cannon, glazed)"
+            data:
+              - final_velocity: 1015 ft/s
+              - final_velocity: 1039 ft/s
+      -
+        ref2: "p. 206"
+        date: "1844-07-24"
+        pressure: 29.856 inHg
+        temperature: 83 F
+        wetbulb: 77 F
+        data:
+          -
+            desc2: "Powder 'A5' (Dupont rifle)"
+            data:
+              - final_velocity: 1500 ft/s
+              - final_velocity: 1531 ft/s
+          -
+            desc2: "Powder 'A3' (Dupont small cannon).  Uncertain record reads A. 34"
+            data:
+              - final_velocity: 1444 ft/s
+              - final_velocity: 1515 ft/s
+          -
+            desc2: "Powder 'S' (Dupont uneven blasting)"
+            data:
+              - final_velocity: 990 ft/s
+              - final_velocity: 913 ft/s
+          -
+            desc2: "Powder 'L1' (Dupont large cannon)"
+            data:
+              - final_velocity: 956 ft/s
+              - final_velocity: 1042 ft/s
+      -
+        ref2: "p. 207"
+        date: "1844-07-24"
+        pressure: 29.856 inHg
+        temperature: 83 F
+        wetbulb: 77 F
+        data:
+          -
+            desc2: "Powder 'M1' (Dupont large cannon)"
+            data:
+              - final_velocity: 1111 ft/s
+              - final_velocity: 1268 ft/s
+          -
+            desc2: "Powder 'N' (Dupont uneven cannon)"
+            data:
+              - final_velocity: 1182 ft/s
+              - final_velocity: 999 ft/s
+          -
+            desc2: "Powder 'R15' (Dupont large cannon)"
+            data:
+              - final_velocity: 1318 ft/s
+              - final_velocity: 1318 ft/s
+          -
+            desc2: "Powder 'R30' (Dupont large cannon)"
+            data:
+              - final_velocity: 1160 ft/s
+              - final_velocity: 1225 ft/s
+          -
+            desc2: "Powder 'R60' (Dupont large cannon)"
+            data:
+              - final_velocity: 1095 ft/s
+              - final_velocity: 1108 ft/s
+          -
+            desc2: "Powder 'R90' (Dupont large cannon)"
+            data:
+              - final_velocity: 1002 ft/s
+              - final_velocity: 922 ft/s
+          -
+            desc2: "Powder 'F0' (Dupont very large)"
+            data:
+              - final_velocity: 1166 ft/s
+              - final_velocity: 1120 ft/s
+          -
+            desc2: "Powder 'A0' (Dupont very large)"
+            data:
+              - final_velocity: 712 ft/s
+              - final_velocity: 727 ft/s
+  -
+    desc: "Initial velocities from other sources"
+    ref2: "p. 244"
+    data:
+      -
+        desc2: "Hutton"
+        data:
+          -
+            charge: 0.25 lb
+            data:
+              -
+                diameter: 1.97 in
+                mass: 1.0547 lb
+                initial_velocity: 1346 ft/s
+              -
+                diameter: 1.92 in
+                mass: 1.008 lb
+                initial_velocity: 1244 ft/s
+              -
+                diameter: 1.87 in
+                mass: 0.9453 lb
+                initial_velocity: 1225 ft/s
+          -
+            charge: 0.5 lb
+            data:
+              -
+                diameter: 1.97 in
+                mass: 1.0547 lb
+                initial_velocity: 1815 ft/s
+              -
+                diameter: 1.92 in
+                mass: 1.0117 lb
+                initial_velocity: 1728 ft/s
+              -
+                diameter: 1.87 in
+                mass: 0.9453 lb
+                initial_velocity: 1662 ft/s
+      -
+        desc2: "Gregory"
+        data:
+          -
+            charge: 3.336 lb
+            diameter: 4.5425 in
+            mass: 12.711 lb
+            initial_velocity: 1545 ft/s
+          -
+            charge: 4 lb
+            diameter: 4.4185 in
+            mass: 11.717 lb
+            initial_velocity: 1550 ft/s
+  -
+    desc: "Charges from other services"
+    ref2: "p. 326"
+    material: iron
+    data:
+      -
+        desc2: "Esquerdes.  French pounding mill powder"
+        mass: 30 lbfr
+        charge: 15 lbfr
+        initial_velocity: 1513 ft/s
+      -
+        desc2: "Powder 'a' (Dupont uneven cannon)"
+        mass: 32 lb
+        charge: 8 lb
+        initial_velocity: 1535 ft/s
+      -
+        desc2: "Powder 'A' (Dupont uneven cannon)"
+        mass: 32 lb
+        charge: 8 lb
+        initial_velocity: 1611 ft/s
+      -
+        desc2: "Esquerdes.  French pounding mill powder"
+        mass: 24 lbfr
+        charge: 12 lbfr
+        initial_velocity: 1677 ft/s
+      -
+        desc2: "Metz.  French pounding mill powder"
+        mass: 24 lbfr
+        charge: 8 lbfr
+        initial_velocity: 1575 ft/s
+      -
+        desc2: "Powder 'a' (Dupont uneven cannon)"
+        mass: 24 lb
+        charge: 6 lb
+        initial_velocity: 1570 ft/s
+      -
+        desc2: "Powder 'A' (Dupont uneven cannon)"
+        mass: 24 lb
+        charge: 6 lb
+        initial_velocity: 1687 ft/s
+      -
+        desc2: "Metz.  French pounding mill powder"
+        mass: 24 lbfr
+        charge: 12 lbfr
+        initial_velocity: 1772 ft/s
+      -
+        desc2: "Powder 'A' (Dupont uneven cannon)"
+        mass: 24 lb
+        charge: 8 lb
+        initial_velocity: 1833 ft/s
 
-# Processed through page 176, line A4
