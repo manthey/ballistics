@@ -1,0 +1,1324 @@
+---
+key: mordecai1849
+ref: "Mordecai, 1849"
+cms: "Mordecai, Alfred, <i>Second Report of Experiments on Gunpowder, made at Washington Arsenal, in 1845, '47, and '48</i>, Washington: J. and G. S. Gideon, 1849."
+summary: "The second of two large sets of experiments on gunpowder."
+date: "1849"
+data:
+  -
+    ref2: "p. 4-5"
+    desc: "Experiments with the six-pounder gun"
+    material: iron
+    angle: 0 deg
+    range: 30 ft
+    data:
+      -
+        date: "1845-07-09"
+        temperature: 90 F
+        diameter: 3.58 in
+        data:
+          -
+            desc2: "Powder 'A2' (Dupont medium cannon)"
+            data:
+              -
+                charge: 1.25 lb
+                data:
+                  -
+                    mass: 6.08 lb
+                    final_velocity: 1437 ft/s
+                  -
+                    mass: 6.12 lb
+                    final_velocity: 1407 ft/s
+                  -
+                    mass: 6.12 lb
+                    final_velocity: 1430 ft/s
+              -
+                charge: 1.5 lb
+                data:
+                  -
+                    mass: 6.10 lb
+                    final_velocity: 1594 ft/s
+                  -
+                    mass: 6.14 lb
+                    final_velocity: 1580 ft/s
+                  -
+                    mass: 6.12 lb
+                    final_velocity: 1553 ft/s
+              -
+                charge: 2 lb
+                data:
+                  -
+                    mass: 6.16 lb
+                    final_velocity: 1732 ft/s
+                  -
+                    mass: 6.14 lb
+                    final_velocity: 1700 ft/s
+                  -
+                    mass: 6.13 lb
+                    final_velocity: 1723 ft/s
+          -
+            desc2: "Powder 'B1' (Garesche large cannon)"
+            charge: 1.5 lb
+            data:
+              -
+                mass: 6.10 lb
+                final_velocity: 1529 ft/s
+              -
+                mass: 6.13 lb
+                final_velocity: 1510 ft/s
+              -
+                mass: 6.10 lb
+                final_velocity: 1538 ft/s
+          -
+            desc2: "Powder 'E' (Dupont uneven cannon)"
+            charge: 1.5 lb
+            data:
+              -
+                mass: 6.11 lb
+                final_velocity: 1316 ft/s
+              -
+                mass: 6.14 lb
+                final_velocity: 1353 ft/s
+              -
+                mass: 6.17 lb
+                final_velocity: 1331 ft/s
+          -
+            desc2: "Powder 'F1' (Dupont large cannon)"
+            charge: 1.5 lb
+            data:
+              -
+                mass: 6.10 lb
+                final_velocity: 1406 ft/s
+              -
+                mass: 6.10 lb
+                final_velocity: 1483 ft/s
+              -
+                mass: 6.13 lb
+                final_velocity: 1426 ft/s
+          -
+            desc2: "Powder 'G1' (Dupont large cannon)"
+            charge: 1.5 lb
+            data:
+              -
+                mass: 6.11 lb
+                final_velocity: 1504 ft/s
+              -
+                mass: 6.13 lb
+                final_velocity: 1508 ft/s
+              -
+                mass: 6.09 lb
+                final_velocity: 1505 ft/s
+          -
+            desc2: "Powder 'G6' (Dupont sporting)"
+            charge: 1.5 lb
+            data:
+              -
+                mass: 6.10 lb
+                final_velocity: 1638 ft/s
+              -
+                mass: 6.12 lb
+                final_velocity: 1634 ft/s
+              -
+                mass: 6.12 lb
+                final_velocity: 1624 ft/s
+          -
+            desc2: "Powder 'H' (Waltham Abbey uneven cannon from 1812)"
+            charge: 1.5 lb
+            data:
+              -
+                mass: 6.07 lb
+                final_velocity: 1532 ft/s
+              -
+                mass: 6.07 lb
+                final_velocity: 1516 ft/s
+              -
+                mass: 6.10 lb
+                final_velocity: 1500 ft/s
+      -
+        date: "1845-07-10"
+        desc2: "Powder 'A3' (Dupont small cannon)"
+        charge: 1.5 lb
+        data:
+          -
+            diameter: 3.58 in
+            data:
+              -
+                mass: 6.16 lb
+                final_velocity: 1489 ft/s
+              -
+                mass: 6.16 lb
+                final_velocity: 1597 ft/s
+              -
+                mass: 6.14 lb
+                final_velocity: 1534 ft/s
+          -
+            diameter: 3.48 in
+            data:
+              -
+                mass: 5.74 lb
+                final_velocity: 1400 ft/s
+              -
+                mass: 5.65 lb
+                final_velocity: 1404 ft/s
+              -
+                mass: 5.48 lb
+                final_velocity: 1418 ft/s
+          -
+            diameter: 3.58 in
+            data:
+              -
+                mass: 6.09 lb
+                final_velocity: 1538 ft/s
+              -
+                mass: 6.18 lb
+                final_velocity: 1498 ft/s
+              -
+                mass: 6.12 lb
+                final_velocity: 1520 ft/s
+  -
+    ref2: "p. 7"
+    desc: "Experiments with the twelve-pounder howitzer"
+    material: iron
+    angle: 0 deg
+    date: "1845-07-11"
+    range: 30 ft
+    range_note: "Range not stated, but probably the same as the six-pounder tests"
+    desc2: "Powder 'A3' (Dupont small cannon)"
+    diameter: 4.528 in
+    data:
+      -
+        data:
+          -
+            mass: 8.5 lb
+            data:
+              -
+                charge: 1 lb
+                data:
+                  - final_velocity: 1029 ft/s
+                  - final_velocity: 1035 ft/s
+                  - final_velocity: 1056 ft/s
+              -
+                charge: 1.5 lb
+                data:
+                  - final_velocity: 1142 ft/s
+                  - final_velocity: 1155 ft/s
+                  - final_velocity: 1184 ft/s
+          -
+            charge: 2 lb
+            data:
+              -
+                mass: 12.56 lb
+                final_velocity: 1197 ft/s
+              -
+                mass: 12.74 lb
+                final_velocity: 1205 ft/s
+              -
+                mass: 12.65 lb
+                final_velocity: 1187 ft/s
+  -
+    ref2: "p. 12-13"
+    desc: "Experiments with the twelve-pounder gun, length of bore 25 calibres"
+    material: iron
+    angle: 0 deg
+    desc2: "Powder 'A' (Dupont uneven cannon)"
+    range_note: "I am assuming the pendulums are the same configuration as in 1844."
+    data:
+      -
+        date: "1847-06-28"
+        data:
+          -
+            group: "12-1"
+            charge: 3 lb
+            diameter: 4.51 in
+            mass: 12.48 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1698 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1697 ft/s
+      -
+        date: "1847-07-07"
+        charge: 2 lb
+        data:
+          -
+            diameter: 4.51 in
+            data:
+              -
+                group: "12-2"
+                mass: 12.26 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1391 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1386 ft/s
+              -
+                group: "12-3"
+                mass: 12.30 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1404 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1398 ft/s
+              -
+                group: "12-4"
+                mass: 12.37 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1380 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1367 ft/s
+          -
+            diameter: 4.32 in
+            mass: 12.30 lb
+            data:
+              -
+                group: "12-5"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1114 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1126 ft/s
+              -
+                group: "12-6"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1119 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1125 ft/s
+              -
+                group: "12-7"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1130 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1139 ft/s
+          -
+            diameter: 4.42 in
+            mass: 12.30 lb
+            data:
+              -
+                group: "12-8"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1268 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1282 ft/s
+              -
+                group: "12-9"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1266 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1268 ft/s
+              -
+                group: "12-10"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1262 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1264 ft/s
+          -
+            diameter: 4.52 in
+            mass: 12.30 lb
+            data:
+              -
+                group: "12-11"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1404 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1398 ft/s
+              -
+                group: "12-12"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1431 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1434 ft/s
+              -
+                group: "12-13"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1439 ft/s
+                    initial_velocity_note: Text is smudged.  Last digit uncertain.
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1441 ft/s
+      -
+        date: "1847-07-08"
+        mass: 12.30 lb
+        data:
+          -
+            charge: 3 lb
+            diameter: 4.32 in
+            data:
+              -
+                group: "12-14"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1413 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1437 ft/s
+              -
+                group: "12-15"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1420 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1426 ft/s
+              -
+                group: "12-16"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1413 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1416 ft/s
+          -
+            charge: 3 lb
+            diameter: 4.42 in
+            data:
+              -
+                group: "12-17"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1572 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1581 ft/s
+              -
+                group: "12-18"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1553 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1566 ft/s
+              -
+                group: "12-19"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1554 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1558 ft/s
+          -
+            charge: 3 lb
+            diameter: 4.52 in
+            data:
+              -
+                group: "12-20"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1712 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1711 ft/s
+              -
+                group: "12-21"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1721 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1717 ft/s
+              -
+                group: "12-22"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1729 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1728 ft/s
+          -
+            charge: 4 lb
+            diameter: 4.32 in
+            data:
+              -
+                group: "12-23"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1619 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1624 ft/s
+              -
+                group: "12-24"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1621 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1625 ft/s
+              -
+                group: "12-25"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1618 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1629 ft/s
+          -
+            charge: 4 lb
+            diameter: 4.42 in
+            data:
+              -
+                group: "12-26"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1779 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1778 ft/s
+              -
+                group: "12-27"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1776 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1774 ft/s
+              -
+                group: "12-28"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1775 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1778 ft/s
+          -
+            charge: 4 lb
+            diameter: 4.52 in
+            data:
+              -
+                group: "12-29"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1924 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1916 ft/s
+              -
+                group: "12-30"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1945 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1939 ft/s
+              -
+                group: "12-31"
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1930 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1911 ft/s
+  -
+    ref2: "p. 14-15"
+    desc: "Experiments with the twelve-pounder gun, length of bore 25 calibres"
+    material: iron
+    angle: 0 deg
+    desc2: "Powder 'A' (Dupont uneven cannon)"
+    range_note: "I am assuming the pendulums are the same configuration as in 1844."
+    diameter: 4.51 in
+    data:
+      -
+        date: "1847-07-08"
+        data:
+          -
+            charge: 3 lb
+            data:
+              -
+                group: "14-32"
+                mass: 12.22 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1700 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1702 ft/s
+              -
+                group: "14-33"
+                mass: 12.31 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1709 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1698 ft/s
+              -
+                group: "14-34"
+                mass: 12.28 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1720 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1709 ft/s
+      -
+        date: "1847-07-10"
+        data:
+          -
+            charge: 4 lb
+            data:
+              -
+                group: "14-35"
+                mass: 12.29 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1901 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1897 ft/s
+              -
+                group: "14-36"
+                mass: 12.30 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1906 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1888 ft/s
+              -
+                group: "14-37"
+                mass: 12.32 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1904 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1906 ft/s
+          -
+            charge: 5 lb
+            data:
+              -
+                group: "14-38"
+                mass: 12.23 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2058 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2065 ft/s
+              -
+                group: "14-39"
+                mass: 12.28 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2083 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2058 ft/s
+              -
+                group: "14-40"
+                mass: 12.20 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2084 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2059 ft/s
+          -
+            charge: 6 lb
+            data:
+              -
+                group: "14-41"
+                mass: 12.31 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2056 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2054 ft/s
+              -
+                group: "14-42"
+                mass: 12.28 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2227 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2222 ft/s
+              -
+                group: "14-43"
+                mass: 12.29 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2227 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2211 ft/s
+              -
+                group: "14-44"
+                mass: 12.25 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2182 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2170 ft/s
+          -
+            charge: 8 lb
+            data:
+              -
+                group: "14-45"
+                mass: 12.29 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2243 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2253 ft/s
+              -
+                group: "14-46"
+                mass: 12.34 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2336 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2312 ft/s
+          -
+            charge: 2 lb
+            data:
+              -
+                group: "14-47"
+                mass: 5.93 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1846 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1814 ft/s
+              -
+                group: "14-48"
+                mass: 5.98 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1828 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1801 ft/s
+              -
+                group: "14-49"
+                mass: 5.97 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 1824 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 1780 ft/s
+          -
+            charge: 3 lb
+            data:
+              -
+                group: "14-50"
+                mass: 5.95 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2274 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2290 ft/s
+              -
+                group: "14-51"
+                mass: 5.97 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2255 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2254 ft/s
+              -
+                group: "14-52"
+                mass: 5.94 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2273 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2277 ft/s
+          -
+            charge: 4 lb
+            data:
+              -
+                group: "14-53"
+                mass: 6.13 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2469 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2473 ft/s
+              -
+                group: "14-54"
+                mass: 6 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2495 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2532 ft/s
+              -
+                group: "14-55"
+                mass: 5.96 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2501 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2543 ft/s
+      -
+        date: "1847-07-13"
+        data:
+          -
+            skip: true
+            skip_note: The double shot data is not used, since we don't have a model for it
+          -
+            charge: 7 lb
+            data:
+              -
+                group: "14-60"
+                mass: 12.31 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2287 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2274 ft/s
+              -
+                group: "14-61"
+                mass: 12.34 lb
+                data:
+                  -
+                    technique: "gun_pendulum"
+                    initial_velocity: 2263 ft/s
+                  -
+                    technique: "pendulum"
+                    range: 55 ft
+                    final_velocity: 2240 ft/s
+  -
+    ref2: "p. 18-19"
+    desc: "Experiments with the twelve-pounder gun, length of bore 22.5 calibres"
+    material: iron
+    angle: 0 deg
+    desc2: "Powder 'A' (Dupont uneven cannon)"
+    range_note: "I am assuming the pendulums are the same configuration as in 1844."
+    diameter: 4.51 in
+    date: "1847-07-19"
+    data:
+      -
+        charge: 2 lb
+        data:
+          -
+            group: "18-1"
+            mass: 12.30 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1351 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1347 ft/s
+          -
+            group: "18-2"
+            mass: 12.36 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1365 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1359 ft/s
+          -
+            group: "18-3"
+            mass: 12.29 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1355 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1346 ft/s
+      -
+        charge: 3 lb
+        data:
+          -
+            group: "18-4"
+            mass: 12.32 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1656 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1628 ft/s
+          -
+            group: "18-5"
+            mass: 12.23 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1680 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1661 ft/s
+          -
+            group: "18-6"
+            mass: 12.37 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1663 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1640 ft/s
+      -
+        charge: 4 lb
+        data:
+          -
+            group: "18-7"
+            mass: 12.30 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1897 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1875 ft/s
+          -
+            group: "18-8"
+            mass: 12.33 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1884 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1852 ft/s
+          -
+            group: "18-9"
+            mass: 12.34 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1903 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1881 ft/s
+      -
+        charge: 5 lb
+        data:
+          -
+            group: "18-10"
+            mass: 12.24 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2088 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 2057 ft/s
+          -
+            group: "18-11"
+            mass: 12.33 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2058 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 2018 ft/s
+          -
+            group: "18-12"
+            mass: 12.36 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1933 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1924 ft/s
+          -
+            group: "18-13"
+            mass: 12.28 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2002 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1965 ft/s
+      -
+        charge: 6 lb
+        data:
+          -
+            group: "18-14"
+            mass: 12.25 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2190 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 2151 ft/s
+          -
+            group: "18-15"
+            mass: 12.38 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2010 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 2005 ft/s
+          -
+            group: "18-16"
+            mass: 12.27 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2138 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 2115 ft/s
+          -
+            group: "18-17"
+            mass: 12.30 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2133 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 2108 ft/s
+  -
+    ref2: "p. 22-23"
+    desc: "Experiments with the twelve-pounder gun, length of bore 19 calibres"
+    material: iron
+    angle: 0 deg
+    desc2: "Powder 'A' (Dupont uneven cannon)"
+    range_note: "I am assuming the pendulums are the same configuration as in 1844."
+    diameter: 4.51 in
+    date: "1847-07-30"
+    data:
+      -
+        charge: 2 lb
+        data:
+          -
+            group: "22-1"
+            mass: 12.32 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1305 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1289 ft/s
+          -
+            group: "22-2"
+            mass: 12.32 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1339 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1339 ft/s
+          -
+            group: "22-3"
+            mass: 12.30 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1352 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1336 ft/s
+      -
+        charge: 3 lb
+        data:
+          -
+            group: "22-4"
+            mass: 12.33 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1645 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1617 ft/s
+          -
+            group: "22-5"
+            mass: 12.35 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1628 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1591 ft/s
+          -
+            group: "22-6"
+            mass: 12.35 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1628 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1596 ft/s
+      -
+        charge: 4 lb
+        data:
+          -
+            group: "22-7"
+            mass: 12.24 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1864 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1827 ft/s
+          -
+            group: "22-8"
+            mass: 12.37 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1850 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1809 ft/s
+          -
+            group: "22-9"
+            mass: 12.34 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 1852 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1808 ft/s
+      -
+        charge: 5 lb
+        data:
+          -
+            group: "22-0"
+            mass: 12.36 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2018 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1963 ft/s
+          -
+            group: "22-11"
+            mass: 12.38 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2024 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1971 ft/s
+          -
+            group: "22-12"
+            mass: 12.31 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2024 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 1972 ft/s
+      -
+        charge: 6 lb
+        data:
+          -
+            group: "22-13"
+            mass: 12.20 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2111 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 2062 ft/s
+          -
+            group: "22-14"
+            mass: 12.36 lb
+            data:
+              -
+                technique: "gun_pendulum"
+                initial_velocity: 2117 ft/s
+              -
+                technique: "pendulum"
+                range: 55 ft
+                final_velocity: 2058 ft/s
+          -
+            mass: 12.27 lb
+            technique: "pendulum"
+            range: 55 ft
+            final_velocity: 1902 ft/s
+
+# Processed through page 23
