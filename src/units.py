@@ -126,11 +126,17 @@ UnitsTable = [
 
     # Energy (reference is J)
     (['J', 'Joule', 'Joules'], True, 1.0, 'SI Joule (kg*m*m/s/s)'),
-    (['cal', 'calorie', 'calories'], True, 4.201681, 'gram calorie'),
-    (['Cal', 'kcal', 'Calorie', 'Calories'], False, 4201.681,
+    # calorie could be 4.201681 J, 4.184 J (thermochemical cal), 4.204 (4 deg
+    # cal), or other values.
+    (['cal', 'calorie', 'calories'], True, 4.184, 'gram calorie'),
+    (['Cal', 'kcal', 'Calorie', 'Calories'], False, 4184.0,
      'kilogram Calorie'),
-    (['ftton', 'footton', 'foottons'], False, 3037.03232,
-     'Foot-ton, using the long ton'),
+    (['ftlb', 'footpound', 'footpounds'], False, 1.355818,
+     'Foot-pound'),
+    (['ftton', 'footton', 'foottons', 'footlongton', 'footlongtons'], False,
+     3037.03232, 'Foot-ton, using the long ton (2240 lb)'),
+    (['kilogrammeter', 'kilogrammeters'], False, 9.806650,
+     'Kilogram-meter (energy)'),
 
     # Angle (reference is radian)
     (['deg', 'degree', 'degrees'], False, math.pi / 180, 'Degree (angle)'),

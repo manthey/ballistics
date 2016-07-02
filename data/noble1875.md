@@ -1,0 +1,1 @@
+This is a excellent summary of research into how gunpowder explodes.  In addition to calorimetric data, Noble and Abel calculate the amount of work that gunpowder can produce given volumetric expansion (related to the length of the gun in calibers).
