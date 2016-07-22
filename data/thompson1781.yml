@@ -1,0 +1,54 @@
+---
+key: thompson1781
+ref: "Thompson, 1781"
+cms: "Thompson, Benjamin.  \"New Experiments upon Gun-Powder, with Occasional Observations and Practical Inferences; To Which are Added, an Account of a New Method of Determining the Velocities of All Kinds of Military Projectiles, and the Description of a Very Accurate Eprouvette for Gun-Poweder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 71 (1781): 229-328."
+summary: "Count Rumford uses a ballistic pendulum to determine how the position of the vent effects muzzle velocty."
+date: "1781"
+data:
+  -
+    technique: "double_pendulum"
+    mass: 580 gr
+    diameter: 0.75 in
+    range: 12 ft
+    data:
+      -
+        ref2: "p. 245"
+        charge: 208 gr
+        data:
+          - final_velocity: 1267 ft/s
+          - final_velocity: 1399 ft/s
+      -
+        ref2: "p. 246"
+        data:
+          -
+            charge: 208 gr
+            data:
+              - final_velocity: 1213 ft/s
+              - final_velocity: 1281 ft/s
+          -
+            charge: 104 gr
+            final_velocity: 782 ft/s
+          -
+            charge: 310 gr
+            data:
+              - final_velocity: 1459 ft/s
+              - final_velocity: 1527 ft/s
+              - final_velocity: 1801 ft/s
+              - final_velocity: 1646 ft/s
+          -
+            charge: 330 gr
+            data:
+              - final_velocity: 1748 ft/s
+              - final_velocity: 2060 ft/s
+              - final_velocity: 1619 ft/s
+              - final_velocity: 1633 ft/s
+          -
+            charge: 165 gr
+            data:
+              - final_velocity: 1084 ft/s
+              - final_velocity: 1093 ft/s
+              - final_velocity: 1071 ft/s
+              - final_velocity: 1035 ft/s
+              - final_velocity: 1142 ft/s
+
+# Processed through page 246
