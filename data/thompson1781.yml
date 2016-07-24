@@ -8,6 +8,7 @@ data:
   -
     technique: "double_pendulum"
     mass: 580 gr
+    material: lead
     diameter: 0.75 in
     range: 12 ft
     data:
@@ -50,5 +51,179 @@ data:
               - final_velocity: 1071 ft/s
               - final_velocity: 1035 ft/s
               - final_velocity: 1142 ft/s
+      -
+        ref2: "p. 247"
+        data:
+          -
+            charge: 165 gr
+            data:
+              - final_velocity: 1004 ft/s
+              - final_velocity: 1153 ft/s
+              - final_velocity: 1192 ft/s
+          -
+            charge: 330 gr
+            data:
+              - final_velocity: 1559 ft/s
+              - final_velocity: 1536 ft/s
+          -
+            charge: 165 gr
+            data:
+              - final_velocity: 914 ft/s
+              - final_velocity: 1027 ft/s
+      -
+        ref2: "p. 248"
+        data:
+          -
+            charge: 165 gr
+            data:
+              - final_velocity: 839 ft/s
+              - final_velocity: 839 ft/s
+              - final_velocity: 1217 ft/s
+              - final_velocity: 1129 ft/s
+              - final_velocity: 1161 ft/s
+              - final_velocity: 1277 ft/s
+          -
+            charge: 290 gr
+            final_velocity: 1497 ft/s
+      -
+        ref2: "p. 249"
+        data:
+          -
+            charge: 218 gr
+            data:
+              - final_velocity: 1236 ft/s
+              - final_velocity: 1197 ft/s
+              - final_velocity: 1230 ft/s
+              - final_velocity: 1248 ft/s
+              - final_velocity: 1299 ft/s
+              - final_velocity: 1265 ft/s
+              - final_velocity: 1293 ft/s
+              - final_velocity: 1266 ft/s
+          -
+            charge: 290 gr
+            data:
+              - final_velocity: 1414 ft/s
+              - final_velocity: 1455 ft/s
+              - final_velocity: 1412 ft/s
+              - final_velocity: 1476 ft/s
+              - final_velocity: 1520 ft/s
+              - final_velocity: 1483 ft/s
+              - final_velocity: 1502 ft/s
+              - final_velocity: 1450 ft/s
+              - final_velocity: 1433 ft/s
+              - final_velocity: 1454 ft/s
+      -
+        ref2: "p. 250"
+        data:
+          -
+            charge: 330 gr
+            data:
+              - final_velocity: 1599 ft/s
+              - final_velocity: 1652 ft/s
+              - final_velocity: 1562 ft/s
+              - final_velocity: 1495 ft/s
+              - final_velocity: 1633 ft/s
+              - final_velocity: 1556 ft/s
+          -
+            charge: 218 gr
+            data:
+              - final_velocity: 1349 ft/s
+              - final_velocity: 1294 ft/s
+              - final_velocity: 1345 ft/s
+              - final_velocity: 1080 ft/s
+      -
+        ref2: "p. 251"
+        data:
+          -
+            charge: 145 gr
+            data:
+              - final_velocity: 1037 ft/s
+              - final_velocity: 1044 ft/s
+      -
+        ref2: "p. 252"
+        data:
+          -
+            charge: 145 gr
+            data:
+              -
+                mass: 90 gr
+                final_velocity: 1763 ft/s
+              -
+                mass: 251 gr
+                final_velocity: 1317 ft/s
+              -
+                mass: 354 gr
+                final_velocity: 1136 ft/s
+              -
+                mass: 600 gr
+                final_velocity: 1229 ft/s
+              -
+                mass: 603 gr
+                final_velocity: 1229 ft/s
+              -
+                mass: 1184 gr
+                final_velocity: 978 ft/s
+              -
+                mass: 1754 gr
+                final_velocity: 916 ft/s
+              -
+                mass: 2352 gr
+                final_velocity: 833 ft/s
+      -
+        ref2: "p. 254"
+        data:
+          -
+            charge: 165 gr
+            desc: "Tests with the bullet at the muzzle end of the barrel"
+            data:
+              - final_velocity: 138 ft/s
+              - final_velocity: 92 ft/s
+              - final_velocity: 180 ft/s
+      -
+        ref2: "p. 255"
+        data:
+          -
+            charge: 104 gr
+            final_velocity: 732 ft/s
+          -
+            charge: 145 gr
+            data:
+              - final_velocity: 877 ft/s
+              - final_velocity: 910 ft/s
+              -
+                desc: "Double proof battle powder"
+                final_velocity: 990 ft/s
+          -
+            charge: 218 gr
+            desc: "Double proof battle powder"
+            final_velocity: 1380 ft/s
+          -
+            charge: 290 gr
+            data:
+              -
+                desc: "Government powder"
+                final_velocity: 1526 ft/s
+              - final_velocity: 1419 ft/s
+              - final_velocity: 1460 ft/s
+              - final_velocity: 1462 ft/s
+              - final_velocity: 1436 ft/s
+              - final_velocity: 1438 ft/s
+              - final_velocity: 1423 ft/s
+              - final_velocity: 1378 ft/s
+              -
+                desc: "Double proof battle powder"
+                final_velocity: 1525 ft/s
+          -
+            charge: 437.5 gr
+            data:
+              -
+                desc: "Government powder"
+                data:
+                  - final_velocity: 1738 ft/s
+                  - final_velocity: 1824 ft/s
+                  - final_velocity: 1729 ft/s
+              - final_velocity: 1706 ft/s
+              - final_velocity: 1757 ft/s
+              - final_velocity: 1789 ft/s
 
-# Processed through page 246
+# Processed through page 260

@@ -1,1 +1,1 @@
-Benjamin Thompson (Count Rumford) uses a double pendulum to determine muzzle velocities.
+Benjamin Thompson (Count Rumford) uses a double pendulum to determine muzzle velocities.  In addition to using the ballistic pendulum, he calculates muzzle velocity from the gun pendulum by taking the different in the distance of recoil with a bullet and without (using the same powder charge), and multiplying this value by a constant he has determined for the pendulum geometry and mass of the bullet.

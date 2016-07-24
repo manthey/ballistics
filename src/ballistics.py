@@ -48,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-06-04v42'
-PROGRAM_SIGNATURE = '65763c51814b03f7a49c27243f57f3e9'
+__version__ = '2016-07-24v43'
+PROGRAM_SIGNATURE = 'fcf266df8736a89ec8cedcd90f7735b1'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -753,7 +753,14 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
     minerror = trajectory_error(initial_state, unknown, minval)
     if Verbose >= 3:
         print '%s: %g,%g' % (unknown, minval, minerror)
-    maxerror = trajectory_error(initial_state, unknown, maxval)
+    while True:
+        try:
+            maxerror = trajectory_error(initial_state, unknown, maxval)
+        except Exception:
+            maxerror = None
+        if maxerror is not None or maxval / 2 <= minval:
+            break
+        maxval /= 2
     x2 = y2 = None
     if Verbose >= 3:
         print '%s: %g,%g %g,%g' % (unknown, minval, minerror, maxval, maxerror)
