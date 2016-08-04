@@ -1,0 +1,21 @@
+---
+key: stremy1745v2
+ref: "Saint Remy, 1745, Vol. II"
+cms: "Saint Remy, M. Surirey de, <i>Memoires d'Artillerie, Recuell\u00eds par M. Surirey de Saint Remy, Lieutenant du Grand-Ma\u00edtre de l'Artillerie de France.  Troisi\u00edme Edition, Tome Second.</i>, Pais: Chez Rollin Fils, 1745."
+summary: "A complete summary of artillery in France."
+date: "1745"
+data:
+  -
+    mass: 60 lbfr
+    material: cuivre
+    angle: 45 deg
+    charge: 3 ozfr
+    ref2: "p. 322"
+    data:
+      -
+        range: 50 toises
+        desc: "Proof charge for fresh powder."
+      -
+        range: 45 toises
+        desc: "Proof charge for reworked powder."
+

@@ -114,6 +114,8 @@ UnitsTable = [
     (['lbfr', 'parispound', 'frenchpound', 'parispounds', 'frenchpounds',
       'livre', 'livres'], False, ParisPoundInKilograms,
      'Paris livre (pound)'),
+    (['ozfr', 'parisounce', 'frenchounce', 'parisounces', 'frenchounces'],
+     False, ParisPoundInKilograms / 16, 'Paris ounce'),
 
     (['lbit', 'italianpound', 'piedmontesepound', 'italianpounds',
       'piedmontesepounds', 'libbre'], False, PeidmontPoundInKilograms,
