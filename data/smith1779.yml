@@ -1,0 +1,104 @@
+---
+key: smith1779
+ref: "Smith, 1779"
+cms: "Smith, George.  <i>An Universal Military Dictionary,</i>  London: J. Millan, 1779"
+summary: "Many miltary subjects are discussed in brief.  The section on gunnery has a summary of Robins ballistic pendulum work."
+date: "1779"
+data:
+  -
+    technique: "pendulum"
+    ref2: "Entry on Gunnery"
+    range: 29 ft
+    angle: 0 deg
+    data:
+      -
+        date: "1775-05-13"
+        material: iron
+        data:
+          -
+            charge: 2 oz
+            data:
+              -
+                mass: 17.5 oz
+                diameter: 1.98 in
+                final_velocity: 457 ft/s
+              -
+                mass: 17.5 oz
+                diameter: 1.98 in
+                final_velocity: 625 ft/s
+              -
+                mass: 17.5 oz
+                diameter: 1.98 in
+                final_velocity: 644 ft/s
+              -
+                mass: 17.25 oz
+                diameter: 1.97 in
+                final_velocity: 640 ft/s
+              -
+                mass: 17.25 oz
+                diameter: 1.97 in
+                final_velocity: 595 ft/s
+              -
+                mass: 17 oz
+                diameter: 1.96 in
+                final_velocity: 588 ft/s
+          -
+            charge: 4 oz
+            data:
+              -
+                mass: 17 oz
+                diameter: 1.97 in
+                final_velocity: 863 ft/s
+              -
+                mass: 17 oz
+                diameter: 1.96 in
+                final_velocity: 927 ft/s
+      -
+        date: "1775-06-03"
+        material: iron
+        charge: 2 oz
+        mass: 19.5 oz
+        diameter: 2.08 in
+        data:
+          - final_velocity: 802 ft/s
+          - final_velocity: 1004 ft/s
+          - final_velocity: 940 ft/s
+          -
+            skip: true
+            skip_note: Oblong shot doesn't match our ballistics model, so those tests are not recorded.
+      -
+        date: "1775-06-12"
+        material: iron
+        data:
+          -
+            charge: 2 oz
+            data:
+              -
+                mass: 19.5 oz
+                diameter: 2.080 in
+                final_velocity: 700 ft/s
+              -
+                mass: 18.25 oz
+                diameter: 2.036 in
+                final_velocity: 796 ft/s
+              -
+                mass: 18.5 oz
+                diameter: 2.045 in
+                final_velocity: 708 ft/s
+          -
+            charge: 4 oz
+            data:
+              -
+                mass: 19 oz
+                diameter: 2.062 in
+                final_velocity: 866 ft/s
+              -
+                mass: 18.25 oz
+                diameter: 2.036 in
+                final_velocity: 1141 ft/s
+              -
+                mass: 18.5 oz
+                diameter: 2.045 in
+                final_velocity: 1062 ft/s
+
+

@@ -1,0 +1,1 @@
+Curiously, the velocities listed for the experiments by Robins do not match the values reported by Hutton, 1778.  In general, those reported by Smith a slightly higher than the ones in Hutton.  The charge weights and diameters appear to match, however.

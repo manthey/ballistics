@@ -2,7 +2,7 @@
 key: thompson1781
 ref: "Thompson, 1781"
 cms: "Thompson, Benjamin.  \"New Experiments upon Gun-Powder, with Occasional Observations and Practical Inferences; To Which are Added, an Account of a New Method of Determining the Velocities of All Kinds of Military Projectiles, and the Description of a Very Accurate Eprouvette for Gun-Poweder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 71 (1781): 229-328."
-summary: "Count Rumford uses a ballistic pendulum to determine how the position of the vent effects muzzle velocty."
+summary: "Count Rumford uses a ballistic pendulum to determine how the position of the vent effects muzzle velocity."
 date: "1781"
 data:
   -
@@ -225,5 +225,3 @@ data:
               - final_velocity: 1706 ft/s
               - final_velocity: 1757 ft/s
               - final_velocity: 1789 ft/s
-
-# Processed through page 260
