@@ -37,17 +37,25 @@ StatuteFootInMeters = 0.3048
 # Stone, p. 87.  Stone (Bion) has many conversions from the Foot Royal of
 # Paris to various other linear measurements.
 # Robertson, p. 140-141, gives it as 1 English foot = 0.9386 French feet
+# Smith, 1779, entry on Foot, gives 1 French foot = 1.068 English feet
 ParisFootInMeters = StatuteFootInMeters * 144 / 135
 # Clarke, p. 67, gives 20.228 in.  Captain Thompson (d'Antoni, 1789) gives
 # 20.23457 in., seemingly with better justification.
 SardiniaFootInMeters = StatuteFootInMeters * 20.23457 / 12
+# Clarke, p. 62, gives 12.357 in = 1 Prussian foot
+# Stone gives 11 Paris inches 7 Paris lines = 1 Rhine foot
+# Smith, 1779 gives 1 Rhine foot = 12 1/3 in
+RhineFootInMeters = StatuteFootInMeters * 12.357 / 12
 
 AvoirdupoisPoundInKilograms = 0.45359237
 TroyPoundInKilograms = AvoirdupoisPoundInKilograms * 5760 / 7000
-# From Robertson, p. 140-141.
+# Robertson, p. 140-141, gives 1 lb English = 0.926 lb French
+# Smith, 1779, entry on Weights, gives 100 lb English = 91 lb 8 oz French
 ParisPoundInKilograms = AvoirdupoisPoundInKilograms / 0.926
 # Captain Thompson (d'Antoni, 1789) gives 0.82.  Clarke gives 0.81332.
 PeidmontPoundInKilograms = AvoirdupoisPoundInKilograms * 0.81332
+# Clarke, p. 62, gives 1 pfund = 1.03118 lb English
+RhinePoundInKilograms = AvoirdupoisPoundInKilograms * 1.03118
 
 # The units table is a list of tuples, each of which is ([list of names and
 # abbreviations], prefixes allowed, factor to SI, description).  The factor can
@@ -110,6 +118,12 @@ UnitsTable = [
     (['lbt', 'troypound', 'troypounds'], False, TroyPoundInKilograms,
      'Troy pound'),
     (['kg', 'kilogram', 'kilograms'], False, 1.0, 'SI kilogram'),
+    (['qtr', 'quarterhundredweight', 'qtrs', 'quarterhundredweights'], False,
+     AvoirdupoisPoundInKilograms * 28,
+     'Hundredweight (112 avoirdupois pounds)'),
+    (['cwt', 'hundredweight', 'cwts', 'hundredweights'], False,
+     AvoirdupoisPoundInKilograms * 112,
+     'Hundredweight (112 avoirdupois pounds)'),
 
     (['lbfr', 'parispound', 'frenchpound', 'parispounds', 'frenchpounds',
       'livre', 'livres'], False, ParisPoundInKilograms,

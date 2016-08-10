@@ -8,6 +8,7 @@ data:
   -
     technique: "pendulum"
     ref2: "Entry on Gunnery"
+    desc: "A recount of Robins experiments"
     range: 29 ft
     angle: 0 deg
     data:
@@ -100,5 +101,373 @@ data:
                 mass: 18.5 oz
                 diameter: 2.045 in
                 final_velocity: 1062 ft/s
+      -
+        date: "1775-07-20"
+        material: lead
+        data:
+          -
+            charge: 2 oz
+            mass: 28.25 oz
+            diameter: 2.021 in
+            final_velocity: 612 ft/s
+          -
+            charge: 4 oz
+            mass: 28.25 oz
+            diameter: 2.021 in
+            final_velocity: 883 ft/s
+          -
+            charge: 8 oz
+            mass: 28.75 oz
+            diameter: 2.032 in
+            final_velocity: 1168 ft/s
+          -
+            charge: 2 oz
+            mass: 28.5 oz
+            diameter: 2.026 in
+            final_velocity: 624 ft/s
+          -
+            charge: 4 oz
+            mass: 28.5 oz
+            diameter: 2.026 in
+            final_velocity: 874 ft/s
+          -
+            charge: 8 oz
+            mass: 28.75 oz
+            diameter: 2.032 in
+            final_velocity: 1158 ft/s
+          -
+            charge: 2 oz
+            mass: 28.25 oz
+            diameter: 2.021 in
+            final_velocity: 608 ft/s
+          -
+            charge: 4 oz
+            mass: 28.5 oz
+            diameter: 2.026 in
+            final_velocity: 874 ft/s
+          -
+            charge: 8 oz
+            mass: 28.5 oz
+            diameter: 2.026 in
+            final_velocity: 1173 ft/s
+      -
+        date: "1775-09-21"
+        material: iron
+        distance: 30 ft
+        data:
+          -
+            charge: 2 oz
+            mass: 19 oz 0 dr
+            diameter: 2.062 in
+            final_velocity: 700 ft/s
+          -
+            charge: 4 oz
+            mass: 19 oz 0 dr
+            diameter: 2.062 in
+            final_velocity: 1070 ft/s
+          -
+            charge: 8 oz
+            mass: 19 oz 0 dr
+            diameter: 2.062 in
+            final_velocity: 1419 ft/s
+          -
+            charge: 2 oz
+            mass: 19 oz 3.25 dr
+            diameter: 2.070 in
+            final_velocity: 679 ft/s
+          -
+            charge: 4 oz
+            mass: 19 oz 8.5 dr
+            diameter: 2.081 in
+            final_velocity: 1021 ft/s
+          -
+            charge: 8 oz
+            mass: 19 oz 0.75 dr
+            diameter: 2.064 in
+            final_velocity: 1353 ft/s
+          -
+            charge: 2 oz
+            mass: 18 oz 15 dr
+            diameter: 2.060 in
+            final_velocity: 692 ft/s
+          -
+            charge: 4 oz
+            mass: 18 oz 14 dr
+            diameter: 2.058 in
+            final_velocity: 948 ft/s
+          -
+            charge: 8 oz
+            mass: 18 oz 9.75 dr
+            diameter: 2.049 in
+            final_velocity: 1443 ft/s
+          -
+            charge: 2 oz
+            mass: 18 oz 9 dr
+            diameter: 2.047 in
+            final_velocity: 704 ft/s
+          -
+            charge: 4 oz
+            mass: 18 oz 4.333 dr
+            diameter: 2.037 in
+            final_velocity: 974 ft/s
+          -
+            charge: 8 oz
+            mass: 18 oz 3.75 dr
+            diameter: 2.036 in
+            final_velocity: 1358 ft/s
+          -
+            charge: 2 oz
+            mass: 18 oz 3 dr
+            diameter: 2.034 in
+            final_velocity: 723 ft/s
+          -
+            charge: 4 oz
+            mass: 18 oz 3 dr
+            diameter: 2.034 in
+            final_velocity: 958 ft/s
+          -
+            charge: 8 oz
+            mass: 18 oz 1.5 dr
+            diameter: 2.031 in
+            final_velocity: 1412 ft/s
+  -
+    ref2: "Entry on Laboratory"
+    date: "1762"
+    material: iron
+    desc: "Distance smoke balls can be fired"
+    data:
+      -
+        diameter: 13 in
+        data:
+          -
+            mass: 203 lb
+            charge: 2 lb 12 oz
+            angle: 45 deg
+            range: 1668 ft
+          -
+            mass: 200.5 lb
+            charge: 2 lb 10 oz
+            angle: 45 deg
+            range: 1678 ft
+          -
+            mass: 216 lb
+            charge: 2 lb 8 oz
+            angle: 40 deg
+            range: 1438 ft
+          -
+            mass: 208 lb
+            charge: 1 lb 2 oz
+            angle: 40 deg 30 arcmin
+            range: 976 ft
+      -
+        diameter: 10 in
+        data:
+          -
+            mass: 97 lb
+            charge: 1 lb 4 oz
+            angle: 45 deg
+            range: 1350 ft
+          -
+            mass: 98 lb
+            charge: 1 lb 5 oz
+            angle: 45 deg
+            range: 1396 ft
+          -
+            mass: 93 lb
+            charge: 1 lb 6 oz
+            angle: 45 deg
+            range: 1399 ft
+          -
+            mass: 96.5 lb
+            charge: 1 lb 7 oz
+            angle: 36 deg 30 arcmin
+            range: 1413 ft
+  -
+    ref2: "Entry on Laboratory"
+    date: "1773"
+    material: iron
+    desc: "Distance carcasses can be fired"
+    angle: 45 deg
+    data:
+      -
+        diameter: 10 in
+        data:
+          -
+            mass: 62 lb 13 oz
+            charge: 8 oz
+            range: 390 ft
+          -
+            mass: 64 lb 12 oz
+            charge: 12 oz
+            range: 774 ft
+          -
+            mass: 70 lb
+            charge: 1 oz
+            range: 882 ft
+          -
+            mass: 71 lb 12 oz
+            charge: 1 lb 4 oz
+            range: 1332 ft
+          -
+            mass: 72 lb
+            charge: 1 lb 12 oz
+            range: 1815 ft
+          -
+            mass: 68 lb 10 oz
+            charge: 2 lb
+            range: 2043 ft
+      -
+        diameter: 8 in
+        data:
+          -
+            mass: 33 lb 7 oz
+            charge: 6 oz
+            range: 411 ft
+          -
+            mass: 36 lb 12 oz
+            charge: 10 oz
+            range: 963 ft
+          -
+            mass: 35 lb 8 oz
+            charge: 14 oz
+            range: 1344 ft
+          -
+            mass: 34 lb 14 oz
+            charge: 1 lb
+            range: 1680 ft
+          -
+            mass: 32 lb 12 oz
+            charge: 1 lb 4 oz
+            range: 1908 ft
+  -
+    ref2: "Entry on Laboratory"
+    date: "1773"
+    material: iron
+    desc: "Experiments with iron caracasses"
+    diameter: 13 in
+    charge: 30 lb
+    data:
+      -
+        mass: 1 cwt 3 qtrs 12 lb
+        angle: 45 deg
+        range: 8700 ft
+      -
+        mass: 1 cwt 3 qtrs 14 lb
+        angle: 41 deg
+        range: 9000 ft
+      -
+        mass: 1 cwt 3 qtrs 16 lb
+        angle: 42 deg
+        range: 10200 ft
+      -
+        mass: 1 cwt 3 qtrs 17 lb
+        angle: 42 deg 30 arcmin
+        range: 10500 ft
+  -
+    ref2: "Entry on Projectiles"
+    date: "1766"
+    material: iron
+    desc: "Experiments by Capt. Jardine at Gibralter intend to compare against theories"
+    data:
+      -
+        diameter: 6.35 in
+        mass: 90 lb
+        data:
+          -
+            angle: 45 deg
+            data:
+              -
+                charge: 2 lb
+                data:
+                  - range: 967 yd
+                  - range: 970 yd
+              -
+                charge: 1 lb 12 oz
+                data:
+                  - range: 816 yd
+                  - range: 826 yd
+                  - range: 845 yd
+                  - range: 836 yd
+              -
+                charge: 1 lb 8 oz
+                data:
+                  - range: 670 yd
+                  - range: 718 yd
+                  - range: 637 yd
+                  - range: 662 yd
+                  - range: 666 yd
+          -
+            angle: 9 deg
+            data:
+              -
+                charge: 2 lb
+                data:
+                  - range: 318 yd
+                  - range: 324 yd
+                  - range: 302 yd
+              -
+                charge: 1 lb 12 oz
+                data:
+                  - range: 270 yd
+                  - range: 250 yd
+                  - range: 292 yd
+          -
+            angle: 12 deg
+            charge: 1 lb 8 oz
+            data:
+              - range: 271 yd
+              - range: 259 yd
+              - range: 251 yd
+              - range: 263 yd
+      -
+        diameter: 4.5 in
+        mass: 48 lb
+        data:
+          -
+            angle: 45 deg
+            data:
+              -
+                charge: 1 lb
+                data:
+                  - range: 1000 yd
+                  - range: 935 yd
+                  - range: 1020 yd
+              -
+                charge: 14 oz
+                data:
+                  - range: 794 yd
+                  - range: 880 yd
+              -
+                charge: 12 oz
+                data:
+                  - range: 718 yd
+                  - range: 670 yd
+                  - range: 672 yd
+                  - range: 662 yd
+                  - range: 695 yd
+                  - range: 685 yd
+          -
+            angle: 9 deg
+            data:
+              -
+                charge: 1 lb
+                data:
+                  - range: 361 yd
+                  - range: 356 yd
+                  - range: 307 yd
+              -
+                charge: 14 oz
+                data:
+                  - range: 287 yd
+                  - range: 297 yd
+                  - range: 265 yd
+          -
+            angle: 12 deg
+            charge: 12 oz
+            data:
+              - range: 274 yd
+              - range: 300 yd
+              - range: 280 yd
+              - range: 276 yd
 
-
+# Processed throught V, first section
