@@ -136,7 +136,7 @@ data:
         power: 87244.4 kilogrammeters/kg
   -
     ref2: "p. 133-134"
-    method: "theory"
+    technique: "theory"
     diameter: 10 in
     charge: 70 lb
     mass: 300 lb

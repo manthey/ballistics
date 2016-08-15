@@ -469,5 +469,1877 @@ data:
               - range: 300 yd
               - range: 280 yd
               - range: 276 yd
+  -
+    ref2: "Entry on Vent"
+    date: "1765"
+    material: iron
+    desc: "Experiments in Prussia to determine the best placement of the vent and shape of a mortar's chamber"
+    diameter: 4.6 in
+    diameter_note: "It is possible that the diameter, charge, and range should all be in Rhinish units"
+    mass: 7 lb
+    data:
+      -
+        charge: 5 oz
+        desc2: "middle vent"
+        data:
+          -
+            angle: 30 deg
+            data:
+              - range: 1890 ft
+              - range: 1936 ft
+              - range: 2290 ft
+          -
+            angle: 35 deg 30 arcmin
+            data:
+              - range: 1974 ft
+              - range: 1998 ft
+              - range: 2374 ft
+          -
+            angle: 45 deg
+            data:
+              - range: 2892 ft
+              - range: 3031 ft
+              - range: 3176 ft
+              - range: 2746 ft
+              - range: 3018 ft
+              - range: 3168 ft
+      -
+        charge: 5 oz
+        desc2: "bottom vent"
+        data:
+          -
+            angle: 30 deg
+            data:
+              - range: 2218 ft
+              - range: 2406 ft
+              - range: 2563 ft
+          -
+            angle: 35 deg 30 arcmin
+            data:
+              - range: 2357 ft
+              - range: 2590 ft
+              - range: 2730 ft
+          -
+            angle: 45 deg
+            data:
+              - range: 2986 ft
+              - range: 3147 ft
+              - range: 3267 ft
+              - range: 2843 ft
+              - range: 3139 ft
+              - range: 3281 ft
+      -
+        charge: 7.5 oz
+        desc2: "middle vent"
+        data:
+          -
+            angle: 45 deg
+            data:
+              - range: 3263 ft
+              - range: 3521 ft
+              - range: 3698 ft
+              - range: 3228 ft
+              - range: 3524 ft
+              - range: 3702 ft
+              - range: 3196 ft
+              - range: 3516 ft
+              - range: 3708 ft
+          -
+            angle: 43 deg 30 arcmin
+            data:
+              - range: 3276 ft
+              - range: 3602 ft
+              - range: 3824 ft
+              - range: 3209 ft
+              - range: 3598 ft
+              - range: 3796 ft
+      -
+        charge: 7.5 oz
+        desc2: "bottom vent"
+        data:
+          -
+            angle: 44 deg
+            data:
+              - range: 3198 ft
+              - range: 3567 ft
+              - range: 3818 ft
+              - range: 3201 ft
+              - range: 3603 ft
+              - range: 3823 ft
+          -
+            angle: 43 deg
+            data:
+              - range: 3186 ft
+              - range: 3579 ft
+              - range: 3784 ft
+              - range: 3214 ft
+              - range: 3547 ft
+              - range: 3748 ft
+  -
+    ref2: "Supplement entry on Table"
+    date: "1775"
+    material: iron
+    desc: "Table of fittest charges of various guns"
+    data:
+      -
+        mass: 42 lb
+        angle: 6 deg
+        data:
+          -
+            charge: 21 lb
+            range: 2368 yds
+          -
+            charge: 14 lb
+            range: 2295 yds
+          -
+            charge: 14 lb
+            range: 2189 yds
+      -
+        mass: 32 lb
+        data:
+          -
+            charge: 16 lb
+            angle: 5 deg 30 arcmin
+            range: 2043 yds
+          -
+            charge: 10 lb 12 oz
+            angle: 5 deg
+            range: 2103 yds
+          -
+            charge: 10 lb 12 oz
+            angle: 5 deg 30 arcmin
+            range: 2118 yds
+      -
+        mass: 24 lb
+        data:
+          -
+            charge: 12 lb
+            angle: 5 deg 30 arcmin
+            range: 2212 yds
+          -
+            charge: 8 lb
+            angle: 5 deg
+            data:
+              - range: 2186 yds
+              - range: 2218 yds
+      -
+        mass: 12 lb
+        data:
+          -
+            charge: 6 lb
+            angle: 4 deg 30 arcmin
+            range: 1780 yds
+          -
+            charge: 4 lb
+            angle: 4 deg
+            data:
+              - range: 1637 yds
+              - range: 1652 yds
+      -
+        mass: 24 lb
+        data:
+          -
+            charge: 12 lb
+            angle: 5 deg 30 arcmin
+            range: 1750 yds
+          -
+            charge: 8 lb
+            angle: 5 deg
+            data:
+              - range: 1830 yds
+              - range: 1863 yds
+      -
+        mass: 12 lb
+        data:
+          -
+            charge: 6 lb
+            angle: 4 deg 30 arcmin
+            range: 1203 yds
+          -
+            charge: 4 lb
+            angle: 4 deg
+            data:
+              - range: 1189 yds
+              - range: 1216 yds
+      -
+        mass: 6 lb
+        data:
+          -
+            charge: 3 lb
+            angle: 5 deg
+            range: 1097 yds
+          -
+            charge: 2 lb
+            angle: 5 deg
+            data:
+              - range: 1098 yds
+              - range: 1107 yds
+      -
+        mass: 3 lb
+        angle: 4 deg 30 arcmin
+        data:
+          -
+            charge: 1 lb 8 oz
+            range: 938 yds
+          -
+            charge: 1 lb
+            data:
+              - range: 943 yds
+              - range: 956 yds
+  -
+    ref2: "Supplement entry on Table"
+    desc: "Table of Ricochet practice with a light 6-pounder"
+    material: iron
+    mass: 6 lb
+    data:
+      -
+        charge: 6 oz 8 dr
+        angle: 5 deg
+        range: 235 yds
+      -
+        charge: 7 oz 0 dr
+        angle: 5 deg
+        range: 300 yds
+      -
+        charge: 7 oz 12 dr
+        angle: 5 deg
+        range: 340 yds
+      -
+        charge: 7 oz 12 dr
+        angle: 6 deg
+        range: 380 yds
+      -
+        charge: 5 oz 4 dr
+        angle: 11 deg
+        range: 324 yds
+      -
+        charge: 5 oz 12 dr
+        angle: 11 deg
+        range: 400 yds
+      -
+        charge: 5 oz 10 dr
+        angle: 9 deg
+        range: 408 yds
+      -
+        charge: 5 oz 8 dr
+        angle: 8 deg
+        range: 375 yds
+      -
+        charge: 8 oz 0 dr
+        angle: 6 deg
+        range: 330 yds
+      -
+        charge: 10 oz 0 dr
+        angle: 6 deg
+        range: 360 yds
+      -
+        charge: 12 oz 0 dr
+        angle: 6 deg
+        range: 500 yds
+      -
+        charge: 12 oz 8 dr
+        angle: 6 deg
+        range: 649 yds
+      -
+        charge: 10 oz 4 dr
+        angle: 8 deg
+        range: 591 yds
+      -
+        charge: 9 oz 12 dr
+        angle: 8 deg
+        range: 473 yds
+      -
+        charge: 10 oz 0 dr
+        angle: 8 deg
+        range: 550 yds
+      -
+        charge: 9 oz 0 dr
+        angle: 10 deg
+        range: 594 yds
+      -
+        charge: 8 oz 8 dr
+        angle: 10 deg
+        range: 595 yds
+      -
+        charge: 8 oz 0 dr
+        angle: 10 deg
+        range: 465 yds
+      -
+        charge: 7 oz 8 dr
+        angle: 12 deg
+        range: 723 yds
+      -
+        charge: 12 oz 0 dr
+        angle: 5 deg
+        range: 561 yds
+      -
+        charge: 12 oz 0 dr
+        angle: 6 deg
+        range: 547 yds
+      -
+        charge: 9 oz 0 dr
+        angle: 6 deg
+        range: 446 yds
+      -
+        charge: 10 oz 0 dr
+        angle: 8 deg
+        range: 580 yds
+      -
+        charge: 8 oz 0 dr
+        angle: 8 deg
+        range: 448 yds
+      -
+        charge: 9 oz 4 dr
+        angle: 8 deg
+        range: 425 yds
+      -
+        charge: 10 oz 0 dr
+        angle: 8 deg
+        range: 590 yds
+      -
+        charge: 10 oz 4 dr
+        angle: 8 deg
+        range: 546 yds
+      -
+        charge: 11 oz 0 dr
+        angle: 8 deg
+        range: 596 yds
+      -
+        charge: 11 oz 8 dr
+        angle: 8 deg
+        range: 554 yds
+      -
+        charge: 8 oz 0 dr
+        angle: 11 deg
+        range: 665 yds
+      -
+        charge: 7 oz 12 dr
+        angle: 12 deg
+        range: 614 yds
+      -
+        charge: 7 oz 8 dr
+        angle: 12 deg
+        range: 687 yds
+  -
+    ref2: "Supplement entry on Table"
+    desc: "Table of Ricochet practice with a heavy 6-pounder"
+    date: "1775"
+    material: iron
+    mass: 6 lb
+    skip: true
+    skip_note: "The times and ranges are for a ricochet shot including multiple skips.  As such, these values can't be used by our analysis"
+  -
+    ref2: "Supplement entry on Table"
+    desc: "Table of the utmost ranges of the under-mentioned guns with a charge of 2-3rds of the weight of shot"
+    material: iron
+    angle: 45 deg
+    data:
+      -
+        mass: 42 lb
+        charge: 28 lb
+        range: 3861 yds
+      -
+        mass: 32 lb
+        charge: 21.667 lb
+        range: 3728 yds
+      -
+        mass: 24 lb
+        charge: 16 lb
+        range: 3876 yds
+      -
+        mass: 18 lb
+        charge: 12 lb
+        range: 4186 yds
+      -
+        mass: 12 lb
+        charge: 8 lb
+        range: 4089 yds
+      -
+        mass: 9 lb
+        charge: 6 lb
+        range: 3978 yds
+      -
+        mass: 6 lb
+        charge: 4 lb
+        range: 3899 yds
+      -
+        mass: 3 lb
+        charge: 2 lb
+        range: 3073 yds
+      -
+        mass: 1 lb
+        charge: 0.667 lb
+        range: 2467 yds
+  -
+    ref2: "Supplement entry on Table"
+    desc: "Table containing the greatest ranges of the several howitzers charge of 2-3rds of the weight of shot"
+    material: iron
+    technique: "theory"
+    technique_note: "Although this is reportedly based on experiments, the timing values suggest that the data has been artificially produced"
+    data:
+      -
+        mass: 44.25 lb
+        mass_note: "The shell weighs 42 lbs and holds 2.25 lbs of powder"
+        diameter: 8 in
+        data:
+          -
+            angle: 7 deg 30 arcmin
+            charge: 0 lb 4 oz 12 dr
+            group: "326-8-1"
+            data:
+              - final_time: 1.46 s
+              - range: 120 yds
+          -
+            angle: 8 deg 0 arcmin
+            charge: 0 lb 5 oz 8 dr
+            group: "326-8-2"
+            data:
+              - final_time: 1.49 s
+              - range: 128 yds
+          -
+            angle: 8 deg 30 arcmin
+            charge: 0 lb 6 oz 4 dr
+            group: "326-8-3"
+            data:
+              - final_time: 1.62 s
+              - range: 136 yds
+          -
+            angle: 9 deg 0 arcmin
+            charge: 0 lb 7 oz 0 dr
+            group: "326-8-4"
+            data:
+              - final_time: 1.78 s
+              - range: 150 yds
+          -
+            angle: 9 deg 30 arcmin
+            charge: 0 lb 7 oz 12 dr
+            group: "326-8-5"
+            data:
+              - final_time: 1.83 s
+              - range: 180 yds
+          -
+            angle: 10 deg 0 arcmin
+            charge: 0 lb 8 oz 8 dr
+            group: "326-8-6"
+            data:
+              - final_time: 2.10 s
+              - range: 216 yds
+          -
+            angle: 10 deg 30 arcmin
+            charge: 0 lb 9 oz 4 dr
+            group: "326-8-7"
+            data:
+              - final_time: 2.79 s
+              - range: 248 yds
+          -
+            angle: 11 deg 0 arcmin
+            charge: 0 lb 10 oz 0 dr
+            group: "326-8-8"
+            data:
+              - final_time: 3.10 s
+              - range: 306 yds
+          -
+            angle: 12 deg 0 arcmin
+            charge: 0 lb 12 oz 0 dr
+            group: "326-8-9"
+            data:
+              - final_time: 3.19 s
+              - range: 343 yds
+          -
+            angle: 13 deg 0 arcmin
+            charge: 0 lb 11 oz 8 dr
+            group: "326-8-10"
+            data:
+              - final_time: 3.68 s
+              - range: 382 yds
+          -
+            angle: 14 deg 0 arcmin
+            charge: 0 lb 12 oz 4 dr
+            group: "326-8-11"
+            data:
+              - final_time: 4.10 s
+              - range: 418 yds
+          -
+            angle: 15 deg 0 arcmin
+            charge: 0 lb 13 oz 0 dr
+            group: "326-8-12"
+            data:
+              - final_time: 4.75 s
+              - range: 480 yds
+          -
+            angle: 8 deg 0 arcmin
+            charge: 0 lb 13 oz 12 dr
+            group: "326-8-13"
+            data:
+              - final_time: 3.04 s
+              - range: 210 yds
+          -
+            angle: 9 deg 0 arcmin
+            charge: 0 lb 14 oz 8 dr
+            group: "326-8-14"
+            data:
+              - final_time: 3.19 s
+              - range: 328 yds
+          -
+            angle: 10 deg 0 arcmin
+            charge: 0 lb 15 oz 4 dr
+            group: "326-8-15"
+            data:
+              - final_time: 3.58 s
+              - range: 360 yds
+          -
+            angle: 11 deg 0 arcmin
+            charge: 1 lb 0 oz 0 dr
+            group: "326-8-16"
+            data:
+              - final_time: 3.74 s
+              - range: 389 yds
+          -
+            angle: 12 deg 0 arcmin
+            charge: 1 lb 4 oz 0 dr
+            group: "326-8-17"
+            data:
+              - final_time: 4.60 s
+              - range: 467 yds
+          -
+            angle: 13 deg 0 arcmin
+            charge: 1 lb 8 oz 0 dr
+            group: "326-8-18"
+            data:
+              - final_time: 5.12 s
+              - range: 648 yds
+          -
+            angle: 14 deg 0 arcmin
+            charge: 1 lb 12 oz 0 dr
+            group: "326-8-19"
+            data:
+              - final_time: 6.54 s
+              - range: 792 yds
+          -
+            angle: 15 deg 0 arcmin
+            charge: 2 lb 0 oz 0 dr
+            group: "326-8-20"
+            data:
+              - final_time: 7.12 s
+              - range: 900 yds
+          -
+            angle: 8 deg 0 arcmin
+            charge: 2 lb 4 oz 0 dr
+            group: "326-8-21"
+            data:
+              - final_time: 7.10 s
+              - range: 962 yds
+          -
+            angle: 10 deg 0 arcmin
+            charge: 2 lb 8 oz 0 dr
+            group: "326-8-22"
+            data:
+              -
+                final_time: 8.13 s
+                final_time_note: "The first digit is missing, but I assume it should be an 8"
+              - range: 1136 yds
+          -
+            angle: 12 deg 0 arcmin
+            charge: 2 lb 12 oz 0 dr
+            group: "326-8-23"
+            data:
+              - final_time: 9.21 s
+              - range: 1242 yds
+          -
+            angle: 14 deg 0 arcmin
+            charge: 3 lb 0 oz 0 dr
+            group: "326-8-24"
+            data:
+              - final_time: 9.60 s
+              - range: 1308 yds
+          -
+            angle: 15 deg 0 arcmin
+            charge: 3 lb 4 oz 0 dr
+            group: "326-8-25"
+            data:
+              - final_time: 10.10 s
+              - range: 1600 yds
+          -
+            angle: 16 deg 0 arcmin
+            charge: 3 lb 8 oz 0 dr
+            group: "326-8-26"
+            data:
+              - final_time: 11.48 s
+              - range: 1800 yds
+      -
+        mass: 15 lb 14 oz
+        mass_note: "The shell weighs 15 lbs and holds 14 oz of powder"
+        diameter: 5.8 in
+        data:
+          -
+            angle: 7 deg 30 arcmin
+            charge: 0 lb 2 oz 4 dr
+            group: "326-58-1"
+            data:
+              - final_time: 1.46 s
+              - range: 120 yds
+          -
+            angle: 8 deg 0 arcmin
+            charge: 0 lb 2 oz 7 dr
+            group: "326-58-2"
+            data:
+              - final_time: 1.49 s
+              - range: 128 yds
+          -
+            angle: 8 deg 30 arcmin
+            charge: 0 lb 2 oz 10 dr
+            group: "326-58-3"
+            data:
+              - final_time: 1.62 s
+              - range: 136 yds
+          -
+            angle: 9 deg 0 arcmin
+            charge: 0 lb 2 oz 13 dr
+            group: "326-58-4"
+            data:
+              - final_time: 1.78 s
+              - range: 150 yds
+          -
+            angle: 9 deg 30 arcmin
+            charge: 0 lb 3 oz 0 dr
+            group: "326-58-5"
+            data:
+              - final_time: 1.83 s
+              - range: 180 yds
+          -
+            angle: 10 deg 0 arcmin
+            charge: 0 lb 3 oz 4 dr
+            group: "326-58-6"
+            data:
+              - final_time: 2.10 s
+              - range: 216 yds
+          -
+            angle: 10 deg 30 arcmin
+            charge: 0 lb 3 oz 8 dr
+            group: "326-58-7"
+            data:
+              - final_time: 2.79 s
+              - range: 248 yds
+          -
+            angle: 11 deg 0 arcmin
+            charge: 0 lb 3 oz 12 dr
+            group: "326-58-8"
+            data:
+              - final_time: 3.10 s
+              - range: 306 yds
+          -
+            angle: 12 deg 0 arcmin
+            charge: 0 lb 4 oz 0 dr
+            group: "326-58-9"
+            data:
+              - final_time: 3.19 s
+              - range: 343 yds
+          -
+            angle: 13 deg 0 arcmin
+            charge: 0 lb 4 oz 4 dr
+            group: "326-58-10"
+            data:
+              - final_time: 3.68 s
+              - range: 382 yds
+          -
+            angle: 14 deg 0 arcmin
+            charge: 0 lb 4 oz 8 dr
+            group: "326-58-11"
+            data:
+              - final_time: 4.10 s
+              - range: 418 yds
+          -
+            angle: 15 deg 0 arcmin
+            charge: 0 lb 4 oz 12 dr
+            group: "326-58-12"
+            data:
+              - final_time: 4.75 s
+              - range: 480 yds
+          -
+            angle: 8 deg 0 arcmin
+            charge: 0 lb 5 oz 0 dr
+            group: "326-58-13"
+            data:
+              - final_time: 3.04 s
+              - range: 210 yds
+          -
+            angle: 9 deg 0 arcmin
+            charge: 0 lb 5 oz 4 dr
+            group: "326-58-14"
+            data:
+              - final_time: 3.19 s
+              - range: 328 yds
+          -
+            angle: 10 deg 0 arcmin
+            charge: 0 lb 5 oz 9 dr
+            group: "326-58-15"
+            data:
+              - final_time: 3.58 s
+              - range: 360 yds
+          -
+            angle: 11 deg 0 arcmin
+            charge: 0 lb 5 oz 13 dr
+            group: "326-58-16"
+            data:
+              - final_time: 3.74 s
+              - range: 389 yds
+          -
+            angle: 12 deg 0 arcmin
+            charge: 0 lb 6 oz 1 dr
+            group: "326-58-17"
+            data:
+              - final_time: 4.60 s
+              - range: 467 yds
+          -
+            angle: 13 deg 0 arcmin
+            charge: 0 lb 6 oz 7 dr
+            group: "326-58-18"
+            data:
+              - final_time: 5.12 s
+              - range: 648 yds
+          -
+            angle: 14 deg 0 arcmin
+            charge: 0 lb 6 oz 12 dr
+            group: "326-58-19"
+            data:
+              - final_time: 6.54 s
+              - range: 792 yds
+          -
+            angle: 15 deg 0 arcmin
+            charge: 0 lb 7 oz 1 dr
+            group: "326-58-20"
+            data:
+              - final_time: 7.12 s
+              - range: 900 yds
+          -
+            angle: 8 deg 0 arcmin
+            charge: 0 lb 7 oz 10 dr
+            group: "326-58-21"
+            data:
+              - final_time: 7.10 s
+              - range: 962 yds
+          -
+            angle: 10 deg 0 arcmin
+            charge: 0 lb 8 oz 0 dr
+            group: "326-58-22"
+            data:
+              -
+                final_time: 8.13 s
+                final_time_note: "The first digit is missing, but I assume it should be an 8"
+              - range: 1136 yds
+          -
+            angle: 12 deg 0 arcmin
+            charge: 0 lb 10 oz 0 dr
+            group: "326-58-23"
+            data:
+              - final_time: 9.21 s
+              - range: 1242 yds
+          -
+            angle: 14 deg 0 arcmin
+            charge: 0 lb 12 oz 0 dr
+            group: "326-58-24"
+            data:
+              - final_time: 9.60 s
+              - range: 1308 yds
+          -
+            angle: 15 deg 0 arcmin
+            charge: 1 lb 0 oz 0 dr
+            group: "326-58-25"
+            data:
+              - final_time: 10.10 s
+              - range: 1600 yds
+      -
+        mass: 8 lb 7 oz
+        mass_note: "The shell weighs 8 lbs and holds 7 oz of powder"
+        diameter: 5.5 in
+        data:
+          -
+            angle: 7 deg 30 arcmin
+            charge: 0 lb 1 oz 8 dr
+            group: "326-55-1"
+            data:
+              - final_time: 1.46 s
+              - range: 120 yds
+          -
+            angle: 8 deg 0 arcmin
+            charge: 0 lb 1 oz 11 dr
+            group: "326-55-2"
+            data:
+              - final_time: 1.49 s
+              - range: 128 yds
+          -
+            angle: 8 deg 30 arcmin
+            charge: 0 lb 1 oz 14 dr
+            group: "326-55-3"
+            data:
+              - final_time: 1.62 s
+              - range: 136 yds
+          -
+            angle: 9 deg 0 arcmin
+            charge: 0 lb 2 oz 0 dr
+            group: "326-55-4"
+            data:
+              - final_time: 1.78 s
+              - range: 150 yds
+          -
+            angle: 9 deg 30 arcmin
+            charge: 0 lb 2 oz 4 dr
+            group: "326-55-5"
+            data:
+              - final_time: 1.83 s
+              - range: 180 yds
+          -
+            angle: 10 deg 0 arcmin
+            charge: 0 lb 2 oz 7 dr
+            group: "326-55-6"
+            data:
+              - final_time: 2.10 s
+              - range: 216 yds
+          -
+            angle: 10 deg 30 arcmin
+            charge: 0 lb 2 oz 10 dr
+            group: "326-55-7"
+            data:
+              - final_time: 2.79 s
+              - range: 248 yds
+          -
+            angle: 11 deg 0 arcmin
+            charge: 0 lb 2 oz 13 dr
+            group: "326-55-8"
+            data:
+              - final_time: 3.10 s
+              - range: 306 yds
+          -
+            angle: 12 deg 0 arcmin
+            charge: 0 lb 3 oz 0 dr
+            group: "326-55-9"
+            data:
+              - final_time: 3.19 s
+              - range: 343 yds
+          -
+            angle: 13 deg 0 arcmin
+            charge: 0 lb 3 oz 6 dr
+            group: "326-55-10"
+            data:
+              - final_time: 3.68 s
+              - range: 382 yds
+          -
+            angle: 14 deg 0 arcmin
+            charge: 0 lb 3 oz 12 dr
+            group: "326-55-11"
+            data:
+              - final_time: 4.10 s
+              - range: 418 yds
+          -
+            angle: 15 deg 0 arcmin
+            charge: 0 lb 4 oz 0 dr
+            group: "326-55-12"
+            data:
+              - final_time: 4.75 s
+              - range: 480 yds
+          -
+            angle: 8 deg 0 arcmin
+            charge: 0 lb 4 oz 8 dr
+            group: "326-55-13"
+            data:
+              - final_time: 3.04 s
+              - range: 210 yds
+          -
+            angle: 9 deg 0 arcmin
+            charge: 0 lb 5 oz 0 dr
+            group: "326-55-14"
+            data:
+              - final_time: 3.19 s
+              - range: 328 yds
+          -
+            angle: 10 deg 0 arcmin
+            charge: 0 lb 5 oz 8 dr
+            group: "326-55-15"
+            data:
+              - final_time: 3.58 s
+              - range: 360 yds
+          -
+            angle: 11 deg 0 arcmin
+            charge: 0 lb 6 oz 0 dr
+            group: "326-55-16"
+            data:
+              - final_time: 3.74 s
+              - range: 389 yds
+          -
+            angle: 12 deg 0 arcmin
+            charge: 0 lb 6 oz 8 dr
+            group: "326-55-17"
+            data:
+              - final_time: 4.60 s
+              - range: 467 yds
+          -
+            angle: 13 deg 0 arcmin
+            charge: 0 lb 7 oz 0 dr
+            group: "326-55-18"
+            data:
+              - final_time: 5.12 s
+              - range: 648 yds
+          -
+            angle: 14 deg 0 arcmin
+            charge: 0 lb 7 oz 8 dr
+            group: "326-55-19"
+            data:
+              - final_time: 6.54 s
+              - range: 792 yds
+          -
+            angle: 15 deg 0 arcmin
+            charge: 0 lb 8 oz 0 dr
+            group: "326-55-20"
+            data:
+              - final_time: 7.12 s
+              - range: 900 yds
+  -
+    ref2: "Supplement entry on Table"
+    desc: "Table containing the greatest ranges of the several land mortars with different charges, deduced from actual experiments"
+    material: iron
+    technique: "theory"
+    technique_note: "Although this is reportedly based on experiments, the timing values suggest that the data has been artificially produced"
+    angle: 45 deg
+    data:
+      -
+        diameter: 13 in
+        mass: 214 lb
+        mass_note: "The shell weighs 205 lbs and holds 9 lbs of powder"
+        data:
+          -
+            charge: 0 lb 7 oz 0 dr
+            group: "328-13-1"
+            data:
+              - final_time: 4.37 s
+              - range: 100 yds
+          -
+            charge: 0 lb 10 oz 0 dr
+            group: "328-13-2"
+            data:
+              - final_time: 5.28 s
+              - range: 150 yds
+          -
+            charge: 0 lb 13 oz 0 dr
+            group: "328-13-3"
+            data:
+              - final_time: 6.20 s
+              - range: 200 yds
+          -
+            charge: 1 lb 0 oz 0 dr
+            group: "328-13-4"
+            data:
+              - final_time: 6.80 s
+              - range: 250 yds
+          -
+            charge: 1 lb 3 oz 0 dr
+            group: "328-13-5"
+            data:
+              - final_time: 7.50 s
+              - range: 300 yds
+          -
+            charge: 1 lb 6 oz 0 dr
+            group: "328-13-6"
+            data:
+              - final_time: 8.12 s
+              - range: 350 yds
+          -
+            charge: 1 lb 9 oz 0 dr
+            group: "328-13-7"
+            data:
+              - final_time: 9.68 s
+              - range: 400 yds
+          -
+            charge: 1 lb 12 oz 0 dr
+            group: "328-13-8"
+            data:
+              - final_time: 10.12 s
+              - range: 450 yds
+          -
+            charge: 1 lb 14 oz 8 dr
+            group: "328-13-9"
+            data:
+              - final_time: 10.60 s
+              - range: 500 yds
+          -
+            charge: 2 lb 1 oz 0 dr
+            group: "328-13-10"
+            data:
+              - final_time: 11.00 s
+              - range: 550 yds
+          -
+            charge: 2 lb 3 oz 8 dr
+            group: "328-13-11"
+            data:
+              - final_time: 11.40 s
+              - range: 600 yds
+          -
+            charge: 2 lb 6 oz 0 dr
+            group: "328-13-12"
+            data:
+              - final_time: 11.84 s
+              - range: 650 yds
+          -
+            charge: 2 lb 8 oz 8 dr
+            group: "328-13-13"
+            data:
+              - final_time: 12.20 s
+              - range: 700 yds
+          -
+            charge: 2 lb 10 oz 10 dr
+            group: "328-13-14"
+            data:
+              - final_time: 12.64 s
+              - range: 750 yds
+          -
+            charge: 2 lb 12 oz 12 dr
+            group: "328-13-15"
+            data:
+              - final_time: 13.00 s
+              - range: 800 yds
+          -
+            charge: 2 lb 14 oz 14 dr
+            group: "328-13-16"
+            data:
+              - final_time: 13.32 s
+              - range: 850 yds
+          -
+            charge: 3 lb 0 oz 0 dr
+            group: "328-13-17"
+            data:
+              - final_time: 13.72 s
+              - range: 900 yds
+          -
+            charge: 3 lb 2 oz 2 dr
+            group: "328-13-18"
+            data:
+              - final_time: 14.00 s
+              - range: 950 yds
+          -
+            charge: 3 lb 6 oz 0 dr
+            group: "328-13-19"
+            data:
+              - final_time: 14.40 s
+              - range: 1000 yds
+          -
+            charge: 3 lb 8 oz 8 dr
+            group: "328-13-20"
+            data:
+              - final_time: 14.72 s
+              - range: 1050 yds
+          -
+            charge: 3 lb 11 oz 0 dr
+            group: "328-13-21"
+            data:
+              - final_time: 15.00 s
+              - range: 1100 yds
+          -
+            charge: 3 lb 13 oz 8 dr
+            group: "328-13-22"
+            data:
+              - final_time: 15.28 s
+              - range: 1150 yds
+          -
+            charge: 4 lb 0 oz 0 dr
+            group: "328-13-23"
+            data:
+              - final_time: 15.60 s
+              - range: 1200 yds
+          -
+            charge: 4 lb 2 oz 8 dr
+            group: "328-13-24"
+            data:
+              - final_time: 15.84 s
+              - range: 1250 yds
+          -
+            charge: 4 lb 5 oz 0 dr
+            group: "328-13-25"
+            data:
+              - final_time: 16.12 s
+              - range: 1300 yds
+          -
+            charge: 4 lb 7 oz 8 dr
+            group: "328-13-26"
+            data:
+              - final_time: 16.48 s
+              - range: 1250 yds
+          -
+            charge: 4 lb 10 oz 0 dr
+            group: "328-13-27"
+            data:
+              - final_time: 16.72 s
+              - range: 1300 yds
+          -
+            charge: 4 lb 12 oz 8 dr
+            group: "328-13-28"
+            data:
+              - final_time: 17.00 s
+              - range: 1450 yds
+          -
+            charge: 4 lb 15 oz 0 dr
+            group: "328-13-29"
+            data:
+              - final_time: 17.28 s
+              - range: 1500 yds
+          -
+            charge: 5 lb 1 oz 8 dr
+            group: "328-13-30"
+            data:
+              - final_time: 17.56 s
+              - range: 1550 yds
+          -
+            charge: 5 lb 4 oz 0 dr
+            group: "328-13-31"
+            data:
+              - final_time: 17.80 s
+              - range: 1600 yds
+          -
+            charge: 5 lb 6 oz 8 dr
+            group: "328-13-32"
+            data:
+              - final_time: 18.12 s
+              - range: 1650 yds
+          -
+            charge: 5 lb 9 oz 0 dr
+            group: "328-13-33"
+            data:
+              - final_time: 18.48 s
+              - range: 1700 yds
+          -
+            charge: 5 lb 11 oz 8 dr
+            group: "328-13-34"
+            data:
+              - final_time: 18.59 s
+              - range: 1750 yds
+          -
+            charge: 5 lb 14 oz 0 dr
+            group: "328-13-35"
+            data:
+              - final_time: 18.72 s
+              - range: 1800 yds
+          -
+            charge: 6 lb 12 oz 0 dr
+            group: "328-13-36"
+            data:
+              - final_time: 19.03 s
+              - range: 1900 yds
+      -
+        diameter: 10 in
+        mass: 97.25 lb
+        mass_note: "The shell weighs 97 lbs and holds 3.25 lbs of powder"
+        data:
+          -
+            charge: 0 lb 5 oz 8 dr
+            group: "328-10-1"
+            data:
+              - final_time: 4.37 s
+              - range: 100 yds
+          -
+            charge: 0 lb 7 oz 0 dr
+            group: "328-10-2"
+            data:
+              - final_time: 5.28 s
+              - range: 150 yds
+          -
+            charge: 0 lb 8 oz 8 dr
+            group: "328-10-3"
+            data:
+              - final_time: 6.20 s
+              - range: 200 yds
+          -
+            charge: 0 lb 10 oz 0 dr
+            group: "328-10-4"
+            data:
+              - final_time: 6.80 s
+              - range: 250 yds
+          -
+            charge: 0 lb 11 oz 7 dr
+            group: "328-10-5"
+            data:
+              - final_time: 7.50 s
+              - range: 300 yds
+          -
+            charge: 0 lb 12 oz 14 dr
+            group: "328-10-6"
+            data:
+              - final_time: 8.12 s
+              - range: 350 yds
+          -
+            charge: 0 lb 14 oz 5 dr
+            group: "328-10-7"
+            data:
+              - final_time: 9.68 s
+              - range: 400 yds
+          -
+            charge: 0 lb 15 oz 12 dr
+            group: "328-10-8"
+            data:
+              - final_time: 10.12 s
+              - range: 450 yds
+          -
+            charge: 1 lb 1 oz 3 dr
+            group: "328-10-9"
+            data:
+              - final_time: 10.60 s
+              - range: 500 yds
+          -
+            charge: 1 lb 2 oz 10 dr
+            group: "328-10-10"
+            data:
+              - final_time: 11.00 s
+              - range: 550 yds
+          -
+            charge: 1 lb 4 oz 1 dr
+            group: "328-10-11"
+            data:
+              - final_time: 11.40 s
+              - range: 600 yds
+          -
+            charge: 1 lb 5 oz 8 dr
+            group: "328-10-12"
+            data:
+              - final_time: 11.84 s
+              - range: 650 yds
+          -
+            charge: 1 lb 6 oz 15 dr
+            group: "328-10-13"
+            data:
+              - final_time: 12.20 s
+              - range: 700 yds
+          -
+            charge: 1 lb 8 oz 6 dr
+            group: "328-10-14"
+            data:
+              - final_time: 12.64 s
+              - range: 750 yds
+          -
+            charge: 1 lb 9 oz 13 dr
+            group: "328-10-15"
+            data:
+              - final_time: 13.00 s
+              - range: 800 yds
+          -
+            charge: 1 lb 11 oz 4 dr
+            group: "328-10-16"
+            data:
+              - final_time: 13.32 s
+              - range: 850 yds
+          -
+            charge: 1 lb 12 oz 11 dr
+            group: "328-10-17"
+            data:
+              - final_time: 13.72 s
+              - range: 900 yds
+          -
+            charge: 1 lb 14 oz 2 dr
+            group: "328-10-18"
+            data:
+              - final_time: 14.00 s
+              - range: 950 yds
+          -
+            charge: 1 lb 15 oz 9 dr
+            group: "328-10-19"
+            data:
+              - final_time: 14.40 s
+              - range: 1000 yds
+          -
+            charge: 2 lb 1 oz 0 dr
+            group: "328-10-20"
+            data:
+              - final_time: 14.72 s
+              - range: 1050 yds
+          -
+            charge: 2 lb 2 oz 7 dr
+            group: "328-10-21"
+            data:
+              - final_time: 15.00 s
+              - range: 1100 yds
+          -
+            charge: 2 lb 3 oz 14 dr
+            group: "328-10-22"
+            data:
+              - final_time: 15.28 s
+              - range: 1150 yds
+          -
+            charge: 2 lb 5 oz 5 dr
+            group: "328-10-23"
+            data:
+              - final_time: 15.60 s
+              - range: 1200 yds
+          -
+            charge: 2 lb 6 oz 12 dr
+            group: "328-10-24"
+            data:
+              - final_time: 15.84 s
+              - range: 1250 yds
+          -
+            charge: 2 lb 8 oz 1 dr
+            group: "328-10-25"
+            data:
+              - final_time: 16.12 s
+              - range: 1300 yds
+          -
+            charge: 2 lb 9 oz 8 dr
+            group: "328-10-26"
+            data:
+              - final_time: 16.48 s
+              - range: 1250 yds
+          -
+            charge: 2 lb 10 oz 15 dr
+            group: "328-10-27"
+            data:
+              - final_time: 16.72 s
+              - range: 1300 yds
+          -
+            charge: 2 lb 12 oz 6 dr
+            group: "328-10-28"
+            data:
+              - final_time: 17.00 s
+              - range: 1450 yds
+          -
+            charge: 2 lb 13 oz 13 dr
+            group: "328-10-29"
+            data:
+              - final_time: 17.28 s
+              - range: 1500 yds
+          -
+            charge: 2 lb 15 oz 4 dr
+            group: "328-10-30"
+            data:
+              - final_time: 17.56 s
+              - range: 1550 yds
+          -
+            charge: 3 lb 0 oz 11 dr
+            group: "328-10-31"
+            data:
+              - final_time: 17.80 s
+              - range: 1600 yds
+          -
+            charge: 3 lb 2 oz 2 dr
+            group: "328-10-32"
+            data:
+              - final_time: 18.12 s
+              - range: 1650 yds
+          -
+            charge: 3 lb 3 oz 9 dr
+            group: "328-10-33"
+            data:
+              - final_time: 18.48 s
+              - range: 1700 yds
+          -
+            charge: 3 lb 5 oz 0 dr
+            group: "328-10-34"
+            data:
+              - final_time: 18.59 s
+              - range: 1750 yds
+          -
+            charge: 3 lb 6 oz 7 dr
+            group: "328-10-35"
+            data:
+              - final_time: 18.72 s
+              - range: 1800 yds
+          -
+            charge: 3 lb 9 oz 5 dr
+            group: "328-10-36"
+            data:
+              - final_time: 19.03 s
+              - range: 1900 yds
+      -
+        diameter: 8 in
+        mass: 44.25 lb
+        mass_note: "The shell weighs 42 lbs and holds 2.25 lbs of powder"
+        data:
+          -
+            charge: 0 lb 4 oz 12 dr
+            group: "328-8-1"
+            data:
+              - final_time: 4.37 s
+              - range: 100 yds
+          -
+            charge: 0 lb 5 oz 8 dr
+            group: "328-8-2"
+            data:
+              - final_time: 5.28 s
+              - range: 150 yds
+          -
+            charge: 0 lb 6 oz 4 dr
+            group: "328-8-3"
+            data:
+              - final_time: 6.20 s
+              - range: 200 yds
+          -
+            charge: 0 lb 7 oz 0 dr
+            group: "328-8-4"
+            data:
+              - final_time: 6.80 s
+              - range: 250 yds
+          -
+            charge: 0 lb 7 oz 12 dr
+            group: "328-8-5"
+            data:
+              - final_time: 7.50 s
+              - range: 300 yds
+          -
+            charge: 0 lb 8 oz 8 dr
+            group: "328-8-6"
+            data:
+              - final_time: 8.12 s
+              - range: 350 yds
+          -
+            charge: 0 lb 9 oz 4 dr
+            group: "328-8-7"
+            data:
+              - final_time: 9.68 s
+              - range: 400 yds
+          -
+            charge: 0 lb 10 oz 0 dr
+            group: "328-8-8"
+            data:
+              - final_time: 10.12 s
+              - range: 450 yds
+          -
+            charge: 0 lb 10 oz 12 dr
+            group: "328-8-9"
+            data:
+              - final_time: 10.60 s
+              - range: 500 yds
+          -
+            charge: 0 lb 11 oz 8 dr
+            group: "328-8-10"
+            data:
+              - final_time: 11.00 s
+              - range: 550 yds
+          -
+            charge: 0 lb 12 oz 4 dr
+            group: "328-8-11"
+            data:
+              - final_time: 11.40 s
+              - range: 600 yds
+          -
+            charge: 0 lb 13 oz 0 dr
+            group: "328-8-12"
+            data:
+              - final_time: 11.84 s
+              - range: 650 yds
+          -
+            charge: 0 lb 13 oz 12 dr
+            group: "328-8-13"
+            data:
+              - final_time: 12.20 s
+              - range: 700 yds
+          -
+            charge: 0 lb 14 oz 8 dr
+            group: "328-8-14"
+            data:
+              - final_time: 12.64 s
+              - range: 750 yds
+          -
+            charge: 0 lb 15 oz 4 dr
+            group: "328-8-15"
+            data:
+              - final_time: 13.00 s
+              - range: 800 yds
+          -
+            charge: 1 lb 0 oz 0 dr
+            group: "328-8-16"
+            data:
+              - final_time: 13.32 s
+              - range: 850 yds
+          -
+            charge: 1 lb 0 oz 12 dr
+            group: "328-8-17"
+            data:
+              - final_time: 13.72 s
+              - range: 900 yds
+          -
+            charge: 1 lb 1 oz 8 dr
+            group: "328-8-18"
+            data:
+              - final_time: 14.00 s
+              - range: 950 yds
+          -
+            charge: 1 lb 2 oz 4 dr
+            group: "328-8-19"
+            data:
+              - final_time: 14.40 s
+              - range: 1000 yds
+          -
+            charge: 1 lb 3 oz 0 dr
+            group: "328-8-20"
+            data:
+              - final_time: 14.72 s
+              - range: 1050 yds
+          -
+            charge: 1 lb 3 oz 12 dr
+            group: "328-8-21"
+            data:
+              - final_time: 15.00 s
+              - range: 1100 yds
+          -
+            charge: 1 lb 4 oz 8 dr
+            group: "328-8-22"
+            data:
+              - final_time: 15.28 s
+              - range: 1150 yds
+          -
+            charge: 1 lb 5 oz 4 dr
+            group: "328-8-23"
+            data:
+              - final_time: 15.60 s
+              - range: 1200 yds
+          -
+            charge: 1 lb 6 oz 0 dr
+            group: "328-8-24"
+            data:
+              - final_time: 15.84 s
+              - range: 1250 yds
+          -
+            charge: 1 lb 6 oz 12 dr
+            group: "328-8-25"
+            data:
+              - final_time: 16.12 s
+              - range: 1300 yds
+          -
+            charge: 1 lb 7 oz 8 dr
+            group: "328-8-26"
+            data:
+              - final_time: 16.48 s
+              - range: 1250 yds
+          -
+            charge: 1 lb 8 oz 4 dr
+            group: "328-8-27"
+            data:
+              - final_time: 16.72 s
+              - range: 1300 yds
+          -
+            charge: 1 lb 9 oz 0 dr
+            group: "328-8-28"
+            data:
+              - final_time: 17.00 s
+              - range: 1450 yds
+          -
+            charge: 1 lb 9 oz 12 dr
+            group: "328-8-29"
+            data:
+              - final_time: 17.28 s
+              - range: 1500 yds
+          -
+            charge: 1 lb 10 oz 10 dr
+            group: "328-8-30"
+            data:
+              - final_time: 17.56 s
+              - range: 1550 yds
+          -
+            charge: 1 lb 11 oz 8 dr
+            group: "328-8-31"
+            data:
+              - final_time: 17.80 s
+              - range: 1600 yds
+          -
+            charge: 1 lb 12 oz 11 dr
+            group: "328-8-32"
+            data:
+              - final_time: 18.12 s
+              - range: 1650 yds
+          -
+            charge: 1 lb 13 oz 10 dr
+            group: "328-8-33"
+            data:
+              - final_time: 18.48 s
+              - range: 1700 yds
+          -
+            charge: 1 lb 14 oz 10 dr
+            group: "328-8-34"
+            data:
+              - final_time: 18.59 s
+              - range: 1750 yds
+          -
+            charge: 2 lb 0 oz 0 dr
+            group: "328-8-35"
+            data:
+              - final_time: 18.72 s
+              - range: 1800 yds
+      -
+        diameter: 5.5 in
+        mass: 15 lb 14 oz
+        mass_note: "The shell weighs 15 lbs and holds 14 oz lbs of powder"
+        data:
+          -
+            charge: 0 lb 2 oz 4 dr
+            group: "328-55-1"
+            data:
+              - final_time: 4.37 s
+              - range: 100 yds
+          -
+            charge: 0 lb 2 oz 7 dr
+            group: "328-55-2"
+            data:
+              - final_time: 5.28 s
+              - range: 150 yds
+          -
+            charge: 0 lb 2 oz 10 dr
+            group: "328-55-3"
+            data:
+              - final_time: 6.20 s
+              - range: 200 yds
+          -
+            charge: 0 lb 2 oz 15 dr
+            group: "328-55-4"
+            data:
+              - final_time: 6.80 s
+              - range: 250 yds
+          -
+            charge: 0 lb 3 oz 0 dr
+            group: "328-55-5"
+            data:
+              - final_time: 7.50 s
+              - range: 300 yds
+          -
+            charge: 0 lb 3 oz 4 dr
+            group: "328-55-6"
+            data:
+              - final_time: 8.12 s
+              - range: 350 yds
+          -
+            charge: 0 lb 3 oz 8 dr
+            group: "328-55-7"
+            data:
+              - final_time: 9.68 s
+              - range: 400 yds
+          -
+            charge: 0 lb 3 oz 12 dr
+            group: "328-55-8"
+            data:
+              - final_time: 10.12 s
+              - range: 450 yds
+          -
+            charge: 0 lb 4 oz 0 dr
+            group: "328-55-9"
+            data:
+              - final_time: 10.60 s
+              - range: 500 yds
+          -
+            charge: 0 lb 4 oz 4 dr
+            group: "328-55-10"
+            data:
+              - final_time: 11.00 s
+              - range: 550 yds
+          -
+            charge: 0 lb 4 oz 8 dr
+            group: "328-55-11"
+            data:
+              - final_time: 11.40 s
+              - range: 600 yds
+          -
+            charge: 0 lb 4 oz 12 dr
+            group: "328-55-12"
+            data:
+              - final_time: 11.84 s
+              - range: 650 yds
+          -
+            charge: 0 lb 5 oz 0 dr
+            group: "328-55-13"
+            data:
+              - final_time: 12.20 s
+              - range: 700 yds
+          -
+            charge: 0 lb 5 oz 4 dr
+            group: "328-55-14"
+            data:
+              - final_time: 12.64 s
+              - range: 750 yds
+          -
+            charge: 0 lb 5 oz 9 dr
+            group: "328-55-15"
+            data:
+              - final_time: 13.00 s
+              - range: 800 yds
+          -
+            charge: 0 lb 5 oz 13 dr
+            group: "328-55-16"
+            data:
+              - final_time: 13.32 s
+              - range: 850 yds
+          -
+            charge: 0 lb 6 oz 1 dr
+            group: "328-55-17"
+            data:
+              - final_time: 13.72 s
+              - range: 900 yds
+          -
+            charge: 0 lb 6 oz 7 dr
+            group: "328-55-18"
+            data:
+              - final_time: 14.00 s
+              - range: 950 yds
+          -
+            charge: 0 lb 6 oz 12 dr
+            group: "328-55-19"
+            data:
+              - final_time: 14.40 s
+              - range: 1000 yds
+          -
+            charge: 0 lb 7 oz 1 dr
+            group: "328-55-20"
+            data:
+              - final_time: 14.72 s
+              - range: 1050 yds
+          -
+            charge: 0 lb 7 oz 6 dr
+            group: "328-55-21"
+            data:
+              - final_time: 15.00 s
+              - range: 1100 yds
+          -
+            charge: 0 lb 7 oz 11 dr
+            group: "328-55-22"
+            data:
+              - final_time: 15.28 s
+              - range: 1150 yds
+          -
+            charge: 0 lb 8 oz 0 dr
+            group: "328-55-23"
+            data:
+              - final_time: 15.60 s
+              - range: 1200 yds
+          -
+            charge: 0 lb 8 oz 4 dr
+            group: "328-55-24"
+            data:
+              - final_time: 15.84 s
+              - range: 1250 yds
+          -
+            charge: 0 lb 8 oz 9 dr
+            group: "328-55-25"
+            data:
+              - final_time: 16.12 s
+              - range: 1300 yds
+          -
+            charge: 0 lb 8 oz 13 dr
+            group: "328-55-26"
+            data:
+              - final_time: 16.48 s
+              - range: 1250 yds
+          -
+            charge: 0 lb 9 oz 0 dr
+            group: "328-55-27"
+            data:
+              - final_time: 16.72 s
+              - range: 1300 yds
+      -
+        diameter: 4.875 in
+        diameter_note: "Elsewhere in the text, Coehorn mortars are listed as 4.5 inches in diameter.  Here the calibre is listed as 4 7/8 lb, which I've interpreted as 4 7/8 inches."
+        mass: 8 lb 7 oz
+        mass_note: "The shell weighs 8 lbs and holds 7 oz lbs of powder"
+        data:
+          -
+            charge: 0 lb 1 oz 8 dr
+            group: "328-4-1"
+            data:
+              - final_time: 4.37 s
+              - range: 100 yds
+          -
+            charge: 0 lb 1 oz 11 dr
+            group: "328-4-2"
+            data:
+              - final_time: 5.28 s
+              - range: 150 yds
+          -
+            charge: 0 lb 1 oz 14 dr
+            group: "328-4-3"
+            data:
+              - final_time: 6.20 s
+              - range: 200 yds
+          -
+            charge: 0 lb 2 oz 1 dr
+            group: "328-4-4"
+            data:
+              - final_time: 6.80 s
+              - range: 250 yds
+          -
+            charge: 0 lb 2 oz 4 dr
+            group: "328-4-5"
+            data:
+              - final_time: 7.50 s
+              - range: 300 yds
+          -
+            charge: 0 lb 2 oz 7 dr
+            group: "328-4-6"
+            data:
+              - final_time: 8.12 s
+              - range: 350 yds
+          -
+            charge: 0 lb 2 oz 10 dr
+            group: "328-4-7"
+            data:
+              - final_time: 9.68 s
+              - range: 400 yds
+          -
+            charge: 0 lb 2 oz 13 dr
+            group: "328-4-8"
+            data:
+              - final_time: 10.12 s
+              - range: 450 yds
+          -
+            charge: 0 lb 3 oz 0 dr
+            group: "328-4-9"
+            data:
+              - final_time: 10.60 s
+              - range: 500 yds
+          -
+            charge: 0 lb 3 oz 3 dr
+            group: "328-4-10"
+            data:
+              - final_time: 11.00 s
+              - range: 550 yds
+          -
+            charge: 0 lb 3 oz 6 dr
+            group: "328-4-11"
+            data:
+              - final_time: 11.40 s
+              - range: 600 yds
+          -
+            charge: 0 lb 3 oz 9 dr
+            group: "328-4-12"
+            data:
+              - final_time: 11.84 s
+              - range: 650 yds
+          -
+            charge: 0 lb 3 oz 12 dr
+            group: "328-4-13"
+            data:
+              - final_time: 12.20 s
+              - range: 700 yds
+          -
+            charge: 0 lb 3 oz 15 dr
+            group: "328-4-14"
+            data:
+              - final_time: 12.64 s
+              - range: 750 yds
+          -
+            charge: 0 lb 4 oz 2 dr
+            group: "328-4-15"
+            data:
+              - final_time: 13.00 s
+              - range: 800 yds
+          -
+            charge: 0 lb 4 oz 5 dr
+            group: "328-4-16"
+            data:
+              - final_time: 13.32 s
+              - range: 850 yds
+          -
+            charge: 0 lb 4 oz 8 dr
+            group: "328-4-17"
+            data:
+              - final_time: 13.72 s
+              - range: 900 yds
+  -
+    ref2: "Supplement entry on Table"
+    desc: "Table containing the greatest ranges of sea-mortars, with different charges, deduced from actual experiments"
+    material: iron
+    technique: "theory"
+    technique_note: "Although this is reportedly based on experiments, the timing values suggest that the data has been artificially produced"
+    angle: 45 deg
+    skip: true
+    skip_note: "The weights of the shells are not given, and therefore there is insufficient data to use this table."
 
-# Processed throught V, first section
