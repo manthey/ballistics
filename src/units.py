@@ -166,6 +166,8 @@ UnitsTable = [
     (['%slope', 'percentslope'], False, (
      lambda x: math.atan(x * 0.01), lambda x: math.tan(x) * 100),
      'Percent slope'),
+    (['grad', 'gradian', 'gradians', 'gon', 'degreescentesimaux', 'degcent'],
+     False, math.pi / 200, 'Gradian (gon)'),
 
     # Time (reference is second)
     (['third', 'thirds'], False, 1.0 / 60, 'Third (time)'),

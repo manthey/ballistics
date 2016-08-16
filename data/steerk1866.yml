@@ -1,0 +1,32 @@
+---
+key: steerk1866
+ref: "Steerk, 1866"
+cms: "Steerk, <i>Guide Pratique de la Fabrication des Poudres et Salp\u00eaters</i>.  Paris: Libraire de la Soci\u00e9t\u00e9 des Ing\u00e9nieurs Civils, 1866"
+summary: "This work discusses many aspects of making gunpowder, all the way from refining ingredients to proof."
+date: "1866"
+data:
+  -
+    angle: 50 gradians
+    diameter: 189 mm
+    mass: 29.500 kg
+    material: "bronze"
+    data:
+      -
+        ref2: p. 284
+        charge: 92 g
+        data:
+          -
+            range: 225 m
+            desc: "Proof required for poudre de guerre neuve."
+          -
+            range: 210 m
+            desc: "Proof required for poudre de guerre radoub\u00e9e."
+          -
+            range: 180 m
+            desc: "Proof required for poudre de mine."
+          -
+            range: 200 m
+            desc: "Proof required for poudre de commerce ext\u00e9rieur."
+      -
+        skip: true
+        skip_note: "There is a specification of minimum velocity with ballistic pendulum tests, but the text gives a power charge without a bullet size, so this is not directly usable.  It probably assumes a standrad 'fusil de chasse'."
