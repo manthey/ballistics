@@ -1,0 +1,92 @@
+---
+key: buchanan2006
+ref: "Buchanan, 2006"
+cms: "Buchanan, Brenda, editor.  <i>Gunpowder, Explosives, and the State: A Technological History.</i>  Aldershot: Ashgate Publishing Limited, 2006"
+summary: "A series of 20 essays on gunpowder."
+date: "2006"
+data:
+  -
+    ref2: "\"Realities and Perceptions in the Evolution of Black Powder Making\" by Robert A. Howard, p. 38"
+    desc: "Typical mortar proof of the 1830s"
+    date: "1830"
+    angle: 45 deg
+    charge: 1 oz
+    mass: 24 lb
+    diameter: 5.8 in
+    range: 220 yds
+  -
+    ref2: "\"Venetian Gunpowder in the Second Half of the Sixteenth Century: Production, Storage, Use\" by Walter Panciera"
+    data:
+      -
+        ref3: "p. 100"
+        desc: "Shooting test comparing large versus fine gunpowder"
+        date: "1580"
+        angle: 45 deg
+        angle_note: Assumed
+        mass: 50 lb
+        material: iron
+        material_note: Assumed
+        data:
+          -
+            desc2: "Fine"
+            charge: 24 lb
+            range: 3765 meters
+          -
+            desc2: "Large"
+            charge: 33 lb
+            range: 3296 meters
+      -
+        ref3: "p. 102"
+        desc: "Shooting test comparing large versus fine gunpowder"
+        desc2: "These results seem wholly at odds with the previous results.  It is likely that a different angle should be used."
+        date: "1589"
+        angle: 45 deg
+        angle_note: Assumed
+        mass: 14 lb
+        material: iron
+        material_note: Assumed
+        charge: 14 lb
+        data:
+          -
+            desc2: "Fine"
+            range: 806 meters
+          -
+            desc2: "Large"
+            range: 520 meters
+  -
+    ref2: "\"Torsebro Powder Mills, Sweden: Manufacturing and Testing the Product\" by Leif M\u00e5rtensson, p. 172"
+    desc: "High-angle mortar test, maximum height"
+    date: "1775"
+    angle: 84 deg
+    skip: true
+    skip_note: "No mass provided for the ball"
+  -
+    ref2: "\"Pellets, Pebbles and Prisms: British Munitions for Larger Guns, 1860-1885\" by Seymour H. Mauskopf, p. 311-313"
+    desc: "Muzzle velocities for different powders"
+    data:
+      -
+        date: "1869"
+        diameter: 10 in
+        material: iron
+        data:
+          -
+            desc2: "R.G.L. powder"
+            charge: 30 lb
+            initial_velocity: 1324 ft/s
+          -
+            desc2: "Russian prismatic powder"
+            charge: 32 lb
+            initial_velocity: 1366 ft/s
+          -
+            desc2: "Service pellet powder"
+            charge: 30 lb
+            initial_velocity: 1338 ft/s
+          -
+            desc2: "Pebble No. 5 powder"
+            charge: 35 lb
+            initial_velocity: 1374 ft/s
+      -
+        date: "1868"
+        skip: true
+        skip_note: "A comparison of R.L.G with prismatic powder in Armstrong and Krupp guns.  The guns use non-spherical projectiles."
+
