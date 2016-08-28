@@ -1,0 +1,322 @@
+---
+key: krenn1995
+ref: "Krenn, 1995"
+cms: "Krenn, Peter; Kalaus, Paul; Hall, Bert.  \"Material Culture and Military History: Test-Firing Early Modern Small Arms.\" <i>Material Culture Review / Revue de la culture mat\u00e9rielle, [S.l.], June 1995</i>.  ISSN 1927-9264.  Accessed: August 27, 2016.  https://journals.lib.unb.ca/index.php/MCR/article/view/17669/22312"
+summary: "Ballistics tests with early weapons using modern gunpowder."
+date: "1995"
+desc: "Tests of various early weapons using modern gunpowder."
+angle: 0 deg
+data:
+  -
+    desc2: "Doppelhaken G 284.  Heavy or \"Spanish\" musket, wheellock, rifled, Styria, 1571."
+    diameter: 19.0 mm
+    mass: 38.26 g
+    charge: 14.00 g
+    group: "1"
+    data:
+      -
+        initial_velocity: 482 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 461 m/s
+          -
+            range: 30 m
+            final_velocity: 418 m/s
+          -
+            range: 100 m
+            final_velocity: 305 m/s
+  -
+    desc2: "Doppelhaken G 358.  Heavy or \"Spanish\" musket, wheellock and matchlock, Styria, 1580s."
+    diameter: 20.2 mm
+    mass: 49.14 g
+    charge: 20.00 g
+    group: "2"
+    data:
+      -
+        initial_velocity: 533 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 514 m/s
+          -
+            range: 30 m
+            final_velocity: 470 m/s
+          -
+            range: 100 m
+            final_velocity: 349 m/s
+  -
+    desc2: "Matchlock LG 1514.  Musket, Styrian,first quarter of 17th century."
+    diameter: 14.3 mm
+    mass: 17.38 g
+    charge: 6.00 g
+    group: "3"
+    data:
+      -
+        initial_velocity: 449 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 428 m/s
+          -
+            range: 30 m
+            final_velocity: 378 m/s
+          -
+            range: 100 m
+            final_velocity: 264 m/s
+  -
+    desc2: "Wheellock RG 33.  Musket, Augsburg, ca 1595."
+    diameter: 17.2 mm
+    mass: 30.06 g
+    charge: 11.00 g
+    group: "4"
+    data:
+      -
+        initial_velocity: 456 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 435 m/s
+          -
+            range: 30 m
+            final_velocity: 394 m/s
+          -
+            range: 100 m
+            final_velocity: 287 m/s
+  -
+    desc2: "Wheellock RG 117.  Musket, Suhl, 1593."
+    diameter: 12.3 mm
+    mass: 10.84 g
+    charge: 5.00 g
+    group: "5"
+    data:
+      -
+        initial_velocity: 427 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 406 m/s
+          -
+            range: 30 m
+            final_velocity: 349 m/s
+          -
+            range: 100 m
+            final_velocity: 238 m/s
+  -
+    desc2: "Wheellock RG 272.  Musket, rifled, south German, first half of 17th century."
+    diameter: 17.5 mm
+    mass: 32.06 g
+    charge: 10.00 g
+    group: "6"
+    data:
+      -
+        initial_velocity: 392 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 371 m/s
+          -
+            range: 30 m
+            final_velocity: 342 m/s
+          -
+            range: 100 m
+            final_velocity: 260 m/s
+  -
+    desc2: "Wheellock pistol RP 2895.  Nuremberg, ca 1620."
+    diameter: 11.8 mm
+    mass: 9.56 g
+    charge: 6.00 g
+    group: "7"
+    data:
+      -
+        initial_velocity: 438 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 416 m/s
+          -
+            range: 30 m
+            final_velocity: 355 m/s
+  -
+    desc2: "Flintlock STG 1287.  Musket, converted from matchlock ca 1700, no indication of original maker or date."
+    diameter: 16.8 mm
+    mass: 27.54 g
+    charge: 9.33 g
+    group: "8"
+    data:
+      -
+        initial_velocity: 474 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 453 m/s
+          -
+            range: 30 m
+            final_velocity: 406 m/s
+          -
+            range: 100 m
+            final_velocity: 291 m/s
+  -
+    desc2: "Flintlock STG 1288.  Musket, rifled, Austrian, second half of 18th century."
+    diameter: 16.6 mm
+    mass: 26.73 g
+    charge: 8.50 g
+    group: "9"
+    data:
+      -
+        initial_velocity: 455 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 434 m/s
+          -
+            range: 30 m
+            final_velocity: 390 m/s
+          -
+            range: 100 m
+            final_velocity: 281 m/s
+  -
+    desc2: "Flintlock STG 1316.  Musket, converted from matchlock ca 1700, probably Styrian."
+    diameter: 17.6 mm
+    mass: 32.16 g
+    charge: 10.70 g
+    group: "10"
+    data:
+      -
+        initial_velocity: 451 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 430 m/s
+          -
+            range: 30 m
+            final_velocity: 391 m/s
+          -
+            range: 100 m
+            final_velocity: 287 m/s
+  -
+    desc2: "Flintlock STG 1317.  Musket, converted from matchlock, ca 1700, probably Styrian."
+    diameter: 17.8 mm
+    mass: 34.25 g
+    charge: 11.56 g
+    group: "11"
+    data:
+      -
+        initial_velocity: 467 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 446 m/s
+          -
+            range: 30 m
+            final_velocity: 406 m/s
+          -
+            range: 100 m
+            final_velocity: 300 m/s
+  -
+    desc2: "Flintlock STG 1318.  Musket, combined with matchlock, Suhl, 1686."
+    diameter: 17.5 mm
+    mass: 30.93 g
+    charge: 10.70 g
+    group: "12"
+    data:
+      -
+        initial_velocity: 494 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 473 m/s
+          -
+            range: 30 m
+            final_velocity: 426 m/s
+          -
+            range: 100 m
+            final_velocity: 305 m/s
+  -
+    desc2: "Flintlock pistol STP 1128.  Ferlach, ca 1700."
+    diameter: 13.5 mm
+    mass: 14.45 g
+    charge: 5.00 g
+    group: "13"
+    data:
+      -
+        initial_velocity: 385 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 362 m/s
+          -
+            range: 30 m
+            final_velocity: 323 m/s
+  -
+    desc2: "Barrel, Dep. E 28.  Flintlock, first quarter of 18th century (outfitted as pressure tester)."
+    diameter: 17.2 mm
+    mass: 29.89 g
+    charge: 15.00 g
+    group: "14"
+    data:
+      -
+        initial_velocity: 543 m/s
+      -
+        technique: trajectory
+        final_height: null
+        data:
+          -
+            range: 8 m
+            range_note: 7.5/8.5 m specified, using the average
+            final_velocity: 522 m/s
+  -
+    skip: true
+    skip_note: "The modern weapons have non-round projectiles fired with something other than black powder"
