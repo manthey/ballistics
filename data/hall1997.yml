@@ -1,0 +1,39 @@
+---
+key: hall1997
+ref: "Hall, 1997"
+cms: "Hall, Bert S.  <i>Weapons and Warfate in Renaissance Europe.</i>  Baltimore: The John Hopkins Press, 1997"
+summary: "A good description of the use of early gunpowder weapons in Europe."
+date: "1997"
+data:
+  -
+    desc: "Muzzle velocities of American Artillery from Benton."
+    ref2: "p. 138"
+    material: "iron"
+    date: "1862"
+    data:
+      -
+        mass: 6 lb
+        charge: 1.25 lb
+        initial_velocity: 1439 ft/s
+      -
+        mass: 12 lb
+        charge: 2.5 lb
+        initial_velocity: 1486 ft/s
+      -
+        mass: 24 lb
+        charge: 6.0 lb
+        initial_velocity: 1680 ft/s
+      -
+        mass: 24 lb
+        charge: 8.0 lb
+        initial_velocity: 1870 ft/s
+      -
+        mass: 32 lb
+        charge: 8.0 lb
+        initial_velocity: 1640 ft/s
+  -
+    desc: "Richochet velocities at 1000 yards from Benton."
+    ref2: "p. 151"
+    skip: true
+    skip_note: no powder charges are given.
+
