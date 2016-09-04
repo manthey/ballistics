@@ -1,0 +1,96 @@
+---
+key: kempers1998
+ref: "Kempers, 1998"
+cms: "Kempers, R. T. W., <i>Eprouvettes: A Comprehensive Study if Early Devices for the Testing of Gunpowder</i>, Leeds: Royal Armouries Museum, 1998."
+summary: "A well-produced study of eprouvettes."
+date: "1998"
+data:
+  -
+    ref2: "p. 26"
+    desc: "Holland in the early 18th century"
+    date: 1725
+    date_note: "early 18th century"
+    angle: 75 deg
+    charge: 34 g
+    material: bronze
+    mass: 4.94 kg
+    data:
+      -
+        desc2: "Artillery powder proof range"
+        range: 37.7 m
+      -
+        desc2: "Small-arms powder proof range"
+        range: 56.5 m
+  -
+    ref2: "p. 26"
+    desc: "68-pounder 8-inch Gomer mortar as described by Spearman"
+    date: 1828
+    mass: 68 lb
+    diameter: 7.92 in
+    diameter_note: the same as used by Anderson, 1862
+    angle: 45 deg
+    charge: 4 oz
+    data:
+      -
+        desc2: "Proof powder, new from mills, proof range"
+        range: 380 ft
+      -
+        desc2: "Restoved powder, proof range"
+        range: 350 ft
+  -
+    ref2: "p. 29-30"
+    desc: "Surirey de Saint Remy's mortar eprouvette"
+    date: 1741
+    mass: 60 livres
+    diameter: 7 infr
+    angle: 45 deg
+    charge: 3 ozfr
+    material: brass
+    data:
+      -
+        desc2: "New powder, proof range"
+        range: 50 toises
+      -
+        desc2: "Old powder, proof range"
+        range: 45 toises
+      -
+        date: 1742
+        ref2: "p. 33"
+        desc2: "Robin's range for this mortar"
+        range: 55 frenchfathom
+      -
+        date: 1826
+        ref2: "p. 33"
+        data:
+          -
+            desc2: "Von Decker's range for thie mortar with new powder"
+            range: 225 m
+          -
+            desc2: "Von Decker's range for thie mortar with old powder"
+            range: 210 m
+  -
+    ref2: "p. 33"
+    desc: "Guttmann using the English mortar eprouvette (presumably the Gomer mortar)"
+    date: 1895
+    mass: 29.3 kg
+    diameter: 7.92 in
+    diameter_note: presumed the same as used by Anderson, 1862
+    angle: 45 deg
+    charge: 92 g
+    range: 235 m
+  -
+    ref2: "p. 192"
+    desc: "Iron Government mortar eprouvette, circa 1835"
+    date: 1835
+    mass: 24 lb
+    material: iron
+    charge: 1 oz
+    angle: 45 deg
+    data:
+      -
+        desc2: "Short range"
+        range: 250 yards
+      -
+        desc2: "Long range"
+        range: 310 yards
+

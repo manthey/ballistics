@@ -81,8 +81,10 @@ UnitsTable = [
 
     (['ftfr', 'parisfoot', 'frenchfoot', 'parisfeet', 'frenchfeet'], False,
      ParisFootInMeters, 'Paris foot'),
-    (['infr', 'parisinch', 'frenchinch', 'parisinches', 'frenchinches'], False,
-     ParisFootInMeters / 12, 'Paris foot'),
+    (['infr', 'parisinch', 'frenchinch', 'parisinches', 'frenchinches',
+      'pouce', 'pouces'], False, ParisFootInMeters / 12, 'Paris inch'),
+    (['linefr', 'parisline', 'frenchline', 'parislines', 'frenchlines',
+      'ligne', 'lignes'], False, ParisFootInMeters / 144, 'Paris line'),
     (['toise', 'toises', 'frenchfathom', 'frenchfathoms'], False,
      ParisFootInMeters * 6, 'Paris toise (fathom)'),
 

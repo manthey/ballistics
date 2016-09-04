@@ -33,6 +33,8 @@ from units import convert_units
 MaterialsTable = [
     # Brass - Robertson: 8104, Natco: 8441
     (['brass'], 8520, 8100, 8700, 'Brass'),
+    # Bronze - Natco: 8756
+    (['bronze'], 8756, 8756, 8756, 'Bronze'),
     # Copper
     (['copper', 'cuivre'], 8940, 8800, 8950, 'Copper'),
     # Cast Iron - Robertson: 7135, Natco: 7208
