@@ -1,0 +1,38 @@
+---
+key: partington1999
+ref: "Partington, 1999"
+cms: "Partington, J. R., <i>A History of Greek Fire and Gunpowder</i>, Baltimore: The Johns Hopkins University Press, 1999."
+summary: "Originally published in 1960, this work has copious information, though many of the references are to the author's own publications, making the quality of them hard to evaluate."
+date: "1999"
+data:
+  -
+    ref2: "p. 325-326"
+    desc: "French Royal Factory at Essone, near Paris."
+    desc2: "This looks very similar to the eprouvette described by Surirey de Saint Remy, excepting that his used a brass not a copper ball.  Partington's reference lists a source from 1735, but dates the tests to 1756, so the data is suspicious at best."
+    date: 1756
+    angle: 45 deg
+    angle_note: assumed
+    diameter: 7 infr
+    material: copper
+    data:
+      -
+        desc3: "Minimum proof range"
+        charge: 3 ozfr
+        range: 300 ftfr
+      -
+        desc3: "Powder without sulpher"
+        charge: 2 ozfr
+        range: 213 ftfr
+      -
+        desc3: "Powder with sulpher"
+        charge: 2 ozfr
+        range: 249 ftfr
+      -
+        desc3: "Powder without sulpher"
+        charge: 3 ozfr
+        range: 475 ftfr
+      -
+        desc3: "Powder with sulpher"
+        charge: 3 ozfr
+        range: 472 ftfr
+

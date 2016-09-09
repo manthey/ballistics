@@ -1,0 +1,39 @@
+---
+key: steele2005
+ref: "Steele, 2005"
+cms: "Steele, Brett D. and Tamera Dorland, editors.  <i>The Heirs of Archimedes: Science and the Art of War through the Age of Enlightenment.</i>  Cambridge: The MIT Press, 2005."
+summary: "A series of 13 essays, 3 of which are on gunpowder."
+date: "2006"
+data:
+  -
+    ref2: "\"Chemistry in the Arsenal: State Regulation and Scientific Methodology of Gunpowder in Eighteenth-Century England and France\" by Seymour H. Mauskopf, p. 300-301"
+    desc: "A repeat of Surirey de Saint Remy's proof test"
+    mass: 60 lbfr
+    diameter: 191 mm
+    angle: 45 deg
+    charge: 3 ozfr
+    data:
+      -
+        date: "1686"
+        data:
+          -
+            range: 50 toises
+            desc2: "Proof charge for fresh powder."
+          -
+            range: 45 toises
+            desc2: "Proof charge for reworked powder."
+      -
+        date: "1769"
+        data:
+          -
+            range: 90 toises
+            desc2: "Acceptance range of new powder."
+          -
+            range: 75 toises
+            desc2: "Reject range of new powder."
+          -
+            range: 80 toises
+            desc2: "Acceptance range of reworked powder."
+          -
+            range: 66 toises
+            desc2: "Reject range of reworked powder."
