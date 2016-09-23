@@ -2,6 +2,11 @@
 skip: True
 references:
   -
+    key: adye1804
+    ref: "Adye, 1804"
+    cms: "Adye, Ralph Willet.  <i>The Bombardier, and Pocket Gunner.</i>  Boston: E. Larkin, 1804."
+    summary: "An alphabetical listing of information, largely compiled from sources at Woolwich."
+  -
     key: berthelot1892
     ref: "Berthelot, 1892"
     cms: "Berthelot, M. <i>Explosives and their Power.</i> Translated by C. Napier Hake and William Macnab. London: John Murray, 1892."

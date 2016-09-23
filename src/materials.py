@@ -30,14 +30,15 @@ from units import convert_units
 # metal-alloys-densities-d_50.html
 #  This could be expanded if necessary.  Davies, 1748 gives a greater range for
 # each material's density as well as values for steel, copper, and others.
+# Adye, 1804 (p. 146) has a table with some values.
 MaterialsTable = [
-    # Brass - Robertson: 8104, Natco: 8441
-    (['brass'], 8520, 8100, 8700, 'Brass'),
+    # Brass - Robertson: 8104, Natco: 8441, Adye: cast brass 8000
+    (['brass'], 8520, 8000, 8700, 'Brass'),
     # Bronze - Natco: 8756
     (['bronze'], 8756, 8756, 8756, 'Bronze'),
-    # Copper
-    (['copper', 'cuivre'], 8940, 8800, 8950, 'Copper'),
-    # Cast Iron - Robertson: 7135, Natco: 7208
+    # Copper, Adye: 9000
+    (['copper', 'cuivre'], 8940, 8800, 9000, 'Copper'),
+    # Cast Iron - Robertson: 7135, Natco: 7208, Adye: 7425
     (['castiron', 'cast', 'iron'], 7450, 6800, 7800, 'Cast iron'),
     # Lead - Robertson: 11313, Natco: 11366
     (['lead'], 11340, 11310, 11370, 'Lead'),

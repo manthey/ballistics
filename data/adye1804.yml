@@ -1,0 +1,870 @@
+---
+key: adye1804
+ref: "Adye, 1804"
+cms: "Adye, Ralph Willet.  <i>The Bombardier, and Pocket Gunner.</i>  Boston: E. Larkin, 1804."
+summary: "An alphabetical listing of information, largely compiled from sources at Woolwich."
+date: "1804"
+data:
+  -
+    ref2: "p. 151"
+    desc: "Ranges from Brass Field Guns, with small Charges, 1798"
+    date: "1798"
+    material: iron
+    data:
+      -
+        mass: 12 lb
+        data:
+          -
+            charge: 10 oz
+            data:
+              -
+                angle: 1 deg
+                range: 199 yds
+              -
+                angle: 2 deg
+                range: 290 yds
+              -
+                angle: 3 deg
+                range: 390 yds
+              -
+                angle: 4 deg
+                range: 385 yds
+              -
+                angle: 5 deg
+                range: 597 yds
+              -
+                angle: 6 deg
+                range: 716 yds
+              -
+                angle: 7 deg
+                range: 695 yds
+              -
+                angle: 8 deg
+                range: 788 yds
+          -
+            charge: 1 lb
+            data:
+              -
+                angle: 1 deg
+                range: 280 yds
+              -
+                angle: 2 deg
+                range: 416 yds
+              -
+                angle: 3 deg
+                range: 729 yds
+              -
+                angle: 4 deg
+                range: 777 yds
+              -
+                angle: 5 deg
+                range: 966 yds
+              -
+                angle: 6 deg
+                range: 1090 yds
+              -
+                angle: 7 deg
+                range: 1054 yds
+              -
+                angle: 8 deg
+                range: 1295 yds
+      -
+        mass: 6 lb
+        data:
+          -
+            charge: 5 oz
+            data:
+              -
+                angle: 1 deg
+                range: 111 yds
+              -
+                angle: 2 deg
+                range: 222 yds
+              -
+                angle: 3 deg
+                range: 376 yds
+              -
+                angle: 4 deg
+                range: 432 yds
+              -
+                angle: 5 deg
+                range: 618 yds
+              -
+                angle: 6 deg
+                range: 625 yds
+              -
+                angle: 7 deg
+                range: 650 yds
+              -
+                angle: 8 deg
+                range: 788 yds
+          -
+            charge: 8 oz
+            data:
+              -
+                angle: 1 deg
+                range: 277 yds
+              -
+                angle: 2 deg
+                range: 401 yds
+              -
+                angle: 3 deg
+                range: 754 yds
+              -
+                angle: 4 deg
+                range: 826 yds
+              -
+                angle: 5 deg
+                range: 925 yds
+              -
+                angle: 6 deg
+                range: 980 yds
+              -
+                angle: 7 deg
+                range: 1103 yds
+              -
+                angle: 8 deg
+                range: 1100 yds
+  -
+    ref2: "p. 159"
+    desc: "Ranges with Sea Service Iron Guns.  1796"
+    desc2: "With single shot to the first graze"
+    date: "1796"
+    material: iron
+    data:
+      -
+        angle: 2 deg
+        data:
+          -
+            range: 1200 yds
+            data:
+              -
+                mass: 32 lb
+                charge: 10.667 lb
+              -
+                mass: 24 lb
+                charge: 8 lb
+              -
+                mass: 18 lb
+                charge: 6 lb
+          -
+            range: 1000 yds
+            data:
+              -
+                mass: 32 lb
+                charge: 8 lb
+              -
+                mass: 24 lb
+                charge: 6 lb
+              -
+                mass: 18 lb
+                charge: 4.5 lb
+      -
+        angle: 4 deg
+        data:
+          -
+            range: 1600 yds
+            data:
+              -
+                mass: 32 lb
+                charge: 10.667 lb
+              -
+                mass: 24 lb
+                charge: 8 lb
+              -
+                mass: 18 lb
+                charge: 6 lb
+          -
+            range: 1500 yds
+            data:
+              -
+                mass: 32 lb
+                charge: 8 lb
+              -
+                mass: 24 lb
+                charge: 6 lb
+              -
+                mass: 18 lb
+                charge: 4.5 lb
+      -
+        angle: 7 deg
+        data:
+          -
+            range: 2150 yds
+            data:
+              -
+                mass: 32 lb
+                charge: 10.667 lb
+              -
+                mass: 24 lb
+                charge: 8 lb
+              -
+                mass: 18 lb
+                charge: 6 lb
+          -
+            range: 2120 yds
+            data:
+              -
+                mass: 32 lb
+                charge: 8 lb
+              -
+                mass: 24 lb
+                charge: 6 lb
+              -
+                mass: 18 lb
+                charge: 4.5 lb
+  -
+    ref2: "p. 160-161"
+    skip: true
+    skip_note: "The weight of the shells is not given, so there is insufficient information"
+  -
+    ref2: "p. 162"
+    desc: "Ranges with French Brass Field Guns, with Round shot"
+    material: iron
+    data:
+      -
+        mass: 12 lbfr
+        charge: 4 lbfr
+        data:
+          -
+            angle: 58 arcmin
+            range: 300 toises
+          -
+            angle: 1 deg 3 arcmin
+            range: 350 toises
+          -
+            angle: 1 deg 39 arcmin
+            range: 400 toises
+          -
+            angle: 1 deg 49 arcmin
+            range: 450 toises
+          -
+            angle: 1 deg 56 arcmin
+            range: 480 toises
+      -
+        mass: 8 lbfr
+        charge: 2.5 lbfr
+        data:
+          -
+            angle: 58 arcmin
+            range: 300 toises
+          -
+            angle: 1 deg 24 arcmin
+            range: 350 toises
+          -
+            angle: 1 deg 51 arcmin
+            range: 400 toises
+          -
+            angle: 2 deg 8 arcmin
+            range: 450 toises
+          -
+            angle: 2 deg 24 arcmin
+            range: 480 toises
+      -
+        mass: 4 lbfr
+        charge: 1.5 lbfr
+        data:
+          -
+            angle: 58 arcmin
+            range: 250 toises
+          -
+            angle: 1 deg 20 arcmin
+            range: 300 toises
+          -
+            angle: 1 deg 40 arcmin
+            range: 350 toises
+          -
+            angle: 2 deg
+            range: 400 toises
+          -
+            angle: 2 deg 20 arcmin
+            range: 450 toises
+          -
+            angle: 2 deg 40 arcmin
+            range: 480 toises
+  -
+    ref2: "p. 163"
+    desc: "Mortar proof"
+    material: iron
+    mass: 64 lb
+    diameter: 8 in
+    charge: 2 oz
+    angle: 45 deg
+    data:
+      -
+        desc2: "Best"
+        range: 180 ft
+      -
+        desc2: "Pit"
+        range: 150 ft
+      -
+        desc2: "Redried, low"
+        range: 107 ft
+      -
+        desc2: "Redried, high"
+        range: 117 ft
+  -
+    ref2: "p. 165"
+    desc: "French mortar proof"
+    material: brass
+    mass: 60 lbfr
+    diameter: 6 infr 11.75 linefr
+    diameter_note: "Mortar is 7 inch 3/4 line with 1 line of windage."
+    charge: 3 ozfr
+    angle: 45 deg
+    data:
+      -
+        desc2: "Best"
+        range: 90 toises
+      -
+        desc2: "Restoved"
+        range: 80 toises
+      -
+        desc2: "New, low"
+        range: 100 toises
+      -
+        desc2: "New, high"
+        range: 120 toises
+      -
+        desc2: "Mr. Lombard's calculations"
+        range: 125 toises
+  -
+    ref2: "p. 170-171"
+    desc: "Ranges with a light 5 1/2 inch howitzer, 1798"
+    date: "1798"
+    diameter: 5.5 in
+    mass: 16 lb
+    mass_note: "From p. 169."
+    final_time_note: "The final times are quite coarse in their precision and largely too low."
+    data:
+      -
+        charge: 4 oz
+        data:
+          -
+            group: "170-4-1"
+            angle: 1 deg
+            data:
+              - final_time: 1 s
+              - range: 66 yds
+          -
+            group: "170-4-2"
+            angle: 2 deg
+            data:
+              - final_time: 1 s
+              - range: 85 yds
+          -
+            group: "170-4-3"
+            angle: 3 deg
+            data:
+              - final_time: 1.5 s
+              - range: 100 yds
+          -
+            group: "170-4-4"
+            angle: 4 deg
+            data:
+              - final_time: 1.5 s
+              - range: 110 yds
+          -
+            group: "170-4-5"
+            angle: 5 deg
+            data:
+              - final_time: 2 s
+              - range: 115 yds
+          -
+            group: "170-4-6"
+            angle: 6 deg
+            data:
+              - final_time: 2 s
+              - range: 168 yds
+          -
+            group: "170-4-7"
+            angle: 7 deg
+            data:
+              - final_time: 2 s
+              - range: 194 yds
+          -
+            group: "170-4-8"
+            angle: 8 deg
+            data:
+              - final_time: 2.5 s
+              - range: 226 yds
+          -
+            group: "170-4-9"
+            angle: 9 deg
+            data:
+              - final_time: 2.5 s
+              - range: 282 yds
+          -
+            group: "170-4-10"
+            angle: 10 deg
+            data:
+              - final_time: 2.5 s
+              - range: 279 yds
+          -
+            group: "170-4-11"
+            angle: 11 deg
+            data:
+              - final_time: 2.5 s
+              - range: 260 yds
+          -
+            group: "170-4-12"
+            angle: 12 deg
+            data:
+              - final_time: 3 s
+              - range: 315 yds
+      -
+        charge: 8 oz
+        data:
+          -
+            group: "170-8-1"
+            angle: 1 deg
+            data:
+              - final_time: 1.5 s
+              - range: 143 yds
+          -
+            group: "170-8-2"
+            angle: 2 deg
+            data:
+              - final_time: 1.5 s
+              - range: 184 yds
+          -
+            group: "170-8-3"
+            angle: 3 deg
+            data:
+              - final_time: 2 s
+              - range: 258 yds
+          -
+            group: "170-8-4"
+            angle: 4 deg
+            data:
+              - final_time: 2.5 s
+              - range: 307 yds
+          -
+            group: "170-8-5"
+            angle: 5 deg
+            data:
+              - final_time: 2.5 s
+              - range: 376 yds
+          -
+            group: "170-8-6"
+            angle: 6 deg
+            data:
+              - final_time: 3 s
+              - range: 408 yds
+          -
+            group: "170-8-7"
+            angle: 7 deg
+            data:
+              - final_time: 3.5 s
+              - range: 529 yds
+          -
+            group: "170-8-8"
+            angle: 8 deg
+            data:
+              - final_time: 4.5 s
+              - range: 630 yds
+          -
+            group: "170-8-9"
+            angle: 9 deg
+            data:
+              - final_time: 5 s
+              - range: 645 yds
+          -
+            group: "170-8-10"
+            angle: 10 deg
+            data:
+              - final_time: 5 s
+              - range: 642 yds
+          -
+            group: "170-8-11"
+            angle: 11 deg
+            data:
+              - final_time: 5.5 s
+              - range: 797 yds
+          -
+            group: "170-8-12"
+            angle: 12 deg
+            data:
+              - final_time: 5.5 s
+              - range: 715 yds
+      -
+        charge: 12 oz
+        data:
+          -
+            group: "170-12-1"
+            angle: 1 deg
+            data:
+              - final_time: 2 s
+              - range: 334 yds
+          -
+            group: "170-12-2"
+            angle: 2 deg
+            data:
+              - final_time: 2 s
+              - range: 351 yds
+          -
+            group: "170-12-3"
+            angle: 3 deg
+            data:
+              - final_time: 2.5 s
+              - range: 506 yds
+          -
+            group: "170-12-4"
+            angle: 4 deg
+            data:
+              - final_time: 3 s
+              - range: 500 yds
+          -
+            group: "170-12-5"
+            angle: 5 deg
+            data:
+              - final_time: 3 s
+              - range: 509 yds
+          -
+            group: "170-12-6"
+            angle: 6 deg
+            data:
+              - final_time: 3.5 s
+              - range: 581 yds
+          -
+            group: "170-12-7"
+            angle: 7 deg
+            data:
+              - final_time: 5 s
+              - range: 872 yds
+          -
+            group: "170-12-8"
+            angle: 8 deg
+            data:
+              - final_time: 6.5 s
+              - range: 975 yds
+          -
+            group: "170-12-9"
+            angle: 9 deg
+            data:
+              - final_time: 7 s
+              - range: 911 yds
+          -
+            group: "170-12-10"
+            angle: 10 deg
+            data:
+              - final_time: 7 s
+              - range: 1021 yds
+          -
+            group: "170-12-11"
+            angle: 11 deg
+            data:
+              - final_time: 7.5 s
+              - range: 1177 yds
+      -
+        charge: 1 lb
+        data:
+          -
+            group: "170-1-1"
+            angle: 1 deg
+            data:
+              - final_time: 1.5 s
+              - range: 325 yds
+          -
+            group: "170-1-2"
+            angle: 2 deg
+            data:
+              - final_time: 2 s
+              - range: 490 yds
+          -
+            group: "170-1-3"
+            angle: 3 deg
+            data:
+              - final_time: 3 s
+              - range: 668 yds
+          -
+            group: "170-1-4"
+            angle: 4 deg
+            data:
+              - final_time: 4 s
+              - range: 728 yds
+          -
+            group: "170-1-5"
+            angle: 5 deg
+            data:
+              - final_time: 5.5 s
+              - range: 918 yds
+          -
+            group: "170-1-6"
+            angle: 6 deg
+            data:
+              - final_time: 5 s
+              - range: 823 yds
+          -
+            group: "170-1-7"
+            angle: 7 deg
+            data:
+              - final_time: 6 s
+              - range: 975 yds
+          -
+            group: "170-1-8"
+            angle: 8 deg
+            data:
+              - final_time: 7 s
+              - range: 1044 yds
+          -
+            group: "170-1-9"
+            angle: 9 deg
+            data:
+              - final_time: 8 s
+              - range: 1049 yds
+          -
+            group: "170-1-10"
+            angle: 10 deg
+            data:
+              - final_time: 8 s
+              - range: 1104 yds
+          -
+            group: "170-1-11"
+            angle: 11 deg
+            data:
+              - final_time: 8 s
+              - range: 1173 yds
+      -
+        charge: 2 lb
+        data:
+          -
+            group: "171-2-1"
+            angle: 1 deg
+            data:
+              - final_time: 2 s
+              - range: 453 yds
+          -
+            group: "171-2-2"
+            angle: 2 deg
+            data:
+              - final_time: 4 s
+              - range: 595 yds
+          -
+            group: "171-2-3"
+            angle: 3 deg
+            data:
+              - final_time: 4 s
+              - range: 666 yds
+          -
+            group: "171-2-4"
+            angle: 4 deg
+            data:
+              - final_time: 5 s
+              - range: 847 yds
+          -
+            group: "171-2-5"
+            angle: 5 deg
+            data:
+              - final_time: 5 s
+              - range: 957 yds
+          -
+            group: "171-2-6"
+            angle: 6 deg
+            data:
+              - final_time: 7 s
+              - range: 1173 yds
+          -
+            group: "171-2-7"
+            angle: 7 deg
+            data:
+              - final_time: 9 s
+              - range: 1449 yds
+          -
+            group: "171-2-8"
+            angle: 8 deg
+            data:
+              - final_time: 8 s
+              - range: 1355 yds
+          -
+            group: "171-2-9"
+            angle: 9 deg
+            data:
+              - final_time: 8 s
+              - range: 1585 yds
+          -
+            group: "171-2-10"
+            angle: 10 deg
+            data:
+              - final_time: 10 s
+              - range: 1853 yds
+          -
+            group: "171-2-11"
+            angle: 11 deg
+            data:
+              - final_time: 9 s
+              - range: 1793 yds
+          -
+            group: "171-2-12"
+            angle: 12 deg
+            data:
+              - final_time: 10 s
+              - range: 1686 yds
+      -
+        charge: 3 lb
+        data:
+          -
+            group: "171-3-1"
+            angle: 1 deg
+            data:
+              - final_time: 3 s
+              - range: 479 yds
+          -
+            group: "171-3-2"
+            angle: 2 deg
+            data:
+              - final_time: 5 s
+              - range: 722 yds
+          -
+            group: "171-3-3"
+            angle: 3 deg
+            data:
+              - final_time: 5 s
+              - range: 921 yds
+          -
+            group: "171-3-4"
+            angle: 4 deg
+            data:
+              - final_time: 5 s
+              - range: 1000 yds
+          -
+            group: "171-3-5"
+            angle: 5 deg
+            data:
+              - final_time: 7 s
+              - range: 1325 yds
+          -
+            group: "171-3-6"
+            angle: 6 deg
+            data:
+              - final_time: 8 s
+              - range: 1530 yds
+          -
+            group: "171-3-7"
+            angle: 7 deg
+            data:
+              - final_time: 9 s
+              - range: 1577 yds
+          -
+            group: "171-3-8"
+            angle: 8 deg
+            data:
+              - final_time: 9 s
+              - range: 1721 yds
+          -
+            group: "171-3-9"
+            angle: 9 deg
+            data:
+              - final_time: 9 s
+              - range: 1801 yds
+          -
+            group: "171-3-10"
+            angle: 10 deg
+            data:
+              - final_time: 9 s
+              - range: 1791 yds
+          -
+            group: "171-3-11"
+            angle: 11 deg
+            data:
+              - final_time: 12 s
+              - range: 1013 yds
+  -
+    ref2: "p. 201"
+    desc: "Ranges with a 10 Inch Sea Mortar, at 21 Degrees, on a Horizontal Plane"
+    diameter: 10 in
+    charge: 5 lb 8 oz
+    angle: 21 deg
+    data:
+      -
+        mass: 86 lb
+        group: "201-86"
+        data:
+          - final_time: 14 s
+          - range: 2335 yds
+      -
+        mass: 87 lb
+        group: "201-87"
+        data:
+          - final_time: 16 s
+          - range: 2510 yds
+  -
+    ref2: "p. 274"
+    desc: "Initial velocities"
+    material: iron
+    data:
+      -
+        mass: 6 lb
+        charge: 2 lb
+        initial_velocity: 1558 ft/s
+      -
+        mass: 6 lb
+        charge: 2 lb
+        initial_velocity: 1673 ft/s
+      -
+        mass: 3 lb
+        charge: 1 lb
+        initial_velocity: 1371 ft/s
+      -
+        mass: 3 lb
+        charge: 1 lb
+        initial_velocity: 1584 ft/s
+      -
+        mass: 24 lbfr
+        charge: 8 lbfr
+        initial_velocity: 1425 ftfr/s
+      -
+        mass: 24 lbfr
+        charge: 8 lbfr
+        initial_velocity: 1209 ftfr/s
+      -
+        mass: 24 lbfr
+        charge: 12 lbfr
+        initial_velocity: 1530 ftfr/s
+  -
+    ref2: "p. 275"
+    desc: "Initial velocities from Lombard's tables"
+    material: iron
+    mass_note: I believe these to be in French units
+    data:
+      -
+        mass: 16 lbfr
+        charge: 5 lbfr
+        initial_velocity: 1415 ftfr/s
+      -
+        mass: 16 lbfr
+        charge: 8 lbfr
+        initial_velocity: 1510 ftfr/s
+      -
+        mass: 12 lbfr
+        charge: 4 lbfr
+        initial_velocity: 1520 ftfr/s
+      -
+        mass: 8 lbfr
+        charge: 2.5 lbfr
+        initial_velocity: 1418 ftfr/s
+      -
+        mass: 8 lbfr
+        charge: 3 lbfr
+        initial_velocity: 1460 ftfr/s
+      -
+        mass: 4 lbfr
+        charge: 1 lbfr
+        initial_velocity: 1335 ftfr/s
+      -
+        mass: 4 lbfr
+        charge: 1.5 lbfr
+        initial_velocity: 1508 ftfr/s
+      -
+        mass: 12 lbfr
+        charge: 4 lbfr
+        initial_velocity: 1442 ftfr/s
+      -
+        mass: 8 lbfr
+        charge: 2.5 lbfr
+        initial_velocity: 1422 ftfr/s
+      -
+        mass: 4 lbfr
+        charge: 1.5 lbfr
+        initial_velocity: 1446 ftfr/s
+
