@@ -1,0 +1,57 @@
+---
+key: braddock1832
+ref: "Braddock, 1832"
+cms: "Braddock, John.  <i>A Memoir on Gunpowder; in which are distilled the Principles both of its Manufacture and Proof.</i>  London: J. M. Richardson, 1832."
+summary: "An account of gunpowder manufacture at Madras."
+date: "1832"
+data:
+  -
+    ref2: "p. 13"
+    desc: "Ranges on fresh and damp powder"
+    diameter: 8 in
+    mass: 68.5 lb
+    charge: 2 oz
+    angle: 45 deg
+    data:
+      -
+        desc2: "Gram-bush cannon-powder, made April, 1814, English system of manufacture"
+        data:
+          -
+            date: "1815-07-13"
+            range: 189 ft
+          -
+            date: "1815-08-09"
+            desc3: "After exposure to the air for 27 days"
+            range: 177.333 ft
+      -
+        desc2: "Parkinsonia cannon-powder, made April, 1814, English system of manufacture"
+        data:
+          -
+            date: "1815-07-13"
+            range: 227.667 ft
+          -
+            date: "1815-08-09"
+            desc3: "After exposure to the air for 27 days"
+            range: 222 ft
+      -
+        desc2: "The King's Waltham Abbey cannon-powder: had been to sea in His Magesty's ship, Pylades"
+        data:
+          -
+            date: "1815-07-13"
+            range: 245.333 ft
+          -
+            date: "1815-08-09"
+            desc3: "After exposure to the air for 27 days"
+            range: 233 ft
+      -
+        desc2: "Musketry powder, made April, 1814, according to the Madras system of manufacture"
+        date: "1815-08-09"
+        desc3: "After exposure to the air for 27 days"
+        range: 173.667 ft
+      -
+        desc2: "Madras powder, made January, 1813"
+        date: "1815-08-09"
+        desc3: "After exposure to the air for 27 days"
+        range: 157.667 ft
+
+# added through page 13
