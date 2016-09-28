@@ -53,5 +53,1107 @@ data:
         date: "1815-08-09"
         desc3: "After exposure to the air for 27 days"
         range: 157.667 ft
+  -
+    ref2: "p. 35"
+    desc: "Ranges on different powders"
+    angle: 45 deg
+    data:
+      -
+        desc2: "13-inch iron mortar"
+        diameter: 13 in
+        mass: 200 lb
+        charge: 9 lb
+        data:
+          -
+            desc3: "Powder 1: Experimental powder from 1829, 66.7/20/13.3"
+            range: 2249 yds
+          -
+            desc3: "Powder 2: Experimental powder from M. Champy, 80/15/5"
+            range: 2395 yds
+          -
+            desc3: "Powder 3: Experimental powder from English proportions, 75/15/10"
+            range: 2143 yds
+          -
+            desc3: "Powder 4: Experimental powder, 78.5/12.5/9"
+            range: 2235 yds
+          -
+            desc3: "Powder 5: Experimental powder from Brewster's Encyclopedia, 75.4/11.8/12.8"
+            range: 2292 yds
+          -
+            desc3: "Powder 6: Experimental powder from Madras proportions, 75/13.3/11.7"
+            range: 2328 yds
+          -
+            desc3: "Powder 7: His Majesty's cannon powder, 75/15/10"
+            range: 2449 yds
+          -
+            desc3: "Powder 8: Musket powder, 75/15/10"
+            range: 2386 yds
+      -
+        desc2: "10-inch iron mortar"
+        diameter: 10 in
+        mass: 96 lb
+        charge: 2 lb
+        data:
+          -
+            desc3: "Powder 1: Experimental powder from 1829, 66.7/20/13.3"
+            range: 879 yds
+          -
+            desc3: "Powder 2: Experimental powder from M. Champy, 80/15/5"
+            range: 955 yds
+          -
+            desc3: "Powder 3: Experimental powder from English proportions, 75/15/10"
+            range: 788 yds
+          -
+            desc3: "Powder 4: Experimental powder, 78.5/12.5/9"
+            range: 889 yds
+          -
+            desc3: "Powder 5: Experimental powder from Brewster's Encyclopedia, 75.4/11.8/12.8"
+            range: 955 yds
+          -
+            desc3: "Powder 6: Experimental powder from Madras proportions, 75/13.3/11.7"
+            range: 912 yds
+          -
+            desc3: "Powder 7: His Majesty's cannon powder, 75/15/10"
+            range: 1003 yds
+          -
+            desc3: "Powder 8: Musket powder, 75/15/10"
+            range: 1002 yds
+      -
+        desc2: "8-inch iron mortar"
+        diameter: 8 in
+        mass: 64 lb
+        charge: 1 lb
+        data:
+          -
+            desc3: "Powder 1: Experimental powder from 1829, 66.7/20/13.3"
+            range: 589 yds
+          -
+            desc3: "Powder 2: Experimental powder from M. Champy, 80/15/5"
+            range: 662 yds
+          -
+            desc3: "Powder 3: Experimental powder from English proportions, 75/15/10"
+            range: 533 yds
+          -
+            desc3: "Powder 4: Experimental powder, 78.5/12.5/9"
+            range: 578 yds
+          -
+            desc3: "Powder 5: Experimental powder from Brewster's Encyclopedia, 75.4/11.8/12.8"
+            range: 668 yds
+          -
+            desc3: "Powder 6: Experimental powder from Madras proportions, 75/13.3/11.7"
+            range: 651 yds
+          -
+            desc3: "Powder 7: His Majesty's cannon powder, 75/15/10"
+            range: 671 yds
+          -
+            desc3: "Powder 8: Musket powder, 75/15/10"
+            range: 738 yds
+      -
+        desc2: "8-inch mortar \u00e9prouvette"
+        diameter: 8 in
+        mass: 64 lb
+        charge: 3 oz
+        data:
+          -
+            desc3: "Powder 1: Experimental powder from 1829, 66.7/20/13.3"
+            range: 247 yds
+          -
+            desc3: "Powder 2: Experimental powder from M. Champy, 80/15/5"
+            range: 300 yds
+          -
+            desc3: "Powder 3: Experimental powder from English proportions, 75/15/10"
+            range: 258 yds
+          -
+            desc3: "Powder 4: Experimental powder, 78.5/12.5/9"
+            range: 263 yds
+          -
+            desc3: "Powder 5: Experimental powder from Brewster's Encyclopedia, 75.4/11.8/12.8"
+            range: 264 yds
+          -
+            desc3: "Powder 6: Experimental powder from Madras proportions, 75/13.3/11.7"
+            range: 275 yds
+          -
+            desc3: "Powder 7: His Majesty's cannon powder, 75/15/10"
+            range: 280 yds
+          -
+            desc3: "Powder 8: Musket powder, 75/15/10"
+            range: 300 yds
+      -
+        desc2: "8-inch mortar \u00e9prouvette"
+        diameter: 8 in
+        mass: 64 lb
+        charge: 2 oz
+        data:
+          -
+            desc3: "Powder 1: Experimental powder from 1829, 66.7/20/13.3"
+            range: 166 yds
+          -
+            desc3: "Powder 2: Experimental powder from M. Champy, 80/15/5"
+            range: 162 yds
+          -
+            desc3: "Powder 3: Experimental powder from English proportions, 75/15/10"
+            range: 159 yds
+          -
+            desc3: "Powder 4: Experimental powder, 78.5/12.5/9"
+            range: 158 yds
+          -
+            desc3: "Powder 5: Experimental powder from Brewster's Encyclopedia, 75.4/11.8/12.8"
+            range: 159 yds
+          -
+            desc3: "Powder 6: Experimental powder from Madras proportions, 75/13.3/11.7"
+            range: 171 yds
+          -
+            desc3: "Powder 7: His Majesty's cannon powder, 75/15/10"
+            range: 160 yds
+          -
+            desc3: "Powder 8: Musket powder, 75/15/10"
+            range: 187 yds
+      -
+        desc2: "8-inch iron mortar"
+        diameter: 8 in
+        mass: 64 lb
+        charge: 2 oz
+        data:
+          -
+            desc3: "Powder 1: Experimental powder from 1829, 66.7/20/13.3"
+            range: 43 yds
+          -
+            desc3: "Powder 2: Experimental powder from M. Champy, 80/15/5"
+            range: 48 yds
+          -
+            desc3: "Powder 3: Experimental powder from English proportions, 75/15/10"
+            range: 44 yds
+          -
+            desc3: "Powder 4: Experimental powder, 78.5/12.5/9"
+            range: 39 yds
+          -
+            desc3: "Powder 5: Experimental powder from Brewster's Encyclopedia, 75.4/11.8/12.8"
+            range: 51 yds
+          -
+            desc3: "Powder 6: Experimental powder from Madras proportions, 75/13.3/11.7"
+            range: 46 yds
+          -
+            desc3: "Powder 7: His Majesty's cannon powder, 75/15/10"
+            range: 58 yds
+          -
+            desc3: "Powder 8: Musket powder, 75/15/10"
+            range: 58 yds
+  -
+    ref2: "p. 48"
+    desc: "Comparison of French and Indian powders"
+    angle: 45 deg
+    data:
+      -
+        desc2: "8-inch Gomer iron mortar"
+        diameter: 8 in
+        mass: 68 lb 8 oz
+        charge: 2 oz
+        data:
+          -
+            desc3: "French Cannon Powder"
+            range: 75.667 yds
+          -
+            desc3: "Ishapore Cannon Powder"
+            range: 56.667 yds
+          -
+            desc3: "Allahabad Cannon Powder"
+            range: 76.333 yds
+          -
+            desc3: "Madras Cannon Powder"
+            range: 52.333 yds
+      -
+        desc2: "8-inch Gomer iron mortar"
+        diameter: 8 in
+        mass: 41 lb 11 oz
+        charge: 1 lb
+        data:
+          -
+            desc3: "French Cannon Powder"
+            range: 681 yds
+          -
+            desc3: "Ishapore Cannon Powder"
+            range: 318 yds
+          -
+            desc3: "Allahabad Cannon Powder"
+            range: 557 yds
+          -
+            desc3: "Madras Cannon Powder"
+            range: 419 yds
+      -
+        desc2: "10-inch Gomer iron mortar"
+        diameter: 10 in
+        mass: 85 lb 13 oz
+        charge: 1 lb
+        data:
+          -
+            desc3: "French Cannon Powder"
+            range: 381 yds
+          -
+            desc3: "Ishapore Cannon Powder"
+            range: 255 yds
+          -
+            desc3: "Allahabad Cannon Powder"
+            range: 354 yds
+          -
+            desc3: "Madras Cannon Powder"
+            range: 253 yds
+      -
+        desc2: "8-inch Gomer iron mortar"
+        diameter: 8 in
+        mass: 41 lb 11 oz
+        charge: 1 lb 12 oz
+        data:
+          -
+            desc3: "French Cannon Powder"
+            range: 1589 yds
+          -
+            desc3: "Ishapore Cannon Powder"
+            range: 709 yds
+          -
+            desc3: "Allahabad Cannon Powder"
+            range: 1168 yds
+          -
+            desc3: "Madras Cannon Powder"
+            range: 1148 yds
+      -
+        desc2: "10-inch Gomer iron mortar"
+        diameter: 10 in
+        mass: 85 lb 13 oz
+        charge: 1 lb 12 oz
+        data:
+          -
+            desc3: "French Cannon Powder"
+            range: 928 yds
+          -
+            desc3: "Ishapore Cannon Powder"
+            range: 461 yds
+          -
+            desc3: "Allahabad Cannon Powder"
+            range: 671 yds
+          -
+            desc3: "Madras Cannon Powder"
+            range: 558 yds
+  -
+    ref2: "p. 53"
+    desc: "Comparison of grain sizes"
+    angle: 45 deg
+    data:
+      -
+        desc2: "13-inch iron mortar, Waltham Abbey powder"
+        diameter: 13 in
+        charge: 9 lb
+        mass: 200 lb
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 2449 yds
+          -
+            desc3: "Musket or S.G"
+            range: 2386 yds
+      -
+        desc2: "10-inch iron mortar, Waltham Abbey powder"
+        diameter: 10 in
+        charge: 2 lb
+        mass: 96 lb
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 1003 yds
+          -
+            desc3: "Musket or S.G"
+            range: 1002 yds
+      -
+        desc2: "10-inch brass mortar, Waltham Abbey powder"
+        diameter: 10 in
+        charge: 2 lb
+        mass: 96 lb
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 1500 yds
+          -
+            desc3: "Rifle or F.G"
+            range: 1513 yds
+      -
+        desc2: "10-inch brass mortar, English system of manufacture powder"
+        diameter: 10 in
+        charge: 2 lb
+        mass: 96 lb
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 1402 yds
+          -
+            desc3: "Musket or S.G"
+            range: 1402 yds
+      -
+        desc2: "10-inch brass mortar, Madras system of manufacture powder"
+        diameter: 10 in
+        charge: 2 lb
+        mass: 96 lb
+        data:
+          -
+            desc3: "Cannon or L.G"
+            data:
+              - range: 1413 yds
+              - range: 1448 yds
+              - range: 1376 yds
+              - range: 1383 yds
+          -
+            desc3: "Musket or S.G"
+            data:
+              - range: 1326 yds
+              - range: 1460 yds
+              - range: 1377 yds
+              - range: 1431 yds
+          -
+            desc3: "Rifle or F.G"
+            data:
+              - range: 1324 yds
+              - range: 1414 yds
+              - range: 1397 yds
+              - range: 1384 yds
+      -
+        desc2: "10-inch brass mortar, Madras system of manufacture powder, pressed and glazed"
+        diameter: 10 in
+        charge: 2 lb
+        mass: 96 lb
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 1033 yds
+          -
+            desc3: "Musket or S.G"
+            range: 1236 yds
+          -
+            desc3: "Rifle or F.G"
+            range: 1345 yds
+      -
+        desc2: "8-inch iron mortar, Waltham Abbey powder"
+        diameter: 8 in
+        charge: 1 lb
+        mass: 64 lb
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 671 yds
+          -
+            desc3: "Musket or S.G"
+            range: 738 yds
+      -
+        desc2: "8-inch iron mortar, Ishapore powder"
+        diameter: 8 in
+        charge: 1 lb
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 358 yds
+          -
+            desc3: "Musket or S.G"
+            range: 651 yds
+      -
+        desc2: "8-inch iron mortar, Allahabad powder"
+        diameter: 8 in
+        charge: 1 lb
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 501 yds
+          -
+            desc3: "Musket or S.G"
+            range: 665 yds
+      -
+        desc2: "8-inch iron mortar, Madras powder"
+        diameter: 8 in
+        charge: 1 lb
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 449 yds
+          -
+            desc3: "Musket or S.G"
+            range: 623 yds
+      -
+        desc2: "8-inch iron mortar, Bombay powder"
+        diameter: 8 in
+        charge: 1 lb
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 183 yds
+          -
+            desc3: "Musket or S.G"
+            range: 383 yds
+      -
+        desc2: "8-inch iron mortar, Waltham Abbey powder"
+        diameter: 8 in
+        charge: 2 oz
+        mass: 64 lb
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 58 yds
+          -
+            desc3: "Musket or S.G"
+            range: 58 yds
+      -
+        desc2: "8-inch iron mortar, Madras powder"
+        diameter: 8 in
+        charge: 2 oz
+        mass: 64 lb
+        desc3: "Musket or S.G"
+        range: 46 yds
+      -
+        desc2: "8-inch iron mortar, Ishapore powder"
+        diameter: 8 in
+        charge: 2 oz
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 41 yds
+          -
+            desc3: "Musket or S.G"
+            range: 41 yds
+      -
+        desc2: "8-inch iron mortar, Allahabad powder"
+        diameter: 8 in
+        charge: 2 oz
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 56 yds
+          -
+            desc3: "Musket or S.G"
+            range: 42 yds
+      -
+        desc2: "8-inch iron mortar, Madras powder"
+        diameter: 8 in
+        charge: 2 oz
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 43 yds
+          -
+            desc3: "Musket or S.G"
+            range: 43 yds
+      -
+        desc2: "8-inch iron mortar, Bombay powder"
+        diameter: 8 in
+        charge: 2 oz
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc3: "Cannon or L.G"
+            range: 12 yds
+          -
+            desc3: "Musket or S.G"
+            range: 20 yds
+  -
+    ref2: "p. 58"
+    desc: "Comparison of pressing and glazing"
+    angle: 45 deg
+    data:
+      -
+        desc2: "8-inch iron mortar"
+        diameter: 8 in
+        charge: 2 oz
+        mass: 65.5 lb
+        data:
+          -
+            desc3: "English Cannon Powder, 1813"
+            range: 124 ft
+          -
+            desc3: "Madras common Cannon, 1829"
+            range: 85 ft
+          -
+            desc3: "Madras Cannon, pressed and glazed, 1829"
+            range: 67 ft
+      -
+        desc2: "5 1/2-inch brass mortar"
+        diameter: 5.5 in
+        charge: 2 oz
+        mass: 16 lb
+        data:
+          -
+            desc3: "English Cannon Powder, 1813"
+            range: 185 yds
+          -
+            desc3: "Madras common Cannon, 1829"
+            range: 131 yds
+          -
+            desc3: "Madras Cannon, pressed and glazed, 1829"
+            range: 92 yds
+      -
+        desc2: "8-inch \u00e9prouvette"
+        diameter: 8 in
+        charge: 3 oz
+        mass: 64 lb
+        data:
+          -
+            desc3: "English Cannon Powder, 1813"
+            range: 281 yds
+          -
+            desc3: "Madras common Cannon, 1829"
+            range: 274 yds
+          -
+            desc3: "Madras Cannon, pressed and glazed, 1829"
+            range: 200 yds
+      -
+        desc2: "8-inch iron mortar"
+        diameter: 8 in
+        charge: 8 oz
+        mass: 44 lb
+        data:
+          -
+            desc3: "English Cannon Powder, 1813"
+            range: 294 yds
+          -
+            desc3: "Madras common Cannon, 1829"
+            range: 225 yds
+          -
+            desc3: "Madras Cannon, pressed and glazed, 1829"
+            range: 159 yds
+      -
+        desc2: "8-inch iron mortar"
+        diameter: 8 in
+        charge: 1 lb
+        mass: 44 lb
+        data:
+          -
+            desc3: "English Cannon Powder, 1813"
+            range: 781 yds
+          -
+            desc3: "Madras common Cannon, 1829"
+            range: 560 yds
+          -
+            desc3: "Madras Cannon, pressed and glazed, 1829"
+            range: 308 yds
+      -
+        desc2: "8-inch iron mortar"
+        diameter: 8 in
+        charge: 2 lb
+        mass: 44 lb
+        data:
+          -
+            desc3: "English Cannon Powder, 1813"
+            range: 1853 yds
+          -
+            desc3: "Madras common Cannon, 1829"
+            range: 1728 yds
+          -
+            desc3: "Madras Cannon, pressed and glazed, 1829"
+            range: 1001 yds
+  -
+    ref2: "p. 67"
+    desc: "Variations caused by an irregular shell"
+    date: "1814-01"
+    angle: 45 deg
+    diameter: 8 in
+    charge: 2 oz
+    mass: 48 lb
+    data:
+      -
+        desc3: "Madras powder"
+        data:
+          - range: 85 ft
+          - range: 174 ft
+          - range: 132 ft
+      -
+        desc3: "Madras powder made by the English system of manufacture"
+        data:
+          - range: 105 ft
+          - range: 183 ft
+          - range: 216 ft
+  -
+    ref2: "p. 68"
+    desc: "Variations caused by old versus new shells"
+    angle: 45 deg
+    data:
+      -
+        diameter: 8 in
+        charge: 2 oz
+        mass: 64 lb
+        data:
+          -
+            desc3: "Old shell"
+            material: iron
+            range: 108 ft
+          -
+            desc3: "New shell"
+            material: brass
+            range: 308 ft
+      -
+        diameter: 4.5 in
+        charge: 1 oz
+        mass: 8 lb
+        data:
+          -
+            desc3: "Old shell"
+            material: iron
+            range: 117 yds
+          -
+            desc3: "New shell"
+            material: brass
+            range: 346 yds
+  -
+    ref2: "p. 69"
+    desc: "Variations caused by mortars"
+    angle: 45 deg
+    diameter: 8 in
+    mass: 65.5 lb
+    data:
+      -
+        desc2: "At Bengal"
+        date: "1828"
+        data:
+          -
+            charge: 2 oz
+            data:
+              -
+                desc2: "Ishapore powder"
+                range: 41 yds
+              -
+                desc2: "Allahabad powder"
+                range: 56 yds
+              -
+                desc2: "Madras powder"
+                range: 43 yds
+              -
+                desc2: "Bombay powder"
+                range: 12 yds
+          -
+            charge: 1 lb
+            data:
+              -
+                desc2: "Ishapore powder"
+                range: 358 yds
+              -
+                desc2: "Allahabad powder"
+                range: 501 yds
+              -
+                desc2: "Madras powder"
+                range: 449 yds
+              -
+                desc2: "Bombay powder"
+                range: 183 yds
+          -
+            charge: 1.75 lb
+            data:
+              -
+                desc2: "Ishapore powder"
+                range: 721 yds
+              -
+                desc2: "Allahabad powder"
+                range: 1042 yds
+              -
+                desc2: "Madras powder"
+                range: 1135 yds
+              -
+                desc2: "Bombay powder"
+                range: 407 yds
+      -
+        desc2: "At Madras"
+        date: "1829"
+        data:
+          -
+            charge: 2 oz
+            data:
+              -
+                desc2: "Ishapore powder"
+                range: 23 yds
+              -
+                desc2: "Allahabad powder"
+                range: 31 yds
+              -
+                desc2: "Madras powder"
+                range: 28 yds
+              -
+                desc2: "Bombay powder"
+                range: 10 yds
+          -
+            charge: 1 lb
+            data:
+              -
+                desc2: "Ishapore powder"
+                range: 393 yds
+              -
+                desc2: "Allahabad powder"
+                range: 357 yds
+              -
+                desc2: "Madras powder"
+                range: 460 yds
+              -
+                desc2: "Bombay powder"
+                range: 188 yds
+          -
+            charge: 1.75 lb
+            data:
+              -
+                desc2: "Ishapore powder"
+                range: 927 yds
+              -
+                desc2: "Allahabad powder"
+                range: 803 yds
+              -
+                desc2: "Madras powder"
+                range: 1204 yds
+              -
+                desc2: "Bombay powder"
+                range: 513 yds
+  -
+    ref2: "p. 71"
+    desc: "Heating powder to 400\u00b0F"
+    date: "1801"
+    angle: 45 deg
+    diameter: 4.5 in
+    charge: 1 ozt
+    mass: 8 lb
+    data:
+      -
+        desc3: "Room temperature powder"
+        range: 141 yds
+      -
+        desc3: "Powder heater to 400\u00b0F in a copper pan"
+        range: 242 yds
+  -
+    ref2: "p. 82"
+    desc: "Ranges with different charges in an 8-inch mortar \u00e9prouvette"
+    angle: 45 deg
+    diameter: 8 in
+    mass: 64 lb
+    data:
+      -
+        charge: 3 oz
+        data:
+          -
+            desc2: "English powder, 1813"
+            range: 288 yds
+          -
+            desc2: "Madras powder, 1825"
+            range: 279 yds
+          -
+            desc2: "Bombay powder, 1825"
+            range: 255 yds
+      -
+        charge: 1 oz
+        data:
+          -
+            desc2: "English powder, 1813"
+            range: 57 yds
+          -
+            desc2: "Madras powder, 1825"
+            range: 50 yds
+          -
+            desc2: "Bombay powder, 1825"
+            range: 23 yds
+      -
+        charge: 0.5 oz
+        data:
+          -
+            desc2: "English powder, 1813"
+            range: 33 ft
+          -
+            desc2: "Madras powder, 1825"
+            range: 15 ft
+          -
+            desc2: "Bombay powder, 1825"
+            range: 3 ft
+  -
+    ref2: "p. 87"
+    desc: "Ranges with different powders"
+    angle: 45 deg
+    data:
+      -
+        desc2: "8-in. iron mortar"
+        material: brass
+        diameter: 8 in
+        mass: 64 lb
+        charge: 2 oz
+        data:
+          -
+            desc3: "English powder, 1813"
+            range: 62 yds
+          -
+            desc3: "Ishapore powder, 1825"
+            range: 33 yds
+          -
+            desc3: "Allahabad powder, 1825"
+            range: 37 yds
+          -
+            desc3: "Madras powder, 1825"
+            range: 43 yds
+          -
+            desc3: "Bombay powder, 1825"
+            range: 18 yds
+      -
+        desc2: "10-in. iron mortar"
+        material: iron
+        diameter: 10 in
+        mass: 96 lb
+        charge: 2 oz
+        data:
+          -
+            desc3: "English powder, 1813"
+            range: 26 yds
+          -
+            desc3: "Ishapore powder, 1825"
+            range: 18 yds
+          -
+            desc3: "Allahabad powder, 1825"
+            range: 20 yds
+          -
+            desc3: "Madras powder, 1825"
+            range: 18 yds
+          -
+            desc3: "Bombay powder, 1825"
+            range: 3.333 yds
+      -
+        desc2: "8-in. iron mortar"
+        material: iron
+        diameter: 8 in
+        mass: 65 lb 8 oz
+        charge: 2 oz
+        data:
+          -
+            desc3: "English powder, 1813"
+            range: 41 yds
+          -
+            desc3: "Ishapore powder, 1825"
+            range: 23 yds
+          -
+            desc3: "Allahabad powder, 1825"
+            range: 31 yds
+          -
+            desc3: "Madras powder, 1825"
+            range: 28 yds
+          -
+            desc3: "Bombay powder, 1825"
+            range: 10 yds
+      -
+        desc2: "10-in. iron mortar"
+        material: iron
+        diameter: 10 in
+        mass: 87 lb
+        charge: 1 lb
+        data:
+          -
+            desc3: "English powder, 1813"
+            range: 425 yds
+          -
+            desc3: "Ishapore powder, 1825"
+            range: 287 yds
+          -
+            desc3: "Allahabad powder, 1825"
+            range: 286 yds
+          -
+            desc3: "Madras powder, 1825"
+            range: 295 yds
+          -
+            desc3: "Bombay powder, 1825"
+            range: 84 yds
+  -
+    ref2: "p. 92"
+    desc: "Tests performed at Woolwich in 1826"
+    date: "1826"
+    data:
+      -
+        desc2: "8-inch iron mortar"
+        diameter: 8 in
+        angle: 45 deg
+        mass: 44 lb 10 oz
+        data:
+          -
+            charge: 1 lb
+            data:
+              -
+                desc3: "English cannon powder that had been to sea for three years"
+                range: 589 yds
+              -
+                desc3: "Bombay, L. G. powder, 1821"
+                range: 140 yds
+              -
+                desc3: "Allahabad, L. G. powder, 1821-22"
+                range: 149 yds
+              -
+                desc3: "Ishapore, L. G. powder, 1822-23"
+                range: 401 yds
+              -
+                desc3: "Madras, L. G. powder, 1823"
+                range: 482 yds
+          -
+            charge: 1.25 lb
+            data:
+              -
+                desc3: "English cannon powder that had been to sea for three years"
+                range: 750 yds
+              -
+                desc3: "Bombay, L. G. powder, 1821"
+                range: 381 yds
+              -
+                desc3: "Allahabad, L. G. powder, 1821-22"
+                range: 450 yds
+              -
+                desc3: "Ishapore, L. G. powder, 1822-23"
+                range: 621 yds
+              -
+                desc3: "Madras, L. G. powder, 1823"
+                range: 775 yds
+          -
+            charge: 1.5 lb
+            data:
+              -
+                desc3: "English cannon powder that had been to sea for three years"
+                range: 1009 yds
+              -
+                desc3: "Bombay, L. G. powder, 1821"
+                range: 715 yds
+              -
+                desc3: "Allahabad, L. G. powder, 1821-22"
+                range: 717 yds
+              -
+                desc3: "Ishapore, L. G. powder, 1822-23"
+                range: 830 yds
+              -
+                desc3: "Madras, L. G. powder, 1823"
+                range: 1087 yds
+          -
+            charge: 1.75 lb
+            data:
+              -
+                desc3: "English cannon powder that had been to sea for three years"
+                range: 1221 yds
+              -
+                desc3: "Bombay, L. G. powder, 1821"
+                range: 997 yds
+              -
+                desc3: "Allahabad, L. G. powder, 1821-22"
+                range: 966 yds
+              -
+                desc3: "Ishapore, L. G. powder, 1822-23"
+                range: 1054 yds
+              -
+                desc3: "Madras, L. G. powder, 1823"
+                range: 1325 yds
+      -
+        desc2: "10-inch iron mortar"
+        diameter: 10 in
+        angle: 45 deg
+        mass: 48.5 lb
+        charge: 2 lb
+        data:
+          -
+            desc3: "English cannon powder that had been to sea for three years"
+            range: 836 yds
+          -
+            desc3: "Bombay, L. G. powder, 1821"
+            range: 410 yds
+          -
+            desc3: "Allahabad, L. G. powder, 1821-22"
+            range: 401 yds
+          -
+            desc3: "Ishapore, L. G. powder, 1822-23"
+            range: 596 yds
+          -
+            desc3: "Madras, L. G. powder, 1823"
+            range: 826 yds
+      -
+        desc2: "24-pounder iron gun"
+        skip: true
+        skip_note: "The point-blank tests are at an uncertain elevation"
+      -
+        desc2: "24-pounder iron gun"
+        material: iron
+        angle: 1.5 deg
+        mass: 23 lb 10 oz
+        charge: 8 lb
+        data:
+          -
+            desc3: "English cannon powder that had been to sea for three years"
+            range: 993 yds
+          -
+            desc3: "Bombay, L. G. powder, 1821"
+            range: 993 yds
+          -
+            desc3: "Allahabad, L. G. powder, 1821-22"
+            range: 1015 yds
+          -
+            desc3: "Ishapore, L. G. powder, 1822-23"
+            range: 1097 yds
+          -
+            desc3: "Madras, L. G. powder, 1823"
+            range: 1132 yds
+  -
+    ref2: "p. 94"
+    desc: "From Adye's Pocket Gunner, 8th edition, p. 182"
+    mass: 24 lb
+    material: iron
+    data:
+      -
+        charge: 6 lb
+        data:
+          -
+            angle: 2 deg
+            range: 1100 yds
+          -
+            angle: 2.25 deg
+            range: 1155 yds
+          -
+            angle: 2.5 deg
+            range: 1210 yds
+          -
+            angle: 3.75 deg
+            range: 1496 yds
+          -
+            angle: 4 deg
+            range: 1552 yds
+          -
+            angle: 4.25 deg
+            range: 1599 yds
+          -
+            angle: 4.5 deg
+            range: 1646 yds
+          -
+            angle: 4.75 deg
+            range: 1690 yds
+          -
+            angle: 5 deg
+            range: 1746 yds
+      -
+        charge: 10 lb
+        data:
+          -
+            angle: 2 deg
+            range: 1100 yds
+          -
+            angle: 2.25 deg
+            range: 1158 yds
+          -
+            angle: 2.5 deg
+            range: 1216 yds
+          -
+            angle: 3.75 deg
+            range: 1497 yds
+          -
+            angle: 4 deg
+            range: 1552 yds
+          -
+            angle: 4.25 deg
+            range: 1599 yds
+          -
+            angle: 4.5 deg
+            range: 1646 yds
+          -
+            angle: 4.75 deg
+            range: 1693 yds
+          -
+            angle: 5 deg
+            range: 1740 yds
 
-# added through page 13
+# added through page 94
