@@ -1155,5 +1155,1012 @@ data:
           -
             angle: 5 deg
             range: 1740 yds
+  -
+    ref2: "p. 96"
+    desc: "Ranges from mortars of different gunpowder, measured in Bengal, 1828"
+    date: "1828"
+    data:
+      -
+        diameter: 8 in
+        charge: 2 oz
+        mass: 41 lb 11 oz
+        data:
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 46 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 43 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 53 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 65 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 54 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 57 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 40 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 42 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 50 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 10 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 21 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 15 yds
+      -
+        diameter: 8 in
+        charge: 2 oz
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc2: "French Cannon Powder"
+            range: 48 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 41 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 41 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 45 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 56 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 42 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 49 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 43 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 43 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 43 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 12 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 20 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 15 yds
+      -
+        diameter: 8 in
+        charge: 2 oz
+        mass: 68 lb 8 oz
+        data:
+          -
+            desc2: "French Cannon Powder"
+            range: 76 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 57 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 59 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 59 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 76 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 64 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 63 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 53 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 59 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 51 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 14 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 20 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 14 yds
+      -
+        diameter: 10 in
+        charge: 2 oz
+        mass: 85 lb 13 oz
+        data:
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 33 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 28 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 32 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 40 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 26 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 40 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 28 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 27 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 34 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 5 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 15 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 9 yds
+      -
+        diameter: 8 in
+        charge: 1 lb
+        mass: 41 lb 11 oz
+        data:
+          -
+            desc2: "French Cannon Powder"
+            range: 681 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 318 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 604 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 415 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 557 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 685 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 440 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 419 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 668 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 474 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 97 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 311 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 129 yds
+      -
+        diameter: 8 in
+        charge: 1 lb
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc2: "French Cannon Powder"
+            range: 612 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 358 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 651 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 403 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 501 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 665 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 390 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 449 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 623 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 410 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 183 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 383 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 113 yds
+      -
+        diameter: 10 in
+        charge: 1 lb
+        mass: 85 lb 12 oz
+        data:
+          -
+            desc2: "French Cannon Powder"
+            range: 381 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 255 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 341 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 263 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 354 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 346 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 283 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 253 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 359 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 282 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 68 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 114 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 83 yds
+      -
+        diameter: 8 in
+        charge: 1 lb 12 oz
+        mass: 41 lb 11 oz
+        data:
+          -
+            desc2: "French Cannon Powder"
+            range: 1589 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 709 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1341 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 1168 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1387 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 1148 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1410 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 371 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 677 yds
+      -
+        diameter: 8 in
+        charge: 1 lb 12 oz
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc2: "French Cannon Powder"
+            range: 1464 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 721 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1354 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 1042 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1363 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 1135 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1348 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 407 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 610 yds
+      -
+        diameter: 10 in
+        charge: 1 lb 12 oz
+        mass: 85 lb 13 oz
+        data:
+          -
+            desc2: "French Cannon Powder"
+            range: 928 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 461 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 779 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 671 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 804 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 558 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 827 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 154 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 373 yds
+  -
+    ref2: "p. 97"
+    desc: "Ranges from mortars of different gunpowder, measured in Madras, 1829"
+    date: "1829"
+    data:
+      -
+        diameter: 8 in
+        charge: 2 oz
+        mass: 44 lb
+        data:
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 40 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 34 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 33 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 44 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 45 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 33 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 32 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 47 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 32 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 14 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 19 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 8 yds
+      -
+        diameter: 8 in
+        charge: 2 oz
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc2: "English Canon Powder"
+            range: 41 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 26 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 32 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 29 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 31 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 36 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 33 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 28 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 31 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 28 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 10 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 16 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 9 yds
+      -
+        diameter: 10 in
+        charge: 2 oz
+        mass: 87 lb
+        data:
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 19 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 19 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 20 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 20 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 23 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 19 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 16 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 19 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 18 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 7 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 9 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 5 yds
+      -
+        diameter: 8 in
+        charge: 1 lb
+        mass: 44 lb
+        data:
+          -
+            desc2: "English Canon Powder"
+            range: 781 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 459 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 620 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 407 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 396 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 665 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 395 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 528 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 664 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 522 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 128 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 330 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 119 yds
+      -
+        diameter: 8 in
+        charge: 1 lb
+        mass: 45 lb 8 oz
+        data:
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 393 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 520 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 409 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 357 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 569 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 387 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 460 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 566 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 458 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 188 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 362 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 110 yds
+      -
+        diameter: 10 in
+        charge: 1 lb
+        mass: 87 lb
+        data:
+          -
+            desc2: "English Canon Powder"
+            range: 425 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 287 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 324 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 273 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 286 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 404 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 236 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 294 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 341 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 300 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 84 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 122 yds
+              -
+                desc3: "No. 3 - Cannon Powder that had been first dried for two hours in the sun; afterwards exposed to the atmosphere for 12 days"
+                range: 80 yds
+      -
+        diameter: 8 in
+        charge: 1 lb 12 oz
+        mass: 44 lb
+        data:
+          -
+            desc2: "English Canon Powder"
+            range: 1499 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 1056 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1412 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 1105 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1428 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 1500 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1382 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 731 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 800 yds
+      -
+        diameter: 8 in
+        charge: 1 lb 12 oz
+        mass: 65 lb 8 oz
+        data:
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 927 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1210 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 903 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1230 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 1204 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 1187 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 513 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 903 yds
+      -
+        diameter: 10 in
+        charge: 1 lb 12 oz
+        mass: 87 lb
+        data:
+          -
+            desc2: "English Canon Powder"
+            range: 902 yds
+          -
+            desc2: "Ishapore"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 581 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 786 yds
+          -
+            desc2: "Allahabad"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 535 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 808 yds
+          -
+            desc2: "Madras"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 700 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 823 yds
+          -
+            desc2: "Bombay"
+            data:
+              -
+                desc3: "No. 1 - Cannon Powder"
+                range: 207 yds
+              -
+                desc3: "No. 2 - Musket Powder"
+                range: 416 yds
+  -
+    ref2: "p. 109"
+    desc: "Comparison of French, Allahabad, and English powders"
+    diameter: 8 in
+    charge: 2 oz
+    mass: 65 lb 8 oz
+    data:
+      -
+        desc2: "French powder"
+        data:
+          - range: 48 yds
+          - range: 76 yds
+      -
+        desc2: "Allahabad powder"
+        data:
+          - range: 31 yds
+          - range: 56 yds
+          - range: 76 yds
+      -
+        desc2: "English powder"
+        data:
+          - range: 41 yds
+          - range: 74 yds
+          - range: 100 yds
 
-# added through page 94
