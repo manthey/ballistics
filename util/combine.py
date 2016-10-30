@@ -117,6 +117,9 @@ def combine(opts):  # noqa
                 for key in ('date', 'power_factor', 'technique', 'ref'):
                     if item.get(key) is None:
                         raise Exception('Missing parameter %s' % key)
+                if opts.get('fields'):
+                    item = {key: item[key] for key in item
+                            if key in opts['fields']}
                 total.append(item)
                 if opts.get('grid') or opts.get('adjust'):
                     compile_grid(ReMnGrid, entry, opts, item)
@@ -292,6 +295,12 @@ if __name__ == '__main__':  # noqa - mccabe
             opts['group'] = True
         elif arg == '--json':
             opts['json'] = True
+        elif arg == '--limit':
+            opts['fields'] = [
+                'date_filled', 'power_factor', 'desc', 'ref', 'date',
+                'technique']
+        elif arg.startswith('--limit='):
+            opts['fields'] = arg.split('=', 1)[1].split(',')
         elif arg.startswith('--min='):
             opts['gridmin'] = int(arg.split('=', 1)[1])
         elif arg == '--nocsv':
@@ -309,11 +318,14 @@ if __name__ == '__main__':  # noqa - mccabe
 
 Syntax:  combine.py --grid --nopoints --res=(grid resolution) --min=(grid min)
                     --group --csv|--nocsv --json|--nojson --adjust
+                    --limit[=(fields)]
 --adjust adjusts the json file used with cod_adjusted.
 --csv outputs csv files in the built directory.
 --grid outputs a grid of used Re/Mn values to stdout.
 --group outputs only the grid for groups that are present.
 --json ouputs json files to the built directory (default).
+--limit reduces the fields output to the comma-separated list of fields.  If no
+  fields are given, a common subset of fields is used instead.
 --min specified how many points are required before a grid is output (default
   2).
 --nopoints excludes trajectory information in the output.

@@ -213,8 +213,10 @@ module.exports = function (grunt) {
     var defaultTasks = [
         'stylus',
         'build-js',
+        'copy:static'
+    ];
+    var defaultTasksX = [
         'yaml',
-        'copy:static',
         'copy:results',
         'folder_list:results'
     ];
