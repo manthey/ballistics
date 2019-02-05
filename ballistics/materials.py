@@ -20,8 +20,8 @@ Materials definitions and functions.
 import math
 import sys
 
-from formattext import line_break
-from units import convert_units
+from .formattext import line_break
+from .units import convert_units
 
 
 # The materials table is a list of tuples, each of which is ([list of names and
@@ -100,16 +100,16 @@ def list_materials(full=False):
     for (names, dens, mindens, maxdens, desc) in MaterialsTable:
         for name in names:
             if name in materials:
-                print 'Duplicate material: %s' % name
+                print('Duplicate material: %s' % name)
                 return
             if name == names[0]:
                 materials[name] = (dens, desc, names[1:])
             elif full == 'full':
                 materials[name] = (None, 'See %s.' % names[0], [])
-    names = materials.keys()
+    names = list(materials.keys())
     names.sort()
     nlen = max([len(name) for name in names])
-    print ('%-'+str(nlen)+'s Description (typical density)') % 'Name'
+    print(('%-'+str(nlen)+'s Description (typical density)') % 'Name')
     for name in names:
         desc = materials[name][1]
         if len(materials[name][2]):
@@ -120,4 +120,4 @@ def list_materials(full=False):
                 dens, convert_units(dens, 'lb/ft/ft/ft'))
         lines = line_break(('%-'+str(nlen)+'s %s') % (name, desc), 79, nlen+2)
         for line in lines:
-            print line
+            print(line)

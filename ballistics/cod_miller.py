@@ -115,7 +115,7 @@ def coefficient_of_drag_miller(state, only_in_range=False):
     # data.
     mach_data_oor = []
     mach_data = []
-    for pos in xrange(len(MnReCdDataTable)):
+    for pos in range(len(MnReCdDataTable)):
         (mach, reynolds_data, crit) = MnReCdDataTable[pos]
         use = False
         if Mn <= 0.3 and mach <= 0.3:
@@ -249,7 +249,7 @@ def interpolate(xi, data, logx=False, method='tension'):  # noqa -mccabe
     xy = [(key, ddict[key]) for key in ddict]
     xy.sort()
     pos = 0
-    for pos in xrange(len(xy)):
+    for pos in range(len(xy)):
         if xi == xy[pos][0]:
             return (xy[pos][1], True)
         if xi < xy[pos][0]:
@@ -425,7 +425,7 @@ def natural_bicubic_prep(data, logx=False):
         a[0  ] = 2  # noqa
         a[1  ] = 1  # noqa
         a[n+1] = 3*(p[1]-p[0])
-        for i in xrange(1, n, 1):
+        for i in range(1, n, 1):
             a[i*w+i-1] = 1
             a[i*w+i  ] = 4  # noqa
             a[i*w+i+1] = 1
@@ -434,7 +434,7 @@ def natural_bicubic_prep(data, logx=False):
         a[n*w+n  ] = 2  # noqa
         a[n*w+n+1] = 3*(p[n]-p[n-1])
         result = rowreduce(w, h, a)
-        D = [result[2][j*w+w-1] for j in xrange(h)]
+        D = [result[2][j*w+w-1] for j in range(h)]
         if axis == 'x':
             Dx = D
         else:
@@ -501,13 +501,13 @@ def natural_cubic_prep(data, logx=False, simple=False):
     if simple:
         D = [0]*(n+1)
         D[0] = (y[1]-y[0])/(x[1]-x[0])
-        for i in xrange(1, n, 1):
+        for i in range(1, n, 1):
             D[i] = ((y[i]-y[i-1])/(x[i]-x[i-1])+(y[i+1]-y[i])/(x[i+1]-x[i]))*0.5
             # D[i] = (y[i+1]-y[i-1])/(x[i+1]-x[i-1])
         D[n] = (y[n]-y[n-1])/(x[n]-x[n-1])
         return (x, y, D, logx)
     a = [0]*w*h
-    for i in xrange(1, n, 1):
+    for i in range(1, n, 1):
         a[i*w+i-1] = 1/(x[i]-x[i-1])
         a[i*w+i  ] = 2*(1/(x[i]-x[i-1])+1/(x[i+1]-x[i]))  # noqa
         a[i*w+i+1] = 1/(x[i+1]-x[i])
@@ -520,7 +520,7 @@ def natural_cubic_prep(data, logx=False, simple=False):
     a[n*w+n  ] = 2*(x[n]-x[n-1])  # noqa
     a[n*w+n+1] = 3*(y[n]-y[n-1])
     result = rowreduce(w, h, a)
-    D = [result[2][j*w+w-1] for j in xrange(h)]
+    D = [result[2][j*w+w-1] for j in range(h)]
     return (x, y, D, logx)
 
 
@@ -540,30 +540,30 @@ def rowreduce(w, h, matrix):  # noqa - mccabe
     if w < h:
         return (w, h, matrix)
     a = [float(val) for val in matrix]
-    for i in xrange(h):
-        for j in xrange(i, h, 1):
+    for i in range(h):
+        for j in range(i, h, 1):
             if a[j*w+i]:
                 break
         if j == h:
             return (w, h, a)
         if j != i:
-            for k in xrange(i, w, 1):
+            for k in range(i, w, 1):
                 temp = a[i*w+k]
                 a[i*w+k] = a[j*w+k]
                 a[j*w+k] = temp
-        for j in xrange(w-1, i, -1):
+        for j in range(w-1, i, -1):
             a[i*w+j] /= a[i*w+i]
         a[i*w+i] = 1.0
-        for j in xrange(i+1, h, 1):
+        for j in range(i+1, h, 1):
             temp = a[j*w+i]
             if temp:
-                for k in xrange(i, w, 1):
+                for k in range(i, w, 1):
                     a[j*w+k] -= a[i*w+k]*temp
-    for i in xrange(h-1, -1, -1):
-        for j in xrange(i+1, h, 1):
+    for i in range(h-1, -1, -1):
+        for j in range(i+1, h, 1):
             temp = a[i*w+j]
             if temp:
-                for k in xrange(h, w, 1):
+                for k in range(h, w, 1):
                     a[i*w+k] -= a[j*w+k]*temp
                 a[i*w+j] = 0.0
     return (w, h, a)

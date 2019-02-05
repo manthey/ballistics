@@ -20,7 +20,7 @@ Unit conversion functions and units definitions.
 import math
 import sys
 
-from formattext import line_break
+from .formattext import line_break
 
 #   References:
 # Robertson, John, *A Treatise of Mathematical Instruments*, originally
@@ -220,7 +220,7 @@ def convert_units(value, to=None, from_units=None):  # noqa - mccabe
     if to == 'string':
         return value
     lastpos = None
-    for k in xrange(len(value)):
+    for k in range(len(value)):
         if value[k] in '0123456789.+-':
             lastpos = k+1
         elif value[k] == 'e' and value[k+1:k+2] in '0123456789.+-':
@@ -236,7 +236,7 @@ def convert_units(value, to=None, from_units=None):  # noqa - mccabe
         units = from_units
     if units:
         firstpos = None
-        for k in xrange(len(units)):
+        for k in range(len(units)):
             if units[k] in '0123456789.+-':
                 firstpos = k
                 break
@@ -250,7 +250,7 @@ def convert_units(value, to=None, from_units=None):  # noqa - mccabe
             continue
         mode = 'mul'
         lastpos = 0
-        for pos in xrange(len(units)):
+        for pos in range(len(units)):
             if units[pos] in '*/':
                 factor = convert_units_factor(units[lastpos:pos])
                 if factor is None:
@@ -332,20 +332,20 @@ def list_units(full=False):
     for (names, prefix, factor, desc) in UnitsTable:
         for name in names:
             if name in units:
-                print 'Duplicate unit: %s' % name
+                print('Duplicate unit: %s' % name)
                 return
             for k in name:
-                if not k.isalpha():
-                    print 'Invalid unit name: %s' % name
+                if not k.isalpha() and k != '%':
+                    print('Invalid unit name: %s' % name)
                     return
             if name == names[0]:
                 units[name] = (factor, desc, names[1:])
             elif full == 'full':
                 units[name] = (None, 'See %s.' % names[0], [])
-    names = units.keys()
+    names = list(units.keys())
     names.sort()
     nlen = max([len(name) for name in names])
-    print ('%-'+str(nlen)+'s Description (factor to SI)') % 'Name'
+    print(('%-'+str(nlen)+'s Description (factor to SI)') % 'Name')
     for name in names:
         desc = units[name][1]
         if len(units[name][2]):
@@ -358,4 +358,4 @@ def list_units(full=False):
                 desc += '  (%g)' % factor
         lines = line_break(('%-'+str(nlen)+'s %s') % (name, desc), 79, nlen+2)
         for line in lines:
-            print line
+            print(line)

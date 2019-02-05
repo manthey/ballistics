@@ -13,7 +13,7 @@ import yaml
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),
                                              os.pardir)))
 
-from src import cod_adjusted  # noqa
+from ballistics import cod_adjusted  # noqa
 
 
 Groups = {}
@@ -45,7 +45,7 @@ def combine(opts):  # noqa
         try:
             data = yaml.safe_load(open(path))
         except Exception:
-            print 'Failed to parse file %s' % path
+            print('Failed to parse file %s' % path)
             continue
         references.setdefault(data['key'], {})
         for key in ('key', 'ref', 'cms', 'summary', 'link', 'details'):
@@ -54,14 +54,14 @@ def combine(opts):  # noqa
 
     ReMnGrid = {}
 
-    basedir = 'results'
+    basedir = opts.get('results', 'results')
     sources = 0
     for file in sorted(os.listdir(basedir)):  # noqa
         path = os.path.join(basedir, file)
         try:
             data = json.load(open(path))
         except Exception:
-            print 'Failed to parse file %s' % path
+            print('Failed to parse file %s' % path)
             continue
         sources += 1
         references.setdefault(data['key'], {})
@@ -117,26 +117,29 @@ def combine(opts):  # noqa
                 for key in ('date', 'power_factor', 'technique', 'ref'):
                     if item.get(key) is None:
                         raise Exception('Missing parameter %s' % key)
-                if opts.get('fields'):
+                if opts.get('fields') == 'notrajectory':
+                    item = {key: item[key] for key in item
+                            if not key.startswith('trajectory_')}
+                elif opts.get('fields'):
                     item = {key: item[key] for key in item
                             if key in opts['fields']}
                 total.append(item)
                 if opts.get('grid') or opts.get('adjust'):
                     compile_grid(ReMnGrid, entry, opts, item)
             except Exception:
-                print 'Failed on %s: %d\n%r' % (file, entry.get('idx', 0),
-                                                entry.get('conditions'))
-                print traceback.format_exc().strip()
+                print('Failed on %s: %d\n%r' % (file, entry.get('idx', 0),
+                                                entry.get('conditions')))
+                print(traceback.format_exc().strip())
     if opts.get('json', True):
         destpath = 'built/totallist.json'
-        json.dump(total, open(destpath, 'wb'), sort_keys=True, indent=1,
+        json.dump(total, open(destpath, 'wt'), sort_keys=True, indent=1,
                   separators=(',', ': '))
-    print '%d samples from %d sources' % (len(total), sources)
+    print('%d samples from %d sources' % (len(total), sources))
     if opts.get('json', True):
         refpath = 'built/references.json'
-        json.dump(references, open(refpath, 'wb'), sort_keys=True, indent=1,
+        json.dump(references, open(refpath, 'wt'), sort_keys=True, indent=1,
                   separators=(',', ': '))
-    print '%d references' % len(references)
+    print('%d references' % len(references))
     if opts.get('csv'):
         csv_dump(total, 'built/totallist.csv')
         csv_dump(references, 'built/references.csv')
@@ -170,7 +173,7 @@ def compile_grid(grid, entry, opts, item):  # noqa
     if len(ReList) != len(MnList):
         return
     res = int(opts.get('gridres', 10))
-    for i in xrange(len(ReList)):
+    for i in range(len(ReList)):
         Re = ReList[i]
         Mn = MnList[i]
         re = int(round(math.log10(Re) * res))
@@ -183,7 +186,7 @@ def compile_grid(grid, entry, opts, item):  # noqa
     if (group and not groupset and
             0.5 < item['power_factor'] / Groups[group] < 2):
         factor = 1 if item['power_factor'] < Groups[group] else -1
-        for i in xrange(len(ReList)):
+        for i in range(len(ReList)):
             Re = ReList[i]
             Mn = MnList[i]
             re = int(round(math.log10(Re) * res))
@@ -193,7 +196,7 @@ def compile_grid(grid, entry, opts, item):  # noqa
             GroupsGrid[mn][re] = GroupsGrid[mn].get(re, 0) + factor
         if group in GroupsRe:
             factor *= -1
-            for i in xrange(len(GroupsRe[group]['re'])):
+            for i in range(len(GroupsRe[group]['re'])):
                 Re = GroupsRe[group]['re'][i]
                 Mn = GroupsRe[group]['mn'][i]
                 re = int(round(math.log10(Re) * res))
@@ -221,12 +224,12 @@ def csv_dump(data, path):
     keys = [val[-1] for val in sorted([(
         key != 'key', key != 'idx', key != 'power_factor', key)
         for key in keys])]
-    with open(path, 'wb') as csvfile:
+    with open(path, 'wt') as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_NONNUMERIC)
         writer.writerow(keys)
         for entry in data:
             row = [entry.get(key) for key in keys]
-            row = [val.encode('utf8') if isinstance(val, unicode) else val
+            row = [val.encode('utf8') if isinstance(val, str) else val
                    for val in row]
             writer.writerow(row)
 
@@ -243,8 +246,8 @@ def show_grid(grid, opts, usemin=True):
     res = int(opts.get('gridres', 10))
     gridmin = int(opts.get('gridmin', 2))
     if gridmin and usemin:
-        for mn in grid.keys():
-            for re in grid[mn].keys():
+        for mn in list(grid.keys()):
+            for re in list(grid[mn].keys()):
                 if grid[mn][re] < gridmin:
                     del grid[mn][re]
             if not len(grid[mn]):
@@ -257,13 +260,13 @@ def show_grid(grid, opts, usemin=True):
         maxre = max(maxre, max(grid[mn].keys()))
     d = len('%g' % (1.0 / res))
     sys.stdout.write('%*s' % (d, ' '))
-    for re in xrange(minre, maxre + 1):
+    for re in range(minre, maxre + 1):
         sys.stdout.write(' %0.*f' % (d - 2, (float(re) / res)))
     sys.stdout.write('\n')
     nonzero = 0
-    for mn in xrange(minmn, maxmn + 1):
+    for mn in range(minmn, maxmn + 1):
         sys.stdout.write('%0.*f' % (d - 2, (float(mn) / res)))
-        for re in xrange(minre, maxre + 1):
+        for re in range(minre, maxre + 1):
             if grid.get(mn, {}).get(re) is None:
                 sys.stdout.write(' %*s' % (d, ' '))
             else:
@@ -299,6 +302,8 @@ if __name__ == '__main__':  # noqa - mccabe
             opts['fields'] = [
                 'date_filled', 'power_factor', 'desc', 'ref', 'date',
                 'technique']
+        elif arg == '--limit=notrajectory':
+            opts['fields'] = 'notrajectory'
         elif arg.startswith('--limit='):
             opts['fields'] = arg.split('=', 1)[1].split(',')
         elif arg.startswith('--min='):
@@ -311,28 +316,33 @@ if __name__ == '__main__':  # noqa - mccabe
             opts['points'] = False
         elif arg.startswith('--res='):
             opts['gridres'] = float(arg.split('=', 1)[1])
+        elif arg.startswith('--results='):
+            opts['results'] = arg.split('=', 1)[1]
         else:
             help = True
     if help:
-        print """Combine results into a single file plus a references file.
+        print("""Combine results into a single file plus a references file.
 
 Syntax:  combine.py --grid --nopoints --res=(grid resolution) --min=(grid min)
-                    --group --csv|--nocsv --json|--nojson --adjust
-                    --limit[=(fields)]
+    --group --csv|--nocsv --json|--nojson --adjust
+    --limit[=notrajectory|(fields)] --results=(results directory)
 --adjust adjusts the json file used with cod_adjusted.
 --csv outputs csv files in the built directory.
 --grid outputs a grid of used Re/Mn values to stdout.
 --group outputs only the grid for groups that are present.
---json ouputs json files to the built directory (default).
+--json outputs json files to the built directory (default).
 --limit reduces the fields output to the comma-separated list of fields.  If no
-  fields are given, a common subset of fields is used instead.
+  fields are given, a common subset of fields is used instead.  `notrajectory`
+  skips fields with names that start with `trajectory_`.
 --min specified how many points are required before a grid is output (default
   2).
 --nopoints excludes trajectory information in the output.
 --res indicates the group resolution (default 10).  This is the inverse of the
   increment between Mach values and between base-10 powers of the Reynolds
   number.
-"""
+--results is the directory where output from the process script is located.
+  Default is 'results'.
+""")
         sys.exit(0)
     if opts.get('adjust'):
         opts['gridres'] = cod_adjusted.Resolution
@@ -341,7 +351,7 @@ Syntax:  combine.py --grid --nopoints --res=(grid resolution) --min=(grid min)
         show_grid(grid, opts)
         show_grid(GroupsGrid, opts, False)
     if opts.get('adjust'):
-        path = 'src/cod_adjusted.json'
+        path = 'ballistics/cod_adjusted.json'
         if os.path.exists(path):
             adjust = json.load(open(path))
         else:
@@ -373,5 +383,5 @@ Syntax:  combine.py --grid --nopoints --res=(grid resolution) --min=(grid min)
 
         json.dump(adjust, open(path, 'wb'), sort_keys=True, indent=1,
                   separators=(',', ': '))
-        print 'Adjustment: delta %d  weight %d |%d|  groups %d  version %d' % (
-            total, weight, absweight, count, adjust['version'])
+        print('Adjustment: delta %d  weight %d |%d|  groups %d  version %d' % (
+            total, weight, absweight, count, adjust['version']))
