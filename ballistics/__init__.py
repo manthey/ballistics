@@ -19,23 +19,22 @@ Ballistics program for spherical projectiles.
 See help for details.
 """
 
+import hashlib
 import math
-import md5
 import os
 import pprint
 import shutil
 import sys
 import time
-import types
 
-from cod_adjusted import coefficient_of_drag_adjusted  # noqa
-from cod_collins import coefficient_of_drag_collins  # noqa
-from cod_henderson import coefficient_of_drag_henderson  # noqa
-from cod_miller import coefficient_of_drag_miller
-from cod_morrison import coefficient_of_drag_morrison  # noqa
-from formattext import line_break
-from materials import determine_material, list_materials
-from units import convert_units, list_units
+from .cod_adjusted import coefficient_of_drag_adjusted  # noqa
+from .cod_collins import coefficient_of_drag_collins  # noqa
+from .cod_henderson import coefficient_of_drag_henderson  # noqa
+from .cod_miller import coefficient_of_drag_miller
+from .cod_morrison import coefficient_of_drag_morrison  # noqa
+from .formattext import line_break
+from .materials import determine_material, list_materials
+from .units import convert_units, list_units
 
 # Modules that will get loaded if needed.  None of these are required.
 csv = None
@@ -48,8 +47,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2016-07-24v43'
-PROGRAM_SIGNATURE = 'fcf266df8736a89ec8cedcd90f7735b1'
+__version__ = '2019-02-05v44'
+PROGRAM_SIGNATURE = '8b3aee5afc636128d03c528ade136f21'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -651,8 +650,8 @@ def csv_row(data):
     if csv is None:
         import csv
     if StringIO is None:
-        import StringIO
-    si = StringIO.StringIO()
+        import io
+    si = io.StringIO()
     cw = csv.writer(si)
     cw.writerow(data)
     return si.getvalue().strip('\r\n')
@@ -681,16 +680,16 @@ def display_status(state, params={}, last=False):
     if time < LastDisplayStatus:
         LastDisplayStatus = time
     if not time:
-        print 'Time,x,y,vx,vy,ax,ay,cd,Re,Mn'
+        print('Time,x,y,vx,vy,ax,ay,cd,Re,Mn')
     if params and len(params):
         state = state.copy()
         for key in params:
             state[key] = params[key]
     drag = state.get('drag_data', {})
-    print '%5.3f %3.1f,%3.1f %3.1f,%3.1f %3.1f,%3.1f %5.3f %1.0f %4.2f' % (
+    print('%5.3f %3.1f,%3.1f %3.1f,%3.1f %3.1f,%3.1f %5.3f %1.0f %4.2f' % (
         time, state.get('x', 0), state.get('y', 0), state.get('vx', 0),
         state.get('vy', 0), state.get('ax', 0), state.get('ay', 0),
-        drag.get('cd', 0), drag.get('Re', 0), drag.get('Mn', 0))
+        drag.get('cd', 0), drag.get('Re', 0), drag.get('Mn', 0)))
 
 
 def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
@@ -707,15 +706,15 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
                         calculation.
            points: a list of points along the trajectory."""
     if unknown not in Factors:
-        print 'Cannot solve for %s.' % unknown
+        print('Cannot solve for %s.' % unknown)
         return (initial_state, [])
     if Factors[unknown].get('method', 'binary') is None:
-        print 'Cannot solve for %s.' % unknown
+        print('Cannot solve for %s.' % unknown)
         return (initial_state, [])
     if Factors[unknown].get('weak', False):
         if Verbose >= 1:
-            print ('Trying to solve for %s is ill-conditioned; it may not ' +
-                   'work.') % unknown
+            print(('Trying to solve for %s is ill-conditioned; it may not ' +
+                   'work.') % unknown)
     direct_state = find_unknown_direct(unknown, initial_state)
     if direct_state:
         return direct_state, []
@@ -740,7 +739,7 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
                 val = maxval
             error = trajectory_error(initial_state, unknown, val)
             if Verbose >= 3:
-                print 'Step %s: %g,%g' % (unknown, val, error)
+                print('Step %s: %g,%g' % (unknown, val, error))
             if error is None:
                 return initial_state, []
             if lasterror and error and error*lasterror <= 0:
@@ -752,7 +751,7 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
             val += step
     minerror = trajectory_error(initial_state, unknown, minval)
     if Verbose >= 3:
-        print '%s: %g,%g' % (unknown, minval, minerror)
+        print('%s: %g,%g' % (unknown, minval, minerror))
     while True:
         try:
             maxerror = trajectory_error(initial_state, unknown, maxval)
@@ -763,11 +762,11 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
         maxval /= 2
     x2 = y2 = None
     if Verbose >= 3:
-        print '%s: %g,%g %g,%g' % (unknown, minval, minerror, maxval, maxerror)
+        print('%s: %g,%g %g,%g' % (unknown, minval, minerror, maxval, maxerror))
     if minerror is None or maxerror is None:
         return initial_state, []
     if minerror*maxerror > 0:
-        print 'Cannot solve for %s; conditions are too weak.' % unknown
+        print('Cannot solve for %s; conditions are too weak.' % unknown)
         return initial_state, []
     if not minerror:
         foundval = minval
@@ -803,9 +802,9 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
             if not interror:
                 foundval = intval
                 if Verbose >= 3:
-                    print '%s: %g,%g %g,%g %g,%g %3.1f' % (
+                    print('%s: %g,%g %g,%g %g,%g %3.1f' % (
                         unknown, minval, minerror, maxval, maxerror, intval,
-                        interror, math.log10(intval/(maxval-minval)))
+                        interror, math.log10(intval/(maxval-minval))))
                 break
             if interror*minerror > 0:
                 minerror, y2 = interror, minerror
@@ -814,9 +813,9 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
                 maxerror, y2 = interror, maxerror
                 maxval, x2 = intval, maxval
             if Verbose >= 3:
-                print '%s: %g,%g %g,%g %g,%g %3.1f' % (
+                print('%s: %g,%g %g,%g %g,%g %3.1f' % (
                     unknown, minval, minerror, maxval, maxerror, intval,
-                    interror, math.log10(intval/(maxval-minval)))
+                    interror, math.log10(intval/(maxval-minval))))
     state = initial_state.copy()
     state[unknown] = foundval
     (state, points) = trajectory(state)
@@ -985,14 +984,14 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
                 line.append(title)
             lines.append(('head', line))
         lines.append(('headend', []))
-    for line in xrange(params['blank']):
+    for line in range(params['blank']):
         lines.append(('blank', ['' for item in data]))
     if state != {}:
         line = []
         for item in data:
             if item[2] is None:
                 line.append('')
-            elif type(item[2]) in (types.IntType, types.FloatType):
+            elif type(item[2]) in (int, float):
                 line.append(('%8g' % item[2]).strip())
             else:
                 line.append(str(item[2]))
@@ -1021,13 +1020,13 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
     for ltype, line in lines:
         if format == 'html':
             if ltype == 'headstart':
-                print '<table class=\'results_table sortable\'><thead>'
+                print('<table class=\'results_table sortable\'><thead>')
             elif ltype == 'headend':
-                print '</thead><tbody>'
+                print('</thead><tbody>')
             elif ltype == 'footstart':
-                print '</tbody><tfoot>'
+                print('</tbody><tfoot>')
             elif ltype == 'footend':
-                print '</tfoot></table>'
+                print('</tfoot></table>')
             else:
                 tag = ltype in ('head', 'foot') and 'th' or 'td'
                 out = ['<tr>']
@@ -1042,24 +1041,24 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
                         tag, cls, html_encode(item.strip()).replace(
                             '\n', '<BR/>'), tag))
                 out.append('</tr>')
-                print ''.join(out)
+                print(''.join(out))
         elif format == 'wp':
             if ltype == 'headstart':
-                print '[table class=\'results_table sortable\'][thead]'
+                print('[table class=\'results_table sortable\'][thead]')
             elif ltype == 'headend':
-                print '[tbody]'
+                print('[tbody]')
             elif ltype == 'footstart':
-                print '[tfoot]'
+                print('[tfoot]')
             elif ltype == 'footend':
-                print '[tableend]'
+                print('[tableend]')
             else:
                 tag = ltype in ('head', 'foot') and 'th' or 'td'
-                print '[tr][%s]' % tag + ('[%s]' % tag).join([
-                    html_encode(item) for item in line])
+                print('[tr][%s]' % tag + ('[%s]' % tag).join([
+                    html_encode(item) for item in line]))
         else:  # csv
             if ltype in ('headstart', 'headend', 'footstart', 'footend'):
                 continue
-            print csv_row(line)
+            print(csv_row(line))
 
 
 def get_cpu_time():
@@ -1091,7 +1090,7 @@ def graph_coefficient_of_drag(user_params=None):
         except Exception:
             sys.stderr.write('Cannot import matplotlib, cannot make a graph.\n')
             return
-    from cod_miller import MnReCdDataTable
+    from .cod_miller import MnReCdDataTable
     remin = round(math.log10(params['remin'])-0.0499, 1)
     remax = round(math.log10(params['remax'])+0.05, 1)
     reint = 1.
@@ -1104,11 +1103,11 @@ def graph_coefficient_of_drag(user_params=None):
     mnint = params['mnint']
     method = params.get('method', 'miller')
     substep = 100
-    for mni in xrange(int((mnmax-mnmin)/mnint)+1):
+    for mni in range(int((mnmax-mnmin)/mnint)+1):
         mn = mni*mnint+mnmin
         datax = []
         datay = []
-        for rei in xrange(int((remax-remin)/(reint/substep))+1):
+        for rei in range(int((remax-remin)/(reint/substep))+1):
             re = rei*reint/substep+remin
             cd = coefficient_of_drag(
                 state={'settings': {'drag_method': method}},
@@ -1555,8 +1554,8 @@ def trajectory(state):  # noqa - mccabe
             'final_velocity, or final_angle must be specified to compute the '
             'trajectory.')
         return (state, [])
-    cutoff_height = min(state.get('initial_height', 0),
-                        state.get('final_height', 0))
+    cutoff_height = min(state.get('initial_height') or 0,
+                        state.get('final_height') or 0)
     if cutoff_height is None:
         cutoff_height = 0
     cutoff_height -= 5000
@@ -1653,7 +1652,7 @@ def trajectory_error(initial_state, unknown, unknown_value):
     if Verbose >= 5:
         pprint.pprint(state)
     if state is None:
-        print 'Cannot calculate trajectory error - trajectory is None'
+        print('Cannot calculate trajectory error - trajectory is None')
         return None
     if (unknown != 'final_velocity' and
             initial_state.get('final_velocity', None) is not None):
@@ -1683,7 +1682,7 @@ def trajectory_error(initial_state, unknown, unknown_value):
         x0 = initial_state['final_angle']
         x = -math.atan2(state.get('vy', 0), state.get('vx', 0)) * 180 / math.pi
         return x - x0
-    print 'Cannot calculate trajectory error - nothing to solve for'
+    print('Cannot calculate trajectory error - nothing to solve for')
     return None
 
 
@@ -1709,33 +1708,33 @@ def version_check():
         sys.stderr.write('Can\'t read source file to determine version.\n')
         return
     # If I've left a debug comment in the source, don't update the version
-    if ('DWM' + '::') in src:
+    if (b'DWM' + b'::') in src:
         return
-    sigstart = 'PROGRAM_SIGNATURE = \''
+    sigstart = b'PROGRAM_SIGNATURE = \''
     sigpos = src.find(sigstart)
     if sigpos < 0:
         sys.stderr.write('Can\'t find program signature.\n')
         return
     sigpos += len(sigstart)
-    sigend = src.find('\'', sigpos)
+    sigend = src.find(b'\'', sigpos)
     if sigend < 0:
         sys.stderr.write('Can\'t find program signature.\n')
         return
-    sig = md5.new(src[:sigpos]+src[sigend:]).hexdigest()
+    sig = hashlib.md5(src[:sigpos]+src[sigend:]).hexdigest().encode('utf8')
     if sig == src[sigpos:sigend]:
         return
-    verstart = '__version__ = \''
+    verstart = b'__version__ = \''
     verpos = src.find(verstart)
     if verpos < 0:
         sys.stderr.write('Can\'t find program version.\n')
         return
     verpos += len(verstart)
-    verend = src.find('\'', verpos)
+    verend = src.find(b'\'', verpos)
     if verend < 0:
         sys.stderr.write('Can\'t find program version.\n')
         return
-    build = int(src[verpos:verend].split('v')[1])
-    newver = time.strftime('%Y-%m-%d')+'v%d' % (build+1)
+    build = int(src[verpos:verend].split(b'v')[1])
+    newver = (time.strftime('%Y-%m-%d')+'v%d' % (build+1)).encode('utf8')
     global __version__
     __version__ = newver
     if Verbose >= 1:
@@ -1744,7 +1743,7 @@ def version_check():
     if sigpos > verpos:
         sigpos += len(newver)-(verend-verpos)
         sigend += len(newver)-(verend-verpos)
-    newsig = md5.new(newsrc[:sigpos]+newsrc[sigend:]).hexdigest()
+    newsig = hashlib.md5(newsrc[:sigpos]+newsrc[sigend:]).hexdigest().encode('utf8')
     newsrc = newsrc[:sigpos]+newsig+newsrc[sigend:]
     tmppath = path+'.tmp'
     open(tmppath, 'wb').write(newsrc)
@@ -1795,8 +1794,8 @@ def viscosity_water_vapor(T, density):
            [-0.0270448, -0.0253093, -0.0267758, -0.0822904, 0.0602253,
             -0.0202595]]
     factor = 0
-    for j in xrange(len(bij)):
-        for i in xrange(len(bij[0])):
+    for j in range(len(bij)):
+        for i in range(len(bij[0])):
             factor += bij[j][i]*(1/scaledT-1)**i*(scaledRho-1)**j
     mu = mu0*math.exp(scaledRho*factor)
     return mu
@@ -1817,12 +1816,16 @@ def warning(state, tag, message):
     sys.stderr.write(message)
 
 
-if __name__ == '__main__':  # noqa - mccabe
-    argv = sys.argv[1:]
+def main(argv):  # noqa - mccabe
+    """
+    Process as a stand-alone program.
+
+    Enter: argv: typically sys.argv[1:]
+    """
     params, state, help = parse_arguments(argv)
     version_check()
     if help:
-        print """Ballistics analysis.
+        print("""Ballistics analysis.
 
 Syntax:  ballistics.py --cdgraph=(params) --comment=(comment) --config=(file)
     --graph[=(params)] --help --materials[=full] --method=(method)
@@ -1889,7 +1892,7 @@ Any factor can be specified with units.  See --units.  For example, '-c 2oz',
 '--temperature=62F', or '--mass=20 lb 7 oz'.  Most factors can be solved for by
 specifying '?' as the factor.  Note that a maximum of two of initial velocity,
 power factor, and charge should be specified.  If only initial velocity is
-specified, power factor and charge will not be determined.  Factors:"""
+specified, power factor and charge will not be determined.  Factors:""")
         factors = [(Factors[key]['long'].lower(), Factors[key]['long'], key)
                    for key in Factors]
         factors += [(Settings[key]['long'].lower(), Settings[key]['long'], key)
@@ -1904,7 +1907,7 @@ specified, power factor and charge will not be determined.  Factors:"""
             full_desc += ' (%s): %s' % (key, fac['desc'])
             full_desc = line_break(full_desc, 79, 1)
             for line in full_desc:
-                print line
+                print(line)
         sys.exit(0)
     if 'cdgraph' in params:
         graph_coefficient_of_drag(params['cdgraph'])
@@ -1913,7 +1916,7 @@ specified, power factor and charge will not be determined.  Factors:"""
     if 'units' in params:
         list_units(params['units'])
     if 'version' in params:
-        print 'Version: '+__version__
+        print('Version: '+__version__)
     if 'unknown' not in params:
         if 'output' in params:
             generate_output(None, params['output'], None)
@@ -1930,3 +1933,7 @@ specified, power factor and charge will not be determined.  Factors:"""
         graph_trajectory(points, params['graph'])
     if 'output' in params:
         generate_output(newstate, params['output'], params.get('comment', None))
+
+
+if __name__ == '__main__':
+    main(sys.argv[1:])

@@ -17,7 +17,7 @@ import json
 import math
 import os
 
-import cod_collins
+from . import cod_collins
 
 
 Resolution = 10

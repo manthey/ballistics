@@ -54,6 +54,9 @@ class FloatList:
         self.formatString = formatString
 
     def __repr__(self):
+        """
+        Return a formatted float list.
+        """
         return '[' + ','.join([
             self.formatString % val if isinstance(val, float) else repr(val)
             for val in self.list]) + ']'
@@ -66,7 +69,7 @@ class FloatEncoder(json.JSONEncoder):
         try:
             return super(FloatEncoder, self).default(o)
         except TypeError:
-            print 'Can\'t encode: %r' % o
+            print('Can\'t encode: %r' % o)
             raise
 
 
@@ -85,11 +88,11 @@ def calculate_case(hash, args, info, verbose):
     if verbose >= 3:
         pprint.pprint(info)
     if verbose >= 3:
-        print hash
+        print(hash)
     if hash in PreviousResults:
         PreviousResults['used'] += 1
         if verbose >= 3:
-            print 'From hash', PreviousResults['used']
+            print('From hash', PreviousResults['used'])
         return PreviousResults[hash]
     ballistics.Verbose = max(0, verbose - 2)
     params, state, help = ballistics.parse_arguments(
@@ -126,7 +129,7 @@ def calculate_case(hash, args, info, verbose):
         points = None
     PreviousResults[hash] = (hash, newstate, points)
     if verbose >= 2:
-        print hash, '-->', newstate.get('power_factor')
+        print(hash, '-->', newstate.get('power_factor'))
     return PreviousResults[hash]
 
 
@@ -155,14 +158,14 @@ def calculate_cases(results, cases, verbose, pool=None):
                 hash, cases[hash]['args'], cases[hash]['info'], verbose)))
         while len(tasks):
             lentasks = len(tasks)
-            for pos in xrange(len(tasks) - 1, -1, -1):
+            for pos in range(len(tasks) - 1, -1, -1):
                 task = tasks[pos]
                 if task.ready():
                     hash, state, points = task.get()
                     calculate_cases_results(hash, state, points, results)
                     del tasks[pos]
             if verbose >= 1 and len(tasks) < lentasks:
-                print '%d/%d left' % (len(tasks), len(hashes))
+                print('%d/%d left' % (len(tasks), len(hashes)))
             if len(tasks):
                 tasks[0].wait(0.1)
     return True
@@ -188,11 +191,14 @@ def get_multiprocess_pool(multi):
     """
     Get a multiprocessing pool.
 
-    Enter: multi: the number of processors to use ot True to use them all.
+    Enter: multi: the number of processors to use to True to use all physical
+                  processors.  Since the process tends to be computation-bound,
+                  using hyperthreading is not particularly advantageous.
     Exit:  pool: a multiprocess pool.
     """
-    pool = multiprocessing.Pool(processes=None if multi is True else multi,
-                                initializer=worker_init)
+    pool = multiprocessing.Pool(
+        processes=psutil.cpu_count(False) if multi is True else multi,
+        initializer=worker_init)
     priorityLevel = (psutil.BELOW_NORMAL_PRIORITY_CLASS
                      if sys.platform == 'win32' else 10)
     parent = psutil.Process()
@@ -287,7 +293,7 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
         else:
             raise Exception('Unknown companion file %s\n' % file)
     if verbose >= 1:
-        print srcfile
+        print(srcfile)
     results = copy.deepcopy(info)
     results['results'] = []
     cases = {}
@@ -296,7 +302,7 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
         for hash in cases:
             cases[hash]['position'] *= -1
     if calculate_cases(results, cases, verbose, pool):
-        json.dump(results, open(destpath, 'wb'), sort_keys=True, indent=1,
+        json.dump(results, open(destpath, 'wt'), sort_keys=True, indent=1,
                   separators=(',', ': '), cls=FloatEncoder)
 
 
@@ -348,7 +354,7 @@ if __name__ == '__main__':  # noqa - mccabe
                 files.append(path)
     if (help or not len(files) or not outputPath or
             not os.path.isdir(outputPath)):
-        print """Process yml and md files using the ballistics code.
+        print("""Process yml and md files using the ballistics code.
 
 Syntax: process.py --out=(path) --all --reverse -v
         --multi|--multifile|--multicase[=(number of processes)]
@@ -359,12 +365,12 @@ Only files newer than the matching results are processed unless the
 --all flag is used.
 --multi runs parallel processes.  This uses the number of processors available
   unless a number is specified.  --multifile runs a process per input file,
-  --multicase runs a process per basllistics case.
+  --multicase runs a process per ballistics case.
 --out specifies an output directory, which must exist.
 --reverse calculates the last conditions in a file first.  The output is
   identical to the forward calculation.
 -v increase verbosity.
-"""
+""")
         sys.exit(0)
     starttime = time.time()
     if multi:
@@ -395,6 +401,6 @@ Only files newer than the matching results are processed unless the
                 pool.join()
             except Exception:
                 pass
-        print "Cancelled via keyboard interrupt"
+        print("Cancelled via keyboard interrupt")
     if verbose >= 1:
-        print 'Total computation time: %4.2f s' % (time.time() - starttime)
+        print('Total computation time: %4.2f s' % (time.time() - starttime))
