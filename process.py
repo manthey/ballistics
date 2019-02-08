@@ -38,11 +38,6 @@ import ballistics
 Pool = None
 
 
-# Used to memoize computations.  When running in multiple processes, less
-# benefit is gained from this, but it still saves computation time.
-PreviousResults = {'used': 0}
-
-
 class FloatList:
     """A special list for rendering floats in JSON with predictable precision
     and in a controlled way."""
@@ -73,27 +68,22 @@ class FloatEncoder(json.JSONEncoder):
             raise
 
 
-def calculate_case(hash, args, info, verbose):
+def calculate_case(hashval, args, info, verbose):
     """
     Process an individual case.
 
-    Enter: hash: hash value used to memoize results.
+    Enter: hashval: hash value used to memoize results.
            args: arguments formulated for the ballistics routines.
            info: info that was used to construct the arguments.
            verbose: verbosity for the ballistics program
-    Exit:  hash: the input hash value.
+    Exit:  hashval: the input hash value.
            state: final state from the ballistics routines.
            points: time series of trajectory.
     """
     if verbose >= 3:
         pprint.pprint(info)
     if verbose >= 3:
-        print(hash)
-    if hash in PreviousResults:
-        PreviousResults['used'] += 1
-        if verbose >= 3:
-            print('From hash', PreviousResults['used'])
-        return PreviousResults[hash]
+        print(hashval)
     ballistics.Verbose = max(0, verbose - 2)
     params, state, help = ballistics.parse_arguments(
         args, allowUnknownParams=True)
@@ -127,10 +117,9 @@ def calculate_case(hash, args, info, verbose):
             for key in points[0]}
     else:
         points = None
-    PreviousResults[hash] = (hash, newstate, points)
     if verbose >= 2:
-        print(hash, '-->', newstate.get('power_factor'))
-    return PreviousResults[hash]
+        print('%s --> %3.1f' % (hashval, newstate.get('power_factor')))
+    return hashval, newstate, points
 
 
 def calculate_cases(results, cases, verbose, pool=None):
@@ -144,25 +133,25 @@ def calculate_cases(results, cases, verbose, pool=None):
            pool: if not None, use this multiprocessing pool.
     Exit:  success: False for cancelled
     """
-    hashes = [item[-1] for item in sorted([(cases[hash]['position'], hash)
-              for hash in cases])]
+    hashes = [item[-1] for item in sorted([(cases[hashval]['position'], hashval)
+              for hashval in cases])]
     if pool is None:
-        for hash in hashes:
-            hash, state, points = calculate_case(
-                hash, cases[hash]['args'], cases[hash]['info'], verbose)
-            calculate_cases_results(hash, state, points, results)
+        for hashval in hashes:
+            hashval, state, points = calculate_case(
+                hashval, cases[hashval]['args'], cases[hashval]['info'], verbose)
+            calculate_cases_results(hashval, state, points, results)
     else:
         tasks = []
-        for hash in hashes:
+        for hashval in hashes:
             tasks.append(pool.apply_async(calculate_case, (
-                hash, cases[hash]['args'], cases[hash]['info'], verbose)))
+                hashval, cases[hashval]['args'], cases[hashval]['info'], verbose)))
         while len(tasks):
             lentasks = len(tasks)
             for pos in range(len(tasks) - 1, -1, -1):
                 task = tasks[pos]
                 if task.ready():
-                    hash, state, points = task.get()
-                    calculate_cases_results(hash, state, points, results)
+                    hashval, state, points = task.get()
+                    calculate_cases_results(hashval, state, points, results)
                     del tasks[pos]
             if verbose >= 1 and len(tasks) < lentasks:
                 print('%d/%d left' % (len(tasks), len(hashes)))
@@ -171,7 +160,7 @@ def calculate_cases(results, cases, verbose, pool=None):
     return True
 
 
-def calculate_cases_results(hash, state, points, results):
+def calculate_cases_results(hashval, state, points, results):
     """
     Store results from a processed case.
 
@@ -181,7 +170,7 @@ def calculate_cases_results(hash, state, points, results):
            results: array to store results.
     """
     for res in results['results']:
-        if res.get('hash') == hash:
+        if res.get('hash') == hashval:
             res['results'] = state
             res['points'] = points
             del res['hash']
@@ -243,11 +232,11 @@ def process_cases(info, results, cases, verbose=0, nextcaseindex=0):
             'date', 'ref', 'ref2', 'ref3', 'desc', 'desc2', 'desc3',
             'technique', 'group') and
         not key.endswith('_note')]))
-    hash = ' '.join([('"%s"' if ' ' in arg else '%s') % arg for arg in args])
-    if hash not in cases:
-        cases[hash] = {'info': info, 'args': args, 'position': len(cases),
-                       'hash': hash}
-    results.append({'conditions': info, 'hash': hash, 'key': infokey,
+    hashval = ' '.join([('"%s"' if ' ' in arg else '%s') % arg for arg in args])
+    if hashval not in cases:
+        cases[hashval] = {'info': info, 'args': args, 'position': len(cases),
+                          'hash': hashval}
+    results.append({'conditions': info, 'hash': hashval, 'key': infokey,
                     'idx': nextcaseindex})
     nextcaseindex += 1
     return nextcaseindex
@@ -299,8 +288,8 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
     cases = {}
     process_cases(info, results['results'], cases, verbose)
     if reverse:
-        for hash in cases:
-            cases[hash]['position'] *= -1
+        for hashval in cases:
+            cases[hashval]['position'] *= -1
     if calculate_cases(results, cases, verbose, pool):
         json.dump(results, open(destpath, 'wt'), sort_keys=True, indent=1,
                   separators=(',', ': '), cls=FloatEncoder)
@@ -347,9 +336,11 @@ if __name__ == '__main__':  # noqa - mccabe
             if not os.path.exists(path):
                 raise Exception('Input path %s does not exist' % path)
             if os.path.isdir(path):
-                files.extend(sorted([os.path.abspath(os.path.join(path, file))
-                                     for file in os.listdir(path)
-                                     if os.path.splitext(file)[1] == '.yml']))
+                dirfiles = [os.path.abspath(os.path.join(path, file))
+                            for file in os.listdir(path)
+                            if os.path.splitext(file)[1] == '.yml']
+                dirfiles = sorted(dirfiles)
+                files.extend(dirfiles)
             else:
                 files.append(path)
     if (help or not len(files) or not outputPath or

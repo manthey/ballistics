@@ -1402,7 +1402,7 @@ def read_config(config_file=None):
                       command line."""
     args = []
     if config_file is None:
-        config_file = os.path.splitext(os.path.abspath(__file__))[0]+'.conf'
+        config_file = os.path.join(os.path.dirpath(os.path.abspath(__file__)), 'ballistics.conf')
     if not os.path.exists(config_file):
         if Verbose >= 4:
             sys.stderr.write('Can\'t find config file: %s\n' % config_file)
