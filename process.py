@@ -180,13 +180,13 @@ def get_multiprocess_pool(multi):
     """
     Get a multiprocessing pool.
 
-    Enter: multi: the number of processors to use to True to use all physical
+    Enter: multi: the number of processors to use to True to use all logical
                   processors.  Since the process tends to be computation-bound,
                   using hyperthreading is not particularly advantageous.
     Exit:  pool: a multiprocess pool.
     """
     pool = multiprocessing.Pool(
-        processes=psutil.cpu_count(False) if multi is True else multi,
+        processes=psutil.cpu_count(True) if multi is True else multi,
         initializer=worker_init)
     priorityLevel = (psutil.BELOW_NORMAL_PRIORITY_CLASS
                      if sys.platform == 'win32' else 10)
