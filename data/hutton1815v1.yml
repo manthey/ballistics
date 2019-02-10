@@ -1,0 +1,50 @@
+---
+key: hutton1815v1
+ref: "Hutton, 1815"
+cms: "Hutton, Charles.  <i>A Philosophical and Mathematical Dictionary, Vol. I</i>  London: F. C. and J Rivington, et al., 1815"
+summary: "A lengthy series of articles.  That on Gunnery contains some decent historical notes and a summary table of a some experiments.  Volume II (p. 561) contains a table comparing results fro ma double pendulum but without enough data to produce a useful computation."
+date: "1815"
+data:
+  -
+    technique: "derived"
+    ref2: "p. 617"
+    material: "iron"
+    mass: 1 lb
+    diameter: 2 in
+    dimater_note: "Probably 1.96 in"
+    data:
+      -
+        charge: 2 oz
+        angle: 15 deg
+        data:
+          - initial_velocity: 860 ft/s
+          - range: 4100 ft
+          - final_time: 9 s
+      -
+        charge: 4 oz
+        angle: 15 deg
+        data:
+          - initial_velocity: 1230 ft/s
+          - range: 5100 ft
+          - final_time: 12 s
+      -
+        charge: 8 oz
+        angle: 15 deg
+        data:
+          - initial_velocity: 1640 ft/s
+          - range: 6000 ft
+          - final_time: 14.5 s
+      -
+        charge: 12 oz
+        angle: 15 deg
+        data:
+          - initial_velocity: 1680 ft/s
+          - range: 6700 ft
+          - final_time: 15.5 s
+      -
+        charge: 2 oz
+        angle: 45 deg
+        data:
+          - initial_velocity: 860 ft/s
+          - range: 5100 ft
+          - final_time: 21 s
