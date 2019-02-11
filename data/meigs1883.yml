@@ -1,0 +1,40 @@
+---
+key: meigs1883
+ref: "Meigs, 1883"
+cms: "Meigs, Lieutenant U.S.N, translated from Sarrau, M. E. <i>Theoretical Researches on the Effects of Gunpowder and Other Explosives</i>  Washington: Government Printing Office, 1882."
+summary: "Mostly calculated values with a few results from calorimeters."
+date: "1883"
+data:
+  -
+    ref2: "p. 21"
+    technique: "calorimeter"
+    data:
+      -
+        desc: "Best sporting powder"
+        power: "849 Cal/kg"
+      -
+        desc: "Cannon powder"
+        power: "795 Cal/kg"
+      -
+        desc: "Fine-grained powder, called B"
+        power: "773 Cal/kg"
+      -
+        desc: "Commercial powder"
+        power: "736 Cal/kg"
+  -
+    ref2: "p. 33"
+    technique: "calculated"
+    desc: "Multiply calorimeter results by 436"
+    data:
+      -
+        desc: "Best sporting powder"
+        power: "370 tonnemeter"
+      -
+        desc: "Cannon powder"
+        power: "347 tonnemeter"
+      -
+        desc: "Fine-grained powder, called B"
+        power: "337 tonnemeter"
+      -
+        desc: "Commercial powder"
+        power: "321 tonnemeter"

@@ -120,6 +120,7 @@ UnitsTable = [
     (['lbt', 'troypound', 'troypounds'], False, TroyPoundInKilograms,
      'Troy pound'),
     (['kg', 'kilogram', 'kilograms'], False, 1.0, 'SI kilogram'),
+    (['tonne',], False, 1000.0, 'SI megagram'),
     (['qtr', 'quarterhundredweight', 'qtrs', 'quarterhundredweights'], False,
      AvoirdupoisPoundInKilograms * 28,
      'Hundredweight (112 avoirdupois pounds)'),
@@ -155,6 +156,8 @@ UnitsTable = [
      3037.03232, 'Foot-ton, using the long ton (2240 lb)'),
     (['kilogrammeter', 'kilogrammeters'], False, 9.806650,
      'Kilogram-meter (energy)'),
+    (['tonnemeter', 'tonnemeters'], False, 9806.650,
+     'Megagram-meter (energy)'),
 
     # Angle (reference is radian)
     (['deg', 'degree', 'degrees'], False, math.pi / 180, 'Degree (angle)'),
