@@ -130,19 +130,20 @@ def combine(opts):  # noqa
                 print('Failed on %s: %d\n%r' % (file, entry.get('idx', 0),
                                                 entry.get('conditions')))
                 print(traceback.format_exc().strip())
+    out = opts.get('out', 'built')
     if opts.get('json', True):
-        destpath = 'built/totallist.json'
+        destpath = os.path.join(out, 'totallist.json')
         json.dump(total, open(destpath, 'wt'), sort_keys=True, indent=1,
                   separators=(',', ': '))
     print('%d samples from %d sources' % (len(total), sources))
     if opts.get('json', True):
-        refpath = 'built/references.json'
+        refpath = os.path.join(out, 'references.json')
         json.dump(references, open(refpath, 'wt'), sort_keys=True, indent=1,
                   separators=(',', ': '))
     print('%d references' % len(references))
     if opts.get('csv'):
-        csv_dump(total, 'built/totallist.csv')
-        csv_dump(references, 'built/references.csv')
+        csv_dump(total, os.path.join(out, 'totallist.csv'))
+        csv_dump(references, os.path.join(out, 'references.csv'))
     return ReMnGrid
 
 
@@ -314,6 +315,8 @@ if __name__ == '__main__':  # noqa - mccabe
             opts['json'] = False
         elif arg == '--nopoints':
             opts['points'] = False
+        elif arg.startswith('--out='):
+            opts['out'] = arg.split('=', 1)[1]
         elif arg.startswith('--res='):
             opts['gridres'] = float(arg.split('=', 1)[1])
         elif arg.startswith('--results='):
@@ -326,17 +329,20 @@ if __name__ == '__main__':  # noqa - mccabe
 Syntax:  combine.py --grid --nopoints --res=(grid resolution) --min=(grid min)
     --group --csv|--nocsv --json|--nojson --adjust
     --limit[=notrajectory|(fields)] --results=(results directory)
+    --out=(output directory)
 --adjust adjusts the json file used with cod_adjusted.
---csv outputs csv files in the built directory.
+--csv outputs csv files in the output directory.
 --grid outputs a grid of used Re/Mn values to stdout.
 --group outputs only the grid for groups that are present.
---json outputs json files to the built directory (default).
+--json outputs json files to the output directory (default).
 --limit reduces the fields output to the comma-separated list of fields.  If no
   fields are given, a common subset of fields is used instead.  `notrajectory`
   skips fields with names that start with `trajectory_`.
 --min specified how many points are required before a grid is output (default
   2).
 --nopoints excludes trajectory information in the output.
+--out is the directory where json and csv files are stored.  Default is
+  'built'.
 --res indicates the group resolution (default 10).  This is the inverse of the
   increment between Mach values and between base-10 powers of the Reynolds
   number.
