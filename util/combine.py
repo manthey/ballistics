@@ -229,7 +229,7 @@ def csv_dump(data, path):
         writer.writerow(keys)
         for entry in data:
             row = [entry.get(key) for key in keys]
-            row = [val.encode('utf8') if isinstance(val, str) else val
+            row = [val.encode('utf8') if isinstance(val, bytes) else val
                    for val in row]
             writer.writerow(row)
 
@@ -301,7 +301,7 @@ if __name__ == '__main__':  # noqa - mccabe
         elif arg == '--limit':
             opts['fields'] = [
                 'date_filled', 'power_factor', 'desc', 'ref', 'date',
-                'technique']
+                'technique', 'key', 'idx']
         elif arg == '--limit=notrajectory':
             opts['fields'] = 'notrajectory'
         elif arg.startswith('--limit='):

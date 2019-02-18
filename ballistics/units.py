@@ -57,6 +57,8 @@ PeidmontPoundInKilograms = AvoirdupoisPoundInKilograms * 0.81332
 # Clarke, p. 62, gives 1 pfund = 1.03118 lb English
 RhinePoundInKilograms = AvoirdupoisPoundInKilograms * 1.03118
 
+SIGravity = 9.806650
+
 # The units table is a list of tuples, each of which is ([list of names and
 # abbreviations], prefixes allowed, factor to SI, description).  The factor can
 # be a single number if the conversion has the same zero-point, or can be a
@@ -155,9 +157,18 @@ UnitsTable = [
     (['ftton', 'footton', 'foottons', 'footlongton', 'footlongtons'], False,
      3037.03232, 'Foot-ton, using the long ton (2240 lb)'),
     (['kilogrammeter', 'kilogrammeters'], False, 9.806650,
-     'Kilogram-meter (energy)'),
+     'Kilogram(force)-meter (energy)'),
     (['tonnemeter', 'tonnemeters'], False, 9806.650,
-     'Megagram-meter (energy)'),
+     'Megagram(force)-meter (energy)'),
+
+    # Force (reference is N)
+    (['N', 'Newton', 'Newtons'], True, 1.0, 'SI Newton (kg*m/s/s)'),
+    (['gf', 'gramforce', 'gramsforce', 'pond', 'ponds'], True,
+     0.001 * SIGravity, 'Grams of force'),
+    (['kgf', 'kp', 'kilogramforce', 'kilogramsforce', 'kilopond', 'kiloponds'],
+      False, SIGravity, 'Kilograms of force (kiloponds)'),
+    (['Mgf', 'Mp', 'tonneforce', 'tonnesforce', 'megapond', 'megaponds'],
+      False, 1000.0 * SIGravity, 'Megagrams of force (megaponds)'),
 
     # Angle (reference is radian)
     (['deg', 'degree', 'degrees'], False, math.pi / 180, 'Degree (angle)'),

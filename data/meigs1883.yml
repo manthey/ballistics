@@ -28,13 +28,13 @@ data:
     data:
       -
         desc: "Best sporting powder"
-        power: "370 tonnemeter"
+        power: "370 tonneforce*meter"
       -
         desc: "Cannon powder"
-        power: "347 tonnemeter"
+        power: "347 tonneforce*meter"
       -
         desc: "Fine-grained powder, called B"
-        power: "337 tonnemeter"
+        power: "337 tonneforce*meter"
       -
         desc: "Commercial powder"
-        power: "321 tonnemeter"
+        power: "321 tonneforce*meter"
