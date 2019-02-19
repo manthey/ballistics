@@ -2584,7 +2584,7 @@ data:
                 final_velocity: 1250 ft/s
   -
     ref2: "p. 76-77"
-    desc: "Experiments on range.  All shots using powder 'A' (Dupont uneven cannon).  Note that the range value at 47.35 feet isn't servicable for calculations, as none of the shows had dropped at all (all had ascended betwwwn 0.008 and 0.075 inches."
+    desc: "Experiments on range.  All shots using powder 'A' (Dupont uneven cannon).  Note that the range value at 47.35 feet isn't servicable for calculations, as none of the shots had dropped at all (all had ascended betwwwn 0.008 and 0.075 inches."
     material: iron
     angle: 0 deg
     diameter: 6.26 in
@@ -9788,4 +9788,3 @@ data:
         mass: 24 lb
         charge: 8 lb
         initial_velocity: 1833 ft/s
-

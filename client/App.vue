@@ -2,8 +2,8 @@
   <div id="app">
     <PlotControls :query="query" @queryupdate="queryUpdate"/>
     <div id="display">
-      <BallisticsPlot :plotdata="plotdata" :filter="query.filter"/>
-      <DataTable v-if="currentPoint" :datapoint="currentPoint"/>
+      <BallisticsPlot :plotdata="plotdata" :filter="query.filter" :datapoint="currentPoint" @pickPoint="pickPoint"/>
+      <DataTable v-if="currentPoint" :datapoint="currentPoint" :references="references"/>
     </div>
   </div>
 </template>
@@ -21,6 +21,7 @@ html,body,#app {
 #display {
   display: flex;
   flex: 1;
+  overflow: hidden;
 }
 </style>
 
@@ -67,6 +68,9 @@ export default {
       fetch('data/references.json').then(resp => resp.json()).then(data => {
         this.references = data;
       }).catch(err => { throw err; });
+    },
+    pickPoint(point) {
+      this.currentPoint = point;
     }
   },
   watch: {

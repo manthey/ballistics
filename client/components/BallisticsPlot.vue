@@ -1,5 +1,5 @@
 <template>
-  <vue-plotly class="chart" :data="data" :layout="layout" :options="options" :autoResize="true" @click="processClick" @hover="processClick"/>
+  <vue-plotly class="chart" :data="data" :layout="layout" :options="options" :autoResize="true" @click="processClick" :key="datapoint ? 'chartwdp' : 'chart'"/>
 </template>
 
 <style scoped>
@@ -18,32 +18,46 @@ export default {
   },
   props: {
     plotdata: Array,
-    filter: String
+    filter: String,
+    datapoint: Object
   },
   data() {
     return {
       data: this.computeTraces(),
       layout: {
+        margin: {
+          l: 65,
+          t: 25,
+          r: 0,
+          b: 65,
+          pad: 4
+        },
         xaxis: {
           type: 'date',
+          title: 'Date',
           autorange: true
         },
         yaxis: {
           type: 'log',
+          title: 'Power Factor (J/g)',
           autorange: true
         },
         hovermode: 'closest'
       },
-      options: {},
-      xoptions: {
-        autosizable: true /*,
+      options: {
+        autosizable: true,
+        doubleClick: 'reset',
         responsive: true,
-        scrollZoom: true */,
-        staticPlot: false
+        scrollZoom: true
       }
     }
   },
   watch: {
+    datapoint(newval, oldval) {
+      if ((!oldval && newval) || (!newval && oldval)) {
+        this.$forceUpdate();
+      }
+    },
     filter() {
       this.data = this.computeTraces();
     },
@@ -53,7 +67,8 @@ export default {
   },
   methods: {
     processClick(event) {
-      console.log(event);
+      let point = event.points[0].data.data[event.points[0].pointIndex];
+      this.$emit('pickPoint', point);
     },
     computeTraces() {
       let technique = {};
@@ -68,6 +83,7 @@ export default {
         let tidx = techlist.indexOf(technique),
             tdata = plotdata.filter((d) => { return d.technique == technique; });
         return {
+          data: tdata,
           x: tdata.map((d) => d.date_filled),
           y: tdata.map((d) => d.power_factor),
           text: tdata.map((d) => d.power_factor),
@@ -76,7 +92,9 @@ export default {
             size: 10,
             opacity: 0.5
           },
-          type: 'scattergl',
+          type: tdata.length > 100 ? 'scatter' : 'scatter', 
+          // when plotly is fixed
+          // type: tdata.length > 100 ? 'scattergl' : 'scatter', 
           mode: 'markers',
           hoverinfo: 'text',
           showlegend: true,
