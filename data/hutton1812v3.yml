@@ -9,8 +9,8 @@ data:
     technique: "double_pendulum"
     ref2: "p. 3"
     date: "1784-08-04"
-    humdity: 90%
-    humdity_note: "Frequent showers of rain"
+    humidity: 90%
+    humidity_note: "Frequent showers of rain"
     angle: 0 deg
     range: 32 ft
     range_note: "Vol. II, p. 337"
@@ -53,8 +53,8 @@ data:
     ref2: "p. 11"
     date: "1784-08-11"
     angle: 0 deg
-    humdity: 80%
-    humdity_note: "The air was warm, close, and thick"
+    humidity: 80%
+    humidity_note: "The air was warm, close, and thick"
     pressure: 30.25 inHg
     temperature: 65 F
     range: 32 ft

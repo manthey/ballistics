@@ -2768,7 +2768,7 @@ data:
               - range: 199 yds
   -
     ref2: "p. 175"
-    desc: "This is a comparison of muzzle velocity compared to barrel length in msukets taken fron d'Antoni's \"A Treatise on Gunpowder and Firearms\" of 1789."
+    desc: "This is a comparison of muzzle velocity compared to barrel length in muskets taken fron d'Antoni's \"A Treatise on Gunpowder and Firearms\" of 1789."
     date: "1789"
     charge: 7 dr
     angle: 0 deg
@@ -2777,16 +2777,16 @@ data:
     data:
       -
         desc2: "11 in barrel"
-        velocity: 1037 ft/s
+        final_velocity: 1037 ft/s
       -
         desc2: "1 ft 11 in barrel"
-        velocity: 1390 ft/s
+        final_velocity: 1390 ft/s
       -
         desc2: "3 ft 8 in barrel"
-        velocity: 1736 ft/s
+        final_velocity: 1736 ft/s
       -
         desc2: "4 ft 8 in barrel"
-        velocity: 1815 ft/s
+        final_velocity: 1815 ft/s
   -
     ref2: "p. 193"
     desc: "Various proofs"
@@ -4159,4 +4159,3 @@ data:
         -
           desc2: "Bombay, 1824-1825"
           range: 278 yds
-

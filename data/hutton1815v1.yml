@@ -11,7 +11,7 @@ data:
     material: "iron"
     mass: 1 lb
     diameter: 2 in
-    dimater_note: "Probably 1.96 in"
+    diameter_note: "Probably 1.96 in"
     data:
       -
         charge: 2 oz

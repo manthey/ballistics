@@ -225,7 +225,7 @@ def csv_dump(data, path):
     keys = [val[-1] for val in sorted([(
         key != 'key', key != 'idx', key != 'power_factor', key)
         for key in keys])]
-    with open(path, 'wt') as csvfile:
+    with open(path, 'wt', newline='') as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_NONNUMERIC)
         writer.writerow(keys)
         for entry in data:

@@ -378,7 +378,7 @@ data:
         desc2: "Barrel 4 ft 8 in"
         final_velocity: 1815 ft/s
   -
-    desc: "Ranges of shot from guns fired at angles compared to their theoreticalranges in vacuum"
+    desc: "Ranges of shot from guns fired at angles compared to their theoretical ranges in vacuum"
     ref2: "p. 93"
     material: lead
     pressure: 29 inHg
@@ -728,4 +728,3 @@ data:
         mass: 32 lbit
         charge: 12 lbit
         range: 4046 yds
-

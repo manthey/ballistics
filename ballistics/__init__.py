@@ -47,8 +47,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-02-05v44'
-PROGRAM_SIGNATURE = '8b3aee5afc636128d03c528ade136f21'
+__version__ = '2019-02-19v45'
+PROGRAM_SIGNATURE = 'c3e58543a8cd56c27e791983e7d77f46'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:

@@ -391,7 +391,7 @@ data:
         desc2: "Piedi 2 : 10 :"
         final_velocity: 1077 ftit/sec
   -
-    desc: "Ranges of shot from guns fired at angles compared to their theoreticalranges in vacuum"
+    desc: "Ranges of shot from guns fired at angles compared to their theoretical ranges in vacuum"
     ref2: "p. 251"
     material: lead
     pressure: 17.5 initHg
@@ -559,4 +559,3 @@ data:
                 technique: "theory"
                 pressure: 0
                 range: 36619 ftit
-

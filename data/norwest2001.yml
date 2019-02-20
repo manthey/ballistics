@@ -11,7 +11,7 @@ data:
     temperature: 55 degF
     angle: 0 deg
     range: 20 feet
-    height: ""
+    final_height: ""
     data:
       -
         diameter: 0.490 in
@@ -22,31 +22,31 @@ data:
         desc: "Thompson Center, .50 caliber percussion 'Hawken' rifle"
         data:
           -
-            velocity: 1292 ft/s
+            final_velocity: 1292 ft/s
             desc2: "Average for Goex"
           -
-            velocity: 1342 ft/s
+            final_velocity: 1342 ft/s
             desc2: "High for Goex"
           -
-            velocity: 1146 ft/s
+            final_velocity: 1146 ft/s
             desc2: "Low for Goex"
           -
-            velocity: 1475 ft/s
+            final_velocity: 1475 ft/s
             desc2: "Average for KIK"
           -
-            velocity: 1512 ft/s
+            final_velocity: 1512 ft/s
             desc2: "High for KIK"
           -
-            velocity: 1389 ft/s
+            final_velocity: 1389 ft/s
             desc2: "Low for KIK"
           -
-            velocity: 1263 ft/s
+            final_velocity: 1263 ft/s
             desc2: "Average for Elephant"
           -
-            velocity: 1316 ft/s
+            final_velocity: 1316 ft/s
             desc2: "High for Elephant"
           -
-            velocity: 1153 ft/s
+            final_velocity: 1153 ft/s
             desc2: "Low for Elephant"
       -
         diameter: 0.610 in
@@ -57,31 +57,31 @@ data:
         desc: "Burke Custom, .62 caliber flintlock rifle"
         data:
           -
-            velocity: 1335 ft/s
+            final_velocity: 1335 ft/s
             desc2: "Average for Goex"
           -
-            velocity: 1344 ft/s
+            final_velocity: 1344 ft/s
             desc2: "High for Goex"
           -
-            velocity: 1318 ft/s
+            final_velocity: 1318 ft/s
             desc2: "Low for Goex"
           -
-            velocity: 1431 ft/s
+            final_velocity: 1431 ft/s
             desc2: "Average for KIK"
           -
-            velocity: 1453 ft/s
+            final_velocity: 1453 ft/s
             desc2: "High for KIK"
           -
-            velocity: 1398 ft/s
+            final_velocity: 1398 ft/s
             desc2: "Low for KIK"
           -
-            velocity: 1272 ft/s
+            final_velocity: 1272 ft/s
             desc2: "Average for Elephant"
           -
-            velocity: 1346 ft/s
+            final_velocity: 1346 ft/s
             desc2: "High for Elephant"
           -
-            velocity: 1224 ft/s
+            final_velocity: 1224 ft/s
             desc2: "Low for Elephant"
       -
         diameter: 0.600 in
@@ -91,31 +91,31 @@ data:
         desc: "20 gauge (.62 caliber) reproduction flintlock Tulle de Chasse"
         data:
           -
-            velocity: 1106 ft/s
+            final_velocity: 1106 ft/s
             desc2: "Average for Goex"
           -
-            velocity: 1153 ft/s
+            final_velocity: 1153 ft/s
             desc2: "High for Goex"
           -
-            velocity: 1048 ft/s
+            final_velocity: 1048 ft/s
             desc2: "Low for Goex"
           -
-            velocity: 1234 ft/s
+            final_velocity: 1234 ft/s
             desc2: "Average for KIK"
           -
-            velocity: 1288 ft/s
+            final_velocity: 1288 ft/s
             desc2: "High for KIK"
           -
-            velocity: 1195 ft/s
+            final_velocity: 1195 ft/s
             desc2: "Low for KIK"
           -
-            velocity: 1008 ft/s
+            final_velocity: 1008 ft/s
             desc2: "Average for Elephant"
           -
-            velocity: 1039 ft/s
+            final_velocity: 1039 ft/s
             desc2: "High for Elephant"
           -
-            velocity: 944 ft/s
+            final_velocity: 944 ft/s
             desc2: "Low for Elephant"
       -
         diameter: 0.530 in
@@ -125,30 +125,29 @@ data:
         desc: "Bayha custom built percussion rifle"
         data:
           -
-            velocity: 1564 ft/s
+            final_velocity: 1564 ft/s
             desc2: "Average for Goex"
           -
-            velocity: 1593 ft/s
+            final_velocity: 1593 ft/s
             desc2: "High for Goex"
           -
-            velocity: 1534 ft/s
+            final_velocity: 1534 ft/s
             desc2: "Low for Goex"
           -
-            velocity: 1614 ft/s
+            final_velocity: 1614 ft/s
             desc2: "Average for KIK"
           -
-            velocity: 1679 ft/s
+            final_velocity: 1679 ft/s
             desc2: "High for KIK"
           -
-            velocity: 1566 ft/s
+            final_velocity: 1566 ft/s
             desc2: "Low for KIK"
           -
-            velocity: 1387 ft/s
+            final_velocity: 1387 ft/s
             desc2: "Average for Elephant"
           -
-            velocity: 1486 ft/s
+            final_velocity: 1486 ft/s
             desc2: "High for Elephant"
           -
-            velocity: 1205 ft/s
+            final_velocity: 1205 ft/s
             desc2: "Low for Elephant"
-

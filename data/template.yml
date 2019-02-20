@@ -20,7 +20,7 @@ data:
   -
     mass: 24 lb 6.5 oz
     charge: 1 troyounces
-    distance: 14 chains 4 links
+    range: 14 chains 4 links
     angle: 45 degrees
     material: brass
     desc: First trial
@@ -44,8 +44,8 @@ data:
     ref2: p. 41
     data:
       -
-        distance: 11 chains 13 links
+        range: 11 chains 13 links
         desc: Bad test
       -
-        distance: 12 chains 46 links
+        range: 12 chains 46 links
         desc: Good test

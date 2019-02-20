@@ -34,7 +34,9 @@ data:
       -
         ref2: p. 170
         desc: "Example VII"
-        range: 4680 yd
-        height: 973 yd
-        height_note: "4680 yd * sin(12 deg)"
         angle: 51 deg
+        data:
+          - range: 4680 yd
+          -
+            final_height: 973 yd
+            final_height_note: "4680 yd * sin(12 deg)"
