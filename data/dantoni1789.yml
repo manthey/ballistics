@@ -705,6 +705,7 @@ data:
     skip_note: Pages 201 and 202 repeat values from 191 and 199
   -
     desc: "Maximum ranges of guns.  I've assumed a 45 degree angle, but this probably isn't the case, as I would expect longer ranges from such an angle."
+    ref2: "p. 316"
     angle: 45 deg
     angle_note: assumed
     material: iron

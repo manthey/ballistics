@@ -7,7 +7,7 @@ date: "1892"
 data:
   -
     desc: "Heat liberated per kilogram of powder in a closed vessel calorimeter."
-    ref: "p. 509"
+    ref2: "p. 509"
     technique: "calorimeter"
     data:
       -
@@ -88,4 +88,3 @@ data:
           -
             desc2: "Spanish spherical"
             power: "767.3 cal/g"
-
