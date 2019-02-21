@@ -11,6 +11,7 @@
 <script>
 import d3 from 'd3';
 import math from 'mathjs';
+import * as utils from '../utils.js';
 import VuePlotly from '@statnett/vue-plotly';
 
 export default {
@@ -58,7 +59,7 @@ export default {
     data() {
       let technique = {};
       let plotdata  = this.plotdata || [];
-      plotdata.forEach((d) => technique[d.technique] = (technique[d.technique] || 0) + 1);
+      plotdata.forEach(d => technique[d.technique] = (technique[d.technique] || 0) + 1);
       let techlist = Object.keys(technique).sort((a, b) => technique[b] - technique[a]);
       if (this.filter) {
         try {
@@ -72,13 +73,13 @@ export default {
       }
       let traces = techlist.map((technique) => {
         let tidx = techlist.indexOf(technique),
-            tdata = plotdata.filter((d) => { return d.technique == technique; }),
+            tdata = plotdata.filter(d => { return d.technique == technique; }),
             color = this.colors[tidx % this.colors.length];
         return {
           data: tdata,
-          x: tdata.map((d) => d.date_filled),
-          y: tdata.map((d) => d.power_factor),
-          text: tdata.map((d) => math.unit(+d.power_factor, 'J/kg').format({precision: 6, lowerExp: -6, upperExp: 9})),
+          x: tdata.map(d => d.date_filled),
+          y: tdata.map(d => d.power_factor),
+          text: tdata.map(d => math.unit(+d.power_factor, 'J/kg').format(utils.numberFormat)),
           marker: {
             symbol: tidx,
             size: 10,

@@ -16,8 +16,7 @@ python process.py --multi data --out=results
 Then, to make it available to the web client,
 
 ```
-mkdir public/data
-python utils/combine.py --out=public/data --limit=notrajectory --json
+python utils/combine.py --out=client/static --limit=notrajectory --json
 ```
 
 ## Client setup
