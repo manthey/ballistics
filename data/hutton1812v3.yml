@@ -2891,7 +2891,7 @@ data:
     ref2: "p. 259"
     technique: theory
     desc: "Initial velocity of balls based on proportion of tehir weight in powder"
-    desc_note: "I've included Hutton's explicit examples of a 1 lb and 24 lb ball"
+    desc2: "I've included Hutton's explicit examples of a 1 lb and 24 lb ball"
     material: iron
     data:
       -

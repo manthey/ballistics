@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <PlotControls :query="query" @queryupdate="queryUpdate"/>
-    <div id="display">
-      <BallisticsPlot :plotdata="plotdata" :filter="query.filter" :datapoint="currentPoint" @pickPoint="pickPoint"/>
-      <DataTable v-if="currentPoint" :datapoint="currentPoint" :references="references"/>
-    </div>
+    <PlotWithControls :filter="query.filter" :plotdata="plotdata" :references="references" @filterupdate="queryUpdate"/>
   </div>
 </template>
 
@@ -14,33 +10,19 @@ html,body,#app {
   height: 100%;
   margin: 0;
 }
-#app {
-  display: flex;
-  flex-direction: column;
-}
-#display {
-  display: flex;
-  flex: 1;
-  overflow: hidden;
-}
 </style>
 
 <script>
 import * as utils from './utils.js';
-import BallisticsPlot from './components/BallisticsPlot.vue';
-import DataTable from './components/DataTable.vue';
-import PlotControls from './components/PlotControls.vue';
+import PlotWithControls from './components/PlotWithControls.vue';
 
 export default {
   name: 'app',
   components: {
-    BallisticsPlot,
-    DataTable,
-    PlotControls
+    PlotWithControls
   },
   data() {
     return {
-      currentPoint: null,
       plotdata: [],
       query: utils.getUrlQuery(),
       references: {}
@@ -60,8 +42,10 @@ export default {
         this.references = data;
       }).catch(err => { throw err; });
     },
-    pickPoint(point) {
-      this.currentPoint = point;
+    fetchParameters() {
+      fetch('parameters.json').then(resp => resp.json()).then(data => {
+        this.parameters = utils.updateParameters(data);
+      }).catch(err => { throw err; });
     }
   },
   watch: {
@@ -72,6 +56,33 @@ export default {
   mounted: function () {
     this.fetchData();
     this.fetchReferences();
+    this.fetchParameters();
   }
 }
+/*
+Notes:
+
+main
+references
+  table view / list view
+fulldata
+  table view
+fulldata w/o theoretical (with a filter specified)
+  table view
+specific graphs with commentary
+  small diam
+  medium
+  large
+table: full / close / traj.graph
+
+possible table components:
+  vue-good-table
+  vue-table-2
+  vuejs.org/v2/examples/grid-component.html
+
+origin  https://github.com/pangloss/vim-javascript.git (fetch)
+origin  git://github.com/digitaltoad/vim-pug.git (fetch)
+origin  https://github.com/posva/vim-vue.git (fetch)
+
+*/
 </script>

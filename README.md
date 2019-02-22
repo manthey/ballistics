@@ -10,13 +10,13 @@ The scope of this research is focused on black powder as a relatively mature tec
 
 ```
 mkdir results
-python process.py --multi data --out=results
+python process.py --multi
 ```
 
 Then, to make it available to the web client,
 
 ```
-python utils/combine.py --out=client/static --limit=notrajectory --json
+python utils/combine.py --out=client/static
 ```
 
 ## Client setup

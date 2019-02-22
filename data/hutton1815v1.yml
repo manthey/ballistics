@@ -6,7 +6,6 @@ summary: "A lengthy series of articles.  That on Gunnery contains some decent hi
 date: "1815"
 data:
   -
-    technique: "derived"
     ref2: "p. 617"
     material: "iron"
     mass: 1 lb
@@ -16,6 +15,7 @@ data:
       -
         charge: 2 oz
         angle: 15 deg
+        group: 617-1
         data:
           - initial_velocity: 860 ft/s
           - range: 4100 ft
@@ -23,6 +23,7 @@ data:
       -
         charge: 4 oz
         angle: 15 deg
+        group: 617-2
         data:
           - initial_velocity: 1230 ft/s
           - range: 5100 ft
@@ -30,6 +31,7 @@ data:
       -
         charge: 8 oz
         angle: 15 deg
+        group: 617-3
         data:
           - initial_velocity: 1640 ft/s
           - range: 6000 ft
@@ -37,6 +39,7 @@ data:
       -
         charge: 12 oz
         angle: 15 deg
+        group: 617-4
         data:
           - initial_velocity: 1680 ft/s
           - range: 6700 ft
@@ -44,6 +47,7 @@ data:
       -
         charge: 2 oz
         angle: 45 deg
+        group: 617-5
         data:
           - initial_velocity: 860 ft/s
           - range: 5100 ft

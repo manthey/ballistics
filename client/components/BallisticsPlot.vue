@@ -80,7 +80,7 @@ export default {
           x: tdata.map(d => d.date_filled),
           y: tdata.map(d => d.power_factor),
           hovertext: tdata.map(d => {
-            return math.unit(+d.power_factor, 'J/kg').format(utils.numberFormat) +
+            return math.unit(+d.power_factor, 'J/kg').format(utils.NumberFormat) +
               `<br>${d.ref}`;
           }),
           marker: {

@@ -32,6 +32,7 @@ def combine(opts):  # noqa
                      used in computation.
     """
     total = []
+    trajectories = []
 
     references = yaml.safe_load(open('data/references.yml'))['references']
     references = {item['key']: item for item in references}
@@ -109,18 +110,19 @@ def combine(opts):  # noqa
                                         item[basekey] = ''
                                     item[basekey] += item[key]
                                 del item[key]
-                if entry.get('points') and opts.get('points', True):
+                if entry.get('points'):
+                    traj = {'key': item['key'], 'idx': item['idx']}
                     for key in entry['points']:
-                        item['trajectory_' + key] = entry['points'][key]
+                        traj['trajectory_' + key] = entry['points'][key]
+                        if opts.get('points', False):
+                            item['trajectory_' + key] = entry['points'][key]
+                    trajectories.append(traj)
                 if 'given_technique' in item:
                     item['technique'] = item['given_technique']
                 for key in ('date', 'power_factor', 'technique', 'ref'):
                     if item.get(key) is None:
                         raise Exception('Missing parameter %s' % key)
-                if opts.get('fields') == 'notrajectory':
-                    item = {key: item[key] for key in item
-                            if not key.startswith('trajectory_')}
-                elif opts.get('fields'):
+                if opts.get('fields'):
                     item = {key: item[key] for key in item
                             if key in opts['fields']}
                 total.append(item)
@@ -135,15 +137,30 @@ def combine(opts):  # noqa
         destpath = os.path.join(out, 'totallist.json')
         json.dump(total, open(destpath, 'wt'), sort_keys=True, indent=1,
                   separators=(',', ': '))
+    if opts.get('csv'):
+        csv_dump(total, os.path.join(out, 'totallist.csv'))
+    if opts.get('json', True):
+        refpath = os.path.join(out, 'trajectories.json')
+        json.dump(trajectories, open(refpath, 'wt'), sort_keys=True, indent=1,
+                  separators=(',', ': '))
+    if opts.get('csv'):
+        csv_dump(trajectories, os.path.join(out, 'trajectories.csv'))
     print('%d samples from %d sources' % (len(total), sources))
     if opts.get('json', True):
         refpath = os.path.join(out, 'references.json')
         json.dump(references, open(refpath, 'wt'), sort_keys=True, indent=1,
                   separators=(',', ': '))
-    print('%d references' % len(references))
     if opts.get('csv'):
-        csv_dump(total, os.path.join(out, 'totallist.csv'))
         csv_dump(references, os.path.join(out, 'references.csv'))
+    print('%d references' % len(references))
+    params = parameter_summary(total)
+    if opts.get('json', True):
+        refpath = os.path.join(out, 'parameters.json')
+        json.dump(params, open(refpath, 'wt'), sort_keys=True, indent=1,
+                  separators=(',', ': '))
+    if opts.get('csv'):
+        csv_dump(params, os.path.join(out, 'parameters.csv'))
+    print('%d parameters' % len(params))
     return ReMnGrid
 
 
@@ -226,6 +243,7 @@ def csv_dump(data, path):
         key != 'key', key != 'idx', key != 'power_factor', key)
         for key in keys])]
     with open(path, 'wt', newline='') as csvfile:
+        # Quote all non-numeric fields to preserve datatypes.
         writer = csv.writer(csvfile, quoting=csv.QUOTE_NONNUMERIC)
         writer.writerow(keys)
         for entry in data:
@@ -233,6 +251,39 @@ def csv_dump(data, path):
             row = [val.encode('utf8') if isinstance(val, bytes) else val
                    for val in row]
             writer.writerow(row)
+
+
+def parameter_summary(data):
+    """
+    Make a dictionary of all known parameters.  Each includes how many entries
+    used that parameter.  If the parameter is numeric, the mininum and maximum
+    are recorded.
+
+    Enter: data: list of dictionaries of data.
+    Exit:  params: a dictionary of used parameters.
+    """
+    maxval = 25
+    params = {}
+    for entry in data:
+        for key in entry:
+            if entry[key] is None or entry[key] == '':
+                continue
+            if key not in params:
+                params[key] = {'key': key, 'count': 0, 'values': {}}
+            params[key]['count'] += 1
+            params[key]['values'][entry[key]] = params[key]['values'].get(entry[key], 0) + 1
+            if isinstance(entry[key], (int, float)):
+                if 'min' not in params[key]:
+                    params[key]['numeric'] = 0
+                    params[key]['min'] = params[key]['max'] = entry[key]
+                params[key]['numeric'] += 1
+                params[key]['min'] = min(params[key]['min'], entry[key])
+                params[key]['max'] = max(params[key]['max'], entry[key])
+    for key in params:
+        params[key]['unique'] = len(params[key]['values'])
+        if params[key]['unique'] > maxval or key.endswith('_note'):
+            del params[key]['values']
+    return params
 
 
 def show_grid(grid, opts, usemin=True):
@@ -303,8 +354,6 @@ if __name__ == '__main__':  # noqa - mccabe
             opts['fields'] = [
                 'date_filled', 'power_factor', 'desc', 'ref', 'date',
                 'technique', 'key', 'idx']
-        elif arg == '--limit=notrajectory':
-            opts['fields'] = 'notrajectory'
         elif arg.startswith('--limit='):
             opts['fields'] = arg.split('=', 1)[1].split(',')
         elif arg.startswith('--min='):
@@ -313,10 +362,12 @@ if __name__ == '__main__':  # noqa - mccabe
             opts['csv'] = False
         elif arg == '--nojson':
             opts['json'] = False
-        elif arg == '--nopoints':
+        elif arg in ('--nopoints', '--notraj', '--notrajectory'):
             opts['points'] = False
         elif arg.startswith('--out='):
             opts['out'] = arg.split('=', 1)[1]
+        elif arg in ('--points', '--traj', '--trajectory'):
+            opts['points'] = True
         elif arg.startswith('--res='):
             opts['gridres'] = float(arg.split('=', 1)[1])
         elif arg.startswith('--results='):
@@ -326,23 +377,21 @@ if __name__ == '__main__':  # noqa - mccabe
     if help:
         print("""Combine results into a single file plus a references file.
 
-Syntax:  combine.py --grid --nopoints --res=(grid resolution) --min=(grid min)
-    --group --csv|--nocsv --json|--nojson --adjust
-    --limit[=notrajectory|(fields)] --results=(results directory)
-    --out=(output directory)
+Syntax:  combine.py --grid --points|--nopoints --res=(grid resolution)
+    --min=(grid min) --group --csv|--nocsv --json|--nojson --adjust
+    --limit[=(fields)] --results=(results directory) --out=(output directory)
 --adjust adjusts the json file used with cod_adjusted.
 --csv outputs csv files in the output directory.
 --grid outputs a grid of used Re/Mn values to stdout.
 --group outputs only the grid for groups that are present.
 --json outputs json files to the output directory (default).
 --limit reduces the fields output to the comma-separated list of fields.  If no
-  fields are given, a common subset of fields is used instead.  `notrajectory`
-  skips fields with names that start with `trajectory_`.
+  fields are given, a common subset of fields is used instead.
 --min specified how many points are required before a grid is output (default
   2).
---nopoints excludes trajectory information in the output.
 --out is the directory where json and csv files are stored.  Default is
   'built'.
+--points includes trajectory information in the main output.
 --res indicates the group resolution (default 10).  This is the inverse of the
   increment between Mach values and between base-10 powers of the Reynolds
   number.

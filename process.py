@@ -39,12 +39,17 @@ Pool = None
 
 
 class FloatList:
-    """A special list for rendering floats in JSON with predictable precision
-    and in a controlled way."""
+    """
+    A special list for rendering floats in JSON with predictable precision
+    and in a controlled way.
+    """
     def __init__(self, newList=None, formatString='%0.10g'):
-        """Create a FloatList.
+        """
+        Create a FloatList.
+
         Enter: newList: array for the list.
-               formatString: default format string for floats."""
+               formatString: default format string for floats.
+        """
         self.list = list(newList)
         self.formatString = formatString
 
@@ -66,6 +71,27 @@ class FloatEncoder(json.JSONEncoder):
         except TypeError:
             print('Can\'t encode: %r' % o)
             raise
+
+
+def add_path_to_files(path, files):
+    """
+    Add a file or directory of files to the input file list.
+
+    Enter: path: a relative or absolute path to a yml file or a directory of
+                 yml files.
+           files: a list of files to process; updated.
+    """
+    path = os.path.abspath(os.path.expanduser(path))
+    if not os.path.exists(path):
+        raise Exception('Input path %s does not exist' % path)
+    if os.path.isdir(path):
+        dirfiles = [os.path.abspath(os.path.join(path, file))
+                    for file in os.listdir(path)
+                    if os.path.splitext(file)[1] == '.yml']
+        dirfiles = sorted(dirfiles)
+        files.extend(dirfiles)
+    else:
+        files.append(path)
 
 
 def calculate_case(hashval, args, info, verbose):
@@ -305,8 +331,9 @@ if __name__ == '__main__':  # noqa - mccabe
     allFiles = False
     multi = False
     multiFile = False
-    outputPath = None
+    outputPath = 'results'
     reverse = False
+    timeLimit = None
     verbose = 0
     help = False
     for arg in sys.argv[1:]:
@@ -322,6 +349,8 @@ if __name__ == '__main__':  # noqa - mccabe
                 multiFile = False
             if 'multifile' in arg:
                 multiFile = True
+        elif arg.startswith('--limit='):
+            timeLimit = float(arg.split('=', 1)[1])
         elif arg.startswith('--out='):
             outputPath = os.path.abspath(os.path.expanduser(
                 arg.split('=', 1)[1]))
@@ -332,32 +361,28 @@ if __name__ == '__main__':  # noqa - mccabe
         elif arg.startswith('-'):
             help = True
         else:
-            path = os.path.abspath(os.path.expanduser(arg))
-            if not os.path.exists(path):
-                raise Exception('Input path %s does not exist' % path)
-            if os.path.isdir(path):
-                dirfiles = [os.path.abspath(os.path.join(path, file))
-                            for file in os.listdir(path)
-                            if os.path.splitext(file)[1] == '.yml']
-                dirfiles = sorted(dirfiles)
-                files.extend(dirfiles)
-            else:
-                files.append(path)
+            add_path_to_files(arg, files)
+    if not len(files):
+        add_path_to_files('data', files)
     if (help or not len(files) or not outputPath or
             not os.path.isdir(outputPath)):
         print("""Process yml and md files using the ballistics code.
 
-Syntax: process.py --out=(path) --all --reverse -v
+Syntax: process.py --out=(path) --all --reverse -v --limit=(seconds)
         --multi|--multifile|--multicase[=(number of processes)]
         (input files ...)
 
 If the input files are a directory, all yml files in that path are processed.
-Only files newer than the matching results are processed unless the
---all flag is used.
+Only files newer than the matching results are processed unless the --all flag
+is used.  The default for input files is 'data'.
+--all processes files even if they appear up to date.
+--limit doesn't start processing a file if the time limit has been exceeded.
+  Files that are started are still finished.  If multiprocessing per file, this
+  will exit more promptly.
 --multi runs parallel processes.  This uses the number of processors available
   unless a number is specified.  --multifile runs a process per input file,
   --multicase runs a process per ballistics case.
---out specifies an output directory, which must exist.
+--out specifies an output directory, which must exist.  Default is 'results'.
 --reverse calculates the last conditions in a file first.  The output is
   identical to the forward calculation.
 -v increase verbosity.
@@ -371,6 +396,9 @@ Only files newer than the matching results are processed unless the
     try:
         if not multi or not multiFile:
             for file in files:
+                if timeLimit and time.time() - starttime > timeLimit:
+                    print('Cancelled due to time limit')
+                    break
                 read_and_process_file(file, outputPath, allFiles, verbose,
                                       pool, reverse=reverse)
         else:
@@ -382,6 +410,10 @@ Only files newer than the matching results are processed unless the
             })
             task = pool.map_async(mapfunc, files, 1)
             while not task.ready():
+                if timeLimit and time.time() - starttime > timeLimit:
+                    print('Cancelled due to time limit')
+                    pool.terminate()
+                    break
                 task.wait(1)
             pool.close()
             pool.join()
@@ -392,6 +424,6 @@ Only files newer than the matching results are processed unless the
                 pool.join()
             except Exception:
                 pass
-        print("Cancelled via keyboard interrupt")
+        print('Cancelled via keyboard interrupt')
     if verbose >= 1:
         print('Total computation time: %4.2f s' % (time.time() - starttime))

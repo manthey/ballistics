@@ -1,21 +1,13 @@
 /* General utility values and functions */
 
-/*
-main
-references
-fulldata
-fulldata w/o theoretical (with a filter specified)
-- specific graphs with commentary
-  small diam
-  medium
-  large
-table: full / close / traj.graph
-*/
-//search for missing "p. "
-//search for replaced "ref"
+/* Default mathjs number format. */
+let NumberFormat = {precision: 6, lowerExp: -6, upperExp: 9};
 
-/* Known data keys and their formats. */
-let keyTable = [{
+/* Sorted list of known parameters and their formats. */
+let ParameterList = [{
+    key: 'ref',
+    primary: true
+  }, {
     key: 'key',
     primary: true
   }, {
@@ -23,14 +15,15 @@ let keyTable = [{
     title: '0-based location in the data file',
     primary: true
   }, {
-    key: 'ref',
-    primary: true
-  }, {
     key: 'desc',
     primary: true
   }, {
     key: 'date',
     primary: true
+  }, {
+    key: 'date_filled'
+  }, {
+    key: 'year'
   }, {
     key: 'technique',
     primary: true
@@ -42,17 +35,29 @@ let keyTable = [{
     key: 'given_date',
     primary: true
   }, {
+    key: 'given_date_note'
+  }, {
     key: 'given_charge',
     primary: true
+  }, {
+    key: 'given_charge_note'
+  }, {
+    key: 'charge_note',
   }, {
     key: 'given_diameter',
     primary: true
   }, {
+    key: 'given_diameter_note'
+  }, {
     key: 'given_angle',
     primary: true
   }, {
+    key: 'given_angle_note'
+  }, {
     key: 'given_range',
     primary: true
+  }, {
+    key: 'given_range_note'
   }, {
     key: 'given_final_angle',
     primary: true
@@ -60,8 +65,12 @@ let keyTable = [{
     key: 'given_final_height',
     primary: true
   }, {
+    key: 'given_final_height_note'
+  }, {
     key: 'given_final_time',
     primary: true
+  }, {
+    key: 'given_final_time_note'
   }, {
     key: 'given_final_velocity',
     primary: true
@@ -69,14 +78,20 @@ let keyTable = [{
     key: 'given_atmospheric_density',
     primary: true
   }, {
+    key: 'given_atmospheric_density_note'
+  }, {
     key: 'given_group',
     primary: true
   }, {
     key: 'given_temperature',
     primary: true
   }, {
+    key: 'given_temperature_note'
+  }, {
     key: 'given_humidity',
     primary: true
+  }, {
+    key: 'given_humidity_note'
   }, {
     key: 'given_wetbulb',
     primary: true
@@ -84,20 +99,30 @@ let keyTable = [{
     key: 'given_initial_height',
     primary: true
   }, {
+    key: 'given_initial_height_note'
+  }, {
     key: 'given_initial_velocity',
     primary: true
+  }, {
+    key: 'given_initial_velocity_note'
   }, {
     key: 'given_mass',
     primary: true
   }, {
+    key: 'given_mass_note'
+  }, {
     key: 'given_material',
     primary: true
+  }, {
+    key: 'given_material_note'
   }, {
     key: 'given_material_density',
     primary: true
   }, {
     key: 'given_maxheight',
     primary: true
+  }, {
+    key: 'given_maxheight_note'
   }, {
     key: 'given_power',
     primary: true
@@ -110,6 +135,8 @@ let keyTable = [{
   }, {
     key: 'given_technique',
     primary: true
+  }, {
+    key: 'given_technique_note'
   }, {
     key: 'charge',
     units: 'kg',
@@ -199,6 +226,9 @@ let keyTable = [{
     title: 'Wet-bulb temperature',
     units: 'K'
   }, {
+    key: 'time',
+    units: 's'
+  }, {
     key: 'x',
     units: 'm'
   }, {
@@ -233,11 +263,23 @@ let keyTable = [{
     key: 'final_density_T',
     units: 'K'
   }, {
+    key: 'final_density_xv',
+  }, {
     key: 'final_density_y',
     units: 'm'
   }, {
+    key: 'final_drag_cd'
+  }, {
+    key: 'final_drag_Mn'
+  }, {
+    key: 'final_drag_Re'
+  }, {
+    key: 'final_drag_critical_Re'
+  }, {
     key: 'final_drag_sos',
     units: 'm/s'
+  }, {
+    key: 'final_drag_in_range'
   }, {
     key: 'final_viscosity_mua',
     title: 'Viscosity of dry air',
@@ -251,9 +293,11 @@ let keyTable = [{
     title: 'Viscosity',
     units: 'kg/m/s'
   }];
-
-/* Default mathjs number format. */
-let numberFormat = {precision: 6, lowerExp: -6, upperExp: 9};
+let Parameters = {};
+ParameterList.forEach((param, idx) => {
+  param.idx = idx;
+  Parameters[param.key] = param;
+});
 
 /**
  * Get the current URL query parameters from the document location.
@@ -290,10 +334,37 @@ function setUrlQuery(params, update) {
   }
 }
 
+/**
+ * Given information about parameters in the total data list, update the
+ * ParameterList and Parameters records.  Emit console messages if there are
+ * parameters present in one set and not the other.
+ *
+ * @param {object} params A dictionary of parameter information from the data.
+ * @returns {object} The updates Parameters value.
+ */
+function updateParameters(params) {
+  Object.keys(Parameters).forEach(key => {
+    if (!params[key]) {
+      console.log(`The client Parameters include ${key}, but it is missing in the data.`);
+    }
+  });
+  Object.keys(params).forEach(key => {
+    if (!Parameters[key]) {
+      console.log(`The data parameters include ${key}, but it is missing in the client.`);
+      Parameters[key] = {'key': key};
+      ParameterList.push(Parameters[key]);
+    }
+    Object.assign(Parameters[key], params[key]);
+  });
+  return Parameters;
+}
+
 export {
-  keyTable,
-  numberFormat,
+  NumberFormat,
+  ParameterList,
+  Parameters,
 
   getUrlQuery,
-  setUrlQuery
+  setUrlQuery,
+  updateParameters
 };

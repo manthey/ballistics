@@ -2,12 +2,14 @@
   <div class="table_wrapper">
     <div class="table_scroll">
       <div v-html="this.references[params.key] ? this.references[params.key].cms : ''"></div>
-      <div>
+      <div class="table_controls">
         <button id="full" @click="toggleFull">{{ this.showfull ? 'Primary Values' : 'All Values' }}</button>
+        <span/>
+        <button id="close" @click="closeTable">Close</button>
       </div>
       <table>
         <tr v-for="param in Object.keys(params)" :key="param">
-          <td>{{ param }}</td>
+          <td :title="parameters[param].title">{{ param }}</td>
           <td>{{ params[param] }}</td>
         </tr>
       </table>
@@ -26,6 +28,13 @@
 .table_scroll {
   font-family: sans-serif;
   font-size: 12px;
+  padding: 5px;
+}
+.table_controls {
+  display: flex;
+}
+.table_controls span {
+  flex: 1;
 }
 </style>
 
@@ -41,7 +50,8 @@ export default {
   },
   data() {
     return {
-      numberFormat: utils.numberFormat,
+      numberFormat: utils.NumberFormat,
+      parameters: utils.Parameters,
       showfull: false
     };
   },
@@ -50,14 +60,14 @@ export default {
       let params = Object.assign({}, this.datapoint),
           fullkeys = Object.keys(params),
           result = {};
-      utils.keyTable.map(entry => {
+      utils.ParameterList.forEach(entry => {
         if (params[entry.key] !== undefined && (this.showfull || entry.primary)) {
           result[entry.key] = this.formatValue(params[entry.key], entry);
         }
       });
       if (this.showfull) {
         fullkeys = fullkeys.sort();
-        fullkeys.map(key => {
+        fullkeys.forEach(key => {
           if (params[key] !== undefined && result[key] === undefined) {
             result[key] = this.formatValue(params[key]);
           }
@@ -67,6 +77,9 @@ export default {
     }
   },
   methods: {
+    closeTable() {
+      this.$emit('closetable');
+    },
     formatValue(value, params) {
       if (isNaN(parseFloat(value)) || !isFinite(value)) {
         return value;
