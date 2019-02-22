@@ -1,0 +1,16 @@
+sudo: false
+language: python
+python: 3.6
+cache:
+  - npm
+  - directories:
+    - $HOME/results
+install:
+  - mkdir -p $HOME/results
+  - pip install .
+  - npm install
+script:
+  - python process.py --multi -v -v --limit=600 --out=$HOME/results
+  - python utils/combine.py --results=$HOME/results --out=client/static
+  - npm run lint
+  - npm run build
