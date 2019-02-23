@@ -11,6 +11,7 @@ install:
   - npm install
 script:
   - python process.py --multi -v -v --limit=600 --out=$HOME/results
-  - python utils/combine.py --results=$HOME/results --out=client/static
+  - python util/combine.py --results=$HOME/results --out=client/static
   - npm run lint
   - npm run build
+# https://docs.travis-ci.com/user/deployment/pages/

@@ -47,8 +47,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-02-19v45'
-PROGRAM_SIGNATURE = 'c3e58543a8cd56c27e791983e7d77f46'
+__version__ = '2019-02-22v46'
+PROGRAM_SIGNATURE = 'c7ba6bceeba967aef69a84925f9c917d'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -407,13 +407,16 @@ Settings = {
 
 
 def acceleration(state, y=None, vx=None, vy=None):
-    """Calculate total acceleration on a sphere.
+    """
+    Calculate total acceleration on a sphere.
+
     Enter: state: a dictionary of the current state.
            y: if not none, override the state's height in meters.
            vx: if not none, override the state's horizontal velocity in m/s
            vy: if not none, override the state's vertical velocity in m/s.
     Exit:  ax: horizontal acceleration in m/s/s.
-           ay: vertical acceleration in m/s/s."""
+           ay: vertical acceleration in m/s/s.
+    """
     if y is not None:
         state['y'] = y
     if vx is not None:
@@ -426,15 +429,18 @@ def acceleration(state, y=None, vx=None, vy=None):
 
 
 def acceleration_from_drag(state):
-    """Calculate the acceleration from drag in m/s/s.  The accelration due
-     to drag is a function of the coefficient of drag, the atmospheric
-     density, velocity, mass, and diameter.
+    """
+    Calculate the acceleration from drag in m/s/s.  The accelration due to
+    drag is a function of the coefficient of drag, the atmospheric density,
+    velocity, mass, and diameter.
+
     Enter: state: a dictionary of the current state.  See comment at the
                   top of the program.  This directly uses vx, vy, and mass,
                   and indirectly uses other parameters.
     Exit:  accel: magintude of total acceleration from drag in m/s/s.
            ax: acceleration in the x direction.
-           ay: acceleration in the y direction."""
+           ay: acceleration in the y direction.
+    """
     # If we were told the pressure was zero, treat this as a vacuum with no
     # drag
     if state.get('pressure') == 0:
@@ -454,11 +460,14 @@ def acceleration_from_drag(state):
 
 
 def acceleration_from_gravity(state):
-    """Based on the altitude, calculate the acceleration due to gravity.
+    """
+    Based on the altitude, calculate the acceleration due to gravity.
+
     Enter: state: a dictionary of the current state.  Only 'y' is
                   pertinent.
     Exit:  accel: acceleration from gravity in m/s/s.  This is always
-                  negative."""
+                  negative.
+    """
     y = state.get('y', 0)
     g0 = -9.80665  # at sea level
     # Mean radius of the earth from WGS-84
@@ -470,10 +479,13 @@ def acceleration_from_gravity(state):
 
 
 def adjust_for_density(state):
-    """Given the atmospheric density, adjust the initial pressure altitude so
-     that we are at an atmosphere of that desnity.
+    """
+    Given the atmospheric density, adjust the initial pressure altitude so
+    that we are at an atmosphere of that density.
+
     Enter: state: a dictionary of the current state.
-    Exit:  state: adjusted state."""
+    Exit:  state: adjusted state.
+    """
     state = state.copy()
     if not state.get('pressure'):
         state['pressure'] = pressure_from_altitude(0)
@@ -497,14 +509,17 @@ def adjust_for_density(state):
 
 
 def atmospheric_density(state):
-    """Calculate the astmospheric density in kg/(m^3).  This is based on
-     temperature, pressure, and humidity.  See also Picard, A., R. S. Davis, M.
-     Glaser, and K. Fujii. "Revised formula for the density of moist air
-     (CIPM-2007)."  Metrologia. 45 (2008): 149-155.
+    """
+    Calculate the astmospheric density in kg/(m^3).  This is based on
+    temperature, pressure, and humidity.  See also Picard, A., R. S. Davis, M.
+    Glaser, and K. Fujii. "Revised formula for the density of moist air
+    (CIPM-2007)."  Metrologia. 45 (2008): 149-155.
+
     Enter: state: a dictionary of the current state.  See comment at the
                   top of the program.  This directly uses y, temp, rh,
                   pressure, and pressure_y0.
-    Exit:  density: atmospheric density in kg/m/m/m."""
+    Exit:  density: atmospheric density in kg/m/m/m.
+    """
     if 'T' not in state:
         T = 288.15  # standard temperature at sea level
     else:
@@ -564,16 +579,19 @@ def atmospheric_density(state):
 
 
 def atmospheric_viscosity(state):
-    """Calculate the astmospheric dynamic viscosity in kg/(m*s). This is
-     based on temperature and humidity.  I've used a relatively simple
-     equation to combine the viscosities of dry air and water vapor, as
-     listed in Melling, Adrian, Stefan Noppenberger, Martin Still, and
-     Holger Venzke.  "Interpolation Correlations for Fluid Properties of
-     Humid Air in the Temperature Range 100 degC to 200 degC."  Journal of
-     Physical and Chemical Reference Data.  26, no. 4 (1997): 1111-1123.
+    """
+    Calculate the astmospheric dynamic viscosity in kg/(m*s). This is based on
+    temperature and humidity.  I've used a relatively simple equation to
+    combine the viscosities of dry air and water vapor, as listed in Melling,
+    Adrian, Stefan Noppenberger, Martin Still, and Holger Venzke.
+    "Interpolation Correlations for Fluid Properties of Humid Air in the
+    Temperature Range 100 degC to 200 degC."  Journal of Physical and
+    Chemical Reference Data.  26, no. 4 (1997): 1111-1123.
+
     Enter: state: a dictionary of the current state.  See comment at the
                   top of the program.
-    Exit:  viscosity: atmospheric viscosity in kg/m/s."""
+    Exit:  viscosity: atmospheric viscosity in kg/m/s.
+    """
     if 'density_data' not in state:
         # This populates density_data with a variety of values we need,
         # including the pressure and the mole fraction of water vapor
@@ -596,8 +614,10 @@ def atmospheric_viscosity(state):
 
 def coefficient_of_drag(state=None, density=None, reynolds=None, mach=None,
                         only_in_range=False):
-    """Calculate the coefficient of drag.  This is based off of the
-     Reynolds number, Mach number, and possibly other factors.
+    """
+    Calculate the coefficient of drag.  This is based off of the Reynolds
+    number, Mach number, and possibly other factors.
+
     Enter: state: a dictionary of the current state.  See comment at the
                   top of the program.  This directly uses vx, vy, and diam,
                   and indirectly uses other parameters.  If None, use the
@@ -608,7 +628,8 @@ def coefficient_of_drag(state=None, density=None, reynolds=None, mach=None,
              mach: if state is None, use this as the mach number.
              only_in_range: if True, return None if the values are outside of
                             what we can interpolate.
-    Exit:  cd: the coefficient of drag."""
+    Exit:  cd: the coefficient of drag.
+    """
     if state and 'vx' in state:
         if density is None:
             density = atmospheric_density(state)
@@ -642,10 +663,13 @@ def coefficient_of_drag(state=None, density=None, reynolds=None, mach=None,
 
 
 def csv_row(data):
-    """Convert a list to a single line of CSV.
+    """
+    Convert a list to a single line of CSV.
+
     Enter: data: a list to convert.
     Exit:  output: a single string without any linefeeds or carriage
-                   returns."""
+                   returns.
+    """
     global csv, StringIO
     if csv is None:
         import csv
@@ -662,12 +686,15 @@ DisplayStatusInterval = 1
 
 
 def display_status(state, params={}, last=False):
-    """Depending on the verbosity, display a line indicating the current
-     status of the trajectory.
+    """
+    Depending on the verbosity, display a line indicating the current status
+    of the trajectory.
+
     Enter: state: a dictionary of the current state.  See comment at the
                   top of the program.
            params: parameters to override the current state.
-           last: True if this is the last point."""
+           last: True if this is the last point.
+    """
     global LastDisplayStatus
     if Verbose < 2:
         return
@@ -693,9 +720,10 @@ def display_status(state, params={}, last=False):
 
 
 def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
-    """Based on an initial state and a specific unknown, try different
-     values for the unknown until the computed trajectory matches to an
-     acceptable level.
+    """
+    Based on an initial state and a specific unknown, try different values for
+    the unknown until the computed trajectory matches to an acceptable level.
+
     Enter: initial_state: a dictionary of the initial state.  See comment
                           at the top of the program.
            unknown: name of the unknown value which will be varied.
@@ -704,7 +732,8 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
     Exit:  final_state: the final state of the projectile.  This includes
                         an 'error' item if there is insufficient data for
                         calculation.
-           points: a list of points along the trajectory."""
+           points: a list of points along the trajectory.
+    """
     if unknown not in Factors:
         print('Cannot solve for %s.' % unknown)
         return (initial_state, [])
@@ -823,7 +852,9 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
 
 
 def find_unknown_direct(unknown, state):
-    """Check if the unknown was given or can be solved directly.
+    """
+    Check if the unknown was given or can be solved directly.
+
     Enter: unknown: the unknown to solve for.
            state; the initial state.
     Exit:  solved_state: the answer state if solved, None if not.
@@ -842,27 +873,29 @@ def find_unknown_direct(unknown, state):
 
 
 def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
-    """Generate output for part of a csv or html5 table.  The parameters
-     can be any internal, short, or long name of a factor to include it in
-     the list.  ':'(unit) may be added to the name of any factor to output
-     the factor in the specified units rather than the default units.
-     'comment', 'comptime', 'method', and 'version' are treated as factors
-     for this purpose.  Additionally, 'diff:(factor):(value)' lists the
-     difference between the specified value and the specified factor.  If
-     no factors are included in the parameter list, a default set is used.
-     Additionally, the following are allowed as key=value:
-       format: 'csv' (default), 'html', or 'wp'.
-       header: 'none' (default), 'title', 'units', or 'all'.  All generates
-     two lines, the first with the title and the second with the units.
-       footer: same options as header.
-       units: 'eng', 'si', or 'both' (default).  In both, two columns
-     appear for each item.
-       blank: the number of blank lines to insert after any header and
-     before the data.
+    """
+    Generate output for part of a csv or html5 table.  The parameters can be
+    any internal, short, or long name of a factor to include it in the list.
+    ':'(unit) may be added to the name of any factor to output the factor in
+    the specified units rather than the default units.  'comment', 'comptime',
+    'method', and 'version' are treated as factors for this purpose.
+    Additionally, 'diff:(factor):(value)' lists the difference between the
+    specified value and the specified factor.  If no factors are included in
+    the parameter list, a default set is used. Additionally, the following are
+    allowed as key=value:
+      format: 'csv' (default), 'html', or 'wp'.
+      header: 'none' (default), 'title', 'units', or 'all'.  All generates two
+    lines, the first with the title and the second with the units.
+      footer: same options as header.
+      units: 'eng', 'si', or 'both' (default).  In both, two columns appear
+    for each item.
+      blank: the number of blank lines to insert after any header and before
+      the data.
     Enter: state: the final state of the calculations that are used for
                   output.  If None, only generate headers and footers.
            user_params: a comma-separated list of parameters as above.
-           comment: a comment that can be included in the output."""
+           comment: a comment that can be included in the output.
+    """
     params = {'format': 'csv', 'header': 'none', 'footer': 'none',
               'units': 'both', 'blank': 0}
     params, other_params, items = parse_user_params(params, user_params)
@@ -1062,8 +1095,11 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
 
 
 def get_cpu_time():
-    """Return a time that should increase with cpu time.
-    Exit:  time: the current time or a cpu-relative time."""
+    """
+    Return a time that should increase with cpu time.
+
+    Exit:  time: the current time or a cpu-relative time.
+    """
     if not GET_CPU_TIME:
         return time.time()
     global psutil
@@ -1074,12 +1110,15 @@ def get_cpu_time():
 
 
 def graph_coefficient_of_drag(user_params=None):
-    """Generate a plot of the values we use for coefficient of drag.  The
-     parameters are w (width in pixels), h (height in pixels), file (output
-     file name), remin, remax (minimum and maximum Reynolds numbers to
-     plot), mnmin, mnmax (min and max Mach numbers to plot), mnint (Mach
-     number interval to plot).
-    Enter: user_params: a comma separated list of parameters."""
+    """
+    Generate a plot of the values we use for coefficient of drag.  The
+    parameters are w (width in pixels), h (height in pixels), file (output
+    file name), remin, remax (minimum and maximum Reynolds numbers to plot),
+    mnmin, mnmax (min and max Mach numbers to plot), mnint (Mach number
+    interval to plot).
+
+    Enter: user_params: a comma separated list of parameters.
+    """
     params = {'remin': 1.0e2, 'remax': 1.0e7, 'mnmin': 0.0, 'mnmax': 1.8,
               'mnint': 0.2}
     params, other_params, items = parse_user_params(params, user_params)
@@ -1127,10 +1166,13 @@ def graph_coefficient_of_drag(user_params=None):
 
 
 def graph_trajectory(points, user_params=None):
-    """Generate a plot of points from a trajectory.
+    """
+    Generate a plot of points from a trajectory.
+
     Enter: points: a list of points from a trajectory.  Each has x, y, vx,
            vy, ax, ay, and time.
-           user_params: a comma separated list of parameters."""
+           user_params: a comma separated list of parameters.
+    """
     params = {}
     params, other_params, items = parse_user_params(params, user_params)
     global matplotlib, pyplot
@@ -1148,21 +1190,26 @@ def graph_trajectory(points, user_params=None):
 
 
 def html_encode(text):
-    """Encode <, >, ', and & to html entities.  This is intended to do what
-     the php function htmlspecialchars does.
+    """
+    Encode <, >, ', and & to html entities.  This is intended to do what the
+    php function htmlspecialchars does.
+
     Enter: text: text to encode.
-    Exit:  encoded_text: encoded text."""
+    Exit:  encoded_text: encoded text.
+    """
     return text.replace('&', '&amp;').replace('\'', '&quot;').replace(
         '<', '&lt;').replace('>', '&gt;')
 
 
 def next_point(state, dt):
-    """Compute the next position of a sphere using a Runge-Kutta
-     interpolation.
+    """
+    Compute the next position of a sphere using a Runge-Kutta interpolation.
+
     Enter: state: the current state of the projectile, including position,
                   velocity, and other properties.
            dt: time delta in seconds.
-    Exit:  newstate: the updated state."""
+    Exit:  newstate: the updated state.
+    """
     newstate = state.copy()
     x = state.get('x', 0)
     y = state.get('y', 0)
@@ -1219,15 +1266,18 @@ def next_point(state, dt):
 
 
 def parse_arguments(argv, allowUnknownParams=False):  # noqa
-    """Parse command line arguments, read in the config file, and read in
+    """
+    Parse command line arguments, read in the config file, and read in
     environment configuration.
+
     Enter: argv: command line arguments (excluding the program -- usually this
                  is sys.argv[1:]).
            allowUnknownParams: if False, ask for help if an unknown parameter
                                is specified.
     Exit:  params: program parameters.
            state: initial calculation state.
-           help: True if the help must be shown."""
+           help: True if the help must be shown.
+    """
     global PrecisionInDigits, UseRungeKutta, Verbose
 
     state = {'final_height': '0'}
@@ -1337,8 +1387,10 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
 
 
 def parse_user_params(default_params={}, user_params=None):
-    """Parse a comma-separated list of key=value parameters, and populate a
-     dictionary with the values.
+    """
+    Parse a comma-separated list of key=value parameters, and populate a
+    dictionary with the values.
+
     Enter: default_params: a dictionary with the default values.  Only
                            parameters listed in the dictionary are set.
                            Other parameters and value-less parameters are
@@ -1350,7 +1402,8 @@ def parse_user_params(default_params={}, user_params=None):
                    default parameters.
            other_params: a dictionary of parameters that were not present
                          in the default dictionary.
-           items: a list of keys without values."""
+           items: a list of keys without values.
+    """
     params = default_params.copy()
     other_params = {}
     items = []
@@ -1374,11 +1427,14 @@ def parse_user_params(default_params={}, user_params=None):
 
 
 def pressure_from_altitude(y):
-    """Calculate standard atmospheric pressure based on an altitude in m.
-     The basic formula can be found many places.  For instance, Munson,
-     Young, and Okiishi, 'Fundmanetals of Fluid Mechanics', p. 51.
+    """
+    Calculate standard atmospheric pressure based on an altitude in m.  The
+    basic formula can be found many places.  For instance, Munson, Young, and
+    Okiishi, 'Fundmanetals of Fluid Mechanics', p. 51.
+
     Enter: y: altitude in m.
-    Exit:  p: pressure in N/m/m."""
+    Exit:  p: pressure in N/m/m.
+    """
     p0 = 101325  # Pa, standard pressure at sea level
     L = 0.0065   # K/m, temperature lapse rate
     T0 = 288.15  # K, reference temperature at sea level
@@ -1391,15 +1447,18 @@ def pressure_from_altitude(y):
 
 
 def read_config(config_file=None):
-    """Read a config file and treat it as a series of command line
-     arguments at the point in the command line where the config file
-     appears.  Any line that begins with # is treated as a comment and
-     ignored.  If a lines does not contain an = but does contain a space,
-     then it is treated as two parameters split on the first space.
+    """
+    Read a config file and treat it as a series of command line arguments at
+    the point in the command line where the config file appears.  Any line
+    that begins with # is treated as a comment and ignored.  If a lines does
+    not contain an = but does contain a space, then it is treated as two
+    parameters split on the first space.
+
     Enter: config_file: name of the config file to read.  None to read
                         'ballistics.conf'.
     Exit:  arguments: a list of the arguments to insert as if on the
-                      command line."""
+                      command line.
+    """
     args = []
     if config_file is None:
         config_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ballistics.conf')
@@ -1426,10 +1485,13 @@ def read_config(config_file=None):
 
 
 def read_config_env():
-    """Check if there is an environment variable called BALLISTICS_CONF.
-     If so, read the value and split it on spaces.
+    """
+    Check if there is an environment variable called BALLISTICS_CONF.  If so,
+    read the value and split it on spaces.
+
     Exit:  arguments: a list of the arguments to insert as if on the
-                      command line."""
+                      command line.
+    """
     args = []
     env = os.getenv('BALLISTICS_CONF')
     if not env:
@@ -1439,16 +1501,19 @@ def read_config_env():
 
 
 def relative_humidity(state):
-    """Return the relative humidity [0-1] based on the state.  If we haven't
-     been given the relative humidity, but we have the temperature and either
-     the wet bulb temperature (preferred) or the dew point, calculate the
-     relative humidity.  Calculations are taken from Parish, O. Owen and Terril
-     W. Putnam, <i>Equations for the Determination of Humidity from Dewpoint
-     and Psychrometric Data.</i>  Washington, D.C.: National Aeronautics and
-     Space Administration, 1977.
+    """
+    Return the relative humidity [0-1] based on the state.  If we haven't been
+    given the relative humidity, but we have the temperature and either the
+    wet bulb temperature (preferred) or the dew point, calculate the relative
+    humidity.  Calculations are taken from Parish, O. Owen and Terril W.
+    Putnam, <i>Equations for the Determination of Humidity from Dewpoint and
+    Psychrometric Data.</i>  Washington, D.C.: National Aeronautics and Space
+    Administration, 1977.
+
     Enter: state: a dictionary of the current state.  See comment at the
                   top of the program.
-    Exit:  phi: the relative humidity on a scale of [0-1]."""
+    Exit:  phi: the relative humidity on a scale of [0-1].
+    """
     if 'rh' in state:
         return state['rh']
     if 'T' not in state or ('Twb' not in state and 'Tdp' not in state):
@@ -1480,13 +1545,16 @@ def relative_humidity(state):
 
 
 def speed_of_sound(state):
-    """Calculate the speed of sound in m/s based on the temperature and
-     humidity.  Taken from Bohn, Dennis A.  "Environmental Effects on the
-     Speed of Sound."  Journal of the Audio Engineering Society.  36, no. 4
-     (April, 1988): 223-231.
+    """
+    Calculate the speed of sound in m/s based on the temperature and humidity.
+    Taken from Bohn, Dennis A.  "Environmental Effects on the Speed of Sound."
+    Journal of the Audio Engineering Society.  36, no. 4 (April, 1988):
+    223-231.
+
     Enter: state: a dictionary of the current state.  See comment at the
                   top of the program.
-    Exit:  speed_of_sound: the speed of sound in m/s."""
+    Exit:  speed_of_sound: the speed of sound in m/s.
+    """
     if 'density_data' not in state:
         # This populates density_data with a variety of values we need,
         # including the mole fraction of water vapor and the temperature
@@ -1503,13 +1571,16 @@ def speed_of_sound(state):
 
 
 def trajectory(state):  # noqa - mccabe
-    """Compute the trajectory of the specified sphere.
+    """
+    Compute the trajectory of the specified sphere.
+
     Enter: state: a dictionary of the initial state.  See comment at the
                   top of the program.
     Exit:  final_state: the final state of the projectile.  This includes
                         an 'error' item if there is insufficient data for
                         calculation.
-           points: a list of points along the trajectory."""
+           points: a list of points along the trajectory.
+    """
     state = state.copy()
     # Set up the initial conditions
     state['time'] = 0
@@ -1633,8 +1704,10 @@ def trajectory(state):  # noqa - mccabe
 
 
 def trajectory_error(initial_state, unknown, unknown_value):
-    """Determine how far off the results of a trajectory calculation are
-     from the expected outcome.
+    """
+    Determine how far off the results of a trajectory calculation are from the
+    expected outcome.
+
     Enter: initial_state: a dictionary of the initial state.  See comment
                           at the top of the program.
            unknown: the parameter within the state to set.  The value is
@@ -1642,7 +1715,8 @@ def trajectory_error(initial_state, unknown, unknown_value):
            unknown_value: the value to set the unknown parameter to when
                           calculating the trajectory.
     Exit:  error: a metric of how far off the trajectory is from the
-                    expected outcome."""
+                    expected outcome.
+    """
     global Verbose
     state = initial_state.copy()
     state[unknown] = unknown_value
@@ -1687,11 +1761,13 @@ def trajectory_error(initial_state, unknown, unknown_value):
 
 
 def version_check():
-    """If the program was run directly from the py file AND we can identify
-     the py file source, calculate the md5sum of the entire program EXCEPT
-     the program signature.  If the program signature differs from the
-     current value, increment the version number, calculate a new program
-     signature, and save the file."""
+    """
+    If the program was run directly from the py file AND we can identify the
+    py file source, calculate the md5sum of the entire program EXCEPT the
+    program signature.  If the program signature differs from the current
+    value, increment the version number, calculate a new program signature,
+    and save the file.
+    """
     path = os.path.abspath(__file__)
     if Verbose >= 4:
         sys.stderr.write('Program file path: %s\n' % path)
@@ -1751,14 +1827,17 @@ def version_check():
 
 
 def viscosity_dry_air(T, density):
-    """Calculate the viscosity of dry air based on a function of absolute
-     temperature and density.  Taken from Kadoya, K., N. Matsunaga, and A.
-     Nagashima.  "Viscosity and Thermal Conductivity of Dry Air in the
-     Gaseous Phase."  Journal of Physical and Chemical Reference Data.  14,
-     no. 4 (1985): 947-970.
+    """
+    Calculate the viscosity of dry air based on a function of absolute
+    temperature and density.  Taken from Kadoya, K., N. Matsunaga, and A.
+    Nagashima.  "Viscosity and Thermal Conductivity of Dry Air in the Gaseous
+    Phase."  Journal of Physical and Chemical Reference Data.  14, no. 4
+    (1985): 947-970.
+
     Enter: T: temperature in K
            density: density in kg/(m^3)
-    Exit:  viscosity_air: viscosity in kg/m/s (Pa*s)"""
+    Exit:  viscosity_air: viscosity in kg/m/s (Pa*s)
+    """
     A = [(1, 0.128517), (0.5, 2.60661), (0, -1.00000), (-1, -0.709661),
          (-2, 0.662534), (-3, -0.197846), (-4, 0.00770147)]
     scaledT = T/132.5
@@ -1775,14 +1854,16 @@ def viscosity_dry_air(T, density):
 
 
 def viscosity_water_vapor(T, density):
-    """Calculate the viscosity of water vapor based on a function of
-     absolute temperature and density.  Taken from Sengers, J. V. and B.
-     Kamgar-Parsi.  "Representative Equations for the Viscosity of Water
-     Substance."  Journal of Physical and Chemical Reference Data.  13, no. 1
-     (1984): 185-205.
+    """
+    Calculate the viscosity of water vapor based on a function of absolute
+    temperature and density.  Taken from Sengers, J. V. and B. Kamgar-Parsi.
+    "Representative Equations for the Viscosity of Water Substance."  Journal
+    of Physical and Chemical Reference Data.  13, no. 1 (1984): 185-205.
+
     Enter: T: temperature in K
            density: density in kg/(m^3)
-    Exit:  viscosity_vapor: viscosity in kg/m/s (Pa*s)"""
+    Exit:  viscosity_vapor: viscosity in kg/m/s (Pa*s)
+    """
     scaledT = T/647.27
     mu0 = 1e-6*scaledT**0.5/(0.0181583+0.0177624/scaledT +
                              0.0105287/(scaledT**2)-0.0036744/(scaledT**3))
@@ -1802,8 +1883,10 @@ def viscosity_water_vapor(T, density):
 
 
 def warning(state, tag, message):
-    """Show a warning message and mark that it was shown so it doesn't get
-     shown a second time.
+    """
+    Show a warning message and mark that it was shown so it doesn't get shown
+    a second time.
+
     Enter: state: state to record that the warning was given.
            tag: a distinct key for this warning.
            message: the actual warning message.
