@@ -10,6 +10,11 @@ install:
   - pip install .
   - npm install
 script:
+  - for f in $(git ls-tree -r -t --full-name --name-only HEAD) ; do
+      touch -d $(git log --pretty=format:%cI -1 HEAD -- "$f") "$f";
+    done
+  - ls -l $HOME/results
+  - ls -l data
   - python process.py --multi -v -v --limit=150 --out=$HOME/results
   - python util/combine.py --results=$HOME/results --out=client/static
   - npm run lint
