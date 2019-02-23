@@ -47,8 +47,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-02-22v46'
-PROGRAM_SIGNATURE = 'c7ba6bceeba967aef69a84925f9c917d'
+__version__ = '2019-02-23v47'
+PROGRAM_SIGNATURE = 'b11975ad140339dbf1cd96fce8c3245b'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -423,9 +423,9 @@ def acceleration(state, y=None, vx=None, vy=None):
         state['vx'] = vx
     if vy is not None:
         state['vy'] = vy
-    (accel, ax, ay) = acceleration_from_drag(state)
+    accel, ax, ay = acceleration_from_drag(state)
     ay += acceleration_from_gravity(state)
-    return (ax, ay)
+    return ax, ay
 
 
 def acceleration_from_drag(state):
@@ -444,7 +444,7 @@ def acceleration_from_drag(state):
     # If we were told the pressure was zero, treat this as a vacuum with no
     # drag
     if state.get('pressure') == 0:
-        return (0, 0, 0)
+        return 0, 0, 0
     density = atmospheric_density(state)
     cd = coefficient_of_drag(state, density)
     velocity_sq = state['vx']**2+state['vy']**2
@@ -456,7 +456,7 @@ def acceleration_from_drag(state):
     velocity = velocity_sq**0.5
     ax = -accel*state['vx']/velocity
     ay = -accel*state['vy']/velocity
-    return (accel, ax, ay)
+    return accel, ax, ay
 
 
 def acceleration_from_gravity(state):
@@ -736,10 +736,10 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
     """
     if unknown not in Factors:
         print('Cannot solve for %s.' % unknown)
-        return (initial_state, [])
+        return initial_state, []
     if Factors[unknown].get('method', 'binary') is None:
         print('Cannot solve for %s.' % unknown)
-        return (initial_state, [])
+        return initial_state, []
     if Factors[unknown].get('weak', False):
         if Verbose >= 1:
             print(('Trying to solve for %s is ill-conditioned; it may not ' +
@@ -753,7 +753,7 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
     if unknown_scan:
         method = 'scan'
     if method == 'direct':
-        (state, points) = trajectory(initial_state)
+        state, points = trajectory(initial_state)
         return state, points
     minval = convert_units(Factors[unknown]['min'])
     maxval = convert_units(Factors[unknown]['max'])
@@ -779,24 +779,27 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
             lastval = val
             val += step
     minerror = trajectory_error(initial_state, unknown, minval)
+    if minerror is None:
+        return initial_state, []
     if Verbose >= 3:
         print('%s: %g,%g' % (unknown, minval, minerror))
+    maxerror = trajectory_error(initial_state, unknown, maxval)
     while True:
         try:
             maxerror = trajectory_error(initial_state, unknown, maxval)
         except Exception:
             maxerror = None
-        if maxerror is not None or maxval / 2 <= minval:
+        if (maxerror is not None and minerror * maxerror <= 0) or maxval / 2 <= minval:
             break
         maxval /= 2
-    x2 = y2 = None
     if Verbose >= 3:
         print('%s: %g,%g %g,%g' % (unknown, minval, minerror, maxval, maxerror))
-    if minerror is None or maxerror is None:
+    if maxerror is None:
         return initial_state, []
     if minerror*maxerror > 0:
         print('Cannot solve for %s; conditions are too weak.' % unknown)
         return initial_state, []
+    x2 = y2 = None
     if not minerror:
         foundval = minval
     elif not maxerror:
@@ -847,7 +850,7 @@ def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
                     interror, math.log10(intval/(maxval-minval))))
     state = initial_state.copy()
     state[unknown] = foundval
-    (state, points) = trajectory(state)
+    state, points = trajectory(state)
     return state, points
 
 
@@ -1217,7 +1220,7 @@ def next_point(state, dt):
     vy = state.get('vy', 0)
     # we use the acceleration, if it is stored
     if 'ax' not in state or 'ay' not in state:
-        (ax, ay) = acceleration(state, y, vx, vy)
+        ax, ay = acceleration(state, y, vx, vy)
     else:
         ax = state['ax']
         ay = state['ay']
@@ -1228,19 +1231,19 @@ def next_point(state, dt):
         dy1 = dt*vy
         dvx1 = dt*ax
         dvy1 = dt*ay
-        (ax1, ay1) = acceleration(state, y+0.5*dy1, vx+0.5*dvx1, vy+0.5*dvy1)
+        ax1, ay1 = acceleration(state, y+0.5*dy1, vx+0.5*dvx1, vy+0.5*dvy1)
 
         dx2 = dt*(vx+0.5*dvx1)
         dy2 = dt*(vy+0.5*dvy1)
         dvx2 = dt*ax1
         dvy2 = dt*ay1
-        (ax2, ay2) = acceleration(state, y+0.5*dy2, vx+0.5*dvx2, vy+0.5*dvy2)
+        ax2, ay2 = acceleration(state, y+0.5*dy2, vx+0.5*dvx2, vy+0.5*dvy2)
 
         dx3 = dt*(vx+0.5*dvx2)
         dy3 = dt*(vy+0.5*dvy2)
         dvx3 = dt*ax2
         dvy3 = dt*ay2
-        (ax3, ay3) = acceleration(state, y+dy3, vx+dvx3, vy+dvy3)
+        ax3, ay3 = acceleration(state, y+dy3, vx+dvx3, vy+dvy3)
 
         dx4 = dt*(vx+dvx3)
         dy4 = dt*(vy+dvy3)
@@ -1259,7 +1262,7 @@ def next_point(state, dt):
     # All methods advance the same amount of time
     newstate['time'] = state.get('time', 0)+dt
     # store the acceleration for the next step
-    (ax4, ay4) = acceleration(newstate)
+    ax4, ay4 = acceleration(newstate)
     newstate['ax'] = ax4
     newstate['ay'] = ay4
     return newstate
@@ -1423,7 +1426,7 @@ def parse_user_params(default_params={}, user_params=None):
             except Exception:
                 if param.strip():
                     items.append(param.strip())
-    return (params, other_params, items)
+    return params, other_params, items
 
 
 def pressure_from_altitude(y):
@@ -1599,7 +1602,7 @@ def trajectory(state):  # noqa - mccabe
         except Exception:
             state['error'] = ('Failed - no initial velocity or no charge, '
                               'power factor, or mass.')
-            return (state, [])
+            return state, []
     if 'charge' not in state and 'power_factor' in state:
         state['charge'] = state['mass']*v**2/(2*state['power_factor'])
     if 'power_factor' not in state and 'charge' in state:
@@ -1607,7 +1610,7 @@ def trajectory(state):  # noqa - mccabe
     angle = math.pi/180*state.get('initial_angle', 45.)
     state['vx'] = v*math.cos(angle)
     state['vy'] = v*math.sin(angle)
-    (ax, ay) = acceleration(state)
+    ax, ay = acceleration(state)
     state['ax'] = ax
     state['ay'] = ay
     delta = state.get('time_delta', 0.01)
@@ -1624,7 +1627,7 @@ def trajectory(state):  # noqa - mccabe
             'Failed - at least one of final_height, range, final_time, '
             'final_velocity, or final_angle must be specified to compute the '
             'trajectory.')
-        return (state, [])
+        return state, []
     cutoff_height = min(state.get('initial_height') or 0,
                         state.get('final_height') or 0)
     if cutoff_height is None:
@@ -1700,7 +1703,7 @@ def trajectory(state):  # noqa - mccabe
         points.append(point)
     if Verbose >= 2:
         display_status(final_state, last=True)
-    return (final_state, points)
+    return final_state, points
 
 
 def trajectory_error(initial_state, unknown, unknown_value):
@@ -1721,8 +1724,10 @@ def trajectory_error(initial_state, unknown, unknown_value):
     state = initial_state.copy()
     state[unknown] = unknown_value
     Verbose -= 2
-    (state, points) = trajectory(state)
-    Verbose += 2
+    try:
+        state, points = trajectory(state)
+    finally:
+        Verbose += 2
     if Verbose >= 5:
         pprint.pprint(state)
     if state is None:
@@ -2007,8 +2012,7 @@ specified, power factor and charge will not be determined.  Factors:""")
     if Verbose >= 2:
         pprint.pprint(state)
     starttime = get_cpu_time()
-    (newstate, points) = find_unknown(
-        state, params['unknown'], params.get('unknown_scan'))
+    newstate, points = find_unknown(state, params['unknown'], params.get('unknown_scan'))
     newstate['computation_time'] = get_cpu_time()-starttime
     if Verbose >= 1:
         pprint.pprint(newstate)
