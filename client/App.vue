@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <PlotWithControls :filter="query.filter" :plotdata="plotdata" :references="references" @filterupdate="queryUpdate"/>
+    <router-view class="view" :plotdata="plotdata" :references="references" :parameters="parameters"></router-view>
   </div>
 </template>
 
@@ -15,23 +15,35 @@ html,body,#app {
 <script>
 import * as utils from './utils.js';
 import PlotWithControls from './components/PlotWithControls.vue';
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+
+Vue.use(VueRouter);
 
 export default {
   name: 'app',
-  components: {
-    PlotWithControls
-  },
+  router: new VueRouter({
+    mode: 'history',
+    base: __dirname,
+    routes: [{
+      path: '/plot',
+      component: PlotWithControls,
+      props: (route) => ({
+        filter: route.query.filter
+      })
+    }, {
+      path: '*',
+      redirect: '/plot'
+    }]
+  }),
   data() {
     return {
       plotdata: [],
-      query: utils.getUrlQuery(),
-      references: {}
+      references: {},
+      parameters: utils.Parameters
     };
   },
   methods: {
-    queryUpdate(updates) {
-      this.query = Object.assign({}, this.query, updates);
-    },
     fetchData() {
       fetch('totallist.json').then(resp => resp.json()).then(data => {
         this.plotdata = data;
@@ -46,11 +58,6 @@ export default {
       fetch('parameters.json').then(resp => resp.json()).then(data => {
         this.parameters = utils.updateParameters(data);
       }).catch(err => { throw err; });
-    }
-  },
-  watch: {
-    query(newval) {
-      utils.setUrlQuery(newval, true);
     }
   },
   mounted: function () {

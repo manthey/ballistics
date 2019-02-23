@@ -49,10 +49,21 @@ export default {
   methods: {
     filterUpdate(value) {
       this.currentFilter = value.filter;
-      this.$emit('filterupdate', value);
+      // the currentRoute is immutable, so we have to send the change as anew
+      // object.
+      var route = this.$router.currentRoute;
+      this.$router.push({
+        path: route.path,
+        query: Object.assign({}, route.query, {filter: value.filter})
+      });
     },
     pickPoint(point) {
       this.currentPoint = point;
+    }
+  },
+  watch: {
+    $route (to) {
+      this.currentFilter = to.query.filter;
     }
   }
 }

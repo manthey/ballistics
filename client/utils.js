@@ -300,41 +300,6 @@ ParameterList.forEach((param, idx) => {
 });
 
 /**
- * Get the current URL query parameters from the document location.
- *
- * @returns {object} An object with the query parameters.
- */
-function getUrlQuery() {
-  let query = {}
-  document.location.search.replace(/(^\?)/, '').split('&')
-    .filter(n => n)
-    .forEach(n => {
-      n = n.replace(/\+/g, '%20').split('=').map(n => decodeURIComponent(n));
-      query[n[0]] = n[1];
-    });
-  return query;
-}
-
-/**
- * Set the current URL query parameters on the document location.
- *
- * @param {object} params An object with the query parameters.
- * @param {boolean} update Truthy to update the window history, falsy to
- *   replace the current history.
- */
-function setUrlQuery(params, update) {
-  let newurl = window.location.protocol + '//' + window.location.host +
-    window.location.pathname + '?' + Object.keys(params).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k])).join('&');
-  if (update) {
-    // to update history
-    window.history.pushState(params, '', newurl);
-  } else {
-    // to change the url without changing history
-    window.history.replaceState(params, '', newurl);
-  }
-}
-
-/**
  * Given information about parameters in the total data list, update the
  * ParameterList and Parameters records.  Emit console messages if there are
  * parameters present in one set and not the other.
@@ -364,7 +329,5 @@ export {
   ParameterList,
   Parameters,
 
-  getUrlQuery,
-  setUrlQuery,
   updateParameters
 };

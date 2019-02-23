@@ -132,7 +132,7 @@ def combine(opts):  # noqa
                 print('Failed on %s: %d\n%r' % (file, entry.get('idx', 0),
                                                 entry.get('conditions')))
                 print(traceback.format_exc().strip())
-    out = opts.get('out', 'built')
+    out = opts.get('out', 'client/static')
     if opts.get('json', True):
         destpath = os.path.join(out, 'totallist.json')
         json.dump(total, open(destpath, 'wt'), sort_keys=True, indent=1,
