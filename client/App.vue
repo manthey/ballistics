@@ -1,5 +1,12 @@
 <template>
   <div id="app">
+    <v-toolbar flat dense dark height="32px">
+      <v-toolbar-items>
+        <v-btn flat to="/">Ballistics</v-btn>
+        <v-btn flat to="/plot">Plot</v-btn>
+        <v-spacer></v-spacer>
+      </v-toolbar-items>
+    </v-toolbar>
     <router-view class="view" :plotdata="plotdata" :references="references" :parameters="parameters"></router-view>
   </div>
 </template>
@@ -9,16 +16,28 @@ html,body,#app {
   width: 100%;
   height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.view {
+  flex: 1;
 }
 </style>
 
 <script>
-import * as utils from './utils.js';
-import PlotWithControls from './components/PlotWithControls.vue';
+import 'vuetify/dist/vuetify.min.css';
+
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Vuetify from 'vuetify'
+
+import * as utils from './utils.js';
+import MainPage from './components/MainPage.vue';
+import PlotWithControls from './components/PlotWithControls.vue';
 
 Vue.use(VueRouter);
+Vue.use(Vuetify);
 
 export default {
   name: 'app',
@@ -26,6 +45,9 @@ export default {
     mode: 'history',
     base: __dirname,
     routes: [{
+      path: '/',
+      component: MainPage
+    }, {
       path: '/plot',
       component: PlotWithControls,
       props: (route) => ({
@@ -33,7 +55,7 @@ export default {
       })
     }, {
       path: '*',
-      redirect: '/plot'
+      redirect: '/'
     }]
   }),
   data() {
@@ -69,7 +91,7 @@ export default {
 /*
 Notes:
 
-main
+main (needs improvement)
 references
   table view / list view
 fulldata
@@ -86,10 +108,6 @@ possible table components:
   vue-good-table
   vue-table-2
   vuejs.org/v2/examples/grid-component.html
-
-origin  https://github.com/pangloss/vim-javascript.git (fetch)
-origin  git://github.com/digitaltoad/vim-pug.git (fetch)
-origin  https://github.com/posva/vim-vue.git (fetch)
-
+  vuetify
 */
 </script>

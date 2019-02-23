@@ -20,7 +20,8 @@
     "mathjs": "^5.4.2",
     "@statnett/vue-plotly": "git://github.com/Mynamewasused/vue-plotly.git",
     "vue": "^2.5.22",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.2",
+    "vuetify": "^1.3.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
