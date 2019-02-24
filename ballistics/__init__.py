@@ -33,6 +33,7 @@ from .cod_henderson import coefficient_of_drag_henderson  # noqa
 from .cod_miller import coefficient_of_drag_miller
 from .cod_morrison import coefficient_of_drag_morrison  # noqa
 from .formattext import line_break
+from .interpolate import interpolate
 from .materials import determine_material, list_materials
 from .units import convert_units, list_units
 
@@ -47,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-02-23v47'
-PROGRAM_SIGNATURE = 'b11975ad140339dbf1cd96fce8c3245b'
+__version__ = '2019-02-24v50'
+PROGRAM_SIGNATURE = '497d57953b391e1b75029fc99f6d7688'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -113,6 +114,8 @@ PROGRAM_SIGNATURE = 'b11975ad140339dbf1cd96fce8c3245b'
 GET_CPU_TIME = True
 
 MinPointInterval = 0.01
+MinTimeSteps = 20
+TimeDeltaReduction = 10
 PrecisionInDigits = 6
 UseRungeKutta = True
 Verbose = 0
@@ -135,8 +138,7 @@ Factors = {
     #      comments on min.
     #  step: the step used in scan calculation.  See comments on min.
     #  weak: if True, solving for this parameter is ill-conditioned.
-    # units, 'desc': description, 'method': calculation method, either direct,
-    # scan, or binary (the default), 'min':
+    #  default: specified there is a default value
     'atmospheric_density': {
         'long': 'atmosphericdensity',
         'short': 'A',
@@ -170,7 +172,7 @@ Factors = {
     'final_angle': {
         'long': 'finalangle',
         'units': 'deg',
-        'min': 0.01,
+        'min': 0.005,
         'max': 89.99,
         'method': 'scan',
         'step': 5,
@@ -215,6 +217,7 @@ Factors = {
         'method': 'scan',
         'step': 5,
         'title': 'Initial Angle',
+        'default': 45.0,
         'desc': 'Initial angle from horizontal.'
     },
     'initial_height': {
@@ -373,6 +376,7 @@ Factors = {
         'units': 's',
         'method': None,
         'title': 'Time Step',
+        'default': 0.01,
         'desc': 'Time step for calculations.  A small value such as 10ms is '
         'appropriate.  0.1s will be faster, but can affect accuracy.'
     },
@@ -719,7 +723,38 @@ def display_status(state, params={}, last=False):
         drag.get('cd', 0), drag.get('Re', 0), drag.get('Mn', 0)))
 
 
-def find_unknown(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
+def find_unknown(initial_state, unknown, unknown_scan=None):
+    """
+    Based on an initial state and a specific unknown, try different values for
+    the unknown until the computed trajectory matches to an acceptable level.
+
+    If a time-step approach is used and fewer than MinTimeSteps steps are
+    taken, the time_delta is reduced by factors of TimeDeltaReduction until at
+    least MinTimeSteps steps are used.
+
+    Enter: initial_state: a dictionary of the initial state.  See comment
+                          at the top of the program.
+           unknown: name of the unknown value which will be varied.
+           unknown_scan: if specified, override the factor's normal method and
+                         use a scan with this step instead.
+    Exit:  final_state: the final state of the projectile.  This includes
+                        an 'error' item if there is insufficient data for
+                        calculation.
+           points: a list of points along the trajectory.
+    """
+    while True:
+        newstate, points = find_unknown_process(initial_state, unknown, unknown_scan)
+        delta = initial_state.get('time_delta', Factors['time_delta']['default'])
+        if not newstate.get('time') or newstate['time'] > delta * MinTimeSteps:
+            break
+        initial_state = initial_state.copy()
+        initial_state['time_delta'] = delta / TimeDeltaReduction
+        if Verbose >= 2:
+            print('Recalculating with smaller time_delta: %g -> %g' % (delta, initial_state['time_delta']))
+    return newstate, points
+
+
+def find_unknown_process(initial_state, unknown, unknown_scan=None):  # noqa - mccabe
     """
     Based on an initial state and a specific unknown, try different values for
     the unknown until the computed trajectory matches to an acceptable level.
@@ -1433,7 +1468,7 @@ def pressure_from_altitude(y):
     """
     Calculate standard atmospheric pressure based on an altitude in m.  The
     basic formula can be found many places.  For instance, Munson, Young, and
-    Okiishi, 'Fundmanetals of Fluid Mechanics', p. 51.
+    Okiishi, 'Fundamentals of Fluid Mechanics', p. 51.
 
     Enter: y: altitude in m.
     Exit:  p: pressure in N/m/m.
@@ -1444,7 +1479,10 @@ def pressure_from_altitude(y):
     g = 9.80655  # m/s/s, gravity at sea level
     # I've used the more authoritative values from CIPM-2007 for these constants
     M = 0.02896546  # kg/mol, molar mass of dry air, from CIPM-2007
-    R = 8.314472  # J/(mol*K), universal gass constant, from CIPM-2007
+    R = 8.314472  # J/(mol*K), universal gas constant, from CIPM-2007
+    # For exceptionally high altitudes, treat this as nearly zero.
+    if y >= T0 / L - 1:
+      y = T0 / L - 1
     p = p0*(1-L*y/T0)**(g*M/(R*L))
     return p
 
@@ -1607,13 +1645,13 @@ def trajectory(state):  # noqa - mccabe
         state['charge'] = state['mass']*v**2/(2*state['power_factor'])
     if 'power_factor' not in state and 'charge' in state:
         state['power_factor'] = state['mass']*v**2/(2*state['charge'])
-    angle = math.pi/180*state.get('initial_angle', 45.)
+    angle = math.pi/180*state.get('initial_angle', Factors['initial_angle']['default'])
     state['vx'] = v*math.cos(angle)
     state['vy'] = v*math.sin(angle)
     ax, ay = acceleration(state)
     state['ax'] = ax
     state['ay'] = ay
-    delta = state.get('time_delta', 0.01)
+    delta = state.get('time_delta', Factors['time_delta']['default'])
     final_y = state.get('final_height', None)
     if 'rising_height' in state:
         final_y = None
@@ -1635,7 +1673,7 @@ def trajectory(state):  # noqa - mccabe
     cutoff_height -= 5000
     # Now compute the trajectory in a series of steps until the end condition
     # is reached.
-    laststate = None
+    laststate = []
     points = []
     while True:
         proceed = 'check'
@@ -1669,25 +1707,21 @@ def trajectory(state):  # noqa - mccabe
                 for key in ('Re', 'Mn'):
                     point[key] = state['drag_data'][key]
             points.append(point)
-        laststate = state
+        laststate = laststate[-1:] + [(state.copy(), offset)]
         lastoffset = offset
         state = next_point(state, delta)
         if Verbose >= 4:
             pprint.pprint(state)
     final_state = state.copy()
-    if laststate:
-        a = offset/(offset-lastoffset)
-        if a > 2:
-            a = 2
-        if a < -1:
-            a = -1
-        b = 1-a
+    if len(laststate):
+        laststate.append((state, offset))
         for key in ('x', 'y', 'vx', 'vy', 'ax', 'ay', 'time'):
-            final_state[key] = b*state[key]+a*laststate[key]
+            final_state[key] = interpolate(
+                0, [(ls[1], ls[0][key]) for ls in laststate], 0)[0]
         if 'drag_data' in state and 'drag_date' in laststate:
             for key in ('Re', 'Mn'):
-                final_state['drag_data'][key] = (b*state['drag_data'][key] +
-                                                 a*laststate['drag_data'][key])
+                final_state['drag_data'][key] = interpolate(
+                    0, [(ls[1], ls[0]['drag_data'][key]) for ls in laststate], 0)[0]
         if final_y is not None:
             final_state['y'] = final_y
         elif max_range is not None:

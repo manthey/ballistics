@@ -1,14 +1,24 @@
 <template>
-  <div id="app">
+  <v-app id="app">
     <v-toolbar flat dense dark height="32px">
       <v-toolbar-items>
         <v-btn flat to="/">Ballistics</v-btn>
         <v-btn flat to="/plot">Plot</v-btn>
+        <v-menu bottom left nudge-bottom="32px">
+          <v-btn slot="activator" icon class="square-btn">
+            <v-icon>arrow_drop_down</v-icon>
+          </v-btn>
+          <v-list dark dense>
+            <v-list-tile dense v-for="(item, i) in plots" :key="'plotmenu' + i" :title="item.tooltip" @click="gotoMenu(item)">
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+            </v-list-tile>
+          </v-list>
+        </v-menu>
         <v-spacer></v-spacer>
       </v-toolbar-items>
     </v-toolbar>
     <router-view class="view" :plotdata="plotdata" :references="references" :parameters="parameters"></router-view>
-  </div>
+  </v-app>
 </template>
 
 <style>
@@ -23,10 +33,19 @@ html,body,#app {
 .view {
   flex: 1;
 }
+.v-toolbar {
+  z-index: 10;
+}
+.square-btn.v-btn--icon, .square-btn.v-btn--icon:hover, .square-btn.v-btn--icon::before {
+  border-radius: 0;
+  margin: 0;
+}
+
 </style>
 
 <script>
 import 'vuetify/dist/vuetify.min.css';
+import 'material-design-icons-iconfont/dist/material-design-icons.css';
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -37,7 +56,7 @@ import MainPage from './components/MainPage.vue';
 import PlotWithControls from './components/PlotWithControls.vue';
 
 Vue.use(VueRouter);
-Vue.use(Vuetify);
+Vue.use(Vuetify, {iconfont: 'md'});
 
 export default {
   name: 'app',
@@ -62,7 +81,13 @@ export default {
     return {
       plotdata: [],
       references: {},
-      parameters: utils.Parameters
+      parameters: utils.Parameters,
+      plots: [{
+        title: 'Better Experiments',
+        tooltip: "Exclude theory, calorimeter, calculated, final_angle, and time techniques",
+        link: '/plot',
+        query: {filter: "['time','theory','calorimeter','calculated','final_angle'].indexOf(d.technique)<0"}
+      }]
     };
   },
   methods: {
@@ -80,6 +105,10 @@ export default {
       fetch('parameters.json').then(resp => resp.json()).then(data => {
         this.parameters = utils.updateParameters(data);
       }).catch(err => { throw err; });
+    },
+    gotoMenu(event) {
+      console.log(event);
+      this.$router.push({path: event.path, params: event.params, query: event.query});
     }
   },
   mounted: function () {
@@ -94,20 +123,11 @@ Notes:
 main (needs improvement)
 references
   table view / list view
-fulldata
-  table view
-fulldata w/o theoretical (with a filter specified)
-  table view
+table view
 specific graphs with commentary
   small diam
   medium
   large
 table: full / close / traj.graph
-
-possible table components:
-  vue-good-table
-  vue-table-2
-  vuejs.org/v2/examples/grid-component.html
-  vuetify
 */
 </script>

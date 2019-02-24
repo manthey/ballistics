@@ -117,8 +117,7 @@ def calculate_case(hashval, args, info, verbose):
     if verbose >= 4:
         pprint.pprint(state)
     starttime = ballistics.get_cpu_time()
-    (newstate, points) = ballistics.find_unknown(
-        state, params['unknown'], params.get('unknown_scan'))
+    newstate, points = ballistics.find_unknown(state, params['unknown'], params.get('unknown_scan'))
     newstate['computation_time'] = ballistics.get_cpu_time()-starttime
     for key, technique in [
             ('initial_velocity', 'given_velocity'),
@@ -144,7 +143,10 @@ def calculate_case(hashval, args, info, verbose):
     else:
         points = None
     if verbose >= 2:
-        print('%s --> %3.1f' % (hashval, newstate.get('power_factor')))
+        if newstate.get('power_factor') is None:
+            print('%s --> FAILED' % (hashval, ))
+        else:
+            print('%s --> %3.1f' % (hashval, newstate.get('power_factor')))
     return hashval, newstate, points
 
 
@@ -223,7 +225,7 @@ def get_multiprocess_pool(multi):
     return pool
 
 
-def process_cases(info, results, cases, verbose=0, nextcaseindex=0):
+def process_cases(info, results, cases, verbose=0, nextcaseindex=0, extraArgs=[]):
     """
     Check if there are any data entries in the current level of the info.
     If so, process each entry in turn.  If not, calculate the ballistics and
@@ -234,6 +236,8 @@ def process_cases(info, results, cases, verbose=0, nextcaseindex=0):
            results: a list to append results to.
            cases: a dictionary to collect cases in
            verbose: verbosity for the ballistics program
+           nextcaseindex: the index of the next case that will be generated.
+           extraArgs: extra arguments to use in all calculations.
     Exit:  nextcaseindex: the index of the next case that will be generated.
     """
     if info.get('skip'):
@@ -245,7 +249,7 @@ def process_cases(info, results, cases, verbose=0, nextcaseindex=0):
             subinfo = copy.deepcopy(info)
             subinfo.update(entry)
             nextcaseindex = process_cases(subinfo, results, cases, verbose,
-                                          nextcaseindex)
+                                          nextcaseindex, extraArgs)
         return nextcaseindex
     infokey = info['key']
     for key in ('key', 'details', 'link', 'summary', 'cms'):
@@ -258,6 +262,7 @@ def process_cases(info, results, cases, verbose=0, nextcaseindex=0):
             'date', 'ref', 'ref2', 'ref3', 'desc', 'desc2', 'desc3',
             'technique', 'group') and
         not key.endswith('_note')]))
+    args.extend(extraArgs)
     hashval = ' '.join([('"%s"' if ' ' in arg else '%s') % arg for arg in args])
     if hashval not in cases:
         cases[hashval] = {'info': info, 'args': args, 'position': len(cases),
@@ -269,7 +274,7 @@ def process_cases(info, results, cases, verbose=0, nextcaseindex=0):
 
 
 def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
-                          pool=None, reverse=False):
+                          pool=None, reverse=False, extraArgs=[]):
     """
     Load a yaml file and any companion files.  For each non-skipped data set,
     calculate the ballistics result.  Output the results as a json file with
@@ -283,6 +288,7 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
            verbose: verbosity for the ballistics program.
            pool: if not None, use this multiprocessing pool.
            reverse: if True, calculate the cases in the file in reverse order.
+           extraArgs: extra arguments to use in all calculations.
     """
     srcdate = os.path.getmtime(srcfile)
     info = yaml.safe_load(open(srcfile))
@@ -312,7 +318,7 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
     results = copy.deepcopy(info)
     results['results'] = []
     cases = {}
-    process_cases(info, results['results'], cases, verbose)
+    process_cases(info, results['results'], cases, verbose, extraArgs=extraArgs)
     if reverse:
         for hashval in cases:
             cases[hashval]['position'] *= -1
@@ -329,6 +335,7 @@ def worker_init():
 if __name__ == '__main__':  # noqa - mccabe
     files = []
     allFiles = False
+    extraArgs = []
     multi = False
     multiFile = False
     outputPath = 'results'
@@ -339,6 +346,8 @@ if __name__ == '__main__':  # noqa - mccabe
     for arg in sys.argv[1:]:
         if arg == '--all':
             allFiles = True
+        elif arg.startswith('--arg='):
+            extraArgs.append('--' + arg.split('=', 1)[1])
         elif arg.startswith('--multi'):
             multi = True
             if '=' in arg:
@@ -370,12 +379,14 @@ if __name__ == '__main__':  # noqa - mccabe
 
 Syntax: process.py --out=(path) --all --reverse -v --limit=(seconds)
         --multi|--multifile|--multicase[=(number of processes)]
-        (input files ...)
+        --arg=(key)=(value) (input files ...)
 
 If the input files are a directory, all yml files in that path are processed.
 Only files newer than the matching results are processed unless the --all flag
 is used.  The default for input files is 'data'.
 --all processes files even if they appear up to date.
+--arg specifies extra arguments to pass to all calculations (e.g.,
+  --arg=time_delta=0.005).
 --limit doesn't start processing a file if the time limit has been exceeded.
   Files that are started are still finished.  If multiprocessing per file, this
   will exit more promptly.
@@ -400,13 +411,14 @@ is used.  The default for input files is 'data'.
                     print('Cancelled due to time limit')
                     break
                 read_and_process_file(file, outputPath, allFiles, verbose,
-                                      pool, reverse=reverse)
+                                      pool, reverse=reverse, extraArgs=extraArgs)
         else:
             mapfunc = functools.partial(read_and_process_file, *[], **{
                 'outputPath': outputPath,
                 'all': allFiles,
                 'verbose': verbose,
-                'reverse': reverse
+                'reverse': reverse,
+                extraArgs: extraArgs
             })
             task = pool.map_async(mapfunc, files, 1)
             while not task.ready():

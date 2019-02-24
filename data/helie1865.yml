@@ -2276,7 +2276,8 @@ data:
   -
     desc: "Heights along a trajectory measured in Russia, First series"
     ref2: "p. 277"
-    angle: 1 deg 45 arcmin
+    angle: 1 deg 47 arcmin 5 arcsec
+    angle_note: The inclination is listed as 1 deg 45 arcmin, but then a value of 1 deg 47 arcmin 5 arcsec is used.
     charge: 3.276 kg
     diameter: 1.493 dm
     mass: 12.174 kg
@@ -2321,7 +2322,8 @@ data:
   -
     desc: "Heights along a trajectory measured in Russia, Second series"
     ref2: "p. 278"
-    angle: 2 deg
+    angle: 2 deg 5 arcmin
+    angle_note: The inclination is listed as 2 deg, but then a value of 2 deg 5 arcmin.
     charge: 2.048 kg
     diameter: 1.486 dm
     mass: 12.015 kg
@@ -2361,7 +2363,8 @@ data:
   -
     desc: "Heights along a trajectory measured in Russia, Third series"
     ref2: "p. 278"
-    angle: 2 deg 30 arcmin
+    angle: 2 deg 36 arcmin 45 arcsec
+    angle_note: The inclination is listed as 2 deg 30 arcmin, but then a value of 2 deg 36 arcmin 45 arcsec is used.
     charge: 1.220 kg
     diameter: 1.493 dm
     mass: 12.159 kg
@@ -2647,4 +2650,3 @@ data:
     mass: 15.1 kg
     angle: 5 deg 35 arcmin 50 arcsec
     range: 1071 m
-
