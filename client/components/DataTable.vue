@@ -3,9 +3,9 @@
     <div class="table_scroll">
       <div v-html="this.references[params.key] ? this.references[params.key].cms : ''"></div>
       <div class="table_controls">
-        <v-btn small color="grey lighten-2" id="full" @click="toggleFull">{{ this.showfull ? 'Primary Values' : 'All Values' }}</v-btn>
+        <button id="full" @click="toggleFull">{{ this.showfull ? 'Primary Values' : 'All Values' }}</button>
         <span/>
-        <v-btn small color="grey lighten-2" id="close" @click="closeTable">Close</v-btn>
+        <button id="close" @click="closeTable">Close</button>
       </div>
       <table>
         <tr v-for="param in Object.keys(params)" :key="param">
@@ -35,9 +35,6 @@
 }
 .table_controls span {
   flex: 1;
-}
-.v-btn {
-  text-transform: none;
 }
 </style>
 

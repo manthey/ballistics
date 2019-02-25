@@ -16,9 +16,6 @@
   flex: 1;
   margin-left: 5px;
 }
-input {
-  border: 1px inset rgb(227, 227, 277);
-}
 </style>
 
 <script>
