@@ -115,6 +115,7 @@ GET_CPU_TIME = True
 
 MinPointInterval = 0.01
 MinTimeSteps = 20
+MinTimeDelta = 0.0001
 TimeDeltaReduction = 10
 PrecisionInDigits = 6
 UseRungeKutta = True
@@ -745,12 +746,14 @@ def find_unknown(initial_state, unknown, unknown_scan=None):
     while True:
         newstate, points = find_unknown_process(initial_state, unknown, unknown_scan)
         delta = initial_state.get('time_delta', Factors['time_delta']['default'])
-        if not newstate.get('time') or newstate['time'] > delta * MinTimeSteps:
+        if ((not newstate.get('time') or newstate['time'] > delta * MinTimeSteps) or
+                delta < MinTimeDelta):
             break
         initial_state = initial_state.copy()
         initial_state['time_delta'] = delta / TimeDeltaReduction
         if Verbose >= 2:
-            print('Recalculating with smaller time_delta: %g -> %g' % (delta, initial_state['time_delta']))
+            print('Recalculating with smaller time_delta: %g -> %g' % (
+                delta, initial_state['time_delta']))
     return newstate, points
 
 
@@ -1482,7 +1485,7 @@ def pressure_from_altitude(y):
     R = 8.314472  # J/(mol*K), universal gas constant, from CIPM-2007
     # For exceptionally high altitudes, treat this as nearly zero.
     if y >= T0 / L - 1:
-      y = T0 / L - 1
+        y = T0 / L - 1
     p = p0*(1-L*y/T0)**(g*M/(R*L))
     return p
 
@@ -1708,7 +1711,6 @@ def trajectory(state):  # noqa - mccabe
                     point[key] = state['drag_data'][key]
             points.append(point)
         laststate = laststate[-1:] + [(state.copy(), offset)]
-        lastoffset = offset
         state = next_point(state, delta)
         if Verbose >= 4:
             pprint.pprint(state)

@@ -60,7 +60,7 @@ export default {
       });
     },
     pickPoint(point) {
-      let pointkey = point['key'] + '-' + point['idx'];
+      let pointkey = point ? point['key'] + '-' + point['idx'] : '';
       this.currentPoint = pointkey;
       var route = this.$router.currentRoute;
       this.$router.push({

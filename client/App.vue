@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <el-menu router mode="horizontal" background-color="#444" text-color="#EEE" active-text-color="#EE0">
-      <el-menu-item index="home" route="{path: '/'}">Home</el-menu-item>
+      <el-menu-item index="home" :route="{path: '/'}">Home</el-menu-item>
       <el-submenu index="plot">
         <template slot="title">Plot</template>
         <el-menu-item v-for="(item, i) in plots" :key="'plotmenu' + i" :index="item.index" :route="{path: item.path, query: item.query}" :title="item.tooltip">{{ item.text }}</el-menu-item>
       </el-submenu>
+      <el-menu-item index="references" :route="{path: '/references'}">References</el-menu-item>
     </el-menu>
     <router-view class="view" :plotdata="plotdata" :references="references" :parameters="parameters"></router-view>
   </div>
@@ -39,6 +40,7 @@ import ElementUI from 'element-ui';
 import * as utils from './utils.js';
 import MainPage from './components/MainPage.vue';
 import PlotWithControls from './components/PlotWithControls.vue';
+import References from './components/References.vue';
 
 Vue.use(VueRouter);
 Vue.use(ElementUI, {size: 'small'});
@@ -58,6 +60,9 @@ export default {
         filter: route.query.filter,
         pointkey: route.query.pointkey
       })
+    }, {
+      path: '/references',
+      component: References
     }, {
       path: '*',
       redirect: '/'
@@ -109,13 +114,11 @@ export default {
 Notes:
 
 main (needs improvement)
-references
-  table view / list view
 table view
 specific graphs with commentary
   small diam
   medium
   large
-table: full / close / traj.graph
+techniques
 */
 </script>

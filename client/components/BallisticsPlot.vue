@@ -2,6 +2,13 @@
   <vue-plotly class="chart" :data="data" :layout="layout" :options="options" :autoResize="true" @click="processClick" :key="pointkey ? 'chartwdp' : 'chart'"/>
 </template>
 
+<style>
+.plot-container.plotly {
+  width: 100%;
+  height: 100%;
+}
+</style>
+
 <style scoped>
 .chart {
   flex: 1;
@@ -57,9 +64,9 @@ export default {
   },
   computed: {
     data() {
-      console.log('data', Date.now()); //DWM::
       let technique = {};
       let plotdata  = this.plotdata || [];
+      let datapoint = utils.PointKeys[this.pointkey];
       plotdata.forEach(d => technique[d.technique] = (technique[d.technique] || 0) + 1);
       let techlist = Object.keys(technique).sort((a, b) => technique[b] - technique[a]);
       if (this.filter) {
@@ -87,12 +94,10 @@ export default {
           marker: {
             symbol: tidx,
             size: 10,
-            color: tdata.map(d => d === this.datapoint ? '#000000' : color),
-            opacity: tdata.map(d => d === this.datapoint ? 1 : 0.5)
+            color: tdata.map(d => d === datapoint ? '#000000' : color),
+            opacity: tdata.map(d => d === datapoint ? 1 : 0.5)
           },
-          type: tdata.length > 100 ? 'scatter' : 'scatter',
-          // when plotly is fixed
-          // type: tdata.length > 100 ? 'scattergl' : 'scatter',
+          type: tdata.length > 100 ? 'scattergl' : 'scatter',
           mode: 'markers',
           hoverinfo: 'text',
           showlegend: true,
@@ -100,12 +105,6 @@ export default {
         };
       });
       return traces;
-    },
-    datapoint() {
-      if (!this.plotdata) {
-        return null;
-      }
-      return utils.PointKeys[this.pointkey];
     }
   },
   methods: {
