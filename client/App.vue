@@ -55,7 +55,8 @@ export default {
       path: '/plot',
       component: PlotWithControls,
       props: (route) => ({
-        filter: route.query.filter
+        filter: route.query.filter,
+        pointkey: route.query.pointkey
       })
     }, {
       path: '*',
@@ -84,6 +85,7 @@ export default {
     fetchData() {
       fetch('totallist.json').then(resp => resp.json()).then(data => {
         this.plotdata = data;
+        utils.updatePointKeys(data);
       }).catch(err => { throw err; });
     },
     fetchReferences() {

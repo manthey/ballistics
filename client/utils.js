@@ -299,6 +299,8 @@ ParameterList.forEach((param, idx) => {
   Parameters[param.key] = param;
 });
 
+let PointKeys = {};
+
 /**
  * Given information about parameters in the total data list, update the
  * ParameterList and Parameters records.  Emit console messages if there are
@@ -324,10 +326,27 @@ function updateParameters(params) {
   return Parameters;
 }
 
+/**
+ * Given the main data, fill a dictionary of keys with references to the data
+ * points.
+ *
+ * @param {object} data The main data.
+ * @returns {object} The updates PointKeys dictionary.
+ */
+function updatePointKeys(data) {
+  data.forEach(entry => {
+    let pointkey = entry.key + '-' + entry.idx;
+    PointKeys[pointkey] = entry;
+  });
+  return PointKeys;
+}
+
 export {
   NumberFormat,
   ParameterList,
   Parameters,
+  PointKeys,
 
-  updateParameters
+  updateParameters,
+  updatePointKeys,
 };

@@ -2,8 +2,8 @@
   <div id="plotwithcontrols">
     <PlotControls :filter="currentFilter" @filterupdate="filterUpdate"/>
     <div id="display">
-      <BallisticsPlot :plotdata="plotdata" :filter="currentFilter" :datapoint="currentPoint" @pickPoint="pickPoint"/>
-      <DataTable v-if="currentPoint" :datapoint="currentPoint" :references="references" @closetable="pickPoint"/>
+      <BallisticsPlot :plotdata="plotdata" :filter="currentFilter" :pointkey="currentPoint" @pickPoint="pickPoint"/>
+      <DataTable v-if="currentPoint" :plotdata="plotdata" :pointkey="currentPoint" :references="references" @closetable="pickPoint"/>
     </div>
   </div>
 </template>
@@ -15,6 +15,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 #display {
   display: flex;
@@ -38,12 +39,13 @@ export default {
   props: {
     filter: String,
     plotdata: Array,
+    pointkey: String,
     references: Object
   },
   data() {
     return {
       currentFilter: this.filter,
-      currentPoint: null,
+      currentPoint: this.pointkey
     };
   },
   methods: {
@@ -58,12 +60,19 @@ export default {
       });
     },
     pickPoint(point) {
-      this.currentPoint = point;
+      let pointkey = point['key'] + '-' + point['idx'];
+      this.currentPoint = pointkey;
+      var route = this.$router.currentRoute;
+      this.$router.push({
+        path: route.path,
+        query: Object.assign({}, route.query, {pointkey: pointkey})
+      });
     }
   },
   watch: {
     $route (to) {
       this.currentFilter = to.query.filter;
+      this.currentPoint = to.query.pointkey;
     }
   }
 }

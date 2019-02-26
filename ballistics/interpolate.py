@@ -134,10 +134,13 @@ def interpolate(xi, data, logx=False, method='tension'):  # noqa -mccabe
     elif num_points == 3:
         # parabolic interpolation
         den = x[0]**2*(x[1]-x[2])+x[1]**2*(x[2]-x[0])+x[2]**2*(x[0]-x[1])
-        A = (x[0]*(y[2]-y[1])+x[1]*(y[0]-y[2])+x[2]*(y[1]-y[0]))/den
-        B = (A*(x[0]**2-x[1]**2)+(y[1]-y[0]))/(x[1]-x[0])
-        C = y[0]-(A*x[0]**2+B*x[0])
-        yi = A*xi**2+B*xi+C
+        if not den:  # This happens if linear, since all x values are unique
+            yi = (y[-1]-y[0])*(xi-x[0])/(x[-1]-x[0])+y[0]
+        else:
+            A = (x[0]*(y[2]-y[1])+x[1]*(y[0]-y[2])+x[2]*(y[1]-y[0]))/den
+            B = (A*(x[0]**2-x[1]**2)+(y[1]-y[0]))/(x[1]-x[0])
+            C = y[0]-(A*x[0]**2+B*x[0])
+            yi = A*xi**2+B*xi+C
         in_range = (xi >= x[0] and xi <= x[2])
     else:
         # For the cubic case, I used a symbolic algebra program; it could be

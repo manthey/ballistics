@@ -1,5 +1,5 @@
 <template>
-  <vue-plotly class="chart" :data="data" :layout="layout" :options="options" :autoResize="true" @click="processClick" :key="datapoint ? 'chartwdp' : 'chart'"/>
+  <vue-plotly class="chart" :data="data" :layout="layout" :options="options" :autoResize="true" @click="processClick" :key="pointkey ? 'chartwdp' : 'chart'"/>
 </template>
 
 <style scoped>
@@ -22,7 +22,7 @@ export default {
   props: {
     plotdata: Array,
     filter: String,
-    datapoint: Object
+    pointkey: String
   },
   data() {
     return {
@@ -57,6 +57,7 @@ export default {
   },
   computed: {
     data() {
+      console.log('data', Date.now()); //DWM::
       let technique = {};
       let plotdata  = this.plotdata || [];
       plotdata.forEach(d => technique[d.technique] = (technique[d.technique] || 0) + 1);
@@ -99,6 +100,12 @@ export default {
         };
       });
       return traces;
+    },
+    datapoint() {
+      if (!this.plotdata) {
+        return null;
+      }
+      return utils.PointKeys[this.pointkey];
     }
   },
   methods: {

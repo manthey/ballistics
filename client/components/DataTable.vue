@@ -20,7 +20,7 @@
 <style scoped>
 .table_wrapper {
   height: 100%;
-  max-width: 300px;
+  max-width: 350px;
   flex: 1;
   overflow-x: hidden;
   overflow-y: auto;
@@ -45,7 +45,8 @@ import * as utils from '../utils.js';
 export default {
   name: 'DataTable',
   props: {
-    datapoint: Object,
+    plotdata: Array,
+    pointkey: String,
     references: Object
   },
   data() {
@@ -56,6 +57,12 @@ export default {
     };
   },
   computed: {
+    datapoint() {
+      if (!this.plotdata) {
+        return null;
+      }
+      return utils.PointKeys[this.pointkey];
+    },
     params() {
       let params = Object.assign({}, this.datapoint),
           fullkeys = Object.keys(params),
