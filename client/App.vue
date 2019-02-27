@@ -120,5 +120,7 @@ specific graphs with commentary
   medium
   large
 techniques
+  computation methods
+  accuracy
 */
 </script>

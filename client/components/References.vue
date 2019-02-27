@@ -72,9 +72,6 @@ export default {
         return 0;
       });
       sortedList.forEach((entry, idx) => { entry.idx = idx; });
-      console.log(this.sortOrder, sortedList);
-      // prop is ref, cms, etc.  null for reset.
-      // order is 'ascending' or 'descending'
       return sortedList;
     }
   },

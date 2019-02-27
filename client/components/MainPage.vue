@@ -8,6 +8,9 @@
 </template>
 
 <style scoped>
+#mainpage {
+  padding: 10px;
+}
 </style>
 
 <script>
