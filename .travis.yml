@@ -7,6 +7,9 @@ cache:
     - $HOME/results
 install:
   - mkdir -p $HOME/results
+  - nvm install v10
+  - node --version
+  - npm --version
   - pip install .
   - npm install
 script:

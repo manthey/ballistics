@@ -34,16 +34,19 @@ html,body,#app {
 import 'element-ui/lib/theme-chalk/index.css';
 
 import Vue from 'vue';
-import VueRouter from 'vue-router';
 import ElementUI from 'element-ui';
+import VueMarkdown from 'vue-markdown';
+import VueRouter from 'vue-router';
 
 import * as utils from './utils.js';
 import MainPage from './components/MainPage.vue';
 import PlotWithControls from './components/PlotWithControls.vue';
 import References from './components/References.vue';
 
-Vue.use(VueRouter);
 Vue.use(ElementUI, {size: 'small'});
+Vue.use(VueRouter);
+
+Vue.component('vue-markdown', VueMarkdown);
 
 export default {
   name: 'app',

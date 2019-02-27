@@ -23,7 +23,7 @@ data:
         power: "736 Cal/kg"
   -
     ref2: "p. 33"
-    technique: "calculated"
+    technique: "calorimeter"
     desc: "Multiply calorimeter results by 436"
     data:
       -
