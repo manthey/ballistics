@@ -15,6 +15,8 @@ The scope of this research is focused on black powder as a relatively mature tec
 <style scoped>
 #mainpage {
   padding: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 </style>
 

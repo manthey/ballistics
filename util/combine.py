@@ -281,7 +281,7 @@ def parameter_summary(data):
                 params[key]['max'] = max(params[key]['max'], entry[key])
     for key in params:
         params[key]['unique'] = len(params[key]['values'])
-        if params[key]['unique'] > maxval or key.endswith('_note'):
+        if (params[key]['unique'] > maxval or key.endswith('_note')) and key != 'key':
             del params[key]['values']
     return params
 

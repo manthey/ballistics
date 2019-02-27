@@ -1,5 +1,5 @@
 <template>
-  <el-table :data="sortedReferenceList" :default-sort="{prop: 'ref'}" height="80%" @sort-change="sortTable">
+  <el-table ref="referenceTable" class="reference-table" :data="sortedReferenceList" :default-sort="{prop: 'ref'}" height="80%" @sort-change="sortTable" :row-class-name="rowClass">
     <el-table-column type="expand">
       <template slot-scope="props">
         <p class="references-expanded" v-if="props.row.details" v-html="props.row.details"/>
@@ -8,13 +8,18 @@
         </p>
       </template>
     </el-table-column>
-    <el-table-column prop="ref" sortable label="Short Reference" min-width="1" class-name="references-cell" :sort-method="sortMethod"/>
-    <el-table-column prop="cms" sortable label="CMS Reference" min-width="3" class-name="references-cell" :sort-method="sortMethod">
+    <el-table-column prop="ref" sortable label="Short Reference" min-width="3" class-name="references-cell" :sort-method="sortMethod"/>
+    <el-table-column prop="cms" sortable label="CMS Reference" min-width="10" class-name="references-cell" :sort-method="sortMethod">
       <template slot-scope="props">
         <span v-html="props.row.cms"/>
       </template>
     </el-table-column>
-    <el-table-column prop="summary" sortable label="Summary" min-width="3" class-name="references-cell" :sort-method="sortMethod"/>
+    <el-table-column prop="summary" sortable label="Summary" min-width="10" class-name="references-cell" :sort-method="sortMethod"/>
+    <el-table-column prop="key" label="Plot" min-width="1" class-name="references-cell">
+      <template slot-scope="props">
+        <router-link v-if="parameters.key.values && parameters.key.values[props.row.key]" :to="{path: '/plot', query: {filter: 'd.key===\'' + props.row.key + '\''}}">Plot</router-link>
+      </template>
+    </el-table-column>
   </el-table>
 </template>
 
@@ -37,11 +42,14 @@
 export default {
   name: 'References',
   props: {
-    references: Object
+    parameters: Object,
+    references: Object,
+    refkey: String
   },
   data() {
     return {
-      sortOrder: [{prop: 'ref'}]
+      scrolled: false,
+      sortOrder: [{prop: 'ref'}],
     }
   },
   computed: {
@@ -76,6 +84,9 @@ export default {
     }
   },
   methods: {
+    rowClass(spec) {
+      return spec.row.key === this.refkey ? 'current-row' : '';
+    },
     sortMethod(a, b) {
       if (this.sortOrder[this.sortOrder.length - 1].order !== 'descending') {
         return a.idx - b.idx;
@@ -88,6 +99,15 @@ export default {
       } else {
         this.sortOrder = this.sortOrder.filter(record => record.prop !== spec.prop);
         this.sortOrder.push({prop: spec.prop, order: spec.order});
+      }
+    }
+  },
+  updated: function () {
+    if (this.refkey && this.scrolled !== Object.keys(this.references).length) {
+      let row = document.querySelector('.reference-table .current-row');
+      if (row) {
+        row.scrollIntoView();
+        this.scrolled = Object.keys(this.references).length;
       }
     }
   }

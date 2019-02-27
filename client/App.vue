@@ -65,7 +65,10 @@ export default {
       })
     }, {
       path: '/references',
-      component: References
+      component: References,
+      props: (route) => ({
+        refkey: route.query.refkey
+      })
     }, {
       path: '*',
       redirect: '/'
@@ -111,7 +114,26 @@ export default {
     this.fetchData();
     this.fetchReferences();
     this.fetchParameters();
-  }
+  },
+  watch: {
+    $route(to) {
+      let menu = this.$children[0],
+          best, okay;
+      if (menu.updateActiveIndex) {
+        Object.keys(menu.items).forEach(key => {
+          if (best === undefined && to === menu.items[key].route) {
+            best = key;
+          }
+          if (okay === undefined && to.path === menu.items[key].route.path) {
+            okay = key;
+          }
+        });
+        if (best || okay) {
+          menu.updateActiveIndex(best || okay);
+        }
+      }
+    }
+  },
 }
 /*
 Notes:

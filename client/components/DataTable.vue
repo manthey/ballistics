@@ -1,7 +1,7 @@
 <template>
   <div class="table_wrapper">
     <div class="table_scroll">
-      <div v-html="this.references[params.key] ? this.references[params.key].cms : ''"></div>
+      <router-link :to="{path: '/references', query: {refkey: params.key}}" v-html="this.references[params.key] ? this.references[params.key].cms : ''"></router-link>
       <div class="table_controls">
         <button id="full" @click="toggleFull">{{ this.showfull ? 'Primary Values' : 'All Values' }}</button>
         <span/>

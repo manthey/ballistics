@@ -10,6 +10,7 @@ install:
   - nvm install v10
   - node --version
   - npm --version
+  - pip install -U pip
   - pip install .
   - npm install
 script:
@@ -18,8 +19,8 @@ script:
     done
   - ls -l $HOME/results
   - ls -l data/*.yml
-  - python process.py --multi -v -v --limit=150 --out=$HOME/results
-  - python util/combine.py --results=$HOME/results --out=client/static
   - npm run lint
   - npm run build
+  - python process.py --multi -v -v --limit=150 i--arg=time_delta=0.02 --out=$HOME/results
+  - python util/combine.py --results=$HOME/results --out=client/static
 # https://docs.travis-ci.com/user/deployment/pages/
