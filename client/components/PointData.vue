@@ -43,7 +43,7 @@ import math from 'mathjs';
 import * as utils from '../utils.js';
 
 export default {
-  name: 'DataTable',
+  name: 'PointData',
   props: {
     plotdata: Array,
     pointkey: String,

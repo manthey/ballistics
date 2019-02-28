@@ -119,13 +119,20 @@ def combine(opts):  # noqa
                     trajectories.append(traj)
                 if 'given_technique' in item:
                     item['technique'] = item['given_technique']
-                for key in ('date', 'power_factor', 'technique', 'ref'):
+                for key in ('date', 'technique', 'ref'):
                     if item.get(key) is None:
                         raise Exception('Missing parameter %s' % key)
+                skip = False
+                for key in ( 'power_factor', ):
+                    if item.get(key) is None:
+                        print('Missing parameter %s for %s:%d.  Entry excluded.' % (
+                            key, item['key'], item['idx']))
+                        skip = True
                 if opts.get('fields'):
                     item = {key: item[key] for key in item
                             if key in opts['fields']}
-                total.append(item)
+                if not skip:
+                    total.append(item)
                 if opts.get('grid') or opts.get('adjust'):
                     compile_grid(ReMnGrid, entry, opts, item)
             except Exception:
@@ -390,7 +397,7 @@ Syntax:  combine.py --grid --points|--nopoints --res=(grid resolution)
 --min specified how many points are required before a grid is output (default
   2).
 --out is the directory where json and csv files are stored.  Default is
-  'built'.
+  'client/static'.
 --points includes trajectory information in the main output.
 --res indicates the group resolution (default 10).  This is the inverse of the
   increment between Mach values and between base-10 powers of the Reynolds

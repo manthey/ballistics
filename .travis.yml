@@ -12,6 +12,7 @@ install:
   - npm --version
   - pip install -U pip
   - pip install .
+  - pip freeze
   - npm install
 script:
   - for f in $(git ls-tree -r -t --full-name --name-only HEAD) ; do
@@ -20,7 +21,7 @@ script:
   - ls -l $HOME/results
   - ls -l data/*.yml
   - npm run lint
-  - npm run build
-  - python process.py --multi -v -v --limit=150 i--arg=time_delta=0.02 --out=$HOME/results
+  - python process.py --multi -v -v --limit=150 --arg=time_delta=0.02 --out=$HOME/results
   - python util/combine.py --results=$HOME/results --out=client/static
+  - npm run build
 # https://docs.travis-ci.com/user/deployment/pages/
