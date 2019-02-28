@@ -21,6 +21,9 @@
 .el-table .descending .sort-caret.descending {
   border-top-color: black;
 }
+.data-table .el-table--small td {
+  padding: 2px 0;
+}
 </style>
 
 <script>
