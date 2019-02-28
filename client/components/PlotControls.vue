@@ -2,7 +2,7 @@
   <div id="controls">
     Filter:
     <input id="filter" @change="updateFilter" :value="filter"
-     title="A javsacript expresion that will evaluate to true for each data point that should be plotted.  The data point is referenced as 'd', e.g., &quot;d.technique == 'range'&quot;"
+     title="A javsacript expression that will evaluate to true for each data point that should be plotted.  The data point is referenced as 'd', e.g., &quot;d.technique == 'range'&quot;"
      placeholder="An expression like &quot;d.technique == 'range'&quot;"/>
     Point:
     <input id="pointkey" @change="updatePointKey" :value="pointkey"/>

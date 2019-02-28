@@ -1,6 +1,6 @@
 <template>
   <div id="tablewithcontrols">
-    <PlotControls :filter="currentFilter" :pointkey="currentPoint" @filterupdate="filterUpdate" @pointkeyupdate="pointkeyUpdate"/>
+    <PlotControls :filter="currentFilter" :pointkey="currentPoint" @filterupdate="filterUpdate" :isTable="true" @pointkeyupdate="pointkeyUpdate"/>
     <BallisticsTable id="display" :plotdata="plotdata" :filter="currentFilter" :pointkey="currentPoint"/>
   </div>
 </template>

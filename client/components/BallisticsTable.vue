@@ -86,7 +86,7 @@ export default {
         }
         return 0;
       });
-      sortedList.forEach((entry, idx) => { entry.idx = idx; });
+      sortedList.forEach((entry, idx) => { entry.rowidx = idx; });
       return sortedList;
     }
   },
@@ -105,9 +105,9 @@ export default {
     },
     sortMethod(a, b) {
       if (this.sortOrder[this.sortOrder.length - 1].order !== 'descending') {
-        return a.idx - b.idx;
+        return a.rowidx - b.rowidx;
       }
-      return b.idx - a.idx;
+      return b.rowidx - a.rowidx;
     },
     sortTable(spec) {
       if (spec.column === null) {
