@@ -18,7 +18,6 @@
 <script>
 import * as utils from '../utils.js';
 import d3 from 'd3';
-import math from 'mathjs';
 import VuePlotly from '@statnett/vue-plotly';
 
 export default {
@@ -88,8 +87,7 @@ export default {
           x: tdata.map(d => d.date_filled),
           y: tdata.map(d => d.power_factor),
           hovertext: tdata.map(d => {
-            return math.unit(+d.power_factor, 'J/kg').format(utils.NumberFormat) +
-              `<br>${d.ref}`;
+            return `${d._power_factor || d.power_factor}<br>${d.ref}`;
           }),
           marker: {
             symbol: tidx,

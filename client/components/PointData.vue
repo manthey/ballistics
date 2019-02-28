@@ -39,7 +39,6 @@
 </style>
 
 <script>
-import math from 'mathjs';
 import * as utils from '../utils.js';
 
 export default {
@@ -51,7 +50,6 @@ export default {
   },
   data() {
     return {
-      numberFormat: utils.NumberFormat,
       parameters: utils.Parameters,
       showfull: false
     };
@@ -65,18 +63,18 @@ export default {
     },
     params() {
       let params = Object.assign({}, this.datapoint),
-          fullkeys = Object.keys(params),
+          fullkeys = Object.keys(params).filter(key => !key.startsWith('_') && key !== 'pointkey'),
           result = {};
       utils.ParameterList.forEach(entry => {
         if (params[entry.key] !== undefined && (this.showfull || entry.primary)) {
-          result[entry.key] = this.formatValue(params[entry.key], entry);
+          result[entry.key] = params['_' + entry.key] || params[entry.key];
         }
       });
       if (this.showfull) {
         fullkeys = fullkeys.sort();
         fullkeys.forEach(key => {
           if (params[key] !== undefined && result[key] === undefined) {
-            result[key] = this.formatValue(params[key]);
+            result[key] = params['_' + key] || params[key];
           }
         });
       }
@@ -86,15 +84,6 @@ export default {
   methods: {
     closeTable() {
       this.$emit('closetable');
-    },
-    formatValue(value, params) {
-      if (isNaN(parseFloat(value)) || !isFinite(value)) {
-        return value;
-      }
-      if (params && params.units) {
-        return math.unit(+value, params.units).format(this.numberFormat);
-      }
-      return math.format(+value, this.numberFormat);
     },
     toggleFull() {
       this.showfull = !this.showfull;

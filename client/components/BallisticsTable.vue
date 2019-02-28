@@ -1,34 +1,80 @@
 <template>
-  <el-table ref="dataTable" class="data-table" :data="sortedDataList" :default-sort="{prop: 'pointkey'}" height="80%" width="100%" @sort-change="sortTable" :row-class-name="rowClass">
-    <el-table-column v-for="param in columns" :prop="param.key" :key="'datacol-' + param.key" sortable :label="param.key.replace(/_/g, ' ')" class-name="data-cell" :sort-method="sortMethod" width="180">
-      <template slot-scope="props">
-      {{ formatValue(props.row[param.key], param) }}
-      </template>
-    </el-table-column>
-  </el-table>
+  <div class="table_wrapper">
+    <div class="table_scroll">
+      <table ref="dataTable" class="data-table">
+        <thead>
+          <tr>
+            <th v-for="param in columns" :key="'datacol-' + param.key" :class="param.key === sortOrder[sortOrder.length - 1].prop ? (sortOrder[sortOrder.length - 1].order === 'descending' ? 'descending' : 'ascending') : ''" :column="param.key" @click="sortTable">
+              <span>{{ param.key.replace(/_/g, ' ') }}</span>
+              <span class="caret-wrapper">
+                <i class="sort-caret ascending"/>
+                <i class="sort-caret descending"/>
+              </span>
+            </th>
+          </tr>
+        </thead>
+        <tbody v-html="rowHtml()"/>
+      </table>
+    </div>
+  </div>
 </template>
 
-<style>
-.data-cell .cell {
-  word-break: normal;
-  font-size: 1.1em;
-  line-height: 1.2em;
-  color: black;
+<style scoped>
+.table_wrapper {
+  overflow-x: auto;
+  overflow-y: auto;
 }
-.el-table .ascending .sort-caret.ascending {
+.table_scroll {
+  font-family: sans-serif;
+  font-size: 12px;
+  padding: 5px;
+}
+.data-table th {
+  min-width: 150px;
+  cursor: pointer;
+}
+.data-table {
+  border-spacing: 0;
+}
+.caret-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  height: 34px;
+  width: 24px;
+  vertical-align: middle;
+  overflow: initial;
+  position: relative;
+}
+.sort-caret {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  position: absolute;
+  left: 7px;
+}
+.sort-caret.ascending {
+  border-bottom-color: #c0c4cc;
+  top: 5px;
+}
+.sort-caret.descending {
+  border-top-color: #c0c4cc;
+  bottom: 7px;
+}
+.ascending .sort-caret.ascending {
   border-bottom-color: black;
 }
-.el-table .descending .sort-caret.descending {
+.descending .sort-caret.descending {
   border-top-color: black;
 }
-.data-table .el-table--small td {
-  padding: 2px 0;
+</style>
+<style>
+.data-table tr.current-row {
+  background-color: #ECF5FF;
 }
 </style>
 
 <script>
 import * as utils from '../utils.js';
-import math from 'mathjs';
 
 export default {
   name: 'BallisticsTable',
@@ -40,7 +86,6 @@ export default {
   },
   data() {
     return {
-      numberFormat: utils.NumberFormat,
       parameterList: utils.ParameterList,
       scrolled: false,
       sortOrder: [{prop: 'pointkey'}],
@@ -72,6 +117,9 @@ export default {
         for (i = this.sortOrder.length - 1; i >= 0; i--) {
           key = this.sortOrder[i].prop;
           dir = this.sortOrder[i].order !== 'descending';
+          if (key === 'pointkey') {
+            return dir ? (a.key > b.key ? 1 : a.key < b.key ? -1 : a.idx - b.idx) : (a.key > b.key ? -1 : a.key < b.key ? 1 : b.idx - a.idx);
+          }
           if (a[key] === undefined) {
             return dir ? -1 : 1;
           }
@@ -94,30 +142,45 @@ export default {
     }
   },
   methods: {
-    formatValue(value, params) {
-      if (isNaN(parseFloat(value)) || !isFinite(value)) {
-        return value;
-      }
-      if (params && params.units) {
-        return math.unit(+value, params.units).format(this.numberFormat);
-      }
-      return math.format(+value, this.numberFormat);
+    rowHtml() {
+      /* Because
+        <tr v-for="row in sortedDataList" :key="'datarow-' + row.pointkey">
+          <td v-for="param in columns" :key="'datacell-' + row.pointkey + '-' + param.key">{{ row['_' + param.key] || row[param.key] }}</td>
+        </tr>
+       * is too slow. */
+      return this.sortedDataList.map(row => {
+        return '<tr' + (row.pointkey === this.pointkey ? ' class="current-row"' : '') + '>' + this.columns.map(param => {
+          let value = row['_' + param.key] || row[param.key];
+          if (value) {
+            value = ('' + value)
+              .replace(/&/g, "&amp;")
+              .replace(/</g, "&lt;")
+              .replace(/>/g, "&gt;")
+              .replace(/"/g, "&quot;")
+              .replace(/'/g, "&#039;");
+          } else {
+            value = '';
+          }
+          return '<td>' + value  + '</td>';
+        }).join('') + '</tr>';
+      }).join('');
     },
-    rowClass(spec) {
-      return spec.row.key === this.pointkey ? 'current-row' : '';
-    },
-    sortMethod(a, b) {
-      if (this.sortOrder[this.sortOrder.length - 1].order !== 'descending') {
-        return a.rowidx - b.rowidx;
+    sortTable(event) {
+      let column = event.target.closest('[column]').getAttribute('column'),
+          last = this.sortOrder[this.sortOrder.length - 1],
+          order = 'ascending';
+      if (last.prop === column) {
+        if (last.order === 'descending') {
+          column = null;
+        } else {
+          order = 'descending';
+        }
       }
-      return b.rowidx - a.rowidx;
-    },
-    sortTable(spec) {
-      if (spec.column === null) {
+      if (column === null) {
         this.sortOrder = [{prop: 'pointkey'}];
       } else {
-        this.sortOrder = this.sortOrder.filter(record => record.prop !== spec.prop);
-        this.sortOrder.push({prop: spec.prop, order: spec.order});
+        this.sortOrder = this.sortOrder.filter(record => record.prop !== column);
+        this.sortOrder.push({prop: column, order: order});
       }
     }
   },

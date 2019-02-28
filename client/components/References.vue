@@ -8,16 +8,18 @@
         </p>
       </template>
     </el-table-column>
-    <el-table-column prop="ref" sortable label="Short Reference" min-width="3" class-name="references-cell" :sort-method="sortMethod"/>
-    <el-table-column prop="cms" sortable label="CMS Reference" min-width="10" class-name="references-cell" :sort-method="sortMethod">
+    <el-table-column prop="ref" sortable label="Short Reference" min-width="4" class-name="references-cell" :sort-method="sortMethod"/>
+    <el-table-column prop="cms" sortable label="CMS Reference" min-width="13" class-name="references-cell" :sort-method="sortMethod">
       <template slot-scope="props">
         <span v-html="props.row.cms"/>
       </template>
     </el-table-column>
-    <el-table-column prop="summary" sortable label="Summary" min-width="10" class-name="references-cell" :sort-method="sortMethod"/>
-    <el-table-column prop="key" label="Plot" min-width="1" class-name="references-cell">
-      <template slot-scope="props">
-        <router-link v-if="parameters.key.values && parameters.key.values[props.row.key]" :to="{path: '/plot', query: {filter: 'd.key===\'' + props.row.key + '\''}}">Plot</router-link>
+    <el-table-column prop="summary" sortable label="Summary" min-width="13" class-name="references-cell" :sort-method="sortMethod"/>
+    <el-table-column prop="key" label="Data" min-width="2" class-name="references-cell">
+      <template v-if="props.row._hasData" slot-scope="props">
+        <router-link :to="{path: '/plot', query: {filter: 'd.key===\'' + props.row.key + '\''}}" class="reference-link">Plot</router-link>
+        {{" "}}
+        <router-link :to="{path: '/table', query: {filter: 'd.key===\'' + props.row.key + '\''}}" class="reference-link">Table</router-link>
       </template>
     </el-table-column>
   </el-table>
@@ -56,7 +58,11 @@ export default {
     referenceList() {
       let list = [];
       Object.keys(this.references).forEach(key => {
-        list.push(this.references[key]);
+        let newref = Object.assign({}, this.references[key]);
+        if (this.parameters.key.values && this.parameters.key.values[key]) {
+          newref._hasData = true;
+        }
+        list.push(newref);
       });
       return list;
     },

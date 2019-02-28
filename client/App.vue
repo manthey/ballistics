@@ -39,6 +39,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 
 import Vue from 'vue';
 import ElementUI from 'element-ui';
+import locale from 'element-ui/lib/locale/lang/en';  // for ElementUI
 import VueMarkdown from 'vue-markdown';
 import VueRouter from 'vue-router';
 
@@ -48,7 +49,7 @@ import PlotWithControls from './components/PlotWithControls.vue';
 import References from './components/References.vue';
 import TableWithControls from './components/TableWithControls.vue';
 
-Vue.use(ElementUI, {size: 'small'});
+Vue.use(ElementUI, {size: 'small', locale});
 Vue.use(VueRouter);
 
 Vue.component('vue-markdown', VueMarkdown);

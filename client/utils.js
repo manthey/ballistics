@@ -1,5 +1,7 @@
 /* General utility values and functions */
 
+import math from 'mathjs';
+
 /* Default mathjs number format. */
 let NumberFormat = {precision: 6, lowerExp: -6, upperExp: 9};
 
@@ -302,6 +304,24 @@ ParameterList.forEach((param, idx) => {
 let PointKeys = {};
 
 /**
+ * Given a value and a parameter specification, format the value either as text
+ * or as a number, possibly with units.
+ *
+ * @param {string|number} value The value to format.
+ * @param {object} params An entry from Parameters.
+ * @returns {string} The formatted value.
+ */
+function formatValue(value, params) {
+  if (isNaN(parseFloat(value)) || !isFinite(value)) {
+    return value;
+  }
+  if (params && params.units) {
+    return math.unit(+value, params.units).format(NumberFormat);
+  }
+  return math.format(+value, NumberFormat);
+}
+
+/**
  * Given information about parameters in the total data list, update the
  * ParameterList and Parameters records.  Emit console messages if there are
  * parameters present in one set and not the other.
@@ -328,7 +348,7 @@ function updateParameters(params) {
 
 /**
  * Given the main data, fill a dictionary of keys with references to the data
- * points.
+ * points.  This also populates formatted values for the data points.
  *
  * @param {object} data The main data.
  * @returns {object} The updates PointKeys dictionary.
@@ -336,6 +356,14 @@ function updateParameters(params) {
 function updatePointKeys(data) {
   data.forEach(entry => {
     let pointkey = entry.key + '-' + entry.idx;
+    Object.keys(entry).forEach(key => {
+      if (!key.startsWith('_')) {
+        let fvalue = formatValue(entry[key], Parameters[key]);
+        if (fvalue !== entry[key]) {
+          entry['_' + key] = fvalue;
+        }
+      }
+    });
     PointKeys[pointkey] = entry;
     entry.pointkey = pointkey;
   });
@@ -348,6 +376,7 @@ export {
   Parameters,
   PointKeys,
 
+  formatValue,
   updateParameters,
   updatePointKeys,
 };
