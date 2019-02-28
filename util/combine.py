@@ -163,8 +163,12 @@ def combine(opts):  # noqa
     params = parameter_summary(total)
     if opts.get('json', True):
         refpath = os.path.join(out, 'parameters.json')
-        json.dump(params, open(refpath, 'wt'), sort_keys=True, indent=1,
-                  separators=(',', ': '))
+        try:
+            json.dump(params, open(refpath, 'wt'), sort_keys=True, indent=1,
+                      separators=(',', ': '))
+        except TypeError:
+            json.dump(params, open(refpath, 'wt'), sort_keys=False, indent=1,
+                      separators=(',', ': '))
     if opts.get('csv'):
         csv_dump(params, os.path.join(out, 'parameters.csv'))
     print('%d parameters' % len(params))
