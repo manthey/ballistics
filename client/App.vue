@@ -6,6 +6,10 @@
         <template slot="title">Plot</template>
         <el-menu-item v-for="(item, i) in plots" :key="'plotmenu' + i" :index="item.index" :route="{path: item.path, query: item.query}" :title="item.tooltip">{{ item.text }}</el-menu-item>
       </el-submenu>
+      <el-submenu index="table">
+        <template slot="title">Table</template>
+        <el-menu-item v-for="(item, i) in tables" :key="'tablemenu' + i" :index="item.index" :route="{path: item.path, query: item.query}" :title="item.tooltip">{{ item.text }}</el-menu-item>
+      </el-submenu>
       <el-menu-item index="references" :route="{path: '/references'}">References</el-menu-item>
     </el-menu>
     <router-view class="view" :plotdata="plotdata" :references="references" :parameters="parameters"></router-view>
@@ -42,6 +46,7 @@ import * as utils from './utils.js';
 import MainPage from './components/MainPage.vue';
 import PlotWithControls from './components/PlotWithControls.vue';
 import References from './components/References.vue';
+import TableWithControls from './components/TableWithControls.vue';
 
 Vue.use(ElementUI, {size: 'small'});
 Vue.use(VueRouter);
@@ -70,6 +75,13 @@ export default {
         refkey: route.query.refkey
       })
     }, {
+      path: '/table',
+      component: TableWithControls,
+      props: (route) => ({
+        filter: route.query.filter,
+        pointkey: route.query.pointkey
+      })
+    }, {
       path: '*',
       redirect: '/'
     }]
@@ -80,16 +92,27 @@ export default {
       references: {},
       parameters: utils.Parameters,
       plots: [{
-        index: 'plot-full',
-        text: 'Full Data',
-        path: '/plot',
-      }, {
-        index: 'plot-preferred',
-        text: 'Preferred Experiments',
-        tooltip: "Exclude theory, calorimeter, calculated, final_angle, and time techniques",
-        path: '/plot',
-        query: {filter: "['time','theory','calorimeter','calculated','final_angle'].indexOf(d.technique)<0"}
-      }]
+          index: 'plot-full',
+          text: 'Full Data',
+          path: '/plot',
+        }, {
+          index: 'plot-preferred',
+          text: 'Preferred Experiments',
+          tooltip: "Exclude theory, calorimeter, calculated, final_angle, and time techniques",
+          path: '/plot',
+          query: {filter: "['time','theory','calorimeter','calculated','final_angle'].indexOf(d.technique)<0"}
+        }],
+      tables: [{
+          index: 'table-full',
+          text: 'Full Data',
+          path: '/table',
+        }, {
+          index: 'table-preferred',
+          text: 'Preferred Experiments',
+          tooltip: "Exclude theory, calorimeter, calculated, final_angle, and time techniques",
+          path: '/table',
+          query: {filter: "['time','theory','calorimeter','calculated','final_angle'].indexOf(d.technique)<0"}
+        }]
     };
   },
   methods: {

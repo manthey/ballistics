@@ -13,11 +13,16 @@
 <style scoped>
 #controls {
   display: flex;
-  margin: 2px;
+  margin: 2px 5px;
 }
 #filter {
   flex: 1;
   margin-left: 5px;
+  margin-right: 10px;
+}
+#pointkey {
+  margin-left: 5px;
+  margin-right: 10px;
 }
 </style>
 
@@ -39,7 +44,6 @@ export default {
       });
     },
     updatePointKey() {
-      console.log(this.$router);
       this.$emit('pointkeyupdate', {
         pointkey: document.querySelector('#pointkey').value
       });

@@ -1,15 +1,12 @@
 <template>
-  <div id="plotwithcontrols">
+  <div id="tablewithcontrols">
     <PlotControls :filter="currentFilter" :pointkey="currentPoint" @filterupdate="filterUpdate" @pointkeyupdate="pointkeyUpdate"/>
-    <div id="display">
-      <BallisticsPlot :plotdata="plotdata" :filter="currentFilter" :pointkey="currentPoint" @pickPoint="pickPoint"/>
-      <PointData v-if="currentPoint" :plotdata="plotdata" :pointkey="currentPoint" :references="references" @closetable="pickPoint"/>
-    </div>
+    <BallisticsTable id="display" :plotdata="plotdata" :filter="currentFilter" :pointkey="currentPoint"/>
   </div>
 </template>
 
 <style scoped>
-#plotwithcontrols {
+#tablewithcontrols {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -18,23 +15,20 @@
   overflow: hidden;
 }
 #display {
-  display: flex;
   flex: 1;
   overflow: hidden;
 }
 </style>
 
 <script>
-import BallisticsPlot from './BallisticsPlot.vue';
+import BallisticsTable from './BallisticsTable.vue';
 import PlotControls from './PlotControls.vue';
-import PointData from './PointData.vue';
 
 export default {
-  name: 'PlotWithControls',
+  name: 'TableWithControls',
   components: {
-    BallisticsPlot,
-    PlotControls,
-    PointData
+    BallisticsTable,
+    PlotControls
   },
   props: {
     filter: String,
@@ -59,20 +53,14 @@ export default {
         query: Object.assign({}, route.query, {filter: value.filter})
       });
     },
-    pickPoint(point) {
-      let pointkey = point ? point['key'] + '-' + point['idx'] : '';
-      this.pointkeySet(pointkey);
-    },
-    pointkeySet(pointkey) {
+    pointkeyUpdate(value) {
+      let pointkey = value.pointkey;
       this.currentPoint = pointkey;
       var route = this.$router.currentRoute;
       this.$router.push({
         path: route.path,
         query: Object.assign({}, route.query, {pointkey: pointkey})
       });
-    },
-    pointkeyUpdate(value) {
-      this.pointkeySet(value.pointkey);
     }
   },
   watch: {

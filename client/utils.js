@@ -337,6 +337,7 @@ function updatePointKeys(data) {
   data.forEach(entry => {
     let pointkey = entry.key + '-' + entry.idx;
     PointKeys[pointkey] = entry;
+    entry.pointkey = pointkey;
   });
   return PointKeys;
 }
