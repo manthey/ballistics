@@ -7,8 +7,8 @@
             <th v-for="param in columns" :key="'datacol-' + param.key" :class="param.key === sortOrder[sortOrder.length - 1].prop ? (sortOrder[sortOrder.length - 1].order === 'descending' ? 'descending' : 'ascending') : ''" :column="param.key" @click="sortTable">
               <span>{{ param.key.replace(/_/g, ' ') }}</span>
               <span class="caret-wrapper">
-                <i class="sort-caret ascending"/>
                 <i class="sort-caret descending"/>
+                <i class="sort-caret ascending"/>
               </span>
             </th>
           </tr>
@@ -29,12 +29,15 @@
   font-size: 12px;
   padding: 5px;
 }
+.data-table {
+  border-spacing: 0;
+}
 .data-table th {
   min-width: 150px;
   cursor: pointer;
-}
-.data-table {
-  border-spacing: 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 .caret-wrapper {
   display: inline-flex;
@@ -52,18 +55,18 @@
   position: absolute;
   left: 7px;
 }
-.sort-caret.ascending {
+.sort-caret.descending {
   border-bottom-color: #c0c4cc;
   top: 5px;
 }
-.sort-caret.descending {
+.sort-caret.ascending {
   border-top-color: #c0c4cc;
   bottom: 7px;
 }
-.ascending .sort-caret.ascending {
+.ascending .sort-caret.descending {
   border-bottom-color: black;
 }
-.descending .sort-caret.descending {
+.descending .sort-caret.ascending {
   border-top-color: black;
 }
 </style>
@@ -71,10 +74,14 @@
 .data-table tr.current-row {
   background-color: #ECF5FF;
 }
+.data-table td {
+  border-top: #f7f7f7 1px solid;
+}
 </style>
 
 <script>
 import * as utils from '../utils.js';
+import { escape } from 'html-escaper';
 
 export default {
   name: 'BallisticsTable',
@@ -112,33 +119,7 @@ export default {
       return columns;
     },
     sortedDataList() {
-      let sortedList = this.dataList.slice().sort((a, b) => {
-        let i, o, key, dir;
-        for (i = this.sortOrder.length - 1; i >= 0; i--) {
-          key = this.sortOrder[i].prop;
-          dir = this.sortOrder[i].order !== 'descending';
-          if (key === 'pointkey') {
-            return dir ? (a.key > b.key ? 1 : a.key < b.key ? -1 : a.idx - b.idx) : (a.key > b.key ? -1 : a.key < b.key ? 1 : b.idx - a.idx);
-          }
-          if (a[key] === undefined) {
-            return dir ? -1 : 1;
-          }
-          if (b[key] === undefined) {
-            return dir ? 1 : -1;
-          }
-          if (!isNaN(parseFloat(a[key])) && isFinite(a[key]) &&
-              !isNaN(parseFloat(b[key])) && isFinite(b[key])) {
-            return dir ? +a[key] - +b[key] : +b[key] - a[key];
-          }
-          o = (''+a[key]).localeCompare(''+b[key], undefined, {ignorePunctuation: true});
-          if (o) {
-            return dir ? o : -o;
-          }
-        }
-        return 0;
-      });
-      sortedList.forEach((entry, idx) => { entry.rowidx = idx; });
-      return sortedList;
+      return utils.sortObjectList(this.dataList, this.sortOrder);
     }
   },
   methods: {
@@ -148,22 +129,21 @@ export default {
           <td v-for="param in columns" :key="'datacell-' + row.pointkey + '-' + param.key">{{ row['_' + param.key] || row[param.key] }}</td>
         </tr>
        * is too slow. */
-      return this.sortedDataList.map(row => {
-        return '<tr' + (row.pointkey === this.pointkey ? ' class="current-row"' : '') + '>' + this.columns.map(param => {
+      let columns = this.columns, pointkey = this.pointkey;
+      let result = this.sortedDataList.map(row => {
+        return '<tr pointkey="' + row.pointkey + '"' + (row.pointkey === pointkey ? ' class="current-row"' : '') + '>' + columns.map(param => {
           let value = row['_' + param.key] || row[param.key];
-          if (value) {
-            value = ('' + value)
-              .replace(/&/g, "&amp;")
-              .replace(/</g, "&lt;")
-              .replace(/>/g, "&gt;")
-              .replace(/"/g, "&quot;")
-              .replace(/'/g, "&#039;");
-          } else {
+          if (value === undefined) {
             value = '';
+          } else if (typeof value === 'string') {
+            value = escape(value);
+          } else {
+            value = '' + value;
           }
           return '<td>' + value  + '</td>';
         }).join('') + '</tr>';
       }).join('');
+      return result;
     },
     sortTable(event) {
       let column = event.target.closest('[column]').getAttribute('column'),

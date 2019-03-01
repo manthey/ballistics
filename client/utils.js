@@ -2,6 +2,8 @@
 
 import math from 'mathjs';
 
+let memoizeCompare = {_count: 0, _maxcount: 1000};
+
 /* Default mathjs number format. */
 let NumberFormat = {precision: 6, lowerExp: -6, upperExp: 9};
 
@@ -294,6 +296,9 @@ let ParameterList = [{
     key: 'final_viscosity_viscosity',
     title: 'Viscosity',
     units: 'kg/m/s'
+  }, {
+    key: 'time_delta',
+    units: 's'
   }];
 let Parameters = {};
 ParameterList.forEach((param, idx) => {
@@ -312,13 +317,76 @@ let PointKeys = {};
  * @returns {string} The formatted value.
  */
 function formatValue(value, params) {
-  if (isNaN(parseFloat(value)) || !isFinite(value)) {
+  if (isNaN(+value)) {
     return value;
   }
   if (params && params.units) {
     return math.unit(+value, params.units).format(NumberFormat);
   }
   return math.format(+value, NumberFormat);
+}
+
+/**
+ * Sort a list of objects.  This does not mutate the original list, but does
+ * add a rowidx property to each object.
+ *
+ * @param {array} objectList The list to sort.
+ * @param {array} sortOrder A list of sort actions, the end ones are most
+ *   significant.  Each entry is {prop: <key>, order: 'ascending'|'descending'}
+ *   where order defaults to ascending.  A key of "pointkey" is special; it is
+ *   shorthand for [{prop: 'key'}, {prop: 'idx'}], both with the same order.
+ * @returns {array} The sorted list.
+ */
+function sortObjectList(objectList, sortOrder) {
+  let sortedList = objectList.slice().sort((a, b) => {
+    let i, o, key, dir;
+    for (i = sortOrder.length - 1; i >= 0; i--) {
+      key = sortOrder[i].prop;
+      dir = sortOrder[i].order !== 'descending';
+      if (key === 'pointkey') {
+        return dir ? (a.key > b.key ? 1 : a.key < b.key ? -1 : a.idx - b.idx) : (a.key > b.key ? -1 : a.key < b.key ? 1 : b.idx - a.idx);
+      }
+      if (a[key] === b[key]) {
+        continue;
+      }
+      if (a[key] === undefined) {
+        return dir ? -1 : 1;
+      }
+      if (b[key] === undefined) {
+        return dir ? 1 : -1;
+      }
+      const an = +a[key], bn = +b[key];
+      if (!isNaN(an) && !isNaN(bn)) {
+        if (an === bn) {
+          continue;
+        }
+        return dir ? an - bn : bn - an;
+      }
+      const astr = ''+a[key], bstr = ''+b[key];
+      if (astr === bstr) {
+        continue;
+      }
+      if (astr in memoizeCompare && bstr in memoizeCompare[astr]) {
+        o = memoizeCompare[astr][bstr];
+      } else {
+        o = astr.localeCompare(bstr, undefined, {ignorePunctuation: true});
+        if (memoizeCompare._count > memoizeCompare._maxcount) {
+          memoizeCompare = {_count: 0, _maxcount: memoizeCompare._maxcount};
+        }
+        if (!(astr in memoizeCompare)) {
+          memoizeCompare[astr] = {};
+        }
+        memoizeCompare[astr][bstr] = o;
+        memoizeCompare._count += 1;
+      }
+      if (o) {
+        return dir ? o : -o;
+      }
+    }
+    return 0;
+  });
+  sortedList.forEach((entry, idx) => { entry.rowidx = idx; });
+  return sortedList;
 }
 
 /**
@@ -377,6 +445,7 @@ export {
   PointKeys,
 
   formatValue,
+  sortObjectList,
   updateParameters,
   updatePointKeys,
 };

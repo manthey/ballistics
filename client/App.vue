@@ -171,5 +171,7 @@ specific graphs with commentary
 techniques
   computation methods
   accuracy
+
+switch to own menu component and I can get rid of element-ui.  See luxbar
 */
 </script>

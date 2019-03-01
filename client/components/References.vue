@@ -41,6 +41,8 @@
 </style>
 
 <script>
+import * as utils from '../utils.js';
+
 export default {
   name: 'References',
   props: {
@@ -67,26 +69,7 @@ export default {
       return list;
     },
     sortedReferenceList() {
-      let sortedList = this.referenceList.slice().sort((a, b) => {
-        let i, o, key, dir;
-        for (i = this.sortOrder.length - 1; i >= 0; i--) {
-          key = this.sortOrder[i].prop;
-          dir = this.sortOrder[i].order !== 'descending';
-          if (a[key] === undefined) {
-            return dir ? -1 : 1;
-          }
-          if (b[key] === undefined) {
-            return dir ? 1 : -1;
-          }
-          o = a[key].localeCompare(b[key], undefined, {ignorePunctuation: true});
-          if (o) {
-            return dir ? o : -o;
-          }
-        }
-        return 0;
-      });
-      sortedList.forEach((entry, idx) => { entry.idx = idx; });
-      return sortedList;
+      return utils.sortObjectList(this.referenceList, this.sortOrder);
     }
   },
   methods: {
