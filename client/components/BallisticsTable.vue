@@ -7,8 +7,8 @@
             <th v-for="param in columns" :key="'datacol-' + param.key" :class="param.key === sortOrder[sortOrder.length - 1].prop ? (sortOrder[sortOrder.length - 1].order === 'descending' ? 'descending' : 'ascending') : ''" :column="param.key" @click="sortTable">
               <span>{{ param.key.replace(/_/g, ' ') }}</span>
               <span class="caret-wrapper">
-                <i class="sort-caret descending"/>
-                <i class="sort-caret ascending"/>
+                <i class="sort-caret descending"></i>
+                <i class="sort-caret ascending"></i>
               </span>
             </th>
           </tr>
@@ -19,63 +19,17 @@
   </div>
 </template>
 
+<style src="./table.css" scoped/>
 <style scoped>
-.table_wrapper {
-  overflow-x: auto;
-  overflow-y: auto;
-}
-.table_scroll {
-  font-family: sans-serif;
-  font-size: 12px;
-  padding: 5px;
-}
-.data-table {
-  border-spacing: 0;
-}
-.data-table th {
+table th {
   min-width: 150px;
-  cursor: pointer;
-  position: sticky;
-  top: 0;
-  background-color: white;
 }
-.caret-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  height: 34px;
-  width: 24px;
-  vertical-align: middle;
-  overflow: initial;
-  position: relative;
-}
-.sort-caret {
-  width: 0;
-  height: 0;
-  border: 5px solid transparent;
-  position: absolute;
-  left: 7px;
-}
-.sort-caret.descending {
-  border-bottom-color: #c0c4cc;
-  top: 5px;
-}
-.sort-caret.ascending {
-  border-top-color: #c0c4cc;
-  bottom: 7px;
-}
-.ascending .sort-caret.descending {
-  border-bottom-color: black;
-}
-.descending .sort-caret.ascending {
-  border-top-color: black;
-}
-</style>
 <style>
 .data-table tr.current-row {
-  background-color: #ECF5FF;
+  background-color: #D8EAFF;
 }
 .data-table td {
-  border-top: #f7f7f7 1px solid;
+  border-top: #eee 1px solid;
 }
 </style>
 
@@ -104,7 +58,6 @@ export default {
       if (this.filter) {
         try {
           let filterFunc = Function('d', '"use strict";return(' + this.filter + ')')
-          // eslint-disable-next-line
           plotdata = plotdata.filter(filterFunc);
         } catch (err) {
           console.error('Filter failed: ' + this.filter);

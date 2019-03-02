@@ -1,42 +1,67 @@
 <template>
-  <el-table ref="referenceTable" class="reference-table" :data="sortedReferenceList" :default-sort="{prop: 'ref'}" height="80%" @sort-change="sortTable" :row-class-name="rowClass">
-    <el-table-column type="expand">
-      <template slot-scope="props">
-        <p class="references-expanded" v-if="props.row.details" v-html="props.row.details"/>
-        <p class="expanded" v-if="props.row.link">
-          <a href="props.row.link">{{ props.row.link }}</a>
-        </p>
-      </template>
-    </el-table-column>
-    <el-table-column prop="ref" sortable label="Short Reference" min-width="4" class-name="references-cell" :sort-method="sortMethod"/>
-    <el-table-column prop="cms" sortable label="CMS Reference" min-width="13" class-name="references-cell" :sort-method="sortMethod">
-      <template slot-scope="props">
-        <span v-html="props.row.cms"/>
-      </template>
-    </el-table-column>
-    <el-table-column prop="summary" sortable label="Summary" min-width="13" class-name="references-cell" :sort-method="sortMethod"/>
-    <el-table-column prop="key" label="Data" min-width="2" class-name="references-cell">
-      <template v-if="props.row._hasData" slot-scope="props">
-        <router-link :to="{path: '/plot', query: {filter: 'd.key===\'' + props.row.key + '\''}}" class="reference-link">Plot</router-link>
-        {{" "}}
-        <router-link :to="{path: '/table', query: {filter: 'd.key===\'' + props.row.key + '\''}}" class="reference-link">Table</router-link>
-      </template>
-    </el-table-column>
-  </el-table>
+  <div class="table_wrapper">
+    <div class="table_scroll">
+      <table ref="referenceTable" class="reference-table">
+        <thead>
+          <tr>
+            <th v-for="param in columns" :key="'datacol-' + param.key" :class="param.key === sortOrder[sortOrder.length - 1].prop ? (sortOrder[sortOrder.length - 1].order === 'descending' ? 'descending' : 'ascending') : ''" :column="param.key" @click="sortTable" :width="param.width || ''">
+              <span>{{ param.title }}</span>
+              <span v-if="param.sort" class="caret-wrapper">
+                <i class="sort-caret descending"></i>
+                <i class="sort-caret ascending"></i>
+              </span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <template v-for="row in sortedReferenceList">
+            <tr :key="'refrow-' + row.key" refkey="row.key" :class="row.key === refkey ? 'current-row' : ''">
+              <td :class="row.details || row.link ? 'expand' : ''" @click="toggleExpansion"><span></span></td>
+              <td>{{ row.ref }}</td>
+              <td v-html="row.cms"></td>
+              <td>{{ row.summary || '' }}</td>
+              <td>
+                <template v-if="row._hasData">
+                  <router-link :to="{path: '/plot', query: {filter: 'd.key===\'' + row.key + '\''}}" class="reference-link">Plot</router-link>
+                  {{" "}}
+                  <router-link :to="{path: '/table', query: {filter: 'd.key===\'' + row.key + '\''}}" class="reference-link">Table</router-link>
+                </template>
+              </td>
+            </tr>
+            <tr v-if="row.details || row.link" :key="'refrowexp-' + row.key" class="expansion-row">
+              <td colspan="5">
+                <p v-if="row.details" v-html="row.details"/>
+                <p v-if="row.link">
+                  <a href="row.link">{{ row.link }}</a>
+                </p>
+              </td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </template>
 
+<style src="./table.css" scoped/>
+<style scoped>
+table {
+  font-size: 16px;
+}
+table td {
+  padding: 5px 5px;
+}
+.expansion-row td {
+  padding: 2px 25px 2px 75px;
+  font-size: 14px;
+}
+</style>
 <style>
-.references-cell .cell, .references-expanded {
-  word-break: normal;
-  font-size: 1.1em;
-  line-height: 1.2em;
-  color: black;
+.reference-table tr.current-row {
+  background-color: #D8EAFF;
 }
-.el-table .ascending .sort-caret.ascending {
-  border-bottom-color: black;
-}
-.el-table .descending .sort-caret.descending {
-  border-top-color: black;
+.reference-table td {
+  border-top: #eee 1px solid;
 }
 </style>
 
@@ -52,6 +77,28 @@ export default {
   },
   data() {
     return {
+      columns: [{
+        key: 'expand',
+        title: '',
+        width: '50px'
+      }, {
+        key: 'ref',
+        title: 'Short Reference',
+        sort: true,
+        width: '200px'
+      }, {
+        key: 'cms',
+        title: 'CMS Reference',
+        sort: true
+      }, {
+        key: 'summary',
+        title: 'Summary',
+        sort: true
+      }, {
+        key: '_hasData',
+        title: 'Data',
+        width: '100px'
+      }],
       scrolled: false,
       sortOrder: [{prop: 'ref'}],
     }
@@ -73,22 +120,28 @@ export default {
     }
   },
   methods: {
-    rowClass(spec) {
-      return spec.row.key === this.refkey ? 'current-row' : '';
-    },
-    sortMethod(a, b) {
-      if (this.sortOrder[this.sortOrder.length - 1].order !== 'descending') {
-        return a.idx - b.idx;
+    sortTable(event) {
+      let column = event.target.closest('[column]').getAttribute('column'),
+          last = this.sortOrder[this.sortOrder.length - 1],
+          order = 'ascending';
+      if (last.prop === column) {
+        if (last.order === 'descending') {
+          column = null;
+        } else {
+          order = 'descending';
+        }
       }
-      return b.idx - a.idx;
-    },
-    sortTable(spec) {
-      if (spec.column === null) {
+      if (column === null) {
         this.sortOrder = [{prop: 'ref'}];
       } else {
-        this.sortOrder = this.sortOrder.filter(record => record.prop !== spec.prop);
-        this.sortOrder.push({prop: spec.prop, order: spec.order});
+        this.sortOrder = this.sortOrder.filter(record => record.prop !== column);
+        this.sortOrder.push({prop: column, order: order});
       }
+    },
+    toggleExpansion(event) {
+      console.log(event);
+      let row = event.target.closest('tr');
+      row.classList.toggle('expanded');
     }
   },
   updated: function () {

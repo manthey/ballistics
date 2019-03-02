@@ -71,7 +71,6 @@ export default {
       if (this.filter) {
         try {
           let filterFunc = Function('d', '"use strict";return(' + this.filter + ')')
-          // eslint-disable-next-line
           plotdata = plotdata.filter(filterFunc);
         } catch (err) {
           console.error('Filter failed: ' + this.filter);

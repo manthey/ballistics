@@ -130,7 +130,7 @@ export default {
     },
     fetchParameters() {
       fetch('parameters.json').then(resp => resp.json()).then(data => {
-        this.parameters = utils.updateParameters(data);
+        this.parameters = Object.assign({}, utils.updateParameters(data));
       }).catch(err => { throw err; });
     }
   },
@@ -163,7 +163,6 @@ export default {
 Notes:
 
 main (needs improvement)
-table view
 specific graphs with commentary
   small diam
   medium

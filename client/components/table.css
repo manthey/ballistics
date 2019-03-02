@@ -1,0 +1,66 @@
+.table_wrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.table_scroll {
+  font-size: 12px;
+  padding: 5px;
+}
+table {
+  border-spacing: 0;
+}
+table th {
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.caret-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  height: 34px;
+  width: 24px;
+  vertical-align: middle;
+  overflow: initial;
+  position: relative;
+}
+.sort-caret {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  position: absolute;
+  left: 7px;
+}
+.sort-caret.descending {
+  border-bottom-color: #c0c4cc;
+  top: 5px;
+}
+.sort-caret.ascending {
+  border-top-color: #c0c4cc;
+  bottom: 7px;
+}
+.ascending .sort-caret.descending {
+  border-bottom-color: black;
+}
+.descending .sort-caret.ascending {
+  border-top-color: black;
+}
+.expand {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}  
+.expand span::after {
+  content: "\02C3";
+  color: "black";
+}
+tr.expanded .expand span::after {
+  content: "\02C5";
+  color: "black";
+}
+tr.expansion-row {
+  visibility: collapse;
+}
+tr.expanded+tr.expansion-row {
+  visibility: visible;
+}
