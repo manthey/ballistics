@@ -13,10 +13,10 @@
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody @click="clickRow">
           <template v-for="row in sortedReferenceList">
-            <tr :key="'refrow-' + row.key" refkey="row.key" :class="row.key === refkey ? 'current-row' : ''">
-              <td :class="row.details || row.link ? 'expand' : ''" @click="toggleExpansion"><span></span></td>
+            <tr :key="'refrow-' + row.key" :refkey="row.key" :class="row.key === refkey ? 'current-row' : ''">
+              <td :class="row.details || row.link ? 'expand' : ''" @click.stop="toggleExpansion"><span></span></td>
               <td>{{ row.ref }}</td>
               <td v-html="row.cms"></td>
               <td>{{ row.summary || '' }}</td>
@@ -120,6 +120,15 @@ export default {
     }
   },
   methods: {
+    clickRow(event) {
+      let row = event.target.closest('tr'),
+          refkey = row.getAttribute('refkey');
+      let route = this.$router.currentRoute;
+      this.$router.push({
+        path: '/references',
+        query: Object.assign({}, route.query, {refkey: refkey})
+      });
+    },
     sortTable(event) {
       let column = event.target.closest('[column]').getAttribute('column'),
           last = this.sortOrder[this.sortOrder.length - 1],
@@ -138,20 +147,26 @@ export default {
         this.sortOrder.push({prop: column, order: order});
       }
     },
+    scrollIfNeeded() {
+      if (this.refkey && this.scrolled !== Object.keys(this.references).length) {
+        let row = document.querySelector('.reference-table .current-row');
+        if (row) {
+          row.scrollIntoView();
+          row.closest('.table_wrapper').scrollTop -= (row.closest('.table_wrapper').clientHeight - row.clientHeight) / 2;
+          this.scrolled = Object.keys(this.references).length;
+        }
+      }
+    },
     toggleExpansion(event) {
-      console.log(event);
       let row = event.target.closest('tr');
       row.classList.toggle('expanded');
     }
   },
+  mounted: function () {
+    this.$nextTick(this.scrollIfNeeded);
+  },
   updated: function () {
-    if (this.refkey && this.scrolled !== Object.keys(this.references).length) {
-      let row = document.querySelector('.reference-table .current-row');
-      if (row) {
-        row.scrollIntoView();
-        this.scrolled = Object.keys(this.references).length;
-      }
-    }
+    this.scrollIfNeeded();
   }
 }
 </script>

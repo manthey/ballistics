@@ -13,7 +13,7 @@
             </th>
           </tr>
         </thead>
-        <tbody v-html="rowHtml()"/>
+        <tbody v-html="rowHtml()" @click="clickRow"/>
       </table>
     </div>
   </div>
@@ -24,6 +24,7 @@
 table th {
   min-width: 150px;
 }
+</style>
 <style>
 .data-table tr.current-row {
   background-color: #D8EAFF;
@@ -76,6 +77,13 @@ export default {
     }
   },
   methods: {
+    clickRow(event) {
+      let row = event.target.closest('tr'),
+          pointkey = row.getAttribute('pointkey');
+      this.$emit('pointkeyupdate', {
+        pointkey: pointkey
+      });
+    },
     rowHtml() {
       /* Because
         <tr v-for="row in sortedDataList" :key="'datarow-' + row.pointkey">
@@ -98,6 +106,16 @@ export default {
       }).join('');
       return result;
     },
+    scrollIfNeeded() {
+      if (this.pointkey && this.scrolled !== this.plotdata.length) {
+        let row = document.querySelector('.data-table .current-row');
+        if (row) {
+          row.scrollIntoView();
+          row.closest('.table_wrapper').scrollTop -= (row.closest('.table_wrapper').clientHeight - row.clientHeight) / 2;
+          this.scrolled = this.plotdata.length;
+        }
+      }
+    },
     sortTable(event) {
       let column = event.target.closest('[column]').getAttribute('column'),
           last = this.sortOrder[this.sortOrder.length - 1],
@@ -117,14 +135,11 @@ export default {
       }
     }
   },
+  mounted: function () {
+    this.$nextTick(this.scrollIfNeeded);
+  },
   updated: function () {
-    if (this.pointkey && this.scrolled !== this.plotdata.length) {
-      let row = document.querySelector('.data-table .current-row');
-      if (row) {
-        row.scrollIntoView();
-        this.scrolled = this.plotdata.length;
-      }
-    }
+    this.scrollIfNeeded();
   }
 }
 </script>

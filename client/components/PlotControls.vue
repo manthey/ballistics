@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     plotOrTable() {
-      //DWM::
+      this.$emit('toggleplottable', {});
     },
     updateFilter() {
       this.$emit('filterupdate', {

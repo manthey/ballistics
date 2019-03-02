@@ -1,6 +1,6 @@
 <template>
   <div id="plotwithcontrols">
-    <PlotControls :filter="currentFilter" :pointkey="currentPoint" @filterupdate="filterUpdate" @pointkeyupdate="pointkeyUpdate"/>
+    <PlotControls :filter="currentFilter" :pointkey="currentPoint" @filterupdate="filterUpdate" @pointkeyupdate="pointkeyUpdate" @toggleplottable="showTable"/>
     <div id="display">
       <BallisticsPlot :plotdata="plotdata" :filter="currentFilter" :pointkey="currentPoint" @pickPoint="pickPoint"/>
       <PointData v-if="currentPoint" :plotdata="plotdata" :pointkey="currentPoint" :references="references" @closetable="pickPoint"/>
@@ -73,6 +73,13 @@ export default {
     },
     pointkeyUpdate(value) {
       this.pointkeySet(value.pointkey);
+    },
+    showTable() {
+      let route = this.$router.currentRoute;
+      this.$router.push({
+        path: '/table',
+        query: Object.assign({}, route.query)
+      });
     }
   },
   watch: {

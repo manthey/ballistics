@@ -1,7 +1,7 @@
 <template>
   <div id="tablewithcontrols">
-    <PlotControls :filter="currentFilter" :pointkey="currentPoint" @filterupdate="filterUpdate" :isTable="true" @pointkeyupdate="pointkeyUpdate"/>
-    <BallisticsTable id="display" :plotdata="plotdata" :filter="currentFilter" :pointkey="currentPoint"/>
+    <PlotControls :filter="currentFilter" :pointkey="currentPoint" @filterupdate="filterUpdate" :isTable="true" @pointkeyupdate="pointkeyUpdate" @toggleplottable="showPlot"/>
+    <BallisticsTable id="display" :plotdata="plotdata" :filter="currentFilter" :pointkey="currentPoint" @pointkeyupdate="pointkeyUpdate"/>
   </div>
 </template>
 
@@ -46,7 +46,7 @@ export default {
       this.currentFilter = value.filter;
       // the currentRoute is immutable, so we have to send the change as anew
       // object.
-      var route = this.$router.currentRoute;
+      let route = this.$router.currentRoute;
       this.$router.push({
         path: route.path,
         query: Object.assign({}, route.query, {filter: value.filter})
@@ -55,10 +55,17 @@ export default {
     pointkeyUpdate(value) {
       let pointkey = value.pointkey;
       this.currentPoint = pointkey;
-      var route = this.$router.currentRoute;
+      let route = this.$router.currentRoute;
       this.$router.push({
         path: route.path,
         query: Object.assign({}, route.query, {pointkey: pointkey})
+      });
+    },
+    showPlot() {
+      let route = this.$router.currentRoute;
+      this.$router.push({
+        path: '/plot',
+        query: Object.assign({}, route.query)
       });
     }
   },
