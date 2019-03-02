@@ -3,7 +3,7 @@
     <PlotControls :filter="currentFilter" :pointkey="currentPoint" @filterupdate="filterUpdate" @pointkeyupdate="pointkeyUpdate" @toggleplottable="showTable"/>
     <div id="display">
       <BallisticsPlot :plotdata="plotdata" :filter="currentFilter" :pointkey="currentPoint" @pickPoint="pickPoint"/>
-      <PointData v-if="currentPoint" :plotdata="plotdata" :pointkey="currentPoint" :references="references" @closetable="pickPoint"/>
+      <PointData v-if="currentPoint" :plotdata="plotdata" :pointkey="currentPoint" :references="references" :parameters="parameters" @closetable="pickPoint"/>
     </div>
   </div>
 </template>
@@ -38,6 +38,7 @@ export default {
   },
   props: {
     filter: String,
+    parameters: Object,
     plotdata: Array,
     pointkey: String,
     references: Object

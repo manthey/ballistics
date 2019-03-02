@@ -44,13 +44,13 @@ import * as utils from '../utils.js';
 export default {
   name: 'PointData',
   props: {
+    parameters: Object,
     plotdata: Array,
     pointkey: String,
     references: Object
   },
   data() {
     return {
-      parameters: utils.Parameters,
       showfull: false
     };
   },
