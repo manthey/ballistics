@@ -34,6 +34,14 @@ It is also desirable for most gunpowder to also be resistant to moisture.  The p
 Since there are different goals for different uses of gunpowder, manufacturers usually produced multiple types of powder.  Besides the basic composition of the powder, the granulation size was varied to better match specific uses of the gunpowder.  In addition to the three main applications of gunpowder listed above, specialty powder was made for fireworks and for certain foreign trade.  Multiply qualities of gunpowder were also manufactured and sold to accommodate different budgets.
 
 Today, most uses of gunpowder have been superceded by modern explosives, though gunpowder still has applications for military service, sporting, and blasting.  Gunpowder manufacturers still produce multiple grades, granulations, and qualities of gunpowder.
+
+## Data Sources
+
+In an effort to characterize the quality of gunpowder over time, a variety of historical sources have been used.  Any source where there is an experiment with enough information to calculate the realized power per weight of gunpowder could be used.  This includes range tests, calorimeter measurements, velocities measured with ballistic pendulums and chronometers, trajectory tracks, time of flight, and other methods.  Some proof standards and textbook problems have also been used, though these are of limited value.
+
+Currently, ballistics calculations are limited to spherical projectiles, as drag models for other shapes are substantially more complicated.  Where available, information such as temperature, pressure, and humidity are used to refine computations.  Ideally, one would use the smoothness and sphericity of the projectile as well, but this is essentially never recorded.
+
+There are certainly more sources than have been used; please forward references when possible.
     </vue-markdown>
   </div>
 </template>

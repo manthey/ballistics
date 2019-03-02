@@ -20,7 +20,7 @@
               <td>{{ row.ref }}</td>
               <td v-html="row.cms"></td>
               <td>{{ row.summary || '' }}</td>
-              <td>
+              <td @click.stop="">
                 <template v-if="row._hasData">
                   <router-link :to="{path: '/plot', query: {filter: 'd.key===\'' + row.key + '\''}}" class="reference-link">Plot</router-link>
                   {{" "}}
