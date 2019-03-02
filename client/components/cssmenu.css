@@ -66,6 +66,9 @@
 .cssmenu li.active a {
   color: #ff0;
 }
+.cssmenu li li a {
+  min-width: 150px;
+}  
 .cssmenu li.active li,
 .cssmenu li.active li a {
   color: #fff;

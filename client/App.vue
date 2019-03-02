@@ -128,15 +128,9 @@ export default {
       fetch('parameters.json').then(resp => resp.json()).then(data => {
         this.parameters = Object.assign({}, utils.updateParameters(data));
       }).catch(err => { throw err; });
-    }
-  },
-  mounted: function () {
-    this.fetchData();
-    this.fetchReferences();
-    this.fetchParameters();
-  },
-  watch: {
-    $route(to) {
+    },
+    updateMenu(to) {
+      to = to || this.$router.currentRoute;
       let menu = this.$children.filter(child => child.$options._componentTag === 'router-link'),
           best, okay;
       menu.forEach(menu => {
@@ -153,7 +147,19 @@ export default {
           oldactive.classList.toggle('active');
         }
         (best || okay).$el.parentElement.classList.toggle('active');
+        document.activeElement.blur();
       }
+    }
+  },
+  mounted: function () {
+    this.fetchData();
+    this.fetchReferences();
+    this.fetchParameters();
+    this.$nextTick(this.updateMenu);
+  },
+  watch: {
+    $route(to) {
+      this.updateMenu(to);
     }
   },
 }

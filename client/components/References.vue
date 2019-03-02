@@ -46,7 +46,7 @@
 <style src="./table.css" scoped/>
 <style scoped>
 table {
-  font-size: 16px;
+  font-size: 15px;
 }
 table td {
   padding: 5px 5px;
