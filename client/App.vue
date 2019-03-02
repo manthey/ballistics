@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <el-menu router mode="horizontal" background-color="#444" text-color="#EEE" active-text-color="#EE0">
-      <el-menu-item index="home" :route="{path: '/'}">Home</el-menu-item>
-      <el-submenu index="plot">
-        <template slot="title">Plot</template>
-        <el-menu-item v-for="(item, i) in plots" :key="'plotmenu' + i" :index="item.index" :route="{path: item.path, query: item.query}" :title="item.tooltip">{{ item.text }}</el-menu-item>
-      </el-submenu>
-      <el-submenu index="table">
-        <template slot="title">Table</template>
-        <el-menu-item v-for="(item, i) in tables" :key="'tablemenu' + i" :index="item.index" :route="{path: item.path, query: item.query}" :title="item.tooltip">{{ item.text }}</el-menu-item>
-      </el-submenu>
-      <el-menu-item index="references" :route="{path: '/references'}">References</el-menu-item>
-    </el-menu>
+    <div class="cssmenu">
+      <ul>
+        <li><router-link :to="{path: '/'}">Home</router-link></li>
+        <li><router-link :to="{path: '/plot'}">Plot</router-link>
+          <ul>
+            <li v-for="(item, i) in plots" :key="'plotmenu' + i"><router-link :to="{path: item.path, query: item.query}" :title="item.tooltip">{{ item.text }}</router-link></li>
+          </ul>
+        </li>
+        <li><router-link :to="{path: '/table'}">Table</router-link>
+          <ul>
+            <li v-for="(item, i) in tables" :key="'tablemenu' + i"><router-link :to="{path: item.path, query: item.query}" :title="item.tooltip">{{ item.text }}</router-link></li>
+          </ul>
+        </li>
+        <li><router-link :to="{path: '/references'}">References</router-link></li>
+      </ul>
+    </div>
     <router-view class="view" :plotdata="plotdata" :references="references" :parameters="parameters"></router-view>
   </div>
 </template>
@@ -28,18 +32,11 @@ html,body,#app {
 .view {
   flex: 1;
 }
-.el-menu--horizontal>.el-menu-item, .el-menu--horizontal>.el-submenu .el-submenu__title {
-  height: 40px;
-  line-height: 40px;
-}
 </style>
+<style src="./components/cssmenu.css" scoped/>
 
 <script>
-import 'element-ui/lib/theme-chalk/index.css';
-
 import Vue from 'vue';
-import ElementUI from 'element-ui';
-import locale from 'element-ui/lib/locale/lang/en';  // for ElementUI
 import VueMarkdown from 'vue-markdown';
 import VueRouter from 'vue-router';
 
@@ -49,7 +46,6 @@ import PlotWithControls from './components/PlotWithControls.vue';
 import References from './components/References.vue';
 import TableWithControls from './components/TableWithControls.vue';
 
-Vue.use(ElementUI, {size: 'small', locale});
 Vue.use(VueRouter);
 
 Vue.component('vue-markdown', VueMarkdown);
@@ -141,20 +137,22 @@ export default {
   },
   watch: {
     $route(to) {
-      let menu = this.$children[0],
+      let menu = this.$children.filter(child => child.$options._componentTag === 'router-link'),
           best, okay;
-      if (menu.updateActiveIndex) {
-        Object.keys(menu.items).forEach(key => {
-          if (best === undefined && to === menu.items[key].route) {
-            best = key;
-          }
-          if (okay === undefined && to.path === menu.items[key].route.path) {
-            okay = key;
-          }
-        });
-        if (best || okay) {
-          menu.updateActiveIndex(best || okay);
+      menu.forEach(menu => {
+        if (best === undefined && to === menu.to) {
+          best = menu;
         }
+        if (okay === undefined && to.path === menu.to.path) {
+          okay = menu;
+        }
+      });
+      if (best || okay) {
+        let oldactive = document.querySelector('.cssmenu .active');
+        if (oldactive) {
+          oldactive.classList.toggle('active');
+        }
+        (best || okay).$el.parentElement.classList.toggle('active');
       }
     }
   },
@@ -170,6 +168,7 @@ specific graphs with commentary
 techniques
   computation methods
   accuracy
+github
 
 switch to own menu component and I can get rid of element-ui.  See luxbar
 */

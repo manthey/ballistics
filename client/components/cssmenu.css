@@ -1,0 +1,74 @@
+.cssmenu {
+  background: #444;
+  height: 40px;
+  line-height: 40px;
+  z-index: 100;
+  font-size: 15px;
+}
+.cssmenu a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.cssmenu li {
+  color: #fff;
+  background: #444;
+  display: block;
+  float: left;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+.cssmenu li a {
+  padding: 0 1rem;
+  color: #fff;
+  min-width: 50px;
+}
+.cssmenu li:hover,
+.cssmenu li:focus-within {
+  background: #363636;
+  cursor: pointer;
+}
+.cssmenu li:focus-within a {
+  outline: none;
+}
+.cssmenu ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 10rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  left: 0;
+  display: none;
+}
+.cssmenu ul li:hover > ul,
+.cssmenu ul li:focus-within > ul,
+.cssmenu ul li ul:hover,
+.cssmenu ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block
+}
+.cssmenu ul li ul li {
+  clear: both;
+  width: 100%;
+}
+.cssmenu li.active {
+  box-shadow: 0 -3px 0 0px #ff0 inset
+}
+.cssmenu li.active,
+.cssmenu li.active a {
+  color: #ff0;
+}
+.cssmenu li.active li,
+.cssmenu li.active li a {
+  color: #fff;
+  box-shadow: none;
+}
+
