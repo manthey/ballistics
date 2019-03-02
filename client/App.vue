@@ -13,6 +13,7 @@
             <li v-for="(item, i) in tables" :key="'tablemenu' + i"><router-link :to="{path: item.path, query: item.query}" :title="item.tooltip">{{ item.text }}</router-link></li>
           </ul>
         </li>
+        <li><router-link :to="{path: '/computation'}">Computation</router-link></li>
         <li><router-link :to="{path: '/references'}">References</router-link></li>
       </ul>
     </div>
@@ -41,13 +42,13 @@ import VueMarkdown from 'vue-markdown';
 import VueRouter from 'vue-router';
 
 import * as utils from './utils.js';
+import Computation from './components/Computation.vue';
 import MainPage from './components/MainPage.vue';
 import PlotWithControls from './components/PlotWithControls.vue';
 import References from './components/References.vue';
 import TableWithControls from './components/TableWithControls.vue';
 
 Vue.use(VueRouter);
-
 Vue.component('vue-markdown', VueMarkdown);
 
 export default {
@@ -58,6 +59,9 @@ export default {
     routes: [{
       path: '/',
       component: MainPage
+    }, {
+      path: '/computation',
+      component: Computation
     }, {
       path: '/plot',
       component: PlotWithControls,
@@ -166,7 +170,6 @@ export default {
 /*
 Notes:
 
-main (needs improvement)
 specific graphs with commentary
   small diam
   medium

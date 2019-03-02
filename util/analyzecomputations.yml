@@ -1,0 +1,93 @@
+---
+key: report1742
+ref: "Committee of the Royal Society, 1742"
+cms: "Committee of the Royal Society. \"Report of the Committee of the Royal Society appointed to examine some Questions in Gunnery.\" <i>Philosophical Transactions of the Royal Society</i>, XVII, no. 465 (October and November 1742): 172-183."
+summary: "This examines different calculation analysis options on the first record from the source."
+date: "1742"
+data:
+  -
+    mass: 24 lb 6.5 oz
+    material: brass
+    charge: 1 ozt
+    angle: 45 deg
+    ref2: p. 181-182
+    desc: "Three-inch deep powder chamber"
+    range: 11 chains 39 links
+    data:
+      -
+        method: runge
+        desc2: "Use Runge-Kutta with different time deltas"
+        data:
+          - time_delta: 1
+          - time_delta: 0.5
+          - time_delta: 0.2
+          - time_delta: 0.1
+          - time_delta: 0.05
+          - time_delta: 0.02
+          - time_delta: 0.01
+          - time_delta: 0.005
+          - time_delta: 0.002
+          - time_delta: 0.001
+          - time_delta: 0.0005
+          - time_delta: 0.0002
+          - time_delta: 0.0001
+
+      -
+        method: simple
+        desc2: "Use a simple step with different time deltas"
+        data:
+          - time_delta: 1
+          - time_delta: 0.5
+          - time_delta: 0.2
+          - time_delta: 0.1
+          - time_delta: 0.05
+          - time_delta: 0.02
+          - time_delta: 0.01
+          - time_delta: 0.005
+          - time_delta: 0.002
+          - time_delta: 0.001
+          - time_delta: 0.0005
+          - time_delta: 0.0002
+          - time_delta: 0.0001
+          - time_delta: 0.00005
+          - time_delta: 0.00002
+          - time_delta: 0.00001
+          - time_delta: 0.000005
+          - time_delta: 0.000002
+          - time_delta: 0.000001
+
+      -
+        desc2: "Examine effects of different drag computation methods"
+        data:
+          - dragmethod: miller
+          - dragmethod: morrison
+          - dragmethod: collins
+          - dragmethod: henderson
+
+      -
+        desc2: "Examine effects of different temperatures"
+        data:
+          - temperature: -30C
+          - temperature: -20C
+          - temperature: -10C
+          - temperature: 0C
+          - temperature: 10C
+          - temperature: 20C
+          - temperature: 30C
+          - temperature: 40C
+
+      -
+        desc2: "Examine effects of different pressures"
+        data:
+          - pressure: 0.83bar
+          - pressure: 0.9bar
+          - pressure: 0.98bar
+          - pressure: 1bar
+          - pressure: 1.05bar
+
+      -
+        desc2: "Examine effects of different humidities"
+        data:
+          - humidity: 0%
+          - humidity: 50%
+          - humidity: 100%

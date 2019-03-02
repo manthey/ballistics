@@ -205,7 +205,7 @@ UnitsTable = [
     # Pressure (reference is Pa)
     (['Pa', 'Pascal', 'Pascals'], True, 1.0,
      'SI Pascal (1 N/m/m or 1 kg/m/s/s)'),
-    (['bar'], False, 10.0e5, 'Pressure bar (100000 Pa)'),
+    (['bar'], False, 1.0e5, 'Pressure bar (100000 Pa)'),
     (['atm', 'atmosphere', 'atmospheres'], False, 101325.0,
      'Standard atmospheric pressure (101,325 Pa)'),
     (['psi'], False, 689.48, 'Pounds of force per square inch'),
