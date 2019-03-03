@@ -3,6 +3,7 @@
 import math from 'mathjs';
 
 let memoizeCompare = {_count: 0, _maxcount: 1000};
+let memoizeFormatValue = {_count: 0, _maxcount: 1000};
 
 /* Default mathjs number format. */
 let NumberFormat = {precision: 6, lowerExp: -6, upperExp: 9};
@@ -317,13 +318,26 @@ let PointKeys = {};
  * @returns {string} The formatted value.
  */
 function formatValue(value, params) {
+  let key = (params.key || 'none'), result;
+  if (key in memoizeFormatValue && value in memoizeFormatValue[key]) {
+    return memoizeFormatValue[key][value];
+  }
   if (isNaN(+value)) {
-    return value;
+    result = value;
+  } else if (params && params.units) {
+    result = math.unit(+value, params.units).format(NumberFormat);
+  } else {
+    result = math.format(+value, NumberFormat);
   }
-  if (params && params.units) {
-    return math.unit(+value, params.units).format(NumberFormat);
+  if (memoizeFormatValue._count > memoizeFormatValue._maxcount) {
+    memoizeFormatValue = {_count: 0, _maxcount: memoizeFormatValue._maxcount};
   }
-  return math.format(+value, NumberFormat);
+  if (!(key in memoizeFormatValue)) {
+    memoizeFormatValue[key] = {};
+  }
+  memoizeFormatValue[key][value] = result;
+  memoizeFormatValue._count += 1;
+  return result;
 }
 
 /**

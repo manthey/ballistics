@@ -160,6 +160,36 @@ export default {
     this.fetchReferences();
     this.fetchParameters();
     this.$nextTick(this.updateMenu);
+
+    /* Use router for all appropriate links.  See
+     * dennisreimann.de/articles/delegating-html-links-to-vue-router.html */
+    window.addEventListener('click', event => {
+      const { target } = event;
+      if (target && target.matches("a:not([href*='://'])") && target.href) {
+        const { altKey, ctrlKey, metaKey, shiftKey, button, defaultPrevented } = event;
+        if (metaKey || altKey || ctrlKey || shiftKey) {
+          return;
+        }
+        if (defaultPrevented) {
+          return;
+        }
+        if (button !== undefined && button !== 0) {
+          return;
+        }
+        if (target && target.getAttribute) {
+          const linkTarget = target.getAttribute('target');
+          if (/\b_blank\b/i.test(linkTarget)) {
+            return;
+          }
+        }
+        const url = new URL(target.href);
+        const to = url.pathname;
+        if (window.location.pathname !== to && event.preventDefault) {
+          event.preventDefault();
+          this.$router.push(to);
+        }
+      }
+    })
   },
   watch: {
     $route(to) {

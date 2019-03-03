@@ -341,6 +341,7 @@ if __name__ == '__main__':  # noqa - mccabe
     outputPath = 'results'
     reverse = False
     timeLimit = None
+    timeLimitFile = None
     verbose = 0
     help = False
     for arg in sys.argv[1:]:
@@ -359,7 +360,9 @@ if __name__ == '__main__':  # noqa - mccabe
             if 'multifile' in arg:
                 multiFile = True
         elif arg.startswith('--limit='):
-            timeLimit = float(arg.split('=', 1)[1])
+            timeLimit = float(arg.split('=', 1)[1].split(',')[0])
+            if ',' in arg:
+                timeLimitFile = arg.split(',', 1)[1]
         elif arg.startswith('--out='):
             outputPath = os.path.abspath(os.path.expanduser(
                 arg.split('=', 1)[1]))
@@ -377,7 +380,7 @@ if __name__ == '__main__':  # noqa - mccabe
             not os.path.isdir(outputPath)):
         print("""Process yml and md files using the ballistics code.
 
-Syntax: process.py --out=(path) --all --reverse -v --limit=(seconds)
+Syntax: process.py --out=(path) --all --reverse -v --limit=(seconds)[,(path)]
         --multi|--multifile|--multicase[=(number of processes)]
         --arg=(key)=(value) (input files ...)
 
@@ -389,7 +392,8 @@ is used.  The default for input files is 'data'.
   --arg=time_delta=0.005).
 --limit doesn't start processing a file if the time limit has been exceeded.
   Files that are started are still finished.  If multiprocessing per file, this
-  will exit more promptly.
+  will exit more promptly.  If a path is specified and the process runs out of
+  time, an file is created at that path.
 --multi runs parallel processes.  This uses the number of processors available
   unless a number is specified.  --multifile runs a process per input file,
   --multicase runs a process per ballistics case.
@@ -404,10 +408,12 @@ is used.  The default for input files is 'data'.
         pool = get_multiprocess_pool(multi)
     else:
         pool = None
+    reachedTimeLimit = False
     try:
         if not multi or not multiFile:
             for file in files:
                 if timeLimit and time.time() - starttime > timeLimit:
+                    reachedTimeLimit = True
                     print('Cancelled due to time limit')
                     break
                 read_and_process_file(file, outputPath, allFiles, verbose,
@@ -423,6 +429,7 @@ is used.  The default for input files is 'data'.
             task = pool.map_async(mapfunc, files, 1)
             while not task.ready():
                 if timeLimit and time.time() - starttime > timeLimit:
+                    reachedTimeLimit = True
                     print('Cancelled due to time limit')
                     pool.terminate()
                     break
@@ -437,5 +444,8 @@ is used.  The default for input files is 'data'.
             except Exception:
                 pass
         print('Cancelled via keyboard interrupt')
+    if timeLimitFile and reachedTimeLimit:
+        with open(timeLimitFile, 'a'):
+            os.utime(timeLimitFile, None)
     if verbose >= 1:
         print('Total computation time: %4.2f s' % (time.time() - starttime))
