@@ -50,7 +50,7 @@ $\Delta x_{i_4} = \left(v_{x_i}+\Delta v_{x_{i_3}}\right) \Delta t$ &#x00a0;&#x0
 $x_{i+1} = x_i + \dfrac{\Delta x_{i_1} + 2\Delta x_{i_2} + 2\Delta x_{i_3} + \Delta x_{i_4}}{6}$ &#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0; $v_{x_{i+1}} = v_{x_i} + \dfrac{\Delta v_{x_{i_1}} + 2\Delta v_{x_{i_2}} + 2\Delta v_{x_{i_3}} + \Delta v_{x_{i_4}}}{6}$
 $y_{i+1} = y_i + \dfrac{\Delta y_{i_1} + 2\Delta y_{i_2} + 2\Delta y_{i_3} + \Delta y_{i_4}}{6}$ &#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0; $v_{y_{i+1}} = v_{y_i} + \dfrac{\Delta v_{y_{i_1}} + 2\Delta v_{y_{i_2}} + 2\Delta v_{y_{i_3}} + \Delta v_{y_{i_4}}}{6}$
 
-In general, a time step of 10 to 50 milliseconds was used for most results.  Here is a calculation using some data from [1742](/references?refkey=report1742).  The power density of the powder is computed using both the Runge-Kutta and the simple method, each using a time step ranging from 1 s down to 0.1 ms for the Runge-Kutta method and down to 0.002 ms for the simple method.
+In general, a time step of 10 to 50 milliseconds was used for most results.  Here is a calculation using some data from [1742](/plot?filter=d.key%3D%3D'report1742'&pointkey=report1742-0).  The power density of the powder is computed using both the Runge-Kutta and the simple method, each using a time step ranging from 1 s down to 0.1 ms for the Runge-Kutta method and down to 0.002 ms for the simple method.
 
 The following table shows the power density that was calculated, along with the time it took for a computer to make the calculations.
 
@@ -149,6 +149,15 @@ Selected points were digitized from each of these graphs.  From these points, th
 
 Because the available data on the effect of surface roughness is very poor, no attempt has been made to model it.  In general, the projectiles used are relatively smooth.  Any roughness they have tends to be irregular.  Often the roughness is not reported, though sometimes adjectives such as "smooth" are used.  It is probably that excluding roughness effects introduces less error than trying to include them.
 
+In comparing different drag models, the results differ by a few percent for the first three.  Henderson differs much more greatly.  There is enough variation in other environmental effects, that it is difficult to determine which model is most accurate.  The following table uses a test from [1742](/plot?filter=d.key%3D%3D'report1742'&pointkey=report1742-0).  Miller has been used in all other calculations.
+
+Drag Method | Power per Mass (J/kg)
+--- | ---
+[Miller](/references?refkey=miller1979) | 407885
+[Morrison](/references?refkey=morrison2013) | 406070
+[Collins](/references?refkey=collins2016) | 410184
+[Henderson](/references?refkey=henderson1976) | 434153
+
 #### Reynolds Number
 
 The Reynolds number is a unitless factor computed as $Re = \dfrac{\rho v L}{\mu}$, where $\rho$ is the density of the fluid the projectile is travelling through, $v$ is the magnitude of the velocity of the projectile, $L$ is the characteristic length, and $\mu$ is the dynamic viscosity of the fluid.  For a sphere, $L$ is the diameter of the sphere, $d$.  The density is the same as the atmospheric density used in computing the acceleration based on the coefficient of drag.
@@ -162,6 +171,41 @@ For atmospheric viscosity, the viscosity of dry air is combined with the viscosi
 #### Mach Number
 
 The Mach Number is the magnitude of the velocity of the projectile divided by the speed of sound in the local atmosphere.  As with the atmospheric viscosity and atmospheric density, the speed of sound is affected by the relative humidity and the temperature.  The equations presented by [Bohn](/references?refkey=bogn1988) are used, but the molar masses listed in [CIPM-2007, pp. 150-151](/references?refkey=cipm2007) are preferred since they appear to be more authoritative.
+
+## Environmental Effects
+
+Most historic tests do not record atmospheric conditions, such as temperature, pressure, or humidity.  Using a test from [1742](/plot?filter=d.key%3D%3D'report1742'&pointkey=report1742-0), here are the variations of the computed power factor based on some environmental effects:
+
+Temperature (&deg;C) | Power per Mass (J/kg)
+--- | ---
+-30 &deg;C | 411997
+-20 &deg;C | 410336
+-10 &deg;C | 409993
+0 &deg;C | 408566
+10 &deg;C | 407711
+20 &deg;C | 406874
+30 &deg;C | 406090
+40 &deg;C | 405980
+
+At warmer temperatures, a less powerful gunpowder can acheive the same range as a stronger powder at low temperatures.
+
+Pressure (bar) | Power per Mass (J/kg)
+--- | ---
+0.83 | 404088
+0.9 | 405208
+0.98 | 406660
+1 | 407634
+1.05 | 407982
+
+Unsurprisingly, a weaker powder can obtain a longer range at low pressure.
+
+Relative Humidity (%) | Power per Mass (J/kg)
+--- | ---
+0% | 407287
+50% | 407273
+100% | 407258
+
+The effects of humidty are small, but a ball is thrown mildly further in humid weather.
     </vue-markdown>
   </div>
 </template>

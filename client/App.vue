@@ -175,10 +175,7 @@ specific graphs with commentary
   medium
   large
 techniques
-  computation methods
-  accuracy
+  accuracy based on reported precision
 github
-
-switch to own menu component and I can get rid of element-ui.  See luxbar
 */
 </script>
