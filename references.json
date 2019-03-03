@@ -21,18 +21,21 @@
  },
  "berthelot1872": {
   "cms": "Berthelot, Marcelin.  <i>Sur la force de la poudre et mati\u00e8re explosives, Deuxi\u00e8me \u00c9dition</i>  Paris: Gauthier-Villars, 1872.",
+  "details": "<p>This calculates the chemical reactions of gunpowder.  Near the end there is a table of the heat output from a calorimeter.  In some ways this is the maximum amount of power that could be liberated from the gunpowder, as none of the energy escapes.  However, the available oxygen in the calorimeter is not reflective of actual available oxygen from air in a mortar or gun, and, since the gunpowder isn't expanding in the same manner, other differences exist.</p>",
   "key": "berthelot1872",
   "ref": "Berthelot, 1872",
   "summary": "A chemical analysis of explosives with some measurements of released heat."
  },
  "berthelot1892": {
   "cms": "Berthelot, M., C. Napier Hake, trans., and William MacNab, trans.  <i>Explosives and Their Power: translated and condensed from the French of M. Berthelot.</i>  London: John Murray, 1892.",
+  "details": "<p>This includes a variety of sources of measuring the heat output of gunpowder using sealed calorimeters.  In some ways this is the maximum amount of power that could be liberated from the gunpowder, as none of the energy escapes.  However, the available oxygen in the calorimeter is not reflective of actual available oxygen from air in a mortar or gun, and, since the gunpowder isn't expanding in the same manner, other differences exist.</p>\n<p>The authors find that the theoretical heat produced by gunpowder with pure carbon (rather than charcoal) would be lower than the realized values.</p>",
   "key": "berthelot1892",
   "ref": "Berthelot, 1892",
   "summary": "A chemical analysis of explosives with some measurements of released heat."
  },
  "blondel1683": {
   "cms": "Blondel. <i>L'Art de Jetter les Bombes.</i>  Paris: Nicholas Langlois: 1683",
+  "details": "<p>This work compares a variety of theories of ballistics with the main focus being on throwing shells.  The author points out the absurdity of others' theories and promulgates his own, which is a variation of using a parabolic path.  He shows how this applies when the target is at a different elevation.</p>\n<p>As part of showing other theories, he presents a theoretical table of ranges with varying angles of projection, plus a variety of results from different sources.</p>\n<p>The author considers air resistance (see p. 336), but doesn't use it in the calculations.</p>",
   "key": "blondel1683",
   "ref": "Blondel, 1683",
   "summary": "A book on throwing shells comparing various ballistic theories."
