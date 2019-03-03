@@ -544,8 +544,8 @@ data:
                 range: 29103 ftit
       -
         desc2: "Spingarda"
+        mass: 3 ozit
         diameter: 7 punti 5 atomi
-        mass: 70 italiandenari
         charge: 30 italiandenari
         data:
           -
