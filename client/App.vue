@@ -54,7 +54,7 @@ Vue.component('vue-markdown', VueMarkdown);
 export default {
   name: 'app',
   router: new VueRouter({
-    mode: 'history',
+    // mode: 'history',
     base: __dirname,
     routes: [{
       path: '/main',

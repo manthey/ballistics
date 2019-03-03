@@ -35,5 +35,5 @@ module.exports = {
       title: 'Ballistics'
     }
   },
-  publicPath: ''
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/'
 }

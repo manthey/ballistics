@@ -28,7 +28,8 @@ script:
   - if [ ! -f stopped.txt ]; then
       export COMPLETE="true";
     fi
-  - ls -l
+  - ls -l client/static
+  - ls -l dist
 # https://docs.travis-ci.com/user/deployment/pages/
 deploy:
   condition: $COMPLETE = "true"
