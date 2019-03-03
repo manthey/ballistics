@@ -47,8 +47,6 @@ let ParameterList = [{
   }, {
     key: 'given_charge_note'
   }, {
-    key: 'charge_note',
-  }, {
     key: 'given_diameter',
     primary: true
   }, {

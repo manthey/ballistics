@@ -2718,7 +2718,7 @@ data:
         range: 88 yds
   -
     ref2: "p. 169"
-    desc: "This is a comparison of windage taken fron d'Antoni's \"A Treatise on Gunpowder and Firearms\" of 1789.  In that work, the translator says (p. xxxiii) that all units have been converted to English units.  Despite this, some units are unconverted, such as gun weights.  The diameter units are too small to be Sardinia atomi, so for now, the material and weight are being used to compute a diameter."
+    desc: "This is a comparison of windage taken from d'Antoni's \"A Treatise on Gunpowder and Firearms\" of 1789.  In that work, the translator says (p. xxxiii) that all units have been converted to English units.  Despite this, some units are unconverted, such as gun weights.  The diameter units are too small to be Sardinia atomi, so for now, the material and weight are being used to compute a diameter."
     date: "1789"
     charge: 4 lb 2 oz
     angle: 0 deg

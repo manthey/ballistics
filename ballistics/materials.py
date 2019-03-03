@@ -50,8 +50,8 @@ def determine_material(state, verbosity=0):
      are known.  If all three are known or less than two are known, this
      does nothing.  If material is given, but not material_density,
      material_density is taken from the Materials table.  If mass and diam are
-     provided, projectile_density is computed and the closest material is
-     listed as a match (though it may not be).
+     provided, projectile_density is computed and, if no material is given, the
+     closest material is listed as a match (though it may not be).
     Enter: state: a dictionary of the current state.  Possibly modified.
            verbosity: if high enough, log additional information.
     Exit:  state: the state with the third value added, if appropriate."""
@@ -77,18 +77,19 @@ def determine_material(state, verbosity=0):
         else:
             state['diam'] = 2 * (float(state['mass']) / (
                 state['material_density'] * 4./3 * math.pi))**(1./3)
-    if 'material' not in state and 'diam' in state and 'mass' in state:
+    if 'diam' in state and 'mass' in state:
         # determine material
         state['projectile_density'] = float(state['mass'])/(
             4./3 * math.pi * (state['diam']*0.5)**3)
-        density_delta = None
-        for (names, dens, mindens, maxdens, desc) in MaterialsTable:
-            if (state['projectile_density'] >= mindens and
-                    state['projectile_density'] <= maxdens):
-                delta = abs(state['projectile_density']-dens)
-                if density_delta is None or delta < density_delta:
-                    density_delta = delta
-                    state['material'] = names[0]
+        if 'material' not in state:
+            density_delta = None
+            for (names, dens, mindens, maxdens, desc) in MaterialsTable:
+                if (state['projectile_density'] >= mindens and
+                        state['projectile_density'] <= maxdens):
+                    delta = abs(state['projectile_density']-dens)
+                    if density_delta is None or delta < density_delta:
+                        density_delta = delta
+                        state['material'] = names[0]
     return state
 
 

@@ -370,7 +370,7 @@ data:
     desc: "Experiments by Capt. Jardine at Gibralter intend to compare against theories"
     data:
       -
-        diameter: 6.35 in
+        desc2: "diameter of powder chamber 6.35 in"
         mass: 90 lb
         data:
           -
@@ -420,7 +420,7 @@ data:
               - range: 251 yd
               - range: 263 yd
       -
-        diameter: 4.5 in
+        desc2: "diameter of powder chamber 4.5 in"
         mass: 48 lb
         data:
           -

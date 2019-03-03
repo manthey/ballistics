@@ -204,24 +204,26 @@ def calculate_cases_results(hashval, state, points, results):
             del res['hash']
 
 
-def get_multiprocess_pool(multi):
+def get_multiprocess_pool(multi, verbose=0):
     """
     Get a multiprocessing pool.
 
     Enter: multi: the number of processors to use to True to use all logical
                   processors.  Since the process tends to be computation-bound,
                   using hyperthreading is not particularly advantageous.
+           verbose: verbosity for the ballistics program
     Exit:  pool: a multiprocess pool.
     """
-    pool = multiprocessing.Pool(
-        processes=psutil.cpu_count(True) if multi is True else multi,
-        initializer=worker_init)
+    poolsize = psutil.cpu_count(True) if multi is True else multi
+    pool = multiprocessing.Pool(processes=poolsize, initializer=worker_init)
     priorityLevel = (psutil.BELOW_NORMAL_PRIORITY_CLASS
                      if sys.platform == 'win32' else 10)
     parent = psutil.Process()
     parent.nice(priorityLevel)
     for child in parent.children():
         child.nice(priorityLevel)
+    if verbose >= 2:
+        print('Running with a process pool of %d' % poolsize)
     return pool
 
 
@@ -405,7 +407,7 @@ is used.  The default for input files is 'data'.
         sys.exit(0)
     starttime = time.time()
     if multi:
-        pool = get_multiprocess_pool(multi)
+        pool = get_multiprocess_pool(multi, verbose)
     else:
         pool = None
     reachedTimeLimit = False

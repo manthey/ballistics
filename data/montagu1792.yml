@@ -4,7 +4,7 @@ ref: "Montagu, 1792"
 cms: "Montagu, George, <i>The Sportsman's Directory, or Tractate on Gunpowder</i>, London: R. Faulder, 1792"
 summary: "The author tests different powders with the desire to find the best sporting powder."
 date: "1792"
-charge_note: "I believe that the author is using Troy ounces and drams, as on p. 39 he states that 'I loaded the same mortar as in the last, but with one dram more of powder, this being three drams', where ther previous account used 1/4 ounce."
+charge_note: "I believe that the author is using Troy ounces and drams, as on p. 39 he states that 'I loaded the same mortar as in the last, but with one dram more of powder, this being three drams', where the previous account used 1/4 ounce."
 data:
   -
     ref2: "p. 5-6"
@@ -401,4 +401,3 @@ data:
         desc2: "The same quantity of powder as the last, but finer grains of the same powder, with the same chump on the top"
         charge: 2.2 ozt
         range: 320 yds
-

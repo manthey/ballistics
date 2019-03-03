@@ -22,21 +22,19 @@ script:
   - ls -l $HOME/results
   - ls -l data/*.yml
   - npm run lint
-  - python process.py --multi -v -v --limit=150,stopped.txt --arg=time_delta=0.025 --out=$HOME/results
+  - python -u process.py --multi -v -v --limit='150,stopped.txt' --arg=time_delta=0.025 --out=$HOME/results
   - python util/combine.py --results=$HOME/results --out=client/static
   - npm run build
   - if [ ! -f stopped.txt ]; then
       export COMPLETE="true";
     fi
-  - ls -l client/static
-  - ls -l dist
 # https://docs.travis-ci.com/user/deployment/pages/
 deploy:
-  condition: $COMPLETE = "true"
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
   local-dir: dist
   on:
+    condition: $COMPLETE = "true"
     branch: master
