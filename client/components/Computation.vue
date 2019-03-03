@@ -12,7 +12,7 @@ See the [GitHub repository](https://github.com/manthey/ballistics) for the sourc
 ## Basic Algorithm
     </vue-markdown>
     <figure>
-      <img src="/accelfig.gif"/>
+      <img src="accelfig.gif"/>
       <figcaption>Acceleration on a Projectile</figcaption>
     </figure>
     <vue-markdown>
@@ -50,7 +50,7 @@ $\Delta x_{i_4} = \left(v_{x_i}+\Delta v_{x_{i_3}}\right) \Delta t$ &#x00a0;&#x0
 $x_{i+1} = x_i + \dfrac{\Delta x_{i_1} + 2\Delta x_{i_2} + 2\Delta x_{i_3} + \Delta x_{i_4}}{6}$ &#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0; $v_{x_{i+1}} = v_{x_i} + \dfrac{\Delta v_{x_{i_1}} + 2\Delta v_{x_{i_2}} + 2\Delta v_{x_{i_3}} + \Delta v_{x_{i_4}}}{6}$
 $y_{i+1} = y_i + \dfrac{\Delta y_{i_1} + 2\Delta y_{i_2} + 2\Delta y_{i_3} + \Delta y_{i_4}}{6}$ &#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0; $v_{y_{i+1}} = v_{y_i} + \dfrac{\Delta v_{y_{i_1}} + 2\Delta v_{y_{i_2}} + 2\Delta v_{y_{i_3}} + \Delta v_{y_{i_4}}}{6}$
 
-In general, a time step of 10 to 50 milliseconds was used for most results.  Here is a calculation using some data from [1742](/plot?filter=d.key%3D%3D'report1742'&pointkey=report1742-0).  The power density of the powder is computed using both the Runge-Kutta and the simple method, each using a time step ranging from 1 s down to 0.1 ms for the Runge-Kutta method and down to 0.002 ms for the simple method.
+In general, a time step of 10 to 50 milliseconds was used for most results.  Here is a calculation using some data from [1742](plot?filter=d.key%3D%3D'report1742'&pointkey=report1742-0).  The power density of the powder is computed using both the Runge-Kutta and the simple method, each using a time step ranging from 1 s down to 0.1 ms for the Runge-Kutta method and down to 0.002 ms for the simple method.
 
 The following table shows the power density that was calculated, along with the time it took for a computer to make the calculations.
 
@@ -133,30 +133,30 @@ One of the factors in the ballistics analysis is the aerodynamic drag on a canno
 Somewhat surprisingly, despite an early focus on drag on spherical projectiles, there doesn't appear to be a succinct summary of these factors and the expected accuracy. Rather, many fluid dynamics text books present a beautifully smooth curve that are solely based on the Reynolds Number.  Others show alternate curves for different surface roughness, or for different Mach numbers.  No single source that combines all three factors has been located.
     </vue-markdown>
     <figure>
-      <img src="/coefofdrag.gif"/>
+      <img src="coefofdrag.gif"/>
       <figcaption>
         <vue-markdown>
-Various graphs used for the Coefficient of Drag as a function of the Reynolds and Mach Numbers. The two one the left are from [Munson](/references?refkey=munson1988). The two on the right are from [Miller and Bailey](/references?refkey=miller1979).
+Various graphs used for the Coefficient of Drag as a function of the Reynolds and Mach Numbers. The two one the left are from [Munson](references?refkey=munson1988). The two on the right are from [Miller and Bailey](references?refkey=miller1979).
         </vue-markdown>
       </figcaption>
     </figure>
     <vue-markdown>
 Furthermore, most graphs only show data for different Mach numbers for a very limited range of Reynolds numbers.  Sometimes formulas are given to try to separated air resistance based on the Reynolds number from wave drag based on the Mach number.
 
-There is one reference that has data for both Reynolds number and Mach number in the range that is of primary interest in.  This is a paper by [Miller and Bailey](/references?refkey=miller1979) from 1979.  Their graphs cover the range from a Reynolds number of 1e4 to 1e7 and Mach numbers from 0 to 3.0.  While this includes most of the range of actual data, when projectiles are travelling slowly, the Reynolds Number is less than 1e4, and, for some cases, the initial velocity is greater than Mach 3.  This data was supplemented with data from a standard text on fluid mechanics ([Munson, 1998, pp. 600, 709](/references?refkey=munson1988)).
+There is one reference that has data for both Reynolds number and Mach number in the range that is of primary interest in.  This is a paper by [Miller and Bailey](references?refkey=miller1979) from 1979.  Their graphs cover the range from a Reynolds number of 1e4 to 1e7 and Mach numbers from 0 to 3.0.  While this includes most of the range of actual data, when projectiles are travelling slowly, the Reynolds Number is less than 1e4, and, for some cases, the initial velocity is greater than Mach 3.  This data was supplemented with data from a standard text on fluid mechanics ([Munson, 1998, pp. 600, 709](references?refkey=munson1988)).
 
 Selected points were digitized from each of these graphs.  From these points, the ballistic program interpolates the coefficient of drag.  Several interpolation methods were tried, such a natural cubic splines.  However, due to the nature of the drag curve (specifically, the sharp 'hook' in the graph), a tensioned hermitic spline yielded the best results for interpolating based on Reynolds number along a Mach number curve.  A linear interpolation is used between Mach number curves.
 
 Because the available data on the effect of surface roughness is very poor, no attempt has been made to model it.  In general, the projectiles used are relatively smooth.  Any roughness they have tends to be irregular.  Often the roughness is not reported, though sometimes adjectives such as "smooth" are used.  It is probably that excluding roughness effects introduces less error than trying to include them.
 
-In comparing different drag models, the results differ by a few percent for the first three.  Henderson differs much more greatly.  There is enough variation in other environmental effects, that it is difficult to determine which model is most accurate.  The following table uses a test from [1742](/plot?filter=d.key%3D%3D'report1742'&pointkey=report1742-0).  Miller has been used in all other calculations.
+In comparing different drag models, the results differ by a few percent for the first three.  Henderson differs much more greatly.  There is enough variation in other environmental effects, that it is difficult to determine which model is most accurate.  The following table uses a test from [1742](plot?filter=d.key%3D%3D'report1742'&pointkey=report1742-0).  Miller has been used in all other calculations.
 
 Drag Method | Power per Mass (J/kg)
 --- | ---
-[Miller](/references?refkey=miller1979) | 407885
-[Morrison](/references?refkey=morrison2013) | 406070
-[Collins](/references?refkey=collins2016) | 410184
-[Henderson](/references?refkey=henderson1976) | 434153
+[Miller](references?refkey=miller1979) | 407885
+[Morrison](references?refkey=morrison2013) | 406070
+[Collins](references?refkey=collins2016) | 410184
+[Henderson](references?refkey=henderson1976) | 434153
 
 #### Reynolds Number
 
@@ -164,17 +164,17 @@ The Reynolds number is a unitless factor computed as $Re = \dfrac{\rho v L}{\mu}
 
 Formulae are used to take into account the effect of relative humidity on both atmospheric density and atmospheric viscosity.
 
-For atmospheric density, the formulas are taken from Picard, et al. in [CIPM-2007](/references?refkey=cipm2007).  This formula is dependent on temperature, relative humidity, and atmospheric pressure.  Unless explicitly specified, atmospheric pressure is computed based on the elevation above sea level using the formula presented in [Munson, 1998, p. 51](/references?refkey=munson1988).
+For atmospheric density, the formulas are taken from Picard, et al. in [CIPM-2007](references?refkey=cipm2007).  This formula is dependent on temperature, relative humidity, and atmospheric pressure.  Unless explicitly specified, atmospheric pressure is computed based on the elevation above sea level using the formula presented in [Munson, 1998, p. 51](references?refkey=munson1988).
 
-For atmospheric viscosity, the viscosity of dry air is combined with the viscosity of water vapor using a simple equation presented in [Melling, et al., p. 1115](/references?refkey=melling1997).  The equations in [Kayoda, Matsunaga, and Nagashima, p. 956](/references?refkey=kayoda1985) are used to compute the viscosity of dry air at the current temperature and density.  The equations in [Sengers and Kamgar-Parsi, pp. 186-187](/references?refkey=sengers1984) are used to compute the viscosity of water vapor at the current temperature and density .  The atmospheric viscosity is a function of just temperature, density, and relative humidity.
+For atmospheric viscosity, the viscosity of dry air is combined with the viscosity of water vapor using a simple equation presented in [Melling, et al., p. 1115](references?refkey=melling1997).  The equations in [Kayoda, Matsunaga, and Nagashima, p. 956](references?refkey=kayoda1985) are used to compute the viscosity of dry air at the current temperature and density.  The equations in [Sengers and Kamgar-Parsi, pp. 186-187](references?refkey=sengers1984) are used to compute the viscosity of water vapor at the current temperature and density .  The atmospheric viscosity is a function of just temperature, density, and relative humidity.
 
 #### Mach Number
 
-The Mach Number is the magnitude of the velocity of the projectile divided by the speed of sound in the local atmosphere.  As with the atmospheric viscosity and atmospheric density, the speed of sound is affected by the relative humidity and the temperature.  The equations presented by [Bohn](/references?refkey=bogn1988) are used, but the molar masses listed in [CIPM-2007, pp. 150-151](/references?refkey=cipm2007) are preferred since they appear to be more authoritative.
+The Mach Number is the magnitude of the velocity of the projectile divided by the speed of sound in the local atmosphere.  As with the atmospheric viscosity and atmospheric density, the speed of sound is affected by the relative humidity and the temperature.  The equations presented by [Bohn](references?refkey=bogn1988) are used, but the molar masses listed in [CIPM-2007, pp. 150-151](references?refkey=cipm2007) are preferred since they appear to be more authoritative.
 
 ## Environmental Effects
 
-Most historic tests do not record atmospheric conditions, such as temperature, pressure, or humidity.  Using a test from [1742](/plot?filter=d.key%3D%3D'report1742'&pointkey=report1742-0), here are the variations of the computed power factor based on some environmental effects:
+Most historic tests do not record atmospheric conditions, such as temperature, pressure, or humidity.  Using a test from [1742](plot?filter=d.key%3D%3D'report1742'&pointkey=report1742-0), here are the variations of the computed power factor based on some environmental effects:
 
 Temperature (&deg;C) | Power per Mass (J/kg)
 --- | ---

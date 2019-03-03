@@ -78,7 +78,7 @@ export default {
     showTable() {
       let route = this.$router.currentRoute;
       this.$router.push({
-        path: '/table',
+        path: 'table',
         query: Object.assign({}, route.query)
       });
     }

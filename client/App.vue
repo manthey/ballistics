@@ -2,19 +2,19 @@
   <div id="app">
     <div class="cssmenu">
       <ul>
-        <li><router-link :to="{path: '/'}">Home</router-link></li>
-        <li><router-link :to="{path: '/plot'}">Plot</router-link>
+        <li><router-link :to="{path: 'main'}">Home</router-link></li>
+        <li><router-link :to="{path: 'plot'}">Plot</router-link>
           <ul>
             <li v-for="(item, i) in plots" :key="'plotmenu' + i"><router-link :to="{path: item.path, query: item.query}" :title="item.tooltip">{{ item.text }}</router-link></li>
           </ul>
         </li>
-        <li><router-link :to="{path: '/table'}">Table</router-link>
+        <li><router-link :to="{path: 'table'}">Table</router-link>
           <ul>
             <li v-for="(item, i) in tables" :key="'tablemenu' + i"><router-link :to="{path: item.path, query: item.query}" :title="item.tooltip">{{ item.text }}</router-link></li>
           </ul>
         </li>
-        <li><router-link :to="{path: '/computation'}">Computation</router-link></li>
-        <li><router-link :to="{path: '/references'}">References</router-link></li>
+        <li><router-link :to="{path: 'computation'}">Computation</router-link></li>
+        <li><router-link :to="{path: 'references'}">References</router-link></li>
       </ul>
     </div>
     <router-view class="view" :plotdata="plotdata" :references="references" :parameters="parameters"></router-view>
@@ -57,7 +57,7 @@ export default {
     mode: 'history',
     base: __dirname,
     routes: [{
-      path: '/',
+      path: '/main',
       component: MainPage
     }, {
       path: '/computation',
@@ -84,7 +84,7 @@ export default {
       })
     }, {
       path: '*',
-      redirect: '/'
+      redirect: '/main'
     }]
   }),
   data() {
@@ -95,23 +95,23 @@ export default {
       plots: [{
           index: 'plot-full',
           text: 'Full Data',
-          path: '/plot',
+          path: 'plot',
         }, {
           index: 'plot-preferred',
           text: 'Preferred Experiments',
           tooltip: "Exclude theory, calorimeter, calculated, final_angle, and time techniques",
-          path: '/plot',
+          path: 'plot',
           query: {filter: "['time','theory','calorimeter','calculated','final_angle'].indexOf(d.technique)<0"}
         }],
       tables: [{
           index: 'table-full',
           text: 'Full Data',
-          path: '/table',
+          path: 'table',
         }, {
           index: 'table-preferred',
           text: 'Preferred Experiments',
           tooltip: "Exclude theory, calorimeter, calculated, final_angle, and time techniques",
-          path: '/table',
+          path: 'table',
           query: {filter: "['time','theory','calorimeter','calculated','final_angle'].indexOf(d.technique)<0"}
         }]
     };
@@ -137,6 +137,10 @@ export default {
       to = to || this.$router.currentRoute;
       let menu = this.$children.filter(child => child.$options._componentTag === 'router-link'),
           best, okay;
+      to = Object.assign({}, to);
+      if (to.path.substr(0, 1) === '/') {
+        to.path = to.path.substr(1);
+      }
       menu.forEach(menu => {
         if (best === undefined && to === menu.to) {
           best = menu;

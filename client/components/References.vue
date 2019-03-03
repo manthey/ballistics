@@ -22,9 +22,9 @@
               <td>{{ row.summary || '' }}</td>
               <td @click.stop="">
                 <template v-if="row._hasData">
-                  <router-link :to="{path: '/plot', query: {filter: 'd.key===\'' + row.key + '\''}}" class="reference-link">Plot</router-link>
+                  <router-link :to="{path: 'plot', query: {filter: 'd.key===\'' + row.key + '\''}}" class="reference-link">Plot</router-link>
                   {{" "}}
-                  <router-link :to="{path: '/table', query: {filter: 'd.key===\'' + row.key + '\''}}" class="reference-link">Table</router-link>
+                  <router-link :to="{path: 'table', query: {filter: 'd.key===\'' + row.key + '\''}}" class="reference-link">Table</router-link>
                 </template>
               </td>
             </tr>
@@ -125,7 +125,7 @@ export default {
           refkey = row.getAttribute('refkey');
       let route = this.$router.currentRoute;
       this.$router.push({
-        path: '/references',
+        path: 'references',
         query: Object.assign({}, route.query, {refkey: refkey})
       });
     },
