@@ -1,0 +1,863 @@
+{
+ "T": {
+  "count": 2697,
+  "key": "T",
+  "max": 309.8166666666667,
+  "min": 270.9277777777778,
+  "numeric": 2697,
+  "unique": 76
+ },
+ "Twb": {
+  "count": 1796,
+  "key": "Twb",
+  "max": 300.9277777777778,
+  "min": 272.5944444444445,
+  "numeric": 1796,
+  "unique": 41
+ },
+ "atmospheric_density": {
+  "count": 29,
+  "key": "atmospheric_density",
+  "max": 1.2869999999999997,
+  "min": 1.187,
+  "numeric": 29,
+  "unique": 2,
+  "values": {
+   "1.187": 20,
+   "1.2869999999999997": 9
+  }
+ },
+ "ax": {
+  "count": 5951,
+  "key": "ax",
+  "max": 27636331447.181004,
+  "min": -6025.425591285605,
+  "numeric": 5951,
+  "unique": 5434
+ },
+ "ay": {
+  "count": 5951,
+  "key": "ay",
+  "max": 6490755875.419712,
+  "min": -6033.942514614711,
+  "numeric": 5951,
+  "unique": 5433
+ },
+ "charge": {
+  "count": 7264,
+  "key": "charge",
+  "max": 31.751465900000003,
+  "min": 0.0009719836500000002,
+  "numeric": 7264,
+  "unique": 465
+ },
+ "charge_note": {
+  "count": 86,
+  "key": "charge_note",
+  "unique": 1
+ },
+ "computation_time": {
+  "count": 7376,
+  "key": "computation_time",
+  "max": 0.45000000000000284,
+  "min": 0.0,
+  "numeric": 7376,
+  "unique": 56
+ },
+ "date": {
+  "count": 7376,
+  "key": "date",
+  "unique": 333
+ },
+ "date_filled": {
+  "count": 7376,
+  "key": "date_filled",
+  "unique": 328
+ },
+ "desc": {
+  "count": 7097,
+  "key": "desc",
+  "unique": 1391
+ },
+ "diam": {
+  "count": 7264,
+  "key": "diam",
+  "max": 0.33020000000000005,
+  "min": 0.006350000000000001,
+  "numeric": 7264,
+  "unique": 235
+ },
+ "final_angle": {
+  "count": 5,
+  "key": "final_angle",
+  "max": 61.5,
+  "min": 51.0,
+  "numeric": 5,
+  "unique": 4,
+  "values": {
+   "51.0": 1,
+   "53.0": 1,
+   "60.99999999999999": 1,
+   "61.5": 2
+  }
+ },
+ "final_density_T": {
+  "count": 5928,
+  "key": "final_density_T",
+  "max": 309.8166666666667,
+  "min": 270.9277777777778,
+  "numeric": 5928,
+  "unique": 77
+ },
+ "final_density_density": {
+  "count": 5928,
+  "key": "final_density_density",
+  "max": 1.3169788366184576,
+  "min": 1.102078226906736,
+  "numeric": 5928,
+  "unique": 5430
+ },
+ "final_density_h": {
+  "count": 5928,
+  "key": "final_density_h",
+  "max": 0.9999013765372261,
+  "min": 0,
+  "numeric": 5928,
+  "unique": 115
+ },
+ "final_density_pressure": {
+  "count": 5928,
+  "key": "final_density_pressure",
+  "max": 106392.97981348325,
+  "min": 91122.55851771799,
+  "numeric": 5928,
+  "unique": 5430
+ },
+ "final_density_psv": {
+  "count": 5928,
+  "key": "final_density_psv",
+  "max": 6168.922273788103,
+  "min": 519.3066681356044,
+  "numeric": 5928,
+  "unique": 77
+ },
+ "final_density_xv": {
+  "count": 5928,
+  "key": "final_density_xv",
+  "max": 0.041942526456680146,
+  "min": 0.0,
+  "numeric": 5928,
+  "unique": 1458
+ },
+ "final_density_y": {
+  "count": 5928,
+  "key": "final_density_y",
+  "max": 886.1523880128022,
+  "min": -12.014835501436721,
+  "numeric": 5928,
+  "unique": 5433
+ },
+ "final_drag_Mn": {
+  "count": 5928,
+  "key": "final_drag_Mn",
+  "max": 2.4369133186770715,
+  "min": 0.002903360522238845,
+  "numeric": 5928,
+  "unique": 5433
+ },
+ "final_drag_Re": {
+  "count": 5928,
+  "key": "final_drag_Re",
+  "max": 7866812.538992016,
+  "min": 8938.868761098269,
+  "numeric": 5928,
+  "unique": 5433
+ },
+ "final_drag_cd": {
+  "count": 5928,
+  "key": "final_drag_cd",
+  "max": 0.9957823421373316,
+  "min": 0.07808119489406341,
+  "numeric": 5928,
+  "unique": 5433
+ },
+ "final_drag_critical_Re": {
+  "count": 5928,
+  "key": "final_drag_critical_Re",
+  "max": 1000000.0,
+  "min": 200008.63094916777,
+  "numeric": 5928,
+  "unique": 2677
+ },
+ "final_drag_in_range": {
+  "count": 5928,
+  "key": "final_drag_in_range",
+  "max": true,
+  "min": false,
+  "numeric": 5928,
+  "unique": 2,
+  "values": {
+   "false": 1998,
+   "true": 3930
+  }
+ },
+ "final_drag_sos": {
+  "count": 5928,
+  "key": "final_drag_sos",
+  "max": 353.0565611006353,
+  "min": 330.09898453330334,
+  "numeric": 5928,
+  "unique": 1472
+ },
+ "final_height": {
+  "count": 5215,
+  "key": "final_height",
+  "max": 889.7112000000001,
+  "min": -11.85,
+  "numeric": 5215,
+  "unique": 133
+ },
+ "final_time": {
+  "count": 507,
+  "key": "final_time",
+  "max": 27.0,
+  "min": 1.0,
+  "numeric": 507,
+  "unique": 198
+ },
+ "final_velocity": {
+  "count": 2165,
+  "key": "final_velocity",
+  "max": 840.9432,
+  "min": 28.041600000000003,
+  "numeric": 2165,
+  "unique": 1081
+ },
+ "final_viscosity_mua": {
+  "count": 5928,
+  "key": "final_viscosity_mua",
+  "max": 1.90403270085756e-05,
+  "min": 1.7131965970387516e-05,
+  "numeric": 5928,
+  "unique": 5298
+ },
+ "final_viscosity_muv": {
+  "count": 1565,
+  "key": "final_viscosity_muv",
+  "max": 9.960947491441689e-06,
+  "min": 8.821115089879657e-06,
+  "numeric": 1565,
+  "unique": 1457
+ },
+ "final_viscosity_viscosity": {
+  "count": 5928,
+  "key": "final_viscosity_viscosity",
+  "max": 1.9032708945778368e-05,
+  "min": 1.7131965970387516e-05,
+  "numeric": 5928,
+  "unique": 5338
+ },
+ "given_angle": {
+  "count": 6779,
+  "key": "given_angle",
+  "unique": 179
+ },
+ "given_angle_note": {
+  "count": 513,
+  "key": "given_angle_note",
+  "unique": 10
+ },
+ "given_atmospheric_density": {
+  "count": 29,
+  "key": "given_atmospheric_density",
+  "unique": 2,
+  "values": {
+   "0.001187 g/cm/cm/cm": 20,
+   "0.001287 g/cm/cm/cm": 9
+  }
+ },
+ "given_atmospheric_density_note": {
+  "count": 9,
+  "key": "given_atmospheric_density_note",
+  "unique": 1
+ },
+ "given_charge": {
+  "count": 7264,
+  "key": "given_charge",
+  "unique": 621
+ },
+ "given_charge_note": {
+  "count": 125,
+  "key": "given_charge_note",
+  "unique": 6
+ },
+ "given_date": {
+  "count": 7376,
+  "key": "given_date",
+  "max": 1895,
+  "min": 1725,
+  "numeric": 17,
+  "unique": 337
+ },
+ "given_date_note": {
+  "count": 12,
+  "key": "given_date_note",
+  "unique": 3
+ },
+ "given_diameter": {
+  "count": 6617,
+  "key": "given_diameter",
+  "unique": 197
+ },
+ "given_diameter_note": {
+  "count": 477,
+  "key": "given_diameter_note",
+  "unique": 19
+ },
+ "given_final_angle": {
+  "count": 5,
+  "key": "given_final_angle",
+  "unique": 4,
+  "values": {
+   "51 deg": 1,
+   "53 deg": 1,
+   "61 deg": 1,
+   "61.5 deg": 2
+  }
+ },
+ "given_final_height": {
+  "count": 142,
+  "key": "given_final_height",
+  "unique": 133
+ },
+ "given_final_height_note": {
+  "count": 1,
+  "key": "given_final_height_note",
+  "unique": 1
+ },
+ "given_final_time": {
+  "count": 507,
+  "key": "given_final_time",
+  "unique": 211
+ },
+ "given_final_time_note": {
+  "count": 140,
+  "key": "given_final_time_note",
+  "unique": 2
+ },
+ "given_final_velocity": {
+  "count": 2165,
+  "key": "given_final_velocity",
+  "unique": 1093
+ },
+ "given_group": {
+  "count": 2310,
+  "key": "given_group",
+  "unique": 1084
+ },
+ "given_humidity": {
+  "count": 204,
+  "key": "given_humidity",
+  "unique": 6,
+  "values": {
+   "15%": 29,
+   "5%": 8,
+   "50%": 72,
+   "80%": 15,
+   "90%": 54,
+   "95%": 26
+  }
+ },
+ "given_humidity_note": {
+  "count": 104,
+  "key": "given_humidity_note",
+  "unique": 12
+ },
+ "given_initial_height": {
+  "count": 139,
+  "key": "given_initial_height",
+  "unique": 4,
+  "values": {
+   "17 ftit": 12,
+   "2.75 ftit": 20,
+   "30 ft": 12,
+   "5 ft": 95
+  }
+ },
+ "given_initial_height_note": {
+  "count": 55,
+  "key": "given_initial_height_note",
+  "unique": 1
+ },
+ "given_initial_velocity": {
+  "count": 1313,
+  "key": "given_initial_velocity",
+  "unique": 1002
+ },
+ "given_initial_velocity_note": {
+  "count": 2,
+  "key": "given_initial_velocity_note",
+  "unique": 2
+ },
+ "given_mass": {
+  "count": 6861,
+  "key": "given_mass",
+  "unique": 511
+ },
+ "given_mass_note": {
+  "count": 949,
+  "key": "given_mass_note",
+  "unique": 25
+ },
+ "given_material": {
+  "count": 4443,
+  "key": "given_material",
+  "unique": 6,
+  "values": {
+   "brass": 27,
+   "bronze": 6,
+   "copper": 5,
+   "cuivre": 2,
+   "iron": 3542,
+   "lead": 861
+  }
+ },
+ "given_material_density": {
+  "count": 82,
+  "key": "given_material_density",
+  "unique": 7,
+  "values": {
+   "4.841 g/cm/cm/cm": 4,
+   "4.970 g/cm/cm/cm": 6,
+   "5.363 g/cm/cm/cm": 4,
+   "7.137 g/cm/cm/cm": 8,
+   "7.149 g/cm/cm/cm": 20,
+   "7.152 g/cm/cm/cm": 20,
+   "7.199 g/cm/cm/cm": 20
+  }
+ },
+ "given_material_note": {
+  "count": 46,
+  "key": "given_material_note",
+  "unique": 2
+ },
+ "given_maxheight": {
+  "count": 4,
+  "key": "given_maxheight",
+  "unique": 4,
+  "values": {
+   "1.9 in": 1,
+   "4 in": 1,
+   "42 yds": 1,
+   "6.2 in": 1
+  }
+ },
+ "given_maxheight_note": {
+  "count": 1,
+  "key": "given_maxheight_note",
+  "unique": 1
+ },
+ "given_power": {
+  "count": 112,
+  "key": "given_power",
+  "unique": 109
+ },
+ "given_pressure": {
+  "count": 2689,
+  "key": "given_pressure",
+  "max": 0,
+  "min": 0,
+  "numeric": 23,
+  "unique": 143
+ },
+ "given_range": {
+  "count": 5431,
+  "key": "given_range",
+  "max": 290,
+  "min": 220,
+  "numeric": 2,
+  "unique": 1755
+ },
+ "given_range_note": {
+  "count": 640,
+  "key": "given_range_note",
+  "unique": 14
+ },
+ "given_rising_height": {
+  "count": 19,
+  "key": "given_rising_height",
+  "unique": 19,
+  "values": {
+   "0.05 m": 1,
+   "0.09 m": 1,
+   "0.12 m": 1,
+   "0.3401 m": 1,
+   "0.3965 m": 1,
+   "0.4910 m": 1,
+   "3.078 m": 1,
+   "3.523 m": 1,
+   "4.295 m": 1,
+   "5.745 m": 1,
+   "6.327 m": 1,
+   "7.427 m": 1,
+   "7.549 m": 1,
+   "8.006 m": 1,
+   "8.665 m": 1,
+   "8.741 m": 1,
+   "8.966 m": 1,
+   "9.098 m": 1,
+   "9.338 m": 1
+  }
+ },
+ "given_technique": {
+  "count": 3941,
+  "key": "given_technique",
+  "unique": 7,
+  "values": {
+   "calorimeter": 80,
+   "double_pendulum": 406,
+   "gun_pendulum": 655,
+   "pendulum": 1563,
+   "theory": 1016,
+   "trajectory": 148,
+   "wheel_chronograph": 73
+  }
+ },
+ "given_technique_note": {
+  "count": 444,
+  "key": "given_technique_note",
+  "unique": 1
+ },
+ "given_temperature": {
+  "count": 2697,
+  "key": "given_temperature",
+  "unique": 77
+ },
+ "given_temperature_note": {
+  "count": 26,
+  "key": "given_temperature_note",
+  "unique": 2
+ },
+ "given_wetbulb": {
+  "count": 1796,
+  "key": "given_wetbulb",
+  "unique": 41
+ },
+ "idx": {
+  "count": 7376,
+  "key": "idx",
+  "max": 2197,
+  "min": 0,
+  "numeric": 7376,
+  "unique": 2198
+ },
+ "initial_angle": {
+  "count": 6779,
+  "key": "initial_angle",
+  "max": 90.0,
+  "min": -0.16666666666666666,
+  "numeric": 6779,
+  "unique": 168
+ },
+ "initial_height": {
+  "count": 139,
+  "key": "initial_height",
+  "max": 9.144,
+  "min": 1.4133847145,
+  "numeric": 139,
+  "unique": 4,
+  "values": {
+   "1.4133847145": 20,
+   "1.524": 95,
+   "8.737287326": 12,
+   "9.144": 12
+  }
+ },
+ "initial_velocity": {
+  "count": 7264,
+  "key": "initial_velocity",
+  "max": 7470.858122631907,
+  "min": 0.9729408966841693,
+  "numeric": 7264,
+  "unique": 6442
+ },
+ "key": {
+  "count": 7376,
+  "key": "key",
+  "unique": 41,
+  "values": {
+   "adye1804": 234,
+   "anderson1696": 17,
+   "anderson1862": 899,
+   "berthelot1872": 4,
+   "berthelot1892": 21,
+   "blondel1683": 122,
+   "braddock1832": 476,
+   "buchanan1996": 26,
+   "buchanan2006": 9,
+   "dantoni1765": 97,
+   "dantoni1780": 50,
+   "dantoni1789": 143,
+   "gentlemans1740": 4,
+   "hall1997": 5,
+   "helene1878": 2,
+   "helie1865": 653,
+   "hime1897": 7,
+   "hutton1778": 41,
+   "hutton1812v2": 173,
+   "hutton1812v3": 779,
+   "hutton1815v1": 15,
+   "international1909": 1,
+   "kempers1998": 12,
+   "krenn1995": 52,
+   "lewes1920": 2,
+   "meigs1883": 8,
+   "montagu1792": 86,
+   "mordecai1845": 2198,
+   "mordecai1849": 329,
+   "noble1875": 40,
+   "noble1880": 38,
+   "norwest2001": 36,
+   "partington1999": 5,
+   "report1742": 10,
+   "robertson1775": 6,
+   "smith1779": 666,
+   "steele2005": 6,
+   "steerk1866": 4,
+   "straith1850": 5,
+   "stremy1745v2": 2,
+   "thompson1781": 93
+  }
+ },
+ "mass": {
+  "count": 7264,
+  "key": "mass",
+  "max": 140.43847401623609,
+  "min": 0.001520312452597155,
+  "numeric": 7264,
+  "unique": 513
+ },
+ "material": {
+  "count": 6234,
+  "key": "material",
+  "unique": 7,
+  "values": {
+   "brass": 43,
+   "bronze": 6,
+   "castiron": 1771,
+   "copper": 5,
+   "cuivre": 2,
+   "iron": 3542,
+   "lead": 865
+  }
+ },
+ "material_density": {
+  "count": 1064,
+  "key": "material_density",
+  "max": 11340,
+  "min": 4841.000000000001,
+  "numeric": 1064,
+  "unique": 12,
+  "values": {
+   "4841.000000000001": 4,
+   "4969.999999999999": 6,
+   "5362.999999999999": 4,
+   "7137.0": 8,
+   "7148.999999999999": 20,
+   "7152.000000000001": 20,
+   "7198.999999999999": 20,
+   "7450": 848,
+   "8520": 10,
+   "8756": 2,
+   "8940": 7,
+   "11340": 115
+  }
+ },
+ "max_height": {
+  "count": 5951,
+  "key": "max_height",
+  "max": 9095.429200647272,
+  "min": 0,
+  "numeric": 5951,
+  "unique": 3228
+ },
+ "power_factor": {
+  "count": 7376,
+  "key": "power_factor",
+  "max": 38953326.176345564,
+  "min": 1219.238817111487,
+  "numeric": 7376,
+  "unique": 6834
+ },
+ "pressure": {
+  "count": 2715,
+  "key": "pressure",
+  "max": 103284.834,
+  "min": 0.0,
+  "numeric": 2715,
+  "unique": 134
+ },
+ "pressure_y0": {
+  "count": 26,
+  "key": "pressure_y0",
+  "max": 410.15625,
+  "min": -273.4375,
+  "numeric": 26,
+  "unique": 2,
+  "values": {
+   "-273.4375": 18,
+   "410.15625": 8
+  }
+ },
+ "projectile_density": {
+  "count": 2821,
+  "key": "projectile_density",
+  "max": 15859.417172189269,
+  "min": 242.4197358223152,
+  "numeric": 2821,
+  "unique": 236
+ },
+ "range": {
+  "count": 5431,
+  "key": "range",
+  "max": 36399.025042038,
+  "min": 0.6096,
+  "numeric": 5431,
+  "unique": 1656
+ },
+ "ref": {
+  "count": 7376,
+  "key": "ref",
+  "unique": 355
+ },
+ "rh": {
+  "count": 204,
+  "key": "rh",
+  "max": 0.9500000000000001,
+  "min": 0.05,
+  "numeric": 204,
+  "unique": 6,
+  "values": {
+   "0.05": 8,
+   "0.15": 29,
+   "0.5": 72,
+   "0.8": 15,
+   "0.9": 54,
+   "0.9500000000000001": 26
+  }
+ },
+ "rising_height": {
+  "count": 19,
+  "key": "rising_height",
+  "max": 9.338,
+  "min": 0.05,
+  "numeric": 19,
+  "unique": 19,
+  "values": {
+   "0.05": 1,
+   "0.09": 1,
+   "0.12": 1,
+   "0.3401": 1,
+   "0.3965": 1,
+   "0.491": 1,
+   "3.078": 1,
+   "3.523": 1,
+   "4.295": 1,
+   "5.745": 1,
+   "6.327": 1,
+   "7.427": 1,
+   "7.549": 1,
+   "8.006": 1,
+   "8.665": 1,
+   "8.741": 1,
+   "8.966": 1,
+   "9.098": 1,
+   "9.338": 1
+  }
+ },
+ "technique": {
+  "count": 7376,
+  "key": "technique",
+  "unique": 13,
+  "values": {
+   "calorimeter": 80,
+   "chronograph": 85,
+   "double_pendulum": 406,
+   "final_angle": 5,
+   "given_velocity": 275,
+   "gun_pendulum": 655,
+   "height": 4,
+   "pendulum": 1563,
+   "range": 2781,
+   "theory": 1016,
+   "time": 285,
+   "trajectory": 148,
+   "wheel_chronograph": 73
+  }
+ },
+ "time": {
+  "count": 5951,
+  "key": "time",
+  "max": 8053276978.015405,
+  "min": 0,
+  "numeric": 5951,
+  "unique": 5453
+ },
+ "time_delta": {
+  "count": 7142,
+  "key": "time_delta",
+  "max": 0.03,
+  "min": 3.0000000000000004e-05,
+  "numeric": 7142,
+  "unique": 7,
+  "values": {
+   "3.0000000000000004e-05": 548,
+   "0.0002": 477,
+   "0.00030000000000000003": 773,
+   "0.002": 360,
+   "0.003": 35,
+   "0.02": 2867,
+   "0.03": 2082
+  }
+ },
+ "vx": {
+  "count": 5951,
+  "key": "vx",
+  "max": 840.9431804821542,
+  "min": -150842634314.9169,
+  "numeric": 5951,
+  "unique": 5456
+ },
+ "vy": {
+  "count": 5951,
+  "key": "vy",
+  "max": 443.94441364018263,
+  "min": -78975583809.95685,
+  "numeric": 5951,
+  "unique": 5453
+ },
+ "x": {
+  "count": 5951,
+  "key": "x",
+  "max": 1497535829620.2263,
+  "min": 0,
+  "numeric": 5951,
+  "unique": 3381
+ },
+ "y": {
+  "count": 5951,
+  "key": "y",
+  "max": 889.7112000000001,
+  "min": -11.85,
+  "numeric": 5951,
+  "unique": 2246
+ },
+ "year": {
+  "count": 7376,
+  "key": "year",
+  "max": 2001,
+  "min": 1580,
+  "numeric": 7376,
+  "unique": 96
+ }
+}
