@@ -1,865 +1,704 @@
 {
- "T": {
-  "count": 2697,
-  "key": "T",
-  "max": 309.8166666666667,
-  "min": 270.9277777777778,
-  "numeric": 2697,
-  "unique": 76
- },
- "Twb": {
-  "count": 1796,
-  "key": "Twb",
-  "max": 300.9277777777778,
-  "min": 272.5944444444445,
-  "numeric": 1796,
-  "unique": 41
- },
- "atmospheric_density": {
-  "count": 29,
-  "key": "atmospheric_density",
-  "max": 1.2869999999999997,
-  "min": 1.187,
-  "numeric": 29,
-  "unique": 2,
-  "values": {
-   "1.187": 20,
-   "1.2869999999999997": 9
-  }
- },
  "ax": {
-  "count": 5951,
+  "count": 217,
   "key": "ax",
-  "max": 27636331447.181004,
-  "min": -6025.425591285605,
-  "numeric": 5951,
-  "unique": 5434
+  "max": -0.017894774139077193,
+  "min": -63.24957428199746,
+  "numeric": 217,
+  "unique": 217
  },
  "ay": {
-  "count": 5951,
+  "count": 217,
   "key": "ay",
-  "max": 6490755875.419712,
-  "min": -6033.942514614711,
-  "numeric": 5951,
-  "unique": 5433
+  "max": -6.542665974166325,
+  "min": -9.788603513723524,
+  "numeric": 217,
+  "unique": 217
  },
  "charge": {
-  "count": 7264,
+  "count": 234,
   "key": "charge",
-  "max": 31.751465900000003,
-  "min": 0.0009719836500000002,
-  "numeric": 7264,
-  "unique": 465
- },
- "charge_note": {
-  "count": 86,
-  "key": "charge_note",
-  "unique": 1
+  "max": 5.8780868682505405,
+  "min": 0.05669904625,
+  "numeric": 234,
+  "unique": 23,
+  "values": {
+   "0.05669904625": 4,
+   "0.0918451073164147": 5,
+   "0.1133980925": 24,
+   "0.14174761562500002": 8,
+   "0.226796185": 32,
+   "0.28349523125000003": 8,
+   "0.34019427750000003": 22,
+   "0.45359237": 32,
+   "0.4898405723542117": 1,
+   "0.7347608585313176": 8,
+   "0.90718474": 26,
+   "1.2246014308855293": 7,
+   "1.3607771100000001": 22,
+   "1.4695217170626351": 1,
+   "1.9593622894168468": 7,
+   "2.0411656650000003": 3,
+   "2.4492028617710586": 1,
+   "2.4947580350000003": 4,
+   "2.7215542200000002": 6,
+   "3.62873896": 6,
+   "3.9187245788336935": 3,
+   "4.83846981079": 3,
+   "5.8780868682505405": 1
+  }
  },
  "computation_time": {
-  "count": 7376,
+  "count": 234,
   "key": "computation_time",
-  "max": 0.45000000000000284,
+  "max": 0.21000000000000796,
   "min": 0.0,
-  "numeric": 7376,
-  "unique": 58
+  "numeric": 234,
+  "unique": 17,
+  "values": {
+   "0.0": 148,
+   "0.009999999999990905": 26,
+   "0.010000000000005116": 32,
+   "0.010000000000019327": 1,
+   "0.01999999999999602": 6,
+   "0.020000000000010232": 9,
+   "0.03999999999999204": 1,
+   "0.04000000000000625": 1,
+   "0.0899999999999892": 1,
+   "0.11000000000001364": 1,
+   "0.12000000000000455": 2,
+   "0.12999999999998124": 1,
+   "0.14000000000000057": 1,
+   "0.1799999999999926": 1,
+   "0.20000000000000284": 1,
+   "0.20999999999999375": 1,
+   "0.21000000000000796": 1
+  }
  },
  "date": {
-  "count": 7376,
+  "count": 234,
   "key": "date",
-  "unique": 333
+  "unique": 3,
+  "values": {
+   "1796": 18,
+   "1798": 170,
+   "1804": 46
+  }
  },
  "date_filled": {
-  "count": 7376,
+  "count": 234,
   "key": "date_filled",
-  "unique": 328
+  "unique": 3,
+  "values": {
+   "1796-01-01": 18,
+   "1798-01-01": 170,
+   "1804-01-01": 46
+  }
  },
  "desc": {
-  "count": 7097,
+  "count": 234,
   "key": "desc",
-  "unique": 1391
+  "unique": 16,
+  "values": {
+   "French mortar proof, Best": 1,
+   "French mortar proof, Mr. Lombard's calculations": 1,
+   "French mortar proof, New, high": 1,
+   "French mortar proof, New, low": 1,
+   "French mortar proof, Restoved": 1,
+   "Initial velocities": 7,
+   "Initial velocities from Lombard's tables": 10,
+   "Mortar proof, Best": 1,
+   "Mortar proof, Pit": 1,
+   "Mortar proof, Redried, high": 1,
+   "Mortar proof, Redried, low": 1,
+   "Ranges from Brass Field Guns, with small Charges, 1798": 32,
+   "Ranges with French Brass Field Guns, with Round shot": 16,
+   "Ranges with Sea Service Iron Guns.  1796, With single shot to the first graze": 18,
+   "Ranges with a 10 Inch Sea Mortar, at 21 Degrees, on a Horizontal Plane": 4,
+   "Ranges with a light 5 1/2 inch howitzer, 1798": 138
+  }
  },
  "diam": {
-  "count": 7264,
+  "count": 234,
   "key": "diam",
-  "max": 0.33020000000000005,
-  "min": 0.006350000000000001,
-  "numeric": 7264,
-  "unique": 235
- },
- "final_angle": {
-  "count": 5,
-  "key": "final_angle",
-  "max": 61.5,
-  "min": 51.0,
-  "numeric": 5,
-  "unique": 4,
+  "max": 0.254,
+  "min": 0.0703953598643454,
+  "numeric": 234,
+  "unique": 15,
   "values": {
-   "51.0": 1,
-   "53.0": 1,
-   "60.99999999999999": 1,
-   "61.5": 2
+   "0.0703953598643454": 2,
+   "0.07949136416488706": 9,
+   "0.08869259570801348": 18,
+   "0.1001528429962002": 8,
+   "0.11174566830234187": 16,
+   "0.11464638580995809": 7,
+   "0.12618467509772896": 2,
+   "0.12791685804933114": 6,
+   "0.13970000000000002": 138,
+   "0.1407907197286908": 6,
+   "0.14444539477633508": 3,
+   "0.15496023795455016": 6,
+   "0.1890888888888889": 5,
+   "0.20320000000000002": 4,
+   "0.254": 4
   }
  },
  "final_density_T": {
-  "count": 5928,
+  "count": 217,
   "key": "final_density_T",
-  "max": 309.8166666666667,
-  "min": 270.9277777777778,
-  "numeric": 5928,
-  "unique": 77
+  "max": 288.15,
+  "min": 288.15,
+  "numeric": 217,
+  "unique": 1,
+  "values": {
+   "288.15": 217
+  }
  },
  "final_density_density": {
-  "count": 5928,
+  "count": 217,
   "key": "final_density_density",
-  "max": 1.3169788366184576,
-  "min": 1.102078226906736,
-  "numeric": 5928,
-  "unique": 5430
+  "max": 1.2257743909305938,
+  "min": 1.2255213447280855,
+  "numeric": 217,
+  "unique": 216
  },
  "final_density_h": {
-  "count": 5928,
+  "count": 217,
   "key": "final_density_h",
-  "max": 0.9999013765372261,
+  "max": 0,
   "min": 0,
-  "numeric": 5928,
-  "unique": 115
+  "numeric": 217,
+  "unique": 1,
+  "values": {
+   "0": 217
+  }
  },
  "final_density_pressure": {
-  "count": 5928,
+  "count": 217,
   "key": "final_density_pressure",
-  "max": 106392.97981348325,
-  "min": 91122.55851771799,
-  "numeric": 5928,
-  "unique": 5430
+  "max": 101345.91314588956,
+  "min": 101325.0000000012,
+  "numeric": 217,
+  "unique": 216
  },
  "final_density_psv": {
-  "count": 5928,
+  "count": 217,
   "key": "final_density_psv",
-  "max": 6168.922273788103,
-  "min": 519.3066681356044,
-  "numeric": 5928,
-  "unique": 77
+  "max": 1705.669094295092,
+  "min": 1705.669094295092,
+  "numeric": 217,
+  "unique": 1,
+  "values": {
+   "1705.669094295092": 217
+  }
  },
  "final_density_xv": {
-  "count": 5928,
+  "count": 217,
   "key": "final_density_xv",
-  "max": 0.041942526456680146,
+  "max": 0.0,
   "min": 0.0,
-  "numeric": 5928,
-  "unique": 1458
+  "numeric": 217,
+  "unique": 1,
+  "values": {
+   "0.0": 217
+  }
  },
  "final_density_y": {
-  "count": 5928,
+  "count": 217,
   "key": "final_density_y",
-  "max": 886.1523880128022,
-  "min": -12.014835501436721,
-  "numeric": 5928,
-  "unique": 5433
+  "max": -9.924183697052058e-11,
+  "min": -1.7406966302229308,
+  "numeric": 217,
+  "unique": 217
  },
  "final_drag_Mn": {
-  "count": 5928,
+  "count": 217,
   "key": "final_drag_Mn",
-  "max": 2.4369133186770715,
-  "min": 0.002903360522238845,
-  "numeric": 5928,
-  "unique": 5433
+  "max": 0.8640700812350811,
+  "min": 0.05266678822259758,
+  "numeric": 217,
+  "unique": 217
  },
  "final_drag_Re": {
-  "count": 5928,
+  "count": 217,
   "key": "final_drag_Re",
-  "max": 7866812.538992016,
-  "min": 8938.868761098269,
-  "numeric": 5928,
-  "unique": 5433
+  "max": 2745744.052283191,
+  "min": 248182.10182194848,
+  "numeric": 217,
+  "unique": 217
  },
  "final_drag_cd": {
-  "count": 5928,
+  "count": 217,
   "key": "final_drag_cd",
-  "max": 0.9957823421373316,
-  "min": 0.07808119489406341,
-  "numeric": 5928,
-  "unique": 5433
+  "max": 0.6790173502211945,
+  "min": 0.08396867856054314,
+  "numeric": 217,
+  "unique": 217
  },
  "final_drag_critical_Re": {
-  "count": 5928,
+  "count": 217,
   "key": "final_drag_critical_Re",
-  "max": 1000000.0,
-  "min": 200008.63094916777,
-  "numeric": 5928,
-  "unique": 2677
+  "max": 998669.0140678663,
+  "min": 222961.5901063957,
+  "numeric": 217,
+  "unique": 200
  },
  "final_drag_in_range": {
-  "count": 5928,
+  "count": 217,
   "key": "final_drag_in_range",
   "max": true,
   "min": false,
-  "numeric": 5928,
+  "numeric": 217,
   "unique": 2,
   "values": {
-   "false": 1998,
-   "true": 3930
+   "false": 170,
+   "true": 47
   }
  },
  "final_drag_sos": {
-  "count": 5928,
+  "count": 217,
   "key": "final_drag_sos",
-  "max": 353.0565611006353,
-  "min": 330.09898453330334,
-  "numeric": 5928,
-  "unique": 1472
+  "max": 340.4291440858924,
+  "min": 340.4291440858924,
+  "numeric": 217,
+  "unique": 1,
+  "values": {
+   "340.4291440858924": 217
+  }
  },
  "final_height": {
-  "count": 5215,
+  "count": 234,
   "key": "final_height",
-  "max": 889.7112000000001,
-  "min": -11.85,
-  "numeric": 5215,
-  "unique": 133
+  "max": 0,
+  "min": 0,
+  "numeric": 234,
+  "unique": 1,
+  "values": {
+   "0": 234
+  }
  },
  "final_time": {
-  "count": 507,
+  "count": 71,
   "key": "final_time",
-  "max": 27.0,
+  "max": 16.0,
   "min": 1.0,
-  "numeric": 507,
-  "unique": 198
- },
- "final_velocity": {
-  "count": 2165,
-  "key": "final_velocity",
-  "max": 840.9432,
-  "min": 28.041600000000003,
-  "numeric": 2165,
-  "unique": 1081
+  "numeric": 71,
+  "unique": 20,
+  "values": {
+   "1.0": 2,
+   "1.5": 5,
+   "2.0": 8,
+   "2.5": 7,
+   "3.0": 6,
+   "3.5": 2,
+   "4.0": 3,
+   "4.5": 1,
+   "5.0": 9,
+   "5.5": 3,
+   "6.0": 1,
+   "6.5": 1,
+   "7.0": 5,
+   "7.5": 1,
+   "8.0": 6,
+   "9.0": 6,
+   "10.0": 2,
+   "12.0": 1,
+   "14.0": 1,
+   "16.0": 1
+  }
  },
  "final_viscosity_mua": {
-  "count": 5928,
+  "count": 217,
   "key": "final_viscosity_mua",
-  "max": 1.90403270085756e-05,
-  "min": 1.7131965970387516e-05,
-  "numeric": 5928,
-  "unique": 5298
- },
- "final_viscosity_muv": {
-  "count": 1565,
-  "key": "final_viscosity_muv",
-  "max": 9.960947491441689e-06,
-  "min": 8.821115089879657e-06,
-  "numeric": 1565,
-  "unique": 1457
+  "max": 1.799071402505359e-05,
+  "min": 1.799071166676724e-05,
+  "numeric": 217,
+  "unique": 202
  },
  "final_viscosity_viscosity": {
-  "count": 5928,
+  "count": 217,
   "key": "final_viscosity_viscosity",
-  "max": 1.9032708945778368e-05,
-  "min": 1.7131965970387516e-05,
-  "numeric": 5928,
-  "unique": 5338
+  "max": 1.799071402505359e-05,
+  "min": 1.799071166676724e-05,
+  "numeric": 217,
+  "unique": 202
  },
  "given_angle": {
-  "count": 6779,
+  "count": 217,
   "key": "given_angle",
-  "unique": 179
- },
- "given_angle_note": {
-  "count": 513,
-  "key": "given_angle_note",
-  "unique": 10
- },
- "given_atmospheric_density": {
-  "count": 29,
-  "key": "given_atmospheric_density",
-  "unique": 2,
-  "values": {
-   "0.001187 g/cm/cm/cm": 20,
-   "0.001287 g/cm/cm/cm": 9
-  }
- },
- "given_atmospheric_density_note": {
-  "count": 9,
-  "key": "given_atmospheric_density_note",
-  "unique": 1
+  "unique": 27
  },
  "given_charge": {
-  "count": 7264,
+  "count": 234,
   "key": "given_charge",
-  "unique": 621
- },
- "given_charge_note": {
-  "count": 125,
-  "key": "given_charge_note",
-  "unique": 6
- },
- "given_date": {
-  "count": 7376,
-  "key": "given_date",
-  "max": 1895,
-  "min": 1725,
-  "numeric": 17,
-  "unique": 337
- },
- "given_date_note": {
-  "count": 12,
-  "key": "given_date_note",
-  "unique": 3
- },
- "given_diameter": {
-  "count": 6617,
-  "key": "given_diameter",
-  "unique": 197
- },
- "given_diameter_note": {
-  "count": 477,
-  "key": "given_diameter_note",
-  "unique": 19
- },
- "given_final_angle": {
-  "count": 5,
-  "key": "given_final_angle",
-  "unique": 4,
+  "unique": 23,
   "values": {
-   "51 deg": 1,
-   "53 deg": 1,
-   "61 deg": 1,
-   "61.5 deg": 2
+   "1 lb": 32,
+   "1 lbfr": 1,
+   "1.5 lbfr": 8,
+   "10 oz": 8,
+   "10.667 lb": 3,
+   "12 lbfr": 1,
+   "12 oz": 22,
+   "2 lb": 26,
+   "2 oz": 4,
+   "2.5 lbfr": 7,
+   "3 lb": 22,
+   "3 lbfr": 1,
+   "3 ozfr": 5,
+   "4 lbfr": 7,
+   "4 oz": 24,
+   "4.5 lb": 3,
+   "5 lb 8 oz": 4,
+   "5 lbfr": 1,
+   "5 oz": 8,
+   "6 lb": 6,
+   "8 lb": 6,
+   "8 lbfr": 3,
+   "8 oz": 32
   }
  },
- "given_final_height": {
-  "count": 142,
-  "key": "given_final_height",
-  "unique": 133
+ "given_date": {
+  "count": 234,
+  "key": "given_date",
+  "unique": 3,
+  "values": {
+   "1796": 18,
+   "1798": 170,
+   "1804": 46
+  }
  },
- "given_final_height_note": {
-  "count": 1,
-  "key": "given_final_height_note",
+ "given_diameter": {
+  "count": 151,
+  "key": "given_diameter",
+  "unique": 4,
+  "values": {
+   "10 in": 4,
+   "5.5 in": 138,
+   "6 infr 11.75 linefr": 5,
+   "8 in": 4
+  }
+ },
+ "given_diameter_note": {
+  "count": 5,
+  "key": "given_diameter_note",
   "unique": 1
  },
  "given_final_time": {
-  "count": 507,
+  "count": 71,
   "key": "given_final_time",
-  "unique": 211
+  "unique": 20,
+  "values": {
+   "1 s": 2,
+   "1.5 s": 5,
+   "10 s": 2,
+   "12 s": 1,
+   "14 s": 1,
+   "16 s": 1,
+   "2 s": 8,
+   "2.5 s": 7,
+   "3 s": 6,
+   "3.5 s": 2,
+   "4 s": 3,
+   "4.5 s": 1,
+   "5 s": 9,
+   "5.5 s": 3,
+   "6 s": 1,
+   "6.5 s": 1,
+   "7 s": 5,
+   "7.5 s": 1,
+   "8 s": 6,
+   "9 s": 6
+  }
  },
  "given_final_time_note": {
-  "count": 140,
+  "count": 138,
   "key": "given_final_time_note",
-  "unique": 2
- },
- "given_final_velocity": {
-  "count": 2165,
-  "key": "given_final_velocity",
-  "unique": 1093
+  "unique": 1
  },
  "given_group": {
-  "count": 2310,
+  "count": 142,
   "key": "given_group",
-  "unique": 1084
- },
- "given_humidity": {
-  "count": 204,
-  "key": "given_humidity",
-  "unique": 6,
-  "values": {
-   "15%": 29,
-   "5%": 8,
-   "50%": 72,
-   "80%": 15,
-   "90%": 54,
-   "95%": 26
-  }
- },
- "given_humidity_note": {
-  "count": 104,
-  "key": "given_humidity_note",
-  "unique": 12
- },
- "given_initial_height": {
-  "count": 139,
-  "key": "given_initial_height",
-  "unique": 4,
-  "values": {
-   "17 ftit": 12,
-   "2.75 ftit": 20,
-   "30 ft": 12,
-   "5 ft": 95
-  }
- },
- "given_initial_height_note": {
-  "count": 55,
-  "key": "given_initial_height_note",
-  "unique": 1
+  "unique": 71
  },
  "given_initial_velocity": {
-  "count": 1313,
+  "count": 17,
   "key": "given_initial_velocity",
-  "unique": 1002
- },
- "given_initial_velocity_note": {
-  "count": 2,
-  "key": "given_initial_velocity_note",
-  "unique": 2
+  "unique": 17,
+  "values": {
+   "1209 ftfr/s": 1,
+   "1335 ftfr/s": 1,
+   "1371 ft/s": 1,
+   "1415 ftfr/s": 1,
+   "1418 ftfr/s": 1,
+   "1422 ftfr/s": 1,
+   "1425 ftfr/s": 1,
+   "1442 ftfr/s": 1,
+   "1446 ftfr/s": 1,
+   "1460 ftfr/s": 1,
+   "1508 ftfr/s": 1,
+   "1510 ftfr/s": 1,
+   "1520 ftfr/s": 1,
+   "1530 ftfr/s": 1,
+   "1558 ft/s": 1,
+   "1584 ft/s": 1,
+   "1673 ft/s": 1
+  }
  },
  "given_mass": {
-  "count": 6861,
+  "count": 234,
   "key": "given_mass",
-  "unique": 511
+  "unique": 16,
+  "values": {
+   "12 lb": 16,
+   "12 lbfr": 7,
+   "16 lb": 138,
+   "16 lbfr": 2,
+   "18 lb": 6,
+   "24 lb": 6,
+   "24 lbfr": 3,
+   "3 lb": 2,
+   "32 lb": 6,
+   "4 lbfr": 9,
+   "6 lb": 18,
+   "60 lbfr": 5,
+   "64 lb": 4,
+   "8 lbfr": 8,
+   "86 lb": 2,
+   "87 lb": 2
+  }
  },
  "given_mass_note": {
-  "count": 949,
+  "count": 148,
   "key": "given_mass_note",
-  "unique": 25
+  "unique": 2
  },
  "given_material": {
-  "count": 4443,
+  "count": 92,
   "key": "given_material",
-  "unique": 6,
+  "unique": 2,
   "values": {
-   "brass": 27,
-   "bronze": 6,
-   "copper": 5,
-   "cuivre": 2,
-   "iron": 3542,
-   "lead": 861
+   "brass": 5,
+   "iron": 87
   }
- },
- "given_material_density": {
-  "count": 82,
-  "key": "given_material_density",
-  "unique": 7,
-  "values": {
-   "4.841 g/cm/cm/cm": 4,
-   "4.970 g/cm/cm/cm": 6,
-   "5.363 g/cm/cm/cm": 4,
-   "7.137 g/cm/cm/cm": 8,
-   "7.149 g/cm/cm/cm": 20,
-   "7.152 g/cm/cm/cm": 20,
-   "7.199 g/cm/cm/cm": 20
-  }
- },
- "given_material_note": {
-  "count": 46,
-  "key": "given_material_note",
-  "unique": 2
- },
- "given_maxheight": {
-  "count": 4,
-  "key": "given_maxheight",
-  "unique": 4,
-  "values": {
-   "1.9 in": 1,
-   "4 in": 1,
-   "42 yds": 1,
-   "6.2 in": 1
-  }
- },
- "given_maxheight_note": {
-  "count": 1,
-  "key": "given_maxheight_note",
-  "unique": 1
- },
- "given_power": {
-  "count": 112,
-  "key": "given_power",
-  "unique": 109
- },
- "given_pressure": {
-  "count": 2689,
-  "key": "given_pressure",
-  "max": 0,
-  "min": 0,
-  "numeric": 23,
-  "unique": 143
  },
  "given_range": {
-  "count": 5431,
+  "count": 146,
   "key": "given_range",
-  "max": 290,
-  "min": 220,
-  "numeric": 2,
-  "unique": 1755
- },
- "given_range_note": {
-  "count": 640,
-  "key": "given_range_note",
-  "unique": 14
- },
- "given_rising_height": {
-  "count": 19,
-  "key": "given_rising_height",
-  "unique": 19,
-  "values": {
-   "0.05 m": 1,
-   "0.09 m": 1,
-   "0.12 m": 1,
-   "0.3401 m": 1,
-   "0.3965 m": 1,
-   "0.4910 m": 1,
-   "3.078 m": 1,
-   "3.523 m": 1,
-   "4.295 m": 1,
-   "5.745 m": 1,
-   "6.327 m": 1,
-   "7.427 m": 1,
-   "7.549 m": 1,
-   "8.006 m": 1,
-   "8.665 m": 1,
-   "8.741 m": 1,
-   "8.966 m": 1,
-   "9.098 m": 1,
-   "9.338 m": 1
-  }
- },
- "given_technique": {
-  "count": 3941,
-  "key": "given_technique",
-  "unique": 7,
-  "values": {
-   "calorimeter": 80,
-   "double_pendulum": 406,
-   "gun_pendulum": 655,
-   "pendulum": 1563,
-   "theory": 1016,
-   "trajectory": 148,
-   "wheel_chronograph": 73
-  }
- },
- "given_technique_note": {
-  "count": 444,
-  "key": "given_technique_note",
-  "unique": 1
- },
- "given_temperature": {
-  "count": 2697,
-  "key": "given_temperature",
-  "unique": 77
- },
- "given_temperature_note": {
-  "count": 26,
-  "key": "given_temperature_note",
-  "unique": 2
- },
- "given_wetbulb": {
-  "count": 1796,
-  "key": "given_wetbulb",
-  "unique": 41
+  "unique": 119
  },
  "idx": {
-  "count": 7376,
+  "count": 234,
   "key": "idx",
-  "max": 2197,
+  "max": 233,
   "min": 0,
-  "numeric": 7376,
-  "unique": 2198
+  "numeric": 234,
+  "unique": 234
  },
  "initial_angle": {
-  "count": 6779,
+  "count": 217,
   "key": "initial_angle",
-  "max": 90.0,
-  "min": -0.16666666666666666,
-  "numeric": 6779,
-  "unique": 168
- },
- "initial_height": {
-  "count": 139,
-  "key": "initial_height",
-  "max": 9.144,
-  "min": 1.4133847145,
-  "numeric": 139,
-  "unique": 4,
-  "values": {
-   "1.4133847145": 20,
-   "1.524": 95,
-   "8.737287326": 12,
-   "9.144": 12
-  }
+  "max": 45.0,
+  "min": 0.9666666666666667,
+  "numeric": 217,
+  "unique": 27
  },
  "initial_velocity": {
-  "count": 7264,
+  "count": 234,
   "key": "initial_velocity",
-  "max": 7470.858122631907,
-  "min": 0.9729408966841693,
-  "numeric": 7264,
-  "unique": 6442
+  "max": 1900.6246056196026,
+  "min": 17.950800110091162,
+  "numeric": 234,
+  "unique": 234
  },
  "key": {
-  "count": 7376,
+  "count": 234,
   "key": "key",
-  "unique": 41,
+  "unique": 1,
   "values": {
-   "adye1804": 234,
-   "anderson1696": 17,
-   "anderson1862": 899,
-   "berthelot1872": 4,
-   "berthelot1892": 21,
-   "blondel1683": 122,
-   "braddock1832": 476,
-   "buchanan1996": 26,
-   "buchanan2006": 9,
-   "dantoni1765": 97,
-   "dantoni1780": 50,
-   "dantoni1789": 143,
-   "gentlemans1740": 4,
-   "hall1997": 5,
-   "helene1878": 2,
-   "helie1865": 653,
-   "hime1897": 7,
-   "hutton1778": 41,
-   "hutton1812v2": 173,
-   "hutton1812v3": 779,
-   "hutton1815v1": 15,
-   "international1909": 1,
-   "kempers1998": 12,
-   "krenn1995": 52,
-   "lewes1920": 2,
-   "meigs1883": 8,
-   "montagu1792": 86,
-   "mordecai1845": 2198,
-   "mordecai1849": 329,
-   "noble1875": 40,
-   "noble1880": 38,
-   "norwest2001": 36,
-   "partington1999": 5,
-   "report1742": 10,
-   "robertson1775": 6,
-   "smith1779": 666,
-   "steele2005": 6,
-   "steerk1866": 4,
-   "straith1850": 5,
-   "stremy1745v2": 2,
-   "thompson1781": 93
+   "adye1804": 234
   }
  },
  "mass": {
-  "count": 7264,
+  "count": 234,
   "key": "mass",
-  "max": 140.43847401623609,
-  "min": 0.001520312452597155,
-  "numeric": 7264,
-  "unique": 513
+  "max": 39.46253619,
+  "min": 1.3607771100000001,
+  "numeric": 234,
+  "unique": 16,
+  "values": {
+   "1.3607771100000001": 2,
+   "1.9593622894168468": 9,
+   "2.7215542200000002": 18,
+   "3.9187245788336935": 8,
+   "5.4431084400000005": 16,
+   "5.8780868682505405": 7,
+   "7.25747792": 138,
+   "7.837449157667387": 2,
+   "8.164662660000001": 6,
+   "10.886216880000001": 6,
+   "11.756173736501081": 3,
+   "14.51495584": 6,
+   "29.02991168": 4,
+   "29.3904343412527": 5,
+   "39.00894382": 2,
+   "39.46253619": 2
+  }
  },
  "material": {
-  "count": 6234,
+  "count": 92,
   "key": "material",
-  "unique": 7,
+  "unique": 2,
   "values": {
-   "brass": 43,
-   "bronze": 6,
-   "castiron": 1771,
-   "copper": 5,
-   "cuivre": 2,
-   "iron": 3542,
-   "lead": 865
+   "brass": 5,
+   "iron": 87
   }
  },
  "material_density": {
-  "count": 1064,
+  "count": 83,
   "key": "material_density",
-  "max": 11340,
-  "min": 4841.000000000001,
-  "numeric": 1064,
-  "unique": 12,
+  "max": 7450,
+  "min": 7450,
+  "numeric": 83,
+  "unique": 1,
   "values": {
-   "4841.000000000001": 4,
-   "4969.999999999999": 6,
-   "5362.999999999999": 4,
-   "7137.0": 8,
-   "7148.999999999999": 20,
-   "7152.000000000001": 20,
-   "7198.999999999999": 20,
-   "7450": 848,
-   "8520": 10,
-   "8756": 2,
-   "8940": 7,
-   "11340": 115
+   "7450": 83
   }
  },
  "max_height": {
-  "count": 5951,
+  "count": 217,
   "key": "max_height",
-  "max": 9095.42909695926,
-  "min": 0,
-  "numeric": 5951,
-  "unique": 3228
+  "max": 319.69918151076484,
+  "min": 0.2654507378524161,
+  "numeric": 217,
+  "unique": 217
  },
  "power_factor": {
-  "count": 7376,
+  "count": 234,
   "key": "power_factor",
-  "max": 38953326.176345564,
-  "min": 1219.238817111487,
-  "numeric": 7376,
-  "unique": 6834
- },
- "pressure": {
-  "count": 2715,
-  "key": "pressure",
-  "max": 103284.834,
-  "min": 0.0,
-  "numeric": 2715,
-  "unique": 134
- },
- "pressure_y0": {
-  "count": 26,
-  "key": "pressure_y0",
-  "max": 410.15625,
-  "min": -273.4375,
-  "numeric": 26,
-  "unique": 2,
-  "values": {
-   "-273.4375": 18,
-   "410.15625": 8
-  }
+  "max": 9632997.043964453,
+  "min": 82491.19349566693,
+  "numeric": 234,
+  "unique": 234
  },
  "projectile_density": {
-  "count": 2821,
+  "count": 234,
   "key": "projectile_density",
-  "max": 15859.417172189269,
-  "min": 242.4197358223152,
-  "numeric": 2821,
-  "unique": 236
- },
- "range": {
-  "count": 5431,
-  "key": "range",
-  "max": 36399.025042038,
-  "min": 0.6096,
-  "numeric": 5431,
-  "unique": 1656
- },
- "ref": {
-  "count": 7376,
-  "key": "ref",
-  "unique": 355
- },
- "rh": {
-  "count": 204,
-  "key": "rh",
-  "max": 0.9500000000000001,
-  "min": 0.05,
-  "numeric": 204,
-  "unique": 6,
+  "max": 8302.508947582392,
+  "min": 4546.366256027591,
+  "numeric": 234,
+  "unique": 8,
   "values": {
-   "0.05": 8,
-   "0.15": 29,
-   "0.5": 72,
-   "0.8": 15,
-   "0.9": 54,
-   "0.9500000000000001": 26
+   "4546.366256027591": 2,
+   "4599.230979934889": 2,
+   "5083.9103381924015": 138,
+   "6608.090488412194": 4,
+   "7449.999999999995": 8,
+   "7449.999999999997": 67,
+   "7449.999999999998": 8,
+   "8302.508947582392": 5
   }
  },
- "rising_height": {
-  "count": 19,
-  "key": "rising_height",
-  "max": 9.338,
-  "min": 0.05,
-  "numeric": 19,
-  "unique": 19,
+ "range": {
+  "count": 146,
+  "key": "range",
+  "max": 2295.1440000000002,
+  "min": 32.6136,
+  "numeric": 146,
+  "unique": 119
+ },
+ "ref": {
+  "count": 234,
+  "key": "ref",
+  "unique": 9,
   "values": {
-   "0.05": 1,
-   "0.09": 1,
-   "0.12": 1,
-   "0.3401": 1,
-   "0.3965": 1,
-   "0.491": 1,
-   "3.078": 1,
-   "3.523": 1,
-   "4.295": 1,
-   "5.745": 1,
-   "6.327": 1,
-   "7.427": 1,
-   "7.549": 1,
-   "8.006": 1,
-   "8.665": 1,
-   "8.741": 1,
-   "8.966": 1,
-   "9.098": 1,
-   "9.338": 1
+   "Adye, 1804, p. 151": 32,
+   "Adye, 1804, p. 159": 18,
+   "Adye, 1804, p. 162": 16,
+   "Adye, 1804, p. 163": 4,
+   "Adye, 1804, p. 165": 5,
+   "Adye, 1804, p. 170-171": 138,
+   "Adye, 1804, p. 201": 4,
+   "Adye, 1804, p. 274": 7,
+   "Adye, 1804, p. 275": 10
   }
  },
  "technique": {
-  "count": 7376,
+  "count": 234,
   "key": "technique",
-  "unique": 13,
+  "unique": 3,
   "values": {
-   "calorimeter": 80,
-   "chronograph": 85,
-   "double_pendulum": 406,
-   "final_angle": 5,
-   "given_velocity": 275,
-   "gun_pendulum": 655,
-   "height": 4,
-   "pendulum": 1563,
-   "range": 2781,
-   "theory": 1016,
-   "time": 285,
-   "trajectory": 148,
-   "wheel_chronograph": 73
+   "given_velocity": 17,
+   "range": 146,
+   "time": 71
   }
  },
  "time": {
-  "count": 5951,
+  "count": 217,
   "key": "time",
-  "max": 8053276978.015405,
-  "min": 0,
-  "numeric": 5951,
-  "unique": 5453
+  "max": 16.00000001174263,
+  "min": 0.4653379520821006,
+  "numeric": 217,
+  "unique": 217
  },
  "time_delta": {
-  "count": 7142,
+  "count": 234,
   "key": "time_delta",
-  "max": 0.03,
-  "min": 3.0000000000000004e-05,
-  "numeric": 7142,
-  "unique": 9,
+  "max": 0.025,
+  "min": 0.0025,
+  "numeric": 234,
+  "unique": 2,
   "values": {
-   "3.0000000000000004e-05": 548,
-   "0.0002": 440,
-   "0.00025": 37,
-   "0.00030000000000000003": 773,
-   "0.002": 360,
-   "0.003": 35,
-   "0.02": 2807,
-   "0.025": 60,
-   "0.03": 2082
+   "0.0025": 1,
+   "0.025": 233
   }
  },
  "vx": {
-  "count": 5951,
+  "count": 217,
   "key": "vx",
-  "max": 840.9431804821542,
-  "min": -150842634314.9169,
-  "numeric": 5951,
-  "unique": 5456
+  "max": 294.11388484808845,
+  "min": 12.552173577043602,
+  "numeric": 217,
+  "unique": 217
  },
  "vy": {
-  "count": 5951,
+  "count": 217,
   "key": "vy",
-  "max": 443.94441364018263,
-  "min": -78975583809.95685,
-  "numeric": 5951,
-  "unique": 5453
+  "max": -2.272896799669396,
+  "min": -69.5461518812944,
+  "numeric": 217,
+  "unique": 217
  },
  "x": {
-  "count": 5951,
+  "count": 217,
   "key": "x",
-  "max": 1497535829620.2263,
-  "min": 0,
-  "numeric": 5951,
-  "unique": 3381
+  "max": 2494.9791942745237,
+  "min": 32.61359998210773,
+  "numeric": 217,
+  "unique": 217
  },
  "y": {
-  "count": 5951,
+  "count": 217,
   "key": "y",
-  "max": 889.7112000000001,
-  "min": -11.85,
-  "numeric": 5951,
-  "unique": 2246
+  "max": 0,
+  "min": 0,
+  "numeric": 217,
+  "unique": 1,
+  "values": {
+   "0": 217
+  }
  },
  "year": {
-  "count": 7376,
+  "count": 234,
   "key": "year",
-  "max": 2001,
-  "min": 1580,
-  "numeric": 7376,
-  "unique": 96
+  "max": 1804,
+  "min": 1796,
+  "numeric": 234,
+  "unique": 3,
+  "values": {
+   "1796": 18,
+   "1798": 170,
+   "1804": 46
+  }
  }
 }

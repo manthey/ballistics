@@ -7,35 +7,30 @@
  },
  "anderson1696": {
   "cms": "Anderson, Robert. <i>The Making of Rockets.</i>  London: Printed for Robert Morden, 1696",
-  "details": "<p>This short book is mostly concerned with making rockets and calculating distances and trajectories.  It includes information on how to pack them and to make pyrotechnic stars.</p>\n<p>There is a short section on firing mortars, where the units are not specified very well.  My assumption is that some of the charges are in ounces avoirdupois, and that some of the others are in drams avoirdupois.  This seems appropriate from context, and the calculated power factors seem in line with other tests.  The distances are marked \"Chain\", but I presume them to be in links, not whole chains.</p>",
   "key": "anderson1696",
   "ref": "Anderson, 1696",
   "summary": "Mostly a book on rockets, this also has some information on firing mortars."
  },
  "anderson1862": {
   "cms": "Anderson, Colonel William and Lieutenant-Colonel Samuel Parlby. <i>Sketch of the mode of manufacturing gunpowder at the Ishapore mills in Bengal.</i> London: John Weale, 1862",
-  "details": "<p>This book has fairly thorough details of the gunpowder mills in Ishapore.  Much of the work examines manufacturing parameters and how they effect the quality of the resulting gunpowder.</p>\n<p>Anderson gives pendulum eprouvette values for nearly all of the tests.  However, he mentions (p. 294) that \"The weight of the gun, length of the arms, centre of gravity, diameter of bore, and oscillation, are all elements in the calculation, and if these be not the same, not two \\u00e9pouvettes will give an equal arc with the same charge of powder.\"  He then goes on to say that he thinks a single eprouvette will give consistent results, but doesn't include the pertinent information for his eprouvette to allow calculation of power based on it.</p>",
   "key": "anderson1862",
   "ref": "Anderson, 1862",
   "summary": "An excellent review of the technology used in India."
  },
  "berthelot1872": {
   "cms": "Berthelot, Marcelin.  <i>Sur la force de la poudre et mati\u00e8re explosives, Deuxi\u00e8me \u00c9dition</i>  Paris: Gauthier-Villars, 1872.",
-  "details": "<p>This calculates the chemical reactions of gunpowder.  Near the end there is a table of the heat output from a calorimeter.  In some ways this is the maximum amount of power that could be liberated from the gunpowder, as none of the energy escapes.  However, the available oxygen in the calorimeter is not reflective of actual available oxygen from air in a mortar or gun, and, since the gunpowder isn't expanding in the same manner, other differences exist.</p>",
   "key": "berthelot1872",
   "ref": "Berthelot, 1872",
   "summary": "A chemical analysis of explosives with some measurements of released heat."
  },
  "berthelot1892": {
   "cms": "Berthelot, M., C. Napier Hake, trans., and William MacNab, trans.  <i>Explosives and Their Power: translated and condensed from the French of M. Berthelot.</i>  London: John Murray, 1892.",
-  "details": "<p>This includes a variety of sources of measuring the heat output of gunpowder using sealed calorimeters.  In some ways this is the maximum amount of power that could be liberated from the gunpowder, as none of the energy escapes.  However, the available oxygen in the calorimeter is not reflective of actual available oxygen from air in a mortar or gun, and, since the gunpowder isn't expanding in the same manner, other differences exist.</p>\n<p>The authors find that the theoretical heat produced by gunpowder with pure carbon (rather than charcoal) would be lower than the realized values.</p>",
   "key": "berthelot1892",
   "ref": "Berthelot, 1892",
   "summary": "A chemical analysis of explosives with some measurements of released heat."
  },
  "blondel1683": {
   "cms": "Blondel. <i>L'Art de Jetter les Bombes.</i>  Paris: Nicholas Langlois: 1683",
-  "details": "<p>This work compares a variety of theories of ballistics with the main focus being on throwing shells.  The author points out the absurdity of others' theories and promulgates his own, which is a variation of using a parabolic path.  He shows how this applies when the target is at a different elevation.</p>\n<p>As part of showing other theories, he presents a theoretical table of ranges with varying angles of projection, plus a variety of results from different sources.</p>\n<p>The author considers air resistance (see p. 336), but doesn't use it in the calculations.</p>",
   "key": "blondel1683",
   "ref": "Blondel, 1683",
   "summary": "A book on throwing shells comparing various ballistic theories."
@@ -55,7 +50,6 @@
  },
  "buchanan1996": {
   "cms": "Buchanan, Brenda J.  <i>Gunpowder: The History of an International Technology. Claverton Down,</i> Bath: Bath University Press, 1996.",
-  "details": "<p>This book contains 24 articles by different authors on gunpowder.  Of these, only one contains numerical information that can be used for calculating power factors.  This is a report from 1815 comparing shipping gunpowder in wooden versus copper barrels, where the gunpowder is loading in March, 1814, shipped to India and back, and off-loaded in June, 1815.  The proof was measured on September 5, 1815.</p>\n<p>The powder stored in wooden barrels degrades much more than that stored in copper.</p>",
   "key": "buchanan1996",
   "ref": "Buchanan, 1996",
   "summary": "A report of comparing copper and wooden barrels from 1815."
@@ -94,21 +88,18 @@
  },
  "dantoni1765": {
   "cms": "d'Antoni, Alessandro Vittorio Papacino.  <i>Esame Della Polvere,</i> Torino: Nella Stamperia Reale, 1765.",
-  "details": "<p>This is a treatise on gunpowder in Italian by Alessandro Vittorio Papacino d'Antoni, the director of the Artillery School in Turin.</p>\n<p>Starting on page 210 (article 164), the author describes a very clever method of measuring the speed of a bullet.  A wheel has a rim of paper that sticks out on one side, and is sent spinning at a known rate.  A gun is fired such that the bullet passed along the diameter of the wheel, but next to it so that it pierces the paper at the two opposite rims without striking anything in between.  Knowing the speed of the wheel, you can see how much it has revolved between the bullet piercing the near and far points, from which you can calculate the time of transit.</p>",
   "key": "dantoni1765",
   "ref": "d'Antoni, 1765",
   "summary": "A treatise on gunpowder and how it works chemically and physically."
  },
  "dantoni1780": {
   "cms": "d'Antoni, Alessandro Vittorio Papacino.  <i>Dell'Uso Delle Armi Da Fuoco,</i> Torino: Nella Stamperia Reale, 1780.",
-  "details": "<p>This is a treatise on gunpowder in Italian by Alessandro Vittorio Papacino d'Antoni, the director of the Artillery School in Turin.</p>\n<p>As part of this treatise, the author discusses air resistance, including that it changes with elevation.</p>",
   "key": "dantoni1780",
   "ref": "d'Antoni, 1780",
   "summary": "A treatise on fire arms."
  },
  "dantoni1789": {
   "cms": "d'Antoni, Alessandro Vittorio Papacino and Captain Thompson, trans.  <i>A Treatise on Gun-powder; a Treatise on Firearms; and a Treatise on the Service of Artillery in Time of War,</i> London: T. and J. Egerton, 1789.",
-  "details": "<p>This is a translation of three treatises from the Italian works of Alessandro Vittorio Papacino d'Antoni, the director of the Artillery School in Turin.  The translator notes (p. xxxiii) that \"All the weights and measures are reduced to the English standard: this, though a work of much labour, was deemed necessary; and indeed without it, a translation would be very defective.  The same denomination is left to the guns to distinguish their several natures, as in the original; it being found that they corresponded to natures unused among us and to fractional parts: it was therefore apprehended that the most simple mode was to leave the mas they were; the reader only having to recollect that the 32 pr. corresponds to the 27 pr. English; the 16 pr. to 13 1/2; the 8 pr. to 6 3/4; and the 4 pr. to 3 3/8.\"</p>\n<p>The translator goes on to note that the Piedmontese artillerists use the Lypraund foot, and gives a conversion of 1 Lypraund foot is equal to 20.23457 English inches (p. xxxiv), and 1 Piedmontese pound is 13 oz 2 dr English, or 0.82 English pounds (p. xxxv).</p>",
   "key": "dantoni1789",
   "ref": "d'Antoni, 1789",
   "summary": "A translation of three earlier works from the Italian."
@@ -129,7 +120,6 @@
  },
  "gentlemans1740": {
   "cms": "Urban, Slyvanus.  \"Historical Chronical, Friday, 20\" <i>The Gentleman's Magazine and Historical Chronical</i>, 10, no. 6 (June 1740): 315.",
-  "details": "<p>This is a short article that compares English with captured Spanish gunpowder.  The full text is below:</p>\n<p>I assume that when <em>drams</em> are specified, that these are drams avoirdupois, and not Troy drams (the results are weak enough that the smaller unit seems more likely).</p>\n<p>This powder gets terrible results, to the point that I suspect some gross error in the reported values.  The power between the lifting test and the swivel gun test is comparable, though.</p>\n<hr />\n<p>Friday, 20.</p>\n<p>Complaint having been made to the Lords of the Admiralty that the Gunpowder used by the 3 Men of War when they took the <em>Princessa</em> was weaker than the Powder taken in the said Ship in Proportion of 7 to 12, it was thought proper to make a publick Tryal; in order thereto some Gunpowder was taken out of each of the above 4 Ships, put into 4 Boxes at Portsmouth which were seal'd up by some Officers of the Navy and Ordnance, and sent to Town, and this Day try'd at <em>Woolwich</em> before the D. of <em>Montagu</em> Master General of the Ordnance, Sir <em>Charles Wager</em>, Lord Vere <em>Beauclerk</em>, General <em>Borgard</em>, some Captains of Men of War, &amp;c. in three divers Ways.  1. By raising a Weight of 20 l. 7 Ounces with two Drams of Powder.  2. By firing a twelve Pounder shot Shot out of a 5 2/3 Inch Mortar with a Quarter of an ounce of Powder.  3. By Firing a half-pounder Shot out of a Swivel Gun with two Drams of Powder.  In the first Experiment the <em>English</em> Powder raised the Weight from four Inches to six and some tenths, and the <em>Spanish</em> no higher than one Inch and 9 tenths: In proving by the Swivel Gun the <em>English</em> Powder threw the Ball 15 1/7 Foot at an Elevation of 61 Degrees, and the <em>Spanish</em> had not Strength enough to throw it out of the Gun; and the Tryal by the Mortar turn'd out equally in favour of the <em>English</em> Powder. --- <em>Notwithstanding the above Account, many Persons who have been at</em> Portsmouth <em>affirm that the Shot of the</em> Pricessa <em>were much Sharper thrown than those of our Men of War, some of hers going through the Sides of our Ships, when ours stuck in her Half-way.</em></p>",
   "key": "gentlemans1740",
   "link": "http://www.bodley.ox.ac.uk/cgi-bin/ilej/image1.pl?item=page&seq=4&size=1&id=gm.1740.6.x.10.x.x.315",
   "ref": "Gentleman's Magazine, 1740",
@@ -143,14 +133,12 @@
  },
  "helene1878": {
   "cms": "H\u00e9l\u00e8ne, Maxime.  <i>La Poudre a Canon et les Nouveaux Corps Explosifs.</i>  Paris: Librarie Hachette et Cie., 1878",
-  "details": "<p>This covers various aspects of ballistics, such as air resistance.  There are several experiments that provide power data.</p>",
   "key": "helene1878",
   "ref": "Helene, 1878",
   "summary": "An overview of a variety of explosives."
  },
  "helie1865": {
   "cms": "H\u00e9lie.  <i>Trait\u00e9 de Balistique Exp\u00e9rimentle.</i>  Paris: Librarie Militaire, 1865.",
-  "details": "<p>This covers a history of gunpowder, various manufacturing techniques, proofing, and then goes on to dynamite, torpedoes, and other more modern items.</p>\n<p>The author develops a third order equation to approximate aerodynamic drag on spherical projectiles, trying to fit it to experimental data.</p>",
   "key": "helie1865",
   "ref": "H\u00e9lie, 1878",
   "summary": "A discussion of ballistics effects."
@@ -164,14 +152,12 @@
  },
  "hime1897": {
   "cms": "Hime, H. W. L., <i>Stray Military Papers</i>, London: Longmans, Green, and Co., 1897",
-  "details": "<p>This book includes a few historical references to older cannons and their ranges.</p>",
   "key": "hime1897",
   "ref": "Hime, 1897",
   "summary": "This includes a chapter on field artillery and a section of proofs."
  },
  "hutton1778": {
   "cms": "Hutton, Charles.  \"The Force of Fired Gun-Powder, and the initial Velocities of Cannon Balls, determined by Experiments; from which is also deduced the Relation of the initial Velocity to the Weight of the short and the Quantity of Powder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 68 (1778): 50-85.",
-  "details": "<p>Charles Hutton makes some experiments with two ballistic pendulums after the matter proposed by Benjamin Robins.  He attempts to determine the various sources of error and indicates that the results are probably accurate to 1 part in a few hundred.  The text describes the geometry of the pendulums fairly well.</p>\n<p>I have taken Hutton's computed velocities.  One could recompute them all, but I have not.</p>",
   "key": "hutton1778",
   "ref": "Hutton, 1778",
   "summary": "Hutton's initial experiments with a ballistic pendulum."
@@ -184,14 +170,12 @@
  },
  "hutton1812v2": {
   "cms": "Hutton, Charles.  <i>Tracts on Mathematical and Philosophical Subjects, Vol. II.</i>  London: F. C. and J Rivington, et al., 1812",
-  "details": "<p>Although this book was published in 1812, the experiments described in Tract 34 were performed mostly in 1783.</p>\n<p>I have used the velocities as computed by Hutton, trusting that he has calculated the force on the pendulum appropriately.  Hutton show on p. 25 in Vol. III that he would get the same results regardless of whether the gun is allowed to swing freely in recoil or not.</p>\n<p>The tract has the virtue that it explains failures, rather than just reporting successful tests.</p>",
   "key": "hutton1812v2",
   "ref": "Hutton, 1812, Vol. II",
   "summary": "Tract XXXIV: New Experiments in Gunnery; for Determining the Force of Fired Gunpowder, the initial velocity of cannon balls, the ranged of projectiles at different elevations, the resistance of air to projectiles, the effect of different lengths of guns, and of different quantities of powder, &c, &c."
  },
  "hutton1812v3": {
   "cms": "Hutton, Charles.  <i>Tracts on Mathematical and Philosophical Subjects, Vol. III.</i>  London: F. C. and J Rivington, et al., 1812",
-  "details": "<p>This is a continuation of Vol. II, and contains experiments from 1784 through 1791 (at least).</p>\n<p>I have used the velocities as computed by Hutton, trusting that he has calculated the force on the pendulum appropriately.  Hutton show on p. 25 that he would get the same results regardless of whether the gun is allowed to swing freely in recoil or not.</p>\n<p>Hutton discusses calculating the range of projectiles and concludes that it is very difficult because of air resistance varying based on the density, size, and speed of the projectile, and on the pressure, temperature, and altitude of the environment.</p>\n<p>Hutton calculates the maximum velocity a gun of different lengths can throw a projectile (see p. 313).  He notes that using spherical projectiles is a limiting factor.</p>",
   "key": "hutton1812v3",
   "ref": "Hutton, 1812, Vol. III",
   "summary": "Tract XXXIV, continued.  Tract XXXV: On a new Gunpowder Eprouvette.  Tract XXXVI: Determination of the Air's Resistance to Bodies in motion, as determined by the Whirling Machine.  Tract XXXVII: On the theory and Practice of Gunnery, as dependent on the Resistance of the Air."
@@ -204,7 +188,6 @@
  },
  "international1909": {
   "cms": "VIIth International Congress of Applied Chemistry, Explosives Section, <i>The Rise and Progress of the British Explosives Industry.</i>  London: Whittaker and Co.: 1909",
-  "details": "<p>This is a history of the British explosives industry.  There is a chapter with the history of gunpowder by E. A. Brayley Hodgetts, and a chapter about gunpowder research by G. W. MacDonald.  The chapter on research has a small summary of early test results.</p>\n<p>Although the text cites results by Robins and Hutton, the one by Robins must contain some sort of error, as the power factor computed for the gun powder is very low.  The results from Hutton are incomplete and insufficient for calculation.</p>",
   "key": "international1909",
   "ref": "International Congress, 1909",
   "summary": "A history of the explosives industry with a chapter about researches on gunpowder by G. W. MacDonald."
@@ -230,7 +213,6 @@
  },
  "lewes1920": {
   "cms": "Lewes, Vivian B. and J. S. S. Brame.  <i>Service Chemistry, being a short manual of chemistru and metallurgy and their application in the naval and military service.</i>  London: Edward Arnold, 1920.",
-  "details": "<p>This book has an overview of various chemical reactions.  It has a nice summary of prismatic and cocoa powders, how mechanical pressure gauges work, and how an electric chronograph works.</p>",
   "key": "lewes1920",
   "ref": "Lewes, 1920",
   "summary": "A few calorimeter results are listed."
@@ -256,21 +238,18 @@
  },
  "montagu1792": {
   "cms": "Montagu, George, <i>The Sportsman's Directory, or Tractate on Gunpowder</i>, London: R. Faulder, 1792",
-  "details": "<p>The author compares different powder and comments on what he thinks is the best to use for shooting birds.  His tests use a very short barreled mortar, which shows fine powder to advantage, as the large powder doesn't have a chance to combust before the ball has moved.</p>\n<p>On p. 28, the author mentions glazing powder with black-lead.  This is the earliest reference to graphite glazing that I have found.</p>",
   "key": "montagu1792",
   "ref": "Montagu, 1792",
   "summary": "The author tests different powders with the desire to find the best sporting powder."
  },
  "mordecai1845": {
   "cms": "Mordecai, Alfred, <i>Report of Experiments on Gunpowder, made at Washington Arsenal, in 1843 and 1844</i>, Washington: J. and G. S. Gideon, 1845.",
-  "details": "<p>The author was asked to erect at Washington Arsenal a ballistic pendulum, and a gun pendulum, to serve for experiments in gunnery and also for the proof of gunpowder.</p>\n<p>The beginning of the volume has an excellent description of the pendulums used, how the guns are loaded, and how the system is maintained.</p>\n<p>Overall the experiments are wide-ranging, carefully performed, and quite illuminating.  Only testing powder in the intended weapons fully reveals what is most appropriate.  Using blanks in an eprouvette does not show the relative merits of power in long-arms, mortars, or cannons.</p>",
   "key": "mordecai1845",
   "ref": "Mordecai, 1845",
   "summary": "The first of two large sets of experiments on gunpowder."
  },
  "mordecai1849": {
   "cms": "Mordecai, Alfred, <i>Second Report of Experiments on Gunpowder, made at Washington Arsenal, in 1845, '47, and '48</i>, Washington: J. and G. S. Gideon, 1849.",
-  "details": "<p>This is a set of continued trials, which, in part, is meant to determine the smallest cannon which can be used to prove gunpowder for use in large cannons.</p>",
   "key": "mordecai1849",
   "ref": "Mordecai, 1849",
   "summary": "The second of two large sets of experiments on gunpowder."
@@ -290,21 +269,18 @@
  },
  "noble1875": {
   "cms": "Noble, Captain, and F. A. Abel,  \"Researches on Explosives.  Fired Gunpowder.\" <i>Philosophical Transactions of the Royal Society of London</i>, Vol. 165 (1875): 49-155.",
-  "details": "<p>This is a excellent summary of research into how gunpowder explodes.  In addition to calorimetric data, Noble and Abel calculate the amount of work that gunpowder can produce given volumetric expansion (related to the length of the gun in calibers).</p>",
   "key": "noble1875",
   "ref": "Noble, 1875",
   "summary": "Analysis of gunpowder force and chemistry."
  },
  "noble1880": {
   "cms": "Noble, Captain, and F. A. Abel,  \"Researches on Explosives.  No. II.  Fired Gunpowder.\" <i>Philosophical Transactions of the Royal Society of London</i>, Vol. 171 (1880): 203-279.",
-  "details": "<p>This is a second set of experiments into how gunpowder explodes which addresses some limitations on the 1875 experiments.</p>",
   "key": "noble1880",
   "ref": "Noble, 1880",
   "summary": "Analysis of gunpowder force and chemistry."
  },
  "norwest2001": {
   "cms": "\"Practical Chronographic Comparison of Goex, KIK and Elephant Brand of Black Powder.\" Comparing Goex, KIK and Elephant Brands of Black Powder. Accessed February 28, 2005. http://www.norwestcompany.com/comparison.htm.",
-  "details": "<p>A comparison of three brands of black powder was made using four different longarms.  Goex, KIK, and Elephant brands were compared, all in FFg granulation.  The results are presented for each brand and gun.</p>\n<p>Five rounds were used with each gun and powder combination.  The projectile velocity was measured 20 feet in front of the firing line using a chronograph.  The average, high, and low velocities were reported for each set of five rounds.</p>\n<p>The tests are reported to have been conducted with a temperature in mid-50s and a high relative humidity.  I have arbitrarily chosen to list the temperature as 55&deg;F, and the relative humidity as 90 %, as historically that appears to be the rough average for the week the tests were conducted.</p>",
   "key": "norwest2001",
   "link": "http://www.norwestcompany.com/comparison.htm",
   "ref": "Norwest, 2001",
@@ -331,7 +307,6 @@
  },
  "report1742": {
   "cms": "Committee of the Royal Society. \"Report of the Committee of the Royal Society appointed to examine some Questions in Gunnery.\" <i>Philosophical Transactions of the Royal Society</i>, XVII, no. 465 (October and November 1742): 172-183.",
-  "details": "<p>This is a report from a group instructed to determine if all gunpowder is burnt when firing a gun, and also if all of the gunpowder has fired (inflamed) before the bullet has moved a significant distance.  Since not all of the gunpowder is burnt, they also conclude that it doesn't happen instantaneously.  As a follow up to this, they test how different short barrel lengths affect the range of a mortar.</p>\n<p>For this purpose, the committee had made three inserts that would fit into a mortar.  Each insert had a cylindrical powder chamber that held one ounce Troy of powder, but had different lengths and diameters.  Specifically, the chamber lengths were 3 inches, 1 1/2 inches, and 3/4 inch.  A few tests are made with each chamber.</p>",
   "key": "report1742",
   "link": "http://rstl.royalsocietypublishing.org/content/by/year",
   "ref": "Committee of the Royal Society, 1742",
@@ -339,7 +314,6 @@
  },
  "robertson1775": {
   "cms": "Robertson, John, <i>A Treatise of Mathematical Instruments</i>, originally published London: printed for J. Nourse, 1775, reprinted by Arlington, VA: The Invisible College Press, 2002.",
-  "details": "<p>This is a textbook prepared by the master of the Royal Mathematical School in Christ's Hospital, updated through several editions for use by the Naval Academy in Portsmouth.</p>\n<p>A set of example problems are given on calculating range, angle of elevation, and powder charge using a 24 lb cannon.  The primary example uses unrealistic numbers, which almost would make sense if Mach effects didn't exist.  All of the other examples are based on this first unrealistic one, so are similarly unbelievable.</p>",
   "key": "robertson1775",
   "ref": "Robertson, 1775",
   "summary": "Textbook problems with an unrealistic starting condition."
@@ -353,7 +327,6 @@
  },
  "smith1779": {
   "cms": "Smith, George.  <i>An Universal Military Dictionary,</i>  London: J. Millan, 1779",
-  "details": "<p>Curiously, the velocities listed for the experiments by Robins do not match the values reported by Hutton, 1778.  In general, those reported by Smith a slightly higher than the ones in Hutton.  The charge weights and diameters appear to match, however.</p>",
   "key": "smith1779",
   "ref": "Smith, 1779",
   "summary": "Many miltary subjects are discussed in brief.  The section on gunnery has a summary of Robins ballistic pendulum work."
@@ -378,7 +351,6 @@
  },
  "straith1850": {
   "cms": "Straith, Hector, <i>Treatise on Fortification and Artillery</i>, London: W. Allen and Company, 1850.",
-  "details": "<p>This book includes a section on gunpowder manufacturing in India.  It has a section on proof requirements using mortars, a pendulum eprouvettes, a rifle eprovette fired through a number of wooden boards, and several other methods.  Only the first tests have enough information to calculate power factors.</p>\n<p>The section on using pendulum eprovettes suggests that such an eprovette doesn't always give accurate results.  In this, a charge is loaded into a pendulum-hanging gun, and the arc of recoil  is measured.  Here the powder is acting more like a rocket, and is not used to fire a projectile.  Without knowing the length of the pendulum arm, the data is insufficient to calculate power generated by the gunpowder.</p>",
   "key": "straith1850",
   "ref": "Straith, 1850",
   "summary": "Observations based on the author's experience in India."
@@ -403,7 +375,6 @@
  },
  "thompson1781": {
   "cms": "Thompson, Benjamin.  \"New Experiments upon Gun-Powder, with Occasional Observations and Practical Inferences; To Which are Added, an Account of a New Method of Determining the Velocities of All Kinds of Military Projectiles, and the Description of a Very Accurate Eprouvette for Gun-Poweder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 71 (1781): 229-328.",
-  "details": "<p>Benjamin Thompson (Count Rumford) uses a double pendulum to determine muzzle velocities.  In addition to using the ballistic pendulum, he calculates muzzle velocity from the gun pendulum by taking the different in the distance of recoil with a bullet and without (using the same powder charge), and multiplying this value by a constant he has determined for the pendulum geometry and mass of the bullet.</p>",
   "key": "thompson1781",
   "ref": "Thompson, 1781",
   "summary": "Count Rumford uses a ballistic pendulum to determine how the position of the vent effects muzzle velocity."
