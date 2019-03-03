@@ -34,5 +34,6 @@ module.exports = {
       template: 'client/index.html',
       title: 'Ballistics'
     }
-  }
+  },
+  publicPath: 'ballistics'
 }
