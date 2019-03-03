@@ -7,12 +7,14 @@
  },
  "anderson1696": {
   "cms": "Anderson, Robert. <i>The Making of Rockets.</i>  London: Printed for Robert Morden, 1696",
+  "details": "<p>This short book is mostly concerned with making rockets and calculating distances and trajectories.  It includes information on how to pack them and to make pyrotechnic stars.</p>\n<p>There is a short section on firing mortars, where the units are not specified very well.  My assumption is that some of the charges are in ounces avoirdupois, and that some of the others are in drams avoirdupois.  This seems appropriate from context, and the calculated power factors seem in line with other tests.  The distances are marked \"Chain\", but I presume them to be in links, not whole chains.</p>",
   "key": "anderson1696",
   "ref": "Anderson, 1696",
   "summary": "Mostly a book on rockets, this also has some information on firing mortars."
  },
  "anderson1862": {
   "cms": "Anderson, Colonel William and Lieutenant-Colonel Samuel Parlby. <i>Sketch of the mode of manufacturing gunpowder at the Ishapore mills in Bengal.</i> London: John Weale, 1862",
+  "details": "<p>This book has fairly thorough details of the gunpowder mills in Ishapore.  Much of the work examines manufacturing parameters and how they effect the quality of the resulting gunpowder.</p>\n<p>Anderson gives pendulum eprouvette values for nearly all of the tests.  However, he mentions (p. 294) that \"The weight of the gun, length of the arms, centre of gravity, diameter of bore, and oscillation, are all elements in the calculation, and if these be not the same, not two \\u00e9pouvettes will give an equal arc with the same charge of powder.\"  He then goes on to say that he thinks a single eprouvette will give consistent results, but doesn't include the pertinent information for his eprouvette to allow calculation of power based on it.</p>",
   "key": "anderson1862",
   "ref": "Anderson, 1862",
   "summary": "An excellent review of the technology used in India."
