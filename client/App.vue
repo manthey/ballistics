@@ -13,6 +13,7 @@
             <li v-for="(item, i) in tables" :key="'tablemenu' + i"><router-link :to="{path: item.path, query: item.query}" :title="item.tooltip">{{ item.text }}</router-link></li>
           </ul>
         </li>
+        <li><router-link :to="{path: 'techniques'}">Techniques</router-link></li>
         <li><router-link :to="{path: 'computation'}">Computation</router-link></li>
         <li><router-link :to="{path: 'references'}">References</router-link></li>
       </ul>
@@ -47,6 +48,7 @@ import MainPage from './components/MainPage.vue';
 import PlotWithControls from './components/PlotWithControls.vue';
 import References from './components/References.vue';
 import TableWithControls from './components/TableWithControls.vue';
+import Techniques from './components/Techniques.vue';
 
 Vue.use(VueRouter);
 Vue.component('vue-markdown', VueMarkdown);
@@ -82,6 +84,9 @@ export default {
         filter: route.query.filter,
         pointkey: route.query.pointkey
       })
+    }, {
+      path: '/techniques',
+      component: Techniques
     }, {
       path: '*',
       redirect: '/main'
@@ -209,7 +214,7 @@ specific graphs with commentary
   medium
   large
 techniques
-  accuracy based on reported precision
+accuracy based on reported precision
 github
 */
 </script>

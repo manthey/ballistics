@@ -2774,6 +2774,7 @@ data:
     angle: 0 deg
     mass: 1 oz
     material: "lead"
+    technique: "wheel_chronograph"
     data:
       -
         desc2: "11 in barrel"

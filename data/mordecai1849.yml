@@ -11,6 +11,7 @@ data:
     material: iron
     angle: 0 deg
     range: 30 ft
+    technique: "pendulum"
     data:
       -
         date: "1845-07-09"
@@ -185,6 +186,7 @@ data:
     range_note: "Range not stated, but probably the same as the six-pounder tests"
     desc2: "Powder 'A3' (Dupont small cannon)"
     diameter: 4.528 in
+    technique: "pendulum"
     data:
       -
         data:
