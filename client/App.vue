@@ -213,7 +213,6 @@ specific graphs with commentary
   small diam
   medium
   large
-techniques
 accuracy based on reported precision
 github
 */

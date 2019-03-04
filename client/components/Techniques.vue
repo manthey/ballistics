@@ -6,8 +6,31 @@
 The project uses historical data from a variety of techniques that result in measurements from which the power per mass factor of gunpowder can be determined.
 
 ## Range
-
+    </vue-markdown>
+    <figure>
+      <img src="tech_range.jpg"/>
+      <figcaption>
+        <vue-markdown>
+Range measures the distance a projectile is thrown by an actual gun.  Figure from [Blondel, 1683](#/reference?refkey=blondel1683)
+        </vue-markdown>
+      </figcaption>
+    </figure>
+    <vue-markdown>
 [Plot](#/plot?filter=d.technique%3D%3D'range') [Table](#/table?filter=d.technique%3D%3D'range')
+
+Range is a straight-forward measurement.  An actual cannon, howitzer, mortar, or musket is fired, noting the angle angle of elevation, the size and mass of the projectile, and the mass of the powder charge.  The distance that the ball travels is measured.
+
+It must be noted if the ball lands at a different elevation than it started.
+
+There is quite a variety of experiments using range.  There are proof tests where a mortar is used where a minimum range is required for a standardized angle, ball, and powder charge.  There are simple down-range observations where observers measure the landing point.  More careful tests note temperature, humidity, and pressure.  A wide selection of ball diameters and materials and of initial angles have been examined.
+
+## Time of Flight
+
+[Plot](#/plot?filter=d.technique%3D%3D'time') [Table](#/table?filter=d.technique%3D%3D'time')
+
+This is a variation of the range test, except instead of noting the distance that the ball travels, the time between when it was fired and when it lands is recorded.
+
+Time of flight measurements are usually very inaccurate.  Often a projectile is only aloft for 10 seconds.  A long shot might last nearly half a minute.  Observers rarely record times with accuracies of greater than a quarter second, and often these can be a second in error.  This produces unreliable results.
 
 ## Pendulum
 
@@ -24,10 +47,6 @@ The project uses historical data from a variety of techniques that result in mea
 ### Gun Pendulum
 
 [Plot](#/plot?filter=d.technique%3D%3D'gun_pendulum') [Table](#/table?filter=d.technique%3D%3D'gun_pendulum')
-
-## Time of Flight
-
-[Plot](#/plot?filter=d.technique%3D%3D'time') [Table](#/table?filter=d.technique%3D%3D'time')
 
 ## Given Velocity
 
@@ -73,6 +92,18 @@ The project uses historical data from a variety of techniques that result in mea
   padding: 10px;
   max-width: 1000px;
   margin: 0 auto;
+}
+figure {
+  float: right;
+  margin: 10px 0 10px 10px;
+}
+figcaption {
+  text-align: center;
+  max-width: 400px;
+  font-size: 0.9em;
+}
+figure img {
+  max-width: 400px;
 }
 </style>
 

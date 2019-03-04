@@ -42,6 +42,10 @@ In an effort to characterize the quality of gunpowder over time, a variety of hi
 Currently, ballistics calculations are limited to spherical projectiles, as drag models for other shapes are substantially more complicated.  Where available, information such as temperature, pressure, and humidity are used to refine computations.  Ideally, one would use the smoothness and sphericity of the projectile as well, but this is essentially never recorded.
 
 There are certainly more sources than have been used; please forward references when possible.
+
+## Full Data
+
+All of the data, the computation program, and the source of this websire are available publicly on [GitHub](https://github.com/manthey/ballistics).
     </vue-markdown>
   </div>
 </template>
