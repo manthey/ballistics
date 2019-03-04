@@ -69,13 +69,7 @@ export default {
       plotdata.forEach(d => technique[d.technique] = (technique[d.technique] || 0) + 1);
       let techlist = Object.keys(technique).sort((a, b) => technique[b] - technique[a]);
       if (this.filter) {
-        try {
-          let filterFunc = Function('d', '"use strict";return(' + this.filter + ')')
-          plotdata = plotdata.filter(filterFunc);
-        } catch (err) {
-          console.error('Filter failed: ' + this.filter);
-          console.error(err);
-        }
+        plotdata = utils.filterData(plotdata, this.filter);
       }
       let traces = techlist.map((technique) => {
         let tidx = techlist.indexOf(technique),

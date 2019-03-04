@@ -308,6 +308,28 @@ ParameterList.forEach((param, idx) => {
 let PointKeys = {};
 
 /**
+ * Filter data based on user input.  See
+ * https://stackoverflow.com/questions/47444376 for sanitization rationale.
+ *
+ * Enter: data: the data to filter.
+ *        filter: the filter string.
+ * Exit:  data: the filtered data.
+ */
+function filterData(data, filter) {
+  try {
+    let args = ['d'].concat(Object.keys(window));
+    args = args.filter(key => /^[a-zA-Z_$][0-9a-zA-Z_$]*$/.exec(key));
+    args.push('"use strict";return(' + filter + ')');
+    let filterFunc = Function.apply(null, args);
+    return data.filter(d => filterFunc.call({}, Object.assign({}, d)));
+  } catch (err) {
+    console.error('Filter failed: ' + this.filter);
+    console.error(err);
+    return data;
+  }
+}
+
+/**
  * Given a value and a parameter specification, format the value either as text
  * or as a number, possibly with units.
  *
@@ -456,6 +478,7 @@ export {
   Parameters,
   PointKeys,
 
+  filterData,
   formatValue,
   sortObjectList,
   updateParameters,

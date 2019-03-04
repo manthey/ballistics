@@ -57,13 +57,7 @@ export default {
     dataList() {
       let plotdata  = this.plotdata || [];
       if (this.filter) {
-        try {
-          let filterFunc = Function('d', '"use strict";return(' + this.filter + ')')
-          plotdata = plotdata.filter(filterFunc);
-        } catch (err) {
-          console.error('Filter failed: ' + this.filter);
-          console.error(err);
-        }
+        plotdata = utils.filterData(plotdata, this.filter);
       }
       return plotdata;
     },

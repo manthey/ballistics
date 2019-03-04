@@ -9,7 +9,7 @@
       </div>
       <table>
         <tr v-for="param in Object.keys(params)" :key="param">
-          <td :title="parameters[param].title">{{ param }}</td>
+          <td :title="(parameters[param] || {}).title">{{ param }}</td>
           <td>{{ params[param] }}</td>
         </tr>
       </table>
