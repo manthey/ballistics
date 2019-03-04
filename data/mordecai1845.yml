@@ -309,7 +309,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1468 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1450 ft/s
           -
@@ -322,7 +322,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1526 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1513 ft/s
       -
@@ -342,7 +342,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1218 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1204 ft/s
           -
@@ -355,7 +355,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1247 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1219 ft/s
           -
@@ -368,7 +368,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1358 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1337 ft/s
       -
@@ -388,7 +388,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1402 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1381 ft/s
           -
@@ -401,7 +401,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1481 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1460 ft/s
       -
@@ -421,7 +421,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1451 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1427 ft/s
           -
@@ -434,7 +434,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1548 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1525 ft/s
           -
@@ -447,7 +447,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1574 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1546 ft/s
           -
@@ -460,7 +460,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1712 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1676 ft/s
       -
@@ -480,7 +480,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1720 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1705 ft/s
       -
@@ -500,7 +500,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1593 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1567 ft/s
       -
@@ -517,7 +517,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1589 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1558 ft/s
           -
@@ -530,7 +530,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1594 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1550 ft/s
   -
@@ -555,7 +555,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1243 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1241 ft/s
           -
@@ -568,7 +568,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1194 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1189 ft/s
           -
@@ -581,7 +581,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1184 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1176 ft/s
           -
@@ -594,7 +594,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1216 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1204 ft/s
       -
@@ -614,7 +614,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1202 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1192 ft/s
         data:
@@ -628,7 +628,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1210 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1201 ft/s
         data:
@@ -642,7 +642,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1190 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1173 ft/s
       -
@@ -662,7 +662,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1274 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1256 ft/s
           -
@@ -675,7 +675,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1212 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1199 ft/s
           -
@@ -688,7 +688,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1162 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1186 ft/s
           -
@@ -701,7 +701,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1190 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1179 ft/s
           -
@@ -714,7 +714,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1226 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1212 ft/s
       -
@@ -734,7 +734,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1425 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1415 ft/s
           -
@@ -747,7 +747,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1335 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1317 ft/s
           -
@@ -760,7 +760,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1376 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1358 ft/s
           -
@@ -773,7 +773,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1417 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1401 ft/s
           -
@@ -786,7 +786,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1395 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1375 ft/s
           -
@@ -799,7 +799,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1383 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1361 ft/s
       -
@@ -819,7 +819,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1378 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1356 ft/s
           -
@@ -832,7 +832,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1435 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1418 ft/s
           -
@@ -845,7 +845,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1376 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1362 ft/s
           -
@@ -858,7 +858,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1395 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1371 ft/s
           -
@@ -871,7 +871,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1435 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1411 ft/s
           -
@@ -884,7 +884,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1351 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1324 ft/s
       -
@@ -904,7 +904,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1637 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1606 ft/s
           -
@@ -917,7 +917,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1660 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1616 ft/s
           -
@@ -930,7 +930,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1597 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1531 ft/s
           -
@@ -943,7 +943,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1552 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1498 ft/s
           -
@@ -956,7 +956,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1610 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1558 ft/s
           -
@@ -969,7 +969,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1610 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1550 ft/s
           -
@@ -982,7 +982,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1628 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1588 ft/s
           -
@@ -995,7 +995,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1608 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1557 ft/s
   -
@@ -1021,7 +1021,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1621 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1609 ft/s
           -
@@ -1033,7 +1033,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1607 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1593 ft/s
           -
@@ -1045,7 +1045,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1624 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1608 ft/s
       -
@@ -1065,7 +1065,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1407 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1408 ft/s
           -
@@ -1078,7 +1078,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1415 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1397 ft/s
           -
@@ -1091,7 +1091,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1416 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1406 ft/s
           -
@@ -1104,7 +1104,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1384 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1375 ft/s
           -
@@ -1117,7 +1117,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1396 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1389 ft/s
           -
@@ -1130,7 +1130,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1396 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1394 ft/s
       -
@@ -1150,7 +1150,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1586 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1570 ft/s
           -
@@ -1162,7 +1162,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1586 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1573 ft/s
           -
@@ -1174,7 +1174,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1580 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1564 ft/s
       -
@@ -1194,7 +1194,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1658 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1663 ft/s
           -
@@ -1207,7 +1207,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1668 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1664 ft/s
           -
@@ -1220,7 +1220,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1515 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1502 ft/s
           -
@@ -1233,7 +1233,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1549 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1532 ft/s
           -
@@ -1246,7 +1246,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1493 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1483 ft/s
       -
@@ -1266,7 +1266,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1493 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1483 ft/s
           -
@@ -1279,7 +1279,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1454 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1458 ft/s
           -
@@ -1292,7 +1292,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1451 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1453 ft/s
           -
@@ -1305,7 +1305,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1361 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1350 ft/s
           -
@@ -1318,7 +1318,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1351 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1334 ft/s
           -
@@ -1331,7 +1331,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1338 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1338 ft/s
   -
@@ -1357,7 +1357,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1792 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1739 ft/s
           -
@@ -1371,7 +1371,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1571 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1541 ft/s
           -
@@ -1385,7 +1385,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1584 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1555 ft/s
           -
@@ -1399,7 +1399,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1492 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1469 ft/s
       -
@@ -1419,7 +1419,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1502 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1464 ft/s
           -
@@ -1433,7 +1433,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1361 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1342 ft/s
           -
@@ -1447,7 +1447,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1361 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1342 ft/s
           -
@@ -1461,7 +1461,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1266 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1246 ft/s
           -
@@ -1475,7 +1475,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1288 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1260 ft/s
       -
@@ -1495,7 +1495,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1495 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1470 ft/s
           -
@@ -1509,7 +1509,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1494 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1468 ft/s
           -
@@ -1523,7 +1523,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1488 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1459 ft/s
           -
@@ -1537,7 +1537,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1541 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1519 ft/s
           -
@@ -1551,7 +1551,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1514 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1486 ft/s
           -
@@ -1565,7 +1565,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1546 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1527 ft/s
           -
@@ -1579,7 +1579,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1295 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1274 ft/s
       -
@@ -1599,7 +1599,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1291 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1269 ft/s
           -
@@ -1612,7 +1612,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1352 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1335 ft/s
           -
@@ -1625,7 +1625,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1361 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1352 ft/s
           -
@@ -1638,7 +1638,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1346 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1328 ft/s
   -
@@ -1664,7 +1664,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1133 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1126 ft/s
           -
@@ -1677,7 +1677,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1114 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1098 ft/s
           -
@@ -1690,7 +1690,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1174 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1156 ft/s
           -
@@ -1703,7 +1703,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1147 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1135 ft/s
           -
@@ -1716,7 +1716,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1129 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1104 ft/s
       -
@@ -1735,7 +1735,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1115 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1094 ft/s
           -
@@ -1748,7 +1748,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1147 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1134 ft/s
           -
@@ -1761,7 +1761,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1180 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1166 ft/s
           -
@@ -1774,7 +1774,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1201 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1196 ft/s
           -
@@ -1787,7 +1787,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1220 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1221 ft/s
           -
@@ -1800,7 +1800,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1131 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1122 ft/s
       -
@@ -1819,7 +1819,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1136 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1125 ft/s
           -
@@ -1832,7 +1832,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1163 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1149 ft/s
           -
@@ -1845,7 +1845,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1118 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1110 ft/s
           -
@@ -1858,7 +1858,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1256 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1253 ft/s
           -
@@ -1871,7 +1871,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1246 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1243 ft/s
       -
@@ -1890,7 +1890,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1184 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1175 ft/s
           -
@@ -1902,7 +1902,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1197 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1191 ft/s
           -
@@ -1914,7 +1914,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1260 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1245 ft/s
           -
@@ -1926,7 +1926,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1245 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1227 ft/s
       -
@@ -1945,7 +1945,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1201 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1206 ft/s
           -
@@ -1957,7 +1957,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1213 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1209 ft/s
           -
@@ -1969,7 +1969,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1186 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1176 ft/s
           -
@@ -1981,7 +1981,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1187 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1183 ft/s
           -
@@ -1993,7 +1993,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1227 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1216 ft/s
           -
@@ -2005,7 +2005,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1230 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1214 ft/s
           -
@@ -2017,7 +2017,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1245 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1238 ft/s
           -
@@ -2029,7 +2029,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1246 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1229 ft/s
           -
@@ -2041,7 +2041,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1200 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1195 ft/s
       -
@@ -2060,7 +2060,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1199 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1192 ft/s
           -
@@ -2072,7 +2072,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1187 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1170 ft/s
           -
@@ -2084,7 +2084,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1194 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1183 ft/s
           -
@@ -2096,7 +2096,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1227 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1220 ft/s
           -
@@ -2108,7 +2108,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1226 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1216 ft/s
   -
@@ -2134,7 +2134,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1309 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1302 ft/s
           -
@@ -2148,7 +2148,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1303 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1289 ft/s
           -
@@ -2162,7 +2162,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1316 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1302 ft/s
           -
@@ -2176,7 +2176,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1517 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1496 ft/s
           -
@@ -2190,7 +2190,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1512 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1493 ft/s
           -
@@ -2204,7 +2204,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1517 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1496 ft/s
           -
@@ -2218,7 +2218,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1585 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1555 ft/s
       -
@@ -2238,7 +2238,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1211 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1200 ft/s
           -
@@ -2250,7 +2250,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1229 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1211 ft/s
           -
@@ -2262,7 +2262,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1254 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1240 ft/s
           -
@@ -2274,7 +2274,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1211 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1195 ft/s
           -
@@ -2286,7 +2286,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1203 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1187 ft/s
           -
@@ -2298,7 +2298,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1216 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1199 ft/s
           -
@@ -2310,7 +2310,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1421 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1396 ft/s
           -
@@ -2322,7 +2322,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1431 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1400 ft/s
           -
@@ -2334,7 +2334,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1349 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1326 ft/s
           -
@@ -2346,7 +2346,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1372 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1348 ft/s
       -
@@ -2366,7 +2366,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1166 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1163 ft/s
           -
@@ -2378,7 +2378,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1176 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1168 ft/s
           -
@@ -2390,7 +2390,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1172 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1168 ft/s
           -
@@ -2402,7 +2402,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1276 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1258 ft/s
           -
@@ -2414,7 +2414,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1281 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1267 ft/s
           -
@@ -2426,7 +2426,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1282 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1261 ft/s
           -
@@ -2438,7 +2438,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1356 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1324 ft/s
           -
@@ -2450,7 +2450,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1363 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1330 ft/s
       -
@@ -2468,7 +2468,7 @@ data:
             technique: "gun_pendulum"
             initial_velocity: 1351 ft/s
           -
-            technique: "pendulum"
+            technique: "double_pendulum"
             range: 55 ft
             final_velocity: 1315 ft/s
       -
@@ -2488,7 +2488,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1112 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1122 ft/s
           -
@@ -2501,7 +2501,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1126 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1129 ft/s
           -
@@ -2514,7 +2514,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1182 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1171 ft/s
           -
@@ -2527,7 +2527,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1199 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1187 ft/s
           -
@@ -2540,7 +2540,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1129 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1142 ft/s
           -
@@ -2553,7 +2553,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1147 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1150 ft/s
           -
@@ -2566,7 +2566,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1239 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1241 ft/s
           -
@@ -2579,7 +2579,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1247 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1250 ft/s
   -
@@ -2969,7 +2969,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1239 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1230 ft/s
           -
@@ -2980,7 +2980,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1249 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1240 ft/s
           -
@@ -2991,7 +2991,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1254 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1248 ft/s
       -
@@ -3009,7 +3009,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1450 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1436 ft/s
           -
@@ -3020,7 +3020,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1456 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1448 ft/s
           -
@@ -3031,7 +3031,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1432 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1420 ft/s
       -
@@ -3049,7 +3049,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1717 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1680 ft/s
           -
@@ -3060,7 +3060,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1711 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1690 ft/s
           -
@@ -3071,7 +3071,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1722 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1690 ft/s
       -
@@ -3089,7 +3089,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1790 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1782 ft/s
           -
@@ -3100,7 +3100,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1895 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1866 ft/s
           -
@@ -3111,7 +3111,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1903 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1852 ft/s
   -
@@ -3137,7 +3137,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1381 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1378 ft/s
           -
@@ -3149,7 +3149,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1421 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1400 ft/s
           -
@@ -3161,7 +3161,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1366 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1385 ft/s
           -
@@ -3173,7 +3173,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1469 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1450 ft/s
           -
@@ -3185,7 +3185,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1501 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1473 ft/s
           -
@@ -3197,7 +3197,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1416 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1423 ft/s
           -
@@ -3209,7 +3209,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1522 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1518 ft/s
           -
@@ -3221,7 +3221,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1520 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1503 ft/s
       -
@@ -3241,7 +3241,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1536 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1530 ft/s
           -
@@ -3254,7 +3254,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1534 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1525 ft/s
           -
@@ -3267,7 +3267,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1545 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1527 ft/s
           -
@@ -3280,7 +3280,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1451 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1443 ft/s
           -
@@ -3293,7 +3293,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1649 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1620 ft/s
           -
@@ -3306,7 +3306,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1623 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1602 ft/s
           -
@@ -3319,7 +3319,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1618 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1602 ft/s
           -
@@ -3332,7 +3332,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1633 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1615 ft/s
           -
@@ -3345,7 +3345,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1703 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1678 ft/s
           -
@@ -3358,7 +3358,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1742 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1711 ft/s
           -
@@ -3371,7 +3371,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1739 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1707 ft/s
       -
@@ -3391,7 +3391,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1232 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1223 ft/s
           -
@@ -3404,7 +3404,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1211 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1205 ft/s
           -
@@ -3417,7 +3417,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1249 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1245 ft/s
           -
@@ -3430,7 +3430,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1228 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1216 ft/s
           -
@@ -3443,7 +3443,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1248 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1230 ft/s
           -
@@ -3456,7 +3456,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1250 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1244 ft/s
           -
@@ -3469,7 +3469,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1645 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1609 ft/s
           -
@@ -3482,7 +3482,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1638 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1607 ft/s
           -
@@ -3495,7 +3495,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1670 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1622 ft/s
           -
@@ -3508,7 +3508,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1678 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1647 ft/s
           -
@@ -3521,7 +3521,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1702 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1672 ft/s
           -
@@ -3534,7 +3534,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1662 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1628 ft/s
   -
@@ -3560,7 +3560,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1735 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1707 ft/s
           -
@@ -3572,7 +3572,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1702 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1678 ft/s
           -
@@ -3584,7 +3584,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1677 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1644 ft/s
           -
@@ -3596,7 +3596,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1657 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1625 ft/s
           -
@@ -3608,7 +3608,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1666 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1625 ft/s
           -
@@ -3620,7 +3620,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1684 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1652 ft/s
           -
@@ -3632,7 +3632,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1724 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1676 ft/s
           -
@@ -3644,7 +3644,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1729 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1689 ft/s
       -
@@ -3664,7 +3664,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1584 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1531 ft/s
           -
@@ -3677,7 +3677,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1566 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1515 ft/s
           -
@@ -3690,7 +3690,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1561 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1533 ft/s
           -
@@ -3703,7 +3703,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1579 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1526 ft/s
           -
@@ -3716,7 +3716,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1657 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1630 ft/s
           -
@@ -3729,7 +3729,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1684 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1663 ft/s
           -
@@ -3742,7 +3742,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1611 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1585 ft/s
           -
@@ -3755,7 +3755,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1628 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1606 ft/s
       -
@@ -3775,7 +3775,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1188 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1189 ft/s
           -
@@ -3786,7 +3786,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1203 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1186 ft/s
           -
@@ -3797,7 +3797,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1202 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1186 ft/s
           -
@@ -3808,7 +3808,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1332 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1322 ft/s
           -
@@ -3819,7 +3819,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1326 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1317 ft/s
           -
@@ -3830,7 +3830,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1336 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1324 ft/s
           -
@@ -3841,7 +3841,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1472 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1437 ft/s
           -
@@ -3852,7 +3852,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1478 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1446 ft/s
           -
@@ -3863,7 +3863,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1476 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1456 ft/s
   -
@@ -3889,7 +3889,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1340 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1325 ft/s
           -
@@ -3900,7 +3900,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1342 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1324 ft/s
           -
@@ -3911,7 +3911,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1345 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1325 ft/s
           -
@@ -3922,7 +3922,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1399 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1369 ft/s
           -
@@ -3933,7 +3933,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1388 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1361 ft/s
           -
@@ -3944,7 +3944,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1379 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1356 ft/s
           -
@@ -3955,7 +3955,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1543 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1507 ft/s
           -
@@ -3966,7 +3966,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1536 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1508 ft/s
           -
@@ -3977,7 +3977,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1555 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1542 ft/s
       -
@@ -3999,7 +3999,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 2195 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 2154 ft/s
               -
@@ -4010,7 +4010,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1654 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1651 ft/s
               -
@@ -4021,7 +4021,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1666 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1645 ft/s
               -
@@ -4032,7 +4032,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1664 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1642 ft/s
               -
@@ -4043,7 +4043,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 2742 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 2759 ft/s
               -
@@ -4062,7 +4062,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1581 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1538 ft/s
               -
@@ -4072,7 +4072,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1574 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1532 ft/s
   -
@@ -4098,7 +4098,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1923 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1912 ft/s
           -
@@ -4108,7 +4108,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1983 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1955 ft/s
       -
@@ -4130,7 +4130,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1859 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1829 ft/s
               -
@@ -4141,7 +4141,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1882 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1838 ft/s
               -
@@ -4152,7 +4152,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1911 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1879 ft/s
               -
@@ -4163,7 +4163,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1872 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1840 ft/s
               -
@@ -4174,7 +4174,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1915 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1889 ft/s
               -
@@ -4185,7 +4185,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1903 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1871 ft/s
               -
@@ -4196,7 +4196,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1762 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1687 ft/s
               -
@@ -4207,7 +4207,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1773 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1711 ft/s
               -
@@ -4218,7 +4218,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1764 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1730 ft/s
               -
@@ -4229,7 +4229,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1747 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1697 ft/s
               -
@@ -4240,7 +4240,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1842 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1829 ft/s
               -
@@ -4251,7 +4251,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1884 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1869 ft/s
               -
@@ -4262,7 +4262,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1989 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1998 ft/s
               -
@@ -4273,7 +4273,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1971 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1965 ft/s
           -
@@ -4287,7 +4287,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1527 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1504 ft/s
           -
@@ -4301,7 +4301,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1877 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1831 ft/s
           -
@@ -4315,7 +4315,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1883 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1853 ft/s
           -
@@ -4329,7 +4329,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1521 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1505 ft/s
           -
@@ -4343,7 +4343,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1600 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1571 ft/s
           -
@@ -4357,7 +4357,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1653 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1615 ft/s
       -
@@ -4377,7 +4377,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1197 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1189 ft/s
           -
@@ -4390,7 +4390,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1216 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1200 ft/s
           -
@@ -4403,7 +4403,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1006 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 982 ft/s
           -
@@ -4416,7 +4416,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1233 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1211 ft/s
           -
@@ -4429,7 +4429,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1245 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1227 ft/s
           -
@@ -4442,7 +4442,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1002 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 978 ft/s
           -
@@ -4455,7 +4455,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1185 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1160 ft/s
           -
@@ -4468,7 +4468,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1219 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1203 ft/s
           -
@@ -4481,7 +4481,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1225 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1214 ft/s
           -
@@ -4494,7 +4494,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1217 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1198 ft/s
           -
@@ -4513,7 +4513,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 2140 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 2160 ft/s
           -
@@ -4526,7 +4526,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 2131 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 2146 ft/s
           -
@@ -4539,7 +4539,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1678 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1616 ft/s
           -
@@ -4552,7 +4552,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1703 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1661 ft/s
           -
@@ -4565,7 +4565,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1696 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1651 ft/s
   -
@@ -4593,7 +4593,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1203 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1198 ft/s
               -
@@ -4604,7 +4604,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1186 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1173 ft/s
               -
@@ -4615,7 +4615,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1212 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1204 ft/s
               -
@@ -4626,7 +4626,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1183 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1167 ft/s
               -
@@ -4637,7 +4637,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1214 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1209 ft/s
               -
@@ -4648,7 +4648,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1208 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1198 ft/s
           -
@@ -4663,7 +4663,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1745 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1738 ft/s
               -
@@ -4674,7 +4674,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1748 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1738 ft/s
       -
@@ -4695,7 +4695,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1738 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1722 ft/s
               -
@@ -4706,7 +4706,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1754 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1760 ft/s
               -
@@ -4717,7 +4717,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1719 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1700 ft/s
               -
@@ -4728,7 +4728,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1735 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1721 ft/s
           -
@@ -4743,7 +4743,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1218 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1211 ft/s
               -
@@ -4754,7 +4754,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1221 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1218 ft/s
               -
@@ -4765,7 +4765,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1220 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1213 ft/s
           -
@@ -4780,7 +4780,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1629 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1591 ft/s
               -
@@ -4791,7 +4791,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1637 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1600 ft/s
               -
@@ -4802,7 +4802,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1652 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1615 ft/s
       -
@@ -4821,7 +4821,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1546 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1520 ft/s
           -
@@ -4833,7 +4833,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1523 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1489 ft/s
           -
@@ -4845,7 +4845,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1673 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1638 ft/s
           -
@@ -4857,7 +4857,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1671 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1646 ft/s
           -
@@ -4869,7 +4869,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1677 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1648 ft/s
       -
@@ -4888,7 +4888,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1659 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1619 ft/s
           -
@@ -4900,7 +4900,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1641 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1606 ft/s
           -
@@ -4912,7 +4912,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1645 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1611 ft/s
           -
@@ -4924,7 +4924,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1665 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1616 ft/s
           -
@@ -4936,7 +4936,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1651 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1606 ft/s
           -
@@ -4948,7 +4948,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1654 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1625 ft/s
           -
@@ -4960,7 +4960,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1649 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1617 ft/s
           -
@@ -4972,7 +4972,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1621 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1571 ft/s
           -
@@ -4984,7 +4984,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1639 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1601 ft/s
           -
@@ -4996,7 +4996,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1457 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1451 ft/s
           -
@@ -5008,7 +5008,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1512 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1514 ft/s
           -
@@ -5020,7 +5020,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1699 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1653 ft/s
           -
@@ -5032,7 +5032,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1715 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1674 ft/s
           -
@@ -5044,7 +5044,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1561 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1567 ft/s
           -
@@ -5056,7 +5056,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1580 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1570 ft/s
           -
@@ -5068,7 +5068,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1589 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1544 ft/s
   -
@@ -5094,7 +5094,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1587 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1582 ft/s
           -
@@ -5110,7 +5110,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1254 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1232 ft/s
               -
@@ -5122,7 +5122,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1266 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1253 ft/s
               -
@@ -5134,7 +5134,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1254 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1240 ft/s
               -
@@ -5146,7 +5146,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1697 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1669 ft/s
               -
@@ -5158,7 +5158,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1727 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1709 ft/s
               -
@@ -5170,7 +5170,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1714 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1678 ft/s
       -
@@ -5190,7 +5190,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1671 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1642 ft/s
           -
@@ -5202,7 +5202,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1774 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1807 ft/s
           -
@@ -5214,7 +5214,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1989 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1957 ft/s
           -
@@ -5226,7 +5226,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 2001 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1964 ft/s
   -
@@ -5319,7 +5319,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1635 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1616 ft/s
               -
@@ -5330,7 +5330,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1626 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1608 ft/s
               -
@@ -5341,7 +5341,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1590 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1582 ft/s
               -
@@ -5352,7 +5352,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1617 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1609 ft/s
           -
@@ -5366,7 +5366,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1659 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1644 ft/s
               -
@@ -5377,7 +5377,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1597 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1584 ft/s
               -
@@ -5388,7 +5388,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1611 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1586 ft/s
               -
@@ -5399,7 +5399,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1591 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1592 ft/s
           -
@@ -5413,7 +5413,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1659 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1627 ft/s
               -
@@ -5424,7 +5424,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1637 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1618 ft/s
               -
@@ -5435,7 +5435,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1601 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1626 ft/s
               -
@@ -5446,7 +5446,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1632 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1610 ft/s
           -
@@ -5458,7 +5458,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1655 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1632 ft/s
       -
@@ -5474,7 +5474,7 @@ data:
             technique: "gun_pendulum"
             initial_velocity: 1674 ft/s
           -
-            technique: "pendulum"
+            technique: "double_pendulum"
             range: 55 ft
             final_velocity: 1645 ft/s
       -
@@ -5494,7 +5494,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1628 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1612 ft/s
               -
@@ -5505,7 +5505,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1660 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1645 ft/s
           -
@@ -5519,7 +5519,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1593 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1592 ft/s
               -
@@ -5530,7 +5530,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1585 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1579 ft/s
 
@@ -5542,7 +5542,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1583 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1584 ft/s
 
@@ -5554,7 +5554,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1635 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1615 ft/s
   -
@@ -5582,7 +5582,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1509 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1501 ft/s
               -
@@ -5593,7 +5593,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1495 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1473 ft/s
               -
@@ -5604,7 +5604,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1565 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1534 ft/s
           -
@@ -5618,7 +5618,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1492 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1487 ft/s
               -
@@ -5629,7 +5629,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1514 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1508 ft/s
               -
@@ -5640,7 +5640,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1546 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1525 ft/s
           -
@@ -5654,7 +5654,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1509 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1482 ft/s
               -
@@ -5665,7 +5665,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1565 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1552 ft/s
               -
@@ -5676,7 +5676,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1555 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1539 ft/s
           -
@@ -5690,7 +5690,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1633 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1612 ft/s
               -
@@ -5701,7 +5701,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1643 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1602 ft/s
               -
@@ -5712,7 +5712,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1683 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1650 ft/s
           -
@@ -5726,7 +5726,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1665 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1649 ft/s
               -
@@ -5737,7 +5737,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1604 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1587 ft/s
               -
@@ -5748,7 +5748,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1663 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1636 ft/s
           -
@@ -5762,7 +5762,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1337 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1321 ft/s
               -
@@ -5773,7 +5773,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1281 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1297 ft/s
               -
@@ -5784,7 +5784,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1356 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1337 ft/s
       -
@@ -5806,7 +5806,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1676 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1667 ft/s
               -
@@ -5817,7 +5817,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1609 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1595 ft/s
           -
@@ -5832,7 +5832,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1233 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1220 ft/s
               -
@@ -5842,7 +5842,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1231 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1220 ft/s
               -
@@ -5852,7 +5852,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1237 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1234 ft/s
       -
@@ -5872,7 +5872,7 @@ data:
                 technique: "gun_pendulum"
                 initial_velocity: 1690 ft/s
               -
-                technique: "pendulum"
+                technique: "double_pendulum"
                 range: 55 ft
                 final_velocity: 1661 ft/s
           -
@@ -5887,7 +5887,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 2065 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 2026 ft/s
               -
@@ -5898,7 +5898,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1946 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1946 ft/s
   -
@@ -5926,7 +5926,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1670 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1650 ft/s
               -
@@ -5937,7 +5937,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1645 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1621 ft/s
               -
@@ -5948,7 +5948,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1659 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1628 ft/s
           -
@@ -5962,7 +5962,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1598 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1584 ft/s
               -
@@ -5973,7 +5973,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1627 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1594 ft/s
               -
@@ -5984,7 +5984,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1598 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1568 ft/s
       -
@@ -6004,7 +6004,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1656 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1624 ft/s
               -
@@ -6015,7 +6015,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1646 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1612 ft/s
               -
@@ -6026,7 +6026,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1641 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1608 ft/s
           -
@@ -6040,7 +6040,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1617 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1599 ft/s
               -
@@ -6051,7 +6051,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1659 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1629 ft/s
               -
@@ -6062,7 +6062,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1564 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1558 ft/s
           -
@@ -6076,7 +6076,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1695 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1654 ft/s
               -
@@ -6087,7 +6087,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1706 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1670 ft/s
               -
@@ -6098,7 +6098,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1711 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1678 ft/s
       -
@@ -6118,7 +6118,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1564 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1552 ft/s
               -
@@ -6129,7 +6129,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1582 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1572 ft/s
               -
@@ -6140,7 +6140,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1592 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1584 ft/s
           -
@@ -6154,7 +6154,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1631 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1591 ft/s
               -
@@ -6165,7 +6165,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1620 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1591 ft/s
               -
@@ -6176,7 +6176,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1626 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1589 ft/s
       -
@@ -6196,7 +6196,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1554 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1545 ft/s
               -
@@ -6207,7 +6207,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1637 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1616 ft/s
               -
@@ -6218,7 +6218,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1599 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1579 ft/s
           -
@@ -6232,7 +6232,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1652 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1621 ft/s
               -
@@ -6243,7 +6243,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1611 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1603 ft/s
               -
@@ -6254,7 +6254,7 @@ data:
                     technique: "gun_pendulum"
                     initial_velocity: 1680 ft/s
                   -
-                    technique: "pendulum"
+                    technique: "double_pendulum"
                     range: 55 ft
                     final_velocity: 1648 ft/s
   -
@@ -6264,7 +6264,7 @@ data:
     angle: 0 deg
     diameter: 0.6415 in
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     data:
       -
         date: "1844-05-08"
@@ -6339,7 +6339,7 @@ data:
     angle: 0 deg
     diameter: 0.641 in
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     mass: 399 gr
     date: "1844-05-13"
     data:
@@ -6396,7 +6396,7 @@ data:
     diameter: 0.641 in
     diameter_note: "Assumed based on context"
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     data:
       -
         date: "1844-05-14"
@@ -6444,7 +6444,7 @@ data:
     diameter: 0.641 in
     diameter_note: "Assumed"
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     date: "1844-05-17"
     mass: 399 gr
     mass_note: "Assumed"
@@ -6487,7 +6487,7 @@ data:
     diameter: 0.641 in
     diameter_note: "Assumed"
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     mass: 399 gr
     mass_note: "Assumed"
     data:
@@ -6537,7 +6537,7 @@ data:
     diameter: 0.641 in
     diameter_note: "Assumed"
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     mass: 399 gr
     mass_note: "Assumed"
     date: "1844-05-24"
@@ -6577,7 +6577,7 @@ data:
     diameter: 0.641 in
     diameter_note: "Assumed"
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     mass: 399 gr
     mass_note: "Assumed"
     date: "1844-05-27"
@@ -6628,7 +6628,7 @@ data:
     range: 6 ft
     date: "1844-05-29"
     diameter: 0.64 in
-    technique: pendulum
+    technique: "double_pendulum"
     mass: 397.5 gr
     charge: 154.33 gr
     data:
@@ -6648,7 +6648,7 @@ data:
     angle: 0 deg
     range: 6 ft
     diameter: 0.64 in
-    technique: pendulum
+    technique: "double_pendulum"
     mass: 397.5 gr
     data:
       -
@@ -6703,7 +6703,7 @@ data:
     range: 6 ft
     diameter: 0.64 in
     mass: 397.5 gr
-    technique: pendulum
+    technique: "double_pendulum"
     charge: 120 gr
     date: "1844-06-05"
     data:
@@ -6745,7 +6745,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     charge: 120 gr
     diameter: 0.64 in
     mass: 397.5 gr
@@ -6804,7 +6804,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     charge: 120 gr
     diameter: 0.64 in
     mass: 397.5 gr
@@ -6873,7 +6873,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     charge: 120 gr
     diameter: 0.64 in
     mass: 397.5 gr
@@ -6930,7 +6930,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     charge: 120 gr
     diameter: 0.64 in
     mass: 397.5 gr
@@ -6993,7 +6993,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     charge: 120 gr
     diameter: 0.64 in
     mass: 397.5 gr
@@ -7054,7 +7054,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     charge: 120 gr
     diameter: 0.64 in
     mass: 397.5 gr
@@ -7117,7 +7117,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     charge: 120 gr
     diameter: 0.64 in
     mass: 397.5 gr
@@ -7180,7 +7180,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     charge: 120 gr
     diameter: 0.64 in
     mass: 397.5 gr
@@ -7244,7 +7244,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     charge: 120 gr
     diameter: 0.64 in
     mass: 397.5 gr
@@ -7293,7 +7293,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     charge: 120 gr
     data:
       -
@@ -7358,7 +7358,7 @@ data:
     material: iron
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     date: "1844-07-08"
     pressure: 29.967 inHg
     temperature: 78 F
@@ -7427,7 +7427,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     desc2: "Powder 'A4' (Dupont musket)"
     data:
       -
@@ -7488,7 +7488,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     diameter: 0.64 in
     mass: 397.5 gr
     data:
@@ -7544,7 +7544,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     desc2: "Powder 'Xp4' (Dupont musket)"
     data:
       -
@@ -7599,7 +7599,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     desc2: "Powder 'Xp4' (Dupont musket)"
     date: "1844-12-13"
     pressure: 29.682 inHg
@@ -7625,7 +7625,7 @@ data:
     material: lead
     angle: 0 deg
     range: 2 ft
-    technique: pendulum
+    technique: "double_pendulum"
     desc2: "Powder 'Xp5' (Dupont rifle)"
     date: "1844-12-13"
     pressure: 29.682 inHg
@@ -7646,7 +7646,7 @@ data:
     material: lead
     angle: 0 deg
     range: 6 ft
-    technique: pendulum
+    technique: "double_pendulum"
     date: "1844-12-19"
     data:
       -
@@ -7749,7 +7749,7 @@ data:
   -
     desc: "Experiments with the 1-pounder gun pendulum."
     material: iron
-    technique: gun_pendulum
+    technique: "gun_pendulum"
     mass: 1.0013 lb
     diameter: 1.9525 in
     charge: 4 oz
@@ -9558,7 +9558,7 @@ data:
     diameter: 0.64 in
     mass: 397.5 gr
     charge: 120 gr
-    technique: pendulum
+    technique: "double_pendulum"
     data:
       -
         ref2: "p. 205"
