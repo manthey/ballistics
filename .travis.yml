@@ -22,7 +22,7 @@ script:
   - ls -l $HOME/results
   - ls -l data/*.yml
   - npm run lint
-  - python -u process.py --multi -v -v --limit='150,stopped.txt' --arg=time_delta=0.025 --out=$HOME/results
+  - python -u process.py --multi -v -v --limit='150,stopped.txt' --arg=time_delta=0.03 --out=$HOME/results
   - python util/combine.py --results=$HOME/results --out=client/static
   - npm run build
   - if [ ! -f stopped.txt ]; then
