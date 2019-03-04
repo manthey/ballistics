@@ -32,7 +32,7 @@
               <td colspan="5">
                 <p v-if="row.details" v-html="row.details"/>
                 <p v-if="row.link">
-                  <a href="row.link">{{ row.link }}</a>
+                  <a :href="row.link">{{ row.link }}</a>
                 </p>
               </td>
             </tr>
