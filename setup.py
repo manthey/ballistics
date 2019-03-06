@@ -29,7 +29,6 @@ setup(
     ],
     packages=find_packages(exclude=('utils')),
     install_requires=[
-        'markdown>=2.6.6',
         'psutil>=4.1.0',
         'PyYAML>=3.11',
     ],

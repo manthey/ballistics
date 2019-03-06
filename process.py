@@ -22,7 +22,6 @@ See help for details.
 import copy
 import functools
 import json
-import markdown
 import multiprocessing
 import os
 import pprint
@@ -164,10 +163,14 @@ def calculate_cases(results, cases, verbose, pool=None):
     hashes = [item[-1] for item in sorted([(cases[hashval]['position'], hashval)
               for hashval in cases])]
     if pool is None:
+        left = len(hashes)
         for hashval in hashes:
             hashval, state, points = calculate_case(
                 hashval, cases[hashval]['args'], cases[hashval]['info'], verbose)
             calculate_cases_results(hashval, state, points, results)
+            left -= 1
+            if verbose >= 1:
+                print('%d/%d left' % (left, len(hashes)))
     else:
         tasks = []
         for hashval in hashes:
@@ -310,7 +313,7 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
     for file in companionFiles:
         ext = os.path.splitext(file)[1]
         if ext == '.md':
-            info['details'] = markdown.markdown(open(file).read())
+            info['details'] = open(file).read()
         elif ext == '.yml':
             pass  # our source file.
         else:

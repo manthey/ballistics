@@ -35,6 +35,7 @@ html,body,#app {
   flex: 1;
 }
 </style>
+<style src="katex/dist/katex.min.css"/>
 <style src="./components/cssmenu.css" scoped/>
 
 <script>
