@@ -30,7 +30,7 @@
             </tr>
             <tr v-if="row.details || row.link" :key="'refrowexp-' + row.key" class="expansion-row">
               <td colspan="5">
-                <p v-if="row.details" v-html="row.details"/>
+                <vue-markdown v-if="row.details" :source="row.details"></vue-markdown>
                 <p v-if="row.link">
                   <a :href="row.link">{{ row.link }}</a>
                 </p>
