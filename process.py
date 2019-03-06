@@ -319,6 +319,7 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
         print(srcfile)
     results = copy.deepcopy(info)
     results['results'] = []
+    results['version'] = ballistics.__version__
     cases = {}
     process_cases(info, results['results'], cases, verbose, extraArgs=extraArgs)
     if reverse:

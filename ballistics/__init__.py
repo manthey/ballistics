@@ -48,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-03-02v51'
-PROGRAM_SIGNATURE = '0e44352fb377e33c01276b948abc3e5d'
+__version__ = '2019-03-05v52'
+PROGRAM_SIGNATURE = '4731c51bf2cca7988364bcdfe6050aef'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -1719,11 +1719,11 @@ def trajectory(state):  # noqa - mccabe
         laststate.append((state, offset))
         for key in ('x', 'y', 'vx', 'vy', 'ax', 'ay', 'time'):
             final_state[key] = interpolate(
-                0, [(ls[1], ls[0][key]) for ls in laststate], 0)[0]
+                0, [(ls[1], ls[0][key]) for ls in laststate], False)[0]
         if 'drag_data' in state and 'drag_date' in laststate:
             for key in ('Re', 'Mn'):
                 final_state['drag_data'][key] = interpolate(
-                    0, [(ls[1], ls[0]['drag_data'][key]) for ls in laststate], 0)[0]
+                    0, [(ls[1], ls[0]['drag_data'][key]) for ls in laststate], False)[0]
         if final_y is not None:
             final_state['y'] = final_y
         elif max_range is not None:

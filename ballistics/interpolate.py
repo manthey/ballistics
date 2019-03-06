@@ -60,9 +60,14 @@ def data_to_sorted_xy(data, logx):
            logx: True to return (log10(x), y) for each entry.
     Exit:  data: the sorted list with unique x values.
     """
-    if logx:
-        return sorted({math.log10(x): y for x, y in data}.items())
-    return sorted(dict(data).items())
+    if not logx:
+        if (len(data) == 1 or (
+                data[0][0] < data[1][0] and (len(data) == 2 or (
+                data[1][0] < data[2][0] and (len(data) == 3 or (
+                data[2][0] < data[3][0] and len(data) == 4)))))):
+            return data
+        return sorted(dict(data).items())
+    return sorted({math.log10(x): y for x, y in data}.items())
 
 
 def interpolate(xi, data, logx=False, method='tension'):  # noqa -mccabe
@@ -113,12 +118,15 @@ def interpolate(xi, data, logx=False, method='tension'):  # noqa -mccabe
     maxpos = min(pos+2, len(xy))
     if method == 'linear':
         minpos = max(0, pos-1)
-        maxpos = min(pos+1, len(xy))
+        maxpos = min(minpos + 2, len(xy))
+        minpos = max(0, maxpos - 2)
     elif method == 'quadratic':
         if pos >= 1 and abs(xi-xy[pos-1][0]) < abs(xi-xy[pos][0]):
-            maxpos = min(pos+1, len(xy))
+            minpos = max(0, pos-2)
         else:
             minpos = max(0, pos-1)
+        maxpos = min(minpos + 3, len(xy))
+        minpos = max(0, maxpos - 3)
     x, y = zip(*xy[minpos:maxpos])
     num_points = len(x)
     if not num_points:
