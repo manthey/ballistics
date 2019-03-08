@@ -123,7 +123,7 @@ def combine(opts):  # noqa
                     if item.get(key) is None:
                         raise Exception('Missing parameter %s' % key)
                 skip = False
-                for key in ( 'power_factor', ):
+                for key in ('power_factor', ):
                     if item.get(key) is None:
                         print('Missing parameter %s for %s:%d.  Entry excluded.' % (
                             key, item['key'], item['idx']))

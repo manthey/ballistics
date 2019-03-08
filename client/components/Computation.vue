@@ -212,13 +212,19 @@ The effects of humidty are small, but a ball is thrown mildly further in humid w
 
 <style scoped>
 #computation {
-  padding: 10px;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 10px calc(50% - 500px);
+  margin: 0 0 0 10px;
+  overflow: auto;
 }
 figure {
   float: right;
   margin: 10px 0 10px 10px;
+  margin: 10px calc(500px - 50% - 20px) 10px 10px;
+}
+figure+div::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 figcaption {
   text-align: center;

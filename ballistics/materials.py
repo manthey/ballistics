@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Copyright 2013-2016 David Manthey
+# Copyright David Manthey
 #
 # Licensed under the Apache License, Version 2.0 ( the "License" ); you may
 # not use this file except in compliance with the License.  You may obtain a
@@ -46,15 +46,18 @@ MaterialsTable = [
 
 
 def determine_material(state, verbosity=0):
-    """Determine the material, diameter, or mass, provided the other two
-     are known.  If all three are known or less than two are known, this
-     does nothing.  If material is given, but not material_density,
-     material_density is taken from the Materials table.  If mass and diam are
-     provided, projectile_density is computed and, if no material is given, the
-     closest material is listed as a match (though it may not be).
+    """
+    Determine the material, diameter, or mass, provided the other two are
+    known.  If all three are known or less than two are known, this does
+    nothing.  If material is given, but not material_density,
+    material_density is taken from the Materials table.  If mass and diam are
+    provided, projectile_density is computed and, if no material is given,
+    the closest material is listed as a match (though it may not be).
+
     Enter: state: a dictionary of the current state.  Possibly modified.
            verbosity: if high enough, log additional information.
-    Exit:  state: the state with the third value added, if appropriate."""
+    Exit:  state: the state with the third value added, if appropriate.
+    """
     if ('material' in state and 'material_density' not in state and
             ('diam' not in state or 'mass' not in state) and
             ('diam' in state or 'mass' in state)):
@@ -94,9 +97,12 @@ def determine_material(state, verbosity=0):
 
 
 def list_materials(full=False):
-    """List all of the materials in the materials table.  This also checks
-     to make sure all material names are valid and distinct.
-    Enter: full: if True, print all alternate names on their own line."""
+    """
+    List all of the materials in the materials table.  This also checks to
+    make sure all material names are valid and distinct.
+
+    Enter: full: if True, print all alternate names on their own line.
+    """
     materials = {}
     for (names, dens, mindens, maxdens, desc) in MaterialsTable:
         for name in names:

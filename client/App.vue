@@ -30,6 +30,7 @@ html,body,#app {
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
+  overflow: hidden;
 }
 .view {
   flex: 1;

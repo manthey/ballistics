@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Copyright 2013-2016 David Manthey
+# Copyright David Manthey
 #
 # Licensed under the Apache License, Version 2.0 ( the "License" ); you may
 # not use this file except in compliance with the License.  You may obtain a
@@ -19,11 +19,14 @@ Text formatting functions.
 
 
 def line_break(text, line_len=79, indent=1):
-    """Split some text into an array of lines.
+    """
+    Split some text into an array of lines.
+
     Enter: text: the text to split.
            line_len: the maximum length of a line.
-           indent: hoe much to indent all but the first line.
-    Exit:  lines: an array of lines."""
+           indent: how much to indent all but the first line.
+    Exit:  lines: an array of lines.
+    """
     lines = [text.rstrip()]
     while len(lines[-1]) > line_len:
         pos = lines[-1].rfind(' ', 0, line_len)

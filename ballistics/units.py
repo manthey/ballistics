@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Copyright 2013-2016 David Manthey
+# Copyright David Manthey
 #
 # Licensed under the Apache License, Version 2.0 ( the "License" ); you may
 # not use this file except in compliance with the License.  You may obtain a
@@ -287,15 +287,18 @@ def convert_units(value, to=None, from_units=None):  # noqa - mccabe
 
 
 def convert_units_apply(value, factor, fromto='from', mode='mul'):
-    """Apply a conversion factor to a value.  For plain factors, if ('from'
-     and 'mul') or ('to' and 'div'), the value is multipled by the factor,
-     otherwise the value is divided by the factor.
+    """
+    Apply a conversion factor to a value.  For plain factors, if ('from' and
+    'mul') or ('to' and 'div'), the value is multipled by the factor,
+    otherwise the value is divided by the factor.
+
     Enter: value: a floating point value to adjust.
            factor: a factor to adjust it by.  This is either a number or a
                    two tuple of (factor, offset).
            fromto: 'from' or 'to'.  See above.
            mode: 'mul' or 'div'.  See above.
-    Exit:  value: the converted value."""
+    Exit:  value: the converted value.
+    """
     offset = 0
     if isinstance(factor, tuple):
         if callable(factor[0]):
@@ -312,9 +315,12 @@ def convert_units_apply(value, factor, fromto='from', mode='mul'):
 
 
 def convert_units_factor(unitname):
-    """Return the factor associated with a specific unit name.
+    """
+    Return the factor associated with a specific unit name.
+
     Enter: unitname: the name of the unit.  It must be in the UnitsTable.
-    Exit:  factor: the factor for the unit, or None if not found."""
+    Exit:  factor: the factor for the unit, or None if not found.
+    """
     for unit in UnitsTable:
         for name in unit[0]:
             if name == unitname:
@@ -341,9 +347,12 @@ def convert_units_factor(unitname):
 
 
 def list_units(full=False):
-    """List all of the units in the units table.  This also checks to make
-     sure all unit names are valid and distinct.
-    Enter: full: if True, print all alternate names on their own line."""
+    """
+    List all of the units in the units table.  This also checks to make sure
+    all unit names are valid and distinct.
+
+    Enter: full: if True, print all alternate names on their own line.
+    """
     units = {}
     for (names, prefix, factor, desc) in UnitsTable:
         for name in names:

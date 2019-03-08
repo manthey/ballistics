@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Copyright 2016 David Manthey
+# Copyright David Manthey
 #
 # Licensed under the Apache License, Version 2.0 ( the "License" ); you may
 # not use this file except in compliance with the License.  You may obtain a
@@ -42,15 +42,18 @@ def cd_from_mn_re(mn, re):
 
 
 def coefficient_of_drag_adjusted(state, only_in_range=False):
-    """Calculate the coefficient of drag.  The drag is calculated by a bilinear
-     interpolation from values spaced evenly through Mach values and log10
-     Reynolds numbers.  These values were initially computed from cod_collins,
-     but some values have been adjusted based on real-world data.
+    """
+    Calculate the coefficient of drag.  The drag is calculated by a bilinear
+    interpolation from values spaced evenly through Mach values and log10
+    Reynolds numbers.  These values were initially computed from cod_collins,
+    but some values have been adjusted based on real-world data.
+
     Enter: state: a dictionary of the current state.  Includes Reynolds and
                   mach numbers.
            only_in_range: if True, return None if the values are outside of
                           what we can interpolate.
-    Exit:  Cd: the coefficient of drag."""
+    Exit:  Cd: the coefficient of drag.
+    """
     Re = state['drag_data']['Re']
     Mn = state['drag_data']['Mn']
     re = math.log10(Re) * Resolution

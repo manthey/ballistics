@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Copyright 2013-2016 David Manthey
+# Copyright David Manthey
 #
 # Licensed under the Apache License, Version 2.0 ( the "License" ); you may
 # not use this file except in compliance with the License.  You may obtain a
@@ -35,7 +35,7 @@ from .cod_morrison import coefficient_of_drag_morrison  # noqa
 from .formattext import line_break
 from .interpolate import interpolate
 from .materials import determine_material, list_materials
-from .units import convert_units, list_units
+from .units import convert_units, list_units, SIGravity
 
 # Modules that will get loaded if needed.  None of these are required.
 csv = None
@@ -48,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-03-05v52'
-PROGRAM_SIGNATURE = '4731c51bf2cca7988364bcdfe6050aef'
+__version__ = '2019-03-07v52'
+PROGRAM_SIGNATURE = '5f3e7f0b365f14bfff1056470f5e732e'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -277,6 +277,82 @@ Factors = {
         'title': 'Maximum Height',
         'desc': 'Maximum height of trajectory above sea level.'
     },
+    'pendulum_index_angle': {
+        'long': 'pendangle',
+        'units': 'def',
+        'weak': True,
+        'title': 'Pendulum Angle',
+        'desc': 'Pendulum angle at maximum swing.',
+    },
+    'pendulum_index_chord': {
+        'long': 'pendchord',
+        'units': 'm',
+        'eng': 'ft',
+        'weak': True,
+        'title': 'Pendulum Chord Length',
+        'desc': 'Pendulum length of chord at maximum swing and at the index '
+        'length.',
+    },
+    'pendulum_index_length': {
+        'long': 'pendindex',
+        'units': 'm',
+        'eng': 'ft',
+        'weak': True,
+        'title': 'Pendulum Index Length',
+        'desc': 'Pendulum length at index measurement.  This is needed if an '
+        'index chord measurement is used, but not for an angle measurement.',
+    },
+    'pendulum_impact_length': {
+        'long': 'pendimpact',
+        'units': 'm',
+        'eng': 'ft',
+        'weak': True,
+        'title': 'Pendulum Impact Length',
+        'desc': 'Pendulum length of point of impact.',
+    },
+    'pendulum_impact_mass': {
+        'long': 'pendimpactmass',
+        'units': 'kg',
+        'eng': 'lb',
+        'weak': True,
+        'title': 'Pendulum Previous Impact Mass',
+        'desc': 'Mass of impacts on pendulum at the impact point before the '
+        'current impact.',
+    },
+    'pendulum_length': {
+        'long': 'pendcoo',
+        'units': 'm',
+        'eng': 'ft',
+        'weak': True,
+        'title': 'Pendulum Length',
+        'desc': 'Pendulum length of center of oscillation (center of '
+        'percussion).  This the is the equivalent length of a simple '
+        'pendulum.',
+    },
+    'pendulum_mass': {
+        'long': 'pendmass',
+        'units': 'kg',
+        'eng': 'lb',
+        'weak': True,
+        'title': 'Pendulum Mass',
+        'desc': 'Pendulum mass before impacts.',
+    },
+    'pendulum_mass_length': {
+        'long': 'pendcog',
+        'units': 'm',
+        'eng': 'ft',
+        'weak': True,
+        'title': 'Pendulum Center of Gravity',
+        'desc': 'Pendulum length of center of gravity.',
+    },
+    'pendulum_period': {
+        'long': 'pendperiod',
+        'units': 's',
+        'weak': True,
+        'title': 'Pendulum Period',
+        'desc': 'Pendulum time for one complete back-and-forth oscillation at '
+        'a small angle.',
+    },
     'power_factor': {
         'long': 'power',
         'short': 'p',
@@ -474,7 +550,7 @@ def acceleration_from_gravity(state):
                   negative.
     """
     y = state.get('y', 0)
-    g0 = -9.80665  # at sea level
+    g0 = -SIGravity
     # Mean radius of the earth from WGS-84
     re = 6371009
     # Note that we don't handle negative altitudes correctly, where the force of
@@ -1414,6 +1490,8 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
                         state['settings'][key] = value
             if value is None and not allowUnknownParams:
                 help = True
+    if not state.get('final_velocity') and velocity_from_pendulum(state):
+        state['final_velocity'] = velocity_from_pendulum(state)
     if state.get('final_height') == '0':
         state['final_height'] = 0
         if state.get('final_velocity') and state.get('range'):
@@ -1667,7 +1745,8 @@ def trajectory(state):  # noqa - mccabe
         state['error'] = (
             'Failed - at least one of final_height, range, final_time, '
             'final_velocity, or final_angle must be specified to compute the '
-            'trajectory.')
+            'trajectory.  final_velocity could also be computed through '
+            'appropriate pendulum information.')
         return state, []
     cutoff_height = min(state.get('initial_height') or 0,
                         state.get('final_height') or 0)
@@ -1799,6 +1878,43 @@ def trajectory_error(initial_state, unknown, unknown_value):
         return x - x0
     print('Cannot calculate trajectory error - nothing to solve for')
     return None
+
+
+def velocity_from_pendulum(state):
+    """
+    If there is sufficent information in the state, compute the velocity based
+    on a pendulum's chord or angle.  This uses the formula provided by
+    Hutton, Charles.  <i>Tracts on Mathematical and Philosophical Subjects,
+    Vol. II.</i>  London: F. C. and J Rivington, et al., 1812, p. 324.
+
+    Enter: state: a dictionary of the state.  See comment at the top of the
+                  program.
+    Exit:  velocity: the computed velocity in m/s or None.
+    """
+    # Using Hutton's notation
+    G = SIGravity
+    b = state.get('mass')
+    bp = state.get('pendulum_impact_mass', 0)
+    p = state.get('pendulum_mass')
+    g = state.get('pendulum_mass_length')
+    o = state.get('pendulum_length')
+    i = state.get('pendulum_impact_length')
+    c = state.get('pendulum_index_chord')
+    r = state.get('pendulum_index_length')
+    T = state.get('pendulum_period')
+    alpha = state.get('pendulum_index_angle')
+    if not o and T:
+        o = T * T * G / 4 / math.pi / math.pi
+    if not b or not p or not g or not i or not o:
+        return None
+    if c and r:
+        c_div_r = c / r
+    elif not alpha:
+        return None
+    else:
+        c_div_r = 2 * math.sin(alpha * math.pi / 180 / 2)
+    v = G**0.5 * c_div_r/(b*i) * ((p*g*o + (b+bp)*i*i) * (p*g + (b+bp)*i))**0.5
+    return v
 
 
 def version_check():
@@ -1957,11 +2073,12 @@ Syntax:  ballistics.py --cdgraph=(params) --comment=(comment) --config=(file)
     --units[=full] -v --version (factors)
 
 If the environment variable 'BALLISTICS_CONF' is set, the value is treated as
- if it is on the command line prior to everything else.  The value is split on
- spaces, just like the actual command line.  If there is a file in the same
- directory as the program called 'ballistics.conf', it is read and included
- after the environment variable and prior to any command line arguments.  See
- read_config for details on the file format.
+if it is on the command line prior to everything else.  The value is split on
+spaces, just like the actual command line.  If there is a file in the same
+directory as the program called 'ballistics.conf', it is read and included
+after the environment variable and prior to any command line arguments.  See
+read_config for details on the file format.
+
 --cdgraph generates a graph of the coefficient of drag based on Reynolds number
  and Mach number.  This takes a comma-separated list of parameters: remin,
  remax (minimum and maximum Reynolds numbers to plot), mnmin, mnmax (min and
@@ -2016,7 +2133,9 @@ Any factor can be specified with units.  See --units.  For example, '-c 2oz',
 '--temperature=62F', or '--mass=20 lb 7 oz'.  Most factors can be solved for by
 specifying '?' as the factor.  Note that a maximum of two of initial velocity,
 power factor, and charge should be specified.  If only initial velocity is
-specified, power factor and charge will not be determined.  Factors:""")
+specified, power factor and charge will not be determined.
+
+Factors:""")
         factors = [(Factors[key]['long'].lower(), Factors[key]['long'], key)
                    for key in Factors]
         factors += [(Settings[key]['long'].lower(), Settings[key]['long'], key)
