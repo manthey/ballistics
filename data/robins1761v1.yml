@@ -1,0 +1,343 @@
+---
+key: robins1761v1
+ref: "Robins, 1761, Vol. I"
+cms: "Robins, Benjamin.  <i>Mathematical Tracts of the late Benjamin Robins, Esq, Vol. I</i>  London: J. Nourse, 1761"
+summary: "This is a collected set of Robins' works published by James Wilson, M.D."
+date: "1742"
+date_note: "The original work was published in 1742; the experiments preceed that."
+data:
+  -
+    technique: "pendulum"
+    angle: 0 deg
+    pendulum_period_note: 200 small oscillations in 253 s, p. 86.
+    pendulum_impact_length: 66 in
+    pendulum_index_length: 71.125 in
+    pendulum_index_length_note: From page 87
+    mass: 0.08333 lb
+    diameter: 0.75 in
+    range: 21.5 ft
+    range_note: On page 91, Robins says a distance between 18 and 25 feet is the distance chosen.  I have picked the midpoint.
+    data:
+      -
+        pendulum_mass: 56 lb 3 oz
+        pendulum_mass_note: From page 86
+        pendulum_mass_length: 52 in
+        pendulum_period: 1.265 s
+        data:
+          -
+            ref2: "p. 92"
+            desc2: "Barrel A, 45 inches long"
+            data:
+              -
+                charge: 12 dwt
+                pendulum_index_chord: 18.7 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 0.08333 lb
+                pendulum_index_chord: 19.6 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 0.16667 lb
+                pendulum_index_chord: 13.6 in
+
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 0.25 lb
+                pendulum_index_chord: 11.9 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 0.3333 lb
+                pendulum_index_chord: 12.2 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 0.41667 lb
+                pendulum_index_chord: 13.2 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 0.5 lb
+                pendulum_index_chord: 13.9 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 0.58333 lb
+                pendulum_index_chord: 16.7 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 0.6667 lb
+                pendulum_index_chord: 17.5 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 2.00 lb
+                pendulum_impact_mass_note: "\"The last five numbers resultingfrom the theory are corrected from the quantity of bullets lodged in the board, which, as many other experiments of a different kind were tried in the interval, amounted at last to above two pounds\", p.93"
+                pendulum_index_chord: 16.9 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 2.08333 lb
+                pendulum_index_chord: 17.0 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 2.1667 lb
+                pendulum_index_chord: 11.7 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 2.25 lb
+                pendulum_index_chord: 11.1 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 2.3333 lb
+                pendulum_index_chord: 16.7 in
+          -
+            ref2: "p. 93"
+            data:
+              -
+                desc2: "Barrel C, 12.375 inches long"
+                data:
+                  -
+                    charge: 12 dwt
+                    pendulum_index_chord: 12.7 in
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.0833 lb
+                    pendulum_index_chord: 12.6 in
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.1667 lb
+                    pendulum_index_chord: 12.4 in
+              -
+                desc2: "Barrel A, 45 inches long"
+                data:
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.25 lb
+                    pendulum_index_chord: 17.0 in
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.3333 lb
+                    pendulum_index_chord: 17.2 in
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.41667 lb
+                    pendulum_index_chord: 17.1 in
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.5 lb
+                    pendulum_index_chord: 17.2 in
+                  -
+                    charge: 6 dwt
+                    pendulum_impact_mass: 0.58333 lb
+                    pendulum_index_chord: 12.4 in
+          -
+            ref2: "p. 94"
+            data:
+              -
+                desc2: "Barrel A, 45 inches long"
+                data:
+                  -
+                    charge: 12 dwt
+                    pendulum_index_chord: 17.1 in
+                  -
+                    charge: 9 dwt
+                    pendulum_impact_mass: 0.08333 lb
+                    pendulum_index_chord: 15.2 in
+                  -
+                    charge: 9 dwt
+                    pendulum_impact_mass: 0.1667 lb
+                    pendulum_index_chord: 15.4 in
+              -
+                desc2: "Barrel C, 12.375 inches long"
+                data:
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.25 lb
+                    pendulum_index_chord: 11.5 in
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.3333 lb
+                    pendulum_index_chord: 11.5 in
+                  -
+                    charge: 6 dwt
+                    pendulum_impact_mass: 0.41667 lb
+                    pendulum_index_chord: 8.7 in
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.5 lb
+                    pendulum_index_chord: 12.3 in
+              -
+                desc2: "Barrel B, 24.312 inches long"
+                data:
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.58333 lb
+                    pendulum_index_chord: 14.4 in
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.6667 lb
+                    pendulum_index_chord: 14.4 in
+                  -
+                    charge: 6 dwt
+                    pendulum_impact_mass: 0.75 lb
+                    pendulum_index_chord: 10.3 in
+              -
+                desc2: "Barrel A, 45 inches long"
+                data:
+                  -
+                    charge: 8 dwt
+                    pendulum_impact_mass: 0.8333 lb
+                    pendulum_index_chord: 14.7 in
+                  -
+                    charge: 12 dwt
+                    pendulum_impact_mass: 0.91667 lb
+                    pendulum_index_chord: 15.7 in
+      -
+        pendulum_mass: 97 lb
+        pendulum_mass_length: 55.625 in
+        pendulum_period: 1.27625 s
+        ref2: "p. 95"
+        data:
+          -
+            desc2: "Barrel A, 45 inches long"
+            data:
+              -
+                charge: 12 dwt
+                pendulum_index_chord: 9.2 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 0.08333 lb
+                pendulum_index_chord: 9.5 in
+              -
+                charge: 24 dwt
+                pendulum_impact_mass: 0.1667 lb
+                pendulum_index_chord: 11.7 in
+              -
+                charge: 36 dwt
+                pendulum_impact_mass: 0.25 lb
+                pendulum_index_chord: 13.2 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 0.3333 lb
+                pendulum_index_chord: 9.2 in
+              -
+                charge: 8 dwt
+                pendulum_impact_mass: 0.41667 lb
+                pendulum_index_chord: 7.6 in
+          -
+            desc2: "Barrel C, 12.375 inches long"
+            data:
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 0.5 lb
+                pendulum_index_chord: 6.1 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 0.58333 lb
+                pendulum_index_chord: 6.5 in
+          -
+            desc2: "Barrel B, 24.312 inches long"
+            data:
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 0.6667 lb
+                pendulum_index_chord: 8.0 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 0.75 lb
+                pendulum_index_chord: 8.3 in
+          -
+            desc2: "Barrel A, 45 inches long"
+            data:
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 0.8333 lb
+                pendulum_index_chord: 9.5 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 0.91667 lb
+                pendulum_index_chord: 9.1 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 1.0 lb
+                pendulum_index_chord: 7.2 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 1.08333 lb
+                pendulum_index_chord: 6.7 in
+          -
+            desc2: "Barrel C, 12.375 inches long"
+            data:
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 1.1667 lb
+                pendulum_index_chord: 6.8 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 1.25 lb
+                pendulum_index_chord: 7.5 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 1.3333 lb
+                pendulum_index_chord: 4.7 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 1.41667 lb
+                pendulum_index_chord: 5.0 in
+          -
+            desc2: "Barrel D, 7.06 inches long"
+            mass: 33.5 dwt
+            diameter: 0.83 in
+            data:
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 1.5 lb
+                pendulum_index_chord: 7.0 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 1.5 lb 33.5 dwt
+                pendulum_index_chord: 7.1 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 1.5 lb 67 dwt
+                pendulum_index_chord: 4.7 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 1.5 lb 100.5 dwt
+                pendulum_index_chord: 4.8 in
+            desc2: "Barrel A, 45 inches long"
+            data:
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 1.5 lb 134 dwt
+                pendulum_index_chord: 6.4 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 1.58333 lb 134 dwt
+                pendulum_index_chord: 6.4 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 1.6667 lb 134 dwt
+                pendulum_index_chord: 6.6 in
+              -
+                charge: 6 dwt
+                pendulum_impact_mass: 1.75 lb 134 dwt
+                pendulum_index_chord: 6.7 in
+              -
+                charge: 12 dwt
+                pendulum_impact_mass: 1.8333 lb 134 dwt
+                pendulum_index_chord: 9.0 in
+  -
+    diameter: 7.5 infr
+    material: iron
+    angle: 45 deg
+    charge: 3 ozfr
+    ref2: "p. 121"
+    data:
+      -
+        range: 55 toises
+        desc: "Proof charge for French mortars."
+
+# page 137-138 - initial velocities
+# page 145
+# page 186, 187
+# page 232+
+# page 259
+# page 268
+# page 307
+# Page 314

@@ -78,6 +78,36 @@ let ParameterList = [{
     key: 'given_final_velocity',
     primary: true
   }, {
+    key: 'given_pendulum_impact_length',
+    primary: true
+  }, {
+    key: 'given_pendulum_impact_mass',
+    title: 'Weight of previously fired projectiles.',
+    primary: true
+  }, {
+    key: 'given_pendulum_impact_mass_note',
+  }, {
+    key: 'given_pendulum_index_chord',
+    primary: true
+  }, {
+    key: 'given_pendulum_index_length',
+    primary: true
+  }, {
+    key: 'given_pendulum_index_length_note',
+  }, {
+    key: 'given_pendulum_mass',
+    primary: true
+  }, {
+    key: 'given_pendulum_mass_note',
+  }, {
+    key: 'given_pendulum_mass_length',
+    primary: true
+  }, {
+    key: 'given_pendulum_period',
+    primary: true
+  }, {
+    key: 'given_pendulum_period_note',
+  }, {
     key: 'given_atmospheric_density',
     primary: true
   }, {
@@ -167,6 +197,34 @@ let ParameterList = [{
   }, {
     key: 'final_velocity',
     units: 'm/s',
+    primary: true
+  }, {
+    key: 'pendulum_impact_length',
+    units: 'm',
+    primary: true
+  }, {
+    key: 'pendulum_impact_mass',
+    units: 'kg',
+    primary: true
+  }, {
+    key: 'pendulum_index_chord',
+    units: 'm',
+    primary: true
+  }, {
+    key: 'pendulum_index_length',
+    units: 'm',
+    primary: true
+  }, {
+    key: 'pendulum_mass',
+    units: 'kg',
+    primary: true
+  }, {
+    key: 'pendulum_mass_length',
+    units: 'm',
+    primary: true
+  }, {
+    key: 'pendulum_period',
+    units: 's',
     primary: true
   }, {
     key: 'atmospheric_density',
