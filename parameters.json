@@ -57,7 +57,7 @@
   "max": 0.4200000000000159,
   "min": 0.0,
   "numeric": 7446,
-  "unique": 72
+  "unique": 73
  },
  "date": {
   "count": 7446,
@@ -578,14 +578,14 @@
   }
  },
  "given_technique": {
-  "count": 4050,
+  "count": 4055,
   "key": "given_technique",
   "unique": 7,
   "values": {
    "calorimeter": 80,
    "double_pendulum": 1511,
    "gun_pendulum": 655,
-   "pendulum": 560,
+   "pendulum": 565,
    "theory": 1019,
    "trajectory": 148,
    "wheel_chronograph": 77
@@ -925,13 +925,13 @@
   "unique": 13,
   "values": {
    "calorimeter": 80,
-   "chronograph": 41,
+   "chronograph": 36,
    "double_pendulum": 1511,
    "final_angle": 5,
    "given_velocity": 275,
    "gun_pendulum": 655,
    "height": 4,
-   "pendulum": 560,
+   "pendulum": 565,
    "range": 2786,
    "theory": 1019,
    "time": 285,
