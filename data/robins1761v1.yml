@@ -35,10 +35,420 @@ data:
     mass: 231 lb
     angle: 45 deg
     range: 2 miles
-
-# page 218
-# page 232+
-# page 259
-# page 268
-# page 307
-# page 314
+  -
+    ref2: "p. 231"
+    desc: "A mortar from the books of practice kept at Woolwich."
+    charge: 30 lb
+    diameter: 12.75 in
+    mass: 231 lb
+    angle: 45 deg
+    range: 3350 yards
+  -
+    ref2: "p. 232"
+    desc: "Mortars from the books of practice kept at Woolwich."
+    angle: 45 deg
+    data:
+      -
+        charge: 26 lb
+        diameter: 12.75 in
+        mass: 231 lb
+        range: 3100 yards
+      -
+        diameter: 10 in
+        charge: 12 lb
+        mass: 96 lb
+        range: 3350 yards
+      -
+        diameter: 13 in
+        charge: 9 lb 1 oz
+        mass: 200 lb
+        range: 2000 yards
+  -
+    ref2: "p. 233"
+    desc: "Mortars from the books of practice kept at Woolwich."
+    angle: 45 deg
+    data:
+      -
+        diameter: 13 in
+        charge: 4 lb
+        mass: 200 lb
+        range: 1000 yards
+  -
+    ref2: "p. 234"
+    desc: "From St. Remy"
+    angle: 45 deg
+    material: iron
+    data:
+      -
+        mass: 24 lbfr
+        charge: 16 lbfr
+        range: 2250 toises
+      -
+        mass: 16 lbfr
+        charge: 10.667 lbfr
+        range: 2020 toises
+      -
+        mass: 12 lbfr
+        charge: 8 lbfr
+        range: 1870 toises
+      -
+        mass: 8 lbfr
+        charge: 5.333 lbfr
+        range: 1660 toises
+      -
+        mass: 4 lbfr
+        charge: 2.667 lbfr
+        range: 1520 toises
+  -
+    ref2: "p. 235"
+    desc: "From St. Remy"
+    angle: 45 deg
+    material: iron
+    data:
+      -
+        mass: 24 lbfr
+        charge: 8 lbfr
+        range: 2250 toises
+      -
+        mass: 16 lbfr
+        charge: 5.333 lbfr
+        range: 2020 toises
+      -
+        mass: 12 lbfr
+        charge: 4 lbfr
+        range: 1870 toises
+      -
+        mass: 8 lbfr
+        charge: 2.667 lbfr
+        range: 1660 toises
+      -
+        mass: 4 lbfr
+        charge: 1.333 lbfr
+        range: 1520 toises
+  -
+    ref2: "p. 236"
+    desc: "From the trials at La Fere"
+    material: iron
+    mass: 24 lbfr
+    charge: 9 lbfr
+    data:
+      -
+        angle: 40 deg
+        range: 2050 toises
+      -
+        angle: 35 deg
+        range: 2020 toises
+      -
+        angle: 30 deg
+        range: 1910 toises
+      -
+        angle: 25 deg
+        range: 1825 toises
+      -
+        angle: 20 deg
+        range: 1740 toises
+      -
+        angle: 15 deg
+        range: 1675 toises
+      -
+        angle: 4 deg
+        range: 820 toises
+  -
+    ref2: "p. 237"
+    desc: "From the trials at La Fere"
+    material: iron
+    data:
+      -
+        mass: 16 lbfr
+        charge: 6 lbfr
+        angle: 15 deg
+        range: 1780 toises
+      -
+        mass: 16 lbfr
+        charge: 6 lbfr
+        angle: 4 deg
+        range: 825 toises
+      -
+        mass: 12 lbfr
+        charge: 4 lbfr
+        angle: 15 deg
+        range: 1500 toises
+      -
+        mass: 12 lbfr
+        charge: 4 lbfr
+        angle: 4 deg
+        range: 820 toises
+      -
+        mass: 8 lbfr
+        charge: 3 lbfr
+        angle: 15 deg
+        range: 1440 toises
+      -
+        mass: 8 lbfr
+        charge: 3 lbfr
+        angle: 4 deg
+        range: 770 toises
+      -
+        mass: 4 lbfr
+        charge: 2 lbfr
+        angle: 15 deg
+        range: 1500 toises
+      -
+        mass: 4 lbfr
+        charge: 2 lbfr
+        angle: 6 deg
+        range: 862 toises
+  -
+    ref2: "p. 238-239"
+    desc: "From the trials at Metz"
+    material: iron
+    mass: 24 lbfr
+    angle: 4 deg
+    initial_height: 78 ftfr
+    data:
+      -
+        charge: 8 lbfr
+        data:
+          - range: 799 toises
+          - range: 844 toises
+          - range: 829 toises
+          - range: 887 toises
+      -
+        charge: 9 lbfr
+        data:
+          - range: 715 toises
+          - range: 917 toises
+          - range: 855 toises
+          - range: 812 toises
+          - range: 742 toises
+          - range: 806 toises
+          - range: 870 toises
+          - range: 854 toises
+          - range: 854 toises
+          - range: 822 toises
+          - range: 858 toises
+          - range: 826 toises
+          - range: 808 toises
+          - range: 856 toises
+          - range: 1010 toises
+          - range: 725 toises
+          - range: 900 toises
+          - range: 783 toises
+      -
+        charge: 10 lbfr
+        data:
+          - range: 834 toises
+          - range: 872 toises
+          - range: 851 toises
+          - range: 845 toises
+          - range: 871 toises
+          - range: 838 toises
+      -
+        charge: 11 lbfr
+        data:
+          - range: 837 toises
+          - range: 784 toises
+          - range: 950 toises
+          - range: 892 toises
+          - range: 792 toises
+          - range: 830 toises
+      -
+        charge: 12 lbfr
+        data:
+          - range: 812 toises
+          - range: 807 toises
+          - range: 882 toises
+          - range: 899 toises
+          - range: 842 toises
+      -
+        charge: 14 lbfr
+        data:
+          - range: 840 toises
+          - range: 848 toises
+          - range: 878 toises
+          - range: 950 toises
+          - range: 1060 toises
+          - range: 843 toises
+      -
+        charge: 16 lbfr
+        data:
+          - range: 1000 toises
+          - range: 898 toises
+          - range: 970 toises
+          - range: 835 toises
+      -
+        charge: 18 lbfr
+        data:
+          - range: 950 toises
+          - range: 1000 toises
+      -
+        charge: 20 lbfr
+        data:
+          - range: 1100 toises
+          - range: 841 toises
+  -
+    ref2: "p. 242"
+    desc: "From Eldred"
+    date: 1646
+    date_note: Publication date of the Gunners Glasse
+    material: iron
+    initial_height: 350 ft
+    initial_height_note: Height of cliffs from gazetteer.
+    data:
+      -
+        desc2: "Demi-culverin"
+        mass: 9 lb
+        charge: 7 lb
+        angle: 10 deg
+        range: 2840 yards
+      -
+        desc2: "Basilisk"
+        mass: 10 lb
+        charge: 18 lb
+        data:
+          -
+            angle: 2 deg
+            range: 1200 yards
+          -
+            angle: 4.75 deg
+            range: 2000 yards
+  -
+    ref2: "p. 249"
+    desc: "Example ranges showing the retarting effect of air resistance at high speeds."
+    technique: theory
+    mass: 24 lb
+    material: iron
+    angle: 10 deg
+    range_note: The wording implies a delta in range of 500 yards and one of the two ranges being 3000 yards.  This would be a very high power factor for the 5 lb charge, so I've taken it to be 2500 yards for the lesser charge and 3000 for the greater.
+    data:
+      -
+        charge: 24 lb
+        range: 3000 yards
+      -
+        charge: 5 lb
+        range: 2500 yards
+  -
+    ref2: "p. 261-262"
+    desc: "Comparison of lengths of cannons"
+    mass: 6 lb
+    material: iron
+    angle: 11 deg
+    data:
+      -
+        charge: 1.5 lb
+        range: 2432 yards
+      -
+        charge: 3 lb
+        range: 2322 yards
+  -
+    ref2: "p. 268"
+    date: 1736
+    desc: "Comparison of lengths of cannons"
+    mass: 24 lb
+    material: iron
+    angle: 7.25 deg
+    charge: 12 lb
+    charge_note: "Speculative, as it just as \"these were all loaded with the same charge\".  I think this must either be 1/2 or 1/3 the weight of the ball, but based on other tests at Woolwich, 1/2 is more likely."
+    data:
+      -
+        date: "1736-06-01"
+        data:
+          - range: 2486 yards
+          - range: 2570 yards
+          - range: 2633 yards
+          - range: 2790 yards
+          - range: 2586 yards
+          - range: 2438 yards
+      -
+        date: "1736-06-18"
+        data:
+          - range: 2614 yards
+          - range: 2532 yards
+          - range: 2560 yards
+          - range: 2494 yards
+          - range: 2490 yards
+          - range: 2473 yards
+      -
+        date: "1736-07-02"
+        data:
+          - range: 2406 yards
+          - range: 2436 yards
+          - range: 2500 yards
+          - range: 2563 yards
+          - range: 2466 yards
+          - range: 2452 yards
+  -
+    ref2: "p.285"
+    skip: true
+    skip_note: "The footnote repeats data from p. 238-239"
+  -
+    ref2: "p. 297"
+    desc: "Initial velocities"
+    mass: 0.08333 lb
+    material: lead
+    data:
+      -
+        charge: 0.02778 lb
+        initial_velocity: 1500 ft/s
+      -
+        charge: 0.041667 lb
+        initial_velocity: 1700 ft/s
+      -
+        charge: 0.05556 lb
+        initial_velocity: 1900 ft/s
+      -
+        charge: 0.1111 lb
+        initial_velocity: 2300 ft/s
+  -
+    ref2: "p. 308"
+    mass: 18 lb
+    material: iron
+    data:
+      -
+        angle: 14.75 deg
+        angle_note: "\"elevated somewhat short of 15 degrees\""
+        charge: 0.25 lb
+        data:
+          - range: 220 yards
+          - range: 250 yards
+      -
+        angle: 12 deg
+        charge: 0.5 lb
+        range: 500 yards
+      -
+        angle: 14.75 deg
+        angle_note: "\"near 15 degrees\""
+        charge: 1 lb
+        data:
+          - range: 1400 yards
+          - range: 1600 yards
+      -
+        angle: 5 deg
+        charge: 1 lb
+        data:
+          - range: 550 yards
+          - range: 630 yards
+      -
+        angle: 3.5 deg
+        charge: 2 lb
+        data:
+          - range: 900 yards
+          - range: 1100 yards
+      -
+        angle: 15 deg
+        charge: 2 lb
+        range: 1.5 miles
+      -
+        angle: 6 deg
+        charge: 3 lb
+        data:
+          - range: 1500 yards
+          - range: 1650 yards
+      -
+        angle: 6 deg
+        charge: 3.5 lb
+        range: 1760 yards
+      -
+        angle: 15 deg
+        charge: 3.5 lb
+        range: 3000 yards

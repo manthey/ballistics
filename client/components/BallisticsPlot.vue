@@ -1,5 +1,5 @@
 <template>
-  <vue-plotly class="chart" :data="data" :layout="layout" :options="options" :autoResize="true" @click="processClick" :key="pointkey ? 'chartwdp' : 'chart'"/>
+  <vue-plotly class="chart" :data="data" :layout="layout" :options="options" :autoResize="true" @click="processClick" @relayout="adjustLegend" :key="pointkey ? 'chartwdp' : 'chart'"/>
 </template>
 
 <style>
@@ -34,6 +34,11 @@ export default {
     return {
       colors: d3.scale.category10().range().concat(d3.scale.category20b().range()).concat(d3.scale.category20c().range()),
       layout: {
+        hovermode: 'closest',
+        showlegend: true,
+        legend: {
+          orientation: 'v'
+        },
         margin: {
           l: 65,
           t: 25,
@@ -50,8 +55,7 @@ export default {
           type: 'log',
           title: 'Power Factor (J/kg)',
           autorange: true
-        },
-        hovermode: 'closest'
+        }
       },
       options: {
         autosizable: true,
@@ -91,14 +95,18 @@ export default {
           type: tdata.length > 100 ? 'scattergl' : 'scatter',
           mode: 'markers',
           hoverinfo: 'text',
-          showlegend: true,
+          // showlegend: true,
           name: technique + ' (' + tdata.length + ')'
         };
       });
+      this.$nextTick(this.adjustLegend);
       return traces;
     }
   },
   methods: {
+    adjustLegend() {
+      this.layout.showlegend = this.$el.clientWidth >= 500;
+    },
     processClick(event) {
       let point = event.points[0].data.data[event.points[0].pointIndex];
       this.$emit('pickPoint', point);

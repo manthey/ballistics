@@ -25,6 +25,11 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
+@media (max-width: 700px) {
+  .table_wrapper {
+    max-width: 50vw;
+  }
+}
 .table_scroll {
   font-family: sans-serif;
   font-size: 12px;
