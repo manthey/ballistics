@@ -28,7 +28,12 @@
 .cssmenu li a {
   padding: 0 1rem;
   color: #fff;
-  min-width: 50px;
+  max-width: calc(12.5vw - 2rem);
+}
+@media (min-width: 800px) {
+  .cssmenu li a {
+    min-width: 50px;
+  }
 }
 .cssmenu li:hover,
 .cssmenu li:focus-within {

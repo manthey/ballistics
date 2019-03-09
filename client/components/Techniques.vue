@@ -96,7 +96,16 @@ Time of flight measurements are usually very inaccurate.  Often a projectile is 
 figure {
   float: right;
   margin: 10px;
-  margin-right: calc(500px - 50vw + 20px);
+}
+@media (min-width: 1020px) {
+  figure {
+    margin-right: calc(500px - 50vw + 20px);
+  }
+}
+@media (min-width: 1640px) {
+  figure {
+    margin-right: -300px;
+  }
 }
 figure+div::after {
   content: "";
