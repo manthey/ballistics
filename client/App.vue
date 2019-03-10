@@ -128,17 +128,17 @@ export default {
       fetch('totallist.json').then(resp => resp.json()).then(data => {
         this.plotdata = data;
         utils.updatePointKeys(data);
-      }).catch(err => { throw err; });
+      }).catch(err => { console.log(err); throw err; });
     },
     fetchReferences() {
       fetch('references.json').then(resp => resp.json()).then(data => {
         this.references = data;
-      }).catch(err => { throw err; });
+      }).catch(err => { console.log(err); throw err; });
     },
     fetchParameters() {
       fetch('parameters.json').then(resp => resp.json()).then(data => {
         this.parameters = Object.assign({}, utils.updateParameters(data));
-      }).catch(err => { throw err; });
+      }).catch(err => { console.log(err); throw err; });
     },
     updateMenu(to) {
       to = to || this.$router.currentRoute;

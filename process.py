@@ -121,6 +121,7 @@ def calculate_case(hashval, args, info, verbose):
     for key, technique in [
             ('initial_velocity', 'given_velocity'),
             ('pendulum_length', 'pendulum'),
+            ('chamber_volume', 'pressure'),
             ('final_velocity', 'chronograph'),
             ('rising_height', 'trajectory'),
             ('range', 'range'),

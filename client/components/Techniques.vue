@@ -87,7 +87,27 @@ Measuring the force of the gunpowder by the velocity imparted to the gun gives a
 [Plot](#/plot?filter=d.technique%3D%3D'double_pendulum') [Table](#/table?filter=d.technique%3D%3D'double_pendulum')
 
 In cases where the gun was mounted on a pendulum, the measurement of the projectile using a pendulum is marked as a "Double Pendulum".  This allows data from guns allowed to recoil fully to be separated from data where the gun is more constrained and measured by a single pendulum only.
+    </vue-markdown>
+    <div style="clear: both"/>
+    <figure>
+      <img src="tech_pressure.jpg"/>
+      <figcaption>
+        <vue-markdown>
+The pressure energy of gunpowder can be measured by determining the weight that a quantity of powder can just lift. [Rumford, 1797](#/references?refkey=rumford1797)
+        </vue-markdown>
+      </figcaption>
+    </figure>
+    <vue-markdown>
+## Pressure Chamber
 
+[Plot](#/plot?filter=d.technique%3D%3D'pressure') [Table](#/table?filter=d.technique%3D%3D'pressure')
+
+If gunpowder is exploded in a confined chamber, and the pressure on the outside of the chamber is measured, the energy expended can be calculated from that pressure.
+
+To use pressure chamber information, it is necessary to know the volume of the chamber and the pressure developed.  The pressure can be determined from a force measured over a known area.
+    </vue-markdown>
+    <div style="clear: both"/>
+    <vue-markdown>
 ## Given Velocity
 
 [Plot](#/plot?filter=d.technique%3D%3D'given_velocity') [Table](#/table?filter=d.technique%3D%3D'given_velocity')

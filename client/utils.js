@@ -166,6 +166,14 @@ let ParameterList = [{
     key: 'given_rising_height',
     primary: true
   }, {
+    key: 'given_chamber_volume',
+    title: 'Volume of pressure chamber',
+    primary: true
+  }, {
+    key: 'given_chamber_diameter',
+    title: 'Diameter of pressure chamber measurement area',
+    primary: true
+  }, {
     key: 'given_technique',
     primary: true
   }, {
@@ -270,6 +278,16 @@ let ParameterList = [{
     primary: true
   }, {
     key: 'rising_height',
+    units: 'm',
+    primary: true
+  }, {
+    key: 'chamber_volume',
+    title: 'Volume of pressure chamber',
+    units: 'm^3',
+    primary: true
+  }, {
+    key: 'chamber_diameter',
+    title: 'Diameter of pressure chamber measurement area',
     units: 'm',
     primary: true
   }, {

@@ -149,6 +149,27 @@ Factors = {
         'title': 'Atmospheric Density',
         'desc': 'Atmospheric density (mass per volume).'
     },
+    'chamber_diameter': {
+        'long': 'pcdiam',
+        'units': 'm',
+        'eng': 'in',
+        'title': 'Chamber Diameter',
+        'desc': 'Diameter of pressure chamber measurement area'
+    },
+    'chamber_force': {
+        'long': 'pcaforce',
+        'units': 'kgf',
+        'eng': 'lbf',
+        'title': 'Chamber Force',
+        'desc': 'Pressure chamber force on the measurement area'
+    },
+    'chamber_volume': {
+        'long': 'pcvol',
+        'units': 'm*m*m',
+        'eng': 'in*in*in',
+        'title': 'Chamber Volume',
+        'desc': 'Pressure chamber volume'
+    },
     'charge': {
         'long': 'charge',
         'short': 'c',
@@ -973,7 +994,7 @@ def find_unknown_direct(unknown, state):
     Check if the unknown was given or can be solved directly.
 
     Enter: unknown: the unknown to solve for.
-           state; the initial state.
+           state: the initial state.
     Exit:  solved_state: the answer state if solved, None if not.
     """
     if state.get(unknown):
@@ -985,6 +1006,11 @@ def find_unknown_direct(unknown, state):
             state.get('charge') and state.get('mass')):
         state[unknown] = ((state['initial_velocity']**2) * state['mass'] /
                           (2 * state['charge']))
+        return state
+    if (unknown == 'power_factor' and state.get('charge') and
+            state.get('chamber_volume') and state.get('chamber_diameter') and (
+            state.get('mass') or state.get('chamber_force'))):
+        state[unknown] = power_factor_from_pressure_chamber(state)
         return state
     return None
 
@@ -1545,6 +1571,28 @@ def parse_user_params(default_params={}, user_params=None):
     return params, other_params, items
 
 
+def power_factor_from_pressure_chamber(state):
+    """
+    Given the force or mass that is needed to relieve pressure from a pressure
+    chamber, compute the power factor of the powder used.
+
+    Enter: state: the initial state.
+    Exit:  power_factor: the computer power factor.
+    """
+    volume = state['chamber_volume']
+    area = (state['chamber_diameter'] / 2)**2 * math.pi
+    if state.get('chamber_force'):
+        force = state['chamber_force']
+    else:
+        force = state['mass'] * abs(acceleration_from_gravity(state))
+    atmospheric_density(state)
+    outside_pressure = state['density_data']['pressure']
+    delta_pressure = force / area - outside_pressure
+    energy = delta_pressure * volume
+    power_factor = energy / state['charge']
+    return power_factor
+
+
 def pressure_from_altitude(y):
     """
     Calculate standard atmospheric pressure based on an altitude in m.  The
@@ -1892,7 +1940,7 @@ def velocity_from_pendulum(state):
     Exit:  velocity: the computed velocity in m/s or None.
     """
     # Using Hutton's notation
-    G = SIGravity
+    G = abs(acceleration_from_gravity(state))
     b = state.get('mass')
     bp = state.get('pendulum_impact_mass', 0)
     p = state.get('pendulum_mass')

@@ -1,0 +1,156 @@
+---
+key: rumford1797
+ref: "Rumford, 1797"
+cms: "Rumford, Benjamin Count of.  \"Experiments to determine the Force of fired Gunpowder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 87 (1797): 222-292."
+summary: "Count Rumford measures the pressure developed by gunpowder."
+date: "1797"
+data:
+  -
+    chamber_volume: 0.08974 in*in*in
+    chamber_diameter: 0.25 in
+    data:
+      -
+        ref2: "p. 265"
+        data:
+          -
+            date: "1793-02-25"
+            temperature: 37 F
+            pressure: 28.56 inHg
+            charge: 6 gr
+            mass: 504.8 lb
+          -
+            date: "1793-02-25"
+            temperature: 57 F
+            pressure: 28.37 inHg
+            charge: 1 gr
+            mass: 57.4 lb
+          -
+            date: "1793-02-26"
+            temperature: 34 F
+            pressure: 28.1 inHg
+            charge: 2 gr
+            mass: 134.2 lb
+          -
+            date: "1793-02-26"
+            temperature: 48 F
+            pressure: 28.31 inHg
+            charge: 3 gr
+            mass: 212.24 lb
+          -
+            date: "1793-02-27"
+            temperature: 50 F
+            pressure: 28.36 inHg
+            charge: 4 gr
+            mass: 281.57 lb
+      -
+        ref2: "p. 266"
+        data:
+          -
+            date: "1793-02-28"
+            temperature: 48 F
+            pressure: 28.35 inHg
+            charge: 5 gr
+            mass: 413.27 lb
+          -
+            date: "1793-03-01"
+            temperature: 59 F
+            pressure: 28.35 inHg
+            charge: 7 gr
+            mass: 597.66 lb
+          -
+            date: "1793-03-02"
+            temperature: 50 F
+            pressure: 28.32 inHg
+            charge: 8 gr
+            mass: 857.64 lb
+          -
+            date: "1793-03-02"
+            temperature: 50 F
+            pressure: 28.32 inHg
+            charge: 9 gr
+            mass: 1142.3 lb
+          -
+            date: "1793-03-05"
+            temperature: 32 F
+            pressure: 28.2 inHg
+            charge: 10 gr
+            mass: 1387.5 lb
+          -
+            date: "1793-03-05"
+            temperature: 32 F
+            pressure: 28.2 inHg
+            charge: 11 gr
+            mass: 1634 lb
+          -
+            date: "1793-03-06"
+            temperature: 36 F
+            pressure: 28.34 inHg
+            charge: 12 gr
+            mass: 1895.1 lb
+      -
+        ref2: "p. 267"
+        data:
+          -
+            date: "1793-03-06"
+            temperature: 32 F
+            pressure: 28.3 inHg
+            charge: 13 gr
+            mass: 2422 lb
+          -
+            date: "1793-03-09"
+            temperature: 43 F
+            pressure: 28.31 inHg
+            charge: 14 gr
+            mass: 2951 lb
+          -
+            date: "1793-03-09"
+            temperature: 43 F
+            pressure: 28.31 inHg
+            charge: 15 gr
+            mass: 3477 lb
+          -
+            date: "1793-04-04"
+            temperature: 70 F
+            pressure: 28.2 inHg
+            charge: 16 gr
+            mass: 5220 lb
+          -
+            date: "1793-04-05"
+            temperature: 68 F
+            pressure: 28.3 inHg
+            charge: 18 gr
+            mass: 8081 lb
+      -
+        ref2: "p. 276"
+        mass: 8081 lb
+        data:
+          -
+            date: "1793-07-01"
+            temperature: 88 F
+            pressure: 28.37 inHg
+            charge: 13 gr
+          -
+            date: "1793-07-02"
+            temperature: 71 F
+            pressure: 28.38 inHg
+            charge: 12 gr
+          -
+            date: "1793-07-03"
+            temperature: 75 F
+            pressure: 28.55 inHg
+            charge: 14 gr
+          -
+            date: "1793-07-04"
+            temperature: 72 F
+            pressure: 28.56 inHg
+            charge: 15 gr
+          -
+            date: "1793-07-08"
+            temperature: 74 F
+            pressure: 28.42 inHg
+            charge: 12 gr
+          -
+            date: "1793-07-17"
+            temperature: 75 F
+            pressure: 28.4 inHg
+            charge: 11.25 gr

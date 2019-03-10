@@ -2599,7 +2599,7 @@ data:
         final_velocity: 1119 ft/s
       -
         skip: true
-        skip_note: "Some tests were performed with the ball palced at different distances along the muzzle.  The test show that less force is imparted the closer to the end the ball starts, but without calculating the actual velocities."
+        skip_note: "Some tests were performed with the ball placed at different distances along the muzzle.  The test show that less force is imparted the closer to the end the ball starts, but without calculating the actual velocities."
   -
     ref2: "p. 133"
     date: "1791-07-14"
