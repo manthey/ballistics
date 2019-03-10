@@ -209,13 +209,15 @@ export default {
   },
 }
 /*
-Notes:
+Can add:
 
+finish techniques page
 specific graphs with commentary
   small diam
   medium
   large
 accuracy based on reported precision
+drag models (include Hutton, 1795 v2, p. 365)
 github
 */
 </script>

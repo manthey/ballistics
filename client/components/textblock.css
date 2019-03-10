@@ -1,0 +1,49 @@
+.textblock {
+  padding: 10px calc(50% - 500px);
+  margin: 0 0 0 10px;
+  overflow: auto;
+}
+figure {
+  float: right;
+  margin: 10px;
+  text-align: center;
+}
+figure.left {
+  float: left;
+}
+@media (min-width: 1020px) {
+  figure:not(.left) {
+    margin-right: calc(500px - 50vw + 20px);
+  }
+  figure.left {
+    margin-left: calc(500px - 50vw + 20px);
+  }
+}
+@media (min-width: 1640px) {
+  figure:not(.left) {
+    margin-right: -300px;
+  }
+  figure.left {
+    margin-left: -300px;
+  }
+}
+figure:not(.left)::before {
+  content: "";
+  clear: right;
+  display: block;
+}
+figure.left::before {
+  content: "";
+  clear: left;
+  display: block;
+}
+figcaption {
+  text-align: center;
+  max-width: 400px;
+  font-size: 0.9em;
+}
+figure img {
+  max-width: 400px;
+  max-height: 360px;
+}
+

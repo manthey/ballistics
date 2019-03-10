@@ -1,5 +1,5 @@
 <template>
-  <div id="mainpage">
+  <div id="mainpage" class="textblock">
     <vue-markdown>
 # Ballistics of Historical Black Powder Tests
 
@@ -45,18 +45,12 @@ There are certainly more sources than have been used; please forward references 
 
 ## Full Data
 
-All of the data, the computation program, and the source of this websire are available publicly on [GitHub](https://github.com/manthey/ballistics).
+All of the data, the computation program, and the source of this website are available publicly on [GitHub](https://github.com/manthey/ballistics).
     </vue-markdown>
   </div>
 </template>
 
-<style scoped>
-#mainpage {
-  padding: 10px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-</style>
+<style src="./textblock.css" scoped/>
 
 <script>
 export default {

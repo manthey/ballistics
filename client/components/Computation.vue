@@ -1,5 +1,5 @@
 <template>
-  <div id="computation">
+  <div id="computation" class="textblock">
     <vue-markdown>
 # Ballistics Computation
 
@@ -210,53 +210,7 @@ The effects of humidty are small, but a ball is thrown mildly further in humid w
   </div>
 </template>
 
-<style scoped>
-#computation {
-  padding: 10px calc(50% - 500px);
-  margin: 0 0 0 10px;
-  overflow: auto;
-}
-figure {
-  float: right;
-  margin: 10px;
-}
-@media (min-width: 1020px) {
-  figure {
-    margin-right: calc(500px - 50vw + 20px);
-  }
-}
-@media (min-width: 1640px) {
-  figure {
-    margin-right: -300px;
-  }
-}
-figure+div::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-figcaption {
-  text-align: center;
-  max-width: 600px;
-  font-size: 0.9em;
-}
-figure img {
-  max-width: 600px;
-}
-</style>
-<style>
-[aria-hidden] {
-  display: none;
-}
-#computation table, #computation th, #computation td {
-  border: 1px solid #eee;
-  padding: 2px;
-  font-size: 12px;
-}
-#computation table {
-  border-collapse: collapse;
-}
-</style>
+<style src="./textblock.css" scoped/>
 
 <script>
 export default {
