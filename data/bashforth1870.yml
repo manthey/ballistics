@@ -50,31 +50,723 @@ data:
     desc: "Reports on Experiments made to determine the Law of the Resistance of the Air to Spherical Projectiles, 1868"
     date: "1868"
     angle: 0 deg
-    charge_note: "Elsewhere Bashforth is using exactly half the weight of the projectile as the charge."
+    temperature_note: "From p. 122"
     technique: chronograph
     data:
       -
         mass: 3.316 lb
         diameter: 2.92 in
         date: "1868-10-13"
+        pressure: 30.165 inHg
+        temperature: 59.5 F
+        wetbulb: 57 F
+        charge: 3.316 lb
+        data:
+          -
+            group: 66-284
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0718 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1498 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2339 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3241 s
+          -
+            group: 66-285
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0730 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1522 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2381 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3311 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4317 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.5403 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.6573 s
+              -
+                range: 1275 ft
+                delta_range: 1200 ft
+                delta_time: 0.7830 s
+              -
+                range: 1425 ft
+                delta_range: 1350 ft
+                delta_time: 0.9190 s
+          -
+            group: 66-286
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0706 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1470 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2297 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3192 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4160 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.5209 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.6342 s
+              -
+                range: 1275 ft
+                delta_range: 1200 ft
+                delta_time: 0.7567 s
+          -
+            group: 66-287
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0717 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1494 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2333 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3245 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4228 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.5291 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.6436 s
+              -
+                range: 1275 ft
+                delta_range: 1200 ft
+                delta_time: 0.7670 s
+              -
+                range: 1425 ft
+                delta_range: 1350 ft
+                delta_time: 0.8900 s
+                delta_time_note: Smudged
+      -
+        mass: 3.316 lb
+        diameter: 2.92 in
+        date: "1868-10-14"
+        pressure: 30.21 inHg
+        temperature: 55.5 F
+        wetbulb: 52 F
+        charge: 3.316 lb
+        data:
+          -
+            group: 66-288
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0759 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1580 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2468 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3427 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4463 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.5581 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.6786 s
+              -
+                range: 1275 ft
+                delta_range: 1200 ft
+                delta_time: 0.8082 s
+              -
+                range: 1425 ft
+                delta_range: 1350 ft
+                delta_time: 0.9476 s
+          -
+            group: 66-289
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0770 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1616 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2541 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3548 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4641 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.5824 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.7100 s
+              -
+                range: 1275 ft
+                delta_range: 1200 ft
+                delta_time: 0.8473 s
+      -
+        mass: 3.316 lb
+        diameter: 2.92 in
+        date: "1868-10-14"
+        pressure: 30.21 inHg
+        temperature: 55.5 F
+        wetbulb: 52 F
+        charge: 2.487 lb
+        data:
+          -
+            group: 66-290
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0839 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1748 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2733 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3797 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4945 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.6180 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.7505 s
+              -
+                range: 1275 ft
+                delta_range: 1200 ft
+                delta_time: 0.8922 s
+              -
+                range: 1425 ft
+                delta_range: 1350 ft
+                delta_time: 1.0433 s
+          -
+            group: 66-291
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0769 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1601 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2501 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3473 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4523 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.5654 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.6872 s
+              -
+                range: 1275 ft
+                delta_range: 1200 ft
+                delta_time: 0.8182 s
+              -
+                range: 1425 ft
+                delta_range: 1350 ft
+                delta_time: 0.9587 s
+          -
+            group: 66-292
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0836 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1744 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2727 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3790 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4935 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.6166 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.7484 s
+              -
+                range: 1275 ft
+                delta_range: 1200 ft
+                delta_time: 0.8890 s
+              -
+                range: 1425 ft
+                delta_range: 1350 ft
+                delta_time: 1.0687 s
+          -
+            group: 66-293
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0793 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1657 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2593 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3601 s
+          -
+            group: 66-294
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0782 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1631 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2551 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3546 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4620 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.5778 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.7023 s
+      -
+        mass: 3.316 lb
+        diameter: 2.92 in
+        date: "1868-10-14"
+        pressure: 30.21 inHg
+        temperature: 55.5 F
+        wetbulb: 52 F
         charge: 1.658 lb
         data:
           -
-            range: 225 ft
-            delta_range: 150 ft
-            delta_time: 0.0718 s
+            group: 66-295
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0831 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1732 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2707 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3761 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4898 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.6123 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.7440 s
+              -
+                range: 1275 ft
+                delta_range: 1200 ft
+                delta_time: 0.8854 s
           -
-            range: 375 ft
-            delta_range: 300 ft
-            delta_time: 0.1498 s
+            group: 66-296
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0823 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1717 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2686 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3736 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4868 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.6088 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.7399 s
           -
-            range: 525 ft
-            delta_range: 450 ft
-            delta_time: 0.2339 s
+            group: 66-297
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0818 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1710 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2677 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3724 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.4853 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.6069 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.7373 s
           -
-            range: 675 ft
-            delta_range: 600 ft
-            delta_time: 0.3241 s
+            group: 66-312
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.0844 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.1764 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.2764 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.3845 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.5012 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.6266 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 0.7610 s
+              -
+                range: 1275 ft
+                delta_range: 1200 ft
+                delta_time: 0.9046 s
+      -
+        mass: 3.316 lb
+        diameter: 2.92 in
+        date: "1868-10-13"
+        pressure: 30.165 inHg
+        temperature: 59.5 F
+        wetbulb: 57 F
+        charge: 1.105 lb
+        data:
+          -
+            group: 66-261
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.1231 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.2577 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.3974 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.5477 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.7065 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.8734 s
+          -
+            group: 66-262
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.1246 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.2581 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.4003 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.5510 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.7101 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.8773 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 1.0527 s
+          -
+            group: 66-263
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.1232 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.2555 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.3968 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.5466 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.7046 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.8705 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 1.0440 s
+          -
+            group: 66-264
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.1167 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.2425 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.3773 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.5208 s
+              -
+                range: 825 ft
+                delta_range: 750 ft
+                delta_time: 0.6726 s
+              -
+                range: 975 ft
+                delta_range: 900 ft
+                delta_time: 0.8328 s
+              -
+                range: 1125 ft
+                delta_range: 1050 ft
+                delta_time: 1.0011 s
+              -
+                range: 1275 ft
+                delta_range: 1200 ft
+                delta_time: 1.1775 s
+              -
+                range: 1425 ft
+                delta_range: 1350 ft
+                delta_time: 1.3619 s
+          -
+            group: 66-266
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.1254 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.2599 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.4033 s
+          -
+            group: 66-267
+            data:
+              -
+                range: 225 ft
+                delta_range: 150 ft
+                delta_time: 0.1205 s
+              -
+                range: 375 ft
+                delta_range: 300 ft
+                delta_time: 0.2508 s
+              -
+                range: 525 ft
+                delta_range: 450 ft
+                delta_time: 0.3903 s
+              -
+                range: 675 ft
+                delta_range: 600 ft
+                delta_time: 0.5382 s
+
 
     # mass: 3.316 lb
     # diameter: 2.92 in
@@ -108,3 +800,4 @@ data:
     # date: "1868-11-05"
 
     # Screen 1 at 75 ft, all successive at 150 ft spacing
+# Possibly more data at p. 118 and on

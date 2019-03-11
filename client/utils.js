@@ -177,6 +177,16 @@ let ParameterList = [{
     title: 'Diameter of pressure chamber measurement area',
     primary: true
   }, {
+    key: 'given_delta_range',
+    title: 'Difference in range between two time measurements.',
+    primary: true
+  }, {
+    key: 'given_delta_time',
+    title: 'Difference in time between two range measurements.',
+    primary: true
+  }, {
+    key: 'given_delta_time_note',
+  }, {
     key: 'given_technique',
     primary: true
   }, {
@@ -292,6 +302,16 @@ let ParameterList = [{
     key: 'chamber_diameter',
     title: 'Diameter of pressure chamber measurement area',
     units: 'm',
+    primary: true
+  }, {
+    key: 'delta_range',
+    title: 'Difference in range between two time measurements.',
+    units: 'm',
+    primary: true
+  }, {
+    key: 'delta_time',
+    title: 'Difference in time between two range measurements.',
+    units: 's',
     primary: true
   }, {
     key: 'computation_time',
