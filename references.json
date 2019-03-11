@@ -19,6 +19,12 @@
   "ref": "Anderson, 1862",
   "summary": "An excellent review of the technology used in India."
  },
+ "bashforth1870": {
+  "cms": "Bashforth, Francis.  <i>Reports on Experiments Made with the Bashforth Chronograph to determine the Resistance of the Air to the Motion of Projectiles, 1865-1870.</i>  London: W. Clowes and Sons, et al., 1879.",
+  "key": "bashforth1870",
+  "ref": "Bashforth, 1870",
+  "summary": "Bashford has invented a chronograph and measured the time of flight at multiple points along projectile trajectories.  Many of the experiments are don on ogival shot or with unspecified charges."
+ },
  "berthelot1872": {
   "cms": "Berthelot, Marcelin.  <i>Sur la force de la poudre et mati\u00e8re explosives, Deuxi\u00e8me \u00c9dition</i>  Paris: Gauthier-Villars, 1872.",
   "details": "This calculates the chemical reactions of gunpowder.  Near the end there is a table of the heat output from a calorimeter.  In some ways this is the maximum amount of power that could be liberated from the gunpowder, as none of the energy escapes.  However, the available oxygen in the calorimeter is not reflective of actual available oxygen from air in a mortar or gun, and, since the gunpowder isn't expanding in the same manner, other differences exist.\n",

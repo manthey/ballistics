@@ -74,27 +74,27 @@
   "unique": 501
  },
  "computation_time": {
-  "count": 7596,
+  "count": 7632,
   "key": "computation_time",
   "max": 0.4200000000000159,
   "min": 0.0,
-  "numeric": 7596,
-  "unique": 75
+  "numeric": 7632,
+  "unique": 76
  },
  "date": {
-  "count": 7596,
+  "count": 7632,
   "key": "date",
-  "unique": 355
+  "unique": 356
  },
  "date_filled": {
-  "count": 7596,
+  "count": 7632,
   "key": "date_filled",
-  "unique": 350
+  "unique": 351
  },
  "desc": {
-  "count": 7277,
+  "count": 7313,
   "key": "desc",
-  "unique": 1411
+  "unique": 1412
  },
  "diam": {
   "count": 7461,
@@ -227,11 +227,11 @@
   "unique": 1469
  },
  "final_height": {
-  "count": 5373,
+  "count": 5409,
   "key": "final_height",
   "max": 889.7112000000001,
   "min": -11.85,
-  "numeric": 5373,
+  "numeric": 5409,
   "unique": 133
  },
  "final_time": {
@@ -325,12 +325,12 @@
   "unique": 7
  },
  "given_date": {
-  "count": 7596,
+  "count": 7632,
   "key": "given_date",
   "max": 1895,
   "min": 1646,
   "numeric": 128,
-  "unique": 359
+  "unique": 360
  },
  "given_date_note": {
   "count": 15,
@@ -570,6 +570,11 @@
   "key": "given_power",
   "unique": 109
  },
+ "given_power_factor": {
+  "count": 36,
+  "key": "given_power_factor",
+  "unique": 36
+ },
  "given_pressure": {
   "count": 2712,
   "key": "given_pressure",
@@ -620,14 +625,15 @@
  "given_technique": {
   "count": 4060,
   "key": "given_technique",
-  "unique": 7,
+  "unique": 8,
   "values": {
    "calorimeter": 80,
+   "chronograph": 38,
    "double_pendulum": 1511,
    "gun_pendulum": 655,
    "pendulum": 565,
    "theory": 1024,
-   "trajectory": 148,
+   "trajectory": 110,
    "wheel_chronograph": 77
   }
  },
@@ -652,11 +658,11 @@
   "unique": 41
  },
  "idx": {
-  "count": 7596,
+  "count": 7632,
   "key": "idx",
   "max": 2197,
   "min": 0,
-  "numeric": 7596,
+  "numeric": 7632,
   "unique": 2198
  },
  "initial_angle": {
@@ -692,13 +698,14 @@
   "unique": 6629
  },
  "key": {
-  "count": 7596,
+  "count": 7632,
   "key": "key",
-  "unique": 44,
+  "unique": 45,
   "values": {
    "adye1804": 234,
    "anderson1696": 17,
    "anderson1862": 899,
+   "bashforth1870": 36,
    "berthelot1872": 4,
    "berthelot1892": 21,
    "blondel1683": 122,
@@ -869,12 +876,12 @@
   }
  },
  "power_factor": {
-  "count": 7596,
+  "count": 7632,
   "key": "power_factor",
   "max": 38953326.18132455,
   "min": 1219.238817111487,
-  "numeric": 7596,
-  "unique": 7047
+  "numeric": 7632,
+  "unique": 7083
  },
  "pressure": {
   "count": 2738,
@@ -913,9 +920,9 @@
   "unique": 1743
  },
  "ref": {
-  "count": 7596,
+  "count": 7632,
   "key": "ref",
-  "unique": 385
+  "unique": 386
  },
  "rh": {
   "count": 204,
@@ -963,14 +970,15 @@
   }
  },
  "technique": {
-  "count": 7596,
+  "count": 7632,
   "key": "technique",
-  "unique": 14,
+  "unique": 15,
   "values": {
    "calorimeter": 80,
-   "chronograph": 36,
+   "chronograph": 74,
    "double_pendulum": 1511,
    "final_angle": 5,
+   "given": 36,
    "given_velocity": 279,
    "gun_pendulum": 655,
    "height": 4,
@@ -979,7 +987,7 @@
    "range": 2904,
    "theory": 1024,
    "time": 285,
-   "trajectory": 148,
+   "trajectory": 110,
    "wheel_chronograph": 77
   }
  },
@@ -992,26 +1000,26 @@
   "unique": 5636
  },
  "time_delta": {
-  "count": 7596,
+  "count": 7632,
   "key": "time_delta",
   "max": 0.02,
   "min": 2e-05,
-  "numeric": 7596,
+  "numeric": 7632,
   "unique": 4,
   "values": {
    "2e-05": 191,
    "0.0002": 1477,
    "0.002": 571,
-   "0.02": 5357
+   "0.02": 5393
   }
  },
  "version": {
-  "count": 7596,
+  "count": 7632,
   "key": "version",
   "unique": 2,
   "values": {
-   "2019-03-05v52": 6597,
-   "2019-03-07v53": 999
+   "2019-03-05v52": 6069,
+   "2019-03-07v53": 1563
   }
  },
  "vx": {
@@ -1047,11 +1055,11 @@
   "unique": 2308
  },
  "year": {
-  "count": 7596,
+  "count": 7632,
   "key": "year",
   "max": 2001,
   "min": 1580,
-  "numeric": 7596,
-  "unique": 99
+  "numeric": 7632,
+  "unique": 100
  }
 }
