@@ -171,6 +171,11 @@ UnitsTable = [
      False, SIGravity, 'Kilograms of force (kiloponds)'),
     (['Mgf', 'Mp', 'tonneforce', 'tonnesforce', 'megapond', 'megaponds'],
      False, 1000.0 * SIGravity, 'Megagrams of force (megaponds)'),
+    (['lbf', 'poundforce', 'poundsforce'], False,
+     AvoirdupoisPoundInKilograms * SIGravity , 'Pounds of force'),
+    (['pdl', 'poundal', 'poundals'], False,
+     AvoirdupoisPoundInKilograms * StatuteFootInMeters,
+     'Poundals of force (lb*ft/s/s)'),
 
     # Angle (reference is radian)
     (['deg', 'degree', 'degrees'], False, math.pi / 180, 'Degree (angle)'),

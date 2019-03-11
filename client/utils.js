@@ -42,6 +42,9 @@ let ParameterList = [{
   }, {
     key: 'given_date_note'
   }, {
+    key: 'given_power_factor',
+    primary: true
+  }, {
     key: 'given_charge',
     primary: true
   }, {

@@ -820,7 +820,7 @@ data:
         desc3: "Room temperature powder"
         range: 141 yds
       -
-        desc3: "Powder heater to 400\u00b0F in a copper pan"
+        desc3: "Powder heated to 400\u00b0F in a copper pan"
         range: 242 yds
   -
     ref2: "p. 82"
@@ -2163,4 +2163,3 @@ data:
           - range: 41 yds
           - range: 74 yds
           - range: 100 yds
-

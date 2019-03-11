@@ -31,6 +31,12 @@ There is quite a variety of experiments using range.  There are proof tests wher
 This is a variation of the range test, except instead of noting the distance that the ball travels, the time between when it was fired and when it lands is recorded.
 
 Time of flight measurements are usually very inaccurate.  Often a projectile is only aloft for 10 seconds.  A long shot might last nearly half a minute.  Observers rarely record times with accuracies of greater than a quarter second, and often these can be a second in error.  This produces unreliable results.
+
+## Impact Angle
+
+[Plot](#/plot?filter=d.technique%3D%3D'final_angle') [Table](#/table?filter=d.technique%3D%3D'final_angle')
+
+This is another variation of the range test, except that the angle of impact (also called the angle of fall) is noted.  This can be done, for instance, by sighting the ball just before impact along with the landing spot.  Observations don't seem particularly accurate.
     </vue-markdown>
     <figure>
       <img src="tech_pendulum_robins.jpg"/>
@@ -118,6 +124,8 @@ Some authors report a velocity that was directly measured or has already been ca
 
 [Plot](#/plot?filter=d.technique%3D%3D'trajectory') [Table](#/table?filter=d.technique%3D%3D'trajectory')
 
+Trajectory measures the height during the travel of the projectile without stopping it.  This has been done with, for instance, a paper screen that is placed at a fixed distance from the muzzle of the gun.  The perforation shows the deviation from the desired flight path to the side as well as the altitude of the projectile at that point.
+
 ## Chronograph
 
 [Plot](#/plot?filter=['chronograph','wheel_chronograph'].indexOf(d.technique)>%3D0) [Table](#/table?filter=['chronograph','wheel_chronograph'].indexOf(d.technique)>%3D0)
@@ -129,10 +137,6 @@ Some authors report a velocity that was directly measured or has already been ca
 ### Modern Chronograph
 
 [Plot](#/plot?filter=d.technique%3D%3D'chronograph') [Table](#/table?filter=d.technique%3D%3D'chronograph')
-
-## Impact Angle
-
-[Plot](#/plot?filter=d.technique%3D%3D'final_angle') [Table](#/table?filter=d.technique%3D%3D'final_angle')
 
 ## Maximum Height
 

@@ -19,7 +19,7 @@ data:
           -
             initial_velocity: 482 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -42,7 +42,7 @@ data:
           -
             initial_velocity: 533 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -65,7 +65,7 @@ data:
           -
             initial_velocity: 449 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -88,7 +88,7 @@ data:
           -
             initial_velocity: 456 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -111,7 +111,7 @@ data:
           -
             initial_velocity: 427 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -134,7 +134,7 @@ data:
           -
             initial_velocity: 392 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -157,7 +157,7 @@ data:
           -
             initial_velocity: 438 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -177,7 +177,7 @@ data:
           -
             initial_velocity: 474 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -200,7 +200,7 @@ data:
           -
             initial_velocity: 455 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -223,7 +223,7 @@ data:
           -
             initial_velocity: 451 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -246,7 +246,7 @@ data:
           -
             initial_velocity: 467 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -269,7 +269,7 @@ data:
           -
             initial_velocity: 494 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -292,7 +292,7 @@ data:
           -
             initial_velocity: 385 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -
@@ -312,7 +312,7 @@ data:
           -
             initial_velocity: 543 m/s
           -
-            technique: trajectory
+            technique: chronograph
             final_height: null
             data:
               -

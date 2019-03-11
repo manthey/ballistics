@@ -180,6 +180,19 @@ Factors = {
         'title': 'Powder Charge',
         'desc': 'Powder charge by weight.'
     },
+    'delta_range': {
+        'long': 'deltarange',
+        'units': 'm',
+        'eng': 'ft',
+        'title': 'Delta Range',
+        'desc': 'Range travelled during delta time'
+    },
+    'delta_time': {
+        'long': 'deltatime',
+        'units': 's',
+        'title': 'Delta Time',
+        'desc': 'Time duration for travelling delta range'
+    },
     'diam': {
         'long': 'diameter',
         'short': 'd',
@@ -1520,7 +1533,8 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
         state['final_velocity'] = velocity_from_pendulum(state)
     if state.get('final_height') == '0':
         state['final_height'] = 0
-        if state.get('final_velocity') and state.get('range'):
+    if state.get('final_height') == 0:
+        if (state.get('final_velocity') or state.get('delta_range')) and state.get('range'):
             del state['final_height']
     if not help:
         help = True
@@ -1895,6 +1909,25 @@ def trajectory_error(initial_state, unknown, unknown_value):
         pprint.pprint(state)
     if state is None:
         print('Cannot calculate trajectory error - trajectory is None')
+        return None
+    if any(key.startswith('delta_') for key in initial_state):
+        delta_state = initial_state.copy()
+        for key in delta_state:
+            if key.startswith('delta_') and key[6:] in delta_state:
+                delta_state[key[6:]] -= delta_state[key]
+        delta_state[unknown] = unknown_value
+        Verbose -= 2
+        try:
+            delta_state, _points = trajectory(delta_state)
+        finally:
+            Verbose += 2
+        if delta_state is None:
+            print('Cannot calculate trajectory error - trajectory is None')
+            return None
+        if (unknown != 'delta_time' and
+                initial_state.get('delta_time', None) is not None):
+            return (state['time'] - delta_state['time']) - initial_state['delta_time']
+        print('Cannot calculate trajectory error - nothing to solve for')
         return None
     if (unknown != 'final_velocity' and
             initial_state.get('final_velocity', None) is not None):

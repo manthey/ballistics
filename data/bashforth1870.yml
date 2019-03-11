@@ -1,0 +1,110 @@
+---
+key: bashforth1870
+ref: "Bashforth, 1870"
+cms: "Bashforth, Francis.  <i>Reports on Experiments Made with the Bashforth Chronograph to determine the Resistance of the Air to the Motion of Projectiles, 1865-1870.</i>  London: W. Clowes and Sons, et al., 1879."
+summary: "Bashford has invented a chronograph and measured the time of flight at multiple points along projectile trajectories.  Many of the experiments are don on ogival shot or with unspecified charges."
+date: "1870"
+data:
+  -
+    ref2: "p. 51"
+    desc: "\"Showing the Work done on the Shot by each pound of the Charge.\""
+    data:
+      - power_factor: 142911 lbf/lb
+      - power_factor: 135687 lbf/lb
+      - power_factor: 117061 lbf/lb
+      - power_factor: 133904 lbf/lb
+      - power_factor: 129687 lbf/lb
+      - power_factor: 110230 lbf/lb
+      - power_factor: 125062 lbf/lb
+      - power_factor: 131951 lbf/lb
+      - power_factor: 121363 lbf/lb
+      - power_factor: 102106 lbf/lb
+      - power_factor: 140129 lbf/lb
+      - power_factor: 138393 lbf/lb
+      - power_factor: 137869 lbf/lb
+      - power_factor: 162234 lbf/lb
+      - power_factor: 170534 lbf/lb
+      - power_factor: 192071 lbf/lb
+      - power_factor: 199242 lbf/lb
+      - power_factor: 200834 lbf/lb
+      - power_factor: 147921 lbf/lb
+      - power_factor: 177268 lbf/lb
+      - power_factor: 187032 lbf/lb
+      - power_factor: 170954 lbf/lb
+      - power_factor: 159875 lbf/lb
+      - power_factor: 175272 lbf/lb
+      - power_factor: 187292 lbf/lb
+      - power_factor: 190692 lbf/lb
+      - power_factor: 171934 lbf/lb
+      - power_factor: 176885 lbf/lb
+      - power_factor: 146697 lbf/lb
+      - power_factor: 158381 lbf/lb
+      - power_factor: 169779 lbf/lb
+      - power_factor: 182090 lbf/lb
+      - power_factor: 187278 lbf/lb
+      - power_factor: 179109 lbf/lb
+      - power_factor: 151933 lbf/lb
+      - power_factor: 140590 lbf/lb
+  -
+    ref2: "p. 66"
+    desc: "Reports on Experiments made to determine the Law of the Resistance of the Air to Spherical Projectiles, 1868"
+    date: "1868"
+    angle: 0 deg
+    charge_note: "Elsewhere Bashforth is using exactly half the weight of the projectile as the charge."
+    technique: chronograph
+    data:
+      -
+        mass: 3.316 lb
+        diameter: 2.92 in
+        date: "1868-10-13"
+        charge: 1.658 lb
+        data:
+          -
+            range: 225 ft
+            delta_range: 150 ft
+            delta_time: 0.0718 s
+          -
+            range: 375 ft
+            delta_range: 300 ft
+            delta_time: 0.1498 s
+          -
+            range: 525 ft
+            delta_range: 450 ft
+            delta_time: 0.2339 s
+          -
+            range: 675 ft
+            delta_range: 600 ft
+            delta_time: 0.3241 s
+
+    # mass: 3.316 lb
+    # diameter: 2.92 in
+    # mass: 2.000 lb
+
+    # mass: 15.789 lb
+    # diameter: 4.92 in
+    # mass: 7.894 lb
+
+    # mass: 44.094 lb
+    # diameter: 6.92 in
+    # mass: 22.047 lb
+
+    # mass: 94.5 lb
+    # diameter: 8.888 in
+    # mass: 67.5 lb
+    # diameter: 8.886 in
+
+    # Rounds 180-206
+    # date: "1868-05-06"
+    # date: "1868-05-07"
+    # Rounds 241-260
+    # date: "1868-05-22"
+    # Rounds 261-314
+    # date: "1868-10-13"
+    # date: "1868-10-14"
+    # Rounds 315-325
+    # date: "1868-10-15"
+    # Rounds 380-411
+    # date: "1868-11-04"
+    # date: "1868-11-05"
+
+    # Screen 1 at 75 ft, all successive at 150 ft spacing
