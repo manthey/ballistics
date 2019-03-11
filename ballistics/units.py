@@ -59,167 +59,341 @@ RhinePoundInKilograms = AvoirdupoisPoundInKilograms * 1.03118
 
 SIGravity = 9.806650
 
-# The units table is a list of tuples, each of which is ([list of names and
-# abbreviations], prefixes allowed, factor to SI, description).  The factor can
-# be a single number if the conversion has the same zero-point, or can be a
-# pair where the first number is the scale and the second is the offset.  If
-# prefixes are allowed, the standard SI prefixes for powers of ten can be added
-# to the unit names as needed.
-UnitsTable = [
+# Each entry in the units table contains:
+#   names: a list of names and abbreviations
+#   prefix: (optional) True if standard prefixes are allowed, in which case the
+#     standard SI prefixes for powers of ten can be added to the unit names as
+#     needed.
+#   value: factor to SI.  The value can be a single number if the conversion
+#     has the same zero-point, or can be a two-tuple where the first number is
+#     the scale and the second is the offset, or can be a two-tuple of
+#     functions that convert to and from the standard.
+#   desc: description.
+UnitsTable = [{
     # Distance (reference is meter)
-    (['in', 'inch', 'inches'], False, StatuteFootInMeters / 12,
-     'Statute inch (British and American inch)'),
-    (['lk', 'link', 'links'], False, 0.66 * StatuteFootInMeters,
-     'Link (1/100th of a chain or 1/25 of a rod)'),
-    (['ft', 'foot', 'feet'], False, StatuteFootInMeters,
-     'Statute foot (British and American foot)'),
-    (['yd', 'yard', 'yards', 'yds'], False, 3 * StatuteFootInMeters,
-     'Statute yard (British and American yard)'),
-    (['m', 'meter', 'meters'], True, 1.0, 'SI meter'),
-    (['ch', 'chain', 'chains'], False, 66 * StatuteFootInMeters,
-     'Chain (100 links or 66 statute feet)'),
-    (['mi', 'mile', 'miles'], False, 5280 * StatuteFootInMeters,
-     'Statute mile (British and American mile)'),
-
-    (['ftfr', 'parisfoot', 'frenchfoot', 'parisfeet', 'frenchfeet'], False,
-     ParisFootInMeters, 'Paris foot'),
-    (['infr', 'parisinch', 'frenchinch', 'parisinches', 'frenchinches',
-      'pouce', 'pouces'], False, ParisFootInMeters / 12, 'Paris inch'),
-    (['linefr', 'parisline', 'frenchline', 'parislines', 'frenchlines',
-      'ligne', 'lignes'], False, ParisFootInMeters / 144, 'Paris line'),
-    (['toise', 'toises', 'frenchfathom', 'frenchfathoms'], False,
-     ParisFootInMeters * 6, 'Paris toise (fathom)'),
-
-    (['ftit', 'italianfoot', 'sardiniafoot', 'italianfeet', 'sardiniafeet',
-      'pieliprando'], False, SardiniaFootInMeters,
-     'Sardinia foot (pie liprando)'),
-    (['init', 'italianinch', 'sardiniainch', 'italianinches', 'sardiniainches',
-      'oncia', 'oncie'], False, SardiniaFootInMeters / 12,
-     'Sardinia inch (oncia)'),
-    (['italianline', 'sardinialine', 'italianlines', 'sardinialines', 'punto',
-      'punti'], False, SardiniaFootInMeters / 144, 'Sardinia line (punto)'),
-    (['italianatomi', 'sardiniaatomi', 'atomi'], False,
-     SardiniaFootInMeters / 1728, 'Sardinia atomi (1/12 line or punto)'),
-    (['trabucco', 'trabucchi', 'trabucci', 'italianfathom', 'italianfathoms'],
-     False, SardiniaFootInMeters * 6, 'Sardinia trabucco (fathom)'),
+    'names': ['m', 'meter', 'meters'],
+    'prefix': True,
+    'value': 1.0,
+    'desc': 'SI meter',
+}, {
+    # -- Statute distances
+    'names': ['in', 'inch', 'inches'],
+    'value': StatuteFootInMeters / 12,
+    'desc': 'Statute inch (British and American inch)',
+}, {
+    'names': ['lk', 'link', 'links'],
+    'value': 0.66 * StatuteFootInMeters,
+    'desc': 'Link (1/100th of a chain or 1/25 of a rod)',
+}, {
+    'names': ['ft', 'foot', 'feet'],
+    'value': StatuteFootInMeters,
+    'desc': 'Statute foot (British and American foot)',
+}, {
+    'names': ['yd', 'yard', 'yards', 'yds'],
+    'value': 3 * StatuteFootInMeters,
+    'desc': 'Statute yard (British and American yard)',
+}, {
+    'names': ['ch', 'chain', 'chains'],
+    'value': 66 * StatuteFootInMeters,
+    'desc': 'Chain (100 links or 66 statute feet)',
+}, {
+    'names': ['mi', 'mile', 'miles'],
+    'value': 5280 * StatuteFootInMeters,
+    'desc': 'Statute mile (British and American mile)',
+}, {
+    # -- Paris distances
+    'names': ['ftfr', 'parisfoot', 'frenchfoot', 'parisfeet', 'frenchfeet'],
+    'value': ParisFootInMeters,
+    'desc': 'Paris foot',
+}, {
+    'names': ['infr', 'parisinch', 'frenchinch', 'parisinches', 'frenchinches', 'pouce', 'pouces'],
+    'value': ParisFootInMeters / 12,
+    'desc': 'Paris inch',
+}, {
+    'names': ['linefr', 'parisline', 'frenchline', 'parislines', 'frenchlines', 'ligne', 'lignes'],
+    'value': ParisFootInMeters / 144,
+    'desc': 'Paris line',
+}, {
+    'names': ['toise', 'toises', 'frenchfathom', 'frenchfathoms'],
+    'value': ParisFootInMeters * 6,
+    'desc': 'Paris toise (fathom)',
+}, {
+    # -- Italian distances
+    'names': ['ftit', 'italianfoot', 'sardiniafoot', 'italianfeet', 'sardiniafeet', 'pieliprando'],
+    'value': SardiniaFootInMeters,
+    'desc': 'Sardinia foot (pie liprando)',
+}, {
+    'names': ['init', 'italianinch', 'sardiniainch', 'italianinches',
+              'sardiniainches', 'oncia', 'oncie'],
+    'value': SardiniaFootInMeters / 12,
+    'desc': 'Sardinia inch (oncia)',
+}, {
+    'names': ['italianline', 'sardinialine', 'italianlines', 'sardinialines', 'punto', 'punti'],
+    'value': SardiniaFootInMeters / 144,
+    'desc': 'Sardinia line (punto)',
+}, {
+    'names': ['italianatomi', 'sardiniaatomi', 'atomi'],
+    'value': SardiniaFootInMeters / 1728,
+    'desc': 'Sardinia atomi (1/12 line or punto)',
+}, {
+    'names': ['trabucco', 'trabucchi', 'trabucci', 'italianfathom', 'italianfathoms'],
+    'value': SardiniaFootInMeters * 6,
+    'desc': 'Sardinia trabucco (fathom)',
+}, {
 
     # Mass (reference is kg)
-    (['gr', 'grain', 'grains'], False, AvoirdupoisPoundInKilograms / 7000,
-     'Grain (1/7000th of a avoirdupois pound)'),
-    (['g', 'gram', 'grams'], True, 0.001, 'SI grams'),
-    (['dr', 'dram', 'drams'], False, AvoirdupoisPoundInKilograms / 256,
-     'International avoirdupois dram (1/16 ounce)'),
-    (['oz', 'ounce', 'ounces'], False, AvoirdupoisPoundInKilograms / 16,
-     'International avoirdupois ounce'),
-    (['dwt', 'troypennyweight', 'pennyweight'], False,
-     TroyPoundInKilograms / 240, 'Troy pennyweight (24 grains)'),
-    (['drt', 'troydram', 'troydrams'], False, TroyPoundInKilograms / 96,
-     'Troy dram (1/8 ounce or 60 grains)'),
-    (['ozt', 'troyounce', 'troyounces'], False, TroyPoundInKilograms / 12,
-     'Troy ounce'),
-    (['lb', 'pound', 'pounds', 'lbs'], False, AvoirdupoisPoundInKilograms,
-     'International avoirdupois pound'),
-    (['lbt', 'troypound', 'troypounds'], False, TroyPoundInKilograms,
-     'Troy pound'),
-    (['kg', 'kilogram', 'kilograms'], False, 1.0, 'SI kilogram'),
-    (['tonne', ], False, 1000.0, 'SI megagram'),
-    (['qtr', 'quarterhundredweight', 'qtrs', 'quarterhundredweights'], False,
-     AvoirdupoisPoundInKilograms * 28,
-     'Hundredweight (112 avoirdupois pounds)'),
-    (['cwt', 'hundredweight', 'cwts', 'hundredweights'], False,
-     AvoirdupoisPoundInKilograms * 112,
-     'Hundredweight (112 avoirdupois pounds)'),
-
-    (['lbfr', 'parispound', 'frenchpound', 'parispounds', 'frenchpounds',
-      'livre', 'livres'], False, ParisPoundInKilograms,
-     'Paris livre (pound)'),
-    (['ozfr', 'parisounce', 'frenchounce', 'parisounces', 'frenchounces'],
-     False, ParisPoundInKilograms / 16, 'Paris ounce'),
-
-    (['lbit', 'italianpound', 'piedmontesepound', 'italianpounds',
-      'piedmontesepounds', 'libbre'], False, PeidmontPoundInKilograms,
-     'Peidmont libbre (pound)'),
-    (['ozit', 'italianounce', 'piedmonteseounce', 'italianounces',
-      'piedmonteseounces'], False, PeidmontPoundInKilograms / 12,
-     'Peidmont once (ounce)'),
-    (['italiandenari', 'piedmontesedenari', 'denari'], False,
-     PeidmontPoundInKilograms / 12 / 24, 'Peidmont denari (dram)'),
+    'names': ['g', 'gram', 'grams'],
+    'prefix': True,
+    'value': 0.001,
+    'desc': 'SI grams',
+}, {
+    'names': ['kg', 'kilogram', 'kilograms'],
+    'value': 1.0,
+    'desc': 'SI kilogram',
+}, {
+    'names': ['tonne', ],
+    'value': 1000.0,
+    'desc': 'SI megagram',
+}, {
+    # -- Avoirdupois
+    'names': ['gr', 'grain', 'grains'],
+    'value': AvoirdupoisPoundInKilograms / 7000,
+    'desc': 'Grain (1/7000th of a avoirdupois pound)',
+}, {
+    'names': ['dr', 'dram', 'drams'],
+    'value': AvoirdupoisPoundInKilograms / 256,
+    'desc': 'International avoirdupois dram (1/16 ounce)',
+}, {
+    'names': ['oz', 'ounce', 'ounces'],
+    'value': AvoirdupoisPoundInKilograms / 16,
+    'desc': 'International avoirdupois ounce',
+}, {
+    'names': ['lb', 'pound', 'pounds', 'lbs'],
+    'value': AvoirdupoisPoundInKilograms,
+    'desc': 'International avoirdupois pound',
+}, {
+    'names': ['qtr', 'quarterhundredweight', 'qtrs', 'quarterhundredweights'],
+    'value': AvoirdupoisPoundInKilograms * 28,
+    'desc': 'Hundredweight (112 avoirdupois pounds)',
+}, {
+    'names': ['cwt', 'hundredweight', 'cwts', 'hundredweights'],
+    'value': AvoirdupoisPoundInKilograms * 112,
+    'desc': 'Hundredweight (112 avoirdupois pounds)',
+}, {
+    # -- Troy
+    'names': ['dwt', 'troypennyweight', 'pennyweight'],
+    'value': TroyPoundInKilograms / 240,
+    'desc': 'Troy pennyweight (24 grains)',
+}, {
+    'names': ['drt', 'troydram', 'troydrams'],
+    'value': TroyPoundInKilograms / 96,
+    'desc': 'Troy dram (1/8 ounce or 60 grains)',
+}, {
+    'names': ['ozt', 'troyounce', 'troyounces'],
+    'value': TroyPoundInKilograms / 12,
+    'desc': 'Troy ounce',
+}, {
+    'names': ['lbt', 'troypound', 'troypounds'],
+    'value': TroyPoundInKilograms,
+    'desc': 'Troy pound',
+}, {
+    # -- Paris
+    'names': ['lbfr', 'parispound', 'frenchpound', 'parispounds',
+              'frenchpounds', 'livre', 'livres'],
+    'value': ParisPoundInKilograms,
+    'desc': 'Paris livre (pound)',
+}, {
+    'names': ['ozfr', 'parisounce', 'frenchounce', 'parisounces', 'frenchounces'],
+    'value': ParisPoundInKilograms / 16,
+    'desc': 'Paris ounce',
+}, {
+    # -- Italian
+    'names': ['lbit', 'italianpound', 'piedmontesepound', 'italianpounds',
+              'piedmontesepounds', 'libbre'],
+    'value': PeidmontPoundInKilograms,
+    'desc': 'Peidmont libbre (pound)',
+}, {
+    'names': ['ozit', 'italianounce', 'piedmonteseounce', 'italianounces', 'piedmonteseounces'],
+    'value': PeidmontPoundInKilograms / 12,
+    'desc': 'Peidmont once (ounce)',
+}, {
+    'names': ['italiandenari', 'piedmontesedenari', 'denari'],
+    'value': PeidmontPoundInKilograms / 12 / 24,
+    'desc': 'Peidmont denari (dram)',
+}, {
 
     # Energy (reference is J)
-    (['J', 'Joule', 'Joules'], True, 1.0, 'SI Joule (kg*m*m/s/s)'),
+    'names': ['J', 'Joule', 'Joules'],
+    'prefix': True,
+    'value': 1.0,
+    'desc': 'SI Joule (kg*m*m/s/s)',
+}, {
     # calorie could be 4.201681 J, 4.184 J (thermochemical cal), 4.204 (4 deg
     # cal), or other values.
-    (['cal', 'calorie', 'calories'], True, 4.184, 'gram calorie'),
-    (['Cal', 'kcal', 'Calorie', 'Calories'], False, 4184.0,
-     'kilogram Calorie'),
-    (['ftlb', 'footpound', 'footpounds'], False,
-     StatuteFootInMeters * SIGravity * AvoirdupoisPoundInKilograms,
-     'Foot-pound'),
-    (['ftton', 'footton', 'foottons', 'footlongton', 'footlongtons'], False,
-     StatuteFootInMeters * SIGravity * AvoirdupoisPoundInKilograms * 2240,
-     'Foot-ton, using the long ton (2240 lb)'),
-    (['kilogrammeter', 'kilogrammeters'], False, SIGravity,
-     'Kilogram(force)-meter (energy)'),
-    (['tonnemeter', 'tonnemeters'], False, 1000.0 * SIGravity,
-     'Megagram(force)-meter (energy)'),
+    'names': ['cal', 'calorie', 'calories'],
+    'prefix': True,
+    'value': 4.184,
+    'desc': 'gram calorie',
+}, {
+    'names': ['Cal', 'kcal', 'Calorie', 'Calories'],
+    'value': 4184.0,
+    'desc': 'kilogram Calorie',
+}, {
+    'names': ['kilogrammeter', 'kilogrammeters'],
+    'value': SIGravity,
+    'desc': 'Kilogram(force)-meter (energy)',
+}, {
+    'names': ['tonnemeter', 'tonnemeters'],
+    'value': 1000.0 * SIGravity,
+    'desc': 'Megagram(force)-meter (energy)',
+}, {
+    # -- Statute
+    'names': ['ftlb', 'footpound', 'footpounds'],
+    'value': StatuteFootInMeters * SIGravity * AvoirdupoisPoundInKilograms,
+    'desc': 'Foot-pound',
+}, {
+    'names': ['ftton', 'footton', 'foottons', 'footlongton', 'footlongtons'],
+    'value': StatuteFootInMeters * SIGravity * AvoirdupoisPoundInKilograms * 2240,
+    'desc': 'Foot-ton, using the long ton (2240 lb)',
+}, {
 
     # Force (reference is N)
-    (['N', 'Newton', 'Newtons'], True, 1.0, 'SI Newton (kg*m/s/s)'),
-    (['gf', 'gramforce', 'gramsforce', 'pond', 'ponds'], True,
-     0.001 * SIGravity, 'Grams of force'),
-    (['kgf', 'kp', 'kilogramforce', 'kilogramsforce', 'kilopond', 'kiloponds'],
-     False, SIGravity, 'Kilograms of force (kiloponds)'),
-    (['Mgf', 'Mp', 'tonneforce', 'tonnesforce', 'megapond', 'megaponds'],
-     False, 1000.0 * SIGravity, 'Megagrams of force (megaponds)'),
-    (['lbf', 'poundforce', 'poundsforce'], False,
-     AvoirdupoisPoundInKilograms * SIGravity , 'Pounds of force'),
-    (['pdl', 'poundal', 'poundals'], False,
-     AvoirdupoisPoundInKilograms * StatuteFootInMeters,
-     'Poundals of force (lb*ft/s/s)'),
+    'names': ['N', 'Newton', 'Newtons'],
+    'prefix': True,
+    'value': 1.0,
+    'desc': 'SI Newton (kg*m/s/s)',
+}, {
+    'names': ['gf', 'gramforce', 'gramsforce', 'pond', 'ponds'],
+    'prefix': True,
+    'value': 0.001 * SIGravity,
+    'desc': 'Grams of force',
+}, {
+    'names': ['kgf', 'kp', 'kilogramforce', 'kilogramsforce', 'kilopond', 'kiloponds'],
+    'value': SIGravity,
+    'desc': 'Kilograms of force (kiloponds)',
+}, {
+    'names': ['Mgf', 'Mp', 'tonneforce', 'tonnesforce', 'megapond', 'megaponds'],
+    'value': 1000.0 * SIGravity,
+    'desc': 'Megagrams of force (megaponds)',
+}, {
+    # -- Avoirdupois
+    'names': ['lbf', 'poundforce', 'poundsforce'],
+    'value': AvoirdupoisPoundInKilograms * SIGravity,
+    'desc': 'Pounds of force',
+}, {
+    'names': ['pdl', 'poundal', 'poundals'],
+    'value': AvoirdupoisPoundInKilograms * StatuteFootInMeters,
+    'desc': 'Poundals of force (lb*ft/s/s)',
 
+}, {
     # Angle (reference is radian)
-    (['deg', 'degree', 'degrees'], False, math.pi / 180, 'Degree (angle)'),
-    (['arcmin', 'arcminute', 'arcminutes'], False, math.pi / 180 / 60,
-     'Minutes (angle)'),
-    (['arcsec', 'arcsecond', 'arcseconds'], False, math.pi / 180 / 60 / 60,
-     'Seconds (angle)'),
-    (['rad', 'radian', 'radians'], False, 1.0, 'Radian'),
-    (['tangent'], False, (lambda x: math.atan(x), lambda x: math.tan(x)),
-     'Tangent of angle'),
-    (['%slope', 'percentslope'], False, (
-     lambda x: math.atan(x * 0.01), lambda x: math.tan(x) * 100),
-     'Percent slope'),
-    (['grad', 'gradian', 'gradians', 'gon', 'degreescentesimaux', 'degcent'],
-     False, math.pi / 200, 'Gradian (gon)'),
-
+    'names': ['rad', 'radian', 'radians'],
+    'value': 1.0,
+    'desc': 'Radian',
+}, {
+    'names': ['deg', 'degree', 'degrees'],
+    'value': math.pi / 180,
+    'desc': 'Degree (angle)',
+}, {
+    'names': ['arcmin', 'arcminute', 'arcminutes'],
+    'value': math.pi / 180 / 60,
+    'desc': 'Minutes (angle)',
+}, {
+    'names': ['arcsec', 'arcsecond', 'arcseconds'],
+    'value': math.pi / 180 / 60 / 60,
+    'desc': 'Seconds (angle)',
+}, {
+    'names': ['tangent'],
+    'value': (lambda x: math.atan(x), lambda x: math.tan(x)),
+    'desc': 'Tangent of angle',
+}, {
+    'names': ['%slope', 'percentslope'],
+    'value': (lambda x: math.atan(x * 0.01), lambda x: math.tan(x) * 100),
+    'desc': 'Percent slope',
+}, {
+    'names': ['grad', 'gradian', 'gradians', 'gon', 'degreescentesimaux', 'degcent'],
+    'value': math.pi / 200,
+    'desc': 'Gradian (gon)',
+}, {
     # Time (reference is second)
-    (['third', 'thirds'], False, 1.0 / 60, 'Third (time)'),
-    (['s', 'sec', 'second', 'seconds'], True, 1.0, 'Second (time)'),
-    (['min', 'minute', 'minutes'], False, 60.0, 'Minute (time)'),
-    (['h', 'hour', 'hours'], False, 3600.0, 'Hour (time)'),
+
+    'names': ['s', 'sec', 'second', 'seconds'],
+    'prefix': True,
+    'value': 1.0,
+    'desc': 'Second (time)',
+}, {
+    'names': ['third', 'thirds'],
+    'value': 1.0 / 60,
+    'desc': 'Third (time)',
+}, {
+    'names': ['min', 'minute', 'minutes'],
+    'value': 60.0,
+    'desc': 'Minute (time)',
+}, {
+    'names': ['h', 'hour', 'hours'],
+    'value': 3600.0,
+    'desc': 'Hour (time)',
+}, {
 
     # Temperature (reference is K)
-    (['F', 'degF'], False, (5.0 / 9.0, 459.67), 'Degree Fahrenheit'),
-    (['Ra', 'Rankine'], False, 5.0 / 9.0, 'Rankine (temperature)'),
-    (['C', 'degC'], False, (1.0, 273.15), 'Degree Centigrade'),
-    (['K', 'Kelvin'], False, 1.0, 'Kelvin (temperature)'),
+    'names': ['K', 'Kelvin'],
+    'value': 1.0,
+    'desc': 'Kelvin (temperature)',
+}, {
+    'names': ['C', 'degC'],
+    'value': (1.0, 273.15),
+    'desc': 'Degree Centigrade',
+}, {
+    'names': ['F', 'degF'],
+    'value': (5.0 / 9.0, 459.67),
+    'desc': 'Degree Fahrenheit',
+}, {
+    'names': ['Ra', 'Rankine'],
+    'value': 5.0 / 9.0,
+    'desc': 'Rankine (temperature)',
+}, {
 
     # Percent
-    (['%', 'percent'], False, 0.01, 'Percent'),
+    'names': ['%', 'percent'],
+    'value': 0.01,
+    'desc': 'Percent',
+}, {
 
     # Pressure (reference is Pa)
-    (['Pa', 'Pascal', 'Pascals'], True, 1.0,
-     'SI Pascal (1 N/m/m or 1 kg/m/s/s)'),
-    (['bar'], False, 1.0e5, 'Pressure bar (100000 Pa)'),
-    (['atm', 'atmosphere', 'atmospheres'], False, 101325.0,
-     'Standard atmospheric pressure (101,325 Pa)'),
-    (['psi'], False, 689.48, 'Pounds of force per square inch'),
-    (['mmHg'], False, 133.322387415, 'Pressure in millimeters of mercury'),
-    (['mHg'], True, 133322.387415, 'Pressure in meters of mercury'),
-    (['inHg'], False, 3386.388, 'Pressure in inches of mercury'),
-    (['initHg'], False, 3386.388 * SardiniaFootInMeters / StatuteFootInMeters,
-     'Pressure in Italian inches of mercury'),
-    ]
+    'names': ['Pa', 'Pascal', 'Pascals'],
+    'prefix': True,
+    'value': 1.0,
+    'desc': 'SI Pascal (1 N/m/m or 1 kg/m/s/s)',
+}, {
+    'names': ['bar'],
+    'value': 1.0e5,
+    'desc': 'Pressure bar (100000 Pa)',
+}, {
+    'names': ['atm', 'atmosphere', 'atmospheres'],
+    'value': 101325.0,
+    'desc': 'Standard atmospheric pressure (101,325 Pa)',
+}, {
+    'names': ['psi'],
+    'value': 689.48,
+    'desc': 'Pounds of force per square inch',
+}, {
+    'names': ['mmHg'],
+    'value': 133.322387415,
+    'desc': 'Pressure in millimeters of mercury',
+}, {
+    'names': ['mHg'],
+    'prefix': True,
+    'value': 133322.387415,
+    'desc': 'Pressure in meters of mercury',
+}, {
+    'names': ['inHg'],
+    'value': 3386.388,
+    'desc': 'Pressure in inches of mercury',
+}, {
+    'names': ['initHg'],
+    'value': 3386.388 * SardiniaFootInMeters / StatuteFootInMeters,
+    'desc': 'Pressure in Italian inches of mercury',
+}]
 
 
 def convert_units(value, to=None, from_units=None):  # noqa - mccabe
@@ -327,9 +501,9 @@ def convert_units_factor(unitname):
     Exit:  factor: the factor for the unit, or None if not found.
     """
     for unit in UnitsTable:
-        for name in unit[0]:
+        for name in unit['names']:
             if name == unitname:
-                return unit[2]
+                return unit['value']
     # prefixes = {
     #     'Y': 1e24, 'Z': 1e21, 'E': 1e18, 'P': 1e15, 'T': 1e12, 'G': 1e9,
     #     'M': 1e6, 'k': 1e3, 'h': 1e2, 'da': 1e1, 'd': 1e-1, 'c': 1e-2,
@@ -343,10 +517,10 @@ def convert_units_factor(unitname):
         factor = prefixes[unitname[:1]]
         base = unitname[1:]
         for unit in UnitsTable:
-            if unit[1]:
-                for name in unit[0]:
+            if unit.get('prefix'):
+                for name in unit['names']:
                     if name == base:
-                        return factor*unit[2]
+                        return factor*unit['value']
     sys.stderr.write('Unknown unit "%s"\n' % unitname)
     return None
 
@@ -359,8 +533,8 @@ def list_units(full=False):
     Enter: full: if True, print all alternate names on their own line.
     """
     units = {}
-    for (names, prefix, factor, desc) in UnitsTable:
-        for name in names:
+    for unit in UnitsTable:
+        for name in unit['names']:
             if name in units:
                 print('Duplicate unit: %s' % name)
                 return
@@ -368,10 +542,10 @@ def list_units(full=False):
                 if not k.isalpha() and k != '%':
                     print('Invalid unit name: %s' % name)
                     return
-            if name == names[0]:
-                units[name] = (factor, desc, names[1:])
+            if name == unit['names'][0]:
+                units[name] = (unit['factor'], unit['desc'], unit['names'][1:])
             elif full == 'full':
-                units[name] = (None, 'See %s.' % names[0], [])
+                units[name] = (None, 'See %s.' % unit['names'][0], [])
     names = list(units.keys())
     names.sort()
     nlen = max([len(name) for name in names])

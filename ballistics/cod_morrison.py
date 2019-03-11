@@ -13,13 +13,16 @@
 
 
 def coefficient_of_drag_morrison(state, only_in_range=False):
-    """Calculate the coefficient of drag using the equation provided from
-     http://www.chem.mtu.edu/~fmorriso/DataCorrelationForSphereDrag2013.pdf
+    """
+    Calculate the coefficient of drag using the equation provided from
+    http://www.chem.mtu.edu/~fmorriso/DataCorrelationForSphereDrag2013.pdf
+
     Enter: state: a dictionary of the current state.  Includes Reynolds and
                   mach numbers.
            only_in_range: if True, return None if the values are outside of
                           what we can interpolate.
-    Exit:  cd: the coefficient of drag."""
+    Exit:  cd: the coefficient of drag.
+    """
     Re = state['drag_data']['Re']
     cd = (24.0 / Re +
           (2.6 * (Re / 5.0)) / (1 + (Re / 5.0) ** 1.52) +

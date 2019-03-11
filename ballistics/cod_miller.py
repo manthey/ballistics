@@ -17,7 +17,7 @@ import math
 from .interpolate import interpolate
 
 # This table consists of a list of tuples of the form (Mach number, [List of
-# (Reynolds Number, Coefficient of Drag)], critial Reynolds number).  The data
+# (Reynolds Number, Coefficient of Drag)], critical Reynolds number).  The data
 # for Mach number == 0 is taken from Munson, Bruce R., Donald F. Young, and
 # Theodore H. Okiishi. "Fundamentals of Fluid Mechanics, Third Edition."  New
 # York: John Wiley & Sons, Inc., 1998.  Fig. 9.21, p. 600.  The data for the
@@ -93,7 +93,7 @@ MnReCdDataTable = [
            (1e7, 0.9494)), 1e6),
     # Mach 4.5 is from Munson, fig 11.2, p. 709
     (4.5, ((1e4, 0.906), (1e7, 0.906)), 1e6),
-    ]
+]
 MnReCdDataTableLog10Crit = [
     (machnum, math.log10(crit)) for (machnum, reynolds_data, crit) in MnReCdDataTable]
 

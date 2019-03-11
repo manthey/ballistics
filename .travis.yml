@@ -11,6 +11,7 @@ install:
   - node --version
   - npm --version
   - pip install -U pip
+  - pip install tox-travis
   - pip install .
   - pip freeze
   - npm prune
@@ -22,6 +23,7 @@ script:
   - ls -l $HOME/results
   - ls -l data/*.yml
   - npm run lint
+  - tox | cat
   - python -u process.py --multi -v -v --limit='1200,stopped.txt' --arg=time_delta=0.02 --out=$HOME/results
   - python util/combine.py --results=$HOME/results --out=client/static
   - npm run build

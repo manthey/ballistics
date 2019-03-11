@@ -17,10 +17,10 @@ import math
 
 def bezier4pt(x, x1, y1, x2, y2, x3, y3, x4, y4, dx=0):
     """
-    bezier4pt() finds approximate y from cubic Bezier given x
-    worst case y(x + xerr) is returned (where xerr is optional parm)
-    assumes fn is well behaved ie single valued for all x
-    Adapted from [http://antigrain.com/research/adaptive_bezier/]
+    Finds approximate y from cubic Bezier given x worst case y(x + xerr) is
+    returned (where xerr is optional parm) assumes fn is well behaved (i.e.,
+    single valued for all x).  Adapted from
+    [http://antigrain.com/research/adaptive_bezier/]
     """
     # Calculate mid-points of line segments
     x12 = (x1 + x2) / 2
@@ -58,9 +58,8 @@ def bezier4pt(x, x1, y1, x2, y2, x3, y3, x4, y4, dx=0):
 
 def SphereDragVsRe(Re):
     """
-    SphereDragVsRe() returns Reynolds number for flow past a sphere
-    from "Data Correlation for Drag Coeff for Sphere" F.A.Morrison
-    [chem.mtu.edu]
+    Return the Reynolds number for flow past a sphere from "Data Correlation
+    for Drag Coeff for Sphere" F.A.Morrison [chem.mtu.edu]
     """
     def log10(val):
         return math.log(val) / math.log(10)
@@ -81,10 +80,9 @@ def SphereDragVsRe(Re):
 
 def SphereDrag(v, d):  # speed, diameter
     """
-    SphereDrag() modifies Morrison drag coeff v Reynolds number for
-    speeds near Mach 1 to match experiment data summarised in
-    'Sphere Drag at Mach Numbers from 0.3 to 2.0'
-    Miller & Bailey [J.Fluid Mech, 1979].
+    Modifies Morrison drag coeff v Reynolds number for speeds near Mach 1 to
+    match experiment data summarised in 'Sphere Drag at Mach Numbers from 0.3
+    to 2.0' Miller & Bailey [J.Fluid Mech, 1979].
     """
     # Imperial units
     SSpd = 1116  # sound speed at sea level (340.2 m/s)
@@ -108,13 +106,16 @@ def SphereDrag(v, d):  # speed, diameter
 
 
 def coefficient_of_drag_collins(state, only_in_range=False):
-    """Calculate the coefficient of drag using the graph from Miller that I
-     digitized.
+    """
+    Calculate the coefficient of drag using the graph from Miller that I
+    digitized.
+
     Enter: state: a dictionary of the current state.  Includes Reynolds and
                   mach numbers.
            only_in_range: if True, return None if the values are outside of
                           what we can interpolate.
-    Exit:  cd: the coefficient of drag."""
+    Exit:  cd: the coefficient of drag.
+    """
     Re = state['drag_data']['Re']
     Mn = state['drag_data']['Mn']
     if Mn < 0.2:

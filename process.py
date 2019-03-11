@@ -119,17 +119,17 @@ def calculate_case(hashval, args, info, verbose):
     newstate, points = ballistics.find_unknown(state, params['unknown'], params.get('unknown_scan'))
     newstate['computation_time'] = ballistics.get_cpu_time()-starttime
     for key, technique in [
-            ('power_factor', 'given'),
-            ('initial_velocity', 'given_velocity'),
-            ('pendulum_length', 'pendulum'),
-            ('chamber_volume', 'pressure'),
-            ('final_velocity', 'chronograph'),
-            ('rising_height', 'trajectory'),
-            ('range', 'range'),
-            ('final_time', 'time'),
-            ('max_height', 'height'),
-            ('final_angle', 'final_angle'),
-            ]:
+        ('power_factor', 'given'),
+        ('initial_velocity', 'given_velocity'),
+        ('pendulum_length', 'pendulum'),
+        ('chamber_volume', 'pressure'),
+        ('final_velocity', 'chronograph'),
+        ('rising_height', 'trajectory'),
+        ('range', 'range'),
+        ('final_time', 'time'),
+        ('max_height', 'height'),
+        ('final_angle', 'final_angle'),
+    ]:
         if newstate.get('technique') is None and key in state:
             newstate['technique'] = technique
     if verbose >= 3:
@@ -233,7 +233,7 @@ def get_multiprocess_pool(multi, verbose=0):
     return pool
 
 
-def process_cases(info, results, cases, verbose=0, nextcaseindex=0, extraArgs=[]):
+def process_cases(info, results, cases, verbose=0, nextcaseindex=0, extraArgs=None):
     """
     Check if there are any data entries in the current level of the info.
     If so, process each entry in turn.  If not, calculate the ballistics and
@@ -270,7 +270,8 @@ def process_cases(info, results, cases, verbose=0, nextcaseindex=0, extraArgs=[]
             'date', 'ref', 'ref2', 'ref3', 'desc', 'desc2', 'desc3',
             'technique', 'group') and
         not key.endswith('_note')]))
-    args.extend(extraArgs)
+    if extraArgs:
+        args.extend(extraArgs)
     hashval = ' '.join([('"%s"' if ' ' in arg else '%s') % arg for arg in args])
     if hashval not in cases:
         cases[hashval] = {'info': info, 'args': args, 'position': len(cases),
@@ -282,7 +283,7 @@ def process_cases(info, results, cases, verbose=0, nextcaseindex=0, extraArgs=[]
 
 
 def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
-                          pool=None, reverse=False, extraArgs=[]):
+                          pool=None, reverse=False, extraArgs=None):
     """
     Load a yaml file and any companion files.  For each non-skipped data set,
     calculate the ballistics result.  Output the results as a json file with

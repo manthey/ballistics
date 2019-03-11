@@ -24,25 +24,53 @@ from .formattext import line_break
 from .units import convert_units
 
 
-# The materials table is a list of tuples, each of which is ([list of names and
-# abbreviations], typical density in kg/m^3, minimum density, maximum density,
-# description).  Some data was taken from http://www.engineeringtoolbox.com/
-# metal-alloys-densities-d_50.html
-#  This could be expanded if necessary.  Davies, 1748 gives a greater range for
-# each material's density as well as values for steel, copper, and others.
-# Adye, 1804 (p. 146) has a table with some values.
-MaterialsTable = [
+# Each entry in the materials table contains:
+#   names: a list of known names and abbreviations
+#   density: typical density in kg/m^3
+#   mindensity: minimum density
+#   maxdensity: maximum density
+#   desc: description.
+# Some data was taken from
+# http://www.engineeringtoolbox.com/metal-alloys-densities-d_50.html
+# This could be expanded if necessary.  Davies, 1748 gives a greater range for
+# each material's density as well as values for steel and others.  Adye, 1804
+# (p. 146) has a table with some values.
+MaterialsTable = [{
     # Brass - Robertson: 8104, Natco: 8441, Adye: cast brass 8000
-    (['brass'], 8520, 8000, 8700, 'Brass'),
+    'names': ['brass'],
+    'density': 8520,
+    'mindensity': 8000,
+    'maxdensity': 8700,
+    'desc': 'Brass',
+}, {
     # Bronze - Natco: 8756
-    (['bronze'], 8756, 8756, 8756, 'Bronze'),
+    'names': ['bronze'],
+    'density': 8756,
+    'mindensity': 8756,
+    'maxdensity': 8756,
+    'desc': 'Bronze',
+}, {
     # Copper, Adye: 9000
-    (['copper', 'cuivre'], 8940, 8800, 9000, 'Copper'),
+    'names': ['copper', 'cuivre'],
+    'density': 8940,
+    'mindensity': 8800,
+    'maxdensity': 9000,
+    'desc': 'Copper',
+}, {
     # Cast Iron - Robertson: 7135, Natco: 7208, Adye: 7425
-    (['castiron', 'cast', 'iron'], 7450, 6800, 7800, 'Cast iron'),
+    'names': ['castiron', 'cast', 'iron'],
+    'density': 7450,
+    'mindensity': 6800,
+    'maxdensity': 7800,
+    'desc': 'Cast iron',
+}, {
     # Lead - Robertson: 11313, Natco: 11366
-    (['lead'], 11340, 11310, 11370, 'Lead'),
-    ]
+    'names': ['lead'],
+    'density': 11340,
+    'mindensity': 11310,
+    'maxdensity': 11370,
+    'desc': 'Lead',
+}]
 
 
 def determine_material(state, verbosity=0):
@@ -62,10 +90,10 @@ def determine_material(state, verbosity=0):
             ('diam' not in state or 'mass' not in state) and
             ('diam' in state or 'mass' in state)):
         # determine mass or diameter
-        for (names, dens, mindens, maxdens, desc) in MaterialsTable:
-            for name in names:
+        for material in MaterialsTable:
+            for name in material['names']:
                 if state['material'] == name:
-                    state['material_density'] = dens
+                    state['material_density'] = material['density']
                     break
         if 'material_density' not in state:
             if verbosity >= 2:
@@ -86,13 +114,13 @@ def determine_material(state, verbosity=0):
             4./3 * math.pi * (state['diam']*0.5)**3)
         if 'material' not in state:
             density_delta = None
-            for (names, dens, mindens, maxdens, desc) in MaterialsTable:
-                if (state['projectile_density'] >= mindens and
-                        state['projectile_density'] <= maxdens):
-                    delta = abs(state['projectile_density']-dens)
+            for material in MaterialsTable:
+                if (state['projectile_density'] >= material['mindensity'] and
+                        state['projectile_density'] <= material['maxdensity']):
+                    delta = abs(state['projectile_density']-material['density'])
                     if density_delta is None or delta < density_delta:
                         density_delta = delta
-                        state['material'] = names[0]
+                        state['material'] = material['names'][0]
     return state
 
 
@@ -104,15 +132,15 @@ def list_materials(full=False):
     Enter: full: if True, print all alternate names on their own line.
     """
     materials = {}
-    for (names, dens, mindens, maxdens, desc) in MaterialsTable:
-        for name in names:
+    for material in MaterialsTable:
+        for name in material['names']:
             if name in materials:
                 print('Duplicate material: %s' % name)
                 return
-            if name == names[0]:
-                materials[name] = (dens, desc, names[1:])
+            if name == material['names'][0]:
+                materials[name] = (material['density'], material['desc'], material['names'][1:])
             elif full == 'full':
-                materials[name] = (None, 'See %s.' % names[0], [])
+                materials[name] = (None, 'See %s.' % material['names'][0], [])
     names = list(materials.keys())
     names.sort()
     nlen = max([len(name) for name in names])

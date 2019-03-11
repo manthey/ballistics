@@ -109,7 +109,7 @@ def interpolate(xi, data, logx=False, method='tension'):  # noqa -mccabe
     if logx:
         xi = math.log10(xi)
     xy = data_to_sorted_xy(tuple(data), logx)
-    for pos, (x, y) in enumerate(xy):
+    for pos, (x, y) in enumerate(xy):  # noqa - pos and y deliberately set
         if xi <= x:
             break
     if xi == x:

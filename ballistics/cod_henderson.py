@@ -16,14 +16,17 @@ import math
 
 
 def coefficient_of_drag_henderson(state, only_in_range=False):
-    """Calculate the coefficient of drag using the equations provided from
-     Henderson, Charles B.  "Drag Coefficients of Spheres in Continuum and
-     Rarefied Flows."  AIAA Journal.  14, no. 6 (1976): 707-708.
+    """
+    Calculate the coefficient of drag using the equations provided from
+    Henderson, Charles B.  "Drag Coefficients of Spheres in Continuum and
+    Rarefied Flows."  AIAA Journal.  14, no. 6 (1976): 707-708.
+
     Enter: state: a dictionary of the current state.  Includes Reynolds and
                   mach numbers.
            only_in_range: if True, return None if the values are outside of
                           what we can interpolate.
-    Exit:  cd: the coefficient of drag."""
+    Exit:  cd: the coefficient of drag.
+    """
     Re = state['drag_data']['Re']
     Mn = state['drag_data']['Mn']
 

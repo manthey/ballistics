@@ -800,7 +800,7 @@ LastDisplayStatus = 0
 DisplayStatusInterval = 1
 
 
-def display_status(state, params={}, last=False):
+def display_status(state, params=None, last=False):
     """
     Depending on the verbosity, display a line indicating the current status
     of the trajectory.
@@ -813,6 +813,8 @@ def display_status(state, params={}, last=False):
     global LastDisplayStatus
     if Verbose < 2:
         return
+    if not params:
+        params = {}
     time = params.get('time', state.get('time', 0))
     if (time and not last and
             time-LastDisplayStatus < DisplayStatusInterval and
@@ -1173,7 +1175,7 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
                 line.append(title)
             lines.append(('head', line))
         lines.append(('headend', []))
-    for line in range(params['blank']):
+    for _line in range(params['blank']):
         lines.append(('blank', ['' for item in data]))
     if state != {}:
         line = []
@@ -1311,7 +1313,7 @@ def graph_coefficient_of_drag(user_params=None):
                 datax.append(re)
                 datay.append(cd)
         plt.plot(datax, datay)
-    for (mn, data, crit) in MnReCdDataTable:
+    for (mn, data, _crit) in MnReCdDataTable:
         points = [val for val in data if val[0] >= 10**remin and
                   val[0] <= 10**remax]
         datax = [math.log10(val[0]) for val in points]
@@ -1545,7 +1547,7 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
     return params, state, help
 
 
-def parse_user_params(default_params={}, user_params=None):
+def parse_user_params(default_params=None, user_params=None):
     """
     Parse a comma-separated list of key=value parameters, and populate a
     dictionary with the values.
@@ -1563,7 +1565,7 @@ def parse_user_params(default_params={}, user_params=None):
                          in the default dictionary.
            items: a list of keys without values.
     """
-    params = default_params.copy()
+    params = default_params.copy() if default_params else {}
     other_params = {}
     items = []
     if user_params:
@@ -1883,7 +1885,7 @@ def trajectory(state):  # noqa - mccabe
     return final_state, points
 
 
-def trajectory_error(initial_state, unknown, unknown_value):
+def trajectory_error(initial_state, unknown, unknown_value):  # noqa
     """
     Determine how far off the results of a trajectory calculation are from the
     expected outcome.
@@ -2080,7 +2082,7 @@ def viscosity_dry_air(T, density):
          (-2, 0.662534), (-3, -0.197846), (-4, 0.00770147)]
     scaledT = T/132.5
     eta0 = 0
-    for (i,  Ai) in A:
+    for (i, Ai) in A:
         eta0 += Ai*scaledT**i
     scaledRho = density/314.3
     B = [(1, 0.465601), (2, 1.26469), (3, -0.511425), (4, 0.274600)]
@@ -2222,7 +2224,7 @@ Factors:""")
         factors += [(Settings[key]['long'].lower(), Settings[key]['long'], key)
                     for key in Settings]
         factors.sort()
-        for (ll, lc, key) in factors:
+        for (_ll, _lc, key) in factors:
             fac = Factors.get(key, Settings.get(key))
             full_desc = ''
             full_desc += '--%s' % fac['long']

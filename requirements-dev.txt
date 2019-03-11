@@ -1,0 +1,15 @@
+pip
+coverage
+flake8
+flake8-blind-except
+flake8-bugbear
+flake8-docstrings
+flake8-quotes
+pydocstyle
+pytest
+pytest-cov
+pytest-xdist
+tox
+# twine
+# virtualenv
+
