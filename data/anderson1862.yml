@@ -2772,6 +2772,8 @@ data:
     date: "1789"
     charge: 7 dr
     angle: 0 deg
+    range: 20 ft
+    range_note: taken from D'Antoni, 1789.
     mass: 1 oz
     material: "lead"
     technique: "wheel_chronograph"

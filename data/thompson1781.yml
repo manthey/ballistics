@@ -11,6 +11,7 @@ data:
     material: lead
     diameter: 0.75 in
     range: 12 ft
+    angle: 0
     data:
       -
         ref2: "p. 245"

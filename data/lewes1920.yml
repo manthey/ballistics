@@ -10,5 +10,5 @@ data:
     ref2: "p. 251"
     desc: "Experimenting with Waltham Abbey powders Nobel and Abel estimated the heat developed on explosion."
     data:
-      - power: "721 cal/g"
-      - power: "738 cal/g"
+      - power_factor: "721 cal/g"
+      - power_factor: "738 cal/g"
