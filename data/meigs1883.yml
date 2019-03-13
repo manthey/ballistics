@@ -11,16 +11,16 @@ data:
     data:
       -
         desc: "Best sporting powder"
-        power: "849 Cal/kg"
+        power_factor: "849 Cal/kg"
       -
         desc: "Cannon powder"
-        power: "795 Cal/kg"
+        power_factor: "795 Cal/kg"
       -
         desc: "Fine-grained powder, called B"
-        power: "773 Cal/kg"
+        power_factor: "773 Cal/kg"
       -
         desc: "Commercial powder"
-        power: "736 Cal/kg"
+        power_factor: "736 Cal/kg"
   -
     ref2: "p. 33"
     technique: "calorimeter"
@@ -28,13 +28,13 @@ data:
     data:
       -
         desc: "Best sporting powder"
-        power: "370 tonneforce*meter"
+        power_factor: "370 tonneforce*meter"
       -
         desc: "Cannon powder"
-        power: "347 tonneforce*meter"
+        power_factor: "347 tonneforce*meter"
       -
         desc: "Fine-grained powder, called B"
-        power: "337 tonneforce*meter"
+        power_factor: "337 tonneforce*meter"
       -
         desc: "Commercial powder"
-        power: "321 tonneforce*meter"
+        power_factor: "321 tonneforce*meter"

@@ -48,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-03-07v53'
-PROGRAM_SIGNATURE = '42d9545fd34664e1dc743f6c91fec8a8'
+__version__ = '2019-03-12v55'
+PROGRAM_SIGNATURE = 'a605091f4f9c9dc8ef5412d8acea8c95'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -1860,6 +1860,8 @@ def trajectory(state):  # noqa - mccabe
     final_state = state.copy()
     if len(laststate):
         laststate.append((state, offset))
+        while len(laststate) > 1 and laststate[0][-1] * laststate[-1][-1] > 0:
+            laststate = laststate[1:]
         for key in ('x', 'y', 'vx', 'vy', 'ax', 'ay', 'time'):
             final_state[key] = interpolate(
                 0, [(ls[1], ls[0][key]) for ls in laststate], False)[0]
@@ -1905,6 +1907,8 @@ def trajectory_error(initial_state, unknown, unknown_value):  # noqa
     Verbose -= 2
     try:
         state, points = trajectory(state)
+    except (TypeError, OverflowError):
+        state = None
     finally:
         Verbose += 2
     if Verbose >= 5:
@@ -1921,6 +1925,8 @@ def trajectory_error(initial_state, unknown, unknown_value):  # noqa
         Verbose -= 2
         try:
             delta_state, _points = trajectory(delta_state)
+        except (TypeError, OverflowError):
+            delta_state = None
         finally:
             Verbose += 2
         if delta_state is None:

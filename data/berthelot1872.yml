@@ -12,14 +12,13 @@ data:
     data:
       -
         desc: "Poudre de chasse"
-        power: "641000 cal/kg"
+        power_factor: "641000 cal/kg"
       -
         desc: "Poudre de geurre"
-        power: "608000 cal/kg"
+        power_factor: "608000 cal/kg"
       -
         desc: "Poudre de mine"
-        power: "510000 cal/kg"
+        power_factor: "510000 cal/kg"
       -
         desc: "Poudre avec exc\u00e8d de nitre"
-        power: "673000 cal/kg"
-
+        power_factor: "673000 cal/kg"

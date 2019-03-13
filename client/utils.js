@@ -160,9 +160,6 @@ let ParameterList = [{
   }, {
     key: 'given_maxheight_note'
   }, {
-    key: 'given_power',
-    primary: true
-  }, {
     key: 'given_pressure',
     primary: true
   }, {
