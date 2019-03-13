@@ -48,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-03-12v55'
-PROGRAM_SIGNATURE = 'a605091f4f9c9dc8ef5412d8acea8c95'
+__version__ = '2019-03-12v56'
+PROGRAM_SIGNATURE = '7aac0521cb6ef0763e57dd10d683a65e'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -1907,7 +1907,7 @@ def trajectory_error(initial_state, unknown, unknown_value):  # noqa
     Verbose -= 2
     try:
         state, points = trajectory(state)
-    except (TypeError, OverflowError):
+    except (TypeError, OverflowError, ValueError):
         state = None
     finally:
         Verbose += 2
@@ -1925,7 +1925,7 @@ def trajectory_error(initial_state, unknown, unknown_value):  # noqa
         Verbose -= 2
         try:
             delta_state, _points = trajectory(delta_state)
-        except (TypeError, OverflowError):
+        except (TypeError, OverflowError, ValueError):
             delta_state = None
         finally:
             Verbose += 2
