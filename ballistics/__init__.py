@@ -48,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-03-12v56'
-PROGRAM_SIGNATURE = '7aac0521cb6ef0763e57dd10d683a65e'
+__version__ = '2019-03-13v57'
+PROGRAM_SIGNATURE = '79b806ae19a37f08a727f7788cb06757'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -763,6 +763,8 @@ def coefficient_of_drag(state=None, density=None, reynolds=None, mach=None,
         else:
             Mn = 0
         state['drag_data'] = {'Re': Re, 'Mn': Mn}
+    if not Re:
+        return 0
     drag_method = state.get('settings', {}).get('drag_method', 'miller')
     func = globals().get('coefficient_of_drag_' + drag_method)
     if func is None:
@@ -1041,7 +1043,7 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
     specified value and the specified factor.  If no factors are included in
     the parameter list, a default set is used. Additionally, the following are
     allowed as key=value:
-      format: 'csv' (default), 'html', or 'wp'.
+      format: 'csv' (default) or 'html'.
       header: 'none' (default), 'title', 'units', or 'all'.  All generates two
     lines, the first with the title and the second with the units.
       footer: same options as header.
@@ -1060,7 +1062,7 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
     if not len(items):
         items = 'V,a,d,m,c,t,f,r,p,version,comment'.split(',')
     format = params.get('format', '')
-    if format not in ('html', 'wp'):
+    if format not in ('html', ):
         format = 'csv'
     header = params.get('header', '')
     if header not in ('title', 'units', 'all', 'titleunits'):
@@ -1079,7 +1081,7 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
             factors.append((item, None))
             continue
         diff = False
-        if item in ('diff', 'adiff'):
+        if item in ('diff', ):
             subparts = parts[1].split(':', 1)
             if len(subparts) != 2:
                 continue
@@ -1143,8 +1145,6 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
             else:
                 uval = None
             title = 'Relative Difference in %s' % title
-            if format in ('html') and funit[2] == 'adiff':
-                title += '\n'
             funit = None
         else:
             if funit and value is not None:
@@ -1233,19 +1233,6 @@ def generate_output(state, user_params=None, comment=None):  # noqa - mccabe
                             '\n', '<BR/>'), tag))
                 out.append('</tr>')
                 print(''.join(out))
-        elif format == 'wp':
-            if ltype == 'headstart':
-                print('[table class=\'results_table sortable\'][thead]')
-            elif ltype == 'headend':
-                print('[tbody]')
-            elif ltype == 'footstart':
-                print('[tfoot]')
-            elif ltype == 'footend':
-                print('[tableend]')
-            else:
-                tag = ltype in ('head', 'foot') and 'th' or 'td'
-                print('[tr][%s]' % tag + ('[%s]' % tag).join([
-                    html_encode(item) for item in line]))
         else:  # csv
             if ltype in ('headstart', 'headend', 'footstart', 'footend'):
                 continue
@@ -1907,7 +1894,7 @@ def trajectory_error(initial_state, unknown, unknown_value):  # noqa
     Verbose -= 2
     try:
         state, points = trajectory(state)
-    except (TypeError, OverflowError, ValueError):
+    except (TypeError, OverflowError):
         state = None
     finally:
         Verbose += 2
@@ -1925,7 +1912,7 @@ def trajectory_error(initial_state, unknown, unknown_value):  # noqa
         Verbose -= 2
         try:
             delta_state, _points = trajectory(delta_state)
-        except (TypeError, OverflowError, ValueError):
+        except (TypeError, OverflowError):
             delta_state = None
         finally:
             Verbose += 2
@@ -2058,7 +2045,7 @@ def version_check():
     build = int(src[verpos:verend].split(b'v')[1])
     newver = (time.strftime('%Y-%m-%d')+'v%d' % (build+1)).encode('utf8')
     global __version__
-    __version__ = newver
+    __version__ = newver.decode('utf8')
     if Verbose >= 1:
         sys.stderr.write('Updating program version to %s\n' % newver)
     newsrc = src[:verpos]+newver+src[verend:]
@@ -2188,23 +2175,20 @@ read_config for details on the file format.
  method.
 --nounknown clears the parameter that has been specified for a solution with ?.
  This allows overriding a conf file or the environmental variable.
---output outputs the results in either a csv, html table format, or a special
- WordPress customer short-tag format.  This takes a comma-separated list of
- parameters: format (csv, html, or wp), header (none, title, units, all, or
- titleunits), units (eng, si, or both), footer (same options as header), blank
- (a number of blank lines to add before the data and after any header).  The
- factors that should be output can be listed; these may be the internal name,
- the long factor name, or the short factor name, optionally followed by
- :(units) to explicitly choose the units.  Besides the factors, you can
- include:
-    comment - the comment specified on the command line
-    comptime - total computation time in seconds
-    method - the numerical method
-    version - the program version
-    diff:(factor):(value) - the difference between that factor and the specified
-        value (which may include units)
-    adiff:(factor):(value) - the same as diff except that html output can be
-        sorted by absolute value.
+--output outputs the results in either a csv or html table format.  This takes
+ a comma-separated list of parameters: format (csv or html), header (none,
+ title, units, all, or titleunits), units (eng, si, or both), footer (same
+ options as header), blank (a number of blank lines to add before the data and
+ after any header).  The factors that should be output can be listed; these may
+ be the internal name, the long factor name, or the short factor name,
+ optionally followed by :(units) to explicitly choose the units.  Besides the
+ factors, you can include:
+   comment - the comment specified on the command line
+   comptime - total computation time in seconds
+   method - the numerical method
+   version - the program version
+   diff:(factor):(value) - the difference between that factor and the specified
+     value (which may include units)
  If no factors are listed, this is V,a,d,m,c,t,f,r,p,version,comment.  Example:
  '--output=format=csv,header=all,blank=1,units=both,range,p:Cal/oz,comment'.
 --precision specifies the precision of the answer in number of digits.  I.e.,
@@ -2240,7 +2224,7 @@ Factors:""")
             full_desc = line_break(full_desc, 79, 1)
             for line in full_desc:
                 print(line)
-        sys.exit(0)
+        return
     if 'cdgraph' in params:
         graph_coefficient_of_drag(params['cdgraph'])
     if 'materials' in params:
@@ -2248,11 +2232,11 @@ Factors:""")
     if 'units' in params:
         list_units(params['units'])
     if 'version' in params:
-        print('Version: '+__version__)
+        print('Version: ' + __version__)
     if 'unknown' not in params:
         if 'output' in params:
             generate_output(None, params['output'], None)
-        sys.exit(0)
+        return
     if Verbose >= 2:
         pprint.pprint(state)
     starttime = get_cpu_time()

@@ -103,21 +103,21 @@ def determine_material(state, verbosity=0):
             ('diam' not in state or 'mass' not in state) and
             ('diam' in state or 'mass' in state)):
         if 'diam' in state:
-            state['mass'] = (4./3 * math.pi * (state['diam']*0.5)**3 *
+            state['mass'] = (4. / 3 * math.pi * (state['diam'] * 0.5) ** 3 *
                              state['material_density'])
         else:
             state['diam'] = 2 * (float(state['mass']) / (
-                state['material_density'] * 4./3 * math.pi))**(1./3)
+                state['material_density'] * 4. / 3 * math.pi)) ** (1. / 3)
     if 'diam' in state and 'mass' in state:
         # determine material
-        state['projectile_density'] = float(state['mass'])/(
-            4./3 * math.pi * (state['diam']*0.5)**3)
+        state['projectile_density'] = float(state['mass']) / (
+            4. / 3 * math.pi * (state['diam'] * 0.5) ** 3)
         if 'material' not in state:
             density_delta = None
             for material in MaterialsTable:
                 if (state['projectile_density'] >= material['mindensity'] and
                         state['projectile_density'] <= material['maxdensity']):
-                    delta = abs(state['projectile_density']-material['density'])
+                    delta = abs(state['projectile_density'] - material['density'])
                     if density_delta is None or delta < density_delta:
                         density_delta = delta
                         state['material'] = material['names'][0]
@@ -144,15 +144,15 @@ def list_materials(full=False):
     names = list(materials.keys())
     names.sort()
     nlen = max([len(name) for name in names])
-    print(('%-'+str(nlen)+'s Description (typical density)') % 'Name')
+    print(('%-' + str(nlen) + 's Description (typical density)') % 'Name')
     for name in names:
         desc = materials[name][1]
         if len(materials[name][2]):
-            desc += '  Also called '+', '.join(materials[name][2])+'.'
+            desc += '  Also called ' + ', '.join(materials[name][2]) + '.'
         dens = materials[name][0]
         if dens is not None:
             desc += '  (%1.0f kg/m^3, %1.0f lb/ft^3)' % (
                 dens, convert_units(dens, 'lb/ft/ft/ft'))
-        lines = line_break(('%-'+str(nlen)+'s %s') % (name, desc), 79, nlen+2)
+        lines = line_break(('%-' + str(nlen) + 's %s') % (name, desc), 79, nlen + 2)
         for line in lines:
             print(line)

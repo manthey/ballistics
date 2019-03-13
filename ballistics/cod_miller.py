@@ -134,12 +134,8 @@ def coefficient_of_drag_miller(state, only_in_range=False):
             continue
         # We functionally shift the point we are interpolating so that the
         # critical point looks sane and smooth on a graph
-        try:
-            adjusted_re = 10**(math.log10(Re) - math.log10(critical_Re) +
-                               math.log10(crit))
-        except ValueError:
-            print(Re, critical_Re, crit)
-            raise
+        adjusted_re = 10**(math.log10(Re) - math.log10(critical_Re) +
+                           math.log10(crit))
         (Cd, in_range) = interpolate(adjusted_re, reynolds_data, True)
         if in_range:
             mach_data.append((mach, Cd))

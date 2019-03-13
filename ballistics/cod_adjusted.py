@@ -77,7 +77,7 @@ def load_adjustments():
     if Adjustments is not None:
         return
     Adjustments = {}
-    path = os.path.splitext(os.path.abspath(__file__))[0]+'.json'
+    path = os.path.splitext(os.path.abspath(__file__))[0] + '.json'
     if os.path.exists(path):
         Adjustments = json.load(open(path))
         table = {}

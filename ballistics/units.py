@@ -543,7 +543,7 @@ def list_units(full=False):
                     print('Invalid unit name: %s' % name)
                     return
             if name == unit['names'][0]:
-                units[name] = (unit['factor'], unit['desc'], unit['names'][1:])
+                units[name] = (unit['value'], unit['desc'], unit['names'][1:])
             elif full == 'full':
                 units[name] = (None, 'See %s.' % unit['names'][0], [])
     names = list(units.keys())

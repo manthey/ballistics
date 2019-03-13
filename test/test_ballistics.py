@@ -32,3 +32,35 @@ def testCombinations():
         print(args)
         result, _ = ballistics.find_unknown(state, params['unknown'], params.get('unknown_scan'))
         assert 0.99 < result['power_factor'] / entry['power_factor'] < 1.01
+
+
+def testGetHelp(capsys):
+    ballistics.main(['--help'])
+    output = capsys.readouterr().out
+    assert 'Syntax' in output
+
+
+def testGetVersion(capsys):
+    ballistics.main(['--version'])
+    output = capsys.readouterr().out
+    assert 'Version:' in output
+
+
+def testGetMaterials(capsys):
+    ballistics.main(['--materials'])
+    output = capsys.readouterr().out
+    assert 'castiron' in output
+    assert 'See castiron' not in output
+    ballistics.main(['--materials=full'])
+    output = capsys.readouterr().out
+    assert 'See castiron' in output
+
+
+def testGetUnits(capsys):
+    ballistics.main(['--units'])
+    output = capsys.readouterr().out
+    assert 'Joules' in output
+    assert 'See cal' not in output
+    ballistics.main(['--units=full'])
+    output = capsys.readouterr().out
+    assert 'See cal' in output
