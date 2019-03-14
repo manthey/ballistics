@@ -72,6 +72,17 @@ class FloatEncoder(json.JSONEncoder):
             raise
 
 
+class SafeLineLoader(yaml.loader.SafeLoader):
+    """
+    Record the line number of any dictionary parsed from yaml.  See
+    https://stackoverflow.com/questions/13319067
+    """
+    def construct_mapping(self, node, deep=False):
+        mapping = super(SafeLineLoader, self).construct_mapping(node, deep=deep)
+        mapping['__line__'] = node.start_mark.line + 1
+        return mapping
+
+
 def add_path_to_files(path, files):
     """
     Add a file or directory of files to the input file list.
@@ -260,6 +271,7 @@ def process_cases(info, results, cases, verbose=0, nextcaseindex=0, extraArgs=No
                                           nextcaseindex, extraArgs)
         return nextcaseindex
     infokey = info['key']
+    line = info.pop('__line__', None)
     for key in ('key', 'details', 'link', 'summary', 'cms'):
         info.pop(key, None)
     args = []
@@ -278,6 +290,8 @@ def process_cases(info, results, cases, verbose=0, nextcaseindex=0, extraArgs=No
                           'hash': hashval}
     results.append({'conditions': info, 'hash': hashval, 'key': infokey,
                     'idx': nextcaseindex})
+    if line is not None:
+        results[-1]['sourceline'] = line
     nextcaseindex += 1
     return nextcaseindex
 
@@ -300,7 +314,7 @@ def read_and_process_file(srcfile, outputPath, all=False, verbose=0,
            extraArgs: extra arguments to use in all calculations.
     """
     srcdate = os.path.getmtime(srcfile)
-    info = yaml.safe_load(open(srcfile))
+    info = yaml.load(open(srcfile), Loader=SafeLineLoader)
     if info.get('skip'):
         return
     basename = os.path.splitext(os.path.basename(srcfile))[0]

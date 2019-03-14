@@ -75,8 +75,9 @@ def combine(opts):  # noqa
             try:
                 item = {}
                 for key in data:
-                    if key not in ('data', 'results', 'summary', 'details',
-                                   'cms', 'link') and not key.endswith('_note'):
+                    if (key not in ('data', 'results', 'summary', 'details',
+                                    'cms', 'link') and
+                            not key.endswith('_note') and not key.startswith('__')):
                         item[key] = data[key]
                 for key in entry:
                     if key not in ('conditions', 'points', 'results'):
