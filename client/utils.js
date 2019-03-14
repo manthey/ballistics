@@ -20,6 +20,10 @@ let ParameterList = [{
     title: '0-based location in the data file',
     primary: true
   }, {
+    key: 'sourceline',
+    title: '1-based line number in the data file',
+    primary: true
+  }, {
     key: 'desc',
     primary: true
   }, {

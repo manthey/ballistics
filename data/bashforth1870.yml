@@ -405,7 +405,7 @@ data:
                   -
                     range: 1425 ft
                     delta_range: 1350 ft
-                    delta_time: 1.0687 s
+                    delta_time: 1.0887 s
               -
                 group: 66-293
                 data:
@@ -2232,6 +2232,290 @@ data:
                     range: 825 ft
                     delta_range: 750 ft
                     delta_time: 0.5266 s
+      -
+        ref2: "p. 68"
+        data:
+          -
+            mass: 7.894 lb
+            diameter: 4.92 in
+            date: "1868-11-05"
+            pressure: 29.74 inHg
+            temperature: 43.5 F
+            wetbulb: 40.5 F
+            charge: 7.894 lb
+            data:
+              -
+                group: 68-394
+                data:
+                  -
+                    range: 225 ft
+                    delta_range: 150 ft
+                    delta_time: 0.0651 s
+                  -
+                    range: 375 ft
+                    delta_range: 300 ft
+                    delta_time: 0.1369 s
+                  -
+                    range: 525 ft
+                    delta_range: 450 ft
+                    delta_time: 0.2162 s
+                  -
+                    range: 675 ft
+                    delta_range: 600 ft
+                    delta_time: 0.3037 s
+                  -
+                    range: 825 ft
+                    delta_range: 750 ft
+                    delta_time: 0.4000 s
+                  -
+                    range: 975 ft
+                    delta_range: 900 ft
+                    delta_time: 0.5058 s
+                  -
+                    range: 1125 ft
+                    delta_range: 1050 ft
+                    delta_time: 0.6217 s
+                  -
+                    range: 1275 ft
+                    delta_range: 1200 ft
+                    delta_time: 0.7484 s
+              -
+                group: 68-395
+                data:
+                  -
+                    range: 225 ft
+                    delta_range: 150 ft
+                    delta_time: 0.0633 s
+                  -
+                    range: 375 ft
+                    delta_range: 300 ft
+                    delta_time: 0.1328 s
+                  -
+                    range: 525 ft
+                    delta_range: 450 ft
+                    delta_time: 0.2093 s
+                  -
+                    range: 675 ft
+                    delta_range: 600 ft
+                    delta_time: 0.2936 s
+                  -
+                    range: 825 ft
+                    delta_range: 750 ft
+                    delta_time: 0.3864 s
+                  -
+                    range: 975 ft
+                    delta_range: 900 ft
+                    delta_time: 0.4856 s
+                  -
+                    range: 1125 ft
+                    delta_range: 1050 ft
+                    delta_time: 0.6009 s
+                  -
+                    range: 1275 ft
+                    delta_range: 1200 ft
+                    delta_time: 0.7241 s
+              -
+                group: 68-396
+                data:
+                  -
+                    range: 225 ft
+                    delta_range: 150 ft
+                    delta_time: 0.0626 s
+                  -
+                    range: 375 ft
+                    delta_range: 300 ft
+                    delta_time: 0.1316 s
+                  -
+                    range: 525 ft
+                    delta_range: 450 ft
+                    delta_time: 0.2077 s
+                  -
+                    range: 675 ft
+                    delta_range: 600 ft
+                    delta_time: 0.2917 s
+                  -
+                    range: 825 ft
+                    delta_range: 750 ft
+                    delta_time: 0.3843 s
+                  -
+                    range: 975 ft
+                    delta_range: 900 ft
+                    delta_time: 0.4862 s
+                  -
+                    range: 1125 ft
+                    delta_range: 1050 ft
+                    delta_time: 0.5982 s
+                  -
+                    range: 1275 ft
+                    delta_range: 1200 ft
+                    delta_time: 0.7210 s
+                  -
+                    range: 1425 ft
+                    delta_range: 1350 ft
+                    delta_time: 0.8553 s
+              -
+                group: 68-397
+                data:
+                  -
+                    range: 225 ft
+                    delta_range: 150 ft
+                    delta_time: 0.0636 s
+                  -
+                    range: 375 ft
+                    delta_range: 300 ft
+                    delta_time: 0.1335 s
+                  -
+                    range: 525 ft
+                    delta_range: 450 ft
+                    delta_time: 0.2106 s
+                  -
+                    range: 675 ft
+                    delta_range: 600 ft
+                    delta_time: 0.2954 s
+              -
+                group: 68-398
+                data:
+                  -
+                    range: 225 ft
+                    delta_range: 150 ft
+                    delta_time: 0.0617 s
+                  -
+                    range: 375 ft
+                    delta_range: 300 ft
+                    delta_time: 0.1314 s
+                  -
+                    range: 525 ft
+                    delta_range: 450 ft
+                    delta_time: 0.2091 s
+                  -
+                    range: 675 ft
+                    delta_range: 600 ft
+                    delta_time: 0.2948 s
+                  -
+                    range: 825 ft
+                    delta_range: 750 ft
+                    delta_time: 0.3885 s
+                  -
+                    range: 975 ft
+                    delta_range: 900 ft
+                    delta_time: 0.4904 s
+                  -
+                    range: 1125 ft
+                    delta_range: 1050 ft
+                    delta_time: 0.6002 s
+                  -
+                    range: 1275 ft
+                    delta_range: 1200 ft
+                    delta_time: 0.7181 s
+              -
+                group: 68-399
+                data:
+                  -
+                    range: 225 ft
+                    delta_range: 150 ft
+                    delta_time: 0.0628 s
+                  -
+                    range: 375 ft
+                    delta_range: 300 ft
+                    delta_time: 0.1321 s
+                  -
+                    range: 525 ft
+                    delta_range: 450 ft
+                    delta_time: 0.2087 s
+                  -
+                    range: 675 ft
+                    delta_range: 600 ft
+                    delta_time: 0.2931 s
+                  -
+                    range: 825 ft
+                    delta_range: 750 ft
+                    delta_time: 0.3862 s
+                  -
+                    range: 975 ft
+                    delta_range: 900 ft
+                    delta_time: 0.4886 s
+                  -
+                    range: 1125 ft
+                    delta_range: 1050 ft
+                    delta_time: 0.6010 s
+                  -
+                    range: 1275 ft
+                    delta_range: 1200 ft
+                    delta_time: 0.7240 s
+                  -
+                    range: 1425 ft
+                    delta_range: 8582 ft
+                    delta_time: 0.8763 s
+              -
+                group: 68-400
+                data:
+                  -
+                    range: 225 ft
+                    delta_range: 150 ft
+                    delta_time: 0.0652 s
+                  -
+                    range: 375 ft
+                    delta_range: 300 ft
+                    delta_time: 0.1373 s
+                  -
+                    range: 525 ft
+                    delta_range: 450 ft
+                    delta_time: 0.2169 s
+                  -
+                    range: 675 ft
+                    delta_range: 600 ft
+                    delta_time: 0.3046 s
+                  -
+                    range: 825 ft
+                    delta_range: 750 ft
+                    delta_time: 0.4010 s
+                  -
+                    range: 975 ft
+                    delta_range: 900 ft
+                    delta_time: 0.5067 s
+                  -
+                    range: 1125 ft
+                    delta_range: 1050 ft
+                    delta_time: 0.6224 s
+              -
+                group: 68-401
+                data:
+                  -
+                    range: 225 ft
+                    delta_range: 150 ft
+                    delta_time: 0.0623 s
+                  -
+                    range: 375 ft
+                    delta_range: 300 ft
+                    delta_time: 0.1312 s
+                  -
+                    range: 525 ft
+                    delta_range: 450 ft
+                    delta_time: 0.2074 s
+                  -
+                    range: 675 ft
+                    delta_range: 600 ft
+                    delta_time: 0.2914 s
+                  -
+                    range: 825 ft
+                    delta_range: 750 ft
+                    delta_time: 0.3841 s
+                  -
+                    range: 975 ft
+                    delta_range: 900 ft
+                    delta_time: 0.4859 s
+                  -
+                    range: 1125 ft
+                    delta_range: 1050 ft
+                    delta_time: 0.5976 s
+                  -
+                    range: 1275 ft
+                    delta_range: 1200 ft
+                    delta_time: 0.7198 s
+                  -
+                    range: 1425 ft
+                    delta_range: 1350 ft
+                    delta_time: 0.8532 s
 
     # mass: 15.789 lb
     # diameter: 4.92 in
