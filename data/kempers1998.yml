@@ -1,7 +1,7 @@
 ---
 key: kempers1998
 ref: "Kempers, 1998"
-cms: "Kempers, R. T. W., <i>Eprouvettes: A Comprehensive Study if Early Devices for the Testing of Gunpowder</i>, Leeds: Royal Armouries Museum, 1998."
+cms: "Kempers, R. T. W., <i>Eprouvettes: A Comprehensive Study of Early Devices for the Testing of Gunpowder</i>, Leeds: Royal Armouries Museum, 1998."
 summary: "A well-produced study of eprouvettes."
 date: "1998"
 data:
@@ -93,4 +93,3 @@ data:
       -
         desc2: "Long range"
         range: 310 yards
-

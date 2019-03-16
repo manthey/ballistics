@@ -4,13 +4,9 @@ velocities using a variety of formulas.
 """
 
 import math
-import os
 import sys
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),
-                                             os.pardir)))
-
-from src import ballistics  # noqa
+import ballistics
 
 Hutton = {  # Hutton, 1812, Vol. III, p. 318
     5: 0.006,
@@ -43,7 +39,7 @@ Hutton = {  # Hutton, 1812, Vol. III, p. 318
     2000: 1637.8,
 }
 
-methods = ['hutton', 'miller', 'collins', 'henderson',  # 'morrison',
+methods = ['hutton', 'miller', 'collins', 'henderson', 'morrison',
            'adjusted']
 results = {}
 for vel in Hutton:

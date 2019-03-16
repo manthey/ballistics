@@ -217,7 +217,7 @@ specific graphs with commentary
   medium
   large
 accuracy based on reported precision
-drag models (include Hutton, 1795 v2, p. 365)
+drag models (include Hutton, 1795 v2, p. 365; Bashforth, 1870)
 github
 */
 </script>

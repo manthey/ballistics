@@ -17,7 +17,8 @@ import json
 import math
 import os
 
-from . import cod_collins
+# from .cod_collins import coefficient_of_drag_collins as coefficient_of_drag
+from .cod_miller import coefficient_of_drag_miller as coefficient_of_drag
 
 
 Resolution = 10
@@ -35,7 +36,7 @@ def cd_from_mn_re(mn, re):
     if mn not in MnReBaseTable:
         MnReBaseTable[mn] = {}
     if re not in MnReBaseTable[mn]:
-        MnReBaseTable[mn][re] = cod_collins.coefficient_of_drag_collins(
+        MnReBaseTable[mn][re] = coefficient_of_drag(
             {'drag_data': {'Mn': float(mn) / Resolution,
                            'Re': math.pow(10, float(re) / Resolution)}})
     return MnReBaseTable[mn][re] + MnReAdjustments.get(mn, {}).get(re, 0)
@@ -45,8 +46,8 @@ def coefficient_of_drag_adjusted(state, only_in_range=False):
     """
     Calculate the coefficient of drag.  The drag is calculated by a bilinear
     interpolation from values spaced evenly through Mach values and log10
-    Reynolds numbers.  These values were initially computed from cod_collins,
-    but some values have been adjusted based on real-world data.
+    Reynolds numbers.  These values were initially computed from one of the
+    other methods, but some values have been adjusted based on real-world data.
 
     Enter: state: a dictionary of the current state.  Includes Reynolds and
                   mach numbers.

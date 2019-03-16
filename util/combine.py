@@ -91,7 +91,9 @@ def combine(opts):  # noqa
                 for key in entry['conditions']:
                     item['given_' + key] = entry['conditions'][key]
                 for key in entry['results']:
-                    if not key.endswith('_data'):
+                    if key == 'settings':
+                        item.update(entry['results']['settings'])
+                    elif not key.endswith('_data'):
                         item[key] = entry['results'][key]
                     else:
                         for subkey in entry['results'][key]:
@@ -207,6 +209,8 @@ def compile_grid(grid, entry, opts, item):  # noqa
     if item['technique'] == 'theory':
         return
     group = entry['conditions'].get('group')
+    if group:
+        group = item['ref'] + ':' + group
     groupset = False
     if group and group not in Groups:
         Groups[group] = item['power_factor']
@@ -452,12 +456,12 @@ Syntax:  combine.py --grid --points|--nopoints --res=(grid resolution)
                 weight += GroupsGrid[mn][re]
                 absweight += abs(GroupsGrid[mn][re])
                 count += 1
-                factor *= 0.001
+                factor *= 0.0001
                 if factor:
-                    factor *= max(1, min(50 - adjust.get('version', 0),
+                    factor *= max(1, min(100 - adjust.get('version', 0),
                                          abs(GroupsGrid[mn][re])))
                 table[str(mn)][str(re)] = (
-                    table[str(mn)].get(str(re), 0) - factor)  # ##DWM:: +factor?
+                    table[str(mn)].get(str(re), 0) + factor)  # ##DWM:: +factor?
         if len(adjust.get('table', {})):
             adjust['table_%d' % adjust.get('version', 0)] = adjust['table']
         adjust['version'] = adjust.get('version', 0) + 1
@@ -466,7 +470,7 @@ Syntax:  combine.py --grid --points|--nopoints --res=(grid resolution)
 
         adjust = {'version': adjust['version'], 'table': table}
 
-        json.dump(adjust, open(path, 'wb'), sort_keys=True, indent=1,
+        json.dump(adjust, open(path, 'w'), sort_keys=True, indent=1,
                   separators=(',', ': '))
         print('Adjustment: delta %d  weight %d |%d|  groups %d  version %d' % (
             total, weight, absweight, count, adjust['version']))

@@ -61,9 +61,9 @@ def data_to_sorted_xy(data, logx):
     Exit:  data: the sorted list with unique x values.
     """
     if not logx:
-        if (len(data) == 1 or (
-                data[0][0] < data[1][0] and (len(data) == 2 or (
-                data[1][0] < data[2][0] and (len(data) == 3 or (
+        if (len(data) <= 1 or (
+                data[0][0] < data[1][0] and (len(data) <= 2 or (
+                data[1][0] < data[2][0] and (len(data) <= 3 or (
                 data[2][0] < data[3][0] and len(data) == 4)))))):
             return data
         return sorted(dict(data).items())
@@ -100,11 +100,13 @@ def interpolate(xi, data, logx=False, method='tension'):  # noqa -mccabe
     Exit:  yi: the interpolated y value.  0 if the data list is empty.
            in_range: True if x is interpolated, False if it is
                      extrapolated."""
-    if method == 'natural':
+    if not len(data):
+        return 0, False
+    if method == 'natural' and len(data) >= 4:
         ncdata = natural_cubic_prep(data, logx, simple=True)
         return natural_cubic(xi, ncdata)
-    elif method == 'binatural':
-        nbcdata = natural_bicubic_prep(data, logx, simple=True)
+    elif method == 'binatural' and len(data) >= 4:
+        nbcdata = natural_bicubic_prep(data, logx)
         return natural_bicubic(xi, nbcdata)
     if logx:
         xi = math.log10(xi)
@@ -129,10 +131,7 @@ def interpolate(xi, data, logx=False, method='tension'):  # noqa -mccabe
         minpos = max(0, maxpos - 3)
     x, y = zip(*xy[minpos:maxpos])
     num_points = len(x)
-    if not num_points:
-        yi = 0
-        in_range = False
-    elif num_points == 1:
+    if num_points == 1:
         yi = y[0]
         in_range = False  # since (xi == x[0]) is always False
     elif num_points == 2:

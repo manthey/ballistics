@@ -124,20 +124,60 @@ Some authors report a velocity that was directly measured or has already been ca
 
 [Plot](#/plot?filter=d.technique%3D%3D'trajectory') [Table](#/table?filter=d.technique%3D%3D'trajectory')
 
-Trajectory measures the height during the travel of the projectile without stopping it.  This has been done with, for instance, a paper screen that is placed at a fixed distance from the muzzle of the gun.  The perforation shows the deviation from the desired flight path to the side as well as the altitude of the projectile at that point.
+Trajectory measures the height during the travel of the projectile without stopping it.  This has been done with, for instance, a paper screen that is placed at a fixed distance from the muzzle of the gun.  The perforation of the paper shows the deviation from the desired flight path to the side as well as the altitude of the projectile at that point.
 
 ## Chronograph
 
 [Plot](#/plot?filter=['chronograph','wheel_chronograph'].indexOf(d.technique)>%3D0) [Table](#/table?filter=['chronograph','wheel_chronograph'].indexOf(d.technique)>%3D0)
 
+Chronographs measure the time of flight between two or more points using any of a variety of techniques.  The average projectile velocity can be determined by knowing the distance and time between the measurement points.
+
+Since the projectile's velocity is always changing, if the baseline is long, rather than use this average velocity, the trajectory can be solved for at both the near and far distance such that the time of flight increases by the measured time.
+    </vue-markdown>
+    <figure>
+      <img src="tech_wheel_chronograph.jpg"/>
+      <figcaption>
+        <vue-markdown>
+A wheel chronograph.  [d'Antoni, 1765](#/references?refkey=dantoni1765)
+        </vue-markdown>
+      </figcaption>
+    </figure>
+    <vue-markdown>
 ### Wheel Chronograph
 
 [Plot](#/plot?filter=d.technique%3D%3D'wheel_chronograph') [Table](#/table?filter=d.technique%3D%3D'wheel_chronograph')
 
-### Modern Chronograph
+A wheel chronograph is a horizontal wheel that can be spun at a known speed.  A paper strip is attached to the rim of the wheel so that it sticks upwards.  A projectile is fired directly across the diameter of the wheel so that it cuts the paper on the near and far side.  The amount that these cuts differ from 180&deg; apart indicate the time to cross the diameter of the wheel.
+    </vue-markdown>
+    <figure class="left">
+      <img src="https://s3-eu-west-1.amazonaws.com/smgco-images/images/61/686/medium_B000098.jpg"/>
+      <figcaption>
+        <vue-markdown>
+The Bashforth Chronograph.  [collection.sciencemuseum.org.uk](https://s3-eu-west-1.amazonaws.com/smgco-images/images/61/686/medium_B000098.jpg)
+        </vue-markdown>
+      </figcaption>
+    </figure>
+    <vue-markdown>
+### Other Chronographs
 
 [Plot](#/plot?filter=d.technique%3D%3D'chronograph') [Table](#/table?filter=d.technique%3D%3D'chronograph')
 
+More modern chronographs generally have very high precision through some sort of electrical timing.
+
+#### Bashforth Chronograph
+
+The Bashforth Chronograph used a series of frames with hanging wires.  When the projectile passes by these wires, an electric circuit was completed that was used to make a mark on a moving paper record.  A clock also generated marks at regular intervals.  The location of the marks from the frames could be referenced from the clock marks to measure the time it took a projectile to travel between frames to an accuracy of 0.1 ms.
+
+In Bashforth's own tests, he used 10 screens spaced 150 ft apart each.
+
+#### Modern Chronograph
+
+Many modern chronographs use two or more light sensors to detect when a projectile passes through a small region.  Often these have a short baseline of one to four feet, and rely on a high precision clock to make an accurate determination of velocity.
+
+Modern units are relatively inexpensive, but are also somewhat limited in the size of projectile that they can accommodate.  It would be infeasible to use most of them with cannons, for instance.  These chronographs are expected to be relatively near to the muzzle of the gun, and it would risk destroying the chronograph or its sensor screen if it were substantially down range.
+    </vue-markdown>
+    <div style="clear: both"/>
+    <vue-markdown>
 ## Maximum Height
 
 [Plot](#/plot?filter=d.technique%3D%3D'height') [Table](#/table?filter=d.technique%3D%3D'height')
