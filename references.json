@@ -20,11 +20,17 @@
   "summary": "An excellent review of the technology used in India."
  },
  "bashforth1870": {
-  "cms": "Bashforth, Francis.  <i>Reports on Experiments Made with the Bashforth Chronograph to determine the Resistance of the Air to the Motion of Projectiles, 1865-1870.</i>  London: W. Clowes and Sons, et al., 1879.",
+  "cms": "Bashforth, Francis.  <i>Reports on Experiments Made with the Bashforth Chronograph to determine the Resistance of the Air to the Motion of Projectiles, 1865-1870.</i>  London: W. Clowes and Sons, et al., 1870.",
   "details": "Bashforth's chronograph records time from a half-second pendulum on a moving piece of paper.  A series of frames with hanging wires are set up.  When the projectile passes these wires, a mark is made on the same paper as the time record, allowing for accurate time deltas to be determined.\n\nAlthough many of the experiments are done on ogival shot, many are also done on spherical shot.\n\n",
   "key": "bashforth1870",
   "ref": "Bashforth, 1870",
   "summary": "Bashforth invented a chronograph and measured the time of flight at multiple points along projectile trajectories for the purpose of determining air resistance."
+ },
+ "bashforth1890": {
+  "cms": "Bashforth, Francis.  <i>A Revised Account of the Experiments made with the Bashforth Chronograph to find the Resistance of the Air to the Motion of Projectiles.</i>  Cambridge: At the University Press, 1890.",
+  "key": "bashforth1890",
+  "ref": "Bashforth, 1890",
+  "summary": "This gives an exceelent account of how the chronograph works, repeats data from the 1870 volume, and presents tables and equations for calculating trajectories."
  },
  "berthelot1872": {
   "cms": "Berthelot, Marcelin.  <i>Sur la force de la poudre et mati\u00e8re explosives, Deuxi\u00e8me \u00c9dition</i>  Paris: Gauthier-Villars, 1872.",
