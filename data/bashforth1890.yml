@@ -1,0 +1,8 @@
+---
+key: bashforth1890
+ref: "Bashforth, 1890"
+cms: "Bashforth, Francis.  <i>A Revised Account of the Experiments made with the Bashforth Chronograph to find the Resistance of the Air to the Motion of Projectiles.</i>  Cambridge: At the University Press, 1890."
+summary: "This gives an exceelent account of how the chronograph works, repeats data from the 1870 volume, and presents tables and equations for calculating trajectories."
+date: "1890"
+skip: true
+skip_note: This repeats some data from the 1870 reports, sometimes with another digit of accuracy but without charges.  Since all the data is in the 1870 volume, it is not repeated here.

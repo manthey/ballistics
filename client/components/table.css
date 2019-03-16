@@ -59,8 +59,8 @@ tr.expanded .expand span::after {
   color: "black";
 }
 tr.expansion-row {
-  visibility: collapse;
+  display: none;
 }
 tr.expanded+tr.expansion-row {
-  visibility: visible;
+  display: table-row;
 }

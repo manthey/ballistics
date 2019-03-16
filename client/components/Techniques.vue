@@ -37,6 +37,12 @@ Time of flight measurements are usually very inaccurate.  Often a projectile is 
 [Plot](#/plot?filter=d.technique%3D%3D'final_angle') [Table](#/table?filter=d.technique%3D%3D'final_angle')
 
 This is another variation of the range test, except that the angle of impact (also called the angle of fall) is noted.  This can be done, for instance, by sighting the ball just before impact along with the landing spot.  Observations don't seem particularly accurate.
+
+## Maximum Height
+
+[Plot](#/plot?filter=d.technique%3D%3D'height') [Table](#/table?filter=d.technique%3D%3D'height')
+
+Instead of observing the range or time of a projectile's flight, its maximum altitude can be recorded.  Generally, this hasn't been done very often or very precisely.
     </vue-markdown>
     <figure>
       <img src="tech_pendulum_robins.jpg"/>
@@ -150,10 +156,10 @@ A wheel chronograph.  [d'Antoni, 1765](#/references?refkey=dantoni1765)
 A wheel chronograph is a horizontal wheel that can be spun at a known speed.  A paper strip is attached to the rim of the wheel so that it sticks upwards.  A projectile is fired directly across the diameter of the wheel so that it cuts the paper on the near and far side.  The amount that these cuts differ from 180&deg; apart indicate the time to cross the diameter of the wheel.
     </vue-markdown>
     <figure class="left">
-      <img src="https://s3-eu-west-1.amazonaws.com/smgco-images/images/61/686/medium_B000098.jpg"/>
+      <img src="tech_bashforth_chronograph.jpg"/>
       <figcaption>
         <vue-markdown>
-The Bashforth Chronograph.  [collection.sciencemuseum.org.uk](https://s3-eu-west-1.amazonaws.com/smgco-images/images/61/686/medium_B000098.jpg)
+The recording mechanism of the Bashforth Chronograph.  [Bashforth, 1890](#/references?refkey=bashforth1890)
         </vue-markdown>
       </figcaption>
     </figure>
@@ -168,7 +174,7 @@ More modern chronographs generally have very high precision through some sort of
 
 The Bashforth Chronograph used a series of frames with hanging wires.  When the projectile passes by these wires, an electric circuit was completed that was used to make a mark on a moving paper record.  A clock also generated marks at regular intervals.  The location of the marks from the frames could be referenced from the clock marks to measure the time it took a projectile to travel between frames to an accuracy of 0.1 ms.
 
-In Bashforth's own tests, he used 10 screens spaced 150 ft apart each.
+In Bashforth's own tests, he mostly used 10 screens spaced 150 ft apart each.
 
 #### Modern Chronograph
 
@@ -178,10 +184,6 @@ Modern units are relatively inexpensive, but are also somewhat limited in the si
     </vue-markdown>
     <div style="clear: both"/>
     <vue-markdown>
-## Maximum Height
-
-[Plot](#/plot?filter=d.technique%3D%3D'height') [Table](#/table?filter=d.technique%3D%3D'height')
-
 ## Calorimeter
 
 [Plot](#/plot?filter=d.technique%3D%3D'calorimeter') [Table](#/table?filter=d.technique%3D%3D'calorimeter')
