@@ -21,9 +21,10 @@
  },
  "bashforth1870": {
   "cms": "Bashforth, Francis.  <i>Reports on Experiments Made with the Bashforth Chronograph to determine the Resistance of the Air to the Motion of Projectiles, 1865-1870.</i>  London: W. Clowes and Sons, et al., 1879.",
+  "details": "Bashforth's chronograph records time from a half-second pendulum on a moving piece of paper.  A series of frames with hanging wires are set up.  When the projectile passes these wires, a mark is made on the same paper as the time record, allowing for accurate time deltas to be determined.\n\nAlthough many of the experiments are done on ogival shot, many are also done on spherical shot.\n\n",
   "key": "bashforth1870",
   "ref": "Bashforth, 1870",
-  "summary": "Bashford has invented a chronograph and measured the time of flight at multiple points along projectile trajectories.  Many of the experiments are don on ogival shot or with unspecified charges."
+  "summary": "Bashforth invented a chronograph and measured the time of flight at multiple points along projectile trajectories for the purpose of determining air resistance."
  },
  "berthelot1872": {
   "cms": "Berthelot, Marcelin.  <i>Sur la force de la poudre et mati\u00e8re explosives, Deuxi\u00e8me \u00c9dition</i>  Paris: Gauthier-Villars, 1872.",
@@ -223,7 +224,7 @@
   "summary": "Used to determine the viscosity of dry air."
  },
  "kempers1998": {
-  "cms": "Kempers, R. T. W., <i>Eprouvettes: A Comprehensive Study if Early Devices for the Testing of Gunpowder</i>, Leeds: Royal Armouries Museum, 1998.",
+  "cms": "Kempers, R. T. W., <i>Eprouvettes: A Comprehensive Study of Early Devices for the Testing of Gunpowder</i>, Leeds: Royal Armouries Museum, 1998.",
   "key": "kempers1998",
   "ref": "Kempers, 1998",
   "summary": "A well-produced study of eprouvettes."
@@ -231,6 +232,7 @@
  "krenn1995": {
   "cms": "Krenn, Peter; Kalaus, Paul; Hall, Bert.  \"Material Culture and Military History: Test-Firing Early Modern Small Arms.\" <i>Material Culture Review / Revue de la culture mat\u00e9rielle, [S.l.], June 1995</i>.  ISSN 1927-9264.  Accessed: August 27, 2016.  https://journals.lib.unb.ca/index.php/MCR/article/view/17669/22312",
   "key": "krenn1995",
+  "link": "https://journals.lib.unb.ca/index.php/MCR/article/view/17669/22312",
   "ref": "Krenn, 1995",
   "summary": "Ballistics tests with early weapons using modern gunpowder."
  },
