@@ -1,0 +1,383 @@
+---
+key: benton1862
+ref: "Benton, 1862"
+cms: "Benton, Capt. J. G.  <i>A Course of Instruction in Ordnance and Gunnery.</i>  New York: D. Van Norstand, 1862."
+summary: "The covers a wide range of topics in gunnery and artillery."
+date: "1862"
+data:
+  -
+    ref2: p. 130
+    desc: "Initial velocity based on charge made in France on a 36-pounder gun"
+    mass: 36 lb
+    mass_note: I am assuming units are in avoirdupois pounds and statute feet, as by this time the French are using the meter and kilogram.
+    material: iron
+    data:
+      -
+        charge: 36 lb
+        initial_velocity: 1320 ft/s
+      -
+        charge: 42 lb
+        initial_velocity: 1170 ft/s
+      -
+        charge: 49 lb
+        initial_velocity: 950 ft/s
+      -
+        charge: 56 lb
+        initial_velocity: 493 ft/s
+      -
+        charge: 70 lb
+        initial_velocity: 454 ft/s
+      -
+        charge: 77 lb
+        initial_velocity: 191 ft/s
+  -
+    ref2: pp. 316-319
+    desc: "Initial velocity of some small arms"
+    material: lead
+    technique: theory
+    data:
+      -
+        charge: 60.00 gr
+        mass: 550.00 gr
+        initial_velocity: 960.00 ft/s
+      -
+        charge: 60.00 gr
+        mass: 550.00 gr
+        initial_velocity: 910.00 ft/s
+      -
+        charge: 55.00 gr
+        mass: 450.00 gr
+        initial_velocity: 820.00 ft/s
+      -
+        charge: 40.00 gr
+        mass: 450.00 gr
+        initial_velocity: 603.00 ft/s
+      -
+        charge: 14.00 gr
+        mass: 125.00 gr
+        initial_velocity: 760.00 ft/s
+      -
+        charge: 100.00 gr
+        mass: 217.00 gr
+        diameter: 0.45 in
+        initial_velocity: 1900.00 ft/s
+  -
+    ref2: p. 387
+    desc: "Sample initial velocity of a 6-pdr"
+    technique: theory
+    charge: 1.25 lb
+    mass: 6.25 lb
+    material: iron
+    initial_velocity: 1444 ft/s
+  -
+    ref2: p. 387
+    desc: "Sample initial velocities of different cannons"
+    technique: theory
+    material: iron
+    data:
+      -
+        mass: 6 lb
+        charge: 1.25 lb
+        initial_velocity: 1439 ft/s
+      -
+        mass: 12 lb
+        charge: 2.50 lb
+        initial_velocity: 1486 ft/s
+      -
+        mass: 24 lb
+        charge: 6.00 lb
+        initial_velocity: 1680 ft/s
+      -
+        mass: 24 lb
+        charge: 8.00 lb
+        initial_velocity: 1870 ft/s
+      -
+        mass: 32 lb
+        charge: 8.00 lb
+        initial_velocity: 1640 ft/s
+  -
+    ref2: p. 400-401
+    desc: "Observed times of French mortar shells"
+    data:
+      -
+        diameter: 8 in
+        mass: 64 lb
+        data:
+          -
+            charge: 0.234 kg
+            data:
+              -
+                angle: 45 deg
+                group: 401-1
+                data:
+                  - range: 343 m
+                  - final_time: 9.8 s
+              -
+                angle: 30 deg
+                group: 401-2
+                data:
+                  - range: 290 m
+                  - final_time: 6.8 s
+          -
+            charge: 0.351 kg
+            data:
+              -
+                angle: 45 deg
+                group: 401-3
+                data:
+                  - range: 629 m
+                  - final_time: 12.9 s
+              -
+                angle: 30 deg
+                group: 401-4
+                data:
+                  - range: 561 m
+                  - final_time: 10.0 s
+          -
+            charge: 0.585 kg
+            data:
+              -
+                angle: 45 deg
+                group: 401-5
+                data:
+                  - range: 1146 m
+                  - final_time: 16.0 s
+              -
+                angle: 30 deg
+                group: 401-6
+                data:
+                  - range: 1011 m
+                  - final_time: 12.3 s
+          -
+            charge: 0.994 kg
+            data:
+              -
+                angle: 45 deg
+                group: 401-7
+                data:
+                  - range: 1792 m
+                  - final_time: 20.8 s
+              -
+                angle: 30 deg
+                group: 401-8
+                data:
+                  - range: 1690 m
+                  - final_time: 16.9 s
+      -
+        diameter: 10 in
+        mass: 119 lb
+        data:
+          -
+            charge: 0.468 kg
+            data:
+              -
+                angle: 45 deg
+                group: 401-9
+                data:
+                  - range: 457 m
+                  - final_time: 11.0 s
+              -
+                angle: 30 deg
+                group: 401-10
+                data:
+                  - range: 383 m
+                  - final_time: 7.5 s
+          -
+            charge: 0.693 kg
+            data:
+              -
+                angle: 45 deg
+                group: 401-11
+                data:
+                  - range: 734 m
+                  - final_time: 14.0 s
+              -
+                angle: 30 deg
+                group: 401-12
+                data:
+                  - range: 637 m
+                  - final_time: 10.0 s
+          -
+            charge: 1.054 kg
+            data:
+              -
+                angle: 45 deg
+                group: 401-13
+                data:
+                  - range: 1132 m
+                  - final_time: 17.0 s
+              -
+                angle: 30 deg
+                group: 401-14
+                data:
+                  - range: 980 m
+                  - final_time: 12.0 s
+          -
+            charge: 1.405 kg
+            data:
+              -
+                angle: 45 deg
+                group: 401-15
+                data:
+                  - range: 1555 m
+                  - final_time: 20.0 s
+              -
+                angle: 30 deg
+                group: 401-16
+                data:
+                  - range: 1355 m
+                  - final_time: 14.0 s
+          -
+            charge: 1.639 kg
+            data:
+              -
+                angle: 45 deg
+                group: 401-17
+                data:
+                  - range: 1757 m
+                  - final_time: 23.0 s
+              -
+                angle: 30 deg
+                group: 401-18
+                data:
+                  - range: 1516 m
+                  - final_time: 15.0 s
+  -
+    desc: "Tables of Fire.  Ranges."
+    skip: True
+    skip_note: These are all taken at some unspecified initial height.  Based on the 0 degree values, this is not just the muzzle height above the ground.
+    material: iron
+    initial_height: 4 ft
+    initial_height_note: estimated muzzle height of a gun.  This is too low to support the data.
+    data:
+      -
+        ref2: p. 516
+        data:
+          -
+            mass: 6 lb
+            charge: 1.25 lb
+            data:
+              -
+                angle: 0 deg
+                range: 318 yards
+              -
+                angle: 1 deg
+                range: 674 yards
+              -
+                angle: 2 deg
+                range: 867 yards
+              -
+                angle: 3 deg
+                range: 1138 yards
+              -
+                angle: 4 deg
+                range: 1256 yards
+              -
+                angle: 5 deg
+                range: 1523 yards
+          -
+            mass: 12 lb
+            charge: 2.5 lb
+            data:
+              -
+                angle: 0 deg
+                range: 347 yards
+                skip: true
+                skip_note: This appears to include some amount of richochet, or a much greater initial height.
+              -
+                angle: 1 deg
+                range: 662 yards
+              -
+                angle: 1 deg 30 arcmin
+                range: 785 yards
+              -
+                angle: 2 deg
+                range: 909 yards
+              -
+                angle: 3 deg
+                range: 1269 yards
+              -
+                angle: 4 deg
+                range: 1455 yards
+              -
+                angle: 5 deg
+                range: 1663 yards
+      -
+        ref2: p. 517
+        data:
+          -
+            mass: 12 lb
+            charge: 2.5 lb
+            data:
+              -
+                angle: 0 deg
+                range: 325 yards
+              -
+                angle: 1 deg
+                range: 620 yards
+              -
+                angle: 2 deg
+                range: 875 yards
+              -
+                angle: 3 deg
+                range: 1200 yards
+              -
+                angle: 4 deg
+                range: 1320 yards
+              -
+                angle: 5 deg
+                range: 1680 yards
+  -
+    desc: "Experiments with Gunpowder.  This uses different grain sizes."
+    ref2: "p. 534"
+    mass: 6 lb
+    material: iron
+    date: 1860
+    charge: 1.25 lb
+    data:
+      -
+        desc2: "Hazard's Powder"
+        data:
+          - initial_velocity: 1319 ft/s
+          - initial_velocity: 1319 ft/s
+          - initial_velocity: 1303 ft/s
+          - initial_velocity: 1333 ft/s
+          - initial_velocity: 1446 ft/s
+          - initial_velocity: 1468 ft/s
+          - initial_velocity: 1473 ft/s
+          - initial_velocity: 1476 ft/s
+          - initial_velocity: 1436 ft/s
+          - initial_velocity: 1500 ft/s
+          - initial_velocity: 1233 ft/s
+          - initial_velocity: 1253 ft/s
+          - initial_velocity: 1322 ft/s
+          - initial_velocity: 1330 ft/s
+          - initial_velocity: 1532 ft/s
+          - initial_velocity: 1521 ft/s
+          - initial_velocity: 1455 ft/s
+          - initial_velocity: 1474 ft/s
+          - initial_velocity: 1502 ft/s
+          - initial_velocity: 1505 ft/s
+      -
+        desc2: "Dupont's Powder"
+        data:
+          - initial_velocity: 786 ft/s
+          - initial_velocity: 1056 ft/s
+          - initial_velocity: 1077 ft/s
+          - initial_velocity: 1207 ft/s
+          - initial_velocity: 1224 ft/s
+          - initial_velocity: 1238 ft/s
+          - initial_velocity: 1295 ft/s
+          - initial_velocity: 1345 ft/s
+          - initial_velocity: 1462 ft/s
+          - initial_velocity: 1426 ft/s
+          - initial_velocity: 798 ft/s
+          - initial_velocity: 1036 ft/s
+          - initial_velocity: 1093 ft/s
+          - initial_velocity: 1193 ft/s
+          - initial_velocity: 1203 ft/s
+          - initial_velocity: 1218 ft/s
+          - initial_velocity: 1326 ft/s
+          - initial_velocity: 1345 ft/s
+          - initial_velocity: 1463 ft/s
+          - initial_velocity: 1414 ft/s

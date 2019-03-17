@@ -764,13 +764,13 @@
  },
  {
   "conditions": {
-   "charge": "4 oz",
-   "diameter": "1.9525 in",
-   "initial_velocity": "1401 ft/s",
-   "mass": "1.0013 lb",
-   "material": "iron"
+   "charge": "100.00 gr",
+   "diameter": "0.45 in",
+   "initial_velocity": "1900.00 ft/s",
+   "mass": "217.00 gr",
+   "material": "lead"
   },
-  "power_factor": 365174.47009759914,
+  "power_factor": 363887.272224,
   "time": null
  },
  {
