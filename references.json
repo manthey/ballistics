@@ -32,6 +32,12 @@
   "ref": "Bashforth, 1890",
   "summary": "This gives an exceelent account of how the chronograph works, repeats data from the 1870 volume, and presents tables and equations for calculating trajectories."
  },
+ "benton1862": {
+  "cms": "Benton, Capt. J. G.  <i>A Course of Instruction in Ordnance and Gunnery.</i>  New York: D. Van Norstand, 1862.",
+  "key": "benton1862",
+  "ref": "Benton, 1862",
+  "summary": "The covers a wide range of topics in gunnery and artillery."
+ },
  "berthelot1872": {
   "cms": "Berthelot, Marcelin.  <i>Sur la force de la poudre et mati\u00e8re explosives, Deuxi\u00e8me \u00c9dition</i>  Paris: Gauthier-Villars, 1872.",
   "details": "This calculates the chemical reactions of gunpowder.  Near the end there is a table of the heat output from a calorimeter.  In some ways this is the maximum amount of power that could be liberated from the gunpowder, as none of the energy escapes.  However, the available oxygen in the calorimeter is not reflective of actual available oxygen from air in a mortar or gun, and, since the gunpowder isn't expanding in the same manner, other differences exist.\n",
@@ -210,7 +216,7 @@
   "summary": "Tract XXXIV, continued.  Tract XXXV: On a new Gunpowder Eprouvette.  Tract XXXVI: Determination of the Air's Resistance to Bodies in motion, as determined by the Whirling Machine.  Tract XXXVII: On the theory and Practice of Gunnery, as dependent on the Resistance of the Air."
  },
  "hutton1815v1": {
-  "cms": "Hutton, Charles.  <i>A Philosophical and Mathematical Dictionary, Vol. I</i>  London: F. C. and J Rivington, et al., 1815",
+  "cms": "Hutton, Charles.  <i>A Philosophical and Mathematical Dictionary, Vol. I</i>  London: F. C. and J Rivington, et al., 1815.",
   "key": "hutton1815v1",
   "ref": "Hutton, 1815",
   "summary": "A lengthy series of articles.  That on Gunnery contains some decent historical notes and a summary table of a some experiments.  Volume II (p. 561) contains a table comparing results fro ma double pendulum but without enough data to produce a useful computation."
