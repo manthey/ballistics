@@ -49,7 +49,7 @@ def combine(opts):  # noqa
             data = yaml.safe_load(open(path))
         except Exception:
             print('Failed to parse file %s' % path)
-            continue
+            raise
         references.setdefault(data['key'], {})
         for key in ('key', 'ref', 'cms', 'summary', 'link', 'details'):
             if key in data:
@@ -65,7 +65,7 @@ def combine(opts):  # noqa
             data = json.load(open(path))
         except Exception:
             print('Failed to parse file %s' % path)
-            continue
+            raise
         sources += 1
         references.setdefault(data['key'], {})
         for key in ('key', 'ref', 'cms', 'summary', 'link', 'details'):
@@ -211,6 +211,9 @@ def compile_grid(grid, entry, opts, item):  # noqa
     group = entry['conditions'].get('group')
     if group:
         group = item['ref'] + ':' + group
+    # Don't include time technique in groups; it isn't accuracte enough
+    if item['technique'] == 'time':
+        group = None
     groupset = False
     if group and group not in Groups:
         Groups[group] = item['power_factor']
@@ -445,32 +448,42 @@ Syntax:  combine.py --grid --points|--nopoints --res=(grid resolution)
             adjust = json.load(open(path))
         else:
             adjust = {'version': 0, 'table': {}}
+        version = adjust.get('version', 0)
         table = adjust.get('table', {}).copy()
         total = count = weight = absweight = 0
         for mn in GroupsGrid:
-            if str(mn) not in table:
-                table[str(mn)] = {}
+            table.setdefault(str(mn), {})
+            table.setdefault(str(mn+1), {})
             for re in GroupsGrid[mn]:
-                factor = GroupsGrid[mn][re] / max(abs(GroupsGrid[mn][re]), 1)
+                w = GroupsGrid[mn][re]
+                factor = w / max(abs(w), 1)
                 total += factor
-                weight += GroupsGrid[mn][re]
-                absweight += abs(GroupsGrid[mn][re])
+                weight += w
+                absweight += abs(w)
                 count += 1
                 factor *= 0.0001
                 if factor:
-                    factor *= max(1, min(100 - adjust.get('version', 0),
-                                         abs(GroupsGrid[mn][re])))
+                    factor *= max(1, min(200 - version, abs(w)))
+                    if version % 3 == 2:
+                        factor /= 2
                 table[str(mn)][str(re)] = (
-                    table[str(mn)].get(str(re), 0) + factor)  # ##DWM:: +factor?
-        if len(adjust.get('table', {})):
-            adjust['table_%d' % adjust.get('version', 0)] = adjust['table']
-        adjust['version'] = adjust.get('version', 0) + 1
+                    table[str(mn)].get(str(re), 0) + factor)
+                table[str(mn)][str(re+1)] = (
+                    table[str(mn)].get(str(re+1), 0) + factor)
+                table[str(mn+1)][str(re)] = (
+                    table[str(mn+1)].get(str(re), 0) + factor)
+                table[str(mn+1)][str(re+1)] = (
+                    table[str(mn+1)].get(str(re+1), 0) + factor)
+        # if len(adjust.get('table', {})):
+        #     adjust['table_%d' % version] = adjust['table']
+        adjust['version'] = version + 1
+        for mn in table:
+            for re in table[mn]:
+                table[mn][re] = round(table[mn][re], 6)
         adjust['table'] = table
         adjust['resolution'] = cod_adjusted.Resolution
 
-        adjust = {'version': adjust['version'], 'table': table}
-
         json.dump(adjust, open(path, 'w'), sort_keys=True, indent=1,
                   separators=(',', ': '))
-        print('Adjustment: delta %d  weight %d |%d|  groups %d  version %d' % (
+        print('Adjustment: delta %d  weight %d |%d|  grid points %d  version %d' % (
             total, weight, absweight, count, adjust['version']))

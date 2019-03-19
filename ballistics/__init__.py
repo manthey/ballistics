@@ -1265,9 +1265,9 @@ def graph_coefficient_of_drag(user_params=None):
     Enter: user_params: a comma separated list of parameters.
     """
     params = {'remin': 1.0e2, 'remax': 1.0e7, 'mnmin': 0.0, 'mnmax': 1.8,
-              'mnint': 0.2}
+              'mnint': 0.2, 'out': '', 'w': 0, 'h': 0, 'dpi': 0, 'range': 0}
     params, other_params, items = parse_user_params(params, user_params)
-    global matplotlib, pyplot
+    global matplotlib
     if not matplotlib:
         try:
             import matplotlib.pyplot as plt
@@ -1295,7 +1295,7 @@ def graph_coefficient_of_drag(user_params=None):
             re = rei*reint/substep+remin
             cd = coefficient_of_drag(
                 state={'settings': {'drag_method': method}},
-                reynolds=10**re, mach=mn, only_in_range=True)
+                reynolds=10**re, mach=mn, only_in_range=True if not params.get('range') else False)
             if cd is not None:
                 datax.append(re)
                 datay.append(cd)
@@ -1307,7 +1307,16 @@ def graph_coefficient_of_drag(user_params=None):
         datay = [val[1] for val in points]
         plt.plot(datax, datay, '--', label='%3.1f' % mn)
     plt.ylim(0, 1)
-    plt.show()
+    if params.get('w'):
+        plt.rcParams['figure.figsize'][0] = float(params['w'])
+    if params.get('h'):
+        plt.rcParams['figure.figsize'][0] = float(params['h'])
+    if params.get('dpi'):
+        plt.rcParams['figure.dpi'] = plt.rcParams['savefig.dpi'] = float(params['dpi'])
+    if params.get('out'):
+        plt.savefig(params['out'], bbox_inches='tight')
+    else:
+        plt.show()
 
 
 def graph_trajectory(points, user_params=None):
@@ -1320,7 +1329,7 @@ def graph_trajectory(points, user_params=None):
     """
     params = {}
     params, other_params, items = parse_user_params(params, user_params)
-    global matplotlib, pyplot
+    global matplotlib
     if not matplotlib:
         try:
             import matplotlib.pyplot as plt
@@ -2158,8 +2167,10 @@ read_config for details on the file format.
 --cdgraph generates a graph of the coefficient of drag based on Reynolds number
  and Mach number.  This takes a comma-separated list of parameters: remin,
  remax (minimum and maximum Reynolds numbers to plot), mnmin, mnmax (min and
- max Mach numbers to plot), mnint (Mach number interval to plot).  Example:
- '--cdgraph=remin=1e3,remax=1e7,mnmin=0,mnmax=1.5,mnint=0.25'.
+ max Mach numbers to plot), mnint (Mach number interval to plot), out (output
+ file name; if not specified show the graph), w (width in inches), h (height in
+ inches), dpi.  Example: '--cdgraph=remin=1e3,remax=1e7,mnmin=0,mnmax=1.5,
+ mnint=0.25'.
 --comment adds a comment that can be included as a column in the output.
 --config specifies a configuration file.  A configuration file is a list of
  parameters such as would be included on the command line.  Any line that

@@ -184,7 +184,9 @@ def calculate_cases(results, cases, verbose, pool=None):
             calculate_cases_results(hashval, state, points, results)
             left -= 1
             if verbose >= 1:
-                print('%d/%d left' % (left, len(hashes)))
+                sys.stdout.write(' %d/%d left  %s' % (
+                    left, len(hashes), '\n' if verbose >= 2 else '\r'))
+                sys.stdout.flush()
     else:
         tasks = []
         for hashval in hashes:
@@ -199,7 +201,9 @@ def calculate_cases(results, cases, verbose, pool=None):
                     calculate_cases_results(hashval, state, points, results)
                     del tasks[pos]
             if verbose >= 1 and len(tasks) < lentasks:
-                print('%d/%d left' % (len(tasks), len(hashes)))
+                sys.stdout.write(' %d/%d left  %s' % (
+                    len(tasks), len(hashes), '\n' if verbose >= 2 else '\r'))
+                sys.stdout.flush()
             if len(tasks):
                 tasks[0].wait(0.1)
     return True

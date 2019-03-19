@@ -211,7 +211,6 @@ export default {
 /*
 Can add:
 
-finish techniques page
 specific graphs with commentary
   small diam
   medium
@@ -219,5 +218,10 @@ specific graphs with commentary
 accuracy based on reported precision
 drag models (include Hutton, 1795 v2, p. 365; Bashforth, 1870)
 github
+commentary on sources
+
+Fix:
+
+display of scattergl on Safari
 */
 </script>

@@ -44,7 +44,7 @@ MnReCdDataTable = [
          (2.3e5, 0.458), (3e5, 0.438), (3.5e5, 0.373), (3.954e5, 0.0916),
          (4.21e5, 0.0785), (5e5, 0.08912), (7.6e5, 0.158),
          (1e6, 0.20)), 4.21e5),
-    (0.1, ((1e4, 0.3983), (3.093e4, 0.4352), (4.65e4, 0.4495)), 2e5),
+    (0.1, ((1e4, 0.3983), (3.093e4, 0.4352), (4.65e4, 0.4495)), 4.21e5),
     (0.2, ((1e4, 0.3995), (2.75e4, 0.4376), (4.874e4, 0.4590),
            (8.306e4, 0.4732), (1.484e5, 0.4792), (1.877e5, 0.4780)), 4.21e5),
     (0.3, ((1e4, 0.4126), (3.191e4, 0.4542), (7.101e4, 0.4768),
@@ -139,16 +139,20 @@ def coefficient_of_drag_miller(state, only_in_range=False):
         (Cd, in_range) = interpolate(adjusted_re, reynolds_data, True)
         if in_range:
             mach_data.append((mach, Cd))
+            mach_data_oor.append((mach, Cd))
         else:
+            redata = [(ere, ecd + reynolds_data[0][1] - MnReCdDataTable[0][1][13][1])
+                      for ere, ecd in MnReCdDataTable[0][1][:13]] + list(reynolds_data)
+            (Cd, in_range) = interpolate(adjusted_re, redata, True)
             mach_data_oor.append((mach, Cd))
     if (Mn > 0.3 and len(mach_data) < 2) or not len(mach_data):
         if only_in_range:
             state['drag_data']['in_range'] = False
             return None
-    if not len(mach_data):
+    if len(mach_data) <= 1:
         mach_data = mach_data_oor
         (Cd, in_range) = interpolate(Mn, mach_data, method='linear')
-        in_range = False
+        in_range = bool(in_range and len(mach_data))
     else:
         (Cd, in_range) = interpolate(Mn, mach_data, method='linear')
     state['drag_data']['cd'] = Cd

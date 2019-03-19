@@ -188,9 +188,15 @@ Modern units are relatively inexpensive, but are also somewhat limited in the si
 
 [Plot](#/plot?filter=d.technique%3D%3D'calorimeter') [Table](#/table?filter=d.technique%3D%3D'calorimeter')
 
+A calorimeter measures the amount of energy released when a sample is burned or exploded by measuring the amount of heat that is released.  If this is done in a closed system, for instance, the temperature increase can be measure don a known quantity of water.
+
 ## Theory
 
 [Plot](#/plot?filter=d.technique%3D%3D'theory') [Table](#/table?filter=d.technique%3D%3D'theory')
+
+There are many working models of how to calculate range of artillery given a set of known parameters.  These theories represent an author's belief in the functional power per weight of gunpowder, even if the theory doesn't match real results particularly well.
+
+Some theories are represented by mathematical exercises, some by tables of values, and some by specific examples.  Many more samples could be gleaned from different theories.
     </vue-markdown>
   </div>
 </template>
