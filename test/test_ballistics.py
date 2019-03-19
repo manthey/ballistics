@@ -16,7 +16,7 @@ def testFindUnknown():
     }
     unknown = 'power_factor'
     result, _points = ballistics.find_unknown(state, unknown)
-    assert 407000 < result['power_factor'] < 409000
+    assert 414000 < result['power_factor'] < 416000
 
 
 def testCombinations():

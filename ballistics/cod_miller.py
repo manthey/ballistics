@@ -96,6 +96,7 @@ MnReCdDataTable = [
 ]
 MnReCdDataTableLog10Crit = [
     (machnum, math.log10(crit)) for (machnum, reynolds_data, crit) in MnReCdDataTable]
+ExtendedMnReCdDataTable = []
 
 
 def coefficient_of_drag_miller(state, only_in_range=False):
@@ -109,6 +110,7 @@ def coefficient_of_drag_miller(state, only_in_range=False):
                           what we can interpolate.
     Exit:  Cd: the coefficient of drag.
     """
+    extend_drag_table()
     Re = state['drag_data']['Re']
     Mn = state['drag_data']['Mn']
     # Estimate the critical point based on Mach number
@@ -117,18 +119,18 @@ def coefficient_of_drag_miller(state, only_in_range=False):
     state['drag_data']['critical_Re'] = critical_Re
     # Interpolate for the Reynolds number for each Mach number where we have
     # data.
-    mach_data_oor = []
+    mach_in_range = [None, None]
     mach_data = []
-    for pos, (mach, reynolds_data, crit) in enumerate(MnReCdDataTable):
+    for pos, (mach, reynolds_data, crit) in enumerate(ExtendedMnReCdDataTable):
         use = False
         if Mn <= 0.3 and mach <= 0.3:
             use = True
-        if (pos+1 != len(MnReCdDataTable) and Mn >= mach and
-                Mn <= MnReCdDataTable[pos+1][0]):
+        if (pos+1 != len(ExtendedMnReCdDataTable) and Mn >= mach and
+                Mn <= ExtendedMnReCdDataTable[pos+1][0]):
             use = True
-        if pos and Mn >= MnReCdDataTable[pos-1][0] and Mn <= mach:
+        if pos and Mn >= ExtendedMnReCdDataTable[pos-1][0] and Mn <= mach:
             use = True
-        if pos+1 == len(MnReCdDataTable) and Mn >= mach:
+        if pos+1 == len(ExtendedMnReCdDataTable) and Mn >= mach:
             use = True
         if not use:
             continue
@@ -137,26 +139,58 @@ def coefficient_of_drag_miller(state, only_in_range=False):
         adjusted_re = 10**(math.log10(Re) - math.log10(critical_Re) +
                            math.log10(crit))
         (Cd, in_range) = interpolate(adjusted_re, reynolds_data, True)
-        if in_range:
-            mach_data.append((mach, Cd))
-            mach_data_oor.append((mach, Cd))
-        else:
-            redata = [(ere, ecd + reynolds_data[0][1] - MnReCdDataTable[0][1][13][1])
-                      for ere, ecd in MnReCdDataTable[0][1][:13]] + list(reynolds_data)
-            (Cd, in_range) = interpolate(adjusted_re, redata, True)
-            mach_data_oor.append((mach, Cd))
+        mach_data.append((mach, Cd))
+        in_range = (in_range and MnReCdDataTable[pos][1][0][0] <=
+                    adjusted_re <= MnReCdDataTable[pos][1][-1][0])
+        if mach <= 0.3 and adjusted_re <= MnReCdDataTable[0][1][-1][0]:
+            in_range = True
+        if mach <= Mn:
+            mach_in_range[0] = in_range
+        if mach >= Mn and mach_in_range[1] is None:
+            mach_in_range[1] = in_range
     if (Mn > 0.3 and len(mach_data) < 2) or not len(mach_data):
         if only_in_range:
             state['drag_data']['in_range'] = False
             return None
-    if len(mach_data) <= 1:
-        mach_data = mach_data_oor
-        (Cd, in_range) = interpolate(Mn, mach_data, method='linear')
-        in_range = bool(in_range and len(mach_data))
-    else:
-        (Cd, in_range) = interpolate(Mn, mach_data, method='linear')
+    (Cd, in_range) = interpolate(Mn, mach_data, method='linear')
+    in_range = in_range and mach_in_range[0] and mach_in_range[1]
     state['drag_data']['cd'] = Cd
     state['drag_data']['in_range'] = in_range
     if not in_range and only_in_range:
         return None
     return Cd
+
+
+def extend_drag_table():
+    """
+    Make an extended table that covers a longer range of Reynolds numbers for
+    each mach value.  For low Reynolds values, this uses lower mach number
+    coefficients, and for high Reynolds values it uses higher mach number
+    coefficients.  The coefficients are copied with an offset based on critical
+    Reynolds number and closest matching coefficient.
+    """
+    if len(ExtendedMnReCdDataTable):
+        return
+    for pos, (mach, reynolds_data, crit) in enumerate(MnReCdDataTable):
+        ext_re_data = list(reynolds_data)
+        for lowpos in range(pos - 1, -1, -1):
+            ref_cd = ext_re_data[0][1]
+            low_mach, low_reynolds_data, low_crit = MnReCdDataTable[lowpos]
+            last_cd = None
+            for re, cd in low_reynolds_data[::-1]:
+                adj_re = 10 ** (math.log10(re) - math.log10(low_crit) + math.log10(crit))
+                if adj_re < ext_re_data[0][0] and last_cd is not None:
+                    ext_re_data[0:0] = [(adj_re, cd - last_cd + ref_cd)]
+                else:
+                    last_cd = cd
+        for highpos in range(pos + 1, len(MnReCdDataTable)):
+            ref_cd = ext_re_data[-1][1]
+            high_mach, high_reynolds_data, high_crit = MnReCdDataTable[highpos]
+            last_cd = None
+            for re, cd in high_reynolds_data:
+                adj_re = 10 ** (math.log10(re) - math.log10(high_crit) + math.log10(crit))
+                if adj_re > ext_re_data[-1][0] and last_cd is not None:
+                    ext_re_data.append((adj_re, cd - last_cd + ref_cd))
+                else:
+                    last_cd = cd
+        ExtendedMnReCdDataTable.append((mach, ext_re_data, crit))

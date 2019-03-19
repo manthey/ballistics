@@ -146,10 +146,9 @@ def calculate_case(hashval, args, info, verbose):
     if verbose >= 3:
         pprint.pprint(newstate)
     if len(points) > 0:
-        subset = points[::10]
-        if subset[-1] != points[-1]:
-            subset.append(points[-1])
-        points = subset
+        subset = 1 if len(points) < 50 else (
+            2 if len(points) < 100 else (5 if len(points) < 250 else 10))
+        points = points[:-1:subset] + points[-1:]
         points = {key: FloatList([
             point.get(key) for point in points], '%.6g')
             for key in points[0]}
