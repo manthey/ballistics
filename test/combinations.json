@@ -9,8 +9,8 @@
    "mass": "12.174 kg",
    "range": "640.2 m"
   },
-  "power_factor": 463842.9303183529,
-  "time": 1.6727616964583722
+  "power_factor": 463619.50717753114,
+  "time": 1.6727285509479992
  },
  {
   "conditions": {
@@ -34,8 +34,8 @@
    "range": "11.121 m",
    "rising_height": "0.3401 m"
   },
-  "power_factor": 176420.51599482843,
-  "time": 0.036235925665652716
+  "power_factor": 176420.51599483218,
+  "time": 0.036235925665652334
  },
  {
   "conditions": {
@@ -50,8 +50,8 @@
    "temperature": "59.5 F",
    "wetbulb": "57 F"
   },
-  "power_factor": 238064.03154115938,
-  "time": 0.10560331737723483
+  "power_factor": 237951.7353342233,
+  "time": 0.10560927955128868
  },
  {
   "conditions": {
@@ -61,8 +61,8 @@
    "final_angle": "61 deg",
    "mass": "3 lb 0 oz"
   },
-  "power_factor": 452747.5424703153,
-  "time": 29.94647429161052
+  "power_factor": 452314.25209429284,
+  "time": 29.946545435375118
  },
  {
   "conditions": {
@@ -77,8 +77,8 @@
    "range": "32 ft",
    "temperature": "64 F"
   },
-  "power_factor": 202800.62965693843,
-  "time": 0.01587377207156627
+  "power_factor": 202776.25997069702,
+  "time": 0.015874244842105256
  },
  {
   "conditions": {
@@ -92,8 +92,8 @@
    "range": "20 feet",
    "temperature": "55 degF"
   },
-  "power_factor": 210637.83424891016,
-  "time": 0.015199069882637107
+  "power_factor": 210637.83425572794,
+  "time": 0.015199069882392875
  },
  {
   "conditions": {
@@ -107,8 +107,8 @@
    "range": "32 ft",
    "temperature": "60 F"
   },
-  "power_factor": 308228.1997999737,
-  "time": 0.02572999171705755
+  "power_factor": 308228.1997889366,
+  "time": 0.025729991717515926
  },
  {
   "conditions": {
@@ -120,8 +120,8 @@
    "mass": "38.26 g",
    "range": "8 m"
   },
-  "power_factor": 311835.6802811767,
-  "time": 0.017048748665582675
+  "power_factor": 311835.6802812013,
+  "time": 0.017048748665582012
  },
  {
   "conditions": {
@@ -136,8 +136,8 @@
    "temperature": "50 F",
    "wetbulb": "48 F"
   },
-  "power_factor": 505613.7372719241,
-  "time": 1.0649266555515877
+  "power_factor": 505613.73726910626,
+  "time": 1.064926655551392
  },
  {
   "conditions": {
@@ -149,8 +149,8 @@
    "material": "iron",
    "range": "1004 ft"
   },
-  "power_factor": 217009.7678590555,
-  "time": 1.0373995779860299
+  "power_factor": 217009.76785625226,
+  "time": 1.0373995779855674
  },
  {
   "conditions": {
@@ -161,8 +161,8 @@
    "mass": "0.0268 kg",
    "range": "100 m"
   },
-  "power_factor": 321002.89965288254,
-  "time": 0.2730070264416749
+  "power_factor": 321002.8997101661,
+  "time": 0.27300702646345143
  },
  {
   "conditions": {
@@ -172,8 +172,8 @@
    "final_time": "1 s",
    "mass": "16 lb"
   },
-  "power_factor": 2735776.5511662047,
-  "time": 0.9999999999950826
+  "power_factor": 2735776.551169445,
+  "time": 0.9999999999955852
  },
  {
   "conditions": {
@@ -224,8 +224,8 @@
    "pressure": "29.8 inHg",
    "temperature": "66 F"
   },
-  "power_factor": 1508712.6283108466,
-  "time": 14.000000000798172
+  "power_factor": 1503072.4802789206,
+  "time": 14.00000000090248
  },
  {
   "conditions": {
@@ -238,8 +238,8 @@
    "material": "lead",
    "range": "10 ftit 12 init"
   },
-  "power_factor": 252569.50460386885,
-  "time": 0.013152994348366847
+  "power_factor": 252569.5047945963,
+  "time": 0.013152994343421192
  },
  {
   "conditions": {
@@ -253,8 +253,8 @@
    "range": "32 ft",
    "temperature": "74 F"
   },
-  "power_factor": 98955.03077465859,
-  "time": 0.022730738837768556
+  "power_factor": 98953.7990212517,
+  "time": 0.02273080089747584
  },
  {
   "conditions": {
@@ -266,23 +266,23 @@
    "mass": "16 oz 13 dr",
    "range": "32 ft"
   },
-  "power_factor": 237048.53538437083,
-  "time": 0.014698099829089307
+  "power_factor": 237019.76961786818,
+  "time": 0.014698543576423667
  },
  {
   "conditions": {
    "angle": "0 deg",
-   "charge": "110 gr",
-   "diameter": "0.65 in",
-   "final_velocity": "1404 ft/s",
-   "mass": "410.2 gr",
-   "material": "lead",
-   "pressure": "30.226 inHg",
-   "range": "6 ft",
-   "temperature": "28 F"
+   "charge": "8 oz",
+   "diameter": "2 in",
+   "final_velocity": "1702 ft/s",
+   "mass": "18.02 oz",
+   "material": "iron",
+   "pressure": "30.3 inHg",
+   "range": "30 ft",
+   "temperature": "57 F"
   },
-  "power_factor": 347891.0068857439,
-  "time": 0.004253635102850801
+  "power_factor": 316888.2470486474,
+  "time": 0.01743171166781138
  },
  {
   "conditions": {
@@ -297,8 +297,8 @@
    "temperature": "59 F",
    "wetbulb": "50 F"
   },
-  "power_factor": 556900.4003038304,
-  "time": 0.04539556728904044
+  "power_factor": 556900.4002992541,
+  "time": 0.04539556728922605
  },
  {
   "conditions": {
@@ -310,8 +310,8 @@
    "material": "lead",
    "range": "10 ftit 12 init"
   },
-  "power_factor": 414945.0538170873,
-  "time": 0.010383545608744849
+  "power_factor": 414934.469014351,
+  "time": 0.010383610360760102
  },
  {
   "conditions": {
@@ -324,8 +324,8 @@
    "range": "30 ft",
    "temperature": "90 F"
   },
-  "power_factor": 477784.2762053325,
-  "time": 0.020753307559374684
+  "power_factor": 477776.6157206129,
+  "time": 0.020753386837790173
  },
  {
   "conditions": {
@@ -337,8 +337,8 @@
    "pressure": "29.64 inHg",
    "range": "30 ft"
   },
-  "power_factor": 264558.6095880677,
-  "time": 0.021713176130175336
+  "power_factor": 264555.47307724995,
+  "time": 0.02171323459909709
  },
  {
   "conditions": {
@@ -351,8 +351,8 @@
    "range": "32 ft",
    "temperature": "72 F"
   },
-  "power_factor": 214988.8465483865,
-  "time": 0.021815393723724166
+  "power_factor": 214982.01676340232,
+  "time": 0.021815556190946522
  },
  {
   "conditions": {
@@ -363,8 +363,20 @@
    "mass": "16 oz 12 dr",
    "range": "32 ft"
   },
-  "power_factor": 267476.74249958526,
-  "time": 0.02758143159480882
+  "power_factor": 267476.74249210855,
+  "time": 0.027581431595191202
+ },
+ {
+  "conditions": {
+   "angle": 0,
+   "charge": "0.041667 lb",
+   "diameter": "0.75 in",
+   "final_velocity": "1670 ft/s",
+   "material": "plomb",
+   "range": "25 ft"
+  },
+  "power_factor": 299935.1420842899,
+  "time": 0.014733404615514263
  },
  {
   "conditions": {
@@ -389,8 +401,8 @@
    "material": "lead",
    "range": "156 yds"
   },
-  "power_factor": 139861.50693845563,
-  "time": 0.5983467423810169
+  "power_factor": 139861.50693874544,
+  "time": 0.5983467423810632
  },
  {
   "conditions": {
@@ -474,8 +486,8 @@
    "pressure": "17.5 initHg",
    "range": "1680 ftit"
   },
-  "power_factor": 706362.1189883729,
-  "time": 6.07545812879199
+  "power_factor": 706338.0131637027,
+  "time": 6.075458407754016
  },
  {
   "conditions": {
@@ -527,8 +539,8 @@
    "material_density": "4.841 g/cm/cm/cm",
    "range": "707 m"
   },
-  "power_factor": 567451.330300609,
-  "time": 2.360109304263122
+  "power_factor": 567451.3303028772,
+  "time": 2.360109304266642
  },
  {
   "conditions": {
@@ -556,8 +568,8 @@
    "pendulum_period": "1.265 s",
    "range": "21.5 ft"
   },
-  "power_factor": 89991.54369114956,
-  "time": 0.022217889363507996
+  "power_factor": 89991.54369130472,
+  "time": 0.022217889363489108
  },
  {
   "conditions": {
@@ -573,8 +585,8 @@
    "pendulum_period": "1.265 s",
    "range": "21.5 ft"
   },
-  "power_factor": 80883.75119692487,
-  "time": 0.023417846976054462
+  "power_factor": 80883.75119713126,
+  "time": 0.023417846976024993
  },
  {
   "conditions": {
@@ -585,8 +597,8 @@
    "pressure": "29.93 inHg",
    "range": "6330 ft"
   },
-  "power_factor": 221583.80031116438,
-  "time": 11.747560648760087
+  "power_factor": 221524.76766470145,
+  "time": 11.747561366721765
  },
  {
   "conditions": {
@@ -598,8 +610,8 @@
    "range": "6110 ft",
    "temperature": "66 F"
   },
-  "power_factor": 127628.05779384595,
-  "time": 11.3500316264796
+  "power_factor": 127628.05779072364,
+  "time": 11.350031626442224
  },
  {
   "conditions": {
@@ -609,8 +621,8 @@
    "mass": "16 lb",
    "range": "66 yds"
   },
-  "power_factor": 550897.5755605386,
-  "time": 0.46523577175952024
+  "power_factor": 550897.5755633288,
+  "time": 0.4652357717606934
  },
  {
   "conditions": {
@@ -643,8 +655,8 @@
    "material_density": "7.152 g/cm/cm/cm",
    "range": "323 m"
   },
-  "power_factor": 431358.3071549103,
-  "time": 0.8834001664182977
+  "power_factor": 431357.7563813408,
+  "time": 0.8834001609183612
  },
  {
   "conditions": {
@@ -655,8 +667,8 @@
    "material": "iron",
    "range": "4680 yd"
   },
-  "power_factor": 439239.46240277024,
-  "time": 34.560126408477075
+  "power_factor": 438220.0537934581,
+  "time": 34.56026671768372
  },
  {
   "conditions": {
@@ -668,8 +680,8 @@
    "material": "lead",
    "range": "10 ftit 12 init"
   },
-  "power_factor": 355882.48703182384,
-  "time": 0.009345669383466508
+  "power_factor": 355882.48703185277,
+  "time": 0.009345669383466136
  },
  {
   "conditions": {
@@ -680,8 +692,8 @@
    "material": "lead",
    "range": "20 ft"
   },
-  "power_factor": 119485.88658792869,
-  "time": 0.019069993103880977
+  "power_factor": 119485.88658843553,
+  "time": 0.01906999310384113
  },
  {
   "conditions": {
@@ -692,8 +704,8 @@
    "material": "iron",
    "range": "188 yds"
   },
-  "power_factor": 168217.51672954054,
-  "time": 0.56962749977162
+  "power_factor": 168217.5167291271,
+  "time": 0.569627499771584
  },
  {
   "conditions": {
@@ -737,8 +749,8 @@
    "material": "iron",
    "range": "199 yds"
   },
-  "power_factor": 521771.4154570565,
-  "time": 0.8165599521807263
+  "power_factor": 521771.4154620599,
+  "time": 0.816559952184426
  },
  {
   "conditions": {

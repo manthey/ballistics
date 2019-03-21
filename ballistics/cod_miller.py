@@ -92,7 +92,7 @@ MnReCdDataTable = [
     (3.0, ((1e4, 0.9663), (3.3e4, 0.9288), (1e5, 0.9329), (1e6, 0.9485),
            (1e7, 0.9494)), 1e6),
     # Mach 4.5 is from Munson, fig 11.2, p. 709
-    (4.5, ((1e4, 0.906), (1e7, 0.906)), 1e6),
+    (4.5, ((1e4, 0.906), (1e7, 0.906), (1e9, 0.906)), 1e6),
 ]
 MnReCdDataTableLog10Crit = [
     (machnum, math.log10(crit)) for (machnum, reynolds_data, crit) in MnReCdDataTable]

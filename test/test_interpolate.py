@@ -197,7 +197,7 @@ def make_results_interpolation():
                    'tension', 'quadratic', 'linear']:
         for logx in (False, True):
             val = []
-            for idx, (data, x) in enumerate(Conditions):
+            for data, x in Conditions:
                 result = interpolate(x, data, logx, method)
                 val.append('(%6.4f, %1d),' % (result[0], 1 if result[1] else 0))
             results = []

@@ -1,0 +1,299 @@
+---
+key: didion1857
+ref: "Didion, 1857"
+cms: "Didion, Isidore.  <i>Lois de la R\u00e9sistance de L'Air sur Les Projectiles.</i>  Paris: J. Dumaine, Juin 1857."
+summary: "Didion uses data from Robins, Hutton, and Metz to produce equations for air resistance."
+date: "1857"
+data:
+  -
+    ref2: "p. 13-14"
+    desc: "Exp\u00e9riences de Robins"
+    diameter: 0.75 in
+    material: "plomb"
+    technique: "pendulum"
+    charge: 0.041667 lb
+    charge_note: "Didion states that the charge is half the weight of the ball, which would be around 0.045 lb, though Robins lists the weight of the ball as 1/12 lb."
+    angle: 0
+    date: "1742"
+    data:
+      -
+        range: 25 ft
+        final_velocity: 1670 ft/s
+      -
+        range: 50 ft
+        final_velocity: 1550 ft/s
+      -
+        range: 75 ft
+        final_velocity: 1425 ft/s
+      -
+        range: 25 ft
+        final_velocity: 1600 ft/s
+        final_velocity_note: "This is taken from Robins, 1742, p. 76, but there Robins lists 1690 ft/s"
+      -
+        range: 75 ft
+        range_note: "This is taken from Robins, 1742, p. 76, but there Robins lists 175 ft"
+        final_velocity: 1300 ft/s
+  -
+    ref2: "p. 15"
+    desc: "Exp\u00e9riences de Hutton"
+    technique: pendulum
+    angle: 0 deg
+    material: iron
+    data:
+      -
+        date: 1787
+        pressure: 30.3 inHg
+        temperature: 57 F
+        mass: 18.02 oz
+        diameter: 2 in
+        data:
+          -
+            charge: 8 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1702 ft/s
+              -
+                range: 90 ft
+                final_velocity: 1632 ft/s
+              -
+                range: 150 ft
+                final_velocity: 1553 ft/s
+              -
+                range: 210 ft
+                final_velocity: 1492 ft/s
+              -
+                range: 300 ft
+                final_velocity: 1400 ft/s
+          -
+            charge: 2 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 971 ft/s
+              -
+                range: 90 ft
+                final_velocity: 934 ft/s
+              -
+                range: 150 ft
+                final_velocity: 904 ft/s
+              -
+                range: 210 ft
+                final_velocity: 976 ft/s
+                final_velocity_note: "From the series, this looks like it should be 876 ft/s, but the print is clear at 976 ft/s."
+              -
+                range: 300 ft
+                final_velocity: 834 ft/s
+      -
+        date: 1788
+        pressure: 30.01 inHg
+        temperature: 61.8 F
+        mass: 16.68 oz
+        diameter: 1.965 in
+        data:
+          -
+            charge: 16 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 2088 ft/s
+              -
+                range: 60 ft
+                final_velocity: 1974 ft/s
+              -
+                range: 120 ft
+                final_velocity: 1896 ft/s
+              -
+                range: 180 ft
+                final_velocity: 1781 ft/s
+              -
+                range: 210 ft
+                final_velocity: 1727 ft/s
+              -
+                range: 300 ft
+                final_velocity: 1648 ft/s
+              -
+                range: 360 ft
+                final_velocity: 1582 ft/s
+          -
+            charge: 12 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1837 ft/s
+              -
+                range: 300 ft
+                final_velocity: 1582 ft/s
+              -
+                range: 360 ft
+                final_velocity: 1492 ft/s
+          -
+            charge: 8 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1587 ft/s
+              -
+                range: 60 ft
+                final_velocity: 1550 ft/s
+              -
+                range: 120 ft
+                final_velocity: 1510 ft/s
+              -
+                range: 180 ft
+                final_velocity: 1436 ft/s
+              -
+                range: 210 ft
+                final_velocity: 1368 ft/s
+              -
+                range: 300 ft
+                final_velocity: 1317 ft/s
+              -
+                range: 360 ft
+                final_velocity: 1276 ft/s
+          -
+            charge: 4 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1346 ft/s
+              -
+                range: 60 ft
+                final_velocity: 1321 ft/s
+              -
+                range: 120 ft
+                final_velocity: 1248 ft/s
+              -
+                range: 180 ft
+                final_velocity: 1182 ft/s
+              -
+                range: 210 ft
+                final_velocity: 1129 ft/s
+              -
+                range: 300 ft
+                final_velocity: 1077 ft/s
+              -
+                range: 360 ft
+                final_velocity: 1034 ft/s
+          -
+            charge: 3 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1185 ft/s
+              -
+                range: 60 ft
+                final_velocity: 1110 ft/s
+              -
+                range: 120 ft
+                final_velocity: 1072 ft/s
+              -
+                range: 180 ft
+                final_velocity: 1053 ft/s
+              -
+                range: 210 ft
+                final_velocity: 1008 ft/s
+              -
+                range: 300 ft
+                final_velocity: 956 ft/s
+              -
+                range: 360 ft
+                final_velocity: 936 ft/s
+          -
+            charge: 2 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 877 ft/s
+              -
+                range: 60 ft
+                final_velocity: 850 ft/s
+              -
+                range: 120 ft
+                final_velocity: 844 ft/s
+              -
+                range: 180 ft
+                final_velocity: 804 ft/s
+              -
+                range: 210 ft
+                final_velocity: 784 ft/s
+              -
+                range: 300 ft
+                final_velocity: 765 ft/s
+              -
+                range: 360 ft
+                final_velocity: 735 ft/s
+          -
+            charge: 1 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 645 ft/s
+              -
+                range: 60 ft
+                final_velocity: 635 ft/s
+              -
+                range: 120 ft
+                final_velocity: 613 ft/s
+              -
+                range: 180 ft
+                final_velocity: 612 ft/s
+              -
+                range: 210 ft
+                final_velocity: 602 ft/s
+          -
+            charge: 0.75 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 546 ft/s
+              -
+                range: 60 ft
+                final_velocity: 544 ft/s
+              -
+                range: 120 ft
+                final_velocity: 523 ft/s
+              -
+                range: 180 ft
+                final_velocity: 518 ft/s
+          -
+            charge: 0.5 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 449 ft/s
+              -
+                range: 60 ft
+                final_velocity: 423 ft/s
+              -
+                range: 120 ft
+                final_velocity: 419 ft/s
+              -
+                range: 180 ft
+                final_velocity: 407 ft/s
+          -
+            charge: 0.375 oz
+            data:
+              -
+                range: 60 ft
+                final_velocity: 378 ft/s
+              -
+                range: 120 ft
+                final_velocity: 356 ft/s
+              -
+                range: 180 ft
+                final_velocity: 366 ft/s
+          -
+            charge: 0.25 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 309 ft/s
+              -
+                range: 60 ft
+                final_velocity: 287 ft/s
+              -
+                range: 120 ft
+                final_velocity: 277 ft/s
+
+# Recorded through page 15

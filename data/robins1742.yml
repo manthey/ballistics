@@ -352,7 +352,7 @@ data:
             range: 125 ft
             final_velocity: 1425 ft/s
       -
-        ref2: "p. 75"
+        ref2: "p. 76"
         desc: "Average of multiple shots"
         data:
           -

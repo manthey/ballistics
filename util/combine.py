@@ -17,8 +17,6 @@ from ballistics import cod_adjusted  # noqa
 
 
 Groups = {}
-GroupsRe = {}
-GroupsGrid = {}
 
 GivenCombinations = {}
 
@@ -196,7 +194,7 @@ def combine(opts):  # noqa
     return ReMnGrid
 
 
-def compile_grid(grid, entry, opts, item):  # noqa
+def compile_grid(grid, entry, opts, item):
     """
     Compile the usage of grid and reynolds numbers from a grid, always
     excluding theoretical values and possibly non-group values.
@@ -214,10 +212,6 @@ def compile_grid(grid, entry, opts, item):  # noqa
     # Don't include time technique in groups; it isn't accuracte enough
     if item['technique'] == 'time':
         group = None
-    groupset = False
-    if group and group not in Groups:
-        Groups[group] = item['power_factor']
-        groupset = True
     if (not entry.get('points') or 'Re' not in entry['points'] or
             'Mn' not in entry['points']):
         return
@@ -228,37 +222,58 @@ def compile_grid(grid, entry, opts, item):  # noqa
     if len(ReList) != len(MnList):
         return
     res = int(opts.get('gridres', 10))
+    last_re, last_mn = None, None
     for i in range(len(ReList)):
         Re = ReList[i]
         Mn = MnList[i]
         re = int(round(math.log10(Re) * res))
         mn = int(round(Mn * res))
-        if mn not in grid:
-            grid[mn] = {}
-        grid[mn][re] = grid[mn].get(re, 0) + 1
-    if groupset:
-        GroupsRe[group] = {'re': ReList, 'mn': MnList}
-    if (group and not groupset and
-            0.5 < item['power_factor'] / Groups[group] < 2):
-        factor = 1 if item['power_factor'] < Groups[group] else -1
-        for i in range(len(ReList)):
-            Re = ReList[i]
-            Mn = MnList[i]
-            re = int(round(math.log10(Re) * res))
-            mn = int(round(Mn * res))
-            if mn not in GroupsGrid:
-                GroupsGrid[mn] = {}
-            GroupsGrid[mn][re] = GroupsGrid[mn].get(re, 0) + factor
-        if group in GroupsRe:
-            factor *= -1
-            for i in range(len(GroupsRe[group]['re'])):
-                Re = GroupsRe[group]['re'][i]
-                Mn = GroupsRe[group]['mn'][i]
+        if re != last_re or mn != last_mn:
+            if mn not in grid:
+                grid[mn] = {}
+            grid[mn][re] = grid[mn].get(re, 0) + 1
+        last_re, last_mn = re, mn
+    if group is not None:
+        if group not in Groups:
+            Groups[group] = []
+        Groups[group].append({
+            'group': group,
+            'power_factor': item['power_factor'],
+            're': ReList,
+            'mn': MnList
+        })
+
+
+def make_groups_grid(opts):
+    """
+    Using the group values, make the groups grid.
+
+    Enter: opts: program options for how to collate the grid.
+    Exit:  GroupsGrid: an array of arrays indicating which mn/re combinations
+                       need to be adjusted.
+    """
+    res = int(opts.get('gridres', 10))
+    GroupsGrid = {}
+    for group in Groups.values():
+        if len(group) < 2:
+            continue
+        avg_pf = sum(entry['power_factor'] for entry in group) / len(group)
+        for entry in group:
+            factor = 1 if entry['power_factor'] > avg_pf else -1
+            ReList = entry['re']
+            MnList = entry['mn']
+            last_re, last_mn = None, None
+            for i in range(len(ReList)):
+                Re = ReList[i]
+                Mn = MnList[i]
                 re = int(round(math.log10(Re) * res))
                 mn = int(round(Mn * res))
-                if mn not in GroupsGrid:
-                    GroupsGrid[mn] = {}
-                GroupsGrid[mn][re] = GroupsGrid[mn].get(re, 0) + factor
+                if re != last_re or mn != last_mn:
+                    if mn not in GroupsGrid:
+                        GroupsGrid[mn] = {}
+                    GroupsGrid[mn][re] = GroupsGrid[mn].get(re, 0) + factor
+                last_re, last_mn = re, mn
+    return GroupsGrid
 
 
 def csv_dump(data, path):
@@ -373,6 +388,56 @@ def show_grid(grid, opts, usemin=True):
     sys.stdout.write('%d filled\n' % nonzero)
 
 
+def update_cod_adjusted(grid):
+    """
+    Update the cod_adjusted.json file based on the Mn-Re groups.
+    """
+    path = 'ballistics/cod_adjusted.json'
+    if os.path.exists(path):
+        adjust = json.load(open(path))
+    else:
+        adjust = {'version': 0, 'table': {}}
+    version = adjust.get('version', 0)
+    table = adjust.get('table', {}).copy()
+    total = count = weight = absweight = 0
+    for mn in grid:
+        table.setdefault(str(mn), {})
+        table.setdefault(str(mn+1), {})
+        for re in grid[mn]:
+            w = grid[mn][re]
+            factor = w / max(abs(w), 1)
+            total += factor
+            weight += w
+            absweight += abs(w)
+            count += 1
+            factor *= 0.0001
+            if factor:
+                factor *= max(1, min(200 - version, abs(w)))
+                if version % 3 == 2:
+                    factor /= 2
+            table[str(mn)][str(re)] = (
+                table[str(mn)].get(str(re), 0) + factor)
+            table[str(mn)][str(re+1)] = (
+                table[str(mn)].get(str(re+1), 0) + factor)
+            table[str(mn+1)][str(re)] = (
+                table[str(mn+1)].get(str(re), 0) + factor)
+            table[str(mn+1)][str(re+1)] = (
+                table[str(mn+1)].get(str(re+1), 0) + factor)
+    # if len(adjust.get('table', {})):
+    #     adjust['table_%d' % version] = adjust['table']
+    adjust['version'] = version + 1
+    for mn in table:
+        for re in table[mn]:
+            table[mn][re] = round(table[mn][re], 6)
+    adjust['table'] = table
+    adjust['resolution'] = cod_adjusted.Resolution
+
+    json.dump(adjust, open(path, 'w'), sort_keys=True, indent=1,
+              separators=(',', ': '))
+    print('Adjustment: delta %d  weight %d |%d|  grid points %d  version %d' % (
+        total, weight, absweight, count, adjust['version']))
+
+
 if __name__ == '__main__':  # noqa - mccabe
     help = False
     opts = {'json': True}
@@ -441,49 +506,6 @@ Syntax:  combine.py --grid --points|--nopoints --res=(grid resolution)
     grid = combine(opts)
     if opts.get('grid'):
         show_grid(grid, opts)
-        show_grid(GroupsGrid, opts, False)
+        show_grid(make_groups_grid(opts), opts, False)
     if opts.get('adjust'):
-        path = 'ballistics/cod_adjusted.json'
-        if os.path.exists(path):
-            adjust = json.load(open(path))
-        else:
-            adjust = {'version': 0, 'table': {}}
-        version = adjust.get('version', 0)
-        table = adjust.get('table', {}).copy()
-        total = count = weight = absweight = 0
-        for mn in GroupsGrid:
-            table.setdefault(str(mn), {})
-            table.setdefault(str(mn+1), {})
-            for re in GroupsGrid[mn]:
-                w = GroupsGrid[mn][re]
-                factor = w / max(abs(w), 1)
-                total += factor
-                weight += w
-                absweight += abs(w)
-                count += 1
-                factor *= 0.0001
-                if factor:
-                    factor *= max(1, min(200 - version, abs(w)))
-                    if version % 3 == 2:
-                        factor /= 2
-                table[str(mn)][str(re)] = (
-                    table[str(mn)].get(str(re), 0) + factor)
-                table[str(mn)][str(re+1)] = (
-                    table[str(mn)].get(str(re+1), 0) + factor)
-                table[str(mn+1)][str(re)] = (
-                    table[str(mn+1)].get(str(re), 0) + factor)
-                table[str(mn+1)][str(re+1)] = (
-                    table[str(mn+1)].get(str(re+1), 0) + factor)
-        # if len(adjust.get('table', {})):
-        #     adjust['table_%d' % version] = adjust['table']
-        adjust['version'] = version + 1
-        for mn in table:
-            for re in table[mn]:
-                table[mn][re] = round(table[mn][re], 6)
-        adjust['table'] = table
-        adjust['resolution'] = cod_adjusted.Resolution
-
-        json.dump(adjust, open(path, 'w'), sort_keys=True, indent=1,
-                  separators=(',', ': '))
-        print('Adjustment: delta %d  weight %d |%d|  grid points %d  version %d' % (
-            total, weight, absweight, count, adjust['version']))
+        update_cod_adjusted(make_groups_grid(opts))

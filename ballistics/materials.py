@@ -65,7 +65,7 @@ MaterialsTable = [{
     'desc': 'Cast iron',
 }, {
     # Lead - Robertson: 11313, Natco: 11366
-    'names': ['lead'],
+    'names': ['lead', 'plomb'],
     'density': 11340,
     'mindensity': 11310,
     'maxdensity': 11370,
