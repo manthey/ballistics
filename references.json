@@ -139,6 +139,12 @@
   "ref": "Diderot, 1751",
   "summary": "This is an amazing compendium of knowledge.  It is one of the few mostly original encyclopedias."
  },
+ "didion1857": {
+  "cms": "Didion, Isidore.  <i>Lois de la R\u00e9sistance de L'Air sur Les Projectiles.</i>  Paris: J. Dumaine, Juin 1857.",
+  "key": "didion1857",
+  "ref": "Didion, 1857",
+  "summary": "Didion uses data from Robins, Hutton, and Metz to produce equations for air resistance."
+ },
  "engineeringtoolbox": {
   "cms": "\"Metals and Alloys - Densities.\" Metals and Alloys - Densities. Accessed February 19, 2013. http://www.engineeringtoolbox.com/metal-alloys-densities-d_50.html.",
   "key": "engineeringtoolbox",
