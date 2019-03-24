@@ -85,6 +85,8 @@ let ParameterList = [{
     key: 'given_final_velocity',
     primary: true
   }, {
+    key: 'given_final_velocity_note',
+  }, {
     key: 'given_pendulum_impact_length',
     primary: true
   }, {

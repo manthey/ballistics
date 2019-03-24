@@ -1,7 +1,7 @@
 ---
 key: hall1997
 ref: "Hall, 1997"
-cms: "Hall, Bert S.  <i>Weapons and Warfate in Renaissance Europe.</i>  Baltimore: The John Hopkins Press, 1997"
+cms: "Hall, Bert S.  <i>Weapons and Warfare in Renaissance Europe.</i>  Baltimore: The John Hopkins Press, 1997"
 summary: "A good description of the use of early gunpowder weapons in Europe."
 date: "1997"
 data:
@@ -36,4 +36,3 @@ data:
     ref2: "p. 151"
     skip: true
     skip_note: no powder charges are given.
-

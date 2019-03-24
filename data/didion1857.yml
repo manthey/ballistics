@@ -844,8 +844,1026 @@ data:
                   - final_velocity: 312.1 m/s
                   - final_velocity: 303.1 m/s
                   - final_velocity: 307.4 m/s
-
-
-# Recorded through page 20
-
-# Dates and sizes on p. 26-28
+      -
+        date: 1840
+        charge: 2.0 kg
+        data:
+          -
+            atmospheric_density: 1.1646 kg/m/m/m
+            data:
+              -
+                range: 15.0 m
+                mass: 12.007 kg
+                diameter: 148.61 mm
+                data:
+                  - final_velocity: 400.3 m/s
+                  - final_velocity: 395.0 m/s
+                  - final_velocity: 400.8 m/s
+                  - final_velocity: 407.9 m/s
+              -
+                range: 65.0 m
+                mass: 11.989 kg
+                diameter: 148.61 mm
+                data:
+                  - final_velocity: 387.1 m/s
+                  - final_velocity: 382.2 m/s
+                  - final_velocity: 386.3 m/s
+                  - final_velocity: 390.7 m/s
+          -
+            atmospheric_density: 1.1810 kg/m/m/m
+            data:
+              -
+                range: 65.0 m
+                mass: 12.101 kg
+                diameter: 148.50 mm
+                data:
+                  - final_velocity: 379.0 m/s
+                  - final_velocity: 382.3 m/s
+                  - final_velocity: 381.4 m/s
+                  - final_velocity: 382.2 m/s
+              -
+                range: 15.0 m
+                mass: 12.094 kg
+                diameter: 148.51 mm
+                data:
+                  - final_velocity: 395.1 m/s
+                  - final_velocity: 419.0 m/s
+                  - final_velocity: 394.1 m/s
+                  - final_velocity: 392.4 m/s
+      -
+        date: 1840
+        charge: 3.0 kg
+        data:
+          -
+            atmospheric_density: 1.1726 kg/m/m/m
+            data:
+              -
+                range: 15.0 m
+                mass: 12.102 kg
+                diameter: 148.16 mm
+                data:
+                  - final_velocity: 432.2 m/s
+                  - final_velocity: 428.5 m/s
+                  - final_velocity: 446.0 m/s
+                  - final_velocity: 440.6 m/s
+              -
+                range: 65.0 m
+                mass: 12.093 kg
+                diameter: 148.23 mm
+                data:
+                  - final_velocity: 408.7 m/s
+                  - final_velocity: 415.2 m/s
+                  - final_velocity: 419.8 m/s
+                  - final_velocity: 421.3 m/s
+          -
+            atmospheric_density: 1.1582 kg/m/m/m
+            data:
+              -
+                range: 65.0 m
+                mass: 12.060 kg
+                diameter: 148.11 mm
+                data:
+                  - final_velocity: 417.8 m/s
+                  - final_velocity: 416.6 m/s
+                  - final_velocity: 423.0 m/s
+                  - final_velocity: 430.0 m/s
+              -
+                range: 15.0 m
+                mass: 12.087 kg
+                diameter: 148.14 mm
+                data:
+                  - final_velocity: 444.8 m/s
+                  - final_velocity: 430.6 m/s
+                  - final_velocity: 438.5 m/s
+                  - final_velocity: 438.6 m/s
+      -
+        date: 1840
+        charge: 4.0 kg
+        data:
+          -
+            atmospheric_density: 1.1875 kg/m/m/m
+            data:
+              -
+                range: 15.0 m
+                mass: 12.040 kg
+                diameter: 148.06 mm
+                data:
+                  - final_velocity: 479.1 m/s
+                  - final_velocity: 463.2 m/s
+                  - final_velocity: 444.6 m/s
+              -
+                range: 15.0 m
+                mass: 11.975 kg
+                diameter: 147.85 mm
+                data:
+                  - final_velocity: 463.1 m/s
+                  - final_velocity: 464.3 m/s
+                  - final_velocity: 459.2 m/s
+                  - final_velocity: 453.4 m/s
+              -
+                range: 65.0 m
+                mass: 11.999 kg
+                diameter: 147.93 mm
+                data:
+                  - final_velocity: 454.9 m/s
+                  - final_velocity: 430.4 m/s
+                  - final_velocity: 445.9 m/s
+          -
+            atmospheric_density: 1.1678 kg/m/m/m
+            data:
+              -
+                range: 65.0 m
+                mass: 12.001 kg
+                diameter: 147.85 mm
+                data:
+                  - final_velocity: 436.9 m/s
+                  - final_velocity: 451.4 m/s
+                  - final_velocity: 460.0 m/s
+                  - final_velocity: 426.9 m/s
+                  - final_velocity: 458.1 m/s
+              -
+                range: 15.0 m
+                mass: 11.986 kg
+                diameter: 147.82 mm
+                data:
+                  - final_velocity: 465.2 m/s
+                  - final_velocity: 462.8 m/s
+                  - final_velocity: 467.8 m/s
+                  - final_velocity: 466.8 m/s
+      -
+        date: 1840
+        charge: 4.0 kg
+        data:
+          -
+            atmospheric_density: 1.1899 kg/m/m/m
+            data:
+              -
+                range: 15.0 m
+                mass: 7.400 kg
+                diameter: 148.39 mm
+                data:
+                  - final_velocity: 573.3 m/s
+                  - final_velocity: 565.1 m/s
+                  - final_velocity: 593.8 m/s
+                  - final_velocity: 590.3 m/s
+              -
+                range: 65.0 m
+                mass: 7.4003 kg
+                diameter: 148.42 mm
+                final_velocity: 541.1 m/s
+          -
+            atmospheric_density: 1.1916 kg/m/m/m
+            data:
+              -
+                range: 15.0 m
+                mass: 7.400 kg
+                diameter: 148.23 mm
+                data:
+                  - final_velocity: 566.5 m/s
+                  - final_velocity: 579.0 m/s
+                  - final_velocity: 578.6 m/s
+                  - final_velocity: 574.6 m/s
+              -
+                range: 40.0 m
+                mass: 7.400 kg
+                diameter: 148.26 mm
+                data:
+                  - final_velocity: 552.0 m/s
+                  - final_velocity: 563.3 m/s
+                  - final_velocity: 558.2 m/s
+      -
+        date: 1840
+        charge: 3.0 kg
+        data:
+          -
+            atmospheric_density: 1.1871 kg/m/m/m
+            data:
+              -
+                range: 15.0 m
+                mass: 7.400 kg
+                diameter: 148.13 mm
+                data:
+                  - final_velocity: 556.5 m/s
+                  - final_velocity: 546.4 m/s
+                  - final_velocity: 572.4 m/s
+              -
+                range: 40.0 m
+                mass: 7.400 kg
+                diameter: 148.11 mm
+                data:
+                  - final_velocity: 531.5 m/s
+                  - final_velocity: 533.1 m/s
+                  - final_velocity: 535.3 m/s
+          -
+            atmospheric_density: 1.1793 kg/m/m/m
+            data:
+              -
+                range: 40.0 m
+                mass: 7.400 kg
+                diameter: 148.31 mm
+                data:
+                  - final_velocity: 536.6 m/s
+                  - final_velocity: 532.5 m/s
+                  - final_velocity: 519.5 m/s
+                  - final_velocity: 526.0 m/s
+              -
+                range: 15.0 m
+                mass: 7.400 kg
+                diameter: 148.20 mm
+                data:
+                  - final_velocity: 558.2 m/s
+                  - final_velocity: 548.2 m/s
+                  - final_velocity: 558.4 m/s
+  -
+    ref2: "p. 30"
+    desc: "Expos\u00e9 de exp\u00e9riences de Metz"
+    technique: pendulum
+    angle: 0 deg
+    material: iron
+    date: 1840
+    data:
+      -
+        charge: 0.250 kg
+        data:
+          -
+            atmospheric_density: 1.1938 kg/m/m/m
+            data:
+              -
+                range: 15.2 m
+                mass: 6.120 kg
+                diameter: 118.08 mm
+                data:
+                  - final_velocity: 193.7 m/s
+                  - final_velocity: 197.9 m/s
+                  - final_velocity: 190.8 m/s
+                  - final_velocity: 199.7 m/s
+              -
+                range: 65.2 m
+                mass: 6.149 kg
+                diameter: 118.10 mm
+                data:
+                  - final_velocity: 196.3 m/s
+                  - final_velocity: 195.6 m/s
+                  - final_velocity: 199.3 m/s
+                  - final_velocity: 196.9 m/s
+          -
+            atmospheric_density: 1.1938 kg/m/m/m
+            data:
+              -
+                range: 65.2 m
+                mass: 6.088 kg
+                diameter: 118.15 mm
+                data:
+                  - final_velocity: 193.2 m/s
+                  - final_velocity: 194.1 m/s
+                  - final_velocity: 196.4 m/s
+              -
+                range: 15.2 m
+                mass: 6.089 kg
+                diameter: 118.20 mm
+                data:
+                  - final_velocity: 201.7 m/s
+                  - final_velocity: 202.7 m/s
+                  - final_velocity: 202.2 m/s
+                  - final_velocity: 198.5 m/s
+      -
+        charge: 0.500 kg
+        data:
+          -
+            atmospheric_density: 1.1897 kg/m/m/m
+            data:
+              -
+                range: 15.2 m
+                mass: 6.125 kg
+                diameter: 118.50 mm
+                data:
+                  - final_velocity: 295.0 m/s
+                  - final_velocity: 293.3 m/s
+                  - final_velocity: 297.9 m/s
+                  - final_velocity: 293.9 m/s
+                  - final_velocity: 302.7 m/s
+                  - final_velocity: 297.3 m/s
+              -
+                range: 65.2 m
+                mass: 6.126 kg
+                diameter: 118.51 mm
+                data:
+                  - final_velocity: 286.2 m/s
+                  - final_velocity: 286.6 m/s
+                  - final_velocity: 289.9 m/s
+                  - final_velocity: 289.8 m/s
+                  - final_velocity: 282.5 m/s
+          -
+            atmospheric_density: 1.2083 kg/m/m/m
+            data:
+              -
+                range: 15.2 m
+                mass: 6.123 kg
+                diameter: 118.35 mm
+                data:
+                  - final_velocity: 294.5 m/s
+                  - final_velocity: 286.8 m/s
+                  - final_velocity: 291.0 m/s
+                  - final_velocity: 289.9 m/s
+              -
+                range: 65.2 m
+                mass: 6.126 kg
+                diameter: 118.39 mm
+                data:
+                  - final_velocity: 281.8 m/s
+                  - final_velocity: 278.5 m/s
+                  - final_velocity: 287.4 m/s
+      -
+        charge: 0.750 kg
+        data:
+          -
+            atmospheric_density: 1.1609 kg/m/m/m
+            data:
+              -
+                range: 15.2 m
+                mass: 6.105 kg
+                diameter: 118.08 mm
+                data:
+                  - final_velocity: 351.2 m/s
+                  - final_velocity: 356.4 m/s
+                  - final_velocity: 351.9 m/s
+                  - final_velocity: 356.7 m/s
+              -
+                range: 40.2 m
+                mass: 6.110 kg
+                diameter: 118.05 mm
+                data:
+                  - final_velocity: 350.7 m/s
+                  - final_velocity: 347.5 m/s
+                  - final_velocity: 346.5 m/s
+          -
+            atmospheric_density: 1.1596 kg/m/m/m
+            data:
+              -
+                range: 40.2 m
+                mass: 6.111 kg
+                diameter: 118.43 mm
+                data:
+                  - final_velocity: 344.8 m/s
+                  - final_velocity: 347.2 m/s
+                  - final_velocity: 349.0 m/s
+              -
+                range: 65.2 m
+                mass: 6.120 kg
+                diameter: 118.20 mm
+                data:
+                  - final_velocity: 335.6 m/s
+                  - final_velocity: 336.0 m/s
+                  - final_velocity: 338.2 m/s
+          -
+            atmospheric_density: 1.1828 kg/m/m/m
+            data:
+              -
+                range: 65.2 m
+                mass: 6.081 kg
+                diameter: 118.18 mm
+                data:
+                  - final_velocity: 338.3 m/s
+                  - final_velocity: 337.2 m/s
+                  - final_velocity: 335.6 m/s
+                  - final_velocity: 356.7 m/s
+              -
+                range: 90.2 m
+                mass: 6.085 kg
+                diameter: 118.18 mm
+                data:
+                  - final_velocity: 322.4 m/s
+                  - final_velocity: 335.8 m/s
+                  - final_velocity: 338.7 m/s
+          -
+            atmospheric_density: 1.1746 kg/m/m/m
+            data:
+              -
+                range: 90.2 m
+                mass: 6.126 kg
+                diameter: 118.07 mm
+                data:
+                  - final_velocity: 328.8 m/s
+                  - final_velocity: 331.7 m/s
+              -
+                range: 15.2 m
+                mass: 6.125 kg
+                diameter: 118.07 mm
+                data:
+                  - final_velocity: 352.0 m/s
+                  - final_velocity: 357.5 m/s
+                  - final_velocity: 348.7 m/s
+      -
+        charge: 1.000 kg
+        data:
+          -
+            atmospheric_density: 1.1690 kg/m/m/m
+            data:
+              -
+                range: 15.2 m
+                mass: 6.095 kg
+                diameter: 117.94 mm
+                data:
+                  - final_velocity: 398.9 m/s
+                  - final_velocity: 402.4 m/s
+                  - final_velocity: 400.3 m/s
+                  - final_velocity: 402.8 m/s
+              -
+                range: 65.2 m
+                mass: 6.095 kg
+                diameter: 117.95 mm
+                data:
+                  - final_velocity: 375.3 m/s
+                  - final_velocity: 379.5 m/s
+                  - final_velocity: 374.4 m/s
+                  - final_velocity: 373.4 m/s
+          -
+            atmospheric_density: 1.1612 kg/m/m/m
+            data:
+              -
+                range: 65.2 m
+                mass: 6.103 kg
+                diameter: 117.92 mm
+                data:
+                  - final_velocity: 373.3 m/s
+                  - final_velocity: 377.4 m/s
+                  - final_velocity: 369.0 m/s
+                  - final_velocity: 374.2 m/s
+              -
+                range: 15.2 m
+                mass: 6.105 kg
+                diameter: 117.92 mm
+                data:
+                  - final_velocity: 394.2 m/s
+                  - final_velocity: 396.4 m/s
+                  - final_velocity: 394.9 m/s
+                  - final_velocity: 407.3 m/s
+      -
+        charge: 1.250 kg
+        data:
+          -
+            atmospheric_density: 1.1512 kg/m/m/m
+            data:
+              -
+                range: 15.2 m
+                mass: 6.133 kg
+                diameter: 118.11 mm
+                data:
+                  - final_velocity: 424.3 m/s
+                  - final_velocity: 429.3 m/s
+                  - final_velocity: 430.8 m/s
+                  - final_velocity: 435.6 m/s
+              -
+                range: 65.2 m
+                mass: 6.133 kg
+                diameter: 118.10 mm
+                data:
+                  - final_velocity: 409.2 m/s
+                  - final_velocity: 408.5 m/s
+                  - final_velocity: 412.9 m/s
+                  - final_velocity: 410.8 m/s
+          -
+            atmospheric_density: 1.1366 kg/m/m/m
+            data:
+              -
+                range: 65.2 m
+                mass: 6.129 kg
+                diameter: 118.30 mm
+                data:
+                  - final_velocity: 417.4 m/s
+                  - final_velocity: 413.6 m/s
+                  - final_velocity: 413.7 m/s
+                  - final_velocity: 420.5 m/s
+              -
+                range: 15.2 m
+                mass: 6.128 kg
+                diameter: 118.31 mm
+                data:
+                  - final_velocity: 433.9 m/s
+                  - final_velocity: 430.9 m/s
+                  - final_velocity: 426.4 m/s
+                  - final_velocity: 434.7 m/s
+      -
+        charge: 1.500 kg
+        data:
+          -
+            atmospheric_density: 1.1963 kg/m/m/m
+            data:
+              -
+                range: 15.2 m
+                mass: 6.109 kg
+                diameter: 118.29 mm
+                data:
+                  - final_velocity: 454.4 m/s
+                  - final_velocity: 453.8 m/s
+                  - final_velocity: 457.1 m/s
+                  - final_velocity: 458.2 m/s
+              -
+                range: 65.2 m
+                mass: 6.110 kg
+                diameter: 118.29 mm
+                data:
+                  - final_velocity: 445.0 m/s
+                  - final_velocity: 435.9 m/s
+                  - final_velocity: 437.4 m/s
+                  - final_velocity: 441.5 m/s
+          -
+            atmospheric_density: 1.1856 kg/m/m/m
+            data:
+              -
+                range: 65.2 m
+                mass: 6.093 kg
+                diameter: 118.29 mm
+                data:
+                  - final_velocity: 442.9 m/s
+                  - final_velocity: 443.8 m/s
+                  - final_velocity: 456.9 m/s
+                  - final_velocity: 436.2 m/s
+              -
+                range: 15.2 m
+                mass: 6.094 kg
+                diameter: 118.31 mm
+                data:
+                  - final_velocity: 449.9 m/s
+                  - final_velocity: 457.8 m/s
+                  - final_velocity: 462.6 m/s
+                  - final_velocity: 463.9 m/s
+      -
+        charge: 2.000 kg
+        data:
+          -
+            atmospheric_density: 1.1592 kg/m/m/m
+            data:
+              -
+                range: 15.2 m
+                mass: 6.087 kg
+                diameter: 117.91 mm
+                data:
+                  - final_velocity: 488.7 m/s
+                  - final_velocity: 490.6 m/s
+                  - final_velocity: 481.5 m/s
+                  - final_velocity: 484.4 m/s
+              -
+                range: 40.2 m
+                mass: 6.087 kg
+                diameter: 117.93 mm
+                data:
+                  - final_velocity: 482.4 m/s
+                  - final_velocity: 472.1 m/s
+                  - final_velocity: 481.3 m/s
+          -
+            atmospheric_density: 1.1519 kg/m/m/m
+            data:
+              -
+                range: 40.2 m
+                mass: 6.087 kg
+                diameter: 117.92 mm
+                data:
+                  - final_velocity: 483.9 m/s
+                  - final_velocity: 474.9 m/s
+                  - final_velocity: 484.9 m/s
+                  - final_velocity: 468.6 m/s
+              -
+                range: 65.2 m
+                mass: 6.090 kg
+                diameter: 117.92 mm
+                data:
+                  - final_velocity: 470.7 m/s
+                  - final_velocity: 474.5 m/s
+                  - final_velocity: 465.6 m/s
+                  - final_velocity: 465.1 m/s
+          -
+            atmospheric_density: 1.1727 kg/m/m/m
+            data:
+              -
+                range: 65.2 m
+                mass: 6.117 kg
+                diameter: 117.94 mm
+                data:
+                  - final_velocity: 453.3 m/s
+                  - final_velocity: 479.5 m/s
+                  - final_velocity: 467.7 m/s
+                  - final_velocity: 470.0 m/s
+              -
+                range: 90.2 m
+                mass: 6.118 kg
+                diameter: 117.92 mm
+                data:
+                  - final_velocity: 452.9 m/s
+                  - final_velocity: 455.7 m/s
+                  - final_velocity: 469.8 m/s
+                  - final_velocity: 461.7 m/s
+          -
+            atmospheric_density: 1.1511 kg/m/m/m
+            data:
+              -
+                range: 90.2 m
+                mass: 6.134 kg
+                diameter: 117.96 mm
+                data:
+                  - final_velocity: 459.7 m/s
+                  - final_velocity: 459.8 m/s
+                  - final_velocity: 460.1 m/s
+                  - final_velocity: 461.3 m/s
+              -
+                range: 115.2 m
+                mass: 6.131 kg
+                diameter: 117.92 mm
+                data:
+                  - final_velocity: 437.7 m/s
+                  - final_velocity: 446.9 m/s
+                  - final_velocity: 458.6 m/s
+          -
+            atmospheric_density: 1.1464 kg/m/m/m
+            data:
+              -
+                range: 115.2 m
+                mass: 6.118 kg
+                diameter: 118.08 mm
+                data:
+                  - final_velocity: 438.6 m/s
+                  - final_velocity: 453.4 m/s
+                  - final_velocity: 447.9 m/s
+                  - final_velocity: 435.7 m/s
+              -
+                range: 15.2 m
+                mass: 6.115 kg
+                diameter: 118.03 mm
+                data:
+                  - final_velocity: 483.2 m/s
+                  - final_velocity: 494.8 m/s
+                  - final_velocity: 494.6 m/s
+                  - final_velocity: 480.8 m/s
+  -
+    ref2: "p. 30"
+    desc: "Expos\u00e9 de exp\u00e9riences de Metz"
+    technique: pendulum
+    angle: 0 deg
+    material: iron
+    date: 1840
+    data:
+      -
+        charge: 3.000 kg
+        data:
+          -
+            atmospheric_density: 1.1555 kg/m/m/m
+            data:
+              -
+                range: 14.9 m
+                mass: 6.119 kg
+                diameter: 117.95 mm
+                data:
+                  - final_velocity: 539.1 m/s
+                  - final_velocity: 550.4 m/s
+                  - final_velocity: 556.3 m/s
+                  - final_velocity: 555.8 m/s
+              -
+                range: 39.9 m
+                mass: 6.115 kg
+                diameter: 118.05 mm
+                data:
+                  - final_velocity: 538.3 m/s
+                  - final_velocity: 553.6 m/s
+                  - final_velocity: 532.1 m/s
+                  - final_velocity: 520.7 m/s
+          -
+            atmospheric_density: 1.1797 kg/m/m/m
+            data:
+              -
+                range: 39.9 m
+                mass: 6.115 kg
+                diameter: 118.21 mm
+                data:
+                  - final_velocity: 541.6 m/s
+                  - final_velocity: 541.8 m/s
+                  - final_velocity: 537.6 m/s
+              -
+                range: 64.9 m
+                mass: 6.119 kg
+                diameter: 118.21 mm
+                data:
+                  - final_velocity: 512.5 m/s
+                  - final_velocity: 518.9 m/s
+                  - final_velocity: 531.1 m/s
+                  - final_velocity: 539.2 m/s
+          -
+            atmospheric_density: 1.1765 kg/m/m/m
+            data:
+              -
+                range: 64.9 m
+                mass: 6.083 kg
+                diameter: 118.04 mm
+                data:
+                  - final_velocity: 525.6 m/s
+                  - final_velocity: 541.7 m/s
+                  - final_velocity: 523.4 m/s
+                  - final_velocity: 523.3 m/s
+              -
+                range: 89.9 m
+                mass: 6.084 kg
+                diameter: 118.07 mm
+                data:
+                  - final_velocity: 503.6 m/s
+                  - final_velocity: 523.3 m/s
+                  - final_velocity: 510.1 m/s
+                  -
+                    final_velocity: 589.1 m/s
+                    final_velocity_note: This was excluded from the listed average
+          -
+            atmospheric_density: 1.1563 kg/m/m/m
+            data:
+              -
+                range: 89.9 m
+                mass: 6.136 kg
+                diameter: 118.09 mm
+                data:
+                  - final_velocity: 527.2 m/s
+                  - final_velocity: 516.9 m/s
+                  - final_velocity: 500.3 m/s
+                  - final_velocity: 500.9 m/s
+              -
+                range: 14.9 m
+                mass: 6.136 kg
+                diameter: 118.06 mm
+                data:
+                  - final_velocity: 544.6 m/s
+                  - final_velocity: 545.2 m/s
+                  - final_velocity: 549.4 m/s
+                  - final_velocity: 541.3 m/s
+          -
+            atmospheric_density: 1.1661 kg/m/m/m
+            data:
+              -
+                range: 14.9 m
+                mass: 6.124 kg
+                diameter: 118.30 mm
+                data:
+                  - final_velocity: 536.7 m/s
+                  - final_velocity: 549.0 m/s
+                  - final_velocity: 531.6 m/s
+                  - final_velocity: 546.7 m/s
+              -
+                range: 89.9 m
+                mass: 6.127 kg
+                diameter: 118.30 mm
+                data:
+                  - final_velocity: 519.9 m/s
+                  - final_velocity: 487.7 m/s
+                  - final_velocity: 504.8 m/s
+                  - final_velocity: 493.0 m/s
+      -
+        charge: 3.000 kg
+        data:
+          -
+            atmospheric_density: 1.1982 kg/m/m/m
+            data:
+              -
+                range: 14.9 m
+                mass: 4.020 kg
+                diameter: 118.29 mm
+                data:
+                  - final_velocity: 645.5 m/s
+                  - final_velocity: 661.2 m/s
+                  - final_velocity: 659.4 m/s
+                  - final_velocity: 651.1 m/s
+              -
+                range: 39.9 m
+                mass: 4.020 kg
+                diameter: 118.29 mm
+                data:
+                  - final_velocity: 615.7 m/s
+                  - final_velocity: 640.6 m/s
+                  - final_velocity: 627.5 m/s
+                  - final_velocity: 608.2 m/s
+          -
+            atmospheric_density: 1.1849 kg/m/m/m
+            data:
+              -
+                range: 39.9 m
+                mass: 4.020 kg
+                diameter: 118.30 mm
+                data:
+                  - final_velocity: 634.0 m/s
+                  - final_velocity: 636.2 m/s
+                  - final_velocity: 638.1 m/s
+              -
+                range: 64.9 m
+                mass: 4.020 kg
+                diameter: 118.29 mm
+                data:
+                  - final_velocity: 600.5 m/s
+                  - final_velocity: 594.3 m/s
+                  - final_velocity: 598.9 m/s
+          -
+            atmospheric_density: 1.1620 kg/m/m/m
+            data:
+              -
+                range: 64.9 m
+                mass: 4.020 kg
+                diameter: 118.16 mm
+                data:
+                  - final_velocity: 594.7 m/s
+                  - final_velocity: 612.4 m/s
+                  - final_velocity: 604.3 m/s
+                  - final_velocity: 610.7 m/s
+              -
+                range: 14.9 m
+                mass: 4.020 kg
+                diameter: 118.19 mm
+                data:
+                  - final_velocity: 662.9 m/s
+                  - final_velocity: 658.4 m/s
+                  - final_velocity: 662.3 m/s
+                  - final_velocity: 648.7 m/s
+          -
+            atmospheric_density: 1.1598 kg/m/m/m
+            data:
+              -
+                range: 14.9 m
+                mass: 4.020 kg
+                diameter: 118.10 mm
+                data:
+                  - final_velocity: 657.1 m/s
+                  - final_velocity: 654.9 m/s
+                  - final_velocity: 637.6 m/s
+                  - final_velocity: 665.1 m/s
+              -
+                range: 64.9 m
+                mass: 4.020 kg
+                diameter: 118.10 mm
+                data:
+                  - final_velocity: 607.0 m/s
+                  - final_velocity: 608.6 m/s
+                  - final_velocity: 601.5 m/s
+                  - final_velocity: 621.2 m/s
+      -
+        charge: 1.000 kg
+        data:
+          -
+            atmospheric_density: 1.1767 kg/m/m/m
+            data:
+              -
+                range: 15.0 m
+                mass: 4.062 kg
+                diameter: 103.12 mm
+                data:
+                  - final_velocity: 476.2 m/s
+                  - final_velocity: 468.0 m/s
+                  - final_velocity: 479.0 m/s
+                  - final_velocity: 476.5 m/s
+              -
+                range: 65.0 m
+                mass: 4.062 kg
+                diameter: 103.12 mm
+                data:
+                  - final_velocity: 433.3 m/s
+                  - final_velocity: 444.6 m/s
+                  - final_velocity: 445.6 m/s
+                  - final_velocity: 446.2 m/s
+          -
+            atmospheric_density: 1.2147 kg/m/m/m
+            data:
+              -
+                range: 65.0 m
+                mass: 4.048 kg
+                mass_note: 100ths digit is hard to read
+                diameter: 103.09 mm
+                data:
+                  - final_velocity: 457.5 m/s
+                  - final_velocity: 447.8 m/s
+                  - final_velocity: 449.5 m/s
+                  - final_velocity: 451.4 m/s
+              -
+                range: 115.0 m
+                mass: 4.060 kg
+                diameter: 102.41 mm
+                data:
+                  - final_velocity: 396.8 m/s
+                  - final_velocity: 418.1 m/s
+                  - final_velocity: 427.2 m/s
+          -
+            atmospheric_density: 1.2151 kg/m/m/m
+            data:
+              -
+                range: 115.0 m
+                mass: 4.060 kg
+                diameter: 102.91 mm
+                data:
+                  - final_velocity: 420.1 m/s
+                  - final_velocity: 422.3 m/s
+                  - final_velocity: 422.8 m/s
+                  - final_velocity: 428.2 m/s
+                  - final_velocity: 417.9 m/s
+              -
+                range: 15.0 m
+                mass: 4.060 kg
+                diameter: 102.91 mm
+                data:
+                  - final_velocity: 473.9 m/s
+                  - final_velocity: 479.6 m/s
+                  - final_velocity: 470.4 m/s
+                  - final_velocity: 477.2 m/s
+  -
+    ref2: "p. 31"
+    desc: "Expos\u00e9 de exp\u00e9riences de Metz"
+    technique: pendulum
+    angle: 0 deg
+    material: iron
+    date: 1840
+    mass: 22.400 kg
+    data:
+      -
+        charge: 1.000 kg
+        atmospheric_density: 1.1815 kg/m/m/m
+        data:
+          -
+            range: 15.0 m
+            diameter: 219.32 mm
+            data:
+              - final_velocity: 195.0 m/s
+              - final_velocity: 204.5 m/s
+          -
+            range: 40.0 m
+            diameter: 219.34 mm
+            data:
+              - final_velocity: 199.7 m/s
+              - final_velocity: 205.4 m/s
+          -
+            range: 40.0 m
+            diameter: 219.64 mm
+            data:
+              - final_velocity: 203.9 m/s
+              - final_velocity: 212.5 m/s
+              - final_velocity: 207.5 m/s
+          -
+            range: 15.0 m
+            diameter: 219.67 mm
+            data:
+              - final_velocity: 210.4 m/s
+              - final_velocity: 213.2 m/s
+              - final_velocity: 205.5 m/s
+      -
+        charge: 2.000 kg
+        atmospheric_density: 1.1910 kg/m/m/m
+        data:
+          -
+            range: 15.0 m
+            diameter: 219.50 mm
+            data:
+              - final_velocity: 305.1 m/s
+              - final_velocity: 302.9 m/s
+              - final_velocity: 294.1 m/s
+          -
+            range: 40.0 m
+            diameter: 219.55 mm
+            data:
+              - final_velocity: 292.0 m/s
+              - final_velocity: 292.0 m/s
+              - final_velocity: 290.7 m/s
+          -
+            range: 40.0 m
+            diameter: 219.97 mm
+            data:
+              - final_velocity: 288.2 m/s
+              - final_velocity: 288.0 m/s
+              - final_velocity: 289.9 m/s
+          -
+            range: 15.0 m
+            diameter: 219.97 mm
+            data:
+              - final_velocity: 290.2 m/s
+              - final_velocity: 288.9 m/s
+              - final_velocity: 289.9 m/s
+      -
+        charge: 3.000 kg
+        atmospheric_density: 1.2113 kg/m/m/m
+        data:
+          -
+            range: 15.0 m
+            diameter: 219.80 mm
+            data:
+              - final_velocity: 383.8 m/s
+              - final_velocity: 377.2 m/s
+              - final_velocity: 357.6 m/s
+          -
+            range: 40.0 m
+            diameter: 219.85 mm
+            data:
+              - final_velocity: 350.9 m/s
+              - final_velocity: 363.6 m/s
+              - final_velocity: 361.7 m/s
+          -
+            range: 40.0 m
+            diameter: 220.04 mm
+            data:
+              - final_velocity: 363.9 m/s
+              - final_velocity: 355.1 m/s
+              - final_velocity: 361.9 m/s
+          -
+            range: 15.0 m
+            diameter: 220.11 mm
+            data:
+              - final_velocity: 358.4 m/s
+              - final_velocity: 352.5 m/s
+              - final_velocity: 352.2 m/s
+              - final_velocity: 359.1 m/s
