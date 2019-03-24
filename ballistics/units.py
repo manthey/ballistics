@@ -101,6 +101,14 @@ UnitsTable = [{
     'value': 5280 * StatuteFootInMeters,
     'desc': 'Statute mile (British and American mile)',
 }, {
+    'names': ['singlepace', 'singlepaces'],
+    'value': 2.55 * StatuteFootInMeters,
+    'desc': 'Common pace (2.5 feet)',
+}, {
+    'names': ['pace', 'paces', 'doublepace', 'doublepaces'],
+    'value': 5 * StatuteFootInMeters,
+    'desc': 'Geometrical pace (5 feet)',
+}, {
     # -- Paris distances
     'names': ['ftfr', 'parisfoot', 'frenchfoot', 'parisfeet', 'frenchfeet'],
     'value': ParisFootInMeters,

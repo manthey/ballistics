@@ -1,0 +1,62 @@
+---
+key: moretti1673
+ref: "Moretti, 1673"
+cms: "Moretti, Tomaso.  <i>A General Treatise of Artillery: or Great Ordnance.  Translated into English by Sir Jonas Moore</i>  London: William Godbid, 1673."
+summary: "The peculiar treatise has commentary about a bridge interspersed between sections on artillery."
+date: "1683"
+data:
+  -
+    ref2: "p. 91"
+    angle: 45 deg
+    angle_note: "Greatest elevation"
+    material: iron
+    desc: "Of the Length of Ranges"
+    charge_note: "On p. 62, for better powder, use 3/4 the weight of the ball, and for worse powder use the weight of the ball.  On p. 66, the charge is listed as of equal weight to the ball.  I have listed both for comparison"
+    technique: theory
+    technique_note: The given ranges are not believable, and therefore I've marked this a theoretical.
+    data:
+      -
+        skip: True
+        skip_note: Skipped point blank and Smeriglio as there is insufficient information.
+      -
+        desc2: "Falconet"
+        mass: 3 lb
+        range: 1843 paces
+        data:
+          - charge: 3 lb
+          - charge: 2.25 lb
+      -
+        desc2: "Falcon"
+        mass: 6 lb
+        range: 3226 paces
+        data:
+          - charge: 6 lb
+          - charge: 4.5 lb
+      -
+        desc2: "Sacre"
+        mass: 10 lb
+        range: 4032 paces
+        data:
+          - charge: 10 lb
+          - charge: 7.5 lb
+      -
+        desc2: "Demi-Culvering"
+        mass: 14 lb
+        range: 4378 paces
+        data:
+          - charge: 14 lb
+          - charge: 10.5 lb
+      -
+        desc2: "Colebrina or Culv."
+        mass: 30 lb
+        range: 5760 paces
+        data:
+          - charge: 30 lb
+          - charge: 22.5 lb
+      -
+        desc2: "Culvering"
+        mass: 50 lb
+        range: 6106 paces
+        data:
+          - charge: 50 lb
+          - charge: 37.5 lb

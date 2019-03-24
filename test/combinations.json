@@ -546,6 +546,18 @@
  },
  {
   "conditions": {
+   "angle": "45 deg",
+   "charge": "10 lb",
+   "diameter": "10 in",
+   "mass": "98 lb",
+   "material": "iron",
+   "time": "36 s"
+  },
+  "power_factor": 1271312.5212929875,
+  "time": 36.00000000508727
+ },
+ {
+  "conditions": {
    "angle": "1 deg 55 arcmin 52 arcsec",
    "charge": "3.5 kg",
    "diameter": "0.2202 m",

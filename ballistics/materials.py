@@ -57,7 +57,7 @@ MaterialsTable = [{
     'maxdensity': 9000,
     'desc': 'Copper',
 }, {
-    # Cast Iron - Robertson: 7135, Natco: 7208, Adye: 7425
+    # Cast Iron - Robertson: 7135, Natco: 7208, Adye: 7425, Ordnance Manual, 1850: 7000
     'names': ['castiron', 'cast', 'iron'],
     'density': 7450,
     'mindensity': 6800,

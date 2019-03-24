@@ -393,8 +393,8 @@ data:
     charge: 1.5 oz
     angle: 45 deg
     angle_note: Between 40 and 50 degrees
-    range: 1992.5 ft
-    range_note: "797 common paces.  I take a common pace to be 2.5 ft"
+    range: 797 singlepaces
+    range_note: "It isn't clear what a pace is in this context; perhaps this should be double paces."
   -
     desc: "Note from St. Remy on an experminent by Mr. Du Metz"
     ref2: "p. 88"

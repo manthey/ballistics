@@ -1,0 +1,417 @@
+---
+key: ordnance1850
+ref: "Ordnance Manual, 1850"
+cms: "<i>The Ordnance Manual for the Use of the Officers of the United States Army, Second Edition.</i>  Washington: Gideon &amp; Co., 1850."
+summary: "This covers many aspects of inspecting and maintaining artillery."
+date: "1850"
+data:
+  -
+    ref2: "p. 222"
+    desc: "Minimum proof requirements"
+    technique: "pendulum"
+    angle: 0 deg
+    material: iron
+    data:
+      -
+        mass: 24 lb
+        charge: 6 lb
+        initial_velocity: 1600 ft/s
+
+      -
+        mass: 12 lb
+        charge: 3 lb
+        initial_velocity: 1550 ft/s
+
+      -
+        mass: 6 lb
+        charge: 1.5 lb
+        initial_velocity: 1500 ft/s
+  -
+    ref2: "p. 359"
+    desc: "Ranges of Field Guns and Howitzers"
+    material: iron
+    data:
+      -
+        desc2: "6-pdr. field gun"
+        mass: 6 lb
+        charge: 1.25 lb
+        angle_note: "listed elevation plus \"Natural angle of sight\" from p. 5"
+        data:
+          -
+            angle: 1 deg
+            range: 318 yards
+          -
+            angle: 2 deg
+            range: 674 yards
+          -
+            angle: 3 deg
+            range: 867 yards
+          -
+            angle: 4 deg
+            range: 1138 yards
+          -
+            angle: 5 deg
+            range: 1256 yards
+          -
+            angle: 6 deg
+            range: 1523 yards
+  -
+    ref2: "p. 360"
+    desc: "Ranges of Field Guns and Howitzers"
+    material: iron
+    data:
+      -
+        desc2: "12-pdr. field gun"
+        mass: 12 lb
+        charge: 2.5 lb
+        angle_note: "listed elevation plus \"Natural angle of sight\" from p. 5"
+        data:
+          -
+            angle: 1 deg
+            range: 347 yards
+          -
+            angle: 2 deg
+            range: 662 yards
+          -
+            angle: 2 deg 30 arcmin
+            range: 785 yards
+          -
+            angle: 3 deg
+            range: 909 yards
+          -
+            angle: 4 deg
+            range: 1269 yards
+          -
+            angle: 5 deg
+            range: 1455 yards
+          -
+            angle: 6 deg
+            range: 1663 yards
+  -
+    ref2: "p. 361"
+    desc: "Ranges of Field Guns and Howitzers"
+    material: iron
+    data:
+      -
+        desc2: "18-pdr. siege and garrison gun"
+        mass: 18 lb
+        charge: 4.5 lb
+        angle_note: "listed elevation plus \"Natural angle of sight\" from p. 5"
+        data:
+          -
+            angle: 2 deg 30 arcmin
+            range: 641 yards
+          -
+            angle: 3 deg 30 arcmin
+            range: 950 yards
+          -
+            angle: 4 deg 30 arcmin
+            range: 1256 yards
+          -
+            angle: 5 deg 30 arcmin
+            range: 1450 yards
+          -
+            angle: 6 deg 30 arcmin
+            range: 1592 yards
+      -
+        desc2: "24-pdr. siege and garrison gun"
+        mass: 24 lb
+        angle_note: "listed elevation plus \"Natural angle of sight\" from p. 5"
+        data:
+          -
+            charge: 6 lb
+            data:
+              -
+                angle: 1 deg 30 arcmin
+                range: 412 yards
+              -
+                angle: 2 deg 30 arcmin
+                range: 842 yards
+              -
+                angle: 3 deg
+                range: 953 yards
+              -
+                angle: 3 deg 30 arcmin
+                range: 1147 yards
+              -
+                angle: 4 deg 30 arcmin
+                range: 1417 yards
+              -
+                angle: 5 deg 30 arcmin
+                range: 1666 yards
+              -
+                angle: 6 deg 30 arcmin
+                range: 1901 yards
+          -
+            charge: 8 lb
+            data:
+              -
+                angle: 2 deg 30 arcmin
+                range: 883 yards
+              -
+                angle: 3 deg 30 arcmin
+                range: 1170 yards
+              -
+                angle: 4 deg 30 arcmin
+                range: 1454 yards
+              -
+                angle: 5 deg 30 arcmin
+                range: 1639 yards
+              -
+                angle: 6 deg 30 arcmin
+                range: 1834 yards
+      -
+        desc2: "32-pdr. sea-coast gun"
+        mass: 32 lb
+        data:
+          -
+            charge: 6 lb
+            data:
+              -
+                angle: 1 deg 45 arcmin
+                range: 900 yards
+          -
+            charge: 8 lb
+            data:
+              -
+                angle: 1 deg
+                range: 713 yards
+              -
+                angle: 1 deg 30 arcmin
+                range: 800 yards
+              -
+                angle: 1 deg 35 arcmin
+                range: 900 yards
+              -
+                angle: 2 deg
+                range: 1100 yards
+              -
+                angle: 3 deg
+                range: 1433 yards
+              -
+                angle: 4 deg
+                range: 1684 yards
+              -
+                angle: 5 deg
+                range: 1922 yards
+          -
+            charge: 10.67 lb
+            data:
+              -
+                angle: 1 deg
+                range: 780 yards
+              -
+                angle: 2 deg
+                range: 1155 yards
+              -
+                angle: 3 deg
+                range: 1517 yards
+      -
+        desc2: "42-pdr. sea-coast gun"
+        mass: 42 lb
+        data:
+          -
+            charge: 10.5 lb
+            data:
+              -
+                angle: 1 deg
+                range: 775 yards
+              -
+                angle: 2 deg
+                range: 1010 yards
+              -
+                angle: 3 deg
+                range: 1300 yards
+              -
+                angle: 4 deg
+                range: 1600 yards
+              -
+                angle: 5 deg
+                range: 1955 yards
+          -
+            charge: 14 lb
+            data:
+              -
+                angle: 1 deg
+                range: 770 yards
+              -
+                angle: 2 deg
+                range: 1128 yards
+              -
+                angle: 3 deg
+                range: 1380 yards
+              -
+                angle: 4 deg
+                range: 1687 yards
+              -
+                angle: 5 deg
+                range: 1915 yards
+  -
+    ref2: "p. 362"
+    desc: "Ranges of Heavy Ordnance"
+    material: iron
+    data:
+      -
+        desc2: "8-inch siege howitzer"
+        diameter: 8 in
+        mass: 45 lb
+        angle_note: "listed elevation plus \"Natural angle of sight\" from p. 6"
+        data:
+          -
+            charge: 4 lb
+            data:
+              -
+                angle: 1 deg
+                range: 251 yards
+              -
+                angle: 2 deg
+                range: 435 yards
+              -
+                angle: 3 deg
+                range: 618 yards
+              -
+                angle: 4 deg
+                range: 720 yards
+              -
+                angle: 5 deg
+                range: 992 yards
+              -
+                angle: 6 deg
+                range: 1241 yards
+              -
+                angle: 13 deg 30 arcmin
+                range: 2280 yards
+      -
+        skip: true
+        skip_note: no natural angle of sea-coast howitzers is listed
+  -
+    ref2: "p. 362"
+    desc: "Ranges of Heavy Ordnance"
+    material: iron
+    data:
+      -
+        desc2: "13-inch sea-coast mortar"
+        diameter: 13 in
+        mass: 200 lb
+        charge: 20 lb
+        angle: 45 deg
+        range: 4325 yards
+      -
+        desc2: "12-inch sea-coast mortar; experimental"
+        diameter: 12 in
+        mass: 200 lb
+        charge: 20 lb
+        angle: 45 deg
+        range: 4625 yards
+      -
+        desc2: "10-inch sea-coast mortar"
+        diameter: 10 in
+        mass: 98 lb
+        charge: 10 lb
+        angle: 45 deg
+        group: 364-1
+        data:
+          - range: 4250 yards
+          - time: 36 s
+      -
+        desc2: "10-inch siege mortar"
+        diameter: 10 in
+        mass: 90 lb
+        angle: 45 deg
+        data:
+          -
+            group: 364-2
+            charge: 1 lb
+            data:
+              - range: 300 yards
+              - time: 6.5 s
+
+          -
+            group: 364-3
+            charge: 1.5 lb
+            data:
+              - range: 700 yards
+              - time: 12 s
+          -
+            group: 364-4
+            charge: 2 lb
+            data:
+              - range: 1000 yards
+              - time: 14 s
+          -
+            group: 364-5
+            charge: 2.5 lb
+            data:
+              - range: 1300 yards
+              - time: 16 s
+          -
+            group: 364-6
+            charge: 3 lb
+            data:
+              - range: 1600 yards
+              - time: 18 s
+          -
+            group: 364-7
+            charge: 3.5 lb
+            data:
+              - range: 1800 yards
+              - time: 19 s
+          -
+            group: 364-8
+            charge: 4 lb
+            data:
+              - range: 2100 yards
+              - time: 21 s
+      -
+        desc2: "8-inch siege mortar"
+        mass: 46 lb
+        diameter: 8 in
+        angle: 45 deg
+        data:
+          -
+            group: 364-9
+            charge: 0 lb 10.75 oz
+            data:
+              - range: 500 yards
+              - time: 10 s
+
+          -
+            group: 364-10
+            charge: 0 lb 13.75 oz
+            data:
+              - range: 600 yards
+              - time: 11 s
+          -
+            group: 364-11
+            charge: 1 lb
+            data:
+              - range: 750 yards
+              - time: 12.25 s
+          -
+            group: 364-12
+            charge: 1 lb 2 oz
+            data:
+              - range: 900 yards
+              - time: 13 s
+          -
+            group: 364-13
+            charge: 1 lb 3.5 oz
+            data:
+              - range: 1000 yards
+              - time: 13.5 s
+          -
+            group: 364-14
+            charge: 1 lb 4.75 oz
+            data:
+              - range: 1100 yards
+              - time: 14 s
+          -
+            group: 364-15
+            charge: 1 lb 6 oz
+            data:
+              - range: 1200 yards
+              - time: 14.5 s
+  -
+    ref2: "p. 365"
+    skip: true
+    skip_note: values from Washington Arsenal are listed in Mordecai, 1845.
