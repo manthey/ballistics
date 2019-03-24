@@ -141,6 +141,7 @@
  },
  "didion1857": {
   "cms": "Didion, Isidore.  <i>Lois de la R\u00e9sistance de L'Air sur Les Projectiles.</i>  Paris: J. Dumaine, Juin 1857.",
+  "details": "Didion produces equations for air resistance based on ball velocity, atmospheric density, and ball size.  He compares the results of his equations with the experimental data from Robin, Hutton, and Metz.  His final resistance equation is:\n\n$\\rho = 0.027 \\pi R^2 v^2 (1 + 0.0023 v)$  (p. 79)\n\nfor an atmospheric density of 1.2083 kg/m/m/m.\n",
   "key": "didion1857",
   "ref": "Didion, 1857",
   "summary": "Didion uses data from Robins, Hutton, and Metz to produce equations for air resistance."
@@ -161,7 +162,7 @@
   "summary": "Some captured Spanish gunpowder is compared to some English gunpowder that was reputed to be worse."
  },
  "hall1997": {
-  "cms": "Hall, Bert S.  <i>Weapons and Warfate in Renaissance Europe.</i>  Baltimore: The John Hopkins Press, 1997",
+  "cms": "Hall, Bert S.  <i>Weapons and Warfare in Renaissance Europe.</i>  Baltimore: The John Hopkins Press, 1997",
   "key": "hall1997",
   "ref": "Hall, 1997",
   "summary": "A good description of the use of early gunpowder weapons in Europe."
