@@ -226,8 +226,8 @@ def compile_grid(grid, entry, opts, item):
     for i in range(len(ReList)):
         Re = ReList[i]
         Mn = MnList[i]
-        re = int(round(math.log10(Re) * res))
-        mn = int(round(Mn * res))
+        re = int(math.floor(math.log10(Re) * res))
+        mn = int(math.floor(Mn * res))
         if re != last_re or mn != last_mn:
             if mn not in grid:
                 grid[mn] = {}
@@ -259,15 +259,15 @@ def make_groups_grid(opts):
             continue
         avg_pf = sum(entry['power_factor'] for entry in group) / len(group)
         for entry in group:
-            factor = 1 if entry['power_factor'] > avg_pf else -1
+            factor = -1 if entry['power_factor'] > avg_pf else 1
             ReList = entry['re']
             MnList = entry['mn']
             last_re, last_mn = None, None
             for i in range(len(ReList)):
                 Re = ReList[i]
                 Mn = MnList[i]
-                re = int(round(math.log10(Re) * res))
-                mn = int(round(Mn * res))
+                re = int(math.floor(math.log10(Re) * res))
+                mn = int(math.floor(Mn * res))
                 if re != last_re or mn != last_mn:
                     if mn not in GroupsGrid:
                         GroupsGrid[mn] = {}

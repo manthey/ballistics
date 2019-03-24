@@ -14,6 +14,20 @@
  },
  {
   "conditions": {
+   "angle": "0 deg",
+   "atmospheric_density": "1.1902 kg/m/m/m",
+   "charge": "1.5 kg",
+   "diameter": "147.96 mm",
+   "final_velocity": "369.3 m/s",
+   "mass": "12.005 kg",
+   "material": "iron",
+   "range": "15.0 m"
+  },
+  "power_factor": 558417.05532413,
+  "time": 0.04038575844077191
+ },
+ {
+  "conditions": {
    "angle": "1 deg 47 arcmin 5 arcsec",
    "atmospheric_density": "0.001187 g/cm/cm/cm",
    "charge": "3.276 kg",

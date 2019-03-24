@@ -295,5 +295,557 @@ data:
               -
                 range: 120 ft
                 final_velocity: 277 ft/s
+  -
+    ref2: "p. 16"
+    desc: "Exp\u00e9riences de Hutton"
+    technique: pendulum
+    angle: 0 deg
+    material: iron
+    data:
+      -
+        date: 1789
+        diameter: 2.78 in
+        mass: 2 lb 15 oz
+        pressure: 29.69 inHg
+        temperature: 52 F
+        data:
+          -
+            charge: 24 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1727 ft/s
+              -
+                range: 80 ft
+                final_velocity: 1700 ft/s
+              -
+                range: 130 ft
+                final_velocity: 1609 ft/s
+              -
+                range: 180 ft
+                final_velocity: 1586 ft/s
+                mass: 3 lb
+              -
+                range: 230 ft
+                final_velocity: 1550 ft/s
+              -
+                range: 330 ft
+                final_velocity: 1520 ft/s
+              -
+                range: 430 ft
+                final_velocity: 1323 ft/s
+          -
+            charge: 16 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1584 ft/s
+              -
+                range: 80 ft
+                final_velocity: 1490 ft/s
+              -
+                range: 130 ft
+                final_velocity: 1487 ft/s
+              -
+                range: 180 ft
+                final_velocity: 1422 ft/s
+              -
+                range: 230 ft
+                final_velocity: 1393 ft/s
+              -
+                range: 330 ft
+                final_velocity: 1330 ft/s
+              -
+                range: 430 ft
+                final_velocity: 1227 ft/s
+          -
+            charge: 12 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1296 ft/s
+                mass: 2 lb 14.9167 oz
+              -
+                range: 80 ft
+                final_velocity: 1247 ft/s
+                mass: 2 lb 14.9167 oz
+              -
+                range: 130 ft
+                final_velocity: 1226 ft/s
+                mass: 2 lb 14.9167 oz
+              -
+                range: 180 ft
+                final_velocity: 1214 ft/s
+                mass: 2 lb 14.9167 oz
+              -
+                range: 230 ft
+                final_velocity: 1205 ft/s
+                mass: 2 lb 14.9167 oz
+              -
+                range: 330 ft
+                final_velocity: 1119 ft/s
+                mass: 2 lb 14 oz
+          -
+            charge: 8 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1062 ft/s
+              -
+                range: 80 ft
+                final_velocity: 1043 ft/s
+              -
+                range: 130 ft
+                final_velocity: 1016 ft/s
+              -
+                range: 180 ft
+                final_velocity: 1016 ft/s
+              -
+                range: 230 ft
+                final_velocity: 960 ft/s
+              -
+                range: 330 ft
+                final_velocity: 924 ft/s
+              -
+                range: 430 ft
+                final_velocity: 902 ft/s
+          -
+            charge: 4 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 669 ft/s
+                mass: 2 lb 14.5 oz
+              -
+                range: 80 ft
+                final_velocity: 670 ft/s
+                mass: 2 lb 14.75 oz
+              -
+                range: 130 ft
+                final_velocity: 651 ft/s
+                mass: 2 lb 14.75 oz
+              -
+                range: 180 ft
+                final_velocity: 641 ft/s
+                mass: 2 lb 14.75 oz
+              -
+                range: 230 ft
+                final_velocity: 653 ft/s
+                mass: 2 lb 14.75 oz
+      -
+        date: 1789
+        desc2: "The previous experiment adjusted to standardize on a 3 lb ball and a pressure of 30 inHg"
+        diameter: 2.78 in
+        mass: 3 lb
+        pressure: 30.0 inHg
+        temperature: 52 F
+        data:
+          -
+            charge: 24 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1722 ft/s
+              -
+                range: 80 ft
+                final_velocity: 1695 ft/s
+              -
+                range: 130 ft
+                final_velocity: 1604 ft/s
+              -
+                range: 180 ft
+                final_velocity: 1578 ft/s
+              -
+                range: 230 ft
+                final_velocity: 1546 ft/s
+              -
+                range: 330 ft
+                final_velocity: 1498 ft/s
+              -
+                range: 430 ft
+                final_velocity: 1300 ft/s
+          -
+            charge: 16 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1568 ft/s
+              -
+                range: 80 ft
+                final_velocity: 1473 ft/s
+              -
+                range: 130 ft
+                final_velocity: 1471 ft/s
+              -
+                range: 180 ft
+                final_velocity: 1410 ft/s
+              -
+                range: 230 ft
+                final_velocity: 1384 ft/s
+              -
+                range: 330 ft
+                final_velocity: 1310 ft/s
+              -
+                range: 430 ft
+                final_velocity: 1219 ft/s
+          -
+            charge: 12 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1291 ft/s
+              -
+                range: 80 ft
+                final_velocity: 1243 ft/s
+              -
+                range: 130 ft
+                final_velocity: 1222 ft/s
+              -
+                range: 180 ft
+                final_velocity: 1211 ft/s
+              -
+                range: 230 ft
+                final_velocity: 1200 ft/s
+              -
+                range: 330 ft
+                final_velocity: 1105 ft/s
+          -
+            charge: 8 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1061 ft/s
+              -
+                range: 80 ft
+                final_velocity: 1048 ft/s
+              -
+                range: 130 ft
+                final_velocity: 1015 ft/s
+              -
+                range: 180 ft
+                final_velocity: 1015 ft/s
+              -
+                range: 230 ft
+                final_velocity: 960 ft/s
+              -
+                range: 330 ft
+                final_velocity: 922 ft/s
+              -
+                range: 430 ft
+                final_velocity: 895 ft/s
+          -
+            charge: 4 oz
+            data:
+              -
+                range: 30 ft
+                final_velocity: 670 ft/s
+              -
+                range: 80 ft
+                final_velocity: 669 ft/s
+              -
+                range: 130 ft
+                final_velocity: 650 ft/s
+              -
+                range: 180 ft
+                final_velocity: 614 ft/s
+              -
+                range: 230 ft
+                final_velocity: 652 ft/s
+      -
+        date: 1791
+        desc2: "Experiments with a ball of 6 lb"
+        diameter: 3.555 in
+        mass: 6 lb 1.5 oz
+        pressure: 30 inHg
+        temperature: 68 F
+        data:
+          -
+            charge: 3 lb
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1792 ft/s
+              -
+                range: 115 ft
+                final_velocity: 1755 ft/s
+              -
+                range: 285 ft
+                final_velocity: 1644 ft/s
+          -
+            charge: 2 lb
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1650 ft/s
+              -
+                range: 115 ft
+                final_velocity: 1639 ft/s
+              -
+                range: 200 ft
+                final_velocity: 1564 ft/s
+              -
+                range: 285 ft
+                final_velocity: 1522 ft/s
+          -
+            charge: 1.5 lb
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1521 ft/s
+              -
+                range: 115 ft
+                final_velocity: 1454 ft/s
+              -
+                range: 200 ft
+                final_velocity: 1396 ft/s
+              -
+                range: 285 ft
+                final_velocity: 1342 ft/s
+          -
+            charge: 1 lb
+            data:
+              -
+                range: 30 ft
+                final_velocity: 1306 ft/s
+              -
+                range: 115 ft
+                final_velocity: 1224 ft/s
+              -
+                range: 200 ft
+                final_velocity: 1204 ft/s
+              -
+                range: 285 ft
+                final_velocity: 1142 ft/s
+          -
+            charge: 0.5 lb
+            data:
+              -
+                range: 30 ft
+                final_velocity: 902 ft/s
+              -
+                range: 115 ft
+                final_velocity: 867 ft/s
+              -
+                range: 200 ft
+                final_velocity: 877 ft/s
+  -
+    ref2: "p. 17"
+    desc: "Exp\u00e9riences de Hutton"
+    technique: pendulum
+    angle: 0 deg
+    material: iron
+    date: 1788
+    pressure: 30.01 inHg
+    temperature: 61.8 F
+    mass: 16.68 oz
+    diameter: 1.965 in
+    data:
+      -
+        charge: 3 oz
+        range: 60 ft
+        data:
+          - final_velocity: 1088 ft/s
+          - final_velocity: 1092 ft/s
+          - final_velocity: 1102 ft/s
+          - final_velocity: 1118 ft/s
+      -
+        charge: 4 drams
+        range: 60 ft
+        data:
+          - final_velocity: 290 ft/s
+          - final_velocity: 259 ft/s
+          - final_velocity: 285 ft/s
+          - final_velocity: 269 ft/s
+      -
+        charge: 4 drams
+        range: 120 ft
+        data:
+          - final_velocity: 289 ft/s
+          - final_velocity: 286 ft/s
+          - final_velocity: 306 ft/s
+          - final_velocity: 287 ft/s
+  -
+    ref2: "p. 29"
+    desc: "Expos\u00e9 de exp\u00e9riences de Metz"
+    technique: pendulum
+    angle: 0 deg
+    material: iron
+    data:
+      -
+        date: 1839
+        charge: 1.5 kg
+        data:
+          -
+            atmospheric_density: 1.1902 kg/m/m/m
+            data:
+              -
+                range: 15.0 m
+                mass: 12.005 kg
+                diameter: 147.96 mm
+                data:
+                  - final_velocity: 369.3 m/s
+                  - final_velocity: 370.1 m/s
+                  - final_velocity: 369.5 m/s
+                  - final_velocity: 371.7 m/s
+              -
+                range: 40.0 m
+                mass: 12.011 kg
+                diameter: 148.06 mm
+                data:
+                  - final_velocity: 355.0 m/s
+                  - final_velocity: 356.7 m/s
+                  - final_velocity: 355.8 m/s
+          -
+            atmospheric_density: 1.2157 kg/m/m/m
+            data:
+              -
+                range: 65.0 m
+                mass: 12.005 kg
+                diameter: 148.06 mm
+                data:
+                  - final_velocity: 344.0 m/s
+                  - final_velocity: 357.1 m/s
+                  - final_velocity: 356.5 m/s
+              -
+                range: 90.0 m
+                mass: 12.020 kg
+                diameter: 148.04 mm
+                data:
+                  - final_velocity: 348.8 m/s
+                  - final_velocity: 347.1 m/s
+                  - final_velocity: 337.6 m/s
+          -
+            atmospheric_density: 1.2176 kg/m/m/m
+            range: 90.0 m
+            mass: 12.001 kg
+            diameter: 147.79 mm
+            data:
+              - final_velocity: 348.4 m/s
+              - final_velocity: 343.6 m/s
+              - final_velocity: 336.2 m/s
+              - final_velocity: 339.8 m/s
+          -
+            atmospheric_density: 1.2258 kg/m/m/m
+            range: 15.0 m
+            mass: 12.001 kg
+            diameter: 147.77 mm
+            data:
+              - final_velocity: 368.4 m/s
+              - final_velocity: 367.9 m/s
+              - final_velocity: 371.3 m/s
+              - final_velocity: 380.1 m/s
+          -
+            atmospheric_density: 1.2200 kg/m/m/m
+            data:
+              -
+                range: 40.0 m
+                mass: 12.043 kg
+                diameter: 148.23 mm
+                data:
+                  - final_velocity: 356.9 m/s
+                  - final_velocity: 362.0 m/s
+                  - final_velocity: 362.0 m/s
+              -
+                range: 65.0 m
+                mass: 12.039 kg
+                diameter: 148.26 mm
+                data:
+                  - final_velocity: 351.5 m/s
+                  - final_velocity: 359.6 m/s
+                  - final_velocity: 352.0 m/s
+      -
+        date: 1840
+        charge: 0.5 kg
+        data:
+          -
+            atmospheric_density: 1.1804 kg/m/m/m
+            data:
+              -
+                range: 15.0 m
+                mass: 11.969 kg
+                diameter: 148.40 mm
+                data:
+                  - final_velocity: 208.7 m/s
+                  - final_velocity: 208.0 m/s
+                  - final_velocity: 211.5 m/s
+                  - final_velocity: 211.0 m/s
+              -
+                range: 65.0 m
+                mass: 11.964 kg
+                diameter: 148.41 mm
+                data:
+                  - final_velocity: 211.0 m/s
+                  - final_velocity: 212.4 m/s
+                  - final_velocity: 210.8 m/s
+                  - final_velocity: 210.0 m/s
+          -
+            atmospheric_density: 1.1816 kg/m/m/m
+            data:
+              -
+                range: 65.0 m
+                mass: 12.100 kg
+                diameter: 148.32 mm
+                data:
+                  - final_velocity: 203.0 m/s
+                  - final_velocity: 204.4 m/s
+                  - final_velocity: 210.6 m/s
+              -
+                range: 15.0 m
+                mass: 12.078 kg
+                diameter: 148.31 mm
+                data:
+                  - final_velocity: 211.1 m/s
+                  - final_velocity: 208.9 m/s
+                  - final_velocity: 208.5 m/s
+                  - final_velocity: 209.7 m/s
+      -
+        date: 1840
+        charge: 1.0 kg
+        data:
+          -
+            atmospheric_density: 1.1612 kg/m/m/m
+            data:
+              -
+                range: 15.0 m
+                mass: 12.115 kg
+                diameter: 148.42 mm
+                data:
+                  - final_velocity: 304.7 m/s
+                  - final_velocity: 302.9 m/s
+                  - final_velocity: 305.9 m/s
+                  - final_velocity: 300.5 m/s
+              -
+                range: 65.0 m
+                mass: 12.109 kg
+                diameter: 148.42 mm
+                data:
+                  - final_velocity: 297.8 m/s
+                  - final_velocity: 296.8 m/s
+                  - final_velocity: 293.0 m/s
+                  - final_velocity: 293.7 m/s
+          -
+            atmospheric_density: 1.1768 kg/m/m/m
+            data:
+              -
+                range: 65.0 m
+                mass: 11.932 kg
+                diameter: 148.50 mm
+                data:
+                  - final_velocity: 296.1 m/s
+                  - final_velocity: 303.3 m/s
+                  - final_velocity: 304.4 m/s
+                  - final_velocity: 297.5 m/s
+              -
+                range: 15.0 m
+                mass: 11.974 kg
+                diameter: 148.51 mm
+                data:
+                  - final_velocity: 299.8 m/s
+                  - final_velocity: 312.1 m/s
+                  - final_velocity: 303.1 m/s
+                  - final_velocity: 307.4 m/s
 
-# Recorded through page 15
+
+# Recorded through page 20
+
+# Dates and sizes on p. 26-28
