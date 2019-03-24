@@ -302,6 +302,12 @@
   "ref": "Mordecai, 1849",
   "summary": "The second of two large sets of experiments on gunpowder."
  },
+ "moretti1673": {
+  "cms": "Moretti, Tomaso.  <i>A General Treatise of Artillery: or Great Ordnance.  Translated into English by Sir Jonas Moore</i>  London: William Godbid, 1673.",
+  "key": "moretti1673",
+  "ref": "Moretti, 1673",
+  "summary": "The peculiar treatise has commentary about a bridge interspersed between sections on artillery."
+ },
  "morrison2013": {
   "cms": "Morrison, Faith A.  <i>Data Correlation for Drag Coefficient for Sphere.</i>  Accessed April 29, 2016.  http://www.chem.mtu.edu/~fmorriso/DataCorrelationForSphereDrag2013.pdf",
   "key": "morrison2013",
@@ -336,6 +342,12 @@
   "link": "http://www.norwestcompany.com/comparison.htm",
   "ref": "Norwest, 2001",
   "summary": "A modern comparison of different brands of black powder used in smoothbore and rifle longarms."
+ },
+ "ordnance1850": {
+  "cms": "<i>The Ordnance Manual for the Use of the Officers of the United States Army, Second Edition.</i>  Washington: Gideon &amp; Co., 1850.",
+  "key": "ordnance1850",
+  "ref": "Ordnance Manual, 1850",
+  "summary": "This covers many aspects of inspecting and maintaining artillery."
  },
  "parish1977": {
   "cms": "Parish, O. Owen and Terril W. Putnam. <i>Equations for the Determination of Humidity from Dewpoint and Psychrometric Data.</i>  Washington, D.C.: National Aeronautics and Space Administration, 1977.",
