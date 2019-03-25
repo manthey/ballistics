@@ -48,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-03-22v61'
-PROGRAM_SIGNATURE = 'e465da8d9d56e157dc9bb3b31fb14ee2'
+__version__ = '2019-03-25v62'
+PROGRAM_SIGNATURE = '06f79fed99395ac400fdd1a75613b796'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -1317,7 +1317,8 @@ def graph_coefficient_of_drag(user_params=None):
     if params.get('dpi'):
         plt.rcParams['figure.dpi'] = plt.rcParams['savefig.dpi'] = float(params['dpi'])
     if params.get('out'):
-        plt.savefig(params['out'], bbox_inches='tight')
+        plt.savefig(params['out'] if params['out'] != '-' else sys.stdout.buffer,
+                    bbox_inches='tight')
     else:
         plt.show()
 

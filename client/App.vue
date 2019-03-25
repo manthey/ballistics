@@ -56,6 +56,8 @@ import References from './components/References.vue';
 import TableWithControls from './components/TableWithControls.vue';
 import Techniques from './components/Techniques.vue';
 
+import Worker from 'worker-loader!./worker.js';
+
 Vue.use(VueRouter);
 Vue.component('vue-markdown', VueMarkdown);
 Vue.component('loading', Loading);
@@ -149,11 +151,21 @@ export default {
   methods: {
     fetchData() {
       this.isLoading += 1;
-      fetch('totallist.json').then(resp => resp.json()).then(data => {
+      let worker = new Worker();
+      worker.onmessage = (evt) => {
+        Object.assign(utils.PointKeys, evt.data.pointkeys);
+        this.plotdata = evt.data.plotdata;
         this.isLoading -= 1;
+      };
+      worker.postMessage({action: 'getdata'});
+      /*
+      this.isLoading += 1;
+      fetch('totallist.json').then(resp => resp.json()).then(data => {
         this.plotdata = data;
         utils.updatePointKeys(data);
+        this.isLoading -= 1;
       }).catch(err => { console.log(err); throw err; });
+      */
     },
     fetchReferences() {
       this.isLoading += 1;

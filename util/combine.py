@@ -208,9 +208,9 @@ def compile_grid(grid, entry, opts, item):
         return
     group = entry['conditions'].get('group')
     if group:
-        group = item['ref'] + ':' + group
+        group = item['key'] + ':' + group
     # Don't include time technique in groups; it isn't accuracte enough
-    if item['technique'] == 'time':
+    if item['technique'] in ('time', 'gun_pendulum'):
         group = None
     if (not entry.get('points') or 'Re' not in entry['points'] or
             'Mn' not in entry['points']):

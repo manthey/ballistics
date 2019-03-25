@@ -442,14 +442,7 @@ function filterData(data, filter) {
  * @returns {string} The formatted value.
  */
 function formatValue(value, params) {
-  if (value === undefined || value === null || value === '') {
-    return '';
-  }
-  let l = ('' + value).substr(0, 1);
-  if (l < '0' || l > '9') {
-    return '' + value;
-  }
-  let key = (params.key || 'none'), result;
+  let key = ((params && params.key) || 'none'), result;
   if (key in memoizeFormatValue && value in memoizeFormatValue[key]) {
     return memoizeFormatValue[key][value];
   }

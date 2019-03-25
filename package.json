@@ -33,7 +33,8 @@
     "babel-runtime": "^6.26.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "worker-loader": "^2.0.0"
   },
   "eslintConfig": {
     "root": true,

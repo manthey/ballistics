@@ -1,5 +1,10 @@
 import json
 import os
+import pytest
+try:
+    import matplotlib
+except ImportError:
+    matplotlib = None
 
 import ballistics
 
@@ -64,3 +69,16 @@ def testGetUnits(capsys):
     ballistics.main(['--units=full'])
     output = capsys.readouterr().out
     assert 'See cal' in output
+
+
+@pytest.mark.skipif(matplotlib is None, reason='matplotlib is required')
+def testCdGraph(capsysbinary):
+    images = set()
+    for method in ['adjusted', 'collins', 'henderson', 'miller', 'morrison']:
+        ballistics.main([
+            '--cdgraph=w=6,h=4,dpi=100,mnmin=0,mnmax=2.5,mnint=0.25,method=%s,'
+            'remax=2e7,oor=1,out=-' % method])
+        output = capsysbinary.readouterr().out
+        assert output[:4] == b'\x89PNG'
+        assert output not in images
+        images.add(output)

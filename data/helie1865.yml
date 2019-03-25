@@ -2323,7 +2323,7 @@ data:
     desc: "Heights along a trajectory measured in Russia, Second series"
     ref2: "p. 278"
     angle: 2 deg 5 arcmin
-    angle_note: The inclination is listed as 2 deg, but then a value of 2 deg 5 arcmin.
+    angle_note: The inclination is listed as 2 deg, but then a value of 2 deg 5 arcmin is used.
     charge: 2.048 kg
     diameter: 1.486 dm
     mass: 12.015 kg
