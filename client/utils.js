@@ -3,7 +3,7 @@
 import math from 'mathjs';
 
 let memoizeCompare = {_count: 0, _maxcount: 1000};
-let memoizeFormatValue = {_count: 0, _maxcount: 1000};
+let memoizeFormatValue = {_count: 0, _maxcount: 10000};
 
 /* Default mathjs number format. */
 let NumberFormat = {precision: 6, lowerExp: -6, upperExp: 9};
@@ -442,6 +442,13 @@ function filterData(data, filter) {
  * @returns {string} The formatted value.
  */
 function formatValue(value, params) {
+  if (value === undefined || value === null || value === '') {
+    return '';
+  }
+  let l = ('' + value).substr(0, 1);
+  if (l < '0' || l > '9') {
+    return '' + value;
+  }
   let key = (params.key || 'none'), result;
   if (key in memoizeFormatValue && value in memoizeFormatValue[key]) {
     return memoizeFormatValue[key][value];

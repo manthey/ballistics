@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <loading :active="!!isLoading" :is-full-page="true"></loading>
     <div class="cssmenu">
       <ul>
         <li><router-link :to="{path: 'main'}">Home</router-link></li>
@@ -41,20 +42,23 @@ html,body,#app {
 
 <script>
 import Vue from 'vue';
+import Loading from 'vue-loading-overlay';
+import 'vue-loading-overlay/dist/vue-loading.css';
 import VueMarkdown from 'vue-markdown';
 import VueRouter from 'vue-router';
 
 import * as utils from './utils.js';
+import BoxPlotWithControls from './components/BoxPlotWithControls.vue';
 import Computation from './components/Computation.vue';
 import MainPage from './components/MainPage.vue';
 import PlotWithControls from './components/PlotWithControls.vue';
 import References from './components/References.vue';
 import TableWithControls from './components/TableWithControls.vue';
 import Techniques from './components/Techniques.vue';
-import BoxPlotWithControls from './components/BoxPlotWithControls.vue';
 
 Vue.use(VueRouter);
 Vue.component('vue-markdown', VueMarkdown);
+Vue.component('loading', Loading);
 
 export default {
   name: 'app',
@@ -104,6 +108,7 @@ export default {
   }),
   data() {
     return {
+      isLoading: false,
       plotdata: [],
       references: {},
       parameters: utils.Parameters,
@@ -143,18 +148,24 @@ export default {
   },
   methods: {
     fetchData() {
+      this.isLoading += 1;
       fetch('totallist.json').then(resp => resp.json()).then(data => {
+        this.isLoading -= 1;
         this.plotdata = data;
         utils.updatePointKeys(data);
       }).catch(err => { console.log(err); throw err; });
     },
     fetchReferences() {
+      this.isLoading += 1;
       fetch('references.json').then(resp => resp.json()).then(data => {
+        this.isLoading -= 1;
         this.references = data;
       }).catch(err => { console.log(err); throw err; });
     },
     fetchParameters() {
+      this.isLoading += 1;
       fetch('parameters.json').then(resp => resp.json()).then(data => {
+        this.isLoading -= 1;
         this.parameters = Object.assign({}, utils.updateParameters(data));
       }).catch(err => { console.log(err); throw err; });
     },
@@ -230,9 +241,6 @@ export default {
 Can add:
 
 specific graphs with commentary
-  small diam
-  medium
-  large
 accuracy based on reported precision
 drag models (include Hutton, 1795 v2, p. 365; Bashforth, 1870)
 github
