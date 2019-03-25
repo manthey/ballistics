@@ -419,9 +419,9 @@
   "unique": 1
  },
  "given_final_time": {
-  "count": 525,
+  "count": 540,
   "key": "given_final_time",
-  "unique": 226
+  "unique": 230
  },
  "given_final_time_note": {
   "count": 140,
@@ -702,27 +702,6 @@
   "count": 1360,
   "key": "given_temperature_note",
   "unique": 3
- },
- "given_time": {
-  "count": 15,
-  "key": "given_time",
-  "unique": 14,
-  "values": {
-   "10 s": 1,
-   "11 s": 1,
-   "12 s": 1,
-   "12.25 s": 1,
-   "13 s": 1,
-   "13.5 s": 1,
-   "14 s": 2,
-   "14.5 s": 1,
-   "16 s": 1,
-   "18 s": 1,
-   "19 s": 1,
-   "21 s": 1,
-   "36 s": 1,
-   "6.5 s": 1
-  }
  },
  "given_wetbulb": {
   "count": 3130,
