@@ -51,6 +51,7 @@ import PlotWithControls from './components/PlotWithControls.vue';
 import References from './components/References.vue';
 import TableWithControls from './components/TableWithControls.vue';
 import Techniques from './components/Techniques.vue';
+import BoxPlotWithControls from './components/BoxPlotWithControls.vue';
 
 Vue.use(VueRouter);
 Vue.component('vue-markdown', VueMarkdown);
@@ -90,6 +91,13 @@ export default {
       path: '/techniques',
       component: Techniques
     }, {
+      path: '/boxplot',
+      component: BoxPlotWithControls,
+      props: (route) => ({
+        filter: route.query.filter,
+        binwidth: route.query.binwidth ? +route.query.binwidth : undefined
+      })
+    }, {
       path: '*',
       redirect: '/main'
     }]
@@ -102,18 +110,28 @@ export default {
       plots: [{
           index: 'plot-full',
           text: 'Full Data',
-          path: 'plot',
+          path: 'plot'
         }, {
           index: 'plot-preferred',
           text: 'Preferred Experiments',
           tooltip: "Exclude theory, calorimeter, calculated, final_angle, and time techniques",
           path: 'plot',
           query: {filter: "['time','theory','calorimeter','calculated','final_angle'].indexOf(d.technique)<0"}
+        }, {
+          index: 'boxplot-full',
+          text: 'Full Box Plot',
+          path: 'boxplot'
+        }, {
+          index: 'boxplot-full',
+          text: 'Preferred Box Plot',
+          tooltip: "Exclude theory, calorimeter, calculated, final_angle, and time techniques",
+          path: 'boxplot',
+          query: {filter: "['time','theory','calorimeter','calculated','final_angle'].indexOf(d.technique)<0"}
         }],
       tables: [{
           index: 'table-full',
           text: 'Full Data',
-          path: 'table',
+          path: 'table'
         }, {
           index: 'table-preferred',
           text: 'Preferred Experiments',

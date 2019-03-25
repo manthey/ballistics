@@ -312,7 +312,7 @@ data:
         group: 364-1
         data:
           - range: 4250 yards
-          - time: 36 s
+          - final_time: 36 s
       -
         desc2: "10-inch siege mortar"
         diameter: 10 in
@@ -324,44 +324,44 @@ data:
             charge: 1 lb
             data:
               - range: 300 yards
-              - time: 6.5 s
+              - final_time: 6.5 s
 
           -
             group: 364-3
             charge: 1.5 lb
             data:
               - range: 700 yards
-              - time: 12 s
+              - final_time: 12 s
           -
             group: 364-4
             charge: 2 lb
             data:
               - range: 1000 yards
-              - time: 14 s
+              - final_time: 14 s
           -
             group: 364-5
             charge: 2.5 lb
             data:
               - range: 1300 yards
-              - time: 16 s
+              - final_time: 16 s
           -
             group: 364-6
             charge: 3 lb
             data:
               - range: 1600 yards
-              - time: 18 s
+              - final_time: 18 s
           -
             group: 364-7
             charge: 3.5 lb
             data:
               - range: 1800 yards
-              - time: 19 s
+              - final_time: 19 s
           -
             group: 364-8
             charge: 4 lb
             data:
               - range: 2100 yards
-              - time: 21 s
+              - final_time: 21 s
       -
         desc2: "8-inch siege mortar"
         mass: 46 lb
@@ -373,44 +373,44 @@ data:
             charge: 0 lb 10.75 oz
             data:
               - range: 500 yards
-              - time: 10 s
+              - final_time: 10 s
 
           -
             group: 364-10
             charge: 0 lb 13.75 oz
             data:
               - range: 600 yards
-              - time: 11 s
+              - final_time: 11 s
           -
             group: 364-11
             charge: 1 lb
             data:
               - range: 750 yards
-              - time: 12.25 s
+              - final_time: 12.25 s
           -
             group: 364-12
             charge: 1 lb 2 oz
             data:
               - range: 900 yards
-              - time: 13 s
+              - final_time: 13 s
           -
             group: 364-13
             charge: 1 lb 3.5 oz
             data:
               - range: 1000 yards
-              - time: 13.5 s
+              - final_time: 13.5 s
           -
             group: 364-14
             charge: 1 lb 4.75 oz
             data:
               - range: 1100 yards
-              - time: 14 s
+              - final_time: 14 s
           -
             group: 364-15
             charge: 1 lb 6 oz
             data:
               - range: 1200 yards
-              - time: 14.5 s
+              - final_time: 14.5 s
   -
     ref2: "p. 365"
     skip: true
