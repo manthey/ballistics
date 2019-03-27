@@ -1,0 +1,170 @@
+---
+key: piobert1836
+ref: "Piobert, 1836"
+cms: "Piobert, Guillaume, <i>Trait\u00e9 D'Artillerie Th\u00e9orique et Practique</i>, Paris: Leneveu, 1836."
+summary: "Extensive information on the accuracy of different guns."
+date: "1836"
+data:
+  -
+    ref2: "p. 81"
+    desc: "Canons Carabines"
+    material: lead
+    data:
+      -
+        mass: 0.125 lbfr
+        charge: 10 g
+        data:
+          -
+            range: 100 m
+            data:
+              - angle: 10 arcmin
+              - angle: 25 arcmin
+          -
+            range: 200 m
+            data:
+              - angle: 50 arcmin
+              - angle: 50 arcmin
+          -
+            range: 300 m
+            data:
+              - angle: 50 arcmin
+              - angle: 1 deg 26 arcmin
+          -
+            range: 400 m
+            data:
+              - angle: 1 deg 6 arcmin
+              - angle: 2 deg 0 arcmin
+          -
+            range: 500 m
+            data:
+              - angle: 1 deg 35 arcmin
+              - angle: 2 deg 22 arcmin
+          -
+            range: 600 m
+            data:
+              - angle: 2 deg 31 arcmin
+              - angle: 3 deg 26 arcmin
+      -
+        mass: 0.0526 lbfr
+        charge: 4.5 g
+        data:
+          -
+            range: 150 m
+            data:
+              - angle: 18 arcmin 28 arcsec
+              - angle: 22 arcmin 16 arcsec
+              - angle: 30 arcmin 15 arcsec
+          -
+            range: 200 m
+            data:
+              - angle: 41 arcmin 7 arcsec
+              - angle: 41 arcmin 43 arcsec
+              - angle: 42 arcmin 26 arcsec
+          -
+            range: 300 m
+            data:
+              - angle: 1 deg 21 arcmin 58 arcsec
+              - angle: 1 deg 16 arcmin 9 arcsec
+              - angle: 1 deg 29 arcmin 15 arcsec
+  -
+    ref2: "p. 130"
+    desc: "Ranges of Land Artillery"
+    material: iron
+    diameter_note: From p. 113
+    mass_note: From p. 113
+    angle_note: Natural angle from p. 128 added to the given angle
+    data:
+      -
+        desc2: "Canon de campagne de 8"
+        diameter: 103.77 mm
+        mass: 4.032 kg
+        charge: 1.333 kg
+        data:
+          -
+            angle: 54 arcmin 44 arcsec
+            range: 500 m
+          -
+            angle: 2 deg
+            range: 640 m
+          -
+            angle: 3 deg
+            range: 1085 m
+          -
+            angle: 4 deg
+            range: 1285 m
+          -
+            angle: 5 deg
+            range: 1470 m
+          -
+            angle: 6 deg
+            range: 1635 m
+          -
+            angle: 15 deg
+            range: 2700 m
+          -
+            angle: 40 deg
+            range: 3300 m
+      -
+        desc2: "Canon de campagne de 12"
+        diameter: 119.0 mm
+        mass: 6.013 kg
+        charge: 2 kg
+        data:
+          -
+            angle: 58 arcmin 23 arcsec
+            range: 525 m
+          -
+            angle: 2 deg
+            range: 918 m
+          -
+            angle: 3 deg
+            range: 1170 m
+          -
+            angle: 4 deg
+            range: 1390 m
+          -
+            angle: 5 deg
+            range: 1585 m
+          -
+            angle: 6 deg
+            range: 1780 m
+          -
+            angle: 15 deg
+            range: 2800 m
+          -
+            angle: 40 deg
+            range: 3700 m
+      -
+        desc2: "Canon de place de 8"
+        diameter: 103.77 mm
+        mass: 4.032 kg
+        charge: 1.333 kg
+        data:
+          -
+            angle: 1 deg 3 arcmin 45 arcsec
+            charge: 1 kg
+            range: 520 m
+          -
+            angle: 1 deg 3 arcmin 45 arcsec
+            range: 545 m
+          -
+            angle: 2 deg
+            range: 655 m
+          -
+            angle: 3 deg
+            range: 1162 m
+          -
+            angle: 4 deg
+            range: 1317 m
+          -
+            angle: 5 deg
+            range: 1507 m
+          -
+            angle: 6 deg
+            range: 1676 m
+          -
+            angle: 15 deg
+            range: 2700 m
+          -
+            angle: 40 deg
+            range: 3300 m

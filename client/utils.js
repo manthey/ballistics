@@ -421,11 +421,12 @@ let PointKeys = {};
  */
 function filterData(data, filter) {
   try {
-    let args = ['d'].concat(Object.keys(window));
+    let args = ['d', 'i', 'data'].concat(Object.keys(window));
     args = args.filter(key => /^[a-zA-Z_$][0-9a-zA-Z_$]*$/.exec(key));
     args.push('"use strict";return(' + filter + ')');
     let filterFunc = Function.apply(null, args);
-    return data.filter(d => filterFunc.call({}, Object.assign({}, d)));
+    data = data.map(d => Object.assign({}, d));
+    return data.filter((d, i, data) => filterFunc.call({}, d, i, data));
   } catch (err) {
     console.error('Filter failed: ' + this.filter);
     console.error(err);
