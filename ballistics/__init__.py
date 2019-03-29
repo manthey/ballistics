@@ -48,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-03-25v62'
-PROGRAM_SIGNATURE = '06f79fed99395ac400fdd1a75613b796'
+__version__ = '2019-03-28v63'
+PROGRAM_SIGNATURE = '798e859bd625729e12ecea0b18fc6a29'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -1277,6 +1277,19 @@ def graph_coefficient_of_drag(user_params=None):
         except Exception:
             sys.stderr.write('Cannot import matplotlib, cannot make a graph.\n')
             return
+    figsize = (
+        float(params.get('w', plt.rcParams['figure.figsize'][0])),
+        float(params.get('h', plt.rcParams['figure.figsize'][1])))
+    plt.rcParams['figure.figsize'] = figsize
+    if params.get('dpi'):
+        plt.rcParams['figure.dpi'] = plt.rcParams['savefig.dpi'] = float(params['dpi'])
+    plt.rcParams['figure.subplot.bottom'] = 0.3 / figsize[1]
+    plt.rcParams['figure.subplot.top'] = 1 - 0.1 / figsize[1]
+    plt.rcParams['figure.subplot.left'] = 0.4 / figsize[0]
+    plt.rcParams['figure.subplot.right'] = 1 - 0.2 / figsize[0]
+    plt.rcParams['figure.subplot.hspace'] = 0
+    plt.rcParams['figure.subplot.wspace'] = 0
+
     from .cod_miller import MnReCdDataTable
     remin = round(math.log10(params['remin'])-0.0499, 1)
     remax = round(math.log10(params['remax'])+0.05, 1)
@@ -1310,15 +1323,8 @@ def graph_coefficient_of_drag(user_params=None):
         datay = [val[1] for val in points]
         plt.plot(datax, datay, '--', label='%3.1f' % mn)
     plt.ylim(0, 1)
-    if params.get('w'):
-        plt.rcParams['figure.figsize'][0] = float(params['w'])
-    if params.get('h'):
-        plt.rcParams['figure.figsize'][0] = float(params['h'])
-    if params.get('dpi'):
-        plt.rcParams['figure.dpi'] = plt.rcParams['savefig.dpi'] = float(params['dpi'])
     if params.get('out'):
-        plt.savefig(params['out'] if params['out'] != '-' else sys.stdout.buffer,
-                    bbox_inches='tight')
+        plt.savefig(params['out'] if params['out'] != '-' else sys.stdout.buffer)
     else:
         plt.show()
 

@@ -72,7 +72,6 @@ data:
     material: iron
     diameter_note: From p. 113
     mass_note: From p. 113
-    angle_note: Natural angle from p. 128 added to the given angle
     data:
       -
         desc2: "Canon de campagne de 8"
@@ -82,7 +81,10 @@ data:
         data:
           -
             angle: 54 arcmin 44 arcsec
-            range: 500 m
+            angle_note: Natural angle from p. 128
+            data:
+              - range: 500 m
+              - range: 510 m
           -
             angle: 2 deg
             range: 640 m
@@ -112,7 +114,10 @@ data:
         data:
           -
             angle: 58 arcmin 23 arcsec
-            range: 525 m
+            angle_note: Natural angle from p. 128
+            data:
+              - range: 525 m
+              - range: 550 m
           -
             angle: 2 deg
             range: 918 m
@@ -142,10 +147,12 @@ data:
         data:
           -
             angle: 1 deg 3 arcmin 45 arcsec
+            angle_note: Natural angle from p. 128
             charge: 1 kg
             range: 520 m
           -
             angle: 1 deg 3 arcmin 45 arcsec
+            angle_note: Natural angle from p. 128
             range: 545 m
           -
             angle: 2 deg
@@ -168,3 +175,595 @@ data:
           -
             angle: 40 deg
             range: 3300 m
+      -
+        desc2: "Canon de place de 12"
+        diameter: 119.0 mm
+        mass: 6.013 kg
+        charge: 2 kg
+        data:
+          -
+            angle: 1 deg 5 arcmin 36 arcsec
+            angle_note: Natural angle from p. 128
+            charge: 1.5 kg
+            data:
+              - range: 560 m
+              - range: 600 m
+          -
+            angle: 1 deg 5 arcmin 36 arcsec
+            angle_note: Natural angle from p. 128
+            range: 643 m
+          -
+            angle: 2 deg
+            range: 964 m
+          -
+            angle: 3 deg
+            range: 1228 m
+          -
+            angle: 4 deg
+            range: 1455 m
+          -
+            angle: 5 deg
+            range: 1664 m
+          -
+            angle: 6 deg
+            range: 1870 m
+          -
+            angle: 15 deg
+            range: 2900 m
+          -
+            angle: 40 deg
+            range: 3800 m
+      -
+        desc2: "Canon de si\u00e9ge de 16"
+        diameter: 130.27 mm
+        mass: 7.975 kg
+        charge: 2.667 kg
+        data:
+          -
+            angle: 1 deg 8 arcmin 20 arcsec
+            angle_note: Natural angle from p. 128
+            charge: 2 kg
+            data:
+              - range: 580 m
+              - range: 590 m
+          -
+            angle: 1 deg 8 arcmin 20 arcsec
+            angle_note: Natural angle from p. 128
+            range: 662 m
+          -
+            angle: 2 deg
+            range: 955 m
+          -
+            angle: 3 deg
+            range: 1230 m
+          -
+            angle: 4 deg
+            range: 1460 m
+          -
+            angle: 5 deg
+            range: 1665 m
+          -
+            angle: 6 deg
+            range: 1850 m
+          -
+            angle: 7 deg
+            range: 2020 m
+          -
+            angle: 8 deg
+            range: 2200 m
+          -
+            angle: 9 deg
+            range: 2350 m
+          -
+            angle: 15 deg
+            range: 3100 m
+          -
+            angle: 40 deg
+            range: 4000 m
+      -
+        desc2: "Canon de si\u00e9ge de 24"
+        diameter: 149.26 mm
+        mass: 11.97 kg
+        charge: 4 kg
+        data:
+          -
+            angle: 1 deg 15 arcmin 6 arcsec
+            angle_note: Natural angle from p. 128
+            charge: 3 kg
+            data:
+              - range: 600 m
+              - range: 625 m
+          -
+            angle: 1 deg 15 arcmin 6 arcsec
+            angle_note: Natural angle from p. 128
+            range: 682 m
+          -
+            angle: 2 deg
+            range: 1055 m
+          -
+            angle: 3 deg
+            range: 1345 m
+          -
+            angle: 4 deg
+            range: 1590 m
+          -
+            angle: 5 deg
+            range: 1810 m
+          -
+            angle: 6 deg
+            range: 2015 m
+          -
+            angle: 7 deg
+            range: 2200 m
+          -
+            angle: 8 deg
+            range: 2360 m
+          -
+            angle: 9 deg
+            range: 2540 m
+          -
+            angle: 10 deg
+            range: 2670 m
+          -
+            angle: 15 deg
+            range: 3300 m
+          -
+            angle: 40 deg
+            range: 4400 m
+      -
+        desc2: "Canon de co\u00f4e de 24"
+        diameter: 149.26 mm
+        mass: 11.97 kg
+        charge: 4 kg
+        data:
+          -
+            angle: 1 deg 28 arcmin
+            angle_note: Natural angle from p. 128
+            range: 720 m
+          -
+            angle: 2 deg
+            range: 1020 m
+          -
+            angle: 3 deg
+            range: 1295 m
+          -
+            angle: 4 deg
+            range: 1550 m
+          -
+            angle: 5 deg
+            range: 1775 m
+          -
+            angle: 6 deg
+            range: 1975 m
+          -
+            angle: 7 deg
+            range: 2190 m
+          -
+            angle: 8 deg
+            range: 2350 m
+          -
+            angle: 9 deg
+            range: 2520 m
+          -
+            angle: 10 deg
+            range: 2660 m
+      -
+        desc2: "Canon de co\u00f4e de 36"
+        diameter: 171.44 mm
+        mass: 17.975 kg
+        charge: 6 kg
+        data:
+          -
+            angle: 1 deg 32 arcmin
+            angle_note: Natural angle from p. 128
+            range: 800 m
+          -
+            angle: 2 deg
+            range: 1070 m
+          -
+            angle: 3 deg
+            range: 1350 m
+          -
+            angle: 4 deg
+            range: 1610 m
+          -
+            angle: 5 deg
+            range: 1850 m
+          -
+            angle: 6 deg
+            range: 2080 m
+          -
+            angle: 7 deg
+            range: 2280 m
+          -
+            angle: 8 deg
+            range: 2470 m
+          -
+            angle: 9 deg
+            range: 2630 m
+          -
+            angle: 10 deg
+            range: 2790 m
+          -
+            angle: 15 deg
+            range: 3360 m
+          -
+            angle: 40 deg
+            range: 4600 m
+      -
+        desc2: "Canon de co\u00f4e de 48"
+        diameter: 186.0 mm
+        mass: 28.40 kg
+        charge: 8 kg
+        data:
+          -
+            skip: True
+            skip_note: No natural angle for 48
+          -
+            angle: 2 deg
+            range: 1200 m
+          -
+            angle: 3 deg
+            range: 1480 m
+          -
+            angle: 4 deg
+            range: 1760 m
+          -
+            angle: 5 deg
+            range: 2000 m
+          -
+            angle: 6 deg
+            range: 2200 m
+          -
+            angle: 7 deg
+            range: 2390 m
+          -
+            angle: 8 deg
+            range: 2570 m
+          -
+            angle: 9 deg
+            range: 2720 m
+          -
+            angle: 10 deg
+            range: 2875 m
+          -
+            angle: 15 deg
+            range: 3460 m
+          -
+            angle: 40 deg
+            range: 4740 m
+  -
+    ref2: "p. 131"
+    desc: "Ranges of Marine Artillery"
+    material: iron
+    diameter_note: From p. 113
+    mass_note: From p. 113
+    angle_note: Natural angle from p. 128
+    data:
+      -
+        skip: true
+        skip_note: Skipping "Tir a Bord" as I'm not sure what parameters to use
+      -
+        diameter: 169.2 mm
+        mass: 17.58 kg
+        data:
+          -
+            desc2: "Canons longs de 36"
+            angle: 1 deg 34 arcmin 17 arcsec
+            data:
+              -
+                charge: 4.5 kg
+                range: 730 m
+              -
+                charge: 6 kg
+                range: 820 m
+          -
+            desc2: "Canons courts de 36"
+            angle: 1 deg 56 arcmin 53 arcsec
+            data:
+              -
+                charge: 4.5 kg
+                range: 820 m
+              -
+                charge: 6 kg
+                range: 930 m
+      -
+        diameter: 159.6 mm
+        mass: 14.90 kg
+        data:
+          -
+            desc2: "Canons longs de 30"
+            angle: 1 deg 34 arcmin 10 arcsec
+            data:
+              -
+                charge: 3.75 kg
+                range: 724 m
+              -
+                charge: 5 kg
+                range: 810 m
+          -
+            desc2: "Canons courts de 30"
+            angle: 1 deg 57 arcmin 0 arcsec
+            data:
+              -
+                charge: 3.75 kg
+                range: 860 m
+              -
+                charge: 5 kg
+                range: 950 m
+      -
+        diameter: 147.4 mm
+        mass: 11.90 kg
+        data:
+          -
+            desc2: "Canons longs de 24"
+            angle: 1 deg 30 arcmin 37 arcsec
+            data:
+              -
+                charge: 3 kg
+                range: 712 m
+              -
+                charge: 4 kg
+                range: 781 m
+          -
+            desc2: "Canons courts de 24"
+            angle: 1 deg 49 arcmin 56 arcsec
+            data:
+              -
+                charge: 3 kg
+                range: 792 m
+              -
+                charge: 4 kg
+                range: 950 m
+      -
+        diameter: 134.2 mm
+        mass: 8.90 kg
+        data:
+          -
+            desc2: "Canons longs de 18"
+            angle: 1 deg 31 arcmin 37 arcsec
+            data:
+              -
+                charge: 2.25 kg
+                range: 710 m
+              -
+                charge: 3 kg
+                range: 812 m
+          -
+            desc2: "Canons courts de 18"
+            angle: 1 deg 50 arcmin 3 arcsec
+            data:
+              -
+                charge: 2.25 kg
+                range: 796 m
+              -
+                charge: 3 kg
+                range: 926 m
+      -
+        diameter: 117.3 mm
+        mass: 5.98 kg
+        data:
+          -
+            desc2: "Canons longs de 12"
+            angle: 1 deg 26 arcmin 33 arcsec
+            data:
+              -
+                charge: 1.5 kg
+                range: 685 m
+              -
+                charge: 2 kg
+                range: 760 m
+          -
+            desc2: "Canons courts de 12"
+            angle: 1 deg 41 arcmin 5 arcsec
+            data:
+              -
+                charge: 1.5 kg
+                range: 722 m
+              -
+                charge: 2 kg
+                range: 822 m
+      -
+        diameter: 102.6 mm
+        mass: 4.03 kg
+        data:
+          -
+            desc2: "Canons longs de 8"
+            angle: 1 deg 11 arcmin 11 arcsec
+            data:
+              -
+                charge: 1 kg
+                range: 507 m
+              -
+                charge: 1.333 kg
+                range: 755 m
+          -
+            desc2: "Canons courts de 8"
+            angle: 1 deg 23 arcmin 53 arcsec
+            data:
+              -
+                charge: 1 kg
+                range: 640 m
+              -
+                charge: 1.333 kg
+                range: 755 m
+      -
+        diameter: 92.9 mm
+        mass: 3.02 kg
+        data:
+          -
+            desc2: "Canons longs de 6"
+            angle: 1 deg 18 arcmin 4 arcsec
+            data:
+              -
+                charge: 0.75 kg
+                range: 620 m
+              -
+                charge: 1 kg
+                range: 722 m
+          -
+            desc2: "Canons courts de 6"
+            angle: 1 deg 27 arcmin 15 arcsec
+            data:
+              -
+                charge: 0.75 kg
+                range: 650 m
+              -
+                charge: 1 kg
+                range: 760 m
+  -
+    ref2: "p. 132"
+    desc: "Ranges of Marine Artillery"
+    material: iron
+    diameter_note: From p. 113
+    mass_note: From p. 113
+    data:
+      -
+        desc2: "Canons longs de 30"
+        diameter: 159.6 mm
+        mass: 14.90 kg
+        data:
+          -
+            charge: 5 kg
+            data:
+              -
+                angle: 1 deg 55 arcmin 33 arcsec
+                range: 854 m
+              -
+                angle: 5 deg 17 arcmin 20 arcsec
+                range: 1725 m
+              -
+                angle: 10 deg 33 arcmin 10 arcsec
+                range: 2600 m
+          -
+            charge: 3.75 kg
+            data:
+              -
+                angle: 2 deg 0 arcmin 13 arcsec
+                range: 771 m
+              -
+                angle: 5 deg 15 arcmin 23 arcsec
+                range: 1580 m
+              -
+                angle: 10 deg 48 arcmin 23 arcsec
+                angle_note: The angle is listed as 10 deg 84 arcmin 23 arcsec; I'm guessing the digits were reversed for the arcminutes.
+                range: 2305 m
+      -
+        desc2: "Canons courts de 30"
+        diameter: 159.6 mm
+        mass: 14.90 kg
+        data:
+          -
+            charge: 5 kg
+            data:
+              -
+                angle: 2 deg 20 arcmin 50 arcsec
+                range: 965 m
+              -
+                angle: 5 deg 10 arcmin 35 arcsec
+                range: 1600 m
+              -
+                angle: 10 deg 43 arcmin 33 arcsec
+                range: 2598 m
+          -
+            charge: 3.75 kg
+            data:
+              -
+                angle: 2 deg 24 arcmin 38 arcsec
+                range: 900 m
+              -
+                angle: 5 deg 24 arcmin 41 arcsec
+                range: 1550 m
+              -
+                angle: 10 deg 46 arcmin 49 arcsec
+                range: 2525 m
+      -
+        skip: true
+        skip_note: I'm not sure what cannon is "de 15k"
+      -
+        desc2: "Canons longs de 24"
+        diameter: 147.4 mm
+        mass: 11.90 kg
+        data:
+          -
+            charge: 4 kg
+            data:
+              -
+                angle: 1 deg 50 arcmin 43 arcsec
+                range: 770 m
+              -
+                angle: 5 deg 20 arcmin 4 arcsec
+                range: 1615 m
+              -
+                angle: 10 deg 22 arcmin 8 arcsec
+                range: 2285 m
+          -
+            charge: 3 kg
+            data:
+              -
+                angle: 1 deg 52 arcmin 19 arcsec
+                range: 695 m
+              -
+                angle: 5 deg 17 arcmin 7 arcsec
+                range: 1525 m
+              -
+                angle: 10 deg 23 arcmin 2 arcsec
+                range: 2290 m
+      -
+        desc2: "Canons longs de 18"
+        diameter: 134.2 mm
+        mass: 8.90 kg
+        data:
+          -
+            charge: 3 kg
+            data:
+              -
+                angle: 2 deg 8 arcmin 3 arcsec
+                range: 877 m
+              -
+                angle: 5 deg 29 arcmin 5 arcsec
+                range: 1570 m
+              -
+                angle: 10 deg 25 arcmin 0 arcsec
+                range: 2285 m
+          -
+            charge: 2.25 kg
+            data:
+              -
+                angle: 2 deg 14 arcmin 16 arcsec
+                range: 852 m
+              -
+                angle: 5 deg 25 arcmin 40 arcsec
+                range: 1540 m
+              -
+                angle: 10 deg 26 arcmin 40 arcsec
+                range: 2360 m
+      -
+        desc2: "Canons courts de 18"
+        diameter: 134.2 mm
+        mass: 8.90 kg
+        data:
+          -
+            charge: 3 kg
+            data:
+              -
+                angle: 2 deg 14 arcmin 45 arcsec
+                range: 915 m
+              -
+                angle: 5 deg 23 arcmin 47 arcsec
+                range: 1565 m
+              -
+                angle: 10 deg 13 arcmin 50 arcsec
+                range: 2315 m
+          -
+            charge: 2.25 kg
+            data:
+              -
+                angle: 2 deg 12 arcmin 14 arcsec
+                range: 850 m
+              -
+                angle: 5 deg 25 arcmin 22 arcsec
+                range: 1510 m
+              -
+                angle: 10 deg 18 arcmin 15 arcsec
+                range: 2350 m
