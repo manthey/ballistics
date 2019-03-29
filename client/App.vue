@@ -15,7 +15,11 @@
           </ul>
         </li>
         <li><router-link :to="{path: 'techniques'}">Techniques</router-link></li>
-        <li><router-link :to="{path: 'computation'}">Computation</router-link></li>
+        <li><router-link :to="{path: 'analysis'}">Analysis</router-link>
+          <ul>
+            <li><router-link :to="{path: 'computation'}">Computation</router-link></li>
+          </ul>
+        </li>
         <li><router-link :to="{path: 'references'}">References</router-link></li>
       </ul>
     </div>
@@ -48,6 +52,7 @@ import VueMarkdown from 'vue-markdown';
 import VueRouter from 'vue-router';
 
 import * as utils from './utils.js';
+import Analysis from './components/Analysis.vue';
 import BoxPlotWithControls from './components/BoxPlotWithControls.vue';
 import Computation from './components/Computation.vue';
 import MainPage from './components/MainPage.vue';
@@ -70,6 +75,9 @@ export default {
     routes: [{
       path: '/main',
       component: MainPage
+    }, {
+      path: '/analysis',
+      component: Analysis
     }, {
       path: '/computation',
       component: Computation

@@ -126,7 +126,8 @@ def main(opts):
         if newError < bestError:
             bestError = newError
             bestTable = newTable
-        json.dump(bestTable, open(opts['dest'], 'w'))
+        with open(opts['dest'], 'w') as fp:
+            json.dump(bestTable, fp)
 
 
 if __name__ == '__main__':

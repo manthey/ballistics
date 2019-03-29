@@ -123,14 +123,14 @@ def coefficient_of_drag_miller(state, only_in_range=False):
     mach_data = []
     for pos, (mach, reynolds_data, crit) in enumerate(ExtendedMnReCdDataTable):
         use = False
-        if Mn <= 0.3 and mach <= 0.3:
+        if Mn == mach:
             use = True
-        if (pos+1 != len(ExtendedMnReCdDataTable) and Mn >= mach and
+        if (pos+1 != len(ExtendedMnReCdDataTable) and Mn > mach and
                 Mn <= ExtendedMnReCdDataTable[pos+1][0]):
             use = True
-        if pos and Mn >= ExtendedMnReCdDataTable[pos-1][0] and Mn <= mach:
+        if pos and Mn >= ExtendedMnReCdDataTable[pos-1][0] and Mn < mach:
             use = True
-        if pos+1 == len(ExtendedMnReCdDataTable) and Mn >= mach:
+        if pos+1 == len(ExtendedMnReCdDataTable) and Mn > mach:
             use = True
         if not use:
             continue
