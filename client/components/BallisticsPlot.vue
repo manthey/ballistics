@@ -69,7 +69,6 @@ export default {
     data() {
       let technique = {};
       let plotdata  = this.plotdata || [];
-      let datapoint = utils.PointKeys[this.pointkey];
       plotdata.forEach(d => technique[d.technique] = (technique[d.technique] || 0) + 1);
       let techlist = Object.keys(technique).sort((a, b) => technique[b] - technique[a]);
       if (this.filter) {
@@ -89,8 +88,8 @@ export default {
           marker: {
             symbol: tidx,
             size: 10,
-            color: tdata.map(d => d === datapoint ? '#000000' : color),
-            opacity: tdata.map(d => d === datapoint ? 1 : 0.5)
+            color: tdata.map(d => d.pointkey === this.pointkey ? '#000000' : color),
+            opacity: tdata.map(d => d.pointkey === this.pointkey ? 1 : 0.5)
           },
           type: tdata.length > 100 ? 'scattergl' : 'scatter',
           mode: 'markers',

@@ -265,9 +265,5 @@ accuracy based on reported precision
 drag models (include Hutton, 1795 v2, p. 365; Bashforth, 1870)
 github
 commentary on sources
-
-Fix:
-
-display of scattergl on Safari
 */
 </script>

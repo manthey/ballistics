@@ -2,7 +2,7 @@
 key: piobert1836
 ref: "Piobert, 1836"
 cms: "Piobert, Guillaume, <i>Trait\u00e9 D'Artillerie Th\u00e9orique et Practique</i>, Paris: Leneveu, 1836."
-summary: "Extensive information on the accuracy of different guns."
+summary: "Extensive information on the accuracy of different guns.  The data was collected over decades; much is references from the 1810s."
 date: "1836"
 data:
   -
@@ -311,7 +311,7 @@ data:
             angle: 40 deg
             range: 4400 m
       -
-        desc2: "Canon de co\u00f4e de 24"
+        desc2: "Canon de c\u00f4te de 24"
         diameter: 149.26 mm
         mass: 11.97 kg
         charge: 4 kg
@@ -767,3 +767,637 @@ data:
               -
                 angle: 10 deg 18 arcmin 15 arcsec
                 range: 2350 m
+  -
+    ref2: "p. 133"
+    desc: "Ranges of Marine Caronades"
+    material: iron
+    diameter_note: From p. 113
+    mass_note: From p. 113
+    data:
+      -
+        desc2: "Caronades de 30"
+        diameter: 159.6 mm
+        mass: 14.90 kg
+        data:
+          -
+            charge: 1.59 kg
+            data:
+              -
+                angle: 1 deg 2 arcmin 35 arcsec
+                range: 308 m
+              -
+                angle: 4 deg 29 arcmin 29 arcsec
+                range: 1076 m
+              -
+                angle: 5 deg 40 arcmin 17 arcsec
+                range: 1220 m
+              -
+                angle: 10 deg 45 arcmin 59 arcsec
+                range: 2060 m
+              -
+                angle: 16 deg 57 arcmin 57 arcsec
+                range: 2756 m
+          -
+            charge: 1.19 kg
+            data:
+              -
+                angle: 1 deg 11 arcmin 58 arcsec
+                range: 285 m
+              -
+                angle: 4 deg 37 arcmin 11 arcsec
+                range: 853 m
+              -
+                angle: 5 deg 35 arcmin 46 arcsec
+                range: 1077 m
+              -
+                angle: 10 deg 49 arcmin 11 arcsec
+                range: 1776 m
+              -
+                angle: 17 deg 2 arcmin 30 arcsec
+                range: 2488 m
+          -
+            charge: 0.80 kg
+            data:
+              -
+                angle: 1 deg 23 arcmin 6 arcsec
+                range: 203 m
+              -
+                angle: 4 deg 36 arcmin 39 arcsec
+                range: 670 m
+              -
+                angle: 5 deg 49 arcmin 14 arcsec
+                range: 769 m
+              -
+                angle: 10 deg 47 arcmin 10 arcsec
+                range: 1387 m
+              -
+                angle: 17 deg 9 arcmin 30 arcsec
+                range: 1892 m
+      -
+        desc2: "Caronades de 24"
+        diameter: 147.4 mm
+        mass: 11.90 kg
+        data:
+          -
+            charge: 1.35 kg
+            data:
+              -
+                angle: 0 deg 54 arcmin 52 arcsec
+                range: 274 m
+              -
+                angle: 4 deg 26 arcmin 24 arcsec
+                range: 951 m
+              -
+                angle: 5 deg 25 arcmin 10 arcsec
+                range: 1163 m
+              -
+                angle: 11 deg 33 arcmin 34 arcsec
+                range: 2230 m
+              -
+                angle: 19 deg 9 arcmin 17 arcsec
+                range: 2696 m
+          -
+            charge: 1.01 kg
+            data:
+              -
+                angle: 0 deg 55 arcmin 23 arcsec
+                range: 243 m
+              -
+                angle: 4 deg 28 arcmin 28 arcsec
+                range: 890 m
+              -
+                angle: 5 deg 31 arcmin 34 arcsec
+                range: 1020 m
+              -
+                angle: 11 deg 31 arcmin 8 arcsec
+                range: 1992 m
+              -
+                angle: 19 deg 18 arcmin 6 arcsec
+                range: 2470 m
+          -
+            charge: 0.68 kg
+            data:
+              -
+                angle: 1 deg 14 arcmin 24 arcsec
+                range: 183 m
+              -
+                angle: 4 deg 35 arcmin 46 arcsec
+                range: 642 m
+              -
+                angle: 5 deg 33 arcmin 42 arcsec
+                range: 756 m
+              -
+                angle: 11 deg 39 arcmin 32 arcsec
+                range: 1442 m
+              -
+                angle: 19 deg 17 arcmin 54 arcsec
+                range: 2008 m
+      -
+        desc2: "Caronades de 18"
+        diameter: 134.2 mm
+        mass: 8.90 kg
+        data:
+          -
+            charge: 1.10 kg
+            data:
+              -
+                angle: 0 deg 56 arcmin 43 arcsec
+                range: 286 m
+              -
+                angle: 4 deg 31 arcmin 55 arcsec
+                range: 957 m
+              -
+                angle: 5 deg 37 arcmin 51 arcsec
+                range: 1213 m
+              -
+                angle: 10 deg 30 arcmin 20 arcsec
+                range: 1919 m
+              -
+                angle: 18 deg 34 arcmin 24 arcsec
+                range: 2469 m
+          -
+            charge: 0.83 kg
+            data:
+              -
+                angle: 1 deg 1 arcmin 54 arcsec
+                range: 249 m
+              -
+                angle: 4 deg 30 arcmin 3 arcsec
+                range: 881 m
+              -
+                angle: 5 deg 41 arcmin 54 arcsec
+                range: 1097 m
+              -
+                angle: 10 deg 26 arcmin 9 arcsec
+                range: 1715 m
+              -
+                angle: 18 deg 36 arcmin 19 arcsec
+                range: 2244 m
+          -
+            charge: 0.55 kg
+            data:
+              -
+                angle: 1 deg 16 arcmin 24 arcsec
+                range: 181 m
+              -
+                angle: 4 deg 36 arcmin 31 arcsec
+                range: 627 m
+              -
+                angle: 5 deg 45 arcmin 22 arcsec
+                range: 797 m
+  -
+    ref2: "p. 134"
+    desc: "Ranges of Marine Canon-Caronade and Gunnade"
+    material: iron
+    diameter_note: From p. 113
+    mass_note: From p. 113
+    data:
+      -
+        desc2: "Canon-Caronade de 30"
+        diameter: 159.6 mm
+        mass: 14.90 kg
+        data:
+          -
+            charge: 1.60 kg
+            data:
+              -
+                angle: 0 deg 46 arcmin 31 arcsec
+                range: 255 m
+              -
+                angle: 1 deg 45 arcmin 47 arcsec
+                range: 524 m
+              -
+                angle: 5 deg 26 arcmin 26 arcsec
+                range: 1265 m
+              -
+                angle: 10 deg 19 arcmin 26 arcsec
+                range: 1944 m
+              -
+                angle: 14 deg 8 arcmin 50 arcsec
+                range: 2505 m
+          -
+            charge: 1.20 kg
+            data:
+              -
+                angle: 0 deg 53 arcmin 41 arcsec
+                range: 215 m
+              -
+                angle: 1 deg 55 arcmin 47 arcsec
+                range: 447 m
+              -
+                angle: 5 deg 23 arcmin 42 arcsec
+                range: 1088 m
+              -
+                angle: 10 deg 20 arcmin 40 arcsec
+                range: 1733 m
+              -
+                angle: 14 deg 12 arcmin 53 arcsec
+                range: 2313 m
+          -
+            charge: 0.80 kg
+            data:
+              -
+                angle: 0 deg 59 arcmin 50 arcsec
+                range: 172 m
+              -
+                angle: 1 deg 55 arcmin 16 arcsec
+                range: 308 m
+              -
+                angle: 5 deg 28 arcmin 34 arcsec
+                range: 769 m
+              -
+                angle: 10 deg 28 arcmin 50 arcsec
+                range: 1328 m
+              -
+                angle: 14 deg 17 arcmin 49 arcsec
+                range: 1221 m
+      -
+        skip: true
+        skip_nore: I don't know what projectile the Canon-obusier de 15k fires
+      -
+        desc2: "Gunnade de 30"
+        diameter: 159.6 mm
+        mass: 14.90 kg
+        data:
+          -
+            charge: 2.00 kg
+            data:
+              -
+                angle: 0 deg 43 arcmin 58 arcsec
+                range: 280 m
+              -
+                angle: 2 deg 36 arcmin 48 arcsec
+                range: 849 m
+              -
+                angle: 5 deg 20 arcmin 15 arcsec
+                range: 1226 m
+              -
+                angle: 10 deg 7 arcmin 26 arcsec
+                range: 2331 m
+              -
+                angle: 14 deg 5 arcmin 45 arcsec
+                range: 2876 m
+          -
+            charge: 1.75 kg
+            data:
+              -
+                angle: 0 deg 47 arcmin 45 arcsec
+                range: 281 m
+              -
+                angle: 2 deg 38 arcmin 37 arcsec
+                range: 800 m
+              -
+                angle: 5 deg 23 arcmin 8 arcsec
+                range: 1361 m
+              -
+                angle: 10 deg 5 arcmin 21 arcsec
+                range: 2250 m
+              -
+                angle: 14 deg 7 arcmin 22 arcsec
+                range: 2745 m
+          -
+            charge: 1.59 kg
+            data:
+              -
+                angle: 0 deg 54 arcmin 9 arcsec
+                range: 287 m
+              -
+                angle: 2 deg 45 arcmin 13 arcsec
+                range: 756 m
+              -
+                angle: 5 deg 23 arcmin 9 arcsec
+                range: 1276 m
+              -
+                angle: 10 deg 23 arcmin 31 arcsec
+                range: 1978 m
+              -
+                angle: 14 deg 27 arcmin 11 arcsec
+                range: 2448 m
+          -
+            charge: 0.80 kg
+            data:
+              -
+                angle: 0 deg 49 arcmin 12 arcsec
+                range: 258 m
+              -
+                angle: 2 deg 35 arcmin 23 arcsec
+                range: 708 m
+              -
+                angle: 5 deg 24 arcmin 20 arcsec
+                range: 1270 m
+              -
+                angle: 10 deg 5 arcmin 17 arcsec
+                range: 2039 m
+              -
+                angle: 14 deg 5 arcmin 46 arcsec
+                range: 2598 m
+  -
+    ref2: "p. 173"
+    desc: "Ranges of mortars"
+    material: iron
+    diameter_note: From p. 163
+    mass_note: From p. 163
+    data:
+      -
+        desc2: "Obusier de montagne de 12"
+        mass: 4.03 kg
+        diameter: 119 mm
+        charge: 0.27 kg
+        data:
+          -
+            angle: 0.5 deg
+            angle_note: "Angle de mire naturel from p. 172"
+            data:
+              - range: 225 m
+              - range: 275 m
+          -
+            angle: 5 deg
+            range: 640 m
+      -
+        desc2: "Obusier de campagne de 24"
+        mass: 7.23 kg
+        diameter: 149 mm
+        data:
+          -
+            charge: 0.50 kg
+            angle: 1 deg
+            angle_note: "Angle de mire naturel from p. 172"
+            range: 280 m
+          -
+            charge: 1.00 kg
+            data:
+              -
+                angle: 1 deg
+                angle_note: "Angle de mire naturel from p. 172"
+                data:
+                  - range: 360 m
+                  - range: 480 m
+              -
+                angle: 5 deg
+                range: 1290 m
+              -
+                angle: 10 deg
+                range: 1928 m
+              -
+                angle: 14 deg
+                range: 2000 m
+      -
+        desc2: "Obusier de campagne de 6P"
+        mass: 10.56 kg
+        diameter: 163.5 mm
+        data:
+          -
+            charge: 0.75 kg
+            angle: 1 deg
+            angle_note: "Angle de mire naturel from p. 172"
+            data:
+              - range: 300 m
+              - range: 350 m
+          -
+            charge: 1.50 kg
+            data:
+              -
+                angle: 1 deg
+                angle_note: "Angle de mire naturel from p. 172"
+                data:
+                  - range: 425 m
+                  - range: 510 m
+              -
+                angle: 5 deg
+                range: 1360 m
+              -
+                angle: 10 deg
+                range: 1977 m
+              -
+                angle: 14 deg
+                range: 2350 m
+      -
+        desc2: "Obusier de si\u00e9ge de 8P"
+        mass: 21.86 kg
+        diameter: 221 mm
+        data:
+          -
+            charge: 0.50 kg
+            data:
+              -
+                angle: 1 deg
+                angle_note: "Angle de mire naturel from p. 172"
+                data:
+                  - range: 130 m
+                  - range: 140 m
+              -
+                angle: 5 deg
+                range: 335 m
+          -
+            charge: 1.00 kg
+            data:
+              -
+                angle: 1 deg
+                angle_note: "Angle de mire naturel from p. 172"
+                data:
+                  - range: 210 m
+                  - range: 225 m
+              -
+                angle: 5 deg
+                range: 535 m
+              -
+                angle: 10 deg
+                range: 981 m
+              -
+                angle: 12.25 deg
+                range: 1255 m
+          -
+            charge: 1.50 kg
+            data:
+              -
+                angle: 1 deg
+                angle_note: "Angle de mire naturel from p. 172"
+                data:
+                  - range: 315 m
+                  - range: 360 m
+              -
+                angle: 5 deg
+                range: 845 m
+              -
+                angle: 10 deg
+                range: 1325 m
+              -
+                angle: 12.5 deg
+                range: 1666 m
+          -
+            charge: 1.75 kg
+            angle: 12.333 deg
+            range: 1764 m
+          -
+            charge: 2.00 kg
+            angle: 12.75 deg
+            range: 1907 m
+  -
+    ref2: "p. 174"
+    desc: "Ranges of mortars"
+    material: iron
+    diameter_note: From p. 163
+    mass_note: From p. 163
+    data:
+      -
+        desc2: "Obusier de c\u00f4te de 8P"
+        mass: 21.86 kg
+        diameter: 221 mm
+        date: 1830
+        data:
+          -
+            charge: 5.00 kg
+            angle: 18 deg 2 arcmin 48 arcsec
+            range: 3047 m
+          -
+            charge: 4.50 kg
+            angle: 18 deg 2 arcmin 52 arcsec
+            range: 2962 m
+          -
+            charge: 4.00 kg
+            angle: 18 deg 2 arcmin 55 arcsec
+            range: 2895 m
+          -
+            charge: 3.50 kg
+            data:
+              -
+                angle: 1 deg 42 arcmin 10 arcsec
+                range: 641 m
+              -
+                angle: 5 deg 6 arcmin 0 arcsec
+                range: 1390 m
+              -
+                angle: 10 deg 4 arcmin 5 arcsec
+                range: 2097 m
+              -
+                angle: 15 deg 3 arcmin 25 arcsec
+                range: 2495 m
+              -
+                angle: 18 deg 3 arcmin 0 arcsec
+                range: 2838 m
+          -
+            charge: 3.00 kg
+            data:
+              -
+                angle: 1 deg 43 arcmin 15 arcsec
+                range: 590 m
+              -
+                angle: 5 deg 6 arcmin 40 arcsec
+                range: 1270 m
+              -
+                angle: 10 deg 4 arcmin 10 arcsec
+                range: 2026 m
+              -
+                angle: 15 deg 3 arcmin 35 arcsec
+                range: 2362 m
+              -
+                angle: 18 deg 3 arcmin 18 arcsec
+                range: 2598 m
+          -
+            charge: 2.50 kg
+            data:
+              -
+                angle: 1 deg 44 arcmin 10 arcsec
+                range: 553 m
+              -
+                angle: 5 deg 7 arcmin 0 arcsec
+                range: 1224 m
+              -
+                angle: 10 deg 4 arcmin 35 arcsec
+                range: 1842 m
+              -
+                angle: 15 deg 3 arcmin 40 arcsec
+                range: 2323 m
+              -
+                angle: 18 deg 3 arcmin 20 arcsec
+                range: 2568 m
+      -
+        desc2: "Canon-obusier de 8P"
+        mass: 21.86 kg
+        diameter: 221 mm
+        date: 1826
+        data:
+          -
+            charge: 6.00 kg
+            data:
+              -
+                angle: 1 deg
+                range: 500 m
+              -
+                angle: 3 deg
+                range: 1105 m
+              -
+                angle: 5 deg
+                range: 1505 m
+              -
+                angle: 10 deg
+                range: 2185 m
+              -
+                angle: 20 deg
+                range: 3160 m
+              -
+                angle: 30 deg
+                range: 3905 m
+          -
+            charge: 4.50 kg
+            data:
+              -
+                angle: 1 deg
+                range: 537 m
+              -
+                angle: 3 deg
+                range: 1140 m
+              -
+                angle: 5 deg
+                range: 1465 m
+              -
+                angle: 10 deg
+                range: 2160 m
+              -
+                angle: 20 deg
+                range: 2940 m
+              -
+                angle: 30 deg
+                range: 3500 m
+          -
+            charge: 3.00 kg
+            data:
+              -
+                angle: 1 deg
+                range: 455 m
+              -
+                angle: 3 deg
+                range: 920 m
+              -
+                angle: 5 deg
+                range: 1265 m
+              -
+                angle: 10 deg
+                range: 1940 m
+              -
+                angle: 20 deg
+                range: 2770 m
+              -
+                angle: 30 deg
+                range: 3250 m
+          -
+            charge: 1.50 kg
+            data:
+              -
+                angle: 1 deg
+                range: 320 m
+              -
+                angle: 3 deg
+                range: 610 m
+              -
+                angle: 5 deg
+                range: 940 m
+              -
+                angle: 10 deg
+                range: 1500 m
+              -
+                angle: 20 deg
+                range: 2240 m
+              -
+                angle: 30 deg
+                range: 2520 m
