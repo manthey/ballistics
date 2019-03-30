@@ -393,7 +393,8 @@ data:
       -
         desc2: "Canon de co\u00f4e de 48"
         diameter: 186.0 mm
-        mass: 28.40 kg
+        mass: 23.40 kg
+        mass_note: corrected on p. 458
         charge: 8 kg
         data:
           -
@@ -1093,7 +1094,7 @@ data:
                 range: 2598 m
   -
     ref2: "p. 173"
-    desc: "Ranges of mortars"
+    desc: "Ranges of howitzers"
     material: iron
     diameter_note: From p. 163
     mass_note: From p. 163
@@ -1234,7 +1235,7 @@ data:
             range: 1907 m
   -
     ref2: "p. 174"
-    desc: "Ranges of mortars"
+    desc: "Ranges of howizters"
     material: iron
     diameter_note: From p. 163
     mass_note: From p. 163
@@ -1401,3 +1402,845 @@ data:
               -
                 angle: 30 deg
                 range: 2520 m
+  -
+    ref2: "p. 175"
+    desc: "Ranges of Marine Howitzers"
+    material: iron
+    diameter_note: From p. 163
+    mass_note: From p. 163
+    data:
+      -
+        desc2: "Canon-obusier de 8P de marine"
+        mass: 21.86 kg
+        diameter: 221 mm
+        date: 1834
+        data:
+          -
+            charge: 4.00 kg
+            data:
+              -
+                angle: 0 deg 51 arcmin 19 arcsec
+                range: 329 m
+              -
+                angle: 5 deg 24 arcmin 34 arcsec
+                range: 1402 m
+              -
+                angle: 10 deg 20 arcmin 24 arcsec
+                range: 2046 m
+              -
+                angle: 15 deg 10 arcmin 21 arcsec
+                range: 2662 m
+              -
+                angle: 25 deg 16 arcmin 0 arcsec
+                range: 3359 m
+          -
+            charge: 3.50 kg
+            data:
+              -
+                angle: 0 deg 53 arcmin 6 arcsec
+                range: 340 m
+              -
+                angle: 2 deg 4 arcmin 21 arcsec
+                range: 660 m
+              -
+                angle: 5 deg 26 arcmin 17 arcsec
+                range: 1341 m
+              -
+                angle: 10 deg 20 arcmin 24 arcsec
+                range: 2023 m
+              -
+                angle: 15 deg 10 arcmin 4 arcsec
+                range: 2551 m
+              -
+                angle: 25 deg 25 arcmin 0 arcsec
+                range: 3327 m
+          -
+            charge: 3.00 kg
+            data:
+              -
+                angle: 0 deg 52 arcmin 34 arcsec
+                range: 325 m
+              -
+                angle: 2 deg 4 arcmin 43 arcsec
+                range: 639 m
+              -
+                angle: 5 deg 29 arcmin 20 arcsec
+                range: 1295 m
+              -
+                angle: 10 deg 22 arcmin 12 arcsec
+                range: 2007 m
+              -
+                angle: 15 deg 11 arcmin 10 arcsec
+                range: 2427 m
+              -
+                angle: 25 deg 29 arcmin 0 arcsec
+                range: 3219 m
+          -
+            charge: 2.50 kg
+            angle: 0 deg 52 arcmin 50 arcsec
+            range: 295 m
+          -
+            charge: 2.00 kg
+            angle: 0 deg 50 arcmin 34 arcsec
+            range: 272 m
+      -
+        skip: true
+        skip_nore: I don't know what projectile the Obusier de 30 fires
+      -
+        desc2: "Canon-Caronade de 30"
+        diameter: 159.6 mm
+        mass: 14.90 kg
+        data:
+          -
+            charge: 1.60 kg
+            data:
+              -
+                angle: 0 deg 41 arcmin 13 arcsec
+                range: 263 m
+              -
+                angle: 1 deg 41 arcmin 53 arcsec
+                range: 587 m
+              -
+                angle: 5 deg 17 arcmin 47 arcsec
+                range: 1329 m
+          -
+            charge: 1.20 kg
+            angle: 0 deg 57 arcmin 3 arcsec
+            range: 263 m
+      -
+        desc2: "Caronade de 30"
+        diameter: 159.6 mm
+        mass: 14.90 kg
+        charge: 1.59 kg
+        data:
+          -
+            angle: 0 deg 57 arcmin 3 arcsec
+            range: 328 m
+          -
+            angle: 4 deg 29 arcmin 25 arcsec
+            range: 1147 m
+          -
+            angle: 5 deg 53 arcmin 17 arcsec
+            range: 1431 m
+  -
+    ref2: "p. 198"
+    desc: "Ranges of Mortars"
+    material: iron
+    diameter_note: From p. 190
+    mass_note: From p. 190
+    data:
+      -
+        desc2: "Mortiers de 12P"
+        diameter: 321.45 mm
+        mass: 73.41 kg
+        data:
+          -
+            desc3: "Chambre tronc-conique neuf"
+            angle: 45 deg
+            data:
+              -
+                charge: 0.50 kg
+                range: 285 m
+              -
+                charge: 0.60 kg
+                range: 365 m
+              -
+                charge: 0.70 kg
+                range: 445 m
+              -
+                charge: 0.80 kg
+                range: 530 m
+              -
+                charge: 0.90 kg
+                range: 615 m
+              -
+                charge: 1.00 kg
+                range: 700 m
+              -
+                charge: 1.10 kg
+                range: 790 m
+              -
+                charge: 1.20 kg
+                range: 885 m
+              -
+                charge: 1.30 kg
+                range: 975 m
+              -
+                charge: 1.40 kg
+                range: 1060 m
+              -
+                charge: 1.50 kg
+                range: 1140 m
+              -
+                charge: 2.00 kg
+                range: 1465 m
+              -
+                charge: 2.50 kg
+                range: 1720 m
+              -
+                charge: 3.00 kg
+                range: 1945 m
+              -
+                charge: 3.50 kg
+                range: 2185 m
+              -
+                charge: 4.00 kg
+                range: 2350 m
+              -
+                charge: 5.00 kg
+                range: 2640 m
+          -
+            desc3: "Chambre tronc-conique en service"
+            angle: 45 deg
+            data:
+              -
+                charge: 0.50 kg
+                range: 255 m
+              -
+                charge: 0.60 kg
+                range: 335 m
+              -
+                charge: 0.70 kg
+                range: 415 m
+              -
+                charge: 0.80 kg
+                range: 500 m
+              -
+                charge: 0.90 kg
+                range: 590 m
+              -
+                charge: 1.00 kg
+                range: 680 m
+              -
+                charge: 1.10 kg
+                range: 775 m
+              -
+                charge: 1.20 kg
+                range: 870 m
+              -
+                charge: 1.30 kg
+                range: 950 m
+              -
+                charge: 1.40 kg
+                range: 1055 m
+              -
+                charge: 1.50 kg
+                range: 1115 m
+              -
+                charge: 2.00 kg
+                range: 1445 m
+              -
+                charge: 2.50 kg
+                range: 1710 m
+              -
+                charge: 3.00 kg
+                range: 1940 m
+              -
+                charge: 3.50 kg
+                range: 2180 m
+              -
+                charge: 4.00 kg
+                range: 2345 m
+              -
+                charge: 5.00 kg
+                range: 2640 m
+          -
+            desc3: "Chambre cylindrique"
+            angle: 45 deg
+            data:
+              -
+                charge: 0.50 kg
+                range: 390 m
+              -
+                charge: 0.60 kg
+                range: 495 m
+              -
+                charge: 0.70 kg
+                range: 595 m
+              -
+                charge: 0.80 kg
+                range: 685 m
+              -
+                charge: 0.90 kg
+                range: 775 m
+              -
+                charge: 1.00 kg
+                range: 805 m
+              -
+                charge: 1.10 kg
+                range: 930 m
+              -
+                charge: 1.20 kg
+                range: 1000 m
+              -
+                charge: 1.30 kg
+                range: 1070 m
+              -
+                charge: 1.40 kg
+                range: 1130 m
+              -
+                charge: 1.50 kg
+                range: 1190 m
+          -
+            desc3: "Chambre cylindrique"
+            angle: 60 deg
+            data:
+              -
+                charge: 0.50 kg
+                range: 350 m
+              -
+                charge: 0.60 kg
+                range: 445 m
+              -
+                charge: 0.70 kg
+                range: 530 m
+              -
+                charge: 0.80 kg
+                range: 615 m
+              -
+                charge: 0.90 kg
+                range: 695 m
+              -
+                charge: 1.00 kg
+                range: 765 m
+              -
+                charge: 1.10 kg
+                range: 845 m
+              -
+                charge: 1.20 kg
+                range: 915 m
+              -
+                charge: 1.30 kg
+                range: 980 m
+              -
+                charge: 1.40 kg
+                range: 1040 m
+              -
+                charge: 1.50 kg
+                range: 1100 m
+      -
+        desc2: "Mortiers de 10P"
+        diameter: 271.83 mm
+        mass: 49.23 kg
+        data:
+          -
+            desc3: "Chambre tronc-conique neuf"
+            angle: 45 deg
+            data:
+              -
+                charge: 0.50 kg
+                range: 495 m
+              -
+                charge: 0.60 kg
+                range: 610 m
+              -
+                charge: 0.70 kg
+                range: 730 m
+              -
+                charge: 0.80 kg
+                range: 845 m
+              -
+                charge: 0.90 kg
+                range: 965 m
+              -
+                charge: 1.00 kg
+                range: 1090 m
+              -
+                charge: 1.10 kg
+                range: 1200 m
+              -
+                charge: 1.20 kg
+                range: 1315 m
+              -
+                charge: 1.30 kg
+                range: 1420 m
+              -
+                charge: 1.40 kg
+                range: 1520 m
+              -
+                charge: 1.50 kg
+                range: 1605 m
+              -
+                charge: 2.00 kg
+                range: 1945 m
+              -
+                charge: 2.50 kg
+                range: 2220 m
+              -
+                charge: 3.00 kg
+                range: 2480 m
+              -
+                charge: 3.50 kg
+                range: 2715 m
+          -
+            desc3: "Chambre tronc-conique en service"
+            angle: 45 deg
+            data:
+              -
+                charge: 0.50 kg
+                range: 390 m
+              -
+                charge: 0.60 kg
+                range: 505 m
+              -
+                charge: 0.70 kg
+                range: 625 m
+              -
+                charge: 0.80 kg
+                range: 740 m
+              -
+                charge: 0.90 kg
+                range: 860 m
+              -
+                charge: 1.00 kg
+                range: 985 m
+              -
+                charge: 1.10 kg
+                range: 1110 m
+              -
+                charge: 1.20 kg
+                range: 1235 m
+              -
+                charge: 1.30 kg
+                range: 1350 m
+              -
+                charge: 1.40 kg
+                range: 1450 m
+              -
+                charge: 1.50 kg
+                range: 1540 m
+              -
+                charge: 2.00 kg
+                range: 1900 m
+              -
+                charge: 2.50 kg
+                range: 2205 m
+              -
+                charge: 3.00 kg
+                range: 2470 m
+              -
+                charge: 3.50 kg
+                range: 2710 m
+          -
+            desc3: "Chambre cylindrique, GP"
+            angle: 45 deg
+            data:
+              -
+                charge: 0.50 kg
+                range: 460 m
+              -
+                charge: 0.60 kg
+                range: 595 m
+              -
+                charge: 0.70 kg
+                range: 725 m
+              -
+                charge: 0.80 kg
+                range: 840 m
+              -
+                charge: 0.90 kg
+                range: 950 m
+              -
+                charge: 1.00 kg
+                range: 1050 m
+              -
+                charge: 1.10 kg
+                range: 1150 m
+              -
+                charge: 1.20 kg
+                range: 1245 m
+              -
+                charge: 1.30 kg
+                range: 1330 m
+              -
+                charge: 1.40 kg
+                range: 1415 m
+              -
+                charge: 1.50 kg
+                range: 1495 m
+              -
+                charge: 2.00 kg
+                range: 1855 m
+              -
+                charge: 2.50 kg
+                range: 2125 m
+              -
+                charge: 3.00 kg
+                range: 2330 m
+              -
+                charge: 3.50 kg
+                range: 2500 m
+          -
+            desc3: "Chambre cylindrique, GP"
+            angle: 60 deg
+            data:
+              -
+                charge: 0.50 kg
+                range: 400 m
+              -
+                charge: 0.60 kg
+                range: 520 m
+              -
+                charge: 0.70 kg
+                range: 650 m
+              -
+                charge: 0.80 kg
+                range: 765 m
+              -
+                charge: 0.90 kg
+                range: 840 m
+              -
+                charge: 1.00 kg
+                range: 950 m
+              -
+                charge: 1.10 kg
+                range: 1040 m
+              -
+                charge: 1.20 kg
+                range: 1120 m
+              -
+                charge: 1.30 kg
+                range: 1195 m
+              -
+                charge: 1.40 kg
+                range: 1255 m
+              -
+                charge: 1.50 kg
+                range: 1335 m
+          -
+            desc3: "Chambre cylindrique, PP"
+            angle: 45 deg
+            data:
+              -
+                charge: 0.50 kg
+                range: 620 m
+              -
+                charge: 0.60 kg
+                range: 760 m
+              -
+                charge: 0.70 kg
+                range: 885 m
+              -
+                charge: 0.80 kg
+                range: 1015 m
+              -
+                charge: 0.90 kg
+                range: 1140 m
+              -
+                charge: 1.00 kg
+                range: 1260 m
+              -
+                charge: 1.10 kg
+                range: 1350 m
+              -
+                charge: 1.20 kg
+                range: 1430 m
+              -
+                charge: 1.30 kg
+                range: 1490 m
+              -
+                charge: 1.40 kg
+                range: 1535 m
+              -
+                charge: 1.50 kg
+                range: 1570 m
+          -
+            desc3: "Chambre cylindrique, PP"
+            angle: 60 deg
+            data:
+              -
+                charge: 0.50 kg
+                range: 520 m
+              -
+                charge: 0.60 kg
+                range: 660 m
+              -
+                charge: 0.70 kg
+                range: 785 m
+              -
+                charge: 0.80 kg
+                range: 895 m
+              -
+                charge: 0.90 kg
+                range: 995 m
+              -
+                charge: 1.00 kg
+                range: 1090 m
+              -
+                charge: 1.10 kg
+                range: 1170 m
+              -
+                charge: 1.20 kg
+                range: 1235 m
+              -
+                charge: 1.30 kg
+                range: 1275 m
+              -
+                charge: 1.40 kg
+                range: 1305 m
+              -
+                charge: 1.50 kg
+                range: 1325 m
+  -
+    ref2: "p. 199"
+    desc: "Ranges of Mortars"
+    material: iron
+    diameter_note: From p. 190
+    mass_note: From p. 190
+    data:
+      -
+        desc2: "Mortiers de 8P"
+        diameter: 221.00 mm
+        mass: 21.10 kg
+        data:
+          -
+            desc3: "Chambre tronc-conique neuf"
+            angle: 45 deg
+            data:
+              -
+                charge: 0.10 kg
+                range: 110 m
+              -
+                charge: 0.20 kg
+                range: 345 m
+              -
+                charge: 0.30 kg
+                range: 580 m
+              -
+                charge: 0.40 kg
+                range: 845 m
+              -
+                charge: 0.50 kg
+                range: 1095 m
+              -
+                charge: 0.60 kg
+                range: 1355 m
+              -
+                charge: 0.70 kg
+                range: 1510 m
+              -
+                charge: 0.80 kg
+                range: 1700 m
+              -
+                charge: 0.90 kg
+                range: 1815 m
+              -
+                charge: 1.00 kg
+                range: 1915 m
+              -
+                charge: 1.10 kg
+                range: 2000 m
+          -
+            desc3: "Chambre tronc-conique en service"
+            angle: 45 deg
+            data:
+              -
+                charge: 0.10 kg
+                range: 105 m
+              -
+                charge: 0.20 kg
+                range: 315 m
+              -
+                charge: 0.30 kg
+                range: 540 m
+              -
+                charge: 0.40 kg
+                range: 775 m
+              -
+                charge: 0.50 kg
+                range: 1025 m
+              -
+                charge: 0.60 kg
+                range: 1310 m
+              -
+                charge: 0.70 kg
+                range: 1470 m
+              -
+                charge: 0.80 kg
+                range: 1665 m
+              -
+                charge: 0.90 kg
+                range: 1785 m
+              -
+                charge: 1.00 kg
+                range: 1890 m
+              -
+                charge: 1.10 kg
+                range: 1980 m
+          -
+            desc3: "Chambre cylindrique"
+            angle: 30 deg
+            data:
+              -
+                charge: 0.10 kg
+                range: 155 m
+              -
+                charge: 0.20 kg
+                range: 385 m
+              -
+                charge: 0.30 kg
+                range: 645 m
+              -
+                charge: 0.40 kg
+                range: 910 m
+              -
+                charge: 0.50 kg
+                range: 1110 m
+              -
+                charge: 0.60 kg
+                range: 1270 m
+          -
+            desc3: "Chambre cylindrique"
+            angle: 45 deg
+            data:
+              -
+                charge: 0.10 kg
+                range: 165 m
+              -
+                charge: 0.20 kg
+                range: 420 m
+              -
+                charge: 0.30 kg
+                range: 705 m
+              -
+                charge: 0.40 kg
+                range: 1000 m
+              -
+                charge: 0.50 kg
+                range: 1160 m
+              -
+                charge: 0.60 kg
+                range: 1275 m
+          -
+            desc3: "Chambre cylindrique"
+            angle: 60 deg
+            data:
+              -
+                charge: 0.10 kg
+                range: 150 m
+              -
+                charge: 0.20 kg
+                range: 370 m
+              -
+                charge: 0.30 kg
+                range: 615 m
+              -
+                charge: 0.40 kg
+                range: 815 m
+              -
+                charge: 0.50 kg
+                range: 1005 m
+              -
+                charge: 0.60 kg
+                range: 1170 m
+      -
+        desc2: "Mortiers de 6P"
+        mass: 10.56 kg
+        mass_note: From p. 163
+        diameter: 163.5 mm
+        diameter_note: From p. 163
+        angle: 45 deg
+        data:
+          -
+            charge: 0.02 kg
+            range: 40 m
+          -
+            charge: 0.04 kg
+            range: 97 m
+          -
+            charge: 0.06 kg
+            range: 148 m
+          -
+            charge: 0.08 kg
+            range: 198 m
+          -
+            charge: 0.10 kg
+            range: 245 m
+          -
+            charge: 0.15 kg
+            range: 380 m
+          -
+            charge: 0.20 kg
+            range: 540 m
+          -
+            charge: 0.25 kg
+            range: 730 m
+          -
+            charge: 0.30 kg
+            range: 925 m
+          -
+            charge: 0.35 kg
+            range: 1100 m
+          -
+            charge: 0.40 kg
+            range: 1250 m
+          -
+            charge: 0.45 kg
+            range: 1395 m
+          -
+            charge: 0.50 kg
+            range: 1530 m
+          -
+            charge: 0.55 kg
+            range: 1635 m
+      -
+        desc2: "Mortiers de 24"
+        mass: 7.23 kg
+        mass_note: From p. 163
+        diameter: 149 mm
+        diameter_note: From p. 163
+        angle: 45 deg
+        data:
+          -
+            charge: 0.02 kg
+            range: 58 m
+          -
+            charge: 0.04 kg
+            range: 120 m
+          -
+            charge: 0.06 kg
+            range: 184 m
+          -
+            charge: 0.08 kg
+            range: 242 m
+          -
+            charge: 0.10 kg
+            range: 300 m
+          -
+            charge: 0.15 kg
+            range: 472 m
+          -
+            charge: 0.20 kg
+            range: 695 m
+          -
+            charge: 0.25 kg
+            range: 915 m
+          -
+            charge: 0.30 kg
+            range: 1100 m
+          -
+            charge: 0.35 kg
+            range: 1265 m
+          -
+            charge: 0.40 kg
+            range: 1425 m
+          -
+            charge: 0.45 kg
+            range: 1575 m
+          -
+            charge: 0.50 kg
+            range: 1710 m
+  -
+    ref2: "p. 347"
+    desc: "Proof using a mortar \u00e9prouvette"
+    diameter: 0.1895 m
+    mass: 29.370 kg
+    angle: 45 deg
+    charge: 92 g
+    data:
+      -
+        desc2: "new powder"
+        range: 225 m
+      -
+        desc2: "reworked powder"
+        range: 210 m
