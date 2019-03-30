@@ -370,9 +370,10 @@
  },
  "piobert1836": {
   "cms": "Piobert, Guillaume, <i>Trait\u00e9 D'Artillerie Th\u00e9orique et Practique</i>, Paris: Leneveu, 1836.",
+  "details": "This work has a great compendium of accuracy tables of different small and large arms.  \n\nMany of the range tables for artillery pieces list angles precise to the arcsecond.  These angles include the drop of the land between the location of the artillery piece and the point of impact.  Rather than measuring the angle of the artillery piece this precisely, some coarser measurement has been used and then an angle has been added to account for the fall.  It would have been preferable to have reported the difference in height from the artillery piece and the impact.\n",
   "key": "piobert1836",
   "ref": "Piobert, 1836",
-  "summary": "Extensive information on the accuracy of different guns."
+  "summary": "Extensive information on the accuracy of different guns.  The data was collected over decades; much is references from the 1810s."
  },
  "report1742": {
   "cms": "Committee of the Royal Society. \"Report of the Committee of the Royal Society appointed to examine some Questions in Gunnery.\" <i>Philosophical Transactions of the Royal Society</i>, XVII, no. 465 (October and November 1742): 172-183.",
