@@ -411,6 +411,56 @@ ParameterList.forEach((param, idx) => {
 
 let PointKeys = {};
 
+let medianPreamble = "((d, data) => {" +
+  "if (['height','time','theory','calorimeter','final_angle'].indexOf(d.technique)>=0) return false;" +
+  "if (!d.dkey) data.forEach(d => {";
+let medianBin = "}); if (!data.sets) data.sets={}; var set = data.sets[d.dkey]; if (!set) data.sets[d.dkey] = data.filter(e => d.dkey === e.dkey).sort((a, b) => a.power_factor - b.power_factor); set = data.sets[d.dkey];  return d === set[Math.floor((set.length-1) * ";
+let medianPost = ")]; })(d, data)";
+
+let CommonFilters = {
+  preferred: "['time','theory','calorimeter','final_angle'].indexOf(d.technique)<0",
+  median_source_technique_year: medianPreamble +
+    "d.dkey = d.key+':'+d.technique+':'+d.year;" +
+    medianBin + "0.5" + medianPost,
+  quartile_source_technique_year: medianPreamble +
+    "d.dkey = d.key+':'+d.technique+':'+d.year;" +
+    medianBin + "0.75" + medianPost,
+  quartile_source_technique_10year: medianPreamble +
+    "d.dkey = d.key+':'+d.technique+':'+Math.floor(d.year/10);" +
+    medianBin + "0.75" + medianPost,
+  quartile_source_technique_20year: medianPreamble +
+    "d.dkey = d.key+':'+d.technique+':'+Math.floor(d.year/20);" +
+    medianBin + "0.75" + medianPost,
+  quartile_source_technique_25year: medianPreamble +
+    "d.dkey = d.key+':'+d.technique+':'+Math.floor(d.year/25);" +
+    medianBin + "0.75" + medianPost,
+  quartile_technique_year: medianPreamble +
+    "d.dkey = d.technique+':'+d.year;" +
+    medianBin + "0.75" + medianPost,
+  quartile_technique_10year: medianPreamble +
+    "d.dkey = d.technique+':'+Math.floor(d.year/10);" +
+    medianBin + "0.75" + medianPost,
+  quartile_technique_20year: medianPreamble +
+    "d.dkey = d.technique+':'+Math.floor(d.year/20);" +
+    medianBin + "0.75" + medianPost,
+  quartile_technique_25year: medianPreamble +
+    "d.dkey = d.technique+':'+Math.floor(d.year/25);" +
+    medianBin + "0.75" + medianPost
+};
+
+/**
+ * Since we use filters in markdown, we have URI encode them and escape
+ * parentheses.
+ *
+ * @param {string} value A string to encode.
+ * @returns {string} The encoded string.
+ */
+function encodeFilter(val) {
+  val = encodeURIComponent(val);
+  val = val.replace(/\(/g, '%28').replace(/\)/g, '%29');
+  return val;
+}
+
 /**
  * Filter data based on user input.  See
  * https://stackoverflow.com/questions/47444376 for sanitization rationale.
@@ -578,11 +628,13 @@ function updatePointKeys(data) {
 }
 
 export {
+  CommonFilters,
   NumberFormat,
   ParameterList,
   Parameters,
   PointKeys,
 
+  encodeFilter,
   filterData,
   formatValue,
   sortObjectList,

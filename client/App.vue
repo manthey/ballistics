@@ -18,6 +18,7 @@
         <li><router-link :to="{path: 'analysis'}">Analysis</router-link>
           <ul>
             <li><router-link :to="{path: 'computation'}">Computation</router-link></li>
+            <li><router-link :to="{path: 'interpretation'}">Interpretation</router-link></li>
           </ul>
         </li>
         <li><router-link :to="{path: 'references'}">References</router-link></li>
@@ -55,6 +56,7 @@ import * as utils from './utils.js';
 import Analysis from './components/Analysis.vue';
 import BoxPlotWithControls from './components/BoxPlotWithControls.vue';
 import Computation from './components/Computation.vue';
+import Interpretation from './components/Interpretation.vue';
 import MainPage from './components/MainPage.vue';
 import PlotWithControls from './components/PlotWithControls.vue';
 import References from './components/References.vue';
@@ -81,6 +83,9 @@ export default {
     }, {
       path: '/computation',
       component: Computation
+    }, {
+      path: '/interpretation',
+      component: Interpretation
     }, {
       path: '/plot',
       component: PlotWithControls,
@@ -131,7 +136,7 @@ export default {
           text: 'Preferred Experiments',
           tooltip: "Exclude theory, calorimeter, calculated, final_angle, and time techniques",
           path: 'plot',
-          query: {filter: "['time','theory','calorimeter','calculated','final_angle'].indexOf(d.technique)<0"}
+          query: {filter: utils.CommonFilters.preferred}
         }, {
           index: 'boxplot-full',
           text: 'Full Box Plot',
@@ -141,7 +146,7 @@ export default {
           text: 'Preferred Box Plot',
           tooltip: "Exclude theory, calorimeter, calculated, final_angle, and time techniques",
           path: 'boxplot',
-          query: {filter: "['time','theory','calorimeter','calculated','final_angle'].indexOf(d.technique)<0"}
+          query: {filter: utils.CommonFilters.preferred}
         }],
       tables: [{
           index: 'table-full',
