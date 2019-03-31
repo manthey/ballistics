@@ -1,0 +1,2216 @@
+---
+key: piobert1844
+ref: "Piobert, 1844"
+cms: "Piobert, Guillaume, <i>M\u00e9moires sur les Poudres de Guerre des Diff\u00e9rents Proc\u00e9d\u00e9s de Fabrication</i>, Paris: Bachelier, 1844."
+summary: "This compares gunpowder from different manufacturers based on trials in the 1830s."
+date: "1844"
+data:
+  -
+    ref2: "p. 14"
+    desc: "Comparison of different powders"
+    date: 1831
+    data:
+      -
+        mass: 6 kg
+        material: iron
+        charge: 2 kg
+        data:
+          -
+            technique: gun_pendulum
+            data:
+              -
+                desc2: "Fabrication des pilons, Metz"
+                initial_velocity: 469.8 m/s
+              -
+                desc2: "Fabrication des pilons, Maromme"
+                initial_velocity: 469.1 m/s
+              -
+                desc2: "Fabrication des pilons, Le Ripault"
+                initial_velocity: 470.7 m/s
+              -
+                desc2: "Fabrication des tonnes, Angol\u00eame"
+                initial_velocity: 504.4 m/s
+              -
+                desc2: "Fabrication des tonnes, Le Bouchet"
+                initial_velocity: 499.1 m/s
+              -
+                desc2: "Fabrication des tonnes, Esquerdes"
+                initial_velocity: 483.7 m/s
+              -
+                desc2: "Fabrication des mueles, Esquerdes (proc\u00e9d\u00e9 anglais)"
+                initial_velocity: 510.4 m/s
+          -
+            technique: double_pendulum
+            data:
+              -
+                desc2: "Fabrication des pilons, Metz"
+                initial_velocity: 471.5 m/s
+              -
+                desc2: "Fabrication des pilons, Maromme"
+                initial_velocity: 483.1 m/s
+              -
+                desc2: "Fabrication des pilons, Le Ripault"
+                initial_velocity: 477.4 m/s
+              -
+                desc2: "Fabrication des tonnes, Angol\u00eame"
+                initial_velocity: 521.0 m/s
+              -
+                desc2: "Fabrication des tonnes, Le Bouchet"
+                initial_velocity: 501.6 m/s
+              -
+                desc2: "Fabrication des tonnes, Esquerdes"
+                initial_velocity: 496.6 m/s
+              -
+                desc2: "Fabrication des mueles, Esquerdes (proc\u00e9d\u00e9 anglais)"
+                initial_velocity: 519.9 m/s
+      -
+        diameter: 0.1895 m
+        diameter_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+        mass: 29.370 kg
+        mass_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+        angle: 45 deg
+        charge: 92 g
+        charge_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+        data:
+          -
+            desc2: "Fabrication des pilons, Metz"
+            range: 235.1 m
+          -
+            desc2: "Fabrication des pilons, Maromme"
+            range: 234.6 m
+          -
+            desc2: "Fabrication des pilons, Le Ripault"
+            range: 235.7 m
+          -
+            desc2: "Fabrication des tonnes, Angol\u00eame"
+            range: 235.3 m
+          -
+            desc2: "Fabrication des tonnes, Le Bouchet"
+            range: 238.6 m
+          -
+            desc2: "Fabrication des tonnes, Esquerdes"
+            range: 233.9 m
+          -
+            desc2: "Fabrication des mueles, Esquerdes (proc\u00e9d\u00e9 anglais)"
+            range: 213.8 m
+  -
+    ref2: "p. 18"
+    desc: "Comparison of different powders"
+    date: 1831
+    data:
+      -
+        mass: 6 kg
+        material: iron
+        charge: 2 kg
+        technique: double_pendulum
+        data:
+          -
+            desc2: "Fabrication des pilons, Metz"
+            data:
+              - initial_velocity: 483.4 m/s
+              - initial_velocity: 474.8 m/s
+          -
+            desc2: "Fabrication des pilons, Maromme"
+            data:
+              - initial_velocity: 485.3 m/s
+              - initial_velocity: 478.8 m/s
+          -
+            desc2: "Fabrication des pilons, Le Ripault"
+            data:
+              - initial_velocity: 482.7 m/s
+              - initial_velocity: 480.6 m/s
+          -
+            desc2: "Fabrication des tonnes, Angol\u00eame"
+            data:
+              - initial_velocity: 508.6 m/s
+              - initial_velocity: 486.7 m/s
+          -
+            desc2: "Fabrication des tonnes, Le Bouchet"
+            data:
+              - initial_velocity: 504.3 m/s
+              - initial_velocity: 483.0 m/s
+          -
+            desc2: "Fabrication des tonnes, Esquerdes"
+            data:
+              - initial_velocity: 498.5 m/s
+              - initial_velocity: 491.1 m/s
+          -
+            desc2: "Fabrication des mueles, Esquerdes"
+            data:
+              - initial_velocity: 528.9 m/s
+              - initial_velocity: 485.2 m/s
+          -
+            desc2: "Fabrication des mueles, Angleterre"
+            data:
+              - initial_velocity: 515.0 m/s
+              - initial_velocity: 495.0 m/s
+      -
+        diameter: 27 cm
+        material: iron
+        angle: 45 deg
+        charge: 0.73 kg
+        data:
+          -
+            desc2: "Fabrication des pilons, Metz"
+            range: 724.1 m
+          -
+            desc2: "Fabrication des tonnes, Le Bouchet"
+            range: 678.3 m
+          -
+            desc2: "Fabrication des tonnes, Esquerdes"
+            range: 734.8 m
+          -
+            desc2: "Fabrication des mueles, Esquerdes"
+            range: 613.4 m
+          -
+            desc2: "Fabrication des mueles, Angleterre"
+            range: 704.3 m
+      -
+        diameter: 0.1895 m
+        diameter_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+        mass: 29.370 kg
+        mass_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+        angle: 45 deg
+        charge: 92 g
+        charge_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+        data:
+          -
+            desc2: "Fabrication des pilons, Metz"
+            range: 237.8 m
+          -
+            desc2: "Fabrication des pilons, Maromme"
+            range: 238.2 m
+          -
+            desc2: "Fabrication des pilons, Le Ripault"
+            range: 236.5 m
+          -
+            desc2: "Fabrication des tonnes, Angol\u00eame"
+            range: 230.3 m
+          -
+            desc2: "Fabrication des tonnes, Le Bouchet"
+            range: 235.6 m
+          -
+            desc2: "Fabrication des tonnes, Esquerdes"
+            range: 234.7 m
+          -
+            desc2: "Fabrication des mueles, Esquerdes"
+            range: 214.2 m
+          -
+            desc2: "Fabrication des mueles, Angleterre"
+            range: 236.8 m
+  -
+    ref2: "p. 44"
+    desc: "Comparison of different powders"
+    diameter: 0.1895 m
+    diameter_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+    mass: 29.370 kg
+    mass_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+    angle: 45 deg
+    charge: 92 g
+    charge_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+    data:
+      -
+        desc2: "Powder A"
+        data:
+          -
+            date: 1720
+            range: 209.5 m
+          -
+            date: 1721
+            range: 172.17 m
+          -
+            date: 1722
+            range: 197.60 m
+          -
+            date: 1723
+            range: 200.7 m
+          -
+            date: 1724
+            range: 203.95 m
+          -
+            date: 1725
+            range: 208.25 m
+          -
+            date: 1726
+            range: 210.55 m
+      -
+        desc2: "Powder B"
+        date: 1836-01
+        range: 232.40 m
+      -
+        desc2: "Powder C"
+        date: 1835
+        range: 182.33 m
+      -
+        desc2: "Powder D"
+        date: 1835
+        range: 201.75 m
+      -
+        desc2: "Powder E"
+        date: 1835
+        range: 216.40 m
+      -
+        desc2: "Powder F"
+        date: 1835
+        range: 198.66 m
+      -
+        desc2: "Powder G"
+        date: 1830
+        range: 242.0 m
+      -
+        desc2: "Powder H"
+        date: 1836-01
+        range: 234.4 m
+      -
+        desc2: "Powder K"
+        date: 1831
+        range: 213.8 m
+      -
+        desc2: "Powder L"
+        date: 1836
+        range: 238.0 m
+  -
+    ref2: "p. 73"
+    desc: "Comparison of different powders, effects of humidity and transport"
+    diameter: 0.1895 m
+    diameter_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+    mass: 29.370 kg
+    mass_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+    angle: 45 deg
+    charge: 92 g
+    charge_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+    data:
+      -
+        desc2: "Powder A4"
+        date: 1726
+        data:
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 218.7 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 215.6 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 221.9 m
+      -
+        desc2: "Powder A3"
+        date: 1724
+        data:
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au pas"
+            range: 213.0 m
+          -
+            desc3: "Grains de toutes grosseurs; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 215.1 m
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au trot"
+            range: 218.7 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au pas"
+            range: 207.65 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 204.9 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au trot"
+            range: 215.6 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au pas"
+            range: 219.7 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 219.8 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au trot"
+            range: 221.9 m
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 218.7 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 215.6 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 221.9 m
+          -
+            desc3: "Port\u00e9es trouv\u00e9es dans les \u00e9tablissements"
+            range: 197.6 m
+          -
+            desc3: "High humidity"
+            range: 166.0 m
+          -
+            desc3: "Medium humidity"
+            range: 188.0 m
+          -
+            desc3: "Low humidity"
+            range: 208.0 m
+      -
+        desc2: "Powder A16"
+        date: 1726
+        data:
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au pas"
+            range: 215.5 m
+          -
+            desc3: "Grains de toutes grosseurs; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 216.9 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au pas"
+            range: 210.65 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 206.1 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au pas"
+            range: 226.1 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 225.3 m
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 216.0 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 208.4 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 225.7 m
+          -
+            desc3: "Port\u00e9es trouv\u00e9es dans les \u00e9tablissements"
+            range: 204.0 m
+      -
+        desc2: "Powder B"
+        date: 1836-01
+        data:
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au pas"
+            range: 235.15 m
+          -
+            desc3: "Grains de toutes grosseurs; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 236.1 m
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au trot"
+            range: 234.4 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au pas"
+            range: 233.3 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 233.4 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au trot"
+            range: 234.9 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au pas"
+            range: 232.4 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 233.4 m
+            range_note: "The table reads 333.4, which is certainly a mistake."
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au trot"
+            range: 235.1 m
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 235.2 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 233.9 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 233.6 m
+          -
+            desc3: "Port\u00e9es trouv\u00e9es dans les \u00e9tablissements"
+            range: 232.4 m
+          -
+            desc3: "High humidity"
+            range: 163.0 m
+          -
+            desc3: "Medium humidity"
+            range: 191.5 m
+          -
+            desc3: "Low humidity"
+            range: 225.5 m
+      -
+        desc2: "Powder C"
+        date: 1835
+        data:
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au pas"
+            range: 199.9 m
+          -
+            desc3: "Grains de toutes grosseurs; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 200.7 m
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au trot"
+            range: 203.2 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au pas"
+            range: 198.3 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 199.6 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au trot"
+            range: 197.9 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au pas"
+            range: 223.65 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 221.9 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au trot"
+            range: 228.6 m
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 201.3 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 198.6 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 224.7 m
+          -
+            desc3: "Port\u00e9es trouv\u00e9es dans les \u00e9tablissements"
+            range: 182.33 m
+          -
+            desc3: "High humidity"
+            range: 110.0 m
+          -
+            desc3: "Medium humidity"
+            range: 121.0 m
+          -
+            desc3: "Low humidity"
+            range: 162.0 m
+      -
+        desc2: "Powder D"
+        date: 1835
+        data:
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au pas"
+            range: 207.0 m
+          -
+            desc3: "Grains de toutes grosseurs; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 208.1 m
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au trot"
+            range: 206.9 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au pas"
+            range: 201.3 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 201.6 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au trot"
+            range: 201.7 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au pas"
+            range: 226.1 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 230.1 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au trot"
+            range: 229.9 m
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 207.3 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 201.5 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 228.7 m
+          -
+            desc3: "Port\u00e9es trouv\u00e9es dans les \u00e9tablissements"
+            range: 201.75 m
+          -
+            desc3: "High humidity"
+            range: 128.5 m
+          -
+            desc3: "Medium humidity"
+            range: 144.0 m
+          -
+            desc3: "Low humidity"
+            range: 174.5 m
+      -
+        desc2: "Powder E"
+        date: 1835
+        data:
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au pas"
+            range: 217.5 m
+          -
+            desc3: "Grains de toutes grosseurs; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 218.2 m
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au trot"
+            range: 217.6 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au pas"
+            range: 215.0 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 213.2 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au trot"
+            range: 215.9 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au pas"
+            range: 227.7 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 229.9 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au trot"
+            range: 228.9 m
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 217.8 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 214.7 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 228.8 m
+          -
+            desc3: "Port\u00e9es trouv\u00e9es dans les \u00e9tablissements"
+            range: 216.4 m
+          -
+            desc3: "High humidity"
+            range: 170.0 m
+          -
+            desc3: "Medium humidity"
+            range: 180.0 m
+          -
+            desc3: "Low humidity"
+            range: 193.0 m
+      -
+        desc2: "Powder F"
+        date: 1834
+        data:
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au pas"
+            range: 239.6 m
+          -
+            desc3: "Grains de toutes grosseurs; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 238.6 m
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au trot"
+            range: 235.4 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au pas"
+            range: 238.5 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 237.1 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au trot"
+            range: 240.4 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au pas"
+            range: 237.2 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 237.4 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au trot"
+            range: 238.9 m
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 237.8 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 238.7 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 237.8 m
+          -
+            desc3: "Port\u00e9es trouv\u00e9es dans les \u00e9tablissements"
+            range: 198.66 m
+          -
+            desc3: "High humidity"
+            range: 189.0 m
+          -
+            desc3: "Medium humidity"
+            range: 208.5 m
+          -
+            desc3: "Low humidity"
+            range: 222.0 m
+      -
+        desc2: "Powder G"
+        date: 1830
+        data:
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au pas"
+            range: 243.8 m
+          -
+            desc3: "Grains de toutes grosseurs; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 241.9 m
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au trot"
+            range: 238.1 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au pas"
+            range: 242.0 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 238.2 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au trot"
+            range: 242.9 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au pas"
+            range: 238.1 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 242.8 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au trot"
+            range: 242.6 m
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 241.3 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 241.0 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 241.2 m
+          -
+            desc3: "Port\u00e9es trouv\u00e9es dans les \u00e9tablissements"
+            range: 242.0 m
+          -
+            desc3: "High humidity"
+            range: 210.0 m
+          -
+            desc3: "Medium humidity"
+            range: 220.0 m
+          -
+            desc3: "Low humidity"
+            range: 228.0 m
+      -
+        desc2: "Powder H"
+        date: 1836-01
+        data:
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au pas"
+            range: 238.5 m
+          -
+            desc3: "Grains de toutes grosseurs; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 236.7 m
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au trot"
+            range: 234.7 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au pas"
+            range: 238.65 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 236.9 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au trot"
+            range: 241.0 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au pas"
+            range: 232.4 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 235.6 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au trot"
+            range: 234.4 m
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 236.6 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 238.8 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 234.1 m
+          -
+            desc3: "Port\u00e9es trouv\u00e9es dans les \u00e9tablissements"
+            range: 234.4 m
+          -
+            desc3: "High humidity"
+            range: 218.0 m
+          -
+            desc3: "Medium humidity"
+            range: 221.5 m
+          -
+            desc3: "Low humidity"
+            range: 233.0 m
+      -
+        desc2: "Powder K"
+        date: 1831
+        data:
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au pas"
+            range: 209.3 m
+          -
+            desc3: "Grains de toutes grosseurs; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 206.6 m
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au trot"
+            range: 215.5 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au pas"
+            range: 209.8 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 204.2 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au trot"
+            range: 213.2 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au pas"
+            range: 216.6 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 218.8 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au trot"
+            range: 217.6 m
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 210.5 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 209.1 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 217.7 m
+          -
+            desc3: "Port\u00e9es trouv\u00e9es dans les \u00e9tablissements"
+            range: 213.8 m
+          -
+            desc3: "High humidity"
+            range: 124.5 m
+          -
+            desc3: "Medium humidity"
+            range: 138.0 m
+          -
+            desc3: "Low humidity"
+            range: 159.0 m
+      -
+        desc2: "Powder L"
+        date: 1836
+        data:
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au pas"
+            range: 235.4 m
+          -
+            desc3: "Grains de toutes grosseurs; Transport\u00e9s au trot"
+            range: 229.0 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Transport\u00e9s au pas"
+            range: 231.6 m
+          -
+            desc3: "Grains de au-dessus de 1.4 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 230.4 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Transport\u00e9s au pas"
+            range: 234.2 m
+          -
+            desc3: "Grains de 1.4 mm 00e0 1 mm; Roul\u00e9s sur le plan inclin\u00e9"
+            range: 233.2 m
+          -
+            desc3: "Moy., de 9 coups; Grains de toutes grosseurs"
+            range: 232.2 m
+          -
+            desc3: "Moy., de 9 coups; Au-dessus de 1.40 mm"
+            range: 231.0 m
+          -
+            desc3: "Moy., de 9 coups; De 1.40 mm \u00e0 1 mm"
+            range: 233.7 m
+          -
+            desc3: "Port\u00e9es trouv\u00e9es dans les \u00e9tablissements"
+            range: 238.0 m
+          -
+            desc3: "High humidity"
+            range: 196.0 m
+          -
+            desc3: "Medium humidity"
+            range: 205.5 m
+          -
+            desc3: "Low humidity"
+            range: 208.0 m
+  -
+    ref2: "p. 73"
+    desc: "Comparison of different powders in different mortars"
+    angle: 45 deg
+    material: iron
+    data:
+      -
+        desc2: "Charges ordinaires; mortier de 32c; en tr\u00e8s bon \u00e9tat"
+        diameter: 32 cm
+        charge: 0.9 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 472.7 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 558 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 558.5 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 591.5 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 654.5 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 562.5 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 631.5 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 682.5 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 554.5 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 500.5 m
+      -
+        desc2: "Charges ordinaires; mortier de 32c; en bon \u00e9tat"
+        diameter: 32 cm
+        charge: 0.9 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 453.7 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 548 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 513.5 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 529.5 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 604 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 555.5 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 618 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 661.5 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 548 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 463.5 m
+      -
+        desc2: "Charges ordinaires; mortier de 27c; fort logement"
+        diameter: 27 cm
+        charge: 0.7 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 399.5 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 502.5 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 457.5 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 538 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 535 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 493.5 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 584.5 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 633 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 493.5 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 445.5 m
+      -
+        desc2: "Charges ordinaires; mortier de 27c; un peu \u00e9vas\u00e9"
+        diameter: 27 cm
+        charge: 0.7 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 477.3 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 557 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 512 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 576.5 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 605.5 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 560.5 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 662.5 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 678.5 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 590.5 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 508 m
+      -
+        desc2: "Charges ordinaires; mortier de 22c; en bon \u00e9tat"
+        diameter: 22 cm
+        charge: 0.350 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 440.3 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 562.5 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 480 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 571.5 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 616 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 564.5 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 638 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 684 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 590 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 489.5 m
+      -
+        desc2: "Charges ordinaires; mortier de 22c; assez \u00e9vas\u00e9"
+        diameter: 22 cm
+        charge: 0.350 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 399 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 475.5 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 443.5 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 544 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 557 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 507 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 625.5 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 693 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 501 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 448 m
+      -
+        desc2: "Poudre sans petits grains; mortier de 32c; en tr\u00e8s bon \u00e9tat"
+        diameter: 32 cm
+        charge: 0.9 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 416 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 557.5 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 517 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 604 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 609 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 549 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 593.5 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 692.5 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 574 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 535 m
+      -
+        desc2: "Poudre sans petits grains; mortier de 32c; en bon \u00e9tat"
+        diameter: 32 cm
+        charge: 0.9 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 434.5 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 537 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 491 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 541.5 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 590.5 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 518 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 587.5 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 704 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 542.5 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 509.5 m
+      -
+        desc2: "Poudre sans petits grains; mortier de 27c; fort logement"
+        diameter: 27 cm
+        charge: 0.7 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 395 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 470.5 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 452 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 495.5 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 516.5 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 447 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 512.5 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 620 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 449 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 446.5 m
+      -
+        desc2: "Poudre sans petits grains; mortier de 27c; un peu \u00e9vas\u00e9"
+        diameter: 27 cm
+        charge: 0.7 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 445 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 552.5 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 533 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 587.5 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 605 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 566.5 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 614 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 694 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 546 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 529.5 m
+      -
+        desc2: "Poudre sans petits grains; mortier de 22c; en bon \u00e9tat"
+        diameter: 22 cm
+        charge: 0.350 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 379.5 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 549.5 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 473.5 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 562 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 573.5 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 501 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 579 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 680 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 514 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 483.5 m
+      -
+        desc2: "Poudre sans petits grains; mortier de 22c; assez \u00e9vas\u00e9"
+        diameter: 22 cm
+        charge: 0.350 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 369.5 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 489 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 453 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 560 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 507.5 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 473 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 621.5 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 634.5 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 470 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 441.5 m
+      -
+        desc2: "Petites charges; mortier de 32c; en tr\u00e8s bon \u00e9tat"
+        diameter: 32 cm
+        charge: 0.7 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 305.5 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 408 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 391 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 440.5 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 443.5 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 400 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 471 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 462.5 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 442 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 378.5 m
+      -
+        desc2: "Petites charges; mortier de 32c; en bon \u00e9tat"
+        diameter: 32 cm
+        charge: 0.79 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 300 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 381.5 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 381.5 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 437 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 431.5 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 391 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 459 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 485.5 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 397 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 333.5 m
+      -
+        desc2: "Petites charges; mortier de 27c; fort logement"
+        diameter: 27 cm
+        charge: 0.5 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 225.5 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 273.5 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 296 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 337.5 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 341 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 308.5 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 351 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 353.5 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 333 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 291 m
+      -
+        desc2: "Petites charges; mortier de 27c; un peu \u00e9vas\u00e9"
+        diameter: 27 cm
+        charge: 0.5 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 269.5 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 374.5 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 371.5 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 396.5 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 406.5 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 368.5 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 418.5 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 452.5 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 390.5 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 300.5 m
+      -
+        desc2: "Petites charges; mortier de 22c; en bon \u00e9tat"
+        diameter: 22 cm
+        charge: 0.250 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 259 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 391.5 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 317.5 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 427 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 390 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 346.5 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 411.5 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 398 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 377 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 341 m
+      -
+        desc2: "Petites charges; mortier de 22c; assez \u00e9vas\u00e9"
+        diameter: 22 cm
+        charge: 0.250 kg
+        data:
+          -
+            desc3: "Powder A"
+            date: 1724
+            date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+            range: 216 m
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            range: 315 m
+          -
+            desc3: "Powder C"
+            date: 1835
+            range: 298.5 m
+          -
+            desc3: "Powder D"
+            date: 1835
+            range: 344 m
+          -
+            desc3: "Powder E"
+            date: 1835
+            range: 366 m
+          -
+            desc3: "Powder F"
+            date: 1835
+            range: 314.5 m
+          -
+            desc3: "Powder G"
+            date: 1830
+            range: 377.5 m
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            range: 400.5 m
+          -
+            desc3: "Powder K"
+            date: 1831
+            range: 336.5 m
+          -
+            desc3: "Powder L"
+            date: 1836
+            range: 290.5 m
+      -
+        skip: true
+        skip_note: the remaining portion of the table is just an average of the first two sets
+  -
+    ref2: "p. 79"
+    skip: true
+    skip_note: It isn't clear to me what size fusil is being used
+  -
+    ref2: "p. 82"
+    desc: "Difference in initial velocities from different powders in canons"
+    angle: 0
+    material: iron
+    data:
+      -
+        technique: double_pendulum
+        data:
+          -
+            mass: 12 kg
+            charge: 3.0 kg
+            data:
+              -
+                desc3: "Powder A"
+                date: 1724
+                date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+                initial_velocity: 471.5 m/s
+              -
+                desc3: "Powder B"
+                date: 1836-01
+                initial_velocity: 482.3 m/s
+              -
+                desc3: "Powder C"
+                date: 1835
+                initial_velocity: 504.0 m/s
+              -
+                desc3: "Powder D"
+                date: 1835
+                initial_velocity: 498.6 m/s
+              -
+                desc3: "Powder E"
+                date: 1835
+                initial_velocity: 494.2 m/s
+              -
+                desc3: "Powder F"
+                date: 1835
+                initial_velocity: 486.7 m/s
+              -
+                desc3: "Powder G"
+                date: 1830
+                initial_velocity: 487.5 m/s
+              -
+                desc3: "Powder H"
+                date: 1836-01
+                initial_velocity: 457.4 m/s
+              -
+                desc3: "Powder K"
+                date: 1831
+                initial_velocity: 496.5 m/s
+              -
+                desc3: "Powder L"
+                date: 1836
+                initial_velocity: 496.4 m/s
+          -
+            mass: 12 kg
+            charge: 4.0 kg
+            data:
+              -
+                desc3: "Powder A"
+                date: 1724
+                date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+                initial_velocity: 522.9 m/s
+              -
+                desc3: "Powder B"
+                date: 1836-01
+                initial_velocity: 530.5 m/s
+              -
+                desc3: "Powder C"
+                date: 1835
+                initial_velocity: 565.5 m/s
+              -
+                desc3: "Powder D"
+                date: 1835
+                initial_velocity: 564.9 m/s
+              -
+                desc3: "Powder E"
+                date: 1835
+                initial_velocity: 549.9 m/s
+              -
+                desc3: "Powder F"
+                date: 1835
+                initial_velocity: 535.6 m/s
+              -
+                desc3: "Powder G"
+                date: 1830
+                initial_velocity: 537.7 m/s
+              -
+                desc3: "Powder H"
+                date: 1836-01
+                initial_velocity: 479.7 m/s
+              -
+                desc3: "Powder K"
+                date: 1831
+                initial_velocity: 559.7 m/s
+              -
+                desc3: "Powder L"
+                date: 1836
+                initial_velocity: 544.4 m/s
+          -
+            mass: 6 kg
+            charge: 1.5 kg
+            data:
+              -
+                desc3: "Powder A"
+                date: 1724
+                date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+                initial_velocity: 458.4 m/s
+              -
+                desc3: "Powder B"
+                date: 1836-01
+                initial_velocity: 462.1 m/s
+              -
+                desc3: "Powder C"
+                date: 1835
+                initial_velocity: 483.9 m/s
+              -
+                desc3: "Powder D"
+                date: 1835
+                initial_velocity: 480.6 m/s
+              -
+                desc3: "Powder E"
+                date: 1835
+                initial_velocity: 469.5 m/s
+              -
+                desc3: "Powder F"
+                date: 1835
+                initial_velocity: 475.7 m/s
+              -
+                desc3: "Powder G"
+                date: 1830
+                initial_velocity: 464.0 m/s
+              -
+                desc3: "Powder H"
+                date: 1836-01
+                initial_velocity: 448.4 m/s
+              -
+                desc3: "Powder K"
+                date: 1831
+                initial_velocity: 485.1 m/s
+              -
+                desc3: "Powder L"
+                date: 1836
+                initial_velocity: 479.6 m/s
+          -
+            mass: 6 kg
+            charge: 2.0 kg
+            data:
+              -
+                desc3: "Powder A"
+                date: 1724
+                date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+                initial_velocity: 516.8 m/s
+              -
+                desc3: "Powder B"
+                date: 1836-01
+                initial_velocity: 522.6 m/s
+              -
+                desc3: "Powder C"
+                date: 1835
+                initial_velocity: 536.8 m/s
+              -
+                desc3: "Powder D"
+                date: 1835
+                initial_velocity: 537.1 m/s
+              -
+                desc3: "Powder E"
+                date: 1835
+                initial_velocity: 523.2 m/s
+              -
+                desc3: "Powder F"
+                date: 1835
+                initial_velocity: 531.3 m/s
+              -
+                desc3: "Powder G"
+                date: 1830
+                initial_velocity: 525.4 m/s
+              -
+                desc3: "Powder H"
+                date: 1836-01
+                initial_velocity: 488.8 m/s
+              -
+                desc3: "Powder K"
+                date: 1831
+                initial_velocity: 542.5 m/s
+              -
+                desc3: "Powder L"
+                date: 1836
+                initial_velocity: 539.9 m/s
+      -
+        technique: gun_pendulum
+        data:
+          -
+            mass: 12 kg
+            charge: 3.0 kg
+            data:
+              -
+                desc3: "Powder A"
+                date: 1724
+                date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+                initial_velocity: 461.5 m/s
+              -
+                desc3: "Powder B"
+                date: 1836-01
+                initial_velocity: 472.3 m/s
+              -
+                desc3: "Powder C"
+                date: 1835
+                initial_velocity: 495.1 m/s
+              -
+                desc3: "Powder D"
+                date: 1835
+                initial_velocity: 489.7 m/s
+              -
+                desc3: "Powder E"
+                date: 1835
+                initial_velocity: 483.0 m/s
+              -
+                desc3: "Powder F"
+                date: 1835
+                initial_velocity: 479.8 m/s
+              -
+                desc3: "Powder G"
+                date: 1830
+                initial_velocity: 480.0 m/s
+              -
+                desc3: "Powder H"
+                date: 1836-01
+                initial_velocity: 446.5 m/s
+              -
+                desc3: "Powder K"
+                date: 1831
+                initial_velocity: 487.7 m/s
+              -
+                desc3: "Powder L"
+                date: 1836
+                initial_velocity: 486.2 m/s
+          -
+            mass: 12 kg
+            charge: 4.0 kg
+            data:
+              -
+                desc3: "Powder A"
+                date: 1724
+                date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+                initial_velocity: 507.8 m/s
+              -
+                desc3: "Powder B"
+                date: 1836-01
+                initial_velocity: 512.2 m/s
+              -
+                desc3: "Powder C"
+                date: 1835
+                initial_velocity: 553.7 m/s
+              -
+                desc3: "Powder D"
+                date: 1835
+                initial_velocity: 554.7 m/s
+              -
+                desc3: "Powder E"
+                date: 1835
+                initial_velocity: 539.2 m/s
+              -
+                desc3: "Powder F"
+                date: 1835
+                initial_velocity: 525.8 m/s
+              -
+                desc3: "Powder G"
+                date: 1830
+                initial_velocity: 524.1 m/s
+              -
+                desc3: "Powder H"
+                date: 1836-01
+                initial_velocity: 455.5 m/s
+              -
+                desc3: "Powder K"
+                date: 1831
+                initial_velocity: 546.9 m/s
+              -
+                desc3: "Powder L"
+                date: 1836
+                initial_velocity: 527.8 m/s
+          -
+            mass: 6 kg
+            charge: 1.5 kg
+            data:
+              -
+                desc3: "Powder A"
+                date: 1724
+                date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+                initial_velocity: 456.8 m/s
+              -
+                desc3: "Powder B"
+                date: 1836-01
+                initial_velocity: 457.1 m/s
+              -
+                desc3: "Powder C"
+                date: 1835
+                initial_velocity: 482.5 m/s
+              -
+                desc3: "Powder D"
+                date: 1835
+                initial_velocity: 479.0 m/s
+              -
+                desc3: "Powder E"
+                date: 1835
+                initial_velocity: 465.0 m/s
+              -
+                desc3: "Powder F"
+                date: 1835
+                initial_velocity: 473.0 m/s
+              -
+                desc3: "Powder G"
+                date: 1830
+                initial_velocity: 466.9 m/s
+              -
+                desc3: "Powder H"
+                date: 1836-01
+                initial_velocity: 452.8 m/s
+              -
+                desc3: "Powder K"
+                date: 1831
+                initial_velocity: 481.7 m/s
+              -
+                desc3: "Powder L"
+                date: 1836
+                initial_velocity: 478.0 m/s
+          -
+            mass: 6 kg
+            charge: 2.0 kg
+            data:
+              -
+                desc3: "Powder A"
+                date: 1724
+                date_note: "I'm not sure which barrel of powder A this is from; I've chosen A3"
+                initial_velocity: 514.6 m/s
+              -
+                desc3: "Powder B"
+                date: 1836-01
+                initial_velocity: 517.3 m/s
+              -
+                desc3: "Powder C"
+                date: 1835
+                initial_velocity: 537.6 m/s
+              -
+                desc3: "Powder D"
+                date: 1835
+                initial_velocity: 535.9 m/s
+              -
+                desc3: "Powder E"
+                date: 1835
+                initial_velocity: 522.4 m/s
+              -
+                desc3: "Powder F"
+                date: 1835
+                initial_velocity: 518.8 m/s
+              -
+                desc3: "Powder G"
+                date: 1830
+                initial_velocity: 528.6 m/s
+              -
+                desc3: "Powder H"
+                date: 1836-01
+                initial_velocity: 482.4 m/s
+              -
+                desc3: "Powder K"
+                date: 1831
+                initial_velocity: 535.0 m/s
+              -
+                desc3: "Powder L"
+                date: 1836
+                initial_velocity: 535.6 m/s
+  -
+    ref2: "p. 85"
+    desc: "Difference in initial velocities from different cartridge lengths"
+    angle: 0
+    material: iron
+    mass: 12 kg
+    charge: 6.0 kg
+    technique: double_pendulum
+    data:
+      -
+        desc2: "Chargement ordinaire avec gargousse de 140 millim. de diam"
+        data:
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            initial_velocity: 577.8 m/s
+          -
+            desc3: "Powder C"
+            date: 1835
+            initial_velocity: 647.4 m/s
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            initial_velocity: 534.7 m/s
+      -
+        desc2: "Chargement allong\u00e9 avec gargousse de 128 millim\u00e8tr. de diam\u00e8tre."
+        data:
+          -
+            desc3: "Powder B"
+            date: 1836-01
+            initial_velocity: 596.8 m/s
+          -
+            desc3: "Powder C"
+            date: 1835
+            initial_velocity: 646.3 m/s
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            initial_velocity: 545.6 m/s
+  -
+    ref2: "p. 85"
+    desc: "Difference in initial velocities from different powder and windage"
+    angle: 0
+    material: iron
+    charge: 2.0 kg
+    technique: double_pendulum
+    diameter_note: The diameter of a canon de 12 is around 115.4 mm, so I've based the diameter off of that less the specified windage.
+    data:
+      -
+        desc2: "0 \u00e0 0.5 mm"
+        diameter: 115 mm
+        data:
+          -
+            desc3: "Powder K"
+            date: 1831
+            initial_velocity: 543.0 m/s
+      -
+        desc2: "1.0 \u00e0 1.5 mm"
+        diameter: 114 mm
+        data:
+          -
+            desc3: "Powder K"
+            date: 1831
+            initial_velocity: 542.5 m/s
+          -
+            desc3: "Powder G"
+            date: 1830
+            initial_velocity: 525.4 m/s
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            initial_velocity: 488.8 m/s
+      -
+        desc2: "3.6 mm"
+        diameter: 111.8 mm
+        data:
+          -
+            desc3: "Powder K"
+            date: 1831
+            initial_velocity: 528.9 m/s
+          -
+            desc3: "Powder G"
+            date: 1830
+            initial_velocity: 504.3 m/s
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            initial_velocity: 483.4 m/s
+      -
+        desc2: "Plus de 9.0 mm"
+        diameter: 106.4 mm
+        data:
+          -
+            desc3: "Powder K"
+            date: 1831
+            initial_velocity: 485.2 m/s
+          -
+            desc3: "Powder G"
+            date: 1830
+            initial_velocity: 483.0 m/s
+          -
+            desc3: "Powder H"
+            date: 1836-01
+            initial_velocity: 474.8 m/s
+  -
+    ref2: "p. 97"
+    skip: true
+    skip_note: It isn't clear to me what size fusil is being used
+  -
+    ref2: "p. 99"
+    desc: "Comparison of French and foreign powders"
+    data:
+      -
+        diameter: 0.1895 m
+        diameter_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+        mass: 29.370 kg
+        mass_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+        angle: 45 deg
+        charge: 92 g
+        charge_note: "Standard French mortar eprouvette; value taken from Piobert, 1836, p. 347"
+        data:
+          -
+            desc2: "France"
+            range: 242.4 m
+          -
+            desc2: "Angleterre, Hounslow"
+            range: 233.2 m
+          -
+            desc2: "Autriche"
+            range: 239.2 m
+          -
+            desc2: "Prusse"
+            range: 244.6 m
+          -
+            desc2: "Russie"
+            range: 243.1 m
+      -
+        mass: 6 kg
+        charge: 2.0 kg
+        technique: double_pendulum
+        angle: 0
+        material: iron
+        data:
+          -
+            desc2: "France"
+            initial_velocity: 494.00 m/s
+          -
+            desc2: "Angleterre, Hounslow"
+            initial_velocity: 503.22 m/s
+          -
+            desc2: "Autriche"
+            initial_velocity: 490.52 m/s
+          -
+            desc2: "Prusse"
+            initial_velocity: 499.79 m/s
+          -
+            desc2: "Russie"
+            initial_velocity: 489.71 m/s
+  -
+    ref2: "p. 104"
+    skip: true
+    skip_note: It isn't clear to me what size fusil is being used
