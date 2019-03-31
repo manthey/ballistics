@@ -375,6 +375,12 @@
   "ref": "Piobert, 1836",
   "summary": "Extensive information on the accuracy of different guns.  The data was collected over decades; much is references from the 1810s."
  },
+ "piobert1844": {
+  "cms": "Piobert, Guillaume, <i>M\u00e9moires sur les Poudres de Guerre des Diff\u00e9rents Proc\u00e9d\u00e9s de Fabrication</i>, Paris: Bachelier, 1844.",
+  "key": "piobert1844",
+  "ref": "Piobert, 1844",
+  "summary": "This compares gunpowder from different manufacturers based on trials in the 1830s."
+ },
  "report1742": {
   "cms": "Committee of the Royal Society. \"Report of the Committee of the Royal Society appointed to examine some Questions in Gunnery.\" <i>Philosophical Transactions of the Royal Society</i>, XVII, no. 465 (October and November 1742): 172-183.",
   "details": "This is a report from a group instructed to determine if all gunpowder is burnt when firing a gun, and also if all of the gunpowder has fired (inflamed) before the bullet has moved a significant distance.  Since not all of the gunpowder is burnt, they also conclude that it doesn't happen instantaneously.  As a follow up to this, they test how different short barrel lengths affect the range of a mortar.\n\nFor this purpose, the committee had made three inserts that would fit into a mortar.  Each insert had a cylindrical powder chamber that held one ounce Troy of powder, but had different lengths and diameters.  Specifically, the chamber lengths were 3 inches, 1 1/2 inches, and 3/4 inch.  A few tests are made with each chamber.\n",
