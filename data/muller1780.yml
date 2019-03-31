@@ -1,0 +1,298 @@
+---
+key: muller1780
+ref: "Muller, 1780"
+cms: "Muller, John, <i>A Treatise of Artillery</i>, London: John Miller, 1780."
+summary: "This is a general account of artillery construction and management."
+date: "1780"
+data:
+  -
+    ref2: "p. viii"
+    desc: "Results of Monsieur Metz"
+    material: iron
+    angle: 45 deg
+    data:
+      -
+        mass: 24 lbfr
+        range: 2250 toises
+        data:
+          - charge: 16 lbfr
+          - charge: 8 lbfr
+      -
+        mass: 16 lbfr
+        range: 2020 toises
+        data:
+          - charge: 10.667 lbfr
+          - charge: 5.333 lbfr
+      -
+        mass: 12 lbfr
+        range: 1870 toises
+        data:
+          - charge: 8 lbfr
+          - charge: 4 lbfr
+      -
+        mass: 8 lbfr
+        range: 1660 toises
+        data:
+          - charge: 5.333 lbfr
+          - charge: 2.667 lbfr
+      -
+        mass: 4 lbfr
+        range: 1520 toises
+        data:
+          - charge: 2.667 lbfr
+          - charge: 1.333 lbfr
+  -
+    ref2: "p. xi"
+    desc: "Results of Armstrong"
+    date: 1736
+    material: iron
+    mass: 24 lb
+    charge: 16 lb
+    angle: 45 deg
+    data:
+      - range: 2486 yards
+      - range: 2614 yards
+      - range: 2406 yards
+      - range: 2570 yards
+      - range: 2532 yards
+      - range: 2436 yards
+      - range: 2633 yards
+      - range: 2560 yards
+      - range: 2500 yards
+      - range: 2796 yards
+      - range: 2494 yards
+      - range: 2563 yards
+      - range: 2586 yards
+      - range: 2490 yards
+      - range: 2466 yards
+      - range: 2438 yards
+      - range: 2470 yards
+      - range: 2453 yards
+  -
+    ref2: "p. xi"
+    desc: "Results of Armstrong"
+    date: 1736
+    material: iron
+    mass: 24 lb
+    data:
+      -
+        charge: 9 lb
+        angle: 6 deg
+        data:
+          - range: 1700 yards
+          - range: 1750 yards
+          - range: 1725 yards
+          - range: 1725 yards
+          - range: 2000 yards
+          - range: 1830 yards
+          - range: 1965 yards
+          - range: 2018 yards
+      -
+        charge: 9 lb
+        angle: 7.5 deg
+        data:
+          - range: 1860 yards
+          - range: 1935 yards
+          - range: 1960 yards
+          - range: 2048 yards
+          - range: 2060 yards
+          - range: 2165 yards
+          - range: 2050 yards
+          - range: 2272 yards
+      -
+        charge: 9 lb
+        angle: 10 deg
+        data:
+          - range: 2490 yards
+          - range: 2595 yards
+          - range: 2567 yards
+          - range: 2670 yards
+          - range: 2910 yards
+          - range: 2780 yards
+          - range: 2790 yards
+          - range: 2577 yards
+      -
+        charge: 9 lb
+        angle: 12 deg
+        data:
+          - range: 3016 yards
+          - range: 2720 yards
+          - range: 2800 yards
+          - range: 3000 yards
+          - range: 2712 yards
+          - range: 2910 yards
+          - range: 2955 yards
+          - range: 3070 yards
+      -
+        charge: 9 lb
+        angle: 15 deg
+        data:
+          - range: 3185 yards
+          - range: 3095 yards
+          - range: 3400 yards
+          - range: 3185 yards
+          - range: 3532 yards
+          - range: 2940 yards
+          - range: 3460 yards
+          - range: 3725 yards
+      -
+        charge: 10 lb
+        angle: 10 deg
+        data:
+          - range: 2550 yards
+          - range: 2577 yards
+          - range: 2365 yards
+          - range: 2575 yards
+      -
+        charge: 11 lb
+        angle: 10 deg
+        data:
+          - range: 2495 yards
+          - range: 2375 yards
+          - range: 2520 yards
+      -
+        charge: 12 lb
+        angle: 10 deg
+        data:
+          - range: 2605 yards
+          - range: 2645 yards
+      -
+        charge: 10 lb
+        angle: 10 deg
+        data:
+          - range: 2730 yards
+          - range: 2380 yards
+          - range: 2445 yards
+      -
+        charge: 11 lb
+        angle: 10 deg
+        data:
+          - range: 2200 yards
+          - range: 2780 yards
+      -
+        charge: 12 lb
+        angle: 10 deg
+        data:
+          - range: 2550 yards
+      -
+        charge: 9 lb
+        angle: 45 deg
+        data:
+          - range: 4160 yards
+          - range: 4135 yards
+          - range: 4100 yards
+          - range: 3970 yards
+          - range: 4015 yards
+          - range: 3980 yards
+          - range: 3700 yards
+      -
+        charge: 10 lb
+        angle: 45 deg
+        data:
+          - range: 3960 yards
+          - range: 3945 yards
+      -
+        charge: 11 lb
+        angle: 45 deg
+        data:
+          - range: 3785 yards
+          - range: 3930 yards
+      -
+        charge: 12 lb
+        angle: 45 deg
+        data:
+          - range: 3802 yards
+  -
+    ref2: "p. xiv"
+    desc: "Experiments in Minorca"
+    date: 1745
+    material: iron
+    mass: 18 lb
+    angle: 45 deg
+    charge: 9 lb
+    range: 4160 yards
+  -
+    ref2: "p. xvii"
+    skip: true
+    skip_note: angles not noted
+  -
+    ref2: "p. xxv"
+    desc: "Result from General Williamson in the harbour of Mahon"
+    date: 1746
+    material: iron
+    angle: 45 deg
+    data:
+      -
+        skip: true
+        skip_note: the 4570 yard test doesn't say the size of the mortar
+      -
+        diameter: 10in
+        charge: 12 lb
+        mass: 97 lb
+        range: 3787 yards
+  -
+    ref2: "p. xxxviii"
+    desc: "Supposed greatest velocities and ranges"
+    technique: theory
+    material: iron
+    angle: 45 deg
+    data:
+      -
+        mass: 3 lb
+        charge: 1.5 lb
+        data:
+          - initial_velocity: 615.7 ft/s
+          - range: 2326 yards
+      -
+        mass: 6 lb
+        charge: 3 lb
+        data:
+          - initial_velocity: 691.3 ft/s
+          - range: 2932 yards
+      -
+        mass: 9 lb
+        charge: 4.5 lb
+        data:
+          - initial_velocity: 739.0 ft/s
+          - range: 3352 yards
+      -
+        mass: 12 lb
+        charge: 6 lb
+        data:
+          - initial_velocity: 775.3 ft/s
+          - range: 3688 yards
+      -
+        mass: 18 lb
+        charge: 9 lb
+        data:
+          - initial_velocity: 826.5 ft/s
+          - range: 4191 yards
+      -
+        mass: 24 lb
+        charge: 12 lb
+        data:
+          - initial_velocity: 866.8 ft/s
+          - range: 4610 yards
+      -
+        mass: 32 lb
+        charge: 16 lb
+        data:
+          - initial_velocity: 912.9 ft/s
+          - range: 5113 yards
+      -
+        mass: 42 lb
+        charge: 21 lb
+        data:
+          - initial_velocity: 955.5 ft/s
+          - range: 5602 yards
+      -
+        mass: 48 lb
+        charge: 24 lb
+        data:
+          - initial_velocity: 976.4 ft/s
+          - range: 5849 yards
+  -
+    ref2: "p. 157"
+    desc: "Example problems"
+    skip: true
+    skip_note: These don't include charges.
