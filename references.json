@@ -423,6 +423,12 @@
   "ref": "Robins, 1805",
   "summary": "A new edition of the book by the inventor of the ballistic pendulum."
  },
+ "royal1861": {
+  "cms": "Royal Artillery Institution, <i>Minutes of Proceedings of the Royal Artillery Institution, Volume II</i>, Woolwich: Royal Artillery Institution, 1861",
+  "key": "royal1861",
+  "ref": "Royal Artillery Institution, 1861",
+  "summary": "This contains an excellent historical bibliography and a relevant article on nine-pounder guns."
+ },
  "rumford1797": {
   "cms": "Rumford, Benjamin Count of.  \"Experiments to determine the Force of fired Gunpowder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 87 (1797): 222-292.",
   "details": "The pressure developed by gunpowder is measured by having a small strong barrel filled with gunpowder and measure the smallest weight that, sitting on top of the vertical barrel, will just barely be moved.  Rumford uses a piece of ordnance for this weight, standing it on its cascabel.\n",
