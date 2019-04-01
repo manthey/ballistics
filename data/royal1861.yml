@@ -1,0 +1,223 @@
+---
+key: royal1861
+ref: "Royal Artillery Institution, 1861"
+cms: "Royal Artillery Institution, <i>Minutes of Proceedings of the Royal Artillery Institution, Volume II</i>, Woolwich: Royal Artillery Institution, 1861"
+summary: "This contains an excellent historical bibliography and a relevant article on nine-pounder guns."
+date: "1861"
+data:
+  -
+    desc: "Comparison of 2.5 and 3 lb charges in nine-pounder"
+    mass: 9 lb
+    diameter: 4.1 in
+    date: 1857
+    data:
+      -
+        ref2: "p. 62"
+        angle: 2 deg
+        data:
+          -
+            charge: 2.5 lb
+            data:
+              - range: 798 yards 1 ft
+              - range: 798 yards 1 ft
+              - range: 811 yards
+              - range: 818 yards
+              - range: 819 yards
+              - range: 821 yards
+              - range: 822 yards
+              - range: 825 yards
+              - range: 837 yards
+              - range: 842 yards
+              - range: 844 yards
+              - range: 845 yards
+              - range: 850 yards
+              - range: 850 yards
+              - range: 850 yards
+              - range: 853 yards
+              - range: 857 yards
+              - range: 867 yards
+              - range: 868 yards
+              - range: 869 yards
+              - range: 876 yards
+              - range: 880 yards
+              - range: 880 yards
+              - range: 881 yards
+              - range: 883 yards
+              - range: 884 yards
+              - range: 885 yards
+              - range: 885 yards
+              - range: 889 yards
+              - range: 891 yards
+              - range: 893 yards
+              - range: 897 yards
+              - range: 897 yards
+              - range: 898 yards
+              - range: 899 yards
+              - range: 900 yards
+              - range: 901 yards
+              - range: 904 yards
+              - range: 905 yards
+              - range: 905 yards
+              - range: 907 yards
+              - range: 908 yards
+              - range: 912 yards
+              - range: 913 yards
+              - range: 915 yards
+              - range: 916 yards
+              - range: 916 yards
+              - range: 916 yards
+              - range: 920 yards
+              - range: 920 yards 1 ft 4 in
+              - range: 921 yards 1 ft
+              - range: 927 yards
+              - range: 930 yards
+              - range: 930 yards
+              - range: 931 yards
+              - range: 931 yards
+              - range: 932 yards
+              - range: 932 yards
+              - range: 934 yards
+              - range: 935 yards
+              - range: 943 yards
+              - range: 944 yards
+              - range: 947 yards
+              - range: 947 yards
+              - range: 950 yards
+              - range: 950 yards
+              - range: 950 yards
+              - range: 952 yards
+              - range: 954 yards
+              - range: 962 yards
+              - range: 963 yards
+              - range: 964 yards
+              - range: 967 yards
+              - range: 973 yards
+              - range: 974 yards
+              - range: 976 yards
+              - range: 983 yards
+              - range: 1002 yards
+              - range: 1010 yards
+              - range: 1015 yards
+              - range: 1016 yards
+              - range: 1017 yards
+              - range: 1018 yards
+              - range: 1022 yards
+              - range: 1024 yards
+              - range: 1029 yards
+              - range: 1030 yards
+              - range: 1043 yards
+              - range: 1049 yards
+              - range: 1050 yards
+              - range: 1050 yards
+              - range: 1050 yards
+              - range: 1066 yards
+              - range: 1082 yards
+              - range: 1083 yards
+              - range: 1089 yards
+              - range: 1123 yards
+              - range: 1132 yards
+              - range: 1139 yards
+              - range: 1177 yards 0 ft 9 in
+          -
+            charge: 3.0 lb
+            data:
+              - range: 816 yards 2 ft 3 in
+              - range: 820 yards
+              - range: 826 yards
+              - range: 839 yards
+              - range: 863 yards
+              - range: 868 yards
+              - range: 873 yards
+              - range: 877 yards
+              - range: 882 yards
+              - range: 883 yards
+              - range: 895 yards
+              - range: 897 yards
+              - range: 900 yards
+              - range: 904 yards
+              - range: 908 yards
+              - range: 908 yards
+              - range: 910 yards
+              - range: 910 yards
+              - range: 911 yards
+              - range: 915 yards
+              - range: 919 yards
+              - range: 926 yards
+              - range: 927 yards
+              - range: 927 yards
+              - range: 928 yards
+              - range: 933 yards
+              - range: 933 yards
+              - range: 933 yards
+              - range: 935 yards
+              - range: 936 yards
+              - range: 938 yards
+              - range: 943 yards
+              - range: 947 yards
+              - range: 947 yards
+              - range: 950 yards
+              - range: 950 yards
+              - range: 951 yards
+              - range: 951 yards
+              - range: 952 yards
+              - range: 955 yards
+              - range: 960 yards
+              - range: 960 yards
+              - range: 964 yards
+              - range: 964 yards
+              - range: 967 yards
+              - range: 968 yards
+              - range: 972 yards
+              - range: 975 yards
+              - range: 978 yards
+              - range: 979 yards 2 ft
+              - range: 979 yards 2 ft 6 in
+              - range: 980 yards
+              - range: 981 yards
+              - range: 987 yards
+              - range: 990 yards
+              - range: 990 yards
+              - range: 991 yards
+              - range: 991 yards
+              - range: 991 yards
+              - range: 991 yards
+              - range: 992 yards
+              - range: 994 yards
+              - range: 999 yards
+              - range: 1001 yards
+              - range: 1001 yards
+              - range: 1002 yards
+              - range: 1002 yards
+              - range: 1003 yards
+              - range: 1003 yards
+              - range: 1006 yards
+              - range: 1007 yards
+              - range: 1008 yards
+              - range: 1010 yards
+              - range: 1011 yards
+              - range: 1012 yards
+              - range: 1012 yards
+              - range: 1016 yards
+              - range: 1018 yards
+              - range: 1019 yards
+              - range: 1021 yards
+              - range: 1022 yards
+              - range: 1022 yards
+              - range: 1025 yards
+              - range: 1026 yards
+              - range: 1026 yards
+              - range: 1029 yards
+              - range: 1030 yards
+              - range: 1032 yards
+              - range: 1033 yards
+              - range: 1043 yards
+              - range: 1072 yards
+              - range: 1073 yards
+              - range: 1076 yards
+              - range: 1077 yards
+              - range: 1080 yards
+              - range: 1082 yards
+              - range: 1109 yards
+              - range: 1112 yards
+              - range: 1130 yards
+              - range: 1147 yards 2 ft 3 in
