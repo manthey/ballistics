@@ -97,7 +97,7 @@
   "key": "chicago1993",
   "link": "http://www.chicagomanualofstyle.org/tools_citationguide.html",
   "ref": "Chicago, 1993",
-  "summary": "I defer to the 14th edition that I own when in doubt, since I own a copy"
+  "summary": "I defer to the 14th edition when in doubt, since I own a copy"
  },
  "clarke1891": {
   "cms": "Clarke, F. W.  <i>Weights, Measures, and Money, of All Nations.</i>  New York: D. Appleton and Company: 1891.",
@@ -166,6 +166,12 @@
   "key": "hall1997",
   "ref": "Hall, 1997",
   "summary": "A good description of the use of early gunpowder weapons in Europe."
+ },
+ "haultain1861": {
+  "cms": "Haultain, F. W., \"Remarks on the \"Report of Practice,\" carried on in 1858, in the Plumstead Marshes, with 9-pr. Field Guns, for the purpose of ascertaining the comparative merits of the 2 1/2 lbs., and 3 lbs. charges,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, II (1861), Woolwich: Royal Artillery Institution, 1861",
+  "key": "haultain1861",
+  "ref": "Haultain, 1861",
+  "summary": "This contains a report of some the ranges of some 800 shots with nine-pounder guns."
  },
  "helene1878": {
   "cms": "H\u00e9l\u00e8ne, Maxime.  <i>La Poudre a Canon et les Nouveaux Corps Explosifs.</i>  Paris: Librarie Hachette et Cie., 1878",
@@ -422,12 +428,6 @@
   "key": "robins1805",
   "ref": "Robins, 1805",
   "summary": "A new edition of the book by the inventor of the ballistic pendulum."
- },
- "royal1861": {
-  "cms": "Royal Artillery Institution, <i>Minutes of Proceedings of the Royal Artillery Institution, Volume II</i>, Woolwich: Royal Artillery Institution, 1861",
-  "key": "royal1861",
-  "ref": "Royal Artillery Institution, 1861",
-  "summary": "This contains an excellent historical bibliography and a relevant article on nine-pounder guns."
  },
  "rumford1797": {
   "cms": "Rumford, Benjamin Count of.  \"Experiments to determine the Force of fired Gunpowder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 87 (1797): 222-292.",
