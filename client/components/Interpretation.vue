@@ -45,7 +45,7 @@ Instead of aggregating all data into box plots, the median or quartile points ca
 import * as utils from '../utils.js';
 
 export default {
-  name: 'Analysis',
+  name: 'Interpretation',
   data() {
     var filters = {};
     Object.keys(utils.CommonFilters).map((key) => {

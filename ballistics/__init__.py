@@ -685,7 +685,7 @@ def atmospheric_density(state):
     d = 1.83e-11  # (K/Pa)^2
     e = -0.765e-8  # (K/Pa)^2
     Z = (1 - p/T * (a0 + a1*t + a2*t**2 + (b0+b1*t)*xv + (c0+c1*t)*xv**2) +
-         p**2 / T**2*(d+e*xv**2))
+         p**2 / T**2 * (d+e*xv**2))
     pa = p*Ma/(Z*R*T)*(1-xv*(1-Mv/Ma))
     # pressure Pa, mole fraction of water vapor, vapor pressure at saturation
     # Pa, absolute temperature K, relative humidity (0-1)

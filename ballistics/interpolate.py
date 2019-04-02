@@ -129,72 +129,71 @@ def interpolate(xi, data, logx=False, method='tension'):  # noqa -mccabe
             minpos = max(0, pos-1)
         maxpos = min(minpos + 3, len(xy))
         minpos = max(0, maxpos - 3)
-    x, y = zip(*xy[minpos:maxpos])
-    num_points = len(x)
+    xy = xy[minpos:maxpos]
+    num_points = len(xy)
     if num_points == 1:
-        yi = y[0]
-        in_range = False  # since (xi == x[0]) is always False
+        yi = xy[0][1]
     elif num_points == 2:
+        (x0, y0), (x1, y1) = xy
         # linear interpolation
-        yi = (y[1]-y[0])*(xi-x[0])/(x[1]-x[0])+y[0]
-        in_range = x[0] <= xi <= x[1]
+        yi = (y1 - y0) * (xi - x0) / (x1 - x0) + y0
     elif num_points == 3:
+        (x0, y0), (x1, y1), (x2, y2) = xy
         # Lagrange interpolation
-        yi = (y[0]*(xi - x[1])*(xi - x[2]) / ((x[0] - x[1]) * (x[0] - x[2])) +
-              y[1]*(xi - x[2])*(xi - x[0]) / ((x[1] - x[2]) * (x[1] - x[0])) +
-              y[2]*(xi - x[0])*(xi - x[1]) / ((x[2] - x[0]) * (x[2] - x[1])))
-        in_range = x[0] <= xi <= x[2]
+        yi = (y0 * (xi - x1) * (xi - x2) / ((x0 - x1) * (x0 - x2)) +
+              y1 * (xi - x2) * (xi - x0) / ((x1 - x2) * (x1 - x0)) +
+              y2 * (xi - x0) * (xi - x1) / ((x2 - x0) * (x2 - x1)))
     else:
+        (x0, y0), (x1, y1), (x2, y2), (x3, y3) = xy
         # For the cubic case, I used a symbolic algebra program; it could be
         # made more efficient
         if method == 'cubic':  # a cubic interpolation
             den = (
-                x[0]*(x[1]**2*(x[3]**3-x[2]**3)-x[2]**2*x[3]**3 +
-                      x[2]**3*x[3]**2+x[1]**3*(x[2]**2-x[3]**2)) +
-                x[1]*(x[2]**2*x[3]**3-x[2]**3*x[3]**2)+x[0]**2*(
-                    x[2]*x[3]**3+x[1]*(x[2]**3-x[3]**3)+x[1]**3*(x[3]-x[2]) -
-                    x[2]**3*x[3])+x[1]**2*(x[2]**3*x[3]-x[2]*x[3]**3) +
-                x[0]**3*(x[1]*(x[3]**2-x[2]**2)-x[2]*x[3]**2 +
-                         x[2]**2*x[3]+x[1]**2*(x[2]-x[3])) +
-                x[1]**3*(x[2]*x[3]**2-x[2]**2*x[3]))
-            A = ((x[0]*(x[1]**2*(y[3]-y[2])-x[2]**2*y[3]+x[3]**2*y[2]+(x[2]**2-x[3]**2)*y[1])+x[1]*(x[2]**2*y[3]-x[3]**2*y[2])+x[0]**2*(x[2]*y[3]+x[1]*(y[2]-y[3])-x[3]*y[2]+(x[3]-x[2])*y[1])+x[1]**2*(x[3]*y[2]-x[2]*y[3])+(x[2]*x[3]**2-x[2]**2*x[3])*y[1]+(x[1]*(x[3]**2-x[2]**2)-x[2]*x[3]**2+x[2]**2*x[3]+x[1]**2*(x[2]-x[3]))*y[0])/den)  # noqa
-            B = -((x[0]*(x[2]**3-x[1]**3)-x[1]*x[2]**3+x[1]**3*x[2]+x[0]**3*(x[1]-x[2]))*A+x[1]*y[2]+x[0]*(y[1]-y[2])-x[2]*y[1]+(x[2]-x[1])*y[0])/(x[0]*(x[2]**2-x[1]**2)-x[1]*x[2]**2+x[1]**2*x[2]+x[0]**2*(x[1]-x[2]))  # noqa
-            C = -((x[0]**2-x[1]**2)*B+(x[0]**3-x[1]**3)*A+y[1]-y[0])/(x[0]-x[1])
-            D = -x[0]*C-x[0]**2*B-x[0]**3*A+y[0]
+                x0*(x1**2*(x3**3-x2**3)-x2**2*x3**3 +
+                    x2**3*x3**2+x1**3*(x2**2-x3**2)) +
+                x1*(x2**2*x3**3-x2**3*x3**2)+x0**2*(
+                    x2*x3**3+x1*(x2**3-x3**3)+x1**3*(x3-x2) -
+                    x2**3*x3)+x1**2*(x2**3*x3-x2*x3**3) +
+                x0**3*(x1*(x3**2-x2**2)-x2*x3**2 + x2**2*x3+x1**2*(x2-x3)) +
+                x1**3*(x2*x3**2-x2**2*x3))
+            A = ((x0*(x1**2*(y3-y2)-x2**2*y3+x3**2*y2+(x2**2-x3**2)*y1)+x1*(x2**2*y3-x3**2*y2)+x0**2*(x2*y3+x1*(y2-y3)-x3*y2+(x3-x2)*y1)+x1**2*(x3*y2-x2*y3)+(x2*x3**2-x2**2*x3)*y1+(x1*(x3**2-x2**2)-x2*x3**2+x2**2*x3+x1**2*(x2-x3))*y0)/den)  # noqa
+            B = -((x0*(x2**3-x1**3)-x1*x2**3+x1**3*x2+x0**3*(x1-x2))*A+x1*y2+x0*(y1-y2)-x2*y1+(x2-x1)*y0)/(x0*(x2**2-x1**2)-x1*x2**2+x1**2*x2+x0**2*(x1-x2))  # noqa
+            C = -((x0**2-x1**2)*B+(x0**3-x1**3)*A+y1-y0)/(x0-x1)
+            D = -x0*C-x0**2*B-x0**3*A+y0
             yi = A*xi**3+B*xi**2+C*xi+D
         elif method == 'parabolic':  # piecewise parabolic interpolation
-            den = x[0]**2*(x[1]-x[2])+x[1]**2*(x[2]-x[0])+x[2]**2*(x[0]-x[1])
-            A = (x[0]*(y[2]-y[1])+x[1]*(y[0]-y[2])+x[2]*(y[1]-y[0]))/den
-            B = (A*(x[0]**2-x[1]**2)+(y[1]-y[0]))/(x[1]-x[0])
-            C = y[0]-(A*x[0]**2+B*x[0])
+            den = x0**2*(x1-x2)+x1**2*(x2-x0)+x2**2*(x0-x1)
+            A = (x0*(y2-y1)+x1*(y0-y2)+x2*(y1-y0))/den
+            B = (A*(x0**2-x1**2)+(y1-y0))/(x1-x0)
+            C = y0-(A*x0**2+B*x0)
             yi0 = A*xi**2+B*xi+C
-            den = x[1]**2*(x[2]-x[3])+x[2]**2*(x[3]-x[1])+x[3]**2*(x[1]-x[2])
-            A = (x[1]*(y[3]-y[2])+x[2]*(y[1]-y[3])+x[3]*(y[2]-y[1]))/den
-            B = (A*(x[1]**2-x[2]**2)+(y[2]-y[1]))/(x[2]-x[1])
-            C = y[1]-(A*x[1]**2+B*x[1])
+            den = x1**2*(x2-x3)+x2**2*(x3-x1)+x3**2*(x1-x2)
+            A = (x1*(y3-y2)+x2*(y1-y3)+x3*(y2-y1))/den
+            B = (A*(x1**2-x2**2)+(y2-y1))/(x2-x1)
+            C = y1-(A*x1**2+B*x1)
             yi1 = A*xi**2+B*xi+C
             yi = (yi0+yi1)*0.5
         else:  # Hermite or tensioned-hermitic cubic interpolation
             if method == 'tension':
-                m1 = 0.5*(y[2]-y[0])/(x[2]-x[0])
-                m2 = 0.5*(y[3]-y[1])/(x[3]-x[1])
+                m1 = 0.5 * (y2 - y0) / (x2 - x0)
+                m2 = 0.5 * (y3 - y1) / (x3 - x1)
             else:
-                m1 = (y[2]-y[0])/(x[2]-x[0])
-                m2 = (y[3]-y[1])/(x[3]-x[1])
-            h = x[2]-x[1]
-            d = (y[2]-y[1])/h
-            c0 = y[1]
+                m1 = (y2 - y0) / (x2 - x0)
+                m2 = (y3 - y1) / (x3 - x1)
+            h = x2 - x1
+            d = (y2 - y1) / h
+            c0 = y1
             c1 = m1
-            c2 = (-2*m1+3*d-m2)/h
-            c3 = (m1-2*d+m2)/h/h
-            c2 -= x[1]*c3
-            c1 -= x[1]*c2
-            c0 -= x[1]*c1
-            c2 -= x[1]*c3
-            c1 -= x[1]*c2
-            c2 -= x[1]*c3
-            yi = c3*xi**3+c2*xi**2+c1*xi+c0
-        in_range = x[0] <= xi <= x[3]
+            c2 = (-2*m1 + 3*d - m2) / h
+            c3 = (m1 - 2*d + m2) / h / h
+            c2 -= x1*c3
+            c1 -= x1*c2
+            c0 -= x1*c1
+            c2 -= x1*c3
+            c1 -= x1*c2
+            c2 -= x1*c3
+            yi = c3*xi**3 + c2*xi**2 + c1*xi + c0
+    in_range = xy[0][0] <= xi <= xy[-1][0]
     return (yi, in_range)
 
 

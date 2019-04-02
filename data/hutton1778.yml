@@ -1,7 +1,7 @@
 ---
 key: hutton1778
 ref: "Hutton, 1778"
-cms: "Hutton, Charles.  \"The Force of Fired Gun-Powder, and the initial Velocities of Cannon Balls, determined by Experiments; from which is also deduced the Relation of the initial Velocity to the Weight of the short and the Quantity of Powder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 68 (1778): 50-85."
+cms: "Hutton, Charles.  \"The Force of Fired Gun-Powder, and the initial Velocities of Cannon Balls, determined by Experiments; from which is also deduced the Relation of the initial Velocity to the Weight of the sort and the Quantity of Powder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 68 (1778): 50-85."
 summary: "Hutton's initial experiments with a ballistic pendulum."
 date: "1778"
 technique: "pendulum"
@@ -283,4 +283,3 @@ data:
         diameter: 2.041 in
         mass: 18 oz 1.5 dr
         final_velocity: 1412 ft/s
-

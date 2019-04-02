@@ -28,7 +28,7 @@ def calc_error(groups):
 def recalc_case(case, newTable):
     cod_miller.MnReCdDataTable[:] = [
         (e1[0], tuple(tuple(e2) for e2 in e1[1]), e1[2]) for e1 in newTable]
-    cod_miller.ExtendedMnReCdDataTable[:] = []
+    cod_miller.ExtendedMnLogReCdDataTable[:] = []
     args = ['--power=?'] + case
     params, state, help = ballistics.parse_arguments(args)
     newstate, points = ballistics.find_unknown(
@@ -66,7 +66,7 @@ def recalc_groups_pool(groups, newTable):
 def recalc_groups(groups, newTable):
     cod_miller.MnReCdDataTable[:] = [
         (e1[0], tuple(tuple(e2) for e2 in e1[1]), e1[2]) for e1 in newTable]
-    cod_miller.ExtendedMnReCdDataTable[:] = []
+    cod_miller.ExtendedMnLogReCdDataTable[:] = []
     for groupkey in sorted(groups):
         entry = groups[groupkey]
         for idx, case in enumerate(entry['cases']):
@@ -83,7 +83,7 @@ def recalc_groups(groups, newTable):
             # print('\n%r' % case)
 
 
-def main(opts):
+def main(opts):  # noqa
     opts = opts or {}
     pardir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
     fulldata = json.load(open(os.path.join(pardir, 'client', 'static', 'totallist.json')))
@@ -134,28 +134,31 @@ def main(opts):
     loopBestError = None
     while loopBestError is None or bestError < loopBestError:
         loopBestError = bestError
-        for adj in (-0.001, 0.001, -0.0001, 0.0001):
-            for pos in range(adjustCount - 1, -1, -1):
-                starttime = time.time()
-                newTable = copy.deepcopy(bestTable)
-                couldAdjust = [(mn, entry) for mn, entries, crit in newTable for entry in entries]
-                if opts.get('random'):
-                    entry = random.choice(couldAdjust)
-                    adjustment = random.random() ** 2 * 0.01 * (-1 if random.random() >= 0.5 else 1)
-                else:
-                    entry = couldAdjust[pos]
-                    adjustment = adj
-                print('adjusting %6.4f %r' % (adjustment, entry))
-                entry[1][1] += adjustment
-                recalc_groups_pool(groups, newTable)
-                newError = calc_error(groups)
-                print('new %10.8f best %10.8f %3.1fs  ' % (
-                    newError, bestError, time.time() - starttime))
-                if newError < bestError:
-                    bestError = newError
-                    bestTable = newTable
-                    with open(opts['dest'], 'w') as fp:
-                        json.dump(bestTable, fp)
+        for mag in (0.0032, 0.0016, 0.0008, 0.0004, 0.0002, 0.0001):
+            for pos in range(adjustCount):
+                for dir in (-1, 1):
+                    starttime = time.time()
+                    newTable = copy.deepcopy(bestTable)
+                    couldAdjust = [(mn, entry) for mn, entries, crit
+                                   in newTable for entry in entries][::-1]
+                    if opts.get('random'):
+                        entry = random.choice(couldAdjust)
+                        adjustment = random.random() ** 2 * 0.01 * (
+                            -1 if random.random() >= 0.5 else 1)
+                    else:
+                        entry = couldAdjust[pos]
+                        adjustment = mag * dir
+                    print('adjusting %6.4f %r' % (adjustment, entry))
+                    entry[1][1] += adjustment
+                    recalc_groups_pool(groups, newTable)
+                    newError = calc_error(groups)
+                    print('new %10.8f best %10.8f %3.1fs  ' % (
+                        newError, bestError, time.time() - starttime))
+                    if newError < bestError:
+                        bestError = newError
+                        bestTable = newTable
+                        with open(opts['dest'], 'w') as fp:
+                            json.dump(bestTable, fp)
 
 
 if __name__ == '__main__':

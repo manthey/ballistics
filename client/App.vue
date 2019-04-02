@@ -18,6 +18,7 @@
         <li><router-link :to="{path: 'analysis'}">Analysis</router-link>
           <ul>
             <li><router-link :to="{path: 'computation'}">Computation</router-link></li>
+            <li><router-link :to="{path: 'dragmodel'}">Drag Model</router-link></li>
             <li><router-link :to="{path: 'interpretation'}">Interpretation</router-link></li>
           </ul>
         </li>
@@ -56,6 +57,7 @@ import * as utils from './utils.js';
 import Analysis from './components/Analysis.vue';
 import BoxPlotWithControls from './components/BoxPlotWithControls.vue';
 import Computation from './components/Computation.vue';
+import DragModel from './components/DragModel.vue';
 import Interpretation from './components/Interpretation.vue';
 import MainPage from './components/MainPage.vue';
 import PlotWithControls from './components/PlotWithControls.vue';
@@ -83,6 +85,9 @@ export default {
     }, {
       path: '/computation',
       component: Computation
+    }, {
+      path: '/dragmodel',
+      component: DragModel
     }, {
       path: '/interpretation',
       component: Interpretation
