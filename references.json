@@ -202,7 +202,7 @@
   "summary": "This includes a chapter on field artillery and a section of proofs."
  },
  "hutton1778": {
-  "cms": "Hutton, Charles.  \"The Force of Fired Gun-Powder, and the initial Velocities of Cannon Balls, determined by Experiments; from which is also deduced the Relation of the initial Velocity to the Weight of the short and the Quantity of Powder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 68 (1778): 50-85.",
+  "cms": "Hutton, Charles.  \"The Force of Fired Gun-Powder, and the initial Velocities of Cannon Balls, determined by Experiments; from which is also deduced the Relation of the initial Velocity to the Weight of the sort and the Quantity of Powder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 68 (1778): 50-85.",
   "details": "Charles Hutton makes some experiments with two ballistic pendulums after the matter proposed by Benjamin Robins.  He attempts to determine the various sources of error and indicates that the results are probably accurate to 1 part in a few hundred.  The text describes the geometry of the pendulums fairly well.\n\nI have taken Hutton's computed velocities.  One could recompute them all, but I have not.\n\n",
   "key": "hutton1778",
   "ref": "Hutton, 1778",
