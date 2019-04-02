@@ -150,22 +150,22 @@ def combine(opts):  # noqa
                 print(traceback.format_exc().strip())
     out = opts.get('out', 'client/static')
     if opts.get('json', True):
-        outpath = os.path.join(out, 'totallist.json')
-        json.dump(total, open(outpath, 'wt'), sort_keys=True, indent=1,
-                  separators=(',', ': '))
+        with open(os.path.join(out, 'totallist.json'), 'wt') as fp:
+            json.dump(total, fp, sort_keys=True, indent=1,
+                      separators=(',', ': '))
     if opts.get('csv'):
         csv_dump(total, os.path.join(out, 'totallist.csv'))
     if opts.get('json', True):
-        outpath = os.path.join(out, 'trajectories.json')
-        json.dump(trajectories, open(outpath, 'wt'), sort_keys=True, indent=1,
-                  separators=(',', ': '))
+        with open(os.path.join(out, 'trajectories.json'), 'wt') as fp:
+            json.dump(trajectories, fp, sort_keys=True, indent=1,
+                      separators=(',', ': '))
     if opts.get('csv'):
         csv_dump(trajectories, os.path.join(out, 'trajectories.csv'))
     print('%d samples from %d sources' % (len(total), sources))
     if opts.get('json', True):
-        outpath = os.path.join(out, 'references.json')
-        json.dump(references, open(outpath, 'wt'), sort_keys=True, indent=1,
-                  separators=(',', ': '))
+        with open(os.path.join(out, 'references.json'), 'wt') as fp:
+            json.dump(references, fp, sort_keys=True, indent=1,
+                      separators=(',', ': '))
     if opts.get('csv'):
         csv_dump(references, os.path.join(out, 'references.csv'))
     print('%d references' % len(references))
@@ -173,11 +173,13 @@ def combine(opts):  # noqa
     if opts.get('json', True):
         outpath = os.path.join(out, 'parameters.json')
         try:
-            json.dump(params, open(outpath, 'wt'), sort_keys=True, indent=1,
-                      separators=(',', ': '))
+            with open(outpath, 'wt') as fp:
+                json.dump(params, fp, sort_keys=True, indent=1,
+                          separators=(',', ': '))
         except TypeError:
-            json.dump(params, open(outpath, 'wt'), sort_keys=False, indent=1,
-                      separators=(',', ': '))
+            with open(outpath, 'wt') as fp:
+                json.dump(params, fp, sort_keys=False, indent=1,
+                          separators=(',', ': '))
     if opts.get('csv'):
         csv_dump(params, os.path.join(out, 'parameters.csv'))
     print('%d parameters' % len(params))
@@ -187,9 +189,9 @@ def combine(opts):  # noqa
         'time': GivenCombinations[key]['results'].get('time'),
     } for key in sorted(GivenCombinations)]
     if opts.get('json', True):
-        outpath = os.path.join(out, 'combinations.json')
-        json.dump(combo, open(outpath, 'wt'), sort_keys=True, indent=1,
-                  separators=(',', ': '))
+        with open(os.path.join(out, 'combinations.json'), 'wt') as fp:
+            json.dump(combo, fp, sort_keys=True, indent=1,
+                      separators=(',', ': '))
     print('%d combinations' % len(combo))
     return ReMnGrid
 
