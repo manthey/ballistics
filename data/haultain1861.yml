@@ -221,3 +221,214 @@ data:
               - range: 1112 yards
               - range: 1130 yards
               - range: 1147 yards 2 ft 3 in
+      -
+        ref2: "p. 63"
+        angle: 3 deg
+        desc2: "There are a number of errors on this page, which I have corrected to the best of my ability.  For instance, one of the mean values is listed as 1222 yards 0 ft 0 in, when it should clearly be 1122 yards.  Some of the 3 lb charge entries are out of order and repeated.  One of the 2 1/2 lb charges is listed as 1118 yards when it should probably be 1188 yards."
+        data:
+          -
+            charge: 2.5 lb
+            data:
+              - range: 931 yards 2 ft
+              - range: 966 yards
+              - range: 980 yards
+              - range: 1003 yards
+              - range: 1005 yards
+              - range: 1010 yards
+              - range: 1011 yards
+              - range: 1013 yards
+              - range: 1016 yards
+              - range: 1019 yards
+              - range: 1021 yards
+              - range: 1030 yards
+              - range: 1034 yards
+              - range: 1036 yards
+              - range: 1039 yards
+              - range: 1045 yards
+              - range: 1045 yards
+              - range: 1046 yards
+              - range: 1051 yards
+              - range: 1056 yards
+              - range: 1061 yards
+              - range: 1063 yards
+              - range: 1063 yards
+              - range: 1064 yards
+              - range: 1066 yards
+              - range: 1067 yards
+              - range: 1068 yards
+              - range: 1071 yards
+              - range: 1073 yards
+              - range: 1077 yards
+              - range: 1078 yards
+              - range: 1082 yards
+              - range: 1084 yards
+              - range: 1085 yards
+              - range: 1086 yards
+              - range: 1088 yards
+              - range: 1091 yards
+              - range: 1091 yards
+              - range: 1094 yards
+              - range: 1099 yards
+              - range: 1100 yards
+              - range: 1101 yards
+              - range: 1104 yards
+              - range: 1107 yards
+              - range: 1108 yards
+              - range: 1109 yards
+              - range: 1112 yards
+              - range: 1112 yards
+              - range: 1116 yards
+              - range: 1122 yards 0 ft
+              - range: 1123 yards 2 ft
+              - range: 1123 yards
+              - range: 1124 yards
+              - range: 1125 yards
+              - range: 1127 yards
+              - range: 1130 yards
+              - range: 1134 yards
+              - range: 1136 yards
+              - range: 1136 yards
+              - range: 1138 yards
+              - range: 1141 yards
+              - range: 1141 yards
+              - range: 1143 yards
+              - range: 1144 yards
+              - range: 1146 yards
+              - range: 1146 yards
+              - range: 1151 yards
+              - range: 1155 yards
+              - range: 1161 yards
+              - range: 1161 yards
+              - range: 1162 yards
+              - range: 1164 yards
+              - range: 1164 yards
+              - range: 1165 yards
+              - range: 1172 yards
+              - range: 1173 yards
+              - range: 1173 yards
+              - range: 1179 yards
+              - range: 1188 yards
+              - range: 1193 yards
+              - range: 1198 yards
+              - range: 1203 yards
+              - range: 1205 yards
+              - range: 1211 yards
+              - range: 1213 yards
+              - range: 1213 yards
+              - range: 1229 yards
+              - range: 1233 yards
+              - range: 1243 yards
+              - range: 1294 yards
+              - range: 1310 yards
+              - range: 1315 yards
+              - range: 1323 yards
+              - range: 1326 yards
+              - range: 1335 yards
+              - range: 1354 yards
+              - range: 1379 yards
+              - range: 1388 yards
+              - range: 1404 yards
+              - range: 1436 yards 1 ft
+          -
+            charge: 3.0 lb
+            data:
+              - range: 1000 yards 0 ft 6 in
+              - range: 1001 yards
+              - range: 1002 yards
+              - range: 1033 yards
+              - range: 1048 yards
+              - range: 1050 yards
+              - range: 1055 yards
+              - range: 1078 yards
+              - range: 1081 yards
+              - range: 1086 yards
+              - range: 1097 yards
+              - range: 1097 yards
+              - range: 1101 yards
+              - range: 1105 yards
+              - range: 1107 yards
+              - range: 1107 yards
+              - range: 1108 yards
+              - range: 1108 yards
+              - range: 1118 yards
+              - range: 1122 yards
+              - range: 1124 yards
+              - range: 1125 yards
+              - range: 1135 yards
+              - range: 1135 yards
+              - range: 1138 yards
+              - range: 1140 yards
+              - range: 1141 yards
+              - range: 1142 yards
+              - range: 1142 yards
+              - range: 1142 yards
+              - range: 1142 yards
+              - range: 1144 yards
+              - range: 1144 yards
+              - range: 1146 yards
+              - range: 1146 yards
+              - range: 1148 yards
+              - range: 1150 yards
+              - range: 1150 yards
+              - range: 1151 yards
+              - range: 1153 yards
+              - range: 1155 yards
+              - range: 1156 yards
+              - range: 1156 yards
+              - range: 1157 yards
+              - range: 1163 yards
+              - range: 1163 yards
+              - range: 1163 yards
+              - range: 1171 yards
+              - range: 1171 yards
+              - range: 1174 yards 0 ft
+              - range: 1176 yards 2 ft 6 in
+              - range: 1179 yards
+              - range: 1188 yards
+              - range: 1188 yards
+              - range: 1191 yards
+              - range: 1191 yards
+              - range: 1192 yards
+              - range: 1194 yards
+              - range: 1194 yards
+              - range: 1195 yards
+              - range: 1195 yards
+              - range: 1196 yards
+              - range: 1197 yards
+              - range: 1202 yards
+              - range: 1205 yards
+              - range: 1206 yards
+              - range: 1209 yards
+              - range: 1212 yards
+              - range: 1215 yards
+              - range: 1215 yards
+              - range: 1217 yards
+              - range: 1218 yards
+              - range: 1229 yards
+              - range: 1230 yards
+              - range: 1230 yards
+              - range: 1231 yards
+              - range: 1233 yards
+              - range: 1233 yards
+              - range: 1237 yards
+              - range: 1238 yards
+              - range: 1245 yards
+              - range: 1246 yards
+              - range: 1252 yards
+              - range: 1253 yards
+              - range: 1253 yards
+              - range: 1258 yards
+              - range: 1260 yards
+              - range: 1263 yards
+              - range: 1263 yards
+              - range: 1267 yards
+              - range: 1269 yards
+              - range: 1275 yards
+              - range: 1278 yards
+              - range: 1327 yards
+              - range: 1345 yards
+              - range: 1345 yards
+              - range: 1345 yards
+              - range: 1411 yards
+              - range: 1431 yards
+              - range: 1471 yards 1 ft 6 in
