@@ -268,6 +268,12 @@
   "ref": "Lewes, 1920",
   "summary": "A few calorimeter results are listed."
  },
+ "lombard1796": {
+  "cms": "Lombard, Jean-Antoine-Marie,  <i>Trait\u00e9 du Mouvement des Projectiles, appliqu\u00e9 au Tir des Bouches a Feu.</i>  Dijon: L. N. Frantin, An V (1796).",
+  "key": "lombard1796",
+  "ref": "Lombard, 1796",
+  "summary": "This gives equations for calculating trajectories."
+ },
  "meigs1883": {
   "cms": "Meigs, Lieutenant U.S.N, translated from Sarrau, M. E. <i>Theoretical Researches on the Effects of Gunpowder and Other Explosives</i>  Washington: Government Printing Office, 1882.",
   "key": "meigs1883",
