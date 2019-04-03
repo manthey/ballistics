@@ -119,8 +119,12 @@ UnitsTable = [{
     'desc': 'Paris inch',
 }, {
     'names': ['linefr', 'parisline', 'frenchline', 'parislines', 'frenchlines', 'ligne', 'lignes'],
-    'value': ParisFootInMeters / 144,
+    'value': ParisFootInMeters / 12 / 12,
     'desc': 'Paris line',
+}, {
+    'names': ['ptfr', 'pointfr', 'parispoint', 'frenchpoint', 'parispoints', 'frenchpoints'],
+    'value': ParisFootInMeters / 12 / 12 / 12,
+    'desc': 'Paris point',
 }, {
     'names': ['toise', 'toises', 'frenchfathom', 'frenchfathoms'],
     'value': ParisFootInMeters * 6,

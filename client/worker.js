@@ -1,7 +1,10 @@
 import * as utils from './utils.js';
 
 onmessage = function () {  /* This could take an event */
-  fetch('totallist.json').then(resp => resp.json()).then(data => {
+  fetch('totallist.json').then(resp => resp.json()).catch(err => {
+    console.log(err);
+    throw err;
+  }).then(data => {
     try {
       let pointkeys = utils.updatePointKeys(data);
       let result = {plotdata: data, pointkeys: pointkeys};

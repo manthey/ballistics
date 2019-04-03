@@ -1,0 +1,408 @@
+---
+key: lombard1796
+ref: "Lombard, 1796"
+cms: "Lombard, Jean-Antoine-Marie,  <i>Trait\u00e9 du Mouvement des Projectiles, appliqu\u00e9 au Tir des Bouches a Feu.</i>  Dijon: L. N. Frantin, An V (1796)."
+summary: "This gives equations for calculating trajectories."
+date: "1796"
+date_note: "Republican year V"
+data:
+  -
+    ref2: "p. 146"
+    desc: "Intial speeds based on different charges"
+    material: iron
+    angle: 0
+    technique: given_velocity
+    data:
+      -
+        mass: 24 lbfr
+        data:
+          -
+            charge: 0.75 lbfr
+            initial_velocity: 500 ftfr/s
+          -
+            charge: 1 lbfr
+            initial_velocity: 575 ftfr/s
+          -
+            charge: 1.5 lbfr
+            initial_velocity: 700 ftfr/s
+          -
+            charge: 2 lbfr
+            initial_velocity: 809 ftfr/s
+          -
+            charge: 2.5 lbfr
+            initial_velocity: 906 ftfr/s
+          -
+            charge: 3 lbfr
+            initial_velocity: 989 ftfr/s
+          -
+            charge: 3.5 lbfr
+            initial_velocity: 1065 ftfr/s
+          -
+            charge: 4 lbfr
+            initial_velocity: 1132 ftfr/s
+          -
+            charge: 5 lbfr
+            initial_velocity: 1250 ftfr/s
+          -
+            charge: 6 lbfr
+            initial_velocity: 1320 ftfr/s
+          -
+            charge: 8 lbfr
+            initial_velocity: 1425 ftfr/s
+          -
+            charge: 10 lbfr
+            initial_velocity: 1475 ftfr/s
+          -
+            charge: 12 lbfr
+            initial_velocity: 1530 ftfr/s
+      -
+        mass: 16 lbfr
+        data:
+          -
+            charge: 0.5 lbfr
+            initial_velocity: 500 ftfr/s
+          -
+            charge: 0.75 lbfr
+            initial_velocity: 618 ftfr/s
+          -
+            charge: 1 lbfr
+            initial_velocity: 704 ftfr/s
+          -
+            charge: 1.5 lbfr
+            initial_velocity: 855 ftfr/s
+          -
+            charge: 2 lbfr
+            initial_velocity: 992 ftfr/s
+          -
+            charge: 2.5 lbfr
+            initial_velocity: 1110 ftfr/s
+          -
+            charge: 3 lbfr
+            initial_velocity: 1221 ftfr/s
+          -
+            charge: 3.5 lbfr
+            initial_velocity: 1312 ftfr/s
+          -
+            charge: 4 lbfr
+            initial_velocity: 1374 ftfr/s
+          -
+            charge: 5 lbfr
+            initial_velocity: 1415 ftfr/s
+          -
+            charge: 6 lbfr
+            initial_velocity: 1445 ftfr/s
+          -
+            charge: 8 lbfr
+            initial_velocity: 1514 ftfr/s
+      -
+        mass: 12 lbfr
+        data:
+          -
+            charge: 0.5 lbfr
+            initial_velocity: 571 ftfr/s
+          -
+            charge: 0.75 lbfr
+            initial_velocity: 775 ftfr/s
+          -
+            charge: 1 lbfr
+            initial_velocity: 908 ftfr/s
+          -
+            charge: 1.5 lbfr
+            initial_velocity: 1061 ftfr/s
+          -
+            charge: 2 lbfr
+            initial_velocity: 1181 ftfr/s
+          -
+            charge: 2.5 lbfr
+            initial_velocity: 1281 ftfr/s
+          -
+            charge: 3 lbfr
+            initial_velocity: 1361 ftfr/s
+          -
+            charge: 4 lbfr
+            initial_velocity: 1520 ftfr/s
+      -
+        mass: 8 lbfr
+        data:
+          -
+            charge: 0.5 lbfr
+            initial_velocity: 698 ftfr/s
+          -
+            charge: 0.75 lbfr
+            initial_velocity: 850 ftfr/s
+          -
+            charge: 1 lbfr
+            initial_velocity: 960 ftfr/s
+          -
+            charge: 1.5 lbfr
+            initial_velocity: 1179 ftfr/s
+          -
+            charge: 2 lbfr
+            initial_velocity: 1324 ftfr/s
+          -
+            charge: 2.5 lbfr
+            initial_velocity: 1417 ftfr/s
+          -
+            charge: 3 lbfr
+            initial_velocity: 1459 ftfr/s
+          -
+            charge: 4 lbfr
+            initial_velocity: 1520 ftfr/s
+      -
+        mass: 4 lbfr
+        data:
+          -
+            charge: 0.5 lbfr
+            initial_velocity: 924 ftfr/s
+          -
+            charge: 0.75 lbfr
+            initial_velocity: 1117 ftfr/s
+          -
+            charge: 1 lbfr
+            initial_velocity: 1272 ftfr/s
+          -
+            charge: 1.5 lbfr
+            initial_velocity: 1508 ftfr/s
+      -
+        mass: 12 lbfr
+        charge: 4 lbfr
+        initial_velocity: 1442 ftfr/s
+      -
+        mass: 8 lbfr
+        charge: 2.5 lbfr
+        initial_velocity: 1422 ftfr/s
+      -
+        mass: 4 lbfr
+        charge: 1.5 lbfr
+        initial_velocity: 1446 ftfr/s
+  -
+    ref2: "p. 154, footnote"
+    diameter: 6 infr 11.75 linefr
+    mass: 60 lbfr
+    angle: 45 deg
+    charge: 3 ozfr
+    data:
+      -
+        date: 1772
+        range: 127 toises
+      -
+        date: 1744
+        range: 117 toises
+      -
+        date: 1718
+        range: 120 toises
+  -
+    ref2: "p. 156"
+    data:
+      -
+        material: iron
+        angle: 0
+        technique: given_velocity
+        mass: 24 lbfr
+        charge: 8 lbfr
+        data:
+          - initial_velocity: 1425 ftfr/s
+          - initial_velocity: 1396 ftfr/s
+  -
+    ref2: "p. 159"
+    data:
+      -
+        material: iron
+        angle: 0
+        technique: given_velocity
+        data:
+          -
+            mass: 8 lbfr
+            charge: 2.5 lbfr
+            data:
+              -
+                date: 1781
+                initial_velocity: 1422 ftfr/s
+              -
+                date: 1783
+                initial_velocity: 1190 ftfr/s
+              -
+                initial_velocity: 1393 ftfr/s
+          -
+            mass: 4 lbfr
+            charge: 1.5 lbfr
+            data:
+              -
+                date: 1781
+                initial_velocity: 1446 ftfr/s
+              -
+                date: 1783
+                initial_velocity: 1328 ftfr/s
+              -
+                initial_velocity: 1416 ftfr/s
+  -
+    ref2: "p. 162"
+    desc: "Velocities with different \u00e9vasement and different powders"
+    material: iron
+    angle: 0
+    technique: given_velocity
+    data:
+      -
+        mass: 12 lbfr
+        charge: 4 lbfr
+        data:
+          - initial_velocity: 1680 ftfr/s
+          - initial_velocity: 1442 ftfr/s
+          - initial_velocity: 1423 ftfr/s
+          - initial_velocity: 1405 ftfr/s
+          - initial_velocity: 1387 ftfr/s
+          - initial_velocity: 1369 ftfr/s
+          - initial_velocity: 1351 ftfr/s
+          - initial_velocity: 1333 ftfr/s
+          - initial_velocity: 1316 ftfr/s
+          - initial_velocity: 1299 ftfr/s
+          - initial_velocity: 1281 ftfr/s
+          - initial_velocity: 1264 ftfr/s
+          - initial_velocity: 1247 ftfr/s
+          - initial_velocity: 1230 ftfr/s
+          - initial_velocity: 1213 ftfr/s
+          - initial_velocity: 1197 ftfr/s
+          - initial_velocity: 1181 ftfr/s
+          - initial_velocity: 1165 ftfr/s
+          - initial_velocity: 1150 ftfr/s
+          - initial_velocity: 1134 ftfr/s
+          - initial_velocity: 1646 ftfr/s
+          - initial_velocity: 1412 ftfr/s
+          - initial_velocity: 1395 ftfr/s
+          - initial_velocity: 1376 ftfr/s
+          - initial_velocity: 1359 ftfr/s
+          - initial_velocity: 1341 ftfr/s
+          - initial_velocity: 1324 ftfr/s
+          - initial_velocity: 1306 ftfr/s
+          - initial_velocity: 1289 ftfr/s
+          - initial_velocity: 1273 ftfr/s
+          - initial_velocity: 1255 ftfr/s
+          - initial_velocity: 1239 ftfr/s
+          - initial_velocity: 1222 ftfr/s
+          - initial_velocity: 1205 ftfr/s
+          - initial_velocity: 1189 ftfr/s
+          - initial_velocity: 1173 ftfr/s
+          - initial_velocity: 1158 ftfr/s
+          - initial_velocity: 1142 ftfr/s
+          - initial_velocity: 1126 ftfr/s
+          - initial_velocity: 1111 ftfr/s
+      -
+        mass: 8 lbfr
+        charge: 2.5 lbfr
+        data:
+          - initial_velocity: 1694 ftfr/s
+          - initial_velocity: 1422 ftfr/s
+          - initial_velocity: 1401 ftfr/s
+          - initial_velocity: 1380 ftfr/s
+          - initial_velocity: 1359 ftfr/s
+          - initial_velocity: 1338 ftfr/s
+          - initial_velocity: 1318 ftfr/s
+          - initial_velocity: 1298 ftfr/s
+          - initial_velocity: 1279 ftfr/s
+          - initial_velocity: 1259 ftfr/s
+          - initial_velocity: 1240 ftfr/s
+          - initial_velocity: 1221 ftfr/s
+          - initial_velocity: 1202 ftfr/s
+          - initial_velocity: 1183 ftfr/s
+          - initial_velocity: 1165 ftfr/s
+          - initial_velocity: 1147 ftfr/s
+          - initial_velocity: 1129 ftfr/s
+          - initial_velocity: 1111 ftfr/s
+          - initial_velocity: 1093 ftfr/s
+          - initial_velocity: 1076 ftfr/s
+          - initial_velocity: 1660 ftfr/s
+          - initial_velocity: 1394 ftfr/s
+          - initial_velocity: 1373 ftfr/s
+          - initial_velocity: 1352 ftfr/s
+          - initial_velocity: 1332 ftfr/s
+          - initial_velocity: 1311 ftfr/s
+          - initial_velocity: 1292 ftfr/s
+          - initial_velocity: 1272 ftfr/s
+          - initial_velocity: 1253 ftfr/s
+          - initial_velocity: 1234 ftfr/s
+          - initial_velocity: 1215 ftfr/s
+          - initial_velocity: 1196 ftfr/s
+          - initial_velocity: 1178 ftfr/s
+          - initial_velocity: 1160 ftfr/s
+          - initial_velocity: 1141 ftfr/s
+          - initial_velocity: 1122 ftfr/s
+          - initial_velocity: 1106 ftfr/s
+          - initial_velocity: 1088 ftfr/s
+          - initial_velocity: 1071 ftfr/s
+          - initial_velocity: 1054 ftfr/s
+      -
+        mass: 4 lbfr
+        charge: 1.5 lbfr
+        data:
+          - initial_velocity: 1808 ftfr/s
+          - initial_velocity: 1446 ftfr/s
+          - initial_velocity: 1419 ftfr/s
+          - initial_velocity: 1392 ftfr/s
+          - initial_velocity: 1365 ftfr/s
+          - initial_velocity: 1339 ftfr/s
+          - initial_velocity: 1313 ftfr/s
+          - initial_velocity: 1287 ftfr/s
+          - initial_velocity: 1262 ftfr/s
+          - initial_velocity: 1237 ftfr/s
+          - initial_velocity: 1213 ftfr/s
+          - initial_velocity: 1188 ftfr/s
+          - initial_velocity: 1164 ftfr/s
+          - initial_velocity: 1141 ftfr/s
+          - initial_velocity: 1118 ftfr/s
+          - initial_velocity: 1095 ftfr/s
+          - initial_velocity: 1072 ftfr/s
+          - initial_velocity: 1050 ftfr/s
+          - initial_velocity: 1028 ftfr/s
+          - initial_velocity: 1007 ftfr/s
+          - initial_velocity: 1772 ftfr/s
+          - initial_velocity: 1416 ftfr/s
+          - initial_velocity: 1390 ftfr/s
+          - initial_velocity: 1363 ftfr/s
+          - initial_velocity: 1337 ftfr/s
+          - initial_velocity: 1312 ftfr/s
+          - initial_velocity: 1286 ftfr/s
+          - initial_velocity: 1261 ftfr/s
+          - initial_velocity: 1236 ftfr/s
+          - initial_velocity: 1212 ftfr/s
+          - initial_velocity: 1188 ftfr/s
+          - initial_velocity: 1164 ftfr/s
+          - initial_velocity: 1140 ftfr/s
+          - initial_velocity: 1117 ftfr/s
+          - initial_velocity: 1095 ftfr/s
+          - initial_velocity: 1073 ftfr/s
+          - initial_velocity: 1051 ftfr/s
+          - initial_velocity: 1029 ftfr/s
+          - initial_velocity: 1008 ftfr/s
+          - initial_velocity: 987 ftfr/s
+  -
+    ref2: "p. 171"
+    material: iron
+    angle: 0
+    technique: given_velocity
+    mass: 16 lbfr
+    charge: 6 lbfr
+    data:
+      - initial_velocity: 1419 ftfr/s
+      - initial_velocity: 1420 ftfr/s
+      - initial_velocity: 1440 ftfr/s
+      - initial_velocity: 1445 ftfr/s
+      - initial_velocity: 1451 ftfr/s
+      - initial_velocity: 1438 ftfr/s
+  -
+    ref2: "p. 189"
+    material: lead
+    angle: 0
+    technique: given_velocity
+    diameter: 9 linefr 6 ptfr
+    data:
+      -
+        charge: 0.2778 lbfr
+        initial_velocity: 1600 ftfr/s
+      -
+        charge: 0.25 lbfr
+        initial_velocity: 1500 ftfr/s
+      -
+        charge: 0.2222 lbfr
+        initial_velocity: 1400 ftfr/s
+
+# Through page 201

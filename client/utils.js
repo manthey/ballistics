@@ -639,5 +639,5 @@ export {
   formatValue,
   sortObjectList,
   updateParameters,
-  updatePointKeys,
+  updatePointKeys
 };

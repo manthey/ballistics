@@ -25,8 +25,6 @@ In the modern concept, the coefficient of drag is based on the Reynolds number a
 <style src="./textblock.css" scoped/>
 
 <script>
-import * as utils from '../utils.js';
-
 export default {
   name: 'DragModel'
 }

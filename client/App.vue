@@ -175,15 +175,10 @@ export default {
         this.plotdata = evt.data.plotdata;
         this.isLoading -= 1;
       };
+      worker.onerror = (evt) => {
+        console.log('worker onerror', evt);
+      };
       worker.postMessage({action: 'getdata'});
-      /*
-      this.isLoading += 1;
-      fetch('totallist.json').then(resp => resp.json()).then(data => {
-        this.plotdata = data;
-        utils.updatePointKeys(data);
-        this.isLoading -= 1;
-      }).catch(err => { console.log(err); throw err; });
-      */
     },
     fetchReferences() {
       this.isLoading += 1;
