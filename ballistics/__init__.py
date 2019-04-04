@@ -48,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-03-28v63'
-PROGRAM_SIGNATURE = '798e859bd625729e12ecea0b18fc6a29'
+__version__ = '2019-04-04v64'
+PROGRAM_SIGNATURE = 'd83315a5a579fe700c5983932f51e84a'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -1268,7 +1268,7 @@ def graph_coefficient_of_drag(user_params=None):
     """
     params = {'remin': 1.0e2, 'remax': 1.0e7, 'mnmin': 0.0, 'mnmax': 1.8,
               'mnint': 0.2, 'out': '', 'w': 0, 'h': 0, 'dpi': 0, 'oor': 0,
-              'method': 'miller'}
+              'json': None, 'method': 'miller'}
     params, other_params, items = parse_user_params(params, user_params)
     global matplotlib
     if not matplotlib:
@@ -1290,7 +1290,8 @@ def graph_coefficient_of_drag(user_params=None):
     plt.rcParams['figure.subplot.hspace'] = 0
     plt.rcParams['figure.subplot.wspace'] = 0
 
-    from .cod_miller import MnReCdDataTable
+    from . import cod_miller
+    MnReCdDataTable = cod_miller.table_as_array()
     remin = round(math.log10(params['remin'])-0.0499, 1)
     remax = round(math.log10(params['remax'])+0.05, 1)
     reint = 1.
@@ -1302,6 +1303,9 @@ def graph_coefficient_of_drag(user_params=None):
     mnmax = params['mnmax']
     mnint = params['mnint']
     method = params.get('method', 'miller')
+    if params.get('json'):
+        if method == 'miller':
+            cod_miller.replace_table(params['json'])
     substep = 100
     for mni in range(int((mnmax-mnmin)/mnint)+1):
         mn = mni*mnint+mnmin
@@ -2182,8 +2186,8 @@ read_config for details on the file format.
  max Mach numbers to plot), mnint (Mach number interval to plot), out (output
  file name; if not specified show the graph), w (width in inches), h (height in
  inches), dpi, oor (0 for only in range values, 1 to also include out-of-range
- values), method (drag method; default miller).  Example: '--cdgraph=remin=1e3,
- remax=1e7,mnmin=0,mnmax=1.5,mnint=0.25'.
+ values), method (drag method; default miller), json (json file for method, if
+ any).  Example: '--cdgraph=remin=1e3,remax=1e7,mnmin=0,mnmax=1.5,mnint=0.25'.
 --comment adds a comment that can be included as a column in the output.
 --config specifies a configuration file.  A configuration file is a list of
  parameters such as would be included on the command line.  Any line that

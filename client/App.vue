@@ -168,11 +168,15 @@ export default {
   },
   methods: {
     fetchData() {
-      this.isLoading += 1;
+      this.isLoading += 2;
       let worker = new Worker();
       worker.onmessage = (evt) => {
-        Object.assign(utils.PointKeys, evt.data.pointkeys);
-        this.plotdata = evt.data.plotdata;
+        if (evt.data.pointkeys) {
+          Object.assign(utils.PointKeys, evt.data.pointkeys);
+          this.plotdata = evt.data.plotdata;
+        } else {
+          this.trajectories = evt.data.trajectories;
+        }
         this.isLoading -= 1;
       };
       worker.onerror = (evt) => {

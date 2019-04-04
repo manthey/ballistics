@@ -148,50 +148,20 @@ def combine(opts):  # noqa
                 print('Failed on %s: %d\n%r' % (file, entry.get('idx', 0),
                                                 entry.get('conditions')))
                 print(traceback.format_exc().strip())
-    out = opts.get('out', 'client/static')
-    if opts.get('json', True):
-        with open(os.path.join(out, 'totallist.json'), 'wt') as fp:
-            json.dump(total, fp, sort_keys=True, indent=1,
-                      separators=(',', ': '))
-    if opts.get('csv'):
-        csv_dump(total, os.path.join(out, 'totallist.csv'))
-    if opts.get('json', True):
-        with open(os.path.join(out, 'trajectories.json'), 'wt') as fp:
-            json.dump(trajectories, fp, sort_keys=True, indent=1,
-                      separators=(',', ': '))
-    if opts.get('csv'):
-        csv_dump(trajectories, os.path.join(out, 'trajectories.csv'))
+    output_files(total, 'totallist', opts)
+    output_files(trajectories, 'trajectories', opts)
     print('%d samples from %d sources' % (len(total), sources))
-    if opts.get('json', True):
-        with open(os.path.join(out, 'references.json'), 'wt') as fp:
-            json.dump(references, fp, sort_keys=True, indent=1,
-                      separators=(',', ': '))
-    if opts.get('csv'):
-        csv_dump(references, os.path.join(out, 'references.csv'))
+    output_files(references, 'references', opts)
     print('%d references' % len(references))
     params = parameter_summary(total)
-    if opts.get('json', True):
-        outpath = os.path.join(out, 'parameters.json')
-        try:
-            with open(outpath, 'wt') as fp:
-                json.dump(params, fp, sort_keys=True, indent=1,
-                          separators=(',', ': '))
-        except TypeError:
-            with open(outpath, 'wt') as fp:
-                json.dump(params, fp, sort_keys=False, indent=1,
-                          separators=(',', ': '))
-    if opts.get('csv'):
-        csv_dump(params, os.path.join(out, 'parameters.csv'))
+    output_files(params, 'parameters', opts)
     print('%d parameters' % len(params))
     combo = [{
         'conditions': {param: GivenCombinations[key]['conditions'][param] for param in key},
         'power_factor': GivenCombinations[key]['results']['power_factor'],
         'time': GivenCombinations[key]['results'].get('time'),
     } for key in sorted(GivenCombinations)]
-    if opts.get('json', True):
-        with open(os.path.join(out, 'combinations.json'), 'wt') as fp:
-            json.dump(combo, fp, sort_keys=True, indent=1,
-                      separators=(',', ': '))
+    output_files(combo, 'combinations', opts, maycsv=False)
     print('%d combinations' % len(combo))
     return ReMnGrid
 
@@ -246,6 +216,35 @@ def compile_grid(grid, entry, opts, item):
         })
 
 
+def csv_dump(data, path):
+    """
+    Write to a csv file.  Data is sorted by key and idx.
+
+    Enter: data: list or dictionary to write.
+           path: path to write.
+    """
+    if isinstance(data, dict):
+        data = [data[key] for key in sorted(data.keys())]
+    else:
+        data = [val[-1] for val in sorted([(
+            row.get('key'), row.get('idx'), row) for row in data])]
+    keys = {}
+    for entry in data:
+        keys.update(entry)
+    keys = [val[-1] for val in sorted([(
+        key != 'key', key != 'idx', key != 'power_factor', key)
+        for key in keys])]
+    with open(path, 'wt', newline='') as csvfile:
+        # Quote all non-numeric fields to preserve datatypes.
+        writer = csv.writer(csvfile, quoting=csv.QUOTE_NONNUMERIC)
+        writer.writerow(keys)
+        for entry in data:
+            row = [entry.get(key) for key in keys]
+            row = [val.encode('utf8') if isinstance(val, bytes) else val
+                   for val in row]
+            writer.writerow(row)
+
+
 def make_groups_grid(opts):
     """
     Using the group values, make the groups grid.
@@ -278,33 +277,30 @@ def make_groups_grid(opts):
     return GroupsGrid
 
 
-def csv_dump(data, path):
+def output_files(data, basename, opts, mayjson=True, maycsv=True):
     """
-    Write to a csv file.  Data is sorted by key and idx.
+    Output json and csv files for some data based on current options.
 
-    Enter: data: list or dictionary to write.
-           path: path to write.
+    Enter: data: the data to output
+           basename: the base file name.  .json or .csv is added.
+           opts: program options indicating which formats to output and the
+                 destination path.
+           mayjson: if False, never output json.
+           maycsv: if False, never output csv.
     """
-    if isinstance(data, dict):
-        data = [data[key] for key in sorted(data.keys())]
-    else:
-        data = [val[-1] for val in sorted([(
-            row.get('key'), row.get('idx'), row) for row in data])]
-    keys = {}
-    for entry in data:
-        keys.update(entry)
-    keys = [val[-1] for val in sorted([(
-        key != 'key', key != 'idx', key != 'power_factor', key)
-        for key in keys])]
-    with open(path, 'wt', newline='') as csvfile:
-        # Quote all non-numeric fields to preserve datatypes.
-        writer = csv.writer(csvfile, quoting=csv.QUOTE_NONNUMERIC)
-        writer.writerow(keys)
-        for entry in data:
-            row = [entry.get(key) for key in keys]
-            row = [val.encode('utf8') if isinstance(val, bytes) else val
-                   for val in row]
-            writer.writerow(row)
+    out = opts.get('out', 'client/static')
+    if opts.get('json', True) and mayjson:
+        outpath = os.path.join(out, basename + '.json')
+        try:
+            with open(outpath, 'wt') as fp:
+                json.dump(data, fp, sort_keys=True, indent=1,
+                          separators=(',', ': '))
+        except TypeError:
+            with open(outpath, 'wt') as fp:
+                json.dump(data, fp, sort_keys=False, indent=1,
+                          separators=(',', ': '))
+    if opts.get('csv') and maycsv:
+        csv_dump(data, os.path.join(out, basename + '.csv'))
 
 
 def parameter_summary(data):

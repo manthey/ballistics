@@ -13,6 +13,7 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
+import json
 import math
 from .interpolate import interpolate
 
@@ -194,3 +195,29 @@ def extend_drag_table():
                 else:
                     last_cd = cd
         ExtendedMnLogReCdDataTable.append((mach, ext_re_data, crit))
+
+
+def replace_table(tableOrFile):
+    """
+    Replace the main data table with an array-based table, possibly loading it
+    from a json file.
+
+    :param tableOrFile: if a string, this is a path to a json file.  Otherwise,
+        this is an array in the format output by table_as_array.
+    """
+    if isinstance(tableOrFile, str):
+        newTable = json.load(open(tableOrFile))
+    else:
+        newTable = tableOrFile
+    MnReCdDataTable[:] = [
+        (e1[0], tuple(tuple(e2) for e2 in e1[1]), e1[2]) for e1 in newTable]
+    ExtendedMnLogReCdDataTable[:] = []
+
+
+def table_as_array():
+    """
+    Return the main data table in array format.
+    :returns: the table as a set of nested arrays (instead of tuples).
+    """
+    return [[mn, [list(entry) for entry in entries], crit]
+            for mn, entries, crit in MnReCdDataTable]
