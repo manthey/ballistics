@@ -1,5 +1,12 @@
 <template>
-  <vue-plotly class="chart" :data="data" :layout="layout" :options="options" :autoResize="true" @click="processClick" @relayout="adjustLegend" :key="pointkey ? 'chartwdp' : 'chart'"/>
+  <div class="chartwrapper">
+    <vue-plotly class="chart" :data="data" :layout="layout" :options="options" :autoResize="true" @click="processClick" @relayout="adjustLegend" :key="pointkey ? 'chartwdp' : 'chart'"/>
+    <div id="controls">
+      <select v-model="regressionselected">
+        <option v-for="option in regressionoptions" v-bind:value="option.value" :key="'regressionoption:' + option.value">{{ option.text }}</option>
+      </select>
+    </div>
+  </div>
 </template>
 
 <style>
@@ -10,14 +17,24 @@
 </style>
 
 <style scoped>
-.chart {
+.chartwrapper {
   flex: 1;
+}
+.chart {
+  width: 100%;
+  height: 100%;
+}
+#controls {
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
 }
 </style>
 
 <script>
 import * as utils from '../utils.js';
 import d3 from 'd3';
+import regression from 'regression';
 import VuePlotly from '@statnett/vue-plotly';
 
 export default {
@@ -62,7 +79,35 @@ export default {
         doubleClick: 'reset',
         responsive: true,
         scrollZoom: true
-      }
+      },
+      regressionselected: 'none',
+      regressionoptions: [{
+        value: 'none', text: 'None',
+      }, {
+        value: 'o0', text: 'Linear Regression Order 0'
+      }, {
+        value: 'o1', text: 'Linear Regression Order 1'
+      }, {
+        value: 'o2', text: 'Linear Regression Order 2'
+      }, {
+        value: 'o3', text: 'Linear Regression Order 3'
+      }, {
+        value: 'o4', text: 'Linear Regression Order 4'
+      }, {
+        value: 'o5', text: 'Linear Regression Order 5'
+      }, {
+        value: 'l0', text: 'Log Regression Order 0'
+      }, {
+        value: 'l1', text: 'Log Regression Order 1'
+      }, {
+        value: 'l2', text: 'Log Regression Order 2'
+      }, {
+        value: 'l3', text: 'Log Regression Order 3'
+      }, {
+        value: 'l4', text: 'Log Regression Order 4'
+      }, {
+        value: 'l5', text: 'Log Regression Order 5'
+      }]
     }
   },
   computed: {
@@ -99,6 +144,34 @@ export default {
         };
       });
       this.$nextTick(this.adjustLegend);
+
+      if (plotdata.length >= 5 && this.regressionselected !== 'none') {
+        let uselog = this.regressionselected.substr(0, 1) === 'l',
+            order = parseInt(this.regressionselected.substr(1), 10);
+        let minx, maxx;
+        let regdata = plotdata.map(d => {
+          let x = new Date(d.date_filled).getTime();
+          if (minx === undefined || x < minx) { minx = x; }
+          if (maxx === undefined || x > maxx) { maxx = x; }
+          return [x, uselog ? Math.log10(d.power_factor) : d.power_factor];
+        });
+        let reg = regression.polynomial(regdata, {order: order, precision: 100});
+        let regx = [], regy = [], steps = 100;
+        for (let i = 0; i <= steps; i += 1) {
+          let x = (maxx - minx) * i / steps + minx;
+          regx.push(new Date(x).toISOString().substr(0, 10));
+          regy.push(uselog ? Math.pow(10, reg.predict(x)[1]) : reg.predict(x)[1]);
+        }
+        console.log(regdata, regx, regy, reg);
+        traces.push({
+          x: regx,
+          y: regy,
+          type: 'scatter',
+          mode: 'line',
+          name: 'regression'
+        });
+      }
+
       return traces;
     }
   },

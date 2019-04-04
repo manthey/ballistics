@@ -134,7 +134,7 @@ def main(opts):  # noqa
     loopBestError = None
     while loopBestError is None or bestError < loopBestError:
         loopBestError = bestError
-        for mag in (0.0032, 0.0016, 0.0008, 0.0004, 0.0002, 0.0001):
+        for mag in (0.0064, 0.0032, 0.0016, 0.0008, 0.0004, 0.0002, 0.0001):
             for pos in range(adjustCount):
                 for dir in (-1, 1):
                     starttime = time.time()

@@ -394,6 +394,7 @@ data:
     angle: 0
     technique: given_velocity
     diameter: 9 linefr 6 ptfr
+    diameter_note: I'm not sure of this; I would expect a slightly smaller diameter for the common fusil of the time, but then the velocities seem low.
     data:
       -
         charge: 0.2778 lbfr
@@ -404,5 +405,45 @@ data:
       -
         charge: 0.2222 lbfr
         initial_velocity: 1400 ftfr/s
+  -
+    ref2: "p. 225"
+    desc: "Example mortar round"
+    skip: true
+    skip_note: No charge given.
+  -
+    ref2: "p. 236"
+    diameter: 12 infr
+    mass: 145 lbfr
+    data:
+      -
+        charge: 1 lbfr
+        data:
+          - range: 195.5 toises
+          - initial_velocity: 196 ftfr/s
+      -
+        charge: 1 lbfr 8 ozfr
+        data:
+          - range: 331 toises
+          - initial_velocity: 259 ftfr/s
+      -
+        charge: 2 lbfr
+        data:
+          - range: 420.5 toises
+          - initial_velocity: 295 ftfr/s
+      -
+        charge: 2 lbfr 8 ozfr
+        data:
+          - range: 493.5 toises
+          - initial_velocity: 323 ftfr/s
+      -
+        charge: 3 lbfr
+        data:
+          - range: 612.5 toises
+          - initial_velocity: 367 ftfr/s
+      -
+        charge: 3 lbfr 8 ozfr
+        data:
+          - range: 702.5 toises
+          - initial_velocity: 399 ftfr/s
 
 # Through page 201

@@ -1,5 +1,12 @@
 <template>
-  <vue-plotly class="chart" :data="data" :layout="layout" :options="options" :autoResize="true"/>
+  <div class="chartwrapper">
+    <vue-plotly class="chart" :data="data" :layout="layout" :options="options" :autoResize="true"/>
+    <div id="controls">
+      <select v-model="meanselected">
+        <option v-for="option in meanoptions" v-bind:value="option.value" :key="'meanoption:' + option.value">{{ option.text }}</option>
+      </select>
+    </div>
+  </div>
 </template>
 
 <style>
@@ -10,8 +17,17 @@
 </style>
 
 <style scoped>
-.chart {
+.chartwrapper {
   flex: 1;
+}
+.chart {
+  width: 100%;
+  height: 100%;
+}
+#controls {
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
 }
 </style>
 
@@ -57,7 +73,15 @@ export default {
         doubleClick: 'reset',
         responsive: true,
         scrollZoom: true
-      }
+      },
+      meanselected: 'nomean',
+      meanoptions: [{
+        value: 'nomean', text: 'No Mean Line'
+      }, {
+        value: 'mean', text: 'Mean Line'
+      }, {
+        value: 'sd', text: 'Mean & Std.Dev.'
+      }]
     }
   },
   computed: {
@@ -96,10 +120,11 @@ export default {
             color: 'blue',
           },
           meanline: {
-            visible: true
+            visible: true,  // false or true for violin plot
           },
+          boxmean: this.meanselected === 'mean' ? true : this.meanselected === 'sd' ? 'sd' : false,  // false, true, or 'sd', for box plot
           // 'violin' works but is strange due to the log scale
-          type: 'box',
+          type: this.meanselected === 'violin' ? 'violin' : 'box',
           name: '' + (minyear + bin * binwidth)
         });
       }

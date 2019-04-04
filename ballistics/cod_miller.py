@@ -96,7 +96,7 @@ MnReCdDataTable = [
 ]
 MnReCdDataTableLog10Crit = [
     (machnum, math.log10(crit)) for (machnum, reynolds_data, crit) in MnReCdDataTable]
-ExtendedMnReCdDataTable = []
+ExtendedMnLogReCdDataTable = []
 
 
 def coefficient_of_drag_miller(state, only_in_range=False):
@@ -121,24 +121,24 @@ def coefficient_of_drag_miller(state, only_in_range=False):
     # data.
     mach_in_range = [None, None]
     mach_data = []
-    for pos, (mach, reynolds_data, crit) in enumerate(ExtendedMnReCdDataTable):
+    for pos, (mach, reynolds_data, crit) in enumerate(ExtendedMnLogReCdDataTable):
         use = False
         if Mn == mach:
             use = True
-        if (pos+1 != len(ExtendedMnReCdDataTable) and Mn > mach and
-                Mn <= ExtendedMnReCdDataTable[pos+1][0]):
+        if (pos+1 != len(ExtendedMnLogReCdDataTable) and Mn > mach and
+                Mn <= ExtendedMnLogReCdDataTable[pos+1][0]):
             use = True
-        if pos and Mn >= ExtendedMnReCdDataTable[pos-1][0] and Mn < mach:
+        if pos and Mn >= ExtendedMnLogReCdDataTable[pos-1][0] and Mn < mach:
             use = True
-        if pos+1 == len(ExtendedMnReCdDataTable) and Mn > mach:
+        if pos+1 == len(ExtendedMnLogReCdDataTable) and Mn > mach:
             use = True
         if not use:
             continue
         # We functionally shift the point we are interpolating so that the
         # critical point looks sane and smooth on a graph
-        adjusted_re = 10**(math.log10(Re) - math.log10(critical_Re) +
-                           math.log10(crit))
-        (Cd, in_range) = interpolate(adjusted_re, reynolds_data, True)
+        adjusted_log_re = math.log10(Re) - math.log10(critical_Re) + math.log10(crit)
+        adjusted_re = 10**adjusted_log_re
+        (Cd, in_range) = interpolate(adjusted_log_re, reynolds_data, False)
         mach_data.append((mach, Cd))
         in_range = (in_range and MnReCdDataTable[pos][1][0][0] <=
                     adjusted_re <= MnReCdDataTable[pos][1][-1][0])
@@ -169,16 +169,16 @@ def extend_drag_table():
     coefficients.  The coefficients are copied with an offset based on critical
     Reynolds number and closest matching coefficient.
     """
-    if len(ExtendedMnReCdDataTable):
+    if len(ExtendedMnLogReCdDataTable):
         return
     for pos, (mach, reynolds_data, crit) in enumerate(MnReCdDataTable):
-        ext_re_data = list(reynolds_data)
+        ext_re_data = [(math.log10(re), cd) for re, cd in reynolds_data]
         for lowpos in range(pos - 1, -1, -1):
             ref_cd = ext_re_data[0][1]
             low_mach, low_reynolds_data, low_crit = MnReCdDataTable[lowpos]
             last_cd = None
             for re, cd in low_reynolds_data[::-1]:
-                adj_re = 10 ** (math.log10(re) - math.log10(low_crit) + math.log10(crit))
+                adj_re = math.log10(re) - math.log10(low_crit) + math.log10(crit)
                 if adj_re < ext_re_data[0][0] and last_cd is not None:
                     ext_re_data[0:0] = [(adj_re, cd - last_cd + ref_cd)]
                 else:
@@ -188,9 +188,9 @@ def extend_drag_table():
             high_mach, high_reynolds_data, high_crit = MnReCdDataTable[highpos]
             last_cd = None
             for re, cd in high_reynolds_data:
-                adj_re = 10 ** (math.log10(re) - math.log10(high_crit) + math.log10(crit))
+                adj_re = math.log10(re) - math.log10(high_crit) + math.log10(crit)
                 if adj_re > ext_re_data[-1][0] and last_cd is not None:
                     ext_re_data.append((adj_re, cd - last_cd + ref_cd))
                 else:
                     last_cd = cd
-        ExtendedMnReCdDataTable.append((mach, ext_re_data, crit))
+        ExtendedMnLogReCdDataTable.append((mach, ext_re_data, crit))
