@@ -293,6 +293,13 @@
   "ref": "Miller, 1979",
   "summary": "This is the best source I found for coefficient of drag based on Reynolds and Mach numbers in the range of typical projectiles."
  },
+ "modern2019": {
+  "cms": "\"Modern Muzzleloader.\" Accessed April 3, 2019. https://www.modernmuzzleloader.com.",
+  "key": "modern2019",
+  "link": "https://www.modernmuzzleloader.com",
+  "ref": "Modern Muzzleloader, 2019",
+  "summary": "Various reports of black powder tests."
+ },
  "montagu1792": {
   "cms": "Montagu, George, <i>The Sportsman's Directory, or Tractate on Gunpowder</i>, London: R. Faulder, 1792",
   "details": "The author compares different powder and comments on what he thinks is the best to use for shooting birds.  His tests use a very short barreled mortar, which shows fine powder to advantage, as the large powder doesn't have a chance to combust before the ball has moved.\n\nOn p. 28, the author mentions glazing powder with black-lead.  This is the earliest reference to graphite glazing that I have found.\n",
