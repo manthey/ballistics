@@ -414,6 +414,7 @@ data:
     ref2: "p. 236"
     diameter: 12 infr
     mass: 145 lbfr
+    angle: 45 deg
     data:
       -
         charge: 1 lbfr
@@ -445,5 +446,439 @@ data:
         data:
           - range: 702.5 toises
           - initial_velocity: 399 ftfr/s
-
-# Through page 201
+  -
+    ref2: "p. 237"
+    diameter: 10 infr
+    mass: 104 lbfr
+    angle: 45 deg
+    data:
+      -
+        charge: 1 lbfr
+        data:
+          - range: 227.5 toises
+          - initial_velocity: 210 ftfr/s
+      -
+        charge: 1 lbfr 8 ozfr
+        data:
+          - range: 395.5 toises
+          - initial_velocity: 288 ftfr/s
+      -
+        charge: 2 lbfr
+        data:
+          - range: 530.5 toises
+          - initial_velocity: 347 ftfr/s
+      -
+        charge: 2 lbfr 8 ozfr
+        data:
+          - range: 645 toises
+          - initial_velocity: 382 ftfr/s
+      -
+        charge: 3 lbfr
+        data:
+          - range: 755.5 toises
+          - initial_velocity: 420 ftfr/s
+      -
+        charge: 4 lbfr
+        data:
+          - range: 1028 toises
+          - initial_velocity: 515 ftfr/s
+      -
+        charge: 5 lbfr
+        data:
+          - range: 1073.5 toises
+          - initial_velocity: 531 ftfr/s
+      -
+        charge: 6 lbfr 2.5 ozfr
+        data:
+          - range: 1048 toises
+          - initial_velocity: 523 ftfr/s
+      -
+        charge: 1 lbfr
+        data:
+          - range: 310 toises
+          - initial_velocity: 248 ftfr/s
+      -
+        charge: 1 lbfr 8 ozfr
+        data:
+          - range: 480 toises
+          - initial_velocity: 321 ftfr/s
+      -
+        charge: 2 lbfr
+        data:
+          - range: 615.5 toises
+          - initial_velocity: 370 ftfr/s
+      -
+        charge: 2 lbfr 8 ozfr
+        data:
+          - range: 697.5 toises
+          - initial_velocity: 402 ftfr/s
+      -
+        charge: 3 lbfr
+        data:
+          - range: 704 toises
+          - initial_velocity: 438 ftfr/s
+      -
+        charge: 3 lbfr 10.25 ozfr
+        data:
+          - range: 879.75 toises
+          - initial_velocity: 463 ftfr/s
+      -
+        charge: 3 lbfr 10.75 ozfr
+        data:
+          - range: 893 toises
+          - initial_velocity: 468 ftfr/s
+  -
+    ref2: "p. 238"
+    diameter: 8 infr
+    mass: 44 lbfr
+    angle: 45 deg
+    data:
+      -
+        charge: 5 ozfr
+        data:
+          - range: 165.5 toises
+          - initial_velocity: 180 ftfr/s
+      -
+        charge: 10 ozfr
+        data:
+          - range: 394.5 toises
+          - initial_velocity: 296 ftfr/s
+      -
+        charge: 15 ozfr
+        data:
+          - range: 577 toises
+          - initial_velocity: 379 ftfr/s
+      -
+        charge: 20 ozfr
+        data:
+          - range: 641 toises
+          - initial_velocity: 402 ftfr/s
+  -
+    ref2: "p. 240"
+    angle: 45 deg
+    data:
+      -
+        diameter: 12 infr
+        mass: 145 lbfr
+        data:
+          -
+            charge: 1 lbfr
+            data:
+              - range: 197 toises
+              - initial_velocity: 197 ftfr/s
+          -
+            charge: 1 lbfr 8 ozfr
+            data:
+              - range: 346 toises
+              - initial_velocity: 264 ftfr/s
+          -
+            charge: 2 lbfr
+            data:
+              - range: 426 toises
+              - initial_velocity: 311 ftfr/s
+          -
+            charge: 2 lbfr 8 ozfr
+            data:
+              - range: 569 toises
+              - initial_velocity: 352 ftfr/s
+          -
+            charge: 3 lbfr
+            data:
+              - range: 647 toises
+              - initial_velocity: 380 ftfr/s
+          -
+            charge: 3 lbfr 8 ozfr
+            data:
+              - range: 710 toises
+              - initial_velocity: 402 ftfr/s
+      -
+        diameter: 10 infr
+        mass: 104 lbfr
+        data:
+          -
+            charge: 1 lbfr
+            data:
+              - range: 311 toises
+              - initial_velocity: 249 ftfr/s
+          -
+            charge: 1 lbfr 8 ozfr
+            data:
+              - range: 482 toises
+              - initial_velocity: 322 ftfr/s
+          -
+            charge: 2 lbfr
+            data:
+              - range: 640 toises
+              - initial_velocity: 380 ftfr/s
+          -
+            charge: 2 lbfr 8 ozfr
+            data:
+              - range: 764 toises
+              - initial_velocity: 424 ftfr/s
+          -
+            charge: 3 lbfr
+            data:
+              - range: 860 toises
+              - initial_velocity: 459 ftfr/s
+          -
+            charge: 3 lbfr 10.5 ozfr
+            data:
+              - range: 960 toises
+              - initial_velocity: 492 ftfr/s
+          -
+            charge: 1 lbfr
+            data:
+              - range: 230 toises
+              - initial_velocity: 212 ftfr/s
+          -
+            charge: 1 lbfr 8 ozfr
+            data:
+              - range: 412 toises
+              - initial_velocity: 292 ftfr/s
+          -
+            charge: 2 lbfr
+            data:
+              - range: 568.5 toises
+              - initial_velocity: 352 ftfr/s
+          -
+            charge: 2 lbfr 8 ozfr
+            data:
+              - range: 690 toises
+              - initial_velocity: 397 ftfr/s
+          -
+            charge: 3 lbfr
+            data:
+              - range: 802 toises
+              - initial_velocity: 436 ftfr/s
+          -
+            charge: 4 lbfr
+            data:
+              - range: 1035 toises
+              - initial_velocity: 518 ftfr/s
+          -
+            charge: 5 lbfr
+            data:
+              - range: 1139 toises
+              - initial_velocity: 551 ftfr/s
+          -
+            charge: 6 lbfr 2.5 ozfr
+            data:
+              - range: 1200 toises
+              - initial_velocity: 586 ftfr/s
+      -
+        diameter: 8 infr
+        mass: 44 lbfr
+        data:
+          -
+            charge: 5 ozfr
+            data:
+              - range: 173 toises
+              - initial_velocity: 184 ftfr/s
+          -
+            charge: 10 ozfr
+            data:
+              - range: 397 toises
+              - initial_velocity: 297 ftfr/s
+          -
+            charge: 15 ozfr
+            data:
+              - range: 587 toises
+              - initial_velocity: 380 ftfr/s
+          -
+            charge: 20 ozfr
+            data:
+              - range: 642 toises
+              - initial_velocity: 403 ftfr/s
+  -
+    ref2: "p. 242"
+    angle: 45 deg
+    data:
+      -
+        diameter: 6 infr 11.75 linefr
+        mass: 60 lbfr
+        charge: 3 ozfr
+        data:
+          - range: 90 toises
+          - range: 100 toises
+          - range: 110 toises
+          - range: 120 toises
+      -
+        diameter: 12 infr
+        mass: 145 lbfr
+        data:
+          -
+            charge: 1 lbfr
+            data:
+              - initial_velocity: 183 ftfr/s
+              - initial_velocity: 193 ftfr/s
+              - initial_velocity: 203 ftfr/s
+              - initial_velocity: 212 ftfr/s
+          -
+            charge: 1 lbfr 8 ozfr
+            data:
+              - initial_velocity: 246 ftfr/s
+              - initial_velocity: 259 ftfr/s
+              - initial_velocity: 272 ftfr/s
+              - initial_velocity: 284 ftfr/s
+          -
+            charge: 2 lbfr
+            data:
+              - initial_velocity: 289 ftfr/s
+              - initial_velocity: 305 ftfr/s
+              - initial_velocity: 320 ftfr/s
+              - initial_velocity: 334 ftfr/s
+          -
+            charge: 2 lbfr 8 ozfr
+            data:
+              - initial_velocity: 327 ftfr/s
+              - initial_velocity: 345 ftfr/s
+              - initial_velocity: 362 ftfr/s
+              - initial_velocity: 378 ftfr/s
+          -
+            charge: 3 lbfr
+            data:
+              - initial_velocity: 368 ftfr/s
+              - initial_velocity: 387 ftfr/s
+              - initial_velocity: 406 ftfr/s
+              - initial_velocity: 425 ftfr/s
+          -
+            charge: 3 lbfr 8 ozfr
+            data:
+              - initial_velocity: 374 ftfr/s
+              - initial_velocity: 394 ftfr/s
+              - initial_velocity: 413 ftfr/s
+              - initial_velocity: 432 ftfr/s
+      -
+        diameter: 10 infr
+        mass: 104 lbfr
+        data:
+          -
+            charge: 1 lbfr
+            data:
+              - initial_velocity: 197 ftfr/s
+              - initial_velocity: 208 ftfr/s
+              - initial_velocity: 218 ftfr/s
+              - initial_velocity: 228 ftfr/s
+          -
+            charge: 1 lbfr 8 ozfr
+            data:
+              - initial_velocity: 271 ftfr/s
+              - initial_velocity: 286 ftfr/s
+              - initial_velocity: 300 ftfr/s
+              - initial_velocity: 313 ftfr/s
+          -
+            charge: 2 lbfr
+            data:
+              - initial_velocity: 327 ftfr/s
+              - initial_velocity: 345 ftfr/s
+              - initial_velocity: 362 ftfr/s
+              - initial_velocity: 378 ftfr/s
+          -
+            charge: 2 lbfr 8 ozfr
+            data:
+              - initial_velocity: 369 ftfr/s
+              - initial_velocity: 389 ftfr/s
+              - initial_velocity: 408 ftfr/s
+              - initial_velocity: 426 ftfr/s
+          -
+            charge: 3 lbfr
+            data:
+              - initial_velocity: 407 ftfr/s
+              - initial_velocity: 429 ftfr/s
+              - initial_velocity: 449 ftfr/s
+              - initial_velocity: 469 ftfr/s
+          -
+            charge: 4 lbfr
+            data:
+              - initial_velocity: 482 ftfr/s
+              - initial_velocity: 508 ftfr/s
+              - initial_velocity: 535 ftfr/s
+              - initial_velocity: 556 ftfr/s
+          -
+            charge: 5 lbfr
+            data:
+              - initial_velocity: 511 ftfr/s
+              - initial_velocity: 539 ftfr/s
+              - initial_velocity: 565 ftfr/s
+              - initial_velocity: 591 ftfr/s
+          -
+            charge: 6 lbfr 2.5 ozfr
+            data:
+              - initial_velocity: 545 ftfr/s
+              - initial_velocity: 575 ftfr/s
+              - initial_velocity: 604 ftfr/s
+              - initial_velocity: 629 ftfr/s
+          -
+            charge: 1 lbfr
+            data:
+              - initial_velocity: 237 ftfr/s
+              - initial_velocity: 250 ftfr/s
+              - initial_velocity: 262 ftfr/s
+              - initial_velocity: 274 ftfr/s
+          -
+            charge: 1 lbfr 8 ozfr
+            data:
+              - initial_velocity: 300 ftfr/s
+              - initial_velocity: 316 ftfr/s
+              - initial_velocity: 331 ftfr/s
+              - initial_velocity: 346 ftfr/s
+          -
+            charge: 2 lbfr
+            data:
+              - initial_velocity: 353 ftfr/s
+              - initial_velocity: 372 ftfr/s
+              - initial_velocity: 391 ftfr/s
+              - initial_velocity: 408 ftfr/s
+          -
+            charge: 2 lbfr 8 ozfr
+            data:
+              - initial_velocity: 394 ftfr/s
+              - initial_velocity: 416 ftfr/s
+              - initial_velocity: 436 ftfr/s
+              - initial_velocity: 455 ftfr/s
+          -
+            charge: 3 lbfr
+            data:
+              - initial_velocity: 427 ftfr/s
+              - initial_velocity: 450 ftfr/s
+              - initial_velocity: 472 ftfr/s
+              - initial_velocity: 493 ftfr/s
+          -
+            charge: 3 lbfr 10.5 ozfr
+            data:
+              - initial_velocity: 458 ftfr/s
+              - initial_velocity: 482 ftfr/s
+              - initial_velocity: 506 ftfr/s
+              - initial_velocity: 528 ftfr/s
+      -
+        diameter: 8 infr
+        mass: 44 lbfr
+        data:
+          -
+            charge: 5 ozfr
+            data:
+              - initial_velocity: 171 ftfr/s
+              - initial_velocity: 180 ftfr/s
+              - initial_velocity: 189 ftfr/s
+              - initial_velocity: 198 ftfr/s
+          -
+            charge: 10 ozfr
+            data:
+              - initial_velocity: 276 ftfr/s
+              - initial_velocity: 291 ftfr/s
+              - initial_velocity: 305 ftfr/s
+              - initial_velocity: 319 ftfr/s
+          -
+            charge: 15 ozfr
+            data:
+              - initial_velocity: 353 ftfr/s
+              - initial_velocity: 373 ftfr/s
+              - initial_velocity: 391 ftfr/s
+              - initial_velocity: 408 ftfr/s
+          -
+            charge: 20 ozfr
+            data:
+              - initial_velocity: 375 ftfr/s
+              - initial_velocity: 395 ftfr/s
+              - initial_velocity: 414 ftfr/s
+              - initial_velocity: 433 ftfr/s

@@ -81,6 +81,8 @@ export default {
         value: 'mean', text: 'Mean Line'
       }, {
         value: 'sd', text: 'Mean & Std.Dev.'
+      }, {
+        value: 'violin', text: 'Violin'
       }]
     }
   },

@@ -1,0 +1,220 @@
+---
+key: modern2019
+ref: "Modern Muzzleloader, 2019"
+cms: "\"Modern Muzzleloader.\" Accessed April 3, 2019. https://www.modernmuzzleloader.com."
+link: https://www.modernmuzzleloader.com
+summary: "Various reports of black powder tests."
+date: "2019"
+data:
+  -
+    date: "2009-04-03"
+    desc: "Swiss vs. Goex Velocity test; https://www.modernmuzzleloader.com/threads/swiss-vs-goex-velocity-test.13251/"
+    angle: 0 deg
+    range: 10 feet
+    charge_note: Charge measured by volume, not weight.
+    diameter: 0.535 in
+    mass: 230 gr
+    data:
+      -
+        charge: 100 gr
+        data:
+          -
+            desc2: "SwissFFF"
+            data:
+              - final_velocity: 1937 ft/s
+              - final_velocity: 1978 ft/s
+          -
+            desc2: "GoexFFF"
+            data:
+              - final_velocity: 1681 ft/s
+              - final_velocity: 1729 ft/s
+      -
+        charge: 90 gr
+        data:
+          -
+            desc2: "SwissFFF"
+            data:
+              - final_velocity: 1858 ft/s
+              - final_velocity: 1894 ft/s
+          -
+            desc2: "GoexFFF"
+            data:
+              - final_velocity: 1571 ft/s
+              - final_velocity: 1636 ft/s
+              - final_velocity: 1666 ft/s
+      -
+        charge: 80 gr
+        data:
+          -
+            desc2: "SwissFFF"
+            data:
+              - final_velocity: 1747 ft/s
+              - final_velocity: 1803 ft/s
+              -
+                desc3: "Barry's"
+                final_velocity: 1720 ft/s
+          -
+            desc2: "GoexFFF"
+            data:
+              - final_velocity: 1490 ft/s
+              - final_velocity: 1531 ft/s
+      -
+        charge: 70 gr
+        data:
+          -
+            desc2: "SwissFFF"
+            data:
+              - final_velocity: 1649 ft/s
+              - final_velocity: 1715 ft/s
+          -
+            desc2: "GoexFFF"
+            data:
+              - final_velocity: 1412 ft/s
+              - final_velocity: 1442 ft/s
+      -
+        charge: 60 gr
+        data:
+          -
+            desc2: "SwissFFF"
+            data:
+              - final_velocity: 1566 ft/s
+              - final_velocity: 1593 ft/s
+          -
+            desc2: "GoexFFF"
+            data:
+              - final_velocity: 1270 ft/s
+              - final_velocity: 1361 ft/s
+      -
+        charge: 50 gr
+        data:
+          -
+            desc2: "SwissFFF"
+            data:
+              - final_velocity: 1385 ft/s
+              - final_velocity: 1443 ft/s
+      -
+        charge: 40 gr
+        data:
+          -
+            desc2: "SwissFFF"
+            data:
+              - final_velocity: 1272 ft/s
+              - final_velocity: 1306 ft/s
+  -
+    date: "1997-01"
+    desc: "Goex Velocity; https://www.modernmuzzleloader.com/threads/swiss-2f-vs-swiss-3f-velocity.13262/"
+    angle: 0 deg
+    diameter: 0.535 in
+    mass: 230 gr
+    technique: "chronograph"
+    data:
+      -
+        charge: 100 gr
+        data:
+          -
+            desc2: "Goex 2F"
+            initial_velocity: 1560 ft/s
+          -
+            desc2: "Goex 3F"
+            initial_velocity: 1752 ft/s
+      -
+        charge: 90 gr
+        desc2: "Goex 3F"
+        data:
+          - initial_velocity: 1682 ft/s
+          - initial_velocity: 1671 ft/s
+      -
+        charge: 65 gr
+        data:
+          -
+            desc2: "Goex 2F"
+            initial_velocity: 1292 ft/s
+          -
+            desc2: "Goex 3F"
+            data:
+              - initial_velocity: 1430 ft/s
+              - initial_velocity: 1425 ft/s
+  -
+    date: "2005-09-13"
+    desc: "Round Balls; https://www.modernmuzzleloader.com/threads/i-just-cast-9-s-of-round-balls.1248"
+    angle: 0 deg
+    diameter: 0.715 in
+    mass: 545 gr
+    material: lead
+    technique: "chronograph"
+    desc2: "Goex 3F"
+    data:
+      -
+        charge: 100 gr
+        initial_velocity: 1200 ft/s
+      -
+        charge: 125 gr
+        initial_velocity: 1320 ft/s
+      -
+        charge: 150 gr
+        initial_velocity: 1410 ft/s
+  -
+    date: "2009-04-02"
+    desc: "Goex Express; https://www.modernmuzzleloader.com/threads/so-what-is-goex-express.12593"
+    angle: 0 deg
+    diameter: 0.530 in
+    material: lead
+    technique: "chronograph"
+    data:
+      -
+        charge: 85 gr
+        data:
+          -
+            desc2: "Swiss ffg"
+            initial_velocity: 1676 ft/s
+          -
+            desc2: "Wano ffg"
+            initial_velocity: 1375 ft/s
+          -
+            desc2: "Goex Express"
+            initial_velocity: 1438 ft/s
+      -
+        charge: 105 gr
+        data:
+          -
+            desc2: "Wano ffg"
+            initial_velocity: 1472 ft/s
+          -
+            desc2: "Goex Express"
+            initial_velocity: 1610 ft/s
+      -
+        charge: 85 gr
+        data:
+          -
+            desc2: "Swiss ffg"
+            initial_velocity: 1764 ft/s
+          -
+            desc2: "Goex fffg"
+            initial_velocity: 1529 ft/s
+          -
+            desc2: "Wano ffg"
+            initial_velocity: 1481 ft/s
+  -
+    date: "2009-02-15"
+    desc: "Different Powder and Roundball Velocities; https://www.modernmuzzleloader.com/threads/different-powders-and-roundball-velocities.12014"
+    angle: 0 deg
+    diameter: 0.490 in
+    material: lead
+    technique: "chronograph"
+    charge: 85 gr
+    data:
+      -
+        desc2: "Shockey's Gold ffg"
+        initial_velocity: 1206 ft/s
+      -
+        desc2: "Goex Pinnacle fffg"
+        initial_velocity: 1299 ft/s
+      -
+        desc2: "Wano fffg"
+        initial_velocity: 1629 ft/s
+      -
+        desc2: "Goex fffg"
+        initial_velocity: 1681 ft/s
+      -
+        desc2: "Swiss fffg"
+        initial_velocity: 1931 ft/s
