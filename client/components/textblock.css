@@ -46,4 +46,8 @@ figure img {
   max-width: 400px;
   max-height: 360px;
 }
+figure .generic {
+  width: 400px;
+  height: 360px;
+}
 

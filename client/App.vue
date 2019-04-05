@@ -25,7 +25,7 @@
         <li><router-link :to="{path: 'references'}">References</router-link></li>
       </ul>
     </div>
-    <router-view class="view" :plotdata="plotdata" :references="references" :parameters="parameters"></router-view>
+    <router-view class="view" :plotdata="plotdata" :references="references" :parameters="parameters" :trajectories="trajectories"></router-view>
   </div>
 </template>
 
@@ -130,6 +130,7 @@ export default {
     return {
       isLoading: false,
       plotdata: [],
+      trajectories: {},
       references: {},
       parameters: utils.Parameters,
       plots: [{
@@ -168,12 +169,13 @@ export default {
   },
   methods: {
     fetchData() {
-      this.isLoading += 2;
       let worker = new Worker();
       worker.onmessage = (evt) => {
         if (evt.data.pointkeys) {
           Object.assign(utils.PointKeys, evt.data.pointkeys);
           this.plotdata = evt.data.plotdata;
+          this.isLoading += 1;
+          worker.postMessage({action: 'gettrajectories'});
         } else {
           this.trajectories = evt.data.trajectories;
         }
@@ -182,7 +184,8 @@ export default {
       worker.onerror = (evt) => {
         console.log('worker onerror', evt);
       };
-      worker.postMessage({action: 'getdata'});
+      this.isLoading += 1;
+      worker.postMessage({action: 'getplotdata'});
     },
     fetchReferences() {
       this.isLoading += 1;

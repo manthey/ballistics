@@ -48,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-04-04v64'
-PROGRAM_SIGNATURE = 'd83315a5a579fe700c5983932f51e84a'
+__version__ = '2019-04-05v65'
+PROGRAM_SIGNATURE = '5fea9ae9f3d85034771919fc5548a13d'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -971,7 +971,7 @@ def find_unknown_process(initial_state, unknown, unknown_scan=None):  # noqa - m
                           x1 * y0*y2 / (y1-y0) / (y1-y2) +
                           x2 * y1*y0 / (y2-y1) / (y2-y0))
                 # if it isn't between the last two points we should have picked
-                # the otehr root.  Rather, just use the mid point.
+                # the other root.  Rather, just use the mid point.
                 if ((minval > maxval and (
                         intval > minval or intval < maxval)) or (
                         minval < maxval and (
@@ -2132,10 +2132,12 @@ def viscosity_water_vapor(T, density):
            [0.145831, 0.263129, 0.347247, 0.213486, 0.100754, -0.032932],
            [-0.0270448, -0.0253093, -0.0267758, -0.0822904, 0.0602253,
             -0.0202595]]
+    invScaledT_1 = 1 / scaledT - 1
+    scaledRho_1 = scaledRho - 1
     factor = 0
     for j in range(len(bij)):
         for i in range(len(bij[0])):
-            factor += bij[j][i]*(1/scaledT-1)**i*(scaledRho-1)**j
+            factor += bij[j][i] * invScaledT_1**i * scaledRho_1**j
     mu = mu0*math.exp(scaledRho*factor)
     return mu
 

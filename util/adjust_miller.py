@@ -105,7 +105,7 @@ def main(opts):  # noqa
     print(len(groups), sum(len(entry['cases']) for entry in groups.values()))
     bestTable = cod_miller.table_as_array()
     # extend table to 1e9
-    for mn, entries, crit in bestTable:
+    for _mn, entries, _crit in bestTable:
         if entries[-1][0] == 1e7:
             entries.extend([[1e8, entries[-1][1]], [1e9, entries[-1][1]]])
     bestError = calc_error(groups)
