@@ -780,12 +780,12 @@
  },
  {
   "conditions": {
-   "charge": "6.25 lb",
-   "diameter": "4.3 in",
-   "initial_velocity": "1140 ft/s",
-   "mass": "9 lb"
+   "charge": "30 gr",
+   "diameter": "0.36 in",
+   "initial_velocity": "1460 ft/s",
+   "mass": "70 gr"
   },
-  "power_factor": 86930.48936448003,
+  "power_factor": 231037.47340800002,
   "time": null
  },
  {

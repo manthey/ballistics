@@ -1,0 +1,233 @@
+---
+key: goex2019
+ref: "Goex, 2019"
+cms: "\"Load Charts.\" Load Charts dated 2018-06. Accessed April 04, 2019. https://goexpowder.com/resources/load-charts/."
+link: https://goexpowder.com/resources/load-charts/
+summary: "Expected loads from Goex."
+date: "2019"
+data:
+  -
+    desc: "Round Ball, Rifle - Musket"
+    ref2: "rb-rifle-musket.pdf"
+    date: "2018-06"
+    data:
+      -
+        diameter: 0.36 in
+        mass: 70 gr
+        data:
+          -
+            charge: 30 gr
+            initial_velocity: 1460 ft/s
+          -
+            charge: 40 gr
+            initial_velocity: 1770 ft/s
+          -
+            charge: 45 gr
+            initial_velocity: 1870 ft/s
+          -
+            charge: 50 gr
+            initial_velocity: 1970 ft/s
+      -
+        diameter: 0.40 in
+        mass: 96 gr
+        data:
+          -
+            charge: 35 gr
+            initial_velocity: 1320 ft/s
+          -
+            charge: 40 gr
+            initial_velocity: 1490 ft/s
+          -
+            charge: 45 gr
+            initial_velocity: 1650 ft/s
+          -
+            charge: 50 gr
+            initial_velocity: 1800 ft/s
+          -
+            charge: 60 gr
+            initial_velocity: 1920 ft/s
+          -
+            charge: 65 gr
+            initial_velocity: 1960 ft/s
+      -
+        diameter: 0.44 in
+        mass: 128 gr
+        data:
+          -
+            charge: 58 gr
+            initial_velocity: 1660 ft/s
+      -
+        diameter: 0.45 in
+        mass: 137 gr
+        data:
+          -
+            charge: 60 gr
+            initial_velocity: 1690 ft/s
+          -
+            charge: 70 gr
+            initial_velocity: 1760 ft/s
+          -
+            charge: 80 gr
+            initial_velocity: 1860 ft/s
+          -
+            charge: 90 gr
+            initial_velocity: 1940 ft/s
+      -
+        diameter: 0.50 in
+        mass: 188 gr
+        data:
+          -
+            charge: 50 gr
+            initial_velocity: 1140 ft/s
+          -
+            charge: 60 gr
+            initial_velocity: 1390 ft/s
+          -
+            charge: 70 gr
+            initial_velocity: 1550 ft/s
+          -
+            charge: 80 gr
+            initial_velocity: 1730 ft/s
+          -
+            charge: 90 gr
+            initial_velocity: 1870 ft/s
+          -
+            charge: 100 gr
+            initial_velocity: 1990 ft/s
+      -
+        diameter: 0.52 in
+        mass: 211 gr
+        data:
+          -
+            charge: 60 gr
+            initial_velocity: 1220 ft/s
+      -
+        diameter: 0.54 in
+        mass: 236gr
+        data:
+          -
+            charge: 55 gr
+            initial_velocity: 1180 ft/s
+          -
+            charge: 60 gr
+            initial_velocity: 1200 ft/s
+          -
+            charge: 70 gr
+            initial_velocity: 1400 ft/s
+          -
+            charge: 80 gr
+            initial_velocity: 1570 ft/s
+          -
+            charge: 90 gr
+            initial_velocity: 1670 ft/s
+          -
+            charge: 100 gr
+            initial_velocity: 1800 ft/s
+          -
+            charge: 110 gr
+            initial_velocity: 1850 ft/s
+          -
+            charge: 120 gr
+            initial_velocity: 1910 ft/s
+      -
+        diameter: 0.58 in
+        mass: 293 gr
+        data:
+          -
+            charge: 50 gr
+            initial_velocity: 880 ft/s
+          -
+            charge: 60 gr
+            initial_velocity: 970 ft/s
+          -
+            charge: 70 gr
+            initial_velocity: 1050 ft/s
+      -
+        diameter: 0.69 in
+        mass: 493 gr
+        data:
+          -
+            charge: 70 gr
+            initial_velocity: 1050 ft/s
+          -
+            charge: 75 gr
+            initial_velocity: 1220 ft/s
+          -
+            charge: 80 gr
+            initial_velocity: 1240 ft/s
+      -
+        diameter: 0.70 in
+        mass: 514 gr
+        data:
+          -
+            charge: 70 gr
+            initial_velocity: 1210 ft/s
+  -
+    desc: "Round Ball, Pistol - Revolvers"
+    ref2: "rb-pistol-revolvers.pdf"
+    date: "2018-06"
+    data:
+      -
+        diameter: 0.31 in
+        mass: 45 gr
+        data:
+          -
+            charge: 8 gr
+            initial_velocity: 500 ft/s
+          -
+            charge: 15 gr
+            initial_velocity: 590 ft/s
+      -
+        diameter: 0.36 in
+        mass: 70 gr
+        data:
+          -
+            charge: 15 gr
+            initial_velocity: 640 ft/s
+          -
+            charge: 20 gr
+            initial_velocity: 685 ft/s
+          -
+            charge: 22 gr
+            initial_velocity: 710 ft/s
+      -
+        diameter: 0.40 in
+        mass: 96 gr
+        data:
+          -
+            charge: 25 gr
+            initial_velocity: 850 ft/s
+      -
+        diameter: 0.41 in
+        mass: 103 gr
+        data:
+          -
+            charge: 10 gr
+            initial_velocity: 520 ft/s
+      -
+        diameter: 0.44 in
+        mass: 128 gr
+        data:
+          -
+            charge: 25 gr
+            initial_velocity: 730 ft/s
+          -
+            charge: 30 gr
+            initial_velocity: 760 ft/s
+          -
+            charge: 40 gr
+            initial_velocity: 840 ft/s
+      -
+        diameter: 0.54 in
+        mass: 236 gr
+        data:
+          -
+            charge: 35 gr
+            initial_velocity: 640 ft/s
+      -
+        diameter: 0.58 in
+        mass: 293 gr
+        data:
+          -
+            charge: 40 gr
+            initial_velocity: 680 ft/s

@@ -1,0 +1,789 @@
+---
+key: namlhunt2019
+ref: "NAML, 2019"
+cms: "\"North America's No. 1 Muzzleloading Website.\"  Accessed April 04, 2019. http://www.namlhunt.com/."
+link: http://www.namlhunt.com/
+summary: "Various reported loads."
+date: "2019"
+data:
+  -
+    desc: "Round Ball Rifle Loads - .50 Caliber"
+    ref2: "http://www.namlhunt.com/traditionalmldata1.html"
+    angle: 0 deg
+    technique: chronograph
+    data:
+      -
+        diameter: 0.495 in
+        mass: 182 gr
+        data:
+          -
+            desc2: "Thompson/Center Arms \"Renegade\", Goex FFg"
+            data:
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1644 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1226 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 986 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1749 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1330 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1034 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 1859 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1399 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1061 ft/s
+              -
+                charge: 110 gr
+                data:
+                  - initial_velocity: 1917 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1435 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1081 ft/s
+              -
+                charge: 120 gr
+                data:
+                  - initial_velocity: 1951 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1477 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1110 ft/s
+          -
+            desc2: "Thompson/Center Arms \"Renegade\", Goex FFFg"
+            data:
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1689 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1269 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 999 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1809 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1351 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1048 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 1877 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1416 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1078 ft/s
+              -
+                charge: 110 gr
+                data:
+                  - initial_velocity: 1955 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1471 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1117 ft/s
+              -
+                charge: 120 gr
+                data:
+                  - initial_velocity: 2043 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1534 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1146 ft/s
+          -
+            desc2: "Thompson/Center Arms \"Hawken\", Goex FFg"
+            data:
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1659 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1249 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 991 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1777 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1342 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1046 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 1871 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1411 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1061 ft/s
+              -
+                charge: 110 gr
+                data:
+                  - initial_velocity: 1933 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1442 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1088 ft/s
+              -
+                charge: 120 gr
+                data:
+                  - initial_velocity: 1986 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1505 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1116 ft/s
+          -
+            desc2: "Thompson/Center Arms \"Hawken\", Goex FFFg"
+            data:
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1726 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1284 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1021 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1862 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1366 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1064 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 1928 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1433 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1095 ft/s
+              -
+                charge: 110 gr
+                data:
+                  - initial_velocity: 2008 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1489 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1136 ft/s
+              -
+                charge: 120 gr
+                data:
+                  - initial_velocity: 2066 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1537 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1162 ft/s
+          -
+            desc2: "Green Mountain Barrel, Goex FFg"
+            data:
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1933 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1436 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1097 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 2018 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1497 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1141 ft/s
+              -
+                charge: 110 gr
+                data:
+                  - initial_velocity: 2078 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1549 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1169 ft/s
+              -
+                charge: 120 gr
+                data:
+                  - initial_velocity: 2107 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1572 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1186 ft/s
+          -
+            desc2: "Green Mountain Barrel, Goex FFFg"
+            data:
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 2011 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1493 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1139 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 2092 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1552 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1171 ft/s
+              -
+                charge: 110 gr
+                data:
+                  - initial_velocity: 2122 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1586 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1197 ft/s
+              -
+                charge: 120 gr
+                data:
+                  - initial_velocity: 2147 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1607 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1205 ft/s
+      -
+        diameter: 0.490 in
+        mass: 177 gr
+        data:
+          -
+            desc2: "Tennessee Mountain Barrel, Goex FFg"
+            data:
+              -
+                charge: 70 gr
+                data:
+                  - initial_velocity: 1696 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1272 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1001 ft/s
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1765 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1322 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1030 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1861 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1359 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1044 ft/s
+          -
+            desc2: "Tennessee Mountain Barrel, Goex FFFg"
+            data:
+              -
+                charge: 70 gr
+                data:
+                  - initial_velocity: 1772 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1327 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1034 ft/s
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1884 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1405 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1056 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1979 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1466 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1092 ft/s
+  -
+    desc: "Round Ball Rifle Loads - .54 Caliber"
+    ref2: "http://www.namlhunt.com/traditionalmldata2.html"
+    angle: 0 deg
+    technique: chronograph
+    data:
+      -
+        diameter: 0.535 in
+        mass: 230 gr
+        data:
+          -
+            desc2: "Lyman \"Deerstalker\", Goex FFg"
+            data:
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1328 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1039 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 876 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1386 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1069 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 892 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 1468 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1134 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 969 ft/s
+          -
+            desc2: "Lyman \"Deerstalker\", Goex FFFg"
+            data:
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1438 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1113 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 892 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1515 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1144 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 982 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 1588 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1201 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1007 ft/s
+          -
+            desc2: "Thompson/Center Arms \"Hawken\", Goex FFg"
+            data:
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1471 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1116 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 924 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1539 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1171 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 961 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 1626 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1233 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 990 ft/s
+              -
+                charge: 110 gr
+                data:
+                  - initial_velocity: 1702 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1288 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1021 ft/s
+              -
+                charge: 120 gr
+                data:
+                  - initial_velocity: 1759 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1326 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1052 ft/s
+          -
+            desc2: "Thompson/Center Arms \"Hawken\", Goex FFFg"
+            data:
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1581 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1203 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 966 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1612 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1228 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 988 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 1698 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1297 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1018 ft/s
+              -
+                charge: 110 gr
+                data:
+                  - initial_velocity: 1768 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1365 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1063 ft/s
+              -
+                charge: 120 gr
+                data:
+                  - initial_velocity: 1796 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1383 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1079 ft/s
+      -
+        diameter: 0.530 in
+        mass: 224 gr
+        data:
+          -
+            desc2: "\"Harper's Ferry\", Goex FFg"
+            data:
+              -
+                charge: 60 gr
+                data:
+                  - initial_velocity: 1314 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1017 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 838 ft/s
+              -
+                charge: 70 gr
+                data:
+                  - initial_velocity: 1421 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1109 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 943 ft/s
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1519 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1143 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 977 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1586 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1188 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 984 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 1648 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1239 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 997 ft/s
+      -
+        diameter: 0.535 in
+        mass: 230 gr
+        data:
+          -
+            desc2: "Green Mountain Barrel, Goex FFFg"
+            data:
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1754 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1369 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1066 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 1837 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1411 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1101 ft/s
+              -
+                charge: 110 gr
+                data:
+                  - initial_velocity: 1892 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1440 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1134 ft/s
+              -
+                charge: 120 gr
+                data:
+                  - initial_velocity: 1936 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1477 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1149 ft/s
+  -
+    desc: "Round Ball Rifle Loads - Larger sizes"
+    ref2: "http://www.namlhunt.com/traditionalmldata2.html"
+    angle: 0 deg
+    technique: chronograph
+    data:
+      -
+        diameter: 0.570 in
+        mass: 278 gr
+        data:
+          -
+            desc2: "\"American Jaeger\", Goex FFg"
+            data:
+              -
+                charge: 80 gr
+                data:
+                  - initial_velocity: 1186 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 937 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 826 ft/s
+              -
+                charge: 90 gr
+                data:
+                  - initial_velocity: 1246 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 981 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 847 ft/s
+              -
+                charge: 100 gr
+                data:
+                  - initial_velocity: 1302 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1014 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 869 ft/s
+              -
+                charge: 110 gr
+                data:
+                  - initial_velocity: 1354 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1033 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 879 ft/s
+              -
+                charge: 120 gr
+                data:
+                  - initial_velocity: 1411 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1079 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 910 ft/s
+              -
+                charge: 130 gr
+                data:
+                  - initial_velocity: 1464 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1102 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 928 ft/s
+              -
+                charge: 140 gr
+                data:
+                  - initial_velocity: 1515 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1149 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 947 ft/s
+      -
+        diameter: 0.610 in
+        mass: 344 gr
+        data:
+          -
+            desc2: "Zephyr, Goex FFg"
+            data:
+              -
+                charge: 175 gr
+                data:
+                  - initial_velocity: 1700 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1345 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1101 ft/s
+      -
+        diameter: 0.705 in
+        mass: 525 gr
+        data:
+          -
+            desc2: "Zephyr, Goex FFg"
+            data:
+              -
+                charge: 250 gr
+                data:
+                  - initial_velocity: 1900 ft/s
+                  -
+                    range: 50 yards
+                    final_velocity: 1505 ft/s
+                  -
+                    range: 100 yards
+                    final_velocity: 1202 ft/s
