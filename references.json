@@ -161,6 +161,13 @@
   "ref": "Gentleman's Magazine, 1740",
   "summary": "Some captured Spanish gunpowder is compared to some English gunpowder that was reputed to be worse."
  },
+ "goex2019": {
+  "cms": "\"Load Charts.\" Load Charts dated 2018-06. Accessed April 04, 2019. https://goexpowder.com/resources/load-charts/.",
+  "key": "goex2019",
+  "link": "https://goexpowder.com/resources/load-charts/",
+  "ref": "Goex, 2019",
+  "summary": "Expected loads from Goex."
+ },
  "hall1997": {
   "cms": "Hall, Bert S.  <i>Weapons and Warfare in Renaissance Europe.</i>  Baltimore: The John Hopkins Press, 1997",
   "key": "hall1997",
@@ -346,6 +353,13 @@
   "key": "munson1998",
   "ref": "Munson, 1998",
   "summary": "A general text book."
+ },
+ "namlhunt2019": {
+  "cms": "\"North America's No. 1 Muzzleloading Website.\"  Accessed April 04, 2019. http://www.namlhunt.com/.",
+  "key": "namlhunt2019",
+  "link": "http://www.namlhunt.com/",
+  "ref": "NAML, 2019",
+  "summary": "Various reported loads."
  },
  "noble1875": {
   "cms": "Noble, Captain, and F. A. Abel,  \"Researches on Explosives.  Fired Gunpowder.\" <i>Philosophical Transactions of the Royal Society of London</i>, Vol. 165 (1875): 49-155.",
