@@ -1,0 +1,185 @@
+---
+key: darcy1766
+ref: "d'Arcy, 1766"
+cms: "d'Arcy, M. le Chevalier.  <i>Essai d'Une Th\u00e9orie d'Artillerie</i>  Dresde: George Conrad Walther: 1766."
+summary: "A treatise on gunpowder and artillery."
+date: "1766"
+data:
+  -
+    charge: 108 gr
+    mass: 770 gr
+    material: lead
+    technique: pendulum
+    data:
+      -
+        ref2: p. 96
+        data:
+          -
+            date: "1752-08-04"
+            initial_velocity: 938 ftfr/s
+          -
+            date: "1752-08-07"
+            initial_velocity: 908 ftfr/s
+          -
+            date: "1752-08-07"
+            initial_velocity: 890 ftfr/s
+      -
+        ref2: p. 97
+        data:
+          -
+            date: "1752-08-07"
+            initial_velocity: 888 ftfr/s
+          -
+            date: "1752-08-14"
+            initial_velocity: 872 ftfr/s
+          -
+            date: "1752-08-18"
+            initial_velocity: 833 ftfr/s
+      -
+        ref2: p. 98
+        data:
+          -
+            date: "1752-08-18"
+            initial_velocity: 796 ftfr/s
+          -
+            date: "1752-08-18"
+            initial_velocity: 746 ftfr/s
+          -
+            date: "1752-08-22"
+            initial_velocity: 653 ftfr/s
+      -
+        ref2: p. 99
+        data:
+          -
+            date: "1752-08-22"
+            initial_velocity: 559 ftfr/s
+          -
+            date: "1752-08-22"
+            initial_velocity: 359 ftfr/s
+          -
+            date: "1752-08-26"
+            initial_velocity: 1083 ftfr/s
+      -
+        ref2: p. 100
+        data:
+          -
+            date: "1752-08-26"
+            initial_velocity: 1058 ftfr/s
+          -
+            date: "1752-08-26"
+            initial_velocity: 1042 ftfr/s
+          -
+            date: "1752-08-30"
+            initial_velocity: 1023 ftfr/s
+      -
+        ref2: p. 101
+        data:
+          -
+            date: "1752-08-30"
+            initial_velocity: 991 ftfr/s
+          -
+            date: "1752-09-04"
+            initial_velocity: 931 ftfr/s
+          -
+            date: "1752-09-04"
+            initial_velocity: 884 ftfr/s
+      -
+        ref2: p. 102
+        data:
+          -
+            date: "1752-09-15"
+            initial_velocity: 794 ftfr/s
+          -
+            date: "1752-09-15"
+            initial_velocity: 602 ftfr/s
+  -
+    ref2: p. 122
+    angle: 45 deg
+    mass: 24 lbfr
+    material: iron
+    data:
+      -
+        date: "1740-08-31"
+        data:
+          -
+            charge: 8 lbfr
+            range: 2328 toise
+          -
+            charge: 9 lbfr
+            range: 2350 toise
+          -
+            charge: 10 lbfr
+            range: 2350 toise
+          -
+            charge: 11 lbfr
+            range: 2077 toise
+          -
+            charge: 12 lbfr
+            range: 2266 toise
+          -
+            charge: 13 lbfr
+            range: 2435 toise
+      -
+        date: "1740-09-01"
+        data:
+          -
+            charge: 24 lbfr
+            range: 2500 toise
+          -
+            charge: 18 lbfr
+            range: 2480 toise
+          -
+            charge: 16 lbfr
+            range: 2300 toise
+          -
+            charge: 15 lbfr
+            range: 2138 toise
+          -
+            charge: 14 lbfr
+            range: 2280 toise
+          -
+            charge: 13 lbfr
+            range: 2500 toise
+  -
+    ref2: p. 122
+    angle: 45 deg
+    mass: 24 lbfr
+    material: iron
+    data:
+      -
+        ref2: p. 123
+        date: "1740-08-31"
+        data:
+          -
+            charge: 14 lbfr
+            range: 2300 toise
+          -
+            charge: 15 lbfr
+            range: 2420 toise
+          -
+            charge: 16 lbfr
+            range: 2450 toise
+          -
+            charge: 18 lbfr
+            range: 2230 toise
+          -
+            charge: 24 lbfr
+            range: 2200 toise
+      -
+        date: "1740-09-01"
+        data:
+          -
+            charge: 12 lbfr
+            range: 2240 toise
+          -
+            charge: 11 lbfr
+            range: 2060 toise
+          -
+            charge: 10 lbfr
+            range: 2450 toise
+          -
+            charge: 9 lbfr
+            range: 2500 toise
+          -
+            charge: 8 lbfr
+            range: 2050 toise

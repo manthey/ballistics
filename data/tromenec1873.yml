@@ -1,0 +1,21 @@
+---
+key: tromenec1873
+ref: "Tromenec, 1873"
+cms: "Tromenec, M. de. \"Sur un moyen de comparer poudres entre elles,\" <i>Comptes Rendus Hebdomadaires des S\u00e9ances de l'Acad\u00e9mie des Sciences,</i> LXXVII (1873): 126-128."
+summary: "Force of power measured via calorimeter."
+date: "1873"
+data:
+  -
+    ref2: "p. 128"
+    technique: "calorimeter"
+    data:
+      -
+        desc: "Poudre \u00e0 canon du Bouchet"
+        date: 1861
+        power_factor: "840 Cal/kg"
+      -
+        desc: "Poudre de mine"
+        power_factor: "729 Cal/kg"
+      -
+        desc: "Poudre de contrebande, d'origine anglaise"
+        power_factor: "891 Cal/kg"

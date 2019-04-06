@@ -1,0 +1,36 @@
+---
+key: roux1873
+ref: "Roux, 1873"
+cms: "Roux and Sarrau. \"Recherches exp\u00e9rimentals sue les mati\u00e8res explosives,\" <i>Comptes Rendus Hebdomadaires des S\u00e9ances de l'Acad\u00e9mie des Sciences,</i> LXXVII (1873): 478-481."
+summary: "Force of power measured via calorimeter."
+date: "1873"
+data:
+  -
+    ref2: "p. 479"
+    technique: "calorimeter"
+    data:
+      -
+        desc: "Poudre de chasse fine"
+        data:
+          - power_factor: "807.3 Cal/kg"
+          - power_factor: "373 tonneforce*meter"
+      -
+        desc: "Poudre \u00e0 canon"
+        data:
+          - power_factor: "752.9 Cal/kg"
+          - power_factor: "349 tonneforce*meter"
+      -
+        desc: "Poudre \u00e0 fusil, dite B"
+        data:
+          - power_factor: "730.8 Cal/kg"
+          - power_factor: "339 tonneforce*meter"
+      -
+        desc: "Poudre de commerce ext\u00e9rieur"
+        data:
+          - power_factor: "694.2 Cal/kg"
+          - power_factor: "324 tonneforce*meter"
+      -
+        desc: "Poudre de mine ordinaire"
+        data:
+          - power_factor: "570.2 Cal/kg"
+          - power_factor: "270 tonneforce*meter"
