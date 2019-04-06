@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@statnett/vue-plotly": "git://github.com/Mynamewasused/vue-plotly.git",
+    "axios": "^0.18.0",
     "html-escaper": "^1.0.1",
     "mathjs": "^5.4.2",
     "regression": "^2.0.1",

@@ -53,6 +53,8 @@ import 'vue-loading-overlay/dist/vue-loading.css';
 import VueMarkdown from 'vue-markdown';
 import VueRouter from 'vue-router';
 
+import axios from 'axios';
+
 import * as utils from './utils.js';
 import Analysis from './components/Analysis.vue';
 import BoxPlotWithControls from './components/BoxPlotWithControls.vue';
@@ -189,16 +191,16 @@ export default {
     },
     fetchReferences() {
       this.isLoading += 1;
-      fetch('references.json').then(resp => resp.json()).then(data => {
+      axios.get('references.json').then(resp => {
         this.isLoading -= 1;
-        this.references = data;
+        this.references = resp.data;
       }).catch(err => { console.log(err); throw err; });
     },
     fetchParameters() {
       this.isLoading += 1;
-      fetch('parameters.json').then(resp => resp.json()).then(data => {
+      axios.get('parameters.json').then(resp => {
         this.isLoading -= 1;
-        this.parameters = Object.assign({}, utils.updateParameters(data));
+        this.parameters = Object.assign({}, utils.updateParameters(resp.data));
       }).catch(err => { console.log(err); throw err; });
     },
     updateMenu(to) {

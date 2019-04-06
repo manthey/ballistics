@@ -1,12 +1,13 @@
 import * as utils from './utils.js';
+import axios from 'axios';
 
 onmessage = function (evt) {  /* This could take an event */
   switch (evt.data.action) {
     case 'getplotdata':
-      fetch('totallist.json').then(resp => resp.json()).then(data => {
+      axios.get('totallist.json').then(resp => {
         try {
-          let pointkeys = utils.updatePointKeys(data);
-          let result = {plotdata: data, pointkeys: pointkeys};
+          let pointkeys = utils.updatePointKeys(resp.data);
+          let result = {plotdata: resp.data, pointkeys: pointkeys};
           postMessage(result);
         } catch (err) {
           console.error('Worker error', err);
@@ -18,14 +19,11 @@ onmessage = function (evt) {  /* This could take an event */
       });
       break;
     case 'gettrajectories':
-      fetch('trajectories.json').then(resp => resp.json()).catch(err => {
-        console.log(err);
-        throw err;
-      }).then(data => {
+      axios.get('trajectories.json').then(resp => {
         try {
           let keys = ['Re', 'Mn', 'time'];
           let trajectories = {};
-          data.forEach(entry => {
+          resp.data.forEach(entry => {
             let pointkey = entry.key + '-' + entry.idx, traj = {}, skip = false;
             keys.forEach(key => {
               if (entry['trajectory_' + key] === undefined) {
