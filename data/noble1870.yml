@@ -1,0 +1,40 @@
+---
+key: noble1870
+ref: "Noble, 1870"
+cms: "Noble, W. H., \"Extracts from Report on Ballistic Experiments Carried on During the Years 1861-2, Under the Direction of the O.S. Committee,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, VI (1870), Woolwich: Royal Artillery Institution, 1870: 9-18"
+summary: "This has a nice historic overview of measuring projectile velocities."
+date: "1870"
+data:
+  -
+    skip: True
+    skip_note: Some data from d'Antoni, Robins, and Hutton are repeated.
+  -
+    desc: "Comparison of 3 gun designs"
+    technique: pendulum
+    material: iron
+    angle: 0 deg
+    date: 1814
+    data:
+      -
+        range: 30 ft
+        mass: 6.109 lbs
+        data:
+          -
+            charge: 1.5 lb
+            data:
+              - final_velocity: 1451.7 ft/s
+              - final_velocity: 1439.8 ft/s
+              - final_velocity: 1497.3 ft/s
+          -
+            charge: 2.0 lb
+            data:
+              - final_velocity: 1676 ft/s
+              - final_velocity: 1616 ft/s
+              - final_velocity: 1761 ft/s
+      -
+        range: 46 ft
+        mass: 24.875 lbs
+        charge: 4 lb
+        data:
+          - final_velocity: 1242.5 ft/s
+          - final_velocity: 1292.6 ft/s
