@@ -819,6 +819,18 @@
  },
  {
   "conditions": {
+   "charge": "3 lb 5 oz 6 dr",
+   "diameter": "4.545 in",
+   "initial_velocity": "1548 ft/s",
+   "mass": "12 lb 12 oz 0 dr",
+   "pressure": "0.761 mHg",
+   "temperature": "13.3 C"
+  },
+  "power_factor": 425435.8873844369,
+  "time": null
+ },
+ {
+  "conditions": {
    "charge": "30 lb",
    "diameter": "10 in",
    "initial_velocity": "1324 ft/s",

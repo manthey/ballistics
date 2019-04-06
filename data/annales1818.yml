@@ -1,0 +1,55 @@
+---
+key: annales1818
+ref: "Gay-Lussac, 1818"
+cms: "Gay-Lussac and Arago, <i>Annales de Chimie et de Physique, Tome Neuvi\u00e8me</i>, Paris: Crochard, 1818."
+summary: "This contains a small article about on the speed of projectiles measured at Woolwich."
+date: "1818"
+data:
+  -
+    ref2: "p. 289"
+    desc: "Exp\u00e9riences relatives \u00e0 l'influence du vent sur la vitesse des projetiles et la justesse du tir."
+    date: "1818-05-19"
+    pressure: 0.761 mHg
+    temperature: 13.3 C
+    technique: pendulum
+    data:
+      -
+        mass: 12 lb 12 oz 0 dr
+        diameter: 4.545 in
+        charge: 3 lb 5 oz 6 dr
+        initial_velocity: 1548 ft/s
+      -
+        mass: 12 lb 12 oz 7 dr
+        diameter: 4.54 in
+        charge: 3 lb 5 oz 6 dr
+        initial_velocity: 1537 ft/s
+      -
+        mass: 12 lb 11 oz 0 dr
+        diameter: 4.545 in
+        charge: 3 lb 5 oz 6 dr
+        initial_velocity: 1588 ft/s
+      -
+        mass: 12 lb 10 oz 1 dr
+        diameter: 4.54 in
+        charge: 3 lb 5 oz 6 dr
+        initial_velocity: 1507 ft/s
+      -
+        mass: 11 lb 11 oz 8 dr
+        diameter: 4.42 in
+        charge: 4 lb 0 oz 0 dr
+        initial_velocity: 1572 ft/s
+      -
+        mass: 11 lb 10 oz 4 dr
+        diameter: 4.418 in
+        charge: 4 lb 0 oz 0 dr
+        initial_velocity: 1537 ft/s
+      -
+        mass: 11 lb 12 oz 1 dr
+        diameter: 4.418 in
+        charge: 4 lb 0 oz 0 dr
+        initial_velocity: 1563 ft/s
+      -
+        mass: 11 lb 12 oz 1 dr
+        diameter: 4.418 in
+        charge: 4 lb 0 oz 0 dr
+        initial_velocity: 1529 ft/s
