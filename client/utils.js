@@ -49,6 +49,8 @@ let ParameterList = [{
     key: 'given_power_factor',
     primary: true
   }, {
+    key: 'given_power_factor_note',
+  }, {
     key: 'given_charge',
     primary: true
   }, {
@@ -104,6 +106,9 @@ let ParameterList = [{
   }, {
     key: 'given_pendulum_index_length_note',
   }, {
+    key: 'given_pendulum_index_angle',
+    primary: true
+  }, {
     key: 'given_pendulum_mass',
     primary: true
   }, {
@@ -111,6 +116,8 @@ let ParameterList = [{
   }, {
     key: 'given_pendulum_mass_length',
     primary: true
+  }, {
+    key: 'given_pendulum_mass_length_note'
   }, {
     key: 'given_pendulum_period',
     primary: true
@@ -237,6 +244,10 @@ let ParameterList = [{
   }, {
     key: 'pendulum_index_length',
     units: 'm',
+    primary: true
+  }, {
+    key: 'pendulum_index_angle',
+    units: 'deg',
     primary: true
   }, {
     key: 'pendulum_mass',

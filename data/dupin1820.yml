@@ -1,0 +1,57 @@
+---
+key: dupin1820
+ref: "Dupin, 1820"
+cms: "Dupin, Charles, <i>Force Miltaire de la Grande-Bretagne, Tome II</i>, Paris: Bachelier, 1820."
+summary: "This is the second volume of a work that recounts the military establishment in Great Britain."
+date: "1820"
+data:
+  -
+    ref2: "p. 187"
+    desc: "An example of a measurement with a ballistic pendulum"
+    technique: pendulum
+    date: "1815-07-17"
+    angle: 0 deg
+    charge: 2 lb
+    diameter: 3.55 in
+    mass: 6 lb 1 oz 12 dr
+    temperature: 78F
+    pressure: 29.93 inHg
+    pendulum_impact_length: 139.884 in
+    pendulum_index_angle: 4 deg 33 arcmin
+    pendulum_mass: 7478.9 lb -6 lb -1 oz -12 dr
+    pendulum_mass_note: given value included bullet, so subtract the bullet
+    pendulum_mass_length: 10.97337 ft
+    pendulum_mass_length_note: The average for the day
+    pendulum_period: 3.7533 s
+    range: 30 ft
+  -
+    ref2: "p. 194"
+    desc: "Given power factors for different powders"
+    power_factor_note: This numbers make sense if they are ftlb/lb
+    data:
+      -
+        desc2: "d'Antoni, balles \u00e0 mousquet"
+        power_factor: 114828 ftlb/lb
+      -
+        desc2: "Hutton, 1 lb balls"
+        power_factor: 128425 ftlb/lb
+      -
+        desc2: "Hutton, 6 lb balls"
+        power_factor: 133095 ftlb/lb
+      -
+        desc2: "Our experiences, 6 lb balls, 2 lb charge"
+        power_factor: 132535 ftlb/lb
+      -
+        desc2: "Our experiences, 6 lb balls, 1.5 lb charge"
+        power_factor: 134767 ftlb/lb
+      -
+        desc2: "Mean of the last two values"
+        power_factor: 133651 ftlb/lb
+        skip: true
+        skip_note: represented by the previous values
+      -
+        desc2: "Our experiences, 9 lb balls"
+        power_factor: 136844 ftlb/lb
+      -
+        desc2: "Our experiences, 24 lb balls"
+        power_factor: 145725 ftlb/lb

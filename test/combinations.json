@@ -588,6 +588,24 @@
  {
   "conditions": {
    "angle": "0 deg",
+   "charge": "2 lb",
+   "diameter": "3.55 in",
+   "mass": "6 lb 1 oz 12 dr",
+   "pendulum_impact_length": "139.884 in",
+   "pendulum_index_angle": "4 deg 33 arcmin",
+   "pendulum_mass": "7478.9 lb -6 lb -1 oz -12 dr",
+   "pendulum_mass_length": "10.97337 ft",
+   "pendulum_period": "3.7533 s",
+   "pressure": "29.93 inHg",
+   "range": "30 ft",
+   "temperature": "78F"
+  },
+  "power_factor": 449644.90828776895,
+  "time": 0.01695632598285524
+ },
+ {
+  "conditions": {
+   "angle": "0 deg",
    "charge": "12 dwt",
    "diameter": "0.75 in",
    "mass": "0.08333 lb",
@@ -831,9 +849,9 @@
  },
  {
   "conditions": {
-   "power_factor": "142911 lbf/lb"
+   "power_factor": "142911 ftlb/lb"
   },
-  "power_factor": 1401478.1581499998,
+  "power_factor": 427170.5426041199,
   "time": null
  }
 ]

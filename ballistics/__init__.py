@@ -48,8 +48,8 @@ StringIO = None
 # signature is the md5sum hash of the entire source code file excepting the 32
 # characters of the signature string.  The following two lines should not be
 # altered by hand unless you know what you are doing.
-__version__ = '2019-04-05v65'
-PROGRAM_SIGNATURE = '5fea9ae9f3d85034771919fc5548a13d'
+__version__ = '2019-04-06v67'
+PROGRAM_SIGNATURE = '2f1459707df44f97747e5a63f89d7fc7'
 
 # The current state is stored in a dictionary with the following values:
 # These values are specified initially:
@@ -313,7 +313,7 @@ Factors = {
     },
     'pendulum_index_angle': {
         'long': 'pendangle',
-        'units': 'def',
+        'units': 'deg',
         'weak': True,
         'title': 'Pendulum Angle',
         'desc': 'Pendulum angle at maximum swing.',
