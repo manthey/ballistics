@@ -138,6 +138,12 @@
   "ref": "d'Antoni, 1789",
   "summary": "A translation of three earlier works from the Italian."
  },
+ "darcy1766": {
+  "cms": "d'Arcy, M. le Chevalier.  <i>Essai d'Une Th\u00e9orie d'Artillerie</i>  Dresde: George Conrad Walther: 1766.",
+  "key": "darcy1766",
+  "ref": "d'Arcy, 1766",
+  "summary": "A treatise on gunpowder and artillery."
+ },
  "diderot1751": {
   "cms": "Diderot and d'Alembert, ed. <i>Encyclop\u00e9die, ou Dictionanaire Raisonn\u00e9 des Sciences, des Arts et des M\u00e9tiers, par une Soci\u00e9t\u00e9 de Gens de Lettres.</i> Paris: Briasson, David, Le Breton, Durand: 1751",
   "key": "diderot1751",
@@ -187,7 +193,7 @@
   "summary": "A good description of the use of early gunpowder weapons in Europe."
  },
  "haultain1861": {
-  "cms": "Haultain, F. W., \"Remarks on the \"Report of Practice,\" carried on in 1858, in the Plumstead Marshes, with 9-pr. Field Guns, for the purpose of ascertaining the comparative merits of the 2 1/2 lbs., and 3 lbs. charges,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, II (1861), Woolwich: Royal Artillery Institution, 1861: 49-80",
+  "cms": "Haultain, F. W., \"Remarks on the \"Report of Practice,\" carried on in 1858, in the Plumstead Marshes, with 9-pr. Field Guns, for the purpose of ascertaining the comparative merits of the 2 1/2 lbs., and 3 lbs. charges,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, II (1861): 49-80",
   "key": "haultain1861",
   "ref": "Haultain, 1861",
   "summary": "This contains a report of some the ranges of some 800 shots with nine-pounder guns."
@@ -294,13 +300,13 @@
   "summary": "This gives equations for calculating trajectories."
  },
  "maxwell1870": {
-  "cms": "Maxwell, H. H., \"The New Field Artillery of Mattei-Rossi.  Translated from the Italian of \"L'Opinione,\" 23rd-26th October 1868,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, VI (1870), Woolwich: Royal Artillery Institution, 1870: 325-334",
+  "cms": "Maxwell, H. H., \"The New Field Artillery of Mattei-Rossi.  Translated from the Italian of \"L'Opinione,\" 23rd-26th October 1868,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, VI (1870): 325-334",
   "key": "maxwell1870",
   "ref": "Maxwell, 1870",
   "summary": "This contains a brief mention of a gun's initial velocity."
  },
  "meigs1883": {
-  "cms": "Meigs, Lieutenant U.S.N, translated from Sarrau, M. E. <i>Theoretical Researches on the Effects of Gunpowder and Other Explosives</i>  Washington: Government Printing Office, 1882.",
+  "cms": "Meigs, Lieutenant U.S.N, translated from Sarrau, M. E. <i>Theoretical Researches on the Effects of Gunpowder and Other Explosives</i>  Washington: Government Printing Office, 1883.",
   "key": "meigs1883",
   "ref": "Meigs, 1883",
   "summary": "Mostly calculated values with a few results from calorimeters."
@@ -380,7 +386,7 @@
   "summary": "Various reported loads."
  },
  "noble1870": {
-  "cms": "Noble, W. H., \"Extracts from Report on Ballistic Experiments Carried on During the Years 1861-2, Under the Direction of the O.S. Committee,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, VI (1870), Woolwich: Royal Artillery Institution, 1870: 9-18",
+  "cms": "Noble, W. H., \"Extracts from Report on Ballistic Experiments Carried on During the Years 1861-2, Under the Direction of the O.S. Committee,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, VI (1870): 9-18",
   "key": "noble1870",
   "ref": "Noble, 1870",
   "summary": "This has a nice historic overview of measuring projectile velocities."
@@ -480,6 +486,12 @@
   "ref": "Robins, 1805",
   "summary": "A new edition of the book by the inventor of the ballistic pendulum."
  },
+ "roux1873": {
+  "cms": "Roux and Sarrau. \"Recherches exp\u00e9rimentals sue les mati\u00e8res explosives,\" <i>Comptes Rendus Hebdomadaires des S\u00e9ances de l'Acad\u00e9mie des Sciences,</i> LXXVII (1873): 478-481.",
+  "key": "roux1873",
+  "ref": "Roux, 1873",
+  "summary": "Force of power measured via calorimeter."
+ },
  "rumford1797": {
   "cms": "Rumford, Benjamin Count of.  \"Experiments to determine the Force of fired Gunpowder.\" <i>Philosophical Transactions of the Royal Society of London,</i>, 87 (1797): 222-292.",
   "details": "The pressure developed by gunpowder is measured by having a small strong barrel filled with gunpowder and measure the smallest weight that, sitting on top of the vertical barrel, will just barely be moved.  Rumford uses a piece of ordnance for this weight, standing it on its cascabel.\n",
@@ -550,6 +562,12 @@
   "key": "thompson1781",
   "ref": "Thompson, 1781",
   "summary": "Count Rumford uses a ballistic pendulum to determine how the position of the vent effects muzzle velocity."
+ },
+ "tromenec1873": {
+  "cms": "Tromenec, M. de. \"Sur un moyen de comparer poudres entre elles,\" <i>Comptes Rendus Hebdomadaires des S\u00e9ances de l'Acad\u00e9mie des Sciences,</i> LXXVII (1873): 126-128.",
+  "key": "tromenec1873",
+  "ref": "Tromenec, 1873",
+  "summary": "Force of power measured via calorimeter."
  },
  "west1991": {
   "cms": "West, Jenny.  <i>Gunpowder, Government and War in the Mid-Eighteenth Century.</i>  Woodbridge: The Boydell Press, 1991.",
