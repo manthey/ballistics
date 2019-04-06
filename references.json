@@ -19,6 +19,12 @@
   "ref": "Anderson, 1862",
   "summary": "An excellent review of the technology used in India."
  },
+ "annales1818": {
+  "cms": "Gay-Lussac and Arago, <i>Annales de Chimie et de Physique, Tome Neuvi\u00e8me</i>, Paris: Crochard, 1818.",
+  "key": "annales1818",
+  "ref": "Gay-Lussac, 1818",
+  "summary": "This contains a small article about on the speed of projectiles measured at Woolwich."
+ },
  "bashforth1870": {
   "cms": "Bashforth, Francis.  <i>Reports on Experiments Made with the Bashforth Chronograph to determine the Resistance of the Air to the Motion of Projectiles, 1865-1870.</i>  London: W. Clowes and Sons, et al., 1870.",
   "details": "Bashforth's chronograph records time from a half-second pendulum on a moving piece of paper.  A series of frames with hanging wires are set up.  When the projectile passes these wires, a mark is made on the same paper as the time record, allowing for accurate time deltas to be determined.\n\nAlthough many of the experiments are done on ogival shot, many are also done on spherical shot.\n\n",
