@@ -175,7 +175,7 @@
   "summary": "A good description of the use of early gunpowder weapons in Europe."
  },
  "haultain1861": {
-  "cms": "Haultain, F. W., \"Remarks on the \"Report of Practice,\" carried on in 1858, in the Plumstead Marshes, with 9-pr. Field Guns, for the purpose of ascertaining the comparative merits of the 2 1/2 lbs., and 3 lbs. charges,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, II (1861), Woolwich: Royal Artillery Institution, 1861",
+  "cms": "Haultain, F. W., \"Remarks on the \"Report of Practice,\" carried on in 1858, in the Plumstead Marshes, with 9-pr. Field Guns, for the purpose of ascertaining the comparative merits of the 2 1/2 lbs., and 3 lbs. charges,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, II (1861), Woolwich: Royal Artillery Institution, 1861: 49-80",
   "key": "haultain1861",
   "ref": "Haultain, 1861",
   "summary": "This contains a report of some the ranges of some 800 shots with nine-pounder guns."
@@ -281,6 +281,12 @@
   "ref": "Lombard, 1796",
   "summary": "This gives equations for calculating trajectories."
  },
+ "maxwell1870": {
+  "cms": "Maxwell, H. H., \"The New Field Artillery of Mattei-Rossi.  Translated from the Italian of \"L'Opinione,\" 23rd-26th October 1868,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, VI (1870), Woolwich: Royal Artillery Institution, 1870: 325-334",
+  "key": "maxwell1870",
+  "ref": "Maxwell, 1870",
+  "summary": "This contains a brief mention of a gun's initial velocity."
+ },
  "meigs1883": {
   "cms": "Meigs, Lieutenant U.S.N, translated from Sarrau, M. E. <i>Theoretical Researches on the Effects of Gunpowder and Other Explosives</i>  Washington: Government Printing Office, 1882.",
   "key": "meigs1883",
@@ -360,6 +366,12 @@
   "link": "http://www.namlhunt.com/",
   "ref": "NAML, 2019",
   "summary": "Various reported loads."
+ },
+ "noble1870": {
+  "cms": "Noble, W. H., \"Extracts from Report on Ballistic Experiments Carried on During the Years 1861-2, Under the Direction of the O.S. Committee,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, VI (1870), Woolwich: Royal Artillery Institution, 1870: 9-18",
+  "key": "noble1870",
+  "ref": "Noble, 1870",
+  "summary": "This has a nice historic overview of measuring projectile velocities."
  },
  "noble1875": {
   "cms": "Noble, Captain, and F. A. Abel,  \"Researches on Explosives.  Fired Gunpowder.\" <i>Philosophical Transactions of the Royal Society of London</i>, Vol. 165 (1875): 49-155.",
