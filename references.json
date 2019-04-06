@@ -146,6 +146,12 @@
   "ref": "Didion, 1857",
   "summary": "Didion uses data from Robins, Hutton, and Metz to produce equations for air resistance."
  },
+ "dupin1820": {
+  "cms": "Dupin, Charles, <i>Force Miltaire de la Grande-Bretagne, Tome II</i>, Paris: Bachelier, 1820.",
+  "key": "dupin1820",
+  "ref": "Dupin, 1820",
+  "summary": "This is the second volume of a work that recounts the military establishment in Great Britain."
+ },
  "engineeringtoolbox": {
   "cms": "\"Metals and Alloys - Densities.\" Metals and Alloys - Densities. Accessed February 19, 2013. http://www.engineeringtoolbox.com/metal-alloys-densities-d_50.html.",
   "key": "engineeringtoolbox",
