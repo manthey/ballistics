@@ -18,9 +18,25 @@ Only techniques that are more likely to be accurate.  This excludes `theory` as 
 A box plot is a common statistical method to show the median, quartiles, and outliers.  This can be used to aggregate data over a periods of time.  Using the preferred techniques and 25-year interval aggregation, there appears to be a distinct trend.  This trend is less obvious with 20 or 10 year intervals.
 
 - [Box Plot, Full Data, 25 year intervals](#/boxplot)
-- [Box Plot, Preferred Technique, 25 year intervals](#/boxplot?filter={{ filters.preferred }})
-- [Box Plot, Preferred Technique, 20 year intervals](#/boxplot?filter={{ filters.preferred }}&binwidth=20)
-- [Box Plot, Preferred Technique, 10 year intervals](#/boxplot?filter={{ filters.preferred }}&binwidth=10)
+- [Box Plot, Preferred Techniques, 25 year intervals](#/boxplot?filter={{ filters.preferred }})
+- [Box Plot, Preferred Techniques, 20 year intervals](#/boxplot?filter={{ filters.preferred }}&binwidth=20)
+- [Box Plot, Preferred Techniques, 10 year intervals](#/boxplot?filter={{ filters.preferred }}&binwidth=10)
+
+## Various Subsets
+
+Just solid shot (exclude shells) can be examined by exlcluding low density projectiles.
+
+- [Preferred Techniques, Solid Shot](#/plot?filter={{ filters.preferred_solid }})
+- [Box Plot, Preferred Techniques, Solid Shot](#/boxplot?filter={{ filters.preferred_solid }})
+
+We can limit this to small projectiles or large projectiles (in this case, use 1 inch diameter as the split).
+
+- [Preferred Techniques, Small Projectiles](#/plot?filter={{ filters.preferred_small }})
+- [Box Plot, Preferred Techniques, Small Projectiles](#/boxplot?filter={{ filters.preferred_small }})
+- [Preferred Techniques, Large Projectiles](#/plot?filter={{ filters.preferred_large }})
+- [Box Plot, Preferred Techniques, Large Projectiles](#/boxplot?filter={{ filters.preferred_large }})
+
+Note the lack of modern data for shells or large projectiles.
 
 ## Median and Quartile Values
 

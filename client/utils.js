@@ -430,6 +430,9 @@ let medianPost = ")]; })(d, data)";
 
 let CommonFilters = {
   preferred: "['time','theory','calorimeter','final_angle'].indexOf(d.technique)<0",
+  preferred_solid: "['time','theory','calorimeter','final_angle'].indexOf(d.technique)<0 && d.projectile_density>6800",
+  preferred_small: "['time','theory','calorimeter','final_angle'].indexOf(d.technique)<0 && d.diam<0.0255",
+  preferred_large: "['time','theory','calorimeter','final_angle'].indexOf(d.technique)<0 && d.diam>0.0253",
   median_source_technique_year: medianPreamble +
     "d.dkey = d.key+':'+d.technique+':'+d.year;" +
     medianBin + "0.5" + medianPost,

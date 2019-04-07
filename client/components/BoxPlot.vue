@@ -119,7 +119,7 @@ export default {
             visible: true
           },
           line: {
-            color: 'blue',
+            color: 'black',
           },
           meanline: {
             visible: true,  // false or true for violin plot
