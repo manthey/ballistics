@@ -184,6 +184,12 @@ Modern units are relatively inexpensive, but are also somewhat limited in the si
     </vue-markdown>
     <div style="clear: both"/>
     <vue-markdown>
+## Video
+
+[Plot](#/plot?filter=d.technique%3D%3D'video') [Table](#/table?filter=d.technique%3D%3D'video')
+
+Modern high-speed video can record the flight of the projectile.  Knowing the frame rate of the video and the field of view at the distance to the projectile, the velocity can be calculated accurately.
+
 ## Calorimeter
 
 [Plot](#/plot?filter=d.technique%3D%3D'calorimeter') [Table](#/table?filter=d.technique%3D%3D'calorimeter')

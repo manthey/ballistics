@@ -1,0 +1,180 @@
+---
+key: scott2017
+ref: "Scott, 2017"
+cms: "Scott, Douglas D., Joel Bohy, Nathar Boor, Charles Haeker, William Rose, and Patrick Severts, <i>Colonial Era Firearm Bullet Performance: A Live Fire Experimental Study for Archeological Interpretation</i>, http://www.modernheritage.net/Scott_etal_2017.pdf, accessed April 6, 2019, dated April 2017."
+summary: "An extensive experiment on the effects of musketry."
+link: http://www.modernheritage.net/Scott_etal_2017.pdf
+date: "2017"
+data:
+  -
+    ref2: "p. 22"
+    desc: "Report of a 1998 experiment"
+    date: 1998
+    material: lead
+    data:
+    charge: 50 gr
+    diameter: 0.615 in
+    initial_velocity: 590.7 ft/s
+    technique: chronograph
+    technique_note: assumed
+  -
+    ref2: "p. 23"
+    desc: "Report from Lucien Haag"
+    date: "2015-03-28"
+    material: lead
+    technique: chronograph
+    technique_note: assumed
+    data:
+      -
+        desc2: "Goex FFg"
+        diameter: 0.718 in
+        charge: 100 gr
+        data:
+          - initial_velocity: 951 ft/s
+          -
+            range: 200 yds
+            final_velocity: 668.4 ft/s
+          - initial_velocity: 1168 ft/s
+          -
+            range: 200 yds
+            final_velocity: 747.8 ft/s
+      -
+        desc2: "Goex FFg mixed with FFFg"
+        diameter: 0.650 in
+        mass: 402 gr
+        charge: 60 gr
+        initial_velocity: 1237.9 ft/s
+      -
+        desc2: "Swiss FFFg"
+        diameter: 0.610 in
+        charge: 60 gr
+        initial_velocity: 1000 ft/s
+  -
+    ref2: "p. 26"
+    material: lead
+    technique: video
+    data:
+      -
+        diameter: 0.520 in
+        charge: 85 gr
+        data:
+          - initial_velocity: 1160 ft/s
+          - initial_velocity: 1345 ft/s
+          - initial_velocity: 1259.3 ft/s
+      -
+        diameter: 0.580 in
+        charge: 85 gr
+        data:
+          - initial_velocity: 1415 ft/s
+          - initial_velocity: 1480 ft/s
+          - initial_velocity: 1444 ft/s
+  -
+    ref2: "p. 27"
+    material: lead
+    technique: video
+    data:
+      -
+        diameter: 0.580 in
+        charge: 85 gr
+        data:
+          - initial_velocity: 960 ft/s
+          - initial_velocity: 1335 ft/s
+          - initial_velocity: 1018 ft/s
+      -
+        diameter: 0.69 in
+        charge: 110 gr
+        data:
+          - initial_velocity: 780 ft/s
+          - initial_velocity: 870 ft/s
+          - initial_velocity: 822 ft/s
+      -
+        diameter: 0.626 in
+        charge: 110 gr
+        data:
+          - initial_velocity: 775 ft/s
+          - initial_velocity: 960 ft/s
+          - initial_velocity: 870 ft/s
+  -
+    ref2: "p. 28"
+    material: lead
+    technique: video
+    data:
+      -
+        diameter: 0.626 in
+        charge: 110 gr
+        data:
+          - initial_velocity: 712 ft/s
+          - initial_velocity: 858 ft/s
+          - initial_velocity: 817 ft/s
+  -
+    ref2: "p. 44"
+    material: lead
+    technique: video
+    data:
+      -
+        diameter: 0.69 in
+        charge: 110 gr
+        data:
+          - initial_velocity: 760 ft/s
+          - initial_velocity: 790 ft/s
+          - initial_velocity: 815 ft/s
+          - initial_velocity: 830 ft/s
+          -
+            range: 25 yards
+            final_velocity: 830 ft/s
+  -
+    ref2: "p. 45"
+    material: lead
+    technique: video
+    data:
+      -
+        diameter: 0.69 in
+        charge: 75 gr
+        data:
+          - initial_velocity: 600 ft/s
+          - initial_velocity: 605 ft/s
+          - initial_velocity: 615 ft/s
+          - initial_velocity: 630 ft/s
+          - initial_velocity: 630 ft/s
+      -
+        diameter: 0.626 in
+        data:
+          -
+            charge: 110 gr
+            initial_velocity: 1025 ft/s
+          -
+            charge: 75 gr
+            initial_velocity: 785 ft/s
+  -
+    ref2: "p. 48"
+    material: lead
+    technique: video
+    data:
+      -
+        diameter: 0.626 in
+        range: 25 yards
+        charge: 110 gr
+        final_velocity: 1155 ft/s
+  -
+    ref2: "p. 50"
+    material: lead
+    technique: video
+    data:
+      -
+        diameter: 0.58 in
+        data:
+          -
+            charge: 85 gr
+            initial_velocity: 1285 ft/s
+          -
+            charge: 85 gr
+            range: 25 yards
+            final_velocity: 1340 ft/s
+          -
+            charge: 75 gr
+            range: 25 yards
+            initial_velocity: 1140 ft/s
+          -
+            charge: 75 gr
+            range: 25 yards
+            initial_velocity: 1155 ft/s

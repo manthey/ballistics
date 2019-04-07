@@ -162,7 +162,6 @@ export default {
           regx.push(new Date(x).toISOString().substr(0, 10));
           regy.push(uselog ? Math.pow(10, reg.predict(x)[1]) : reg.predict(x)[1]);
         }
-        console.log(regdata, regx, regy, reg);
         traces.push({
           x: regx,
           y: regy,

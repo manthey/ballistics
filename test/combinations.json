@@ -798,6 +798,28 @@
  },
  {
   "conditions": {
+   "charge": "50 gr",
+   "data": null,
+   "diameter": "0.615 in",
+   "initial_velocity": "590.7 ft/s",
+   "material": "lead"
+  },
+  "power_factor": 113222.91725808076,
+  "time": null
+ },
+ {
+  "conditions": {
+   "charge": "100 gr",
+   "diameter": "0.718 in",
+   "final_velocity": "668.4 ft/s",
+   "material": "lead",
+   "range": "200 yds"
+  },
+  "power_factor": 600847.001657138,
+  "time": 0.8982054328930671
+ },
+ {
+  "conditions": {
    "charge": "30 gr",
    "diameter": "0.36 in",
    "initial_velocity": "1460 ft/s",
@@ -837,6 +859,17 @@
    "material": "iron"
   },
   "power_factor": 382511.8989895905,
+  "time": null
+ },
+ {
+  "conditions": {
+   "charge": "75 gr",
+   "diameter": "0.58 in",
+   "initial_velocity": "1140 ft/s",
+   "material": "lead",
+   "range": "25 yards"
+  },
+  "power_factor": 235818.28456930013,
   "time": null
  },
  {

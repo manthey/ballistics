@@ -1,0 +1,78 @@
+---
+key: roberts2008
+ref: "Roberts, 2008"
+cms: "Roberts, N. A., J. W. Brown, B. Hammett, and P. D. F. Kingston, \"A Detailed Study of the Effectiveness and Capabilities of 18th Century Musketry on the Battlefield,\" <i>Bastions and Barbed Wire</i>, Leiden: Brill (2008): 1-23"
+summary: "This uses a simulated Brown Bess and a mix of modern powders to study the effects of musket fire."
+date: "2008"
+data:
+  -
+    diameter: 0.691 in
+    diameter_note: The authors list both 17.53 mm and 0.691 in
+    material: lead
+    angle: 0 deg
+    technique: chronograph
+    charge_note: The authors use a ladle to load their musket, so some of the low velocities might be that the charges are less than they expect.
+    data:
+      -
+        ref2: "p. 13"
+        data:
+          -
+            desc: "3A powder"
+            charge: 10 g
+            data:
+              - initial_velocity: 314.7 m/s
+              - initial_velocity: 282.2 m/s
+              - initial_velocity: 204.9 m/s
+          -
+            desc: "G12 powder"
+            charge: 10 g
+            data:
+              - initial_velocity: 130.2 m/s
+              - initial_velocity: 329.3 m/s
+              - initial_velocity: 210.7 m/s
+          -
+            desc: "Blasting powder"
+            charge: 10 g
+            data:
+              - initial_velocity: 130.2 m/s
+              - initial_velocity: 329.3 m/s
+              - initial_velocity: 210.7 m/s
+          -
+            desc: "3A and G12 powder mixed 1 to 1"
+            charge: 10 g
+            data:
+              - initial_velocity: 305.3 m/s
+              - initial_velocity: 271.6 m/s
+              - initial_velocity: 295.0 m/s
+          -
+            desc: "3A and G12 powder mixed 1 to 3"
+            charge: 10 g
+            data:
+              - initial_velocity: 336.5 m/s
+              - initial_velocity: 310.0 m/s
+              - initial_velocity: 291.6 m/s
+          -
+            desc: "3A and G12 powder mixed 1 to 3"
+            charge: 18 g
+            data:
+              - initial_velocity: 448.7 m/s
+              - initial_velocity: 476.7 m/s
+          -
+            desc: "3A and G12 powder mixed 1 to 3"
+            charge: 20 g
+            data:
+              - initial_velocity: 513.9 m/s
+          -
+            desc: "3A and G12 powder mixed 1 to 3"
+            charge: 15 g
+            data:
+              - initial_velocity: 447.1 m/s
+              - initial_velocity: 473.8 m/s
+              - initial_velocity: 457.2 m/s
+      -
+        ref2: "p. 14"
+        charge: 14 g
+        data:
+          - initial_velocity: 388.0 m/s
+          - initial_velocity: 365.1 m/s
+          - initial_velocity: 398.7 m/s
