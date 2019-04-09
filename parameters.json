@@ -72,7 +72,7 @@
  "computation_time": {
   "count": 12565,
   "key": "computation_time",
-  "max": 0.5500000000000114,
+  "max": 0.6299999999999955,
   "min": 0.0,
   "numeric": 12565,
   "unique": 48
@@ -80,12 +80,12 @@
  "date": {
   "count": 12565,
   "key": "date",
-  "unique": 414
+  "unique": 415
  },
  "date_filled": {
   "count": 12565,
   "key": "date_filled",
-  "unique": 408
+  "unique": 409
  },
  "delta_range": {
   "count": 1334,
@@ -353,7 +353,7 @@
   "max": 1998,
   "min": 1646,
   "numeric": 2122,
-  "unique": 427
+  "unique": 428
  },
  "given_date_note": {
   "count": 504,
@@ -1135,9 +1135,9 @@
   "key": "version",
   "unique": 3,
   "values": {
-   "2019-03-28v63": 9986,
+   "2019-03-28v63": 9600,
    "2019-04-05v65": 253,
-   "2019-04-06v67": 2326
+   "2019-04-06v67": 2712
   }
  },
  "vx": {
