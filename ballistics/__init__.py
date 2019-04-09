@@ -1475,6 +1475,9 @@ def parse_arguments(argv, allowUnknownParams=False):  # noqa
         elif arg.startswith('--method='):
             method = arg.split('=', 1)[1]
             UseRungeKutta = (method != 'simple')
+        elif arg.startswith('--millerjson='):
+            from . import cod_miller
+            cod_miller.replace_table(arg.split('=', 1)[1])
         elif arg == '--nounknown':
             if 'unknown' in params:
                 del params['unknown']
@@ -2203,6 +2206,7 @@ read_config for details on the file format.
 --method specifies the numerical method to use.  The choices are 'runge' to use
  the Runge-Kutta method (the default) or 'simple' to use the simplest possible
  method.
+--millerjson specifies an adjustment file for the miller drag method.
 --nounknown clears the parameter that has been specified for a solution with ?.
  This allows overriding a conf file or the environmental variable.
 --output outputs the results in either a csv or html table format.  This takes

@@ -103,11 +103,15 @@ def main(opts):  # noqa
         if len(groups[key]['cases']) < 2:
             del groups[key]
     print(len(groups), sum(len(entry['cases']) for entry in groups.values()))
-    bestTable = cod_miller.table_as_array()
-    # extend table to 1e9
-    for _mn, entries, _crit in bestTable:
-        if entries[-1][0] == 1e7:
-            entries.extend([[1e8, entries[-1][1]], [1e9, entries[-1][1]]])
+    # bestTable = cod_miller.table_as_array()
+    # # extend table to 1e9
+    # for _mn, entries, _crit in bestTable:
+    #     if entries[-1][0] == 1e7:
+    #         entries.extend([[1e8, entries[-1][1]], [1e9, entries[-1][1]]])
+    cod_miller.extend_drag_table()
+    bestTable = [[mn, [[10**entry[0], entry[1]] for entry in entries
+                       if not mn or entry[0] >= 3], crit]
+                 for mn, entries, crit in cod_miller.ExtendedMnLogReCdDataTable]
     bestError = calc_error(groups)
     print('err %10.8f param %d' % (bestError, sum(len(entries) for mn, entries, crit in bestTable)))
     if opts.get('recalc'):
