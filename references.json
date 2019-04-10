@@ -299,6 +299,12 @@
   "ref": "Lombard, 1796",
   "summary": "This gives equations for calculating trajectories."
  },
+ "lyman1975": {
+  "cms": "Ramage, C. Kenneth, editor, <i>Lyman Black Powder Handbook</i>, Middlefield, CT: Lyman Publications, 1975.",
+  "key": "lyman1975",
+  "ref": "Lyman, 1975",
+  "summary": "This is a guide for shooters and hunters.  Their load charts are based on firing a series of bullets and averaging them.  They also have trajectory charts based on a ballistics model.  It seems that each firearm was measured multiple times, avereraged, and then muzzle velocities were computed based on that average, a ballistic coefficient for round ball, and a ballistic modelling program."
+ },
  "maxwell1870": {
   "cms": "Maxwell, H. H., \"The New Field Artillery of Mattei-Rossi.  Translated from the Italian of \"L'Opinione,\" 23rd-26th October 1868,\" <i>Minutes of Proceedings of the Royal Artillery Institution</i>, VI (1870): 325-334",
   "key": "maxwell1870",
@@ -558,7 +564,7 @@
   "summary": "An amazing compendium listing how to make and refine saltpetre, giving dimensions of stamp mills, and good details on the whole of the manufacturing."
  },
  "stremy1745v2": {
-  "cms": "Saint Remy, M. Surirey de, <i>Memoires d'Artillerie, Recuell\u00eds par M. Surirey de Saint Remy, Lieutenant du Grand-Ma\u00edtre de l'Artillerie de France.  Troisi\u00edme Edition, Tome Second.</i>, Pais: Chez Rollin Fils, 1745.",
+  "cms": "Saint Remy, M. Surirey de, <i>Memoires d'Artillerie, Recuell\u00eds par M. Surirey de Saint Remy, Lieutenant du Grand-Ma\u00edtre de l'Artillerie de France.  Troisi\u00edme Edition, Tome Second.</i>, Paris: Chez Rollin Fils, 1745.",
   "key": "stremy1745v2",
   "ref": "Saint Remy, 1745, Vol. II",
   "summary": "A complete summary of artillery in France."
