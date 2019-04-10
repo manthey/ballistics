@@ -121,13 +121,14 @@ def main(opts):  # noqa
         print('err %10.8f param %d %3.1fs  ' % (
             bestError, sum(len(entries) for mn, entries, crit in bestTable),
             time.time() - starttime))
+    minErrorDelta = 1e-7
     src = opts.get('src', opts['dest'])
     if os.path.exists(src):
         print('read %s' % src)
         newTable = json.load(open(src))
         recalc_groups_pool(groups, newTable)
         newError = calc_error(groups)
-        if newError < bestError:
+        if newError < bestError - minErrorDelta:
             bestError = newError
             bestTable = newTable
         print('err %10.8f param %d' % (
@@ -159,7 +160,7 @@ def main(opts):  # noqa
                     newError = calc_error(groups)
                     print('new %10.8f best %10.8f %3.1fs  ' % (
                         newError, bestError, time.time() - starttime))
-                    if newError < bestError:
+                    if newError < bestError - minErrorDelta:
                         bestError = newError
                         bestTable = newTable
                         with open(opts['dest'], 'w') as fp:

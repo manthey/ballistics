@@ -427,12 +427,20 @@ let medianPreamble = "((d, data) => {" +
   "if (!d.dkey) data.forEach(d => {";
 let medianBin = "}); if (!data.sets) data.sets={}; var set = data.sets[d.dkey]; if (!set) data.sets[d.dkey] = data.filter(e => d.dkey === e.dkey).sort((a, b) => a.power_factor - b.power_factor); set = data.sets[d.dkey];  return d === set[Math.floor((set.length-1) * ";
 let medianPost = ")]; })(d, data)";
+let groupSkipTechniques = "['height','time','theory','calorimeter','final_angle','gun_pendulum','trajectory']";
 
 let CommonFilters = {
   preferred: "['time','theory','calorimeter','final_angle'].indexOf(d.technique)<0",
   preferred_solid: "['time','theory','calorimeter','final_angle'].indexOf(d.technique)<0 && d.projectile_density>6800",
   preferred_small: "['time','theory','calorimeter','final_angle'].indexOf(d.technique)<0 && d.diam<0.0255",
   preferred_large: "['time','theory','calorimeter','final_angle'].indexOf(d.technique)<0 && d.diam>0.0253",
+  reliable_groups: "((d, data) => {if (!d.given_group || " +
+    groupSkipTechniques + ".indexOf(d.technique)>=0) return false;" +
+    "if (!data.groups) data.groups={}; " +
+    "if (!data.groups[d.given_group]) data.groups[d.given_group] = data.filter(e => d.given_group === e.given_group && " +
+    groupSkipTechniques + ".indexOf(e.technique)<0).length;" +
+    "return data.groups[d.given_group] >= 2;" +
+    "})(d, data)",
   median_source_technique_year: medianPreamble +
     "d.dkey = d.key+':'+d.technique+':'+d.year;" +
     medianBin + "0.5" + medianPost,
