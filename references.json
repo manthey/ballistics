@@ -198,6 +198,13 @@
   "ref": "Haultain, 1861",
   "summary": "This contains a report of some the ranges of some 800 shots with nine-pounder guns."
  },
+ "hebert2019": {
+  "cms": "\"The Power of Black Powder Revolvers: Black Powder vs. Substitutes\"  Accessed April 10, 2019. https://www.ammoland.com/2019/01/the-power-of-black-powder-revolvers-black-powder-vs-substitutes/.",
+  "key": "hebert2019",
+  "link": "https://www.ammoland.com/2019/01/the-power-of-black-powder-revolvers-black-powder-vs-substitutes/",
+  "ref": "Hebert, 2019",
+  "summary": "Various reported loads for pistols"
+ },
  "helene1878": {
   "cms": "H\u00e9l\u00e8ne, Maxime.  <i>La Poudre a Canon et les Nouveaux Corps Explosifs.</i>  Paris: Librarie Hachette et Cie., 1878",
   "details": "This covers various aspects of ballistics, such as air resistance.  There are several experiments that provide power data.\n",
@@ -465,6 +472,13 @@
   "ref": "Committee of the Royal Society, 1742",
   "summary": "The committee analyzes how much gunpowder remains unburnt after firing and what effect chamber length has on range."
  },
+ "rice2018": {
+  "cms": "\"Velocity Test\"  Accessed April 10, 2019. https://www.ricebarrels.com/velocity%20test.html.",
+  "key": "rice2018",
+  "link": "https://www.ricebarrels.com/velocity%20test.html",
+  "ref": "Rice, 2018",
+  "summary": "Velocity for different barrel lengths"
+ },
  "roberts2008": {
   "cms": "Roberts, N. A., J. W. Brown, B. Hammett, and P. D. F. Kingston, \"A Detailed Study of the Effectiveness and Capabilities of 18th Century Musketry on the Battlefield,\" <i>Bastions and Barbed Wire</i>, Leiden: Brill (2008): 1-23",
   "key": "roberts2008",
@@ -483,7 +497,7 @@
   "details": "This work introduces the ballistic pendulum, but also attempts to develop a working formula for air resistance.  Robins points out that projectiles don't travel in parabolas because of air resistance\n",
   "key": "robins1742",
   "ref": "Robins, 1742",
-  "summary": "This is the original publication tht described the ballistic pendulum."
+  "summary": "This is the original publication that described the ballistic pendulum."
  },
  "robins1761v1": {
   "cms": "Robins, Benjamin.  <i>Mathematical Tracts of the late Benjamin Robins, Esq, Vol. I</i>  London: J. Nourse, 1761",
