@@ -628,3 +628,1340 @@ data:
               -
                 charge: 80 gr
                 initial_velocity: 2255 ft/s
+  -
+    desc: "44 Cal., 20 in Bbl."
+    diameter: 0.437 in
+    mass: 127 gr
+    data:
+      -
+        ref2: p. 91
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 30 gr
+                initial_velocity: 1075 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 1196 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1317 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1438 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1544 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1649 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1767 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1885 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1939 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1985 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 2003 ft/s
+  -
+    desc: "44 Cal., 28 in Bbl."
+    diameter: 0.437 in
+    mass: 127 gr
+    data:
+      -
+        ref2: p. 92
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 30 gr
+                initial_velocity: 940 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 1162 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1384 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1605 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1733 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1859 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1965 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 2071 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 2117 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 2163 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 2165 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 2167 ft/s
+      -
+        ref2: p. 93
+        data:
+          -
+            desc2: "C&H FFFg"
+            data:
+              -
+                charge: 30 gr
+                initial_velocity: 754 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 994 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1234 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1473 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1631 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1788 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1882 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1975 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 2025 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 2074 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 2084 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 2094 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 2129 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 2163 ft/s
+  -
+    desc: "44 Cal., 32 in Bbl."
+    diameter: 0.437 in
+    mass: 127 gr
+    data:
+      -
+        ref2: p. 95
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 25 gr
+                initial_velocity: 1120 ft/s
+              -
+                charge: 30 gr
+                initial_velocity: 1208 ft/s
+              -
+                charge: 35 gr
+                initial_velocity: 1296 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 1384 ft/s
+              -
+                charge: 45 gr
+                initial_velocity: 1472 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1560 ft/s
+              -
+                charge: 55 gr
+                initial_velocity: 1648 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1735 ft/s
+              -
+                charge: 65 gr
+                initial_velocity: 1809 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1883 ft/s
+              -
+                charge: 75 gr
+                initial_velocity: 1957 ft/s
+  -
+    desc: "45 Cal., 28 in Bbl."
+    diameter: 0.445 in
+    mass: 133 gr
+    data:
+      -
+        ref2: p. 97
+        data:
+          -
+            desc2: "G-O FFg"
+            data:
+              -
+                charge: 30 gr
+                initial_velocity: 1144 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 1291 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1438 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1585 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1670 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1755 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1882 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 2008 ft/s
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 25 gr
+                initial_velocity: 948 ft/s
+              -
+                charge: 30 gr
+                initial_velocity: 1089 ft/s
+              -
+                charge: 35 gr
+                initial_velocity: 1230 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 1370 ft/s
+              -
+                charge: 45 gr
+                initial_velocity: 1511 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1651 ft/s
+              -
+                charge: 55 gr
+                initial_velocity: 1792 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1932 ft/s
+              -
+                charge: 65 gr
+                initial_velocity: 1963 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1994 ft/s
+              -
+                charge: 75 gr
+                initial_velocity: 2025 ft/s
+      -
+        ref2: p. 97
+        data:
+          -
+            desc2: "C&H FFFg"
+            data:
+              -
+                charge: 30 gr
+                initial_velocity: 1065 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 1241 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1417 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1593 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1757 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1921 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1979 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 2037 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 2042 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 2046 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 2052 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 2057 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 2096 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 2134 ft/s
+              -
+                charge: 170 gr
+                initial_velocity: 2173 ft/s
+  -
+    desc: "45 Cal., 32 in Bbl."
+    diameter: 0.445 in
+    mass: 133 gr
+    data:
+      -
+        ref2: p. 103
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 25 gr
+                initial_velocity: 1143 ft/s
+              -
+                charge: 30 gr
+                initial_velocity: 1240 ft/s
+              -
+                charge: 35 gr
+                initial_velocity: 1337 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 1433 ft/s
+              -
+                charge: 45 gr
+                initial_velocity: 1530 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1626 ft/s
+              -
+                charge: 55 gr
+                initial_velocity: 1723 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1819 ft/s
+              -
+                charge: 65 gr
+                initial_velocity: 1898 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1977 ft/s
+              -
+                charge: 75 gr
+                initial_velocity: 2057 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 2136 ft/s
+              -
+                charge: 85 gr
+                initial_velocity: 2175 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 2214 ft/s
+  -
+    desc: "45 Cal., 36 in Bbl."
+    diameter: 0.445 in
+    mass: 133 gr
+    data:
+      -
+        ref2: p. 105
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 25 gr
+                initial_velocity: 1207 ft/s
+              -
+                charge: 30 gr
+                initial_velocity: 1294 ft/s
+              -
+                charge: 35 gr
+                initial_velocity: 1381 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 1467 ft/s
+              -
+                charge: 45 gr
+                initial_velocity: 1554 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1640 ft/s
+              -
+                charge: 55 gr
+                initial_velocity: 1727 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1814 ft/s
+              -
+                charge: 65 gr
+                initial_velocity: 1895 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1975 ft/s
+              -
+                charge: 75 gr
+                initial_velocity: 2055 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 2135 ft/s
+              -
+                charge: 85 gr
+                initial_velocity: 2184 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 2232 ft/s
+              -
+                charge: 95 gr
+                initial_velocity: 2281 ft/s
+  -
+    desc: "45 Cal., 40 in Bbl."
+    diameter: 0.445 in
+    mass: 133 gr
+    data:
+      -
+        ref2: p. 107
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 25 gr
+                initial_velocity: 1255 ft/s
+              -
+                charge: 30 gr
+                initial_velocity: 1327 ft/s
+              -
+                charge: 35 gr
+                initial_velocity: 1399 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 1470 ft/s
+              -
+                charge: 45 gr
+                initial_velocity: 1542 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1613 ft/s
+              -
+                charge: 55 gr
+                initial_velocity: 1684 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1755 ft/s
+              -
+                charge: 65 gr
+                initial_velocity: 1840 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1924 ft/s
+              -
+                charge: 75 gr
+                initial_velocity: 2009 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 2093 ft/s
+  -
+    desc: "45 Cal., 43 in Bbl."
+    diameter: 0.445 in
+    mass: 133 gr
+    data:
+      -
+        ref2: p. 109
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 30 gr
+                initial_velocity: 1331 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 1498 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1665 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1831 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1969 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 2106 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 2237 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 2367 ft/s
+  -
+    desc: "50 Cal., 26 in Bbl."
+    diameter: 0.498 in
+    mass: 180 gr
+    data:
+      -
+        ref2: p. 111
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 50 gr
+                initial_velocity: 1348 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1461 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1574 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1690 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1806 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1882 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1957 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 2041 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 2124 ft/s
+  -
+    desc: "50 Cal., 28 in Bbl."
+    diameter: 0.498 in
+    mass: 180 gr
+    data:
+      -
+        ref2: p. 111
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 50 gr
+                initial_velocity: 1333 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1460 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1587 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1692 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1796 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1875 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1954 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 2009 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 2064 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 2082 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 2099 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 2118 ft/s
+          -
+            desc2: "C&H FFFg"
+            data:
+              -
+                charge: 50 gr
+                initial_velocity: 1290 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1390 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1490 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1589 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1686 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1782 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1829 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1875 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1909 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1942 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 1955 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 1967 ft/s
+              -
+                charge: 170 gr
+                initial_velocity: 2009 ft/s
+              -
+                charge: 180 gr
+                initial_velocity: 2051 ft/s
+              -
+                charge: 190 gr
+                initial_velocity: 2061 ft/s
+              -
+                charge: 200 gr
+                initial_velocity: 2071 ft/s
+  -
+    desc: "50 Cal., 32 in Bbl."
+    diameter: 0.498 in
+    mass: 180 gr
+    data:
+      -
+        ref2: p. 114
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 50 gr
+                initial_velocity: 1445 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1554 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1663 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1777 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1891 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1978 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 2065 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 2101 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 2137 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 2152 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 2167 ft/s
+  -
+    desc: "50 Cal., 43 in Bbl."
+    diameter: 0.498 in
+    mass: 180 gr
+    data:
+      -
+        ref2: p. 115
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 50 gr
+                initial_velocity: 1506 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1611 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1725 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1854 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 2000 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 2095 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 2190 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 2243 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 2295 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 2312 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 2329 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 2342 ft/s
+              -
+                charge: 170 gr
+                initial_velocity: 2354 ft/s
+  -
+    desc: "54 Cal., 28 in Bbl."
+    diameter: 0.535 in
+    mass: 220 gr
+    data:
+      -
+        ref2: p. 116
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 40 gr
+                initial_velocity: 1061 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1125 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1250 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1375 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1453 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1531 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1605 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1678 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1730 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1782 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1895 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 2008 ft/s
+          -
+            desc2: "C&H FFFg"
+            data:
+              -
+                charge: 40 gr
+                initial_velocity: 929 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 953 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1101 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1249 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1319 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1388 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1491 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1593 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1700 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1806 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1840 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 1873 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 1890 ft/s
+              -
+                charge: 170 gr
+                initial_velocity: 1906 ft/s
+              -
+                charge: 180 gr
+                initial_velocity: 1943 ft/s
+              -
+                charge: 190 gr
+                initial_velocity: 1980 ft/s
+  -
+    desc: "54 Cal., 30 in Bbl."
+    diameter: 0.535 in
+    mass: 220 gr
+    data:
+      -
+        ref2: p. 118
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 40 gr
+                initial_velocity: 1110 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1165 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1275 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1385 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1466 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1546 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1639 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1731 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1826 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1920 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1972 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 2024 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 2072 ft/s
+  -
+    desc: "54 Cal., 34 in Bbl."
+    diameter: 0.535 in
+    mass: 220 gr
+    data:
+      -
+        ref2: p. 119
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 40 gr
+                initial_velocity: 1134 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1247 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1359 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1439 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1519 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1591 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1662 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1758 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1853 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1913 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1973 ft/s
+  -
+    desc: "54 Cal., 43 in Bbl."
+    diameter: 0.535 in
+    mass: 220 gr
+    data:
+      -
+        ref2: p. 120
+        data:
+          -
+            desc2: "G-O FFFg"
+            data:
+              -
+                charge: 40 gr
+                initial_velocity: 1166 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 1295 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1424 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1527 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1629 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1685 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1740 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1824 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1907 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 2010 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 2113 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 2136 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 2158 ft/s
+  -
+    desc: "58 Cal., 22 in Bbl."
+    diameter: 0.560 in
+    mass: 260 gr
+    data:
+      -
+        ref2: p. 121
+        data:
+          -
+            desc2: "G-O FFg"
+            data:
+              -
+                charge: 50 gr
+                initial_velocity: 863 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 934 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1005 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1075 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1162 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1249 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1314 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1379 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1419 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1459 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 1522 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 1584 ft/s
+              -
+                charge: 170 gr
+                initial_velocity: 1648 ft/s
+  -
+    desc: "58 Cal., 24 in Bbl."
+    diameter: 0.560 in
+    mass: 260 gr
+    data:
+      -
+        ref2: p. 124
+        data:
+          -
+            desc2: "G-O FFg"
+            data:
+              -
+                charge: 50 gr
+                initial_velocity: 903 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 990 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1077 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1163 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1225 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1286 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1329 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1371 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1446 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1520 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 1586 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 1652 ft/s
+              -
+                charge: 170 gr
+                initial_velocity: 1728 ft/s
+              -
+                charge: 180 gr
+                initial_velocity: 1783 ft/s
+              -
+                charge: 190 gr
+                initial_velocity: 1809 ft/s
+  -
+    desc: "58 Cal., 26 in Bbl."
+    diameter: 0.560 in
+    mass: 260 gr
+    data:
+      -
+        ref2: p. 128
+        data:
+          -
+            desc2: "G-O FFg"
+            data:
+              -
+                charge: 50 gr
+                initial_velocity: 765 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 847 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 929 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1039 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1149 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1201 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1253 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1306 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1358 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1402 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 1446 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 1502 ft/s
+              -
+                charge: 170 gr
+                initial_velocity: 1558 ft/s
+              -
+                charge: 180 gr
+                initial_velocity: 1614 ft/s
+              -
+                charge: 190 gr
+                initial_velocity: 1669 ft/s
+  -
+    desc: "58 Cal., 28 in Bbl."
+    diameter: 0.560 in
+    mass: 260 gr
+    data:
+      -
+        ref2: p. 131
+        data:
+          -
+            desc2: "G-O FFg"
+            data:
+              -
+                charge: 50 gr
+                initial_velocity: 814 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 906 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 998 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1090 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1153 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1215 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1269 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1322 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1379 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1436 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 1494 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 1552 ft/s
+              -
+                charge: 170 gr
+                initial_velocity: 1605 ft/s
+              -
+                charge: 180 gr
+                initial_velocity: 1658 ft/s
+              -
+                charge: 190 gr
+                initial_velocity: 1713 ft/s
+  -
+    desc: "58 Cal., 30 in Bbl."
+    diameter: 0.560 in
+    mass: 260 gr
+    data:
+      -
+        ref2: p. 135
+        data:
+          -
+            desc2: "G-O FFg"
+            data:
+              -
+                charge: 50 gr
+                initial_velocity: 944 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 1030 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1115 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1177 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1238 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1295 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1352 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1402 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1451 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1506 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 1560 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 1615 ft/s
+              -
+                charge: 170 gr
+                initial_velocity: 1669 ft/s
+              -
+                charge: 180 gr
+                initial_velocity: 1737 ft/s
+          -
+            desc2: "C&H FFg"
+            data:
+              -
+                charge: 50 gr
+                initial_velocity: 845 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 930 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 1015 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 1085 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 1154 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1199 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1244 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1297 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1349 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1404 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 1458 ft/s
+              -
+                charge: 160 gr
+                initial_velocity: 1513 ft/s
+              -
+                charge: 170 gr
+                initial_velocity: 1567 ft/s
+              -
+                charge: 180 gr
+                initial_velocity: 1625 ft/s
+  -
+    desc: "75 Cal., 42 in Bbl."
+    diameter: 0.715 in
+    mass: 545 gr
+    data:
+      -
+        ref2: p. 142
+        data:
+          -
+            desc2: "G-O FFg"
+            data:
+              -
+                charge: 20 gr
+                initial_velocity: 341 ft/s
+              -
+                charge: 30 gr
+                initial_velocity: 455 ft/s
+              -
+                charge: 40 gr
+                initial_velocity: 569 ft/s
+              -
+                charge: 50 gr
+                initial_velocity: 662 ft/s
+              -
+                charge: 60 gr
+                initial_velocity: 754 ft/s
+              -
+                charge: 70 gr
+                initial_velocity: 817 ft/s
+              -
+                charge: 80 gr
+                initial_velocity: 879 ft/s
+              -
+                charge: 90 gr
+                initial_velocity: 943 ft/s
+              -
+                charge: 100 gr
+                initial_velocity: 1006 ft/s
+              -
+                charge: 110 gr
+                initial_velocity: 1047 ft/s
+              -
+                charge: 120 gr
+                initial_velocity: 1088 ft/s
+              -
+                charge: 130 gr
+                initial_velocity: 1136 ft/s
+              -
+                charge: 140 gr
+                initial_velocity: 1184 ft/s
+              -
+                charge: 150 gr
+                initial_velocity: 1213 ft/s
