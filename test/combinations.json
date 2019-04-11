@@ -394,6 +394,19 @@
  },
  {
   "conditions": {
+   "angle": "0 deg",
+   "charge": "80 gr",
+   "diameter": "0.490 in",
+   "final_velocity": "1582 ft/s",
+   "material": "lead",
+   "range": "15 ft",
+   "temperature": "85 F"
+  },
+  "power_factor": 271421.381995494,
+  "time": 0.009350969268039739
+ },
+ {
+  "conditions": {
    "angle": "45 deg",
    "charge": "2 oz",
    "diameter": "7.75 in",
@@ -471,12 +484,12 @@
  {
   "conditions": {
    "angle": "0 deg",
-   "charge": "36 dwt",
-   "diameter": "0.25 in",
-   "initial_velocity": "2400 ft/s",
+   "charge": "10 gr",
+   "diameter": "0.323 in",
+   "initial_velocity": "478 ft/s",
    "material": "lead"
   },
-  "power_factor": 7265.6391183191,
+  "power_factor": 53704.220345704394,
   "time": null
  },
  {

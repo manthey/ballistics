@@ -1,0 +1,58 @@
+---
+key: hebert2019
+ref: "Hebert, 2019"
+cms: "\"The Power of Black Powder Revolvers: Black Powder vs. Substitutes\"  Accessed April 10, 2019. https://www.ammoland.com/2019/01/the-power-of-black-powder-revolvers-black-powder-vs-substitutes/."
+link: https://www.ammoland.com/2019/01/the-power-of-black-powder-revolvers-black-powder-vs-substitutes/
+summary: "Various reported loads for pistols"
+date: "2019-01-03"
+data:
+  -
+    angle: 0 deg
+    technique: chronograph
+    material: lead
+    desc2: "Graf's FFFg"
+    data:
+      -
+        desc: "31 caliber, Colt 1849 w/4 inch barrel"
+        diameter: 0.323 in
+        data:
+          -
+            charge: 10 gr
+            initial_velocity: 478 ft/s
+          -
+            charge: 15 gr
+            initial_velocity: 583 ft/s
+          -
+            charge: 20 gr
+            initial_velocity: 750 ft/s
+      -
+        desc: "36 caliber, Remington NMN w/ 7 3/8 inch barrel"
+        diameter: 0.380 in
+        mass: 84 gr
+        data:
+          -
+            charge: 20 gr
+            initial_velocity: 678 ft/s
+          -
+            charge: 25 gr
+            initial_velocity: 876 ft/s
+          -
+            charge: 30 gr
+            initial_velocity: 905 ft/s
+      -
+        desc: "44 caliber, Remington NMA w/ 8 inch barrel"
+        diameter: 0.457 in
+        mass: 147 gr
+        data:
+          -
+            charge: 20 gr
+            initial_velocity: 609 ft/s
+          -
+            charge: 25 gr
+            initial_velocity: 671 ft/s
+          -
+            charge: 30 gr
+            initial_velocity: 797 ft/s
+          -
+            charge: 40 gr
+            initial_velocity: 873 ft/s

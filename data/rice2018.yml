@@ -1,0 +1,74 @@
+---
+key: rice2018
+ref: "Rice, 2018"
+cms: "\"Velocity Test\"  Accessed April 10, 2019. https://www.ricebarrels.com/velocity%20test.html."
+link: https://www.ricebarrels.com/velocity%20test.html
+summary: "Velocity for different barrel lengths"
+date: "2018"
+data:
+  -
+    angle: 0 deg
+    technique: chronograph
+    material: lead
+    desc2: "Goex FFg"
+    charge: 80 gr
+    diameter: 0.490 in
+    temperature: 85 F
+    range: 15 ft
+    data:
+      -
+        desc: "44\" length"
+        data:
+          - final_velocity: 1582 ft/s
+          - final_velocity: 1624 ft/s
+          - final_velocity: 1606 ft/s
+          - final_velocity: 1592 ft/s
+      -
+        desc: "42\" length"
+        data:
+          - final_velocity: 1568 ft/s
+          - final_velocity: 1578 ft/s
+          - final_velocity: 1596 ft/s
+          - final_velocity: 1589 ft/s
+      -
+        desc: "40\" length"
+        data:
+          - final_velocity: 1574 ft/s
+          - final_velocity: 1570 ft/s
+          - final_velocity: 1585 ft/s
+          - final_velocity: 1564 ft/s
+      -
+        desc: "38\" length"
+        data:
+          - final_velocity: 1553 ft/s
+          - final_velocity: 1558 ft/s
+          - final_velocity: 1557 ft/s
+          - final_velocity: 1553 ft/s
+      -
+        desc: "36\" length"
+        data:
+          - final_velocity: 1518 ft/s
+          - final_velocity: 1512 ft/s
+          - final_velocity: 1513 ft/s
+          - final_velocity: 1506 ft/s
+      -
+        desc: "34\" length"
+        data:
+          - final_velocity: 1523 ft/s
+          - final_velocity: 1566 ft/s
+          - final_velocity: 1522 ft/s
+          - final_velocity: 1516 ft/s
+      -
+        desc: "32\" length"
+        data:
+          - final_velocity: 1516 ft/s
+          - final_velocity: 1500 ft/s
+          - final_velocity: 1493 ft/s
+          - final_velocity: 1495 ft/s
+      -
+        desc: "30\" length"
+        data:
+          - final_velocity: 1467 ft/s
+          - final_velocity: 1472 ft/s
+          - final_velocity: 1473 ft/s
+          - final_velocity: 1473 ft/s
