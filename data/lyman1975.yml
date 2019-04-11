@@ -1,7 +1,7 @@
 ---
 key: lyman1975
 ref: "Lyman, 1975"
-cms: "Ramage, C. Kenneth, editor, <i>Lyman Black Powder Handbook</i>, Middlefield, CT: Lyman Publications, 1975."
+cms: "Ramage, C. Kenneth, editor. <i>Lyman Black Powder Handbook.</i> Middlefield, CT: Lyman Publications, 1975."
 summary: "This is a guide for shooters and hunters.  Their load charts are based on firing a series of bullets and averaging them.  They also have trajectory charts based on a ballistics model.  It seems that each firearm was measured multiple times, avereraged, and then muzzle velocities were computed based on that average, a ballistic coefficient for round ball, and a ballistic modelling program."
 date: "1975"
 technique: chronograph

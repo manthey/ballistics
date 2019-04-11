@@ -204,9 +204,6 @@ data:
     charge: 85 gr
     data:
       -
-        desc2: "Shockey's Gold ffg"
-        initial_velocity: 1206 ft/s
-      -
         desc2: "Goex Pinnacle fffg"
         initial_velocity: 1299 ft/s
       -

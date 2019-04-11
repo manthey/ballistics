@@ -1,7 +1,7 @@
 ---
 key: hime1897
 ref: "Hime, 1897"
-cms: "Hime, H. W. L., <i>Stray Military Papers</i>, London: Longmans, Green, and Co., 1897"
+cms: "Hime, H. W. L., <i>Stray Military Papers.</i>  London: Longmans, Green, and Co., 1897."
 summary: "This includes a chapter on field artillery and a section of proofs."
 date: "1897"
 data:
@@ -59,4 +59,3 @@ data:
         charge: 3.0 lb
         angle: 5 deg
         range: 703 yds
-

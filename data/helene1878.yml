@@ -1,7 +1,7 @@
 ---
 key: helene1878
 ref: "Helene, 1878"
-cms: "H\u00e9l\u00e8ne, Maxime.  <i>La Poudre a Canon et les Nouveaux Corps Explosifs.</i>  Paris: Librarie Hachette et Cie., 1878"
+cms: "H\u00e9l\u00e8ne, Maxime.  <i>La Poudre a Canon et les Nouveaux Corps Explosifs.</i>  Paris: Librarie Hachette et Cie., 1878."
 summary: "An overview of a variety of explosives."
 date: "1878"
 data:
@@ -19,4 +19,3 @@ data:
       -
         desc: "Poudre minima"
         range: 225 m
-

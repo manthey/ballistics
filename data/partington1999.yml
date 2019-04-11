@@ -1,7 +1,7 @@
 ---
 key: partington1999
 ref: "Partington, 1999"
-cms: "Partington, J. R., <i>A History of Greek Fire and Gunpowder</i>, Baltimore: The Johns Hopkins University Press, 1999."
+cms: "Partington, J. R. <i>A History of Greek Fire and Gunpowder.</i> Baltimore: The Johns Hopkins University Press, 1999."
 summary: "Originally published in 1960, this work has copious information, though many of the references are to the author's own publications, making the quality of them hard to evaluate."
 date: "1999"
 data:
@@ -35,4 +35,3 @@ data:
         desc3: "Powder with sulpher"
         charge: 3 ozfr
         range: 472 ftfr
-
