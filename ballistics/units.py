@@ -102,7 +102,7 @@ UnitsTable = [{
     'desc': 'Statute mile (British and American mile)',
 }, {
     'names': ['singlepace', 'singlepaces'],
-    'value': 2.55 * StatuteFootInMeters,
+    'value': 2.5 * StatuteFootInMeters,
     'desc': 'Common pace (2.5 feet)',
 }, {
     'names': ['pace', 'paces', 'doublepace', 'doublepaces'],
@@ -326,6 +326,10 @@ UnitsTable = [{
     'names': ['grad', 'gradian', 'gradians', 'gon', 'degreescentesimaux', 'degcent'],
     'value': math.pi / 200,
     'desc': 'Gradian (gon)',
+}, {
+    'names': ['quadpt', 'quadrentpoint', 'quadrentpoints'],
+    'value': math.pi / 24,
+    'desc': 'Gunners quadrant point (12 points in a quarter circle)',
 }, {
     # Time (reference is second)
 

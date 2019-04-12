@@ -1,0 +1,233 @@
+---
+key: norton1628
+ref: "Norton, 1628"
+cms: "Norton, Robert.  <i>The Gunner, Shewing the Whole Practise of Artillery.</i>  London: Humphrey Robinson, 1628."
+summary: "This includes basic geometry and descriptions of various artillery pieces."
+date: "1628"
+data:
+  -
+    ref2: "p. 52"
+    desc: "A Table out of Alexader Bianco"
+    data:
+      -
+        skip: true
+        skip_note: skipping point blank values as the natural angles of the guns are not given
+      -
+        desc2: "Faulconet"
+        diameter: 2 in
+        mass: 1.5 lb
+        charge: 1 lb
+        data:
+          -
+            angle: 1 quadpt
+            range: 750 singlepace
+          -
+            angle: 2 quadpt
+            range: 1275 singlepace
+          -
+            angle: 3 quadpt
+            range: 1590 singlepace
+          -
+            angle: 4 quadpt
+            range: 1710 singlepace
+          -
+            angle: 5 quadpt
+            range: 1785 singlepace
+          -
+            angle: 6 quadpt
+            range: 1800 singlepace
+      -
+        desc2: "Faulcon"
+        diameter: 2.5 in
+        mass: 2.5 lb
+        charge: 2 lb
+        data:
+          -
+            angle: 1 quadpt
+            range: 1100 singlepace
+          -
+            angle: 2 quadpt
+            range: 1870 singlepace
+          -
+            angle: 3 quadpt
+            range: 2332 singlepace
+          -
+            angle: 4 quadpt
+            range: 2508 singlepace
+          -
+            angle: 5 quadpt
+            range: 2618 singlepace
+          -
+            angle: 6 quadpt
+            range: 2640 singlepace
+      -
+        desc2: "Minion"
+        diameter: 3 in
+        mass: 3.75 lb
+        charge: 3 lb
+        data:
+          -
+            angle: 1 quadpt
+            range: 1000 singlepace
+          -
+            angle: 2 quadpt
+            range: 1650 singlepace
+          -
+            angle: 3 quadpt
+            range: 2046 singlepace
+          -
+            angle: 4 quadpt
+            range: 2340 singlepace
+          -
+            angle: 5 quadpt
+            range: 2412 singlepace
+          -
+            angle: 6 quadpt
+            range: 2440 singlepace
+      -
+        desc2: "Saker (using the middle size)"
+        diameter: 3.5 in
+        mass: 5.25 lb
+        charge: 4.75 lb
+        data:
+          -
+            angle: 1 quadpt
+            range: 1250 singlepace
+          -
+            angle: 2 quadpt
+            range: 2125 singlepace
+          -
+            angle: 3 quadpt
+            range: 2650 singlepace
+          -
+            angle: 4 quadpt
+            range: 2850 singlepace
+          -
+            angle: 5 quadpt
+            range: 2957 singlepace
+          -
+            angle: 6 quadpt
+            range: 3000 singlepace
+      -
+        desc2: "Demy Culvering (using the middle size)"
+        diameter: 4.25 in
+        mass: 10.5 lb
+        charge: 7.4286 lb
+        data:
+          -
+            angle: 1 quadpt
+            range: 1450 singlepace
+          -
+            angle: 2 quadpt
+            range: 2465 singlepace
+          -
+            angle: 3 quadpt
+            range: 3074 singlepace
+          -
+            angle: 4 quadpt
+            range: 3306 singlepace
+          -
+            angle: 5 quadpt
+            range: 3451 singlepace
+          -
+            angle: 6 quadpt
+            range: 3480 singlepace
+      -
+        desc2: "Culvering (using the middle size)"
+        diameter: 5 in
+        mass: 17.5 lb
+        charge: 12 lb
+        data:
+          -
+            angle: 1 quadpt
+            range: 1500 singlepace
+          -
+            angle: 2 quadpt
+            range: 2550 singlepace
+          -
+            angle: 3 quadpt
+            range: 3180 singlepace
+          -
+            angle: 4 quadpt
+            range: 3420 singlepace
+            range_note: The text reads 2420, which is almost certainly a typo that should be 3420.
+          -
+            angle: 5 quadpt
+            range: 3570 singlepace
+          -
+            angle: 6 quadpt
+            range: 3600 singlepace
+      -
+        desc2: "Demy Cannon"
+        diameter: 6.25 in
+        mass: 30 lb
+        charge: 14 lb
+        data:
+          -
+            angle: 1 quadpt
+            range: 1300 singlepace
+          -
+            angle: 2 quadpt
+            range: 2210 singlepace
+          -
+            angle: 3 quadpt
+            range: 2756 singlepace
+          -
+            angle: 4 quadpt
+            range: 2964 singlepace
+          -
+            angle: 5 quadpt
+            range: 3094 singlepace
+          -
+            angle: 6 quadpt
+            range: 3120 singlepace
+      -
+        desc2: "Cannon of 7"
+        diameter: 6.75 in
+        mass: 39 lb
+        charge: 18 lb
+        data:
+          -
+            angle: 1 quadpt
+            range: 1350 singlepace
+          -
+            angle: 2 quadpt
+            range: 2295 singlepace
+          -
+            angle: 3 quadpt
+            range: 2865 singlepace
+          -
+            angle: 4 quadpt
+            range: 2978 singlepace
+          -
+            angle: 5 quadpt
+            range: 3213 singlepace
+            range_note: The text reads 2213, which is almost certainly a typo that should be 3213.
+          -
+            angle: 6 quadpt
+            range: 3240 singlepace
+
+      -
+        desc2: "Cannon of 8"
+        diameter: 7.75 in
+        mass: 63 lb
+        charge: 27 lb
+        data:
+          -
+            angle: 1 quadpt
+            range: 1500 singlepace
+          -
+            angle: 2 quadpt
+            range: 2550 singlepace
+          -
+            angle: 3 quadpt
+            range: 3180 singlepace
+          -
+            angle: 4 quadpt
+            range: 3420 singlepace
+          -
+            angle: 5 quadpt
+            range: 3570 singlepace
+          -
+            angle: 6 quadpt
+            range: 3600 singlepace
