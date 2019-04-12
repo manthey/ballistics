@@ -1,0 +1,107 @@
+---
+key: taylor1687.yml
+ref: "Taylor, 1687"
+cms: "Taylor, John.  <i>Thesaurium Mathematic\u00e6, or the Treasury of the Mathematicks.</i>  London: W. Freeman, 1687."
+summary: "This echos data from other sources."
+date: "1687"
+data:
+  -
+    ref2: "p. 309"
+    desc: "Table of the utmost randoms"
+    angle: 45 deg
+    data:
+      -
+        diameter: 1.125 in
+        mass: 0 lb 5 oz
+        charge: 0 lb 8 oz
+        range: 600 paces
+      -
+        diameter: 1.375 in
+        mass: 0 lb 8 oz
+        charge: 0 lb 12 oz
+        range: 700 paces
+      -
+        diameter: 2.125 in
+        mass: 1 lb 5 oz
+        charge: 1 lb 4 oz
+        range: 900 paces
+      -
+        diameter: 2.625 in
+        mass: 2 lb 8 oz
+        charge: 2 lb 4 oz
+        range: 1300 paces
+      -
+        diameter: 2.875 in
+        mass: 3 lb 4 oz
+        charge: 2 lb 8 oz
+        range: 1200 paces
+      -
+        diameter: 3.0 in
+        mass: 3 lb 12 oz
+        charge: 3 lb 4 oz
+        range: 1250 paces
+      -
+        diameter: 3.25 in
+        mass: 4 lb 12 oz
+        charge: 3 lb 6 oz
+        range: 1500 paces
+      -
+        diameter: 3.5 in
+        mass: 6 lb 0 oz
+        charge: 4 lb 0 oz
+        range: 1600 paces
+      -
+        diameter: 3.75 in
+        mass: 7 lb 5 oz
+        charge: 5 lb 0 oz
+        range: 1630 paces
+      -
+        diameter: 4.0 in
+        mass: 9 lb 0 oz
+        charge: 6 lb 4 oz
+        range: 1740 paces
+      -
+        diameter: 4.25 in
+        mass: 10 lb 11 oz
+        charge: 7 lb 4 oz
+        range: 1750 paces
+      -
+        diameter: 4.5 in
+        mass: 12 lb 11 oz
+        charge: 8 lb 8 oz
+        range: 1780 paces
+      -
+        diameter: 4.75 in
+        mass: 15 lb 0 oz
+        charge: 10 lb 0 oz
+        range: 1800 paces
+      -
+        diameter: 5.0 in
+        mass: 17 lb 5 oz
+        charge: 11 lb 6 oz
+        range: 1810 paces
+      -
+        diameter: 5.25 in
+        mass: 20 lb 0 oz
+        charge: 11 lb 8 oz
+        range: 1830 paces
+      -
+        diameter: 6.0 in
+        mass: 30 lb 0 oz
+        charge: 14 lb 0 oz
+        range: 1560 paces
+      -
+        diameter: 6.125 in
+        mass: 32 lb 0 oz
+        charge: 17 lb 8 oz
+        range: 1620 paces
+      -
+        diameter: 6.375 in
+        mass: 36 lb 0 oz
+        charge: 18 lb 0 oz
+        range: 1800 paces
+      -
+        diameter: 7.5 in
+        mass: 58 lb 0 oz
+        charge: 32 lb 8 oz
+        range: 1850 paces

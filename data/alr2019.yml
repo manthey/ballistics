@@ -1,0 +1,498 @@
+---
+key: alr2019
+ref: "American Long Rifles, 2019"
+cms: "\"American Long Rifles.\"  Accessed April 11, 2019. https://americanlongrifles.org/forum."
+link: https://americanlongrifles.org/forum
+summary: "Extensive forum for rifle enthusiasts."
+date: "2019"
+data:
+  -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=32573.0"
+    date: "2014-09-28"
+    desc: "Factors Affecting Muzzle Velocity Round 1"
+    technique: chronograph
+    material: lead
+    diameter: 0.495 in
+    charge: 70 gr
+    desc2: "Goex FF"
+    temperature: 85 F
+    angle: 0 deg
+    range: 15 ft
+    data:
+      -
+        desc2: "Breech plug shape"
+        data:
+          - final_velocity: 1608 ft/s
+          - final_velocity: 1613 ft/s
+          - final_velocity: 1618 ft/s
+          - final_velocity: 1598 ft/s
+          - final_velocity: 1670 ft/s
+          - final_velocity: 1642 ft/s
+          - final_velocity: 1636 ft/s
+          - final_velocity: 1612 ft/s
+          - final_velocity: 1571 ft/s
+          - final_velocity: 1581 ft/s
+          - final_velocity: 1617 ft/s
+          - final_velocity: 1570 ft/s
+          - final_velocity: 1596 ft/s
+          - final_velocity: 1589 ft/s
+          - final_velocity: 1610 ft/s
+          - final_velocity: 1553 ft/s
+          - final_velocity: 1485 ft/s
+          - final_velocity: 1515 ft/s
+          - final_velocity: 1475 ft/s
+          - final_velocity: 1546 ft/s
+          - final_velocity: 1514 ft/s
+          - final_velocity: 1562 ft/s
+          - final_velocity: 1587 ft/s
+          - final_velocity: 1519 ft/s
+          - final_velocity: 1521 ft/s
+          - final_velocity: 1501 ft/s
+          - final_velocity: 1496 ft/s
+          - final_velocity: 1515 ft/s
+          - final_velocity: 1528 ft/s
+          - final_velocity: 1608 ft/s
+      -
+        desc2: "Flash hole size"
+        data:
+          - final_velocity: 1447 ft/s
+          - final_velocity: 1490 ft/s
+          - final_velocity: 1491 ft/s
+          - final_velocity: 1472 ft/s
+          - final_velocity: 1515 ft/s
+          - final_velocity: 1552 ft/s
+          - final_velocity: 1521 ft/s
+          - final_velocity: 1525 ft/s
+          - final_velocity: 1558 ft/s
+          - final_velocity: 1537 ft/s
+          - final_velocity: 1525 ft/s
+          - final_velocity: 1541 ft/s
+          - final_velocity: 1513 ft/s
+          - final_velocity: 1512 ft/s
+          - final_velocity: 1522 ft/s
+          - final_velocity: 1522 ft/s
+          - final_velocity: 1497 ft/s
+          - final_velocity: 1529 ft/s
+          - final_velocity: 1499 ft/s
+          - final_velocity: 1523 ft/s
+          - final_velocity: 1511 ft/s
+          - final_velocity: 1494 ft/s
+          - final_velocity: 1491 ft/s
+          - final_velocity: 1491 ft/s
+          - final_velocity: 1503 ft/s
+          - final_velocity: 1511 ft/s
+          - final_velocity: 1551 ft/s
+          - final_velocity: 1544 ft/s
+          - final_velocity: 1452 ft/s
+          - final_velocity: 1479 ft/s
+          - final_velocity: 1459 ft/s
+          - final_velocity: 1472 ft/s
+          - final_velocity: 1445 ft/s
+          - final_velocity: 1469 ft/s
+          - final_velocity: 1492 ft/s
+          - final_velocity: 1414 ft/s
+          - final_velocity: 1475 ft/s
+          - final_velocity: 1476 ft/s
+          - final_velocity: 1440 ft/s
+          - final_velocity: 1497 ft/s
+      -
+        desc2: "More on flash hole size"
+        data:
+          - final_velocity: 1553 ft/s
+          - final_velocity: 1485 ft/s
+          - final_velocity: 1515 ft/s
+          - final_velocity: 1475 ft/s
+          - final_velocity: 1546 ft/s
+          - final_velocity: 1506 ft/s
+          - final_velocity: 1514 ft/s
+          - final_velocity: 1562 ft/s
+          - final_velocity: 1587 ft/s
+          - final_velocity: 1519 ft/s
+          - final_velocity: 1521 ft/s
+          - final_velocity: 1501 ft/s
+          - final_velocity: 1496 ft/s
+          - final_velocity: 1515 ft/s
+          - final_velocity: 1528 ft/s
+          - final_velocity: 1350 ft/s
+          - final_velocity: 1407 ft/s
+          - final_velocity: 1332 ft/s
+          - final_velocity: 1419 ft/s
+          - final_velocity: 1404 ft/s
+          - final_velocity: 1405 ft/s
+          - final_velocity: 1389 ft/s
+          - final_velocity: 1392 ft/s
+          - final_velocity: 1414 ft/s
+          - final_velocity: 1476 ft/s
+          - final_velocity: 1476 ft/s
+          - final_velocity: 1440 ft/s
+          - final_velocity: 1497 ft/s
+          - final_velocity: 1463 ft/s
+          - final_velocity: 1368 ft/s
+  -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=1119.0"
+    desc: ".40 Bedford, Wigle Patch, Powder Velocity Tests"
+    technique: chronograph
+    material: lead
+    diameter: 0.395 in
+    angle: 0 deg
+    data:
+      -
+        date: "2008-09-12"
+        charge: 60 gr
+        desc2: "Goex FFF"
+        data:
+          - initial_velocity: 2024 ft/s
+          - initial_velocity: 2018 ft/s
+          - initial_velocity: 2031 ft/s
+          - initial_velocity: 2014 ft/s
+          - initial_velocity: 2000 ft/s
+          - initial_velocity: 1972 ft/s
+          - initial_velocity: 2028 ft/s
+
+          - initial_velocity: 1977 ft/s
+          - initial_velocity: 1905 ft/s
+          - initial_velocity: 1937 ft/s
+          - initial_velocity: 1972 ft/s
+          - initial_velocity: 1944 ft/s
+
+          - initial_velocity: 1997 ft/s
+          - initial_velocity: 2007 ft/s
+          - initial_velocity: 2005 ft/s
+          - initial_velocity: 2006 ft/s
+          - initial_velocity: 1998 ft/s
+
+          - initial_velocity: 2298 ft/s
+          - initial_velocity: 2367 ft/s
+          - initial_velocity: 2389 ft/s
+          - initial_velocity: 2384 ft/s
+          - initial_velocity: 2378 ft/s
+          - initial_velocity: 2397 ft/s
+
+          - initial_velocity: 2201 ft/s
+          - initial_velocity: 2134 ft/s
+          - initial_velocity: 2168 ft/s
+          - initial_velocity: 2193 ft/s
+          - initial_velocity: 2180 ft/s
+          - initial_velocity: 2195 ft/s
+
+          - initial_velocity: 2332 ft/s
+          - initial_velocity: 2337 ft/s
+          - initial_velocity: 2346 ft/s
+          - initial_velocity: 2360 ft/s
+          - initial_velocity: 2367 ft/s
+          - initial_velocity: 2348 ft/s
+          - initial_velocity: 2351 ft/s
+      -
+        date: "2008-09-13"
+        charge: 75 gr
+        desc2: "Goex FF"
+        data:
+          - initial_velocity: 1945 ft/s
+          - initial_velocity: 1975 ft/s
+          - initial_velocity: 1981 ft/s
+          - initial_velocity: 1987 ft/s
+          - initial_velocity: 1954 ft/s
+          - initial_velocity: 1947 ft/s
+          - initial_velocity: 1954 ft/s
+      -
+        date: "2008-09-13"
+        charge: 75 gr
+        desc2: "Goex FF"
+        data:
+          - initial_velocity: 1872 ft/s
+          - initial_velocity: 1920 ft/s
+          - initial_velocity: 1890 ft/s
+          - initial_velocity: 1904 ft/s
+          - initial_velocity: 1870 ft/s
+          - initial_velocity: 1900 ft/s
+      -
+        date: "2008-09-14"
+        data:
+          -
+            charge: 65 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 2021 ft/s
+              - initial_velocity: 2021 ft/s
+              - initial_velocity: 2021 ft/s
+              - initial_velocity: 2034 ft/s
+              - initial_velocity: 2047 ft/s
+              - initial_velocity: 2020 ft/s
+          -
+            charge: 65 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 2116 ft/s
+              - initial_velocity: 2107 ft/s
+              - initial_velocity: 2105 ft/s
+              -
+                skip: true
+                skip_note: cleaning jag is not a round ball
+              - initial_velocity: 2080 ft/s
+              - initial_velocity: 2079 ft/s
+              - initial_velocity: 2074 ft/s
+          -
+            charge: 75 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 1939 ft/s
+              - initial_velocity: 2038 ft/s
+              - initial_velocity: 1905 ft/s
+              - initial_velocity: 1932 ft/s
+              - initial_velocity: 1834 ft/s
+          -
+            charge: 65 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 2098 ft/s
+              - initial_velocity: 2007 ft/s
+              - initial_velocity: 2016 ft/s
+              - initial_velocity: 2025 ft/s
+              - initial_velocity: 2024 ft/s
+              - initial_velocity: 2021 ft/s
+              - initial_velocity: 2019 ft/s
+              - initial_velocity: 2011 ft/s
+              - initial_velocity: 2033 ft/s
+          -
+            charge: 65 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 2057 ft/s
+              - initial_velocity: 2032 ft/s
+              - initial_velocity: 2020 ft/s
+              - initial_velocity: 2056 ft/s
+              - initial_velocity: 2018 ft/s
+              - initial_velocity: 2065 ft/s
+          -
+            charge: 40 gr
+            diameter: 0.400 in
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 1628 ft/s
+              - initial_velocity: 1678 ft/s
+              - initial_velocity: 1656 ft/s
+              - initial_velocity: 1509 ft/s
+              - initial_velocity: 1396 ft/s
+              - initial_velocity: 1352 ft/s
+              - initial_velocity: 1443 ft/s
+              - initial_velocity: 1461 ft/s
+      -
+        date: "2008-09-14"
+        desc3: "5 or 3 shot averages"
+        data:
+          -
+            charge: 40 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 1637 ft/s
+              - initial_velocity: 1503 ft/s
+          -
+            charge: 40 gr
+            desc2: "Goex FFF"
+            diameter: 0.400 in
+            data:
+              - initial_velocity: 1650 ft/s
+              - initial_velocity: 1667 ft/s
+              - initial_velocity: 1432 ft/s
+              - initial_velocity: 1654 ft/s
+          -
+            charge: 40 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 1642 ft/s
+              - initial_velocity: 1711 ft/s
+          -
+            charge: 65 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 2043 ft/s
+          -
+            charge: 75 gr
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 2044 ft/s
+          -
+            charge: 40 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 1645 ft/s
+              - initial_velocity: 1618 ft/s
+          -
+            charge: 65 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 1945 ft/s
+              - initial_velocity: 1995 ft/s
+          -
+            charge: 50 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 1812 ft/s
+              - initial_velocity: 1995 ft/s
+          -
+            charge: 65 gr
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 2042 ft/s
+          -
+            charge: 75 gr
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 1966 ft/s
+      -
+        date: "2008-09-15"
+        desc3: "Multi shot averages"
+        data:
+          -
+            charge: 80 gr
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 2191 ft/s
+              - initial_velocity: 2178 ft/s
+              - initial_velocity: 2201 ft/s
+          -
+            charge: 90 gr
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 2303 ft/s
+          -
+            charge: 60 gr
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 1954 ft/s
+              - initial_velocity: 1920 ft/s
+      -
+        date: "2008-09-20"
+        desc3: "Multi shot averages"
+        data:
+          -
+            charge: 50 gr
+            desc2: "FF"
+            data:
+              - initial_velocity: 1509 ft/s
+              - initial_velocity: 1500 ft/s
+              - initial_velocity: 1514 ft/s
+              - initial_velocity: 1513 ft/s
+              - initial_velocity: 1505 ft/s
+          -
+            charge: 60 gr
+            desc2: "FF"
+            data:
+              - initial_velocity: 1687 ft/s
+              - initial_velocity: 1670 ft/s
+              - initial_velocity: 1662 ft/s
+              - initial_velocity: 1678 ft/s
+              - initial_velocity: 1668 ft/s
+          -
+            charge: 75 gr
+            desc2: "FF"
+            data:
+              - initial_velocity: 1890 ft/s
+              - initial_velocity: 1885 ft/s
+              - initial_velocity: 1912 ft/s
+              - initial_velocity: 1886 ft/s
+              - initial_velocity: 1915 ft/s
+          -
+            charge: 40 gr
+            desc2: "FFF"
+            data:
+              - initial_velocity: 1389 ft/s
+              - initial_velocity: 1402 ft/s
+              - initial_velocity: 1374 ft/s
+              - initial_velocity: 1441 ft/s
+              - initial_velocity: 1438 ft/s
+          -
+            charge: 50 gr
+            desc2: "FFF"
+            data:
+              - initial_velocity: 1683 ft/s
+              - initial_velocity: 1653 ft/s
+              - initial_velocity: 1668 ft/s
+              - initial_velocity: 1704 ft/s
+              - initial_velocity: 1683 ft/s
+          -
+            charge: 60 gr
+            desc2: "FFF"
+            data:
+              - initial_velocity: 1821 ft/s
+              - initial_velocity: 1830 ft/s
+              - initial_velocity: 1815 ft/s
+              - initial_velocity: 1834 ft/s
+              - initial_velocity: 1830 ft/s
+          -
+            charge: 65 gr
+            diameter: 0.400 in
+            desc2: "FFF"
+            data:
+              - initial_velocity: 1711 ft/s
+              - initial_velocity: 1691 ft/s
+              - initial_velocity: 1672 ft/s
+              - initial_velocity: 1651 ft/s
+              - initial_velocity: 1722 ft/s
+  -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=2333.0"
+    desc: "power difference between swiss 3f an goex 3f"
+    technique: chronograph
+    material: lead
+    angle: 0 deg
+    data:
+      -
+        date: "2008-12-20"
+        data:
+          -
+            charge: 70 gr
+            desc2: "Goex FFF"
+            diameter: 0.380 in
+            data:
+              - initial_velocity: 2186 ft/s
+              - initial_velocity: 2187 ft/s
+              - initial_velocity: 2222 ft/s
+              - initial_velocity: 2215 ft/s
+          -
+            charge: 70 gr
+            desc2: "Swiss FFF"
+            diameter: 0.380 in
+            data:
+              - initial_velocity: 2375 ft/s
+              - initial_velocity: 2367 ft/s
+              - initial_velocity: 2373 ft/s
+              - initial_velocity: 2337 ft/s
+              - initial_velocity: 2341 ft/s
+              - initial_velocity: 2377 ft/s
+              - initial_velocity: 2350 ft/s
+          -
+            charge: 70 gr
+            desc2: "Swiss FF"
+            diameter: 0.380 in
+            data:
+              - initial_velocity: 2284 ft/s
+              - initial_velocity: 2252 ft/s
+              - initial_velocity: 2244 ft/s
+              - initial_velocity: 2265 ft/s
+              - initial_velocity: 2280 ft/s
+              - initial_velocity: 2283 ft/s
+      -
+        date: "2008-12-22"
+        data:
+          -
+            charge: 80 gr
+            desc2: "Goex FFF"
+            diameter: 0.490 in
+            data:
+              - initial_velocity: 1795 ft/s
+              - initial_velocity: 1858 ft/s
+              - initial_velocity: 1829 ft/s
+              - initial_velocity: 1830 ft/s
+              - initial_velocity: 1846 ft/s
+              - initial_velocity: 1838 ft/s
+          -
+            charge: 80 gr
+            desc2: "Swiss FFF"
+            diameter: 0.490 in
+            data:
+              - initial_velocity: 1974 ft/s
+              - initial_velocity: 1974 ft/s
+              - initial_velocity: 1999 ft/s
+              - initial_velocity: 2002 ft/s
+              - initial_velocity: 1974 ft/s
+              - initial_velocity: 1992 ft/s

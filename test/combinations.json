@@ -395,15 +395,15 @@
  {
   "conditions": {
    "angle": "0 deg",
-   "charge": "80 gr",
-   "diameter": "0.490 in",
-   "final_velocity": "1582 ft/s",
+   "charge": "70 gr",
+   "diameter": "0.495 in",
+   "final_velocity": "1608 ft/s",
    "material": "lead",
    "range": "15 ft",
    "temperature": "85 F"
   },
-  "power_factor": 271421.381995494,
-  "time": 0.009350969268039739
+  "power_factor": 330224.08431519533,
+  "time": 0.009200802697768462
  },
  {
   "conditions": {
@@ -484,12 +484,12 @@
  {
   "conditions": {
    "angle": "0 deg",
-   "charge": "10 gr",
-   "diameter": "0.323 in",
-   "initial_velocity": "478 ft/s",
+   "charge": "60 gr",
+   "diameter": "0.395 in",
+   "initial_velocity": "2024 ft/s",
    "material": "lead"
   },
-  "power_factor": 53704.220345704394,
+  "power_factor": 293498.6504799372,
   "time": null
  },
  {
