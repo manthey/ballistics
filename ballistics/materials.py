@@ -70,6 +70,13 @@ MaterialsTable = [{
     'mindensity': 11310,
     'maxdensity': 11370,
     'desc': 'Lead',
+}, {
+    # Stone - several common stones fit these values
+    'names': ['stone'],
+    'density': 2700,
+    'mindensity': 2600,
+    'maxdensity': 27000,
+    'desc': 'Stone',
 }]
 
 

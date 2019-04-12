@@ -1,0 +1,26 @@
+---
+key: nye1648.yml
+ref: "Nye, 1648"
+cms: "Nye, Nathanael.  <i>The Art of Gunnery.</i>  London: William Leak, 1648."
+summary: "This only has a very limited set of actual range information."
+date: "1648"
+data:
+  -
+    ref2: "p. 8 (in Chap. 40)"
+    diameter: 3.25 in
+    diameter_note: From p. 76.
+    mass: 4.75 lb
+    charge: 3 lb
+    data:
+      -
+        angle: 1 deg
+        range: 375 yards
+      -
+        angle: 5 deg
+        range: 416 paces
+      -
+        angle: 7 deg
+        range: 505 yards
+      -
+        angle: 10 deg
+        range: 630 yards

@@ -231,3 +231,39 @@ data:
           -
             angle: 6 quadpt
             range: 3600 singlepace
+  -
+    ref2: "p. 61"
+    desc: "Mine owne Notws of practise in a Morter peece"
+    data:
+      -
+        charge: 3 oz
+        diameter: 5 in
+        material: stone
+        data:
+          -
+            angle: 45 deg
+            range: 750 yards
+          -
+            angle: 50 deg
+            range: 710 yards
+          -
+            angle: 55 deg
+            range: 675 yards
+          -
+            angle: 60 deg
+            range: 620 yards
+          -
+            angle: 65 deg
+            range: 575 yards
+          -
+            angle: 70 deg
+            range: 480 yards
+          -
+            angle: 75 deg
+            range: 360 yards
+          -
+            angle: 80 deg
+            range: 270 yards
+      -
+        skip: true
+        skip_note: The tables from Uffano don't say which morter they are from.
