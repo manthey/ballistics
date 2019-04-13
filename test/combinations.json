@@ -495,6 +495,18 @@
  {
   "conditions": {
    "angle": "0 deg",
+   "charge": "60 gr",
+   "diameter": "0.530 in",
+   "initial_velocity": "1337 ft/s",
+   "material": "lead",
+   "temperature": "60 F"
+  },
+  "power_factor": 309374.2965547133,
+  "time": null
+ },
+ {
+  "conditions": {
+   "angle": "0 deg",
    "charge": "3.00 kg",
    "diameter": "0.1596 m",
    "initial_velocity": "415 m/s",

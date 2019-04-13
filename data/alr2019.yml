@@ -1,133 +1,11 @@
 ---
 key: alr2019
-ref: "American Long Rifles, 2019"
-cms: "\"American Long Rifles.\"  Accessed April 11, 2019. https://americanlongrifles.org/forum."
+ref: "American Longrifles, 2019"
+cms: "\"American Longrifles.\"  Accessed April 11, 2019. https://americanlongrifles.org/forum."
 link: https://americanlongrifles.org/forum
 summary: "Extensive forum for rifle enthusiasts."
 date: "2019"
 data:
-  -
-    ref2: "http://americanlongrifles.org/forum/index.php?topic=32573.0"
-    date: "2014-09-28"
-    desc: "Factors Affecting Muzzle Velocity Round 1"
-    technique: chronograph
-    material: lead
-    diameter: 0.495 in
-    charge: 70 gr
-    desc2: "Goex FF"
-    temperature: 85 F
-    angle: 0 deg
-    range: 15 ft
-    data:
-      -
-        desc2: "Breech plug shape"
-        data:
-          - final_velocity: 1608 ft/s
-          - final_velocity: 1613 ft/s
-          - final_velocity: 1618 ft/s
-          - final_velocity: 1598 ft/s
-          - final_velocity: 1670 ft/s
-          - final_velocity: 1642 ft/s
-          - final_velocity: 1636 ft/s
-          - final_velocity: 1612 ft/s
-          - final_velocity: 1571 ft/s
-          - final_velocity: 1581 ft/s
-          - final_velocity: 1617 ft/s
-          - final_velocity: 1570 ft/s
-          - final_velocity: 1596 ft/s
-          - final_velocity: 1589 ft/s
-          - final_velocity: 1610 ft/s
-          - final_velocity: 1553 ft/s
-          - final_velocity: 1485 ft/s
-          - final_velocity: 1515 ft/s
-          - final_velocity: 1475 ft/s
-          - final_velocity: 1546 ft/s
-          - final_velocity: 1514 ft/s
-          - final_velocity: 1562 ft/s
-          - final_velocity: 1587 ft/s
-          - final_velocity: 1519 ft/s
-          - final_velocity: 1521 ft/s
-          - final_velocity: 1501 ft/s
-          - final_velocity: 1496 ft/s
-          - final_velocity: 1515 ft/s
-          - final_velocity: 1528 ft/s
-          - final_velocity: 1608 ft/s
-      -
-        desc2: "Flash hole size"
-        data:
-          - final_velocity: 1447 ft/s
-          - final_velocity: 1490 ft/s
-          - final_velocity: 1491 ft/s
-          - final_velocity: 1472 ft/s
-          - final_velocity: 1515 ft/s
-          - final_velocity: 1552 ft/s
-          - final_velocity: 1521 ft/s
-          - final_velocity: 1525 ft/s
-          - final_velocity: 1558 ft/s
-          - final_velocity: 1537 ft/s
-          - final_velocity: 1525 ft/s
-          - final_velocity: 1541 ft/s
-          - final_velocity: 1513 ft/s
-          - final_velocity: 1512 ft/s
-          - final_velocity: 1522 ft/s
-          - final_velocity: 1522 ft/s
-          - final_velocity: 1497 ft/s
-          - final_velocity: 1529 ft/s
-          - final_velocity: 1499 ft/s
-          - final_velocity: 1523 ft/s
-          - final_velocity: 1511 ft/s
-          - final_velocity: 1494 ft/s
-          - final_velocity: 1491 ft/s
-          - final_velocity: 1491 ft/s
-          - final_velocity: 1503 ft/s
-          - final_velocity: 1511 ft/s
-          - final_velocity: 1551 ft/s
-          - final_velocity: 1544 ft/s
-          - final_velocity: 1452 ft/s
-          - final_velocity: 1479 ft/s
-          - final_velocity: 1459 ft/s
-          - final_velocity: 1472 ft/s
-          - final_velocity: 1445 ft/s
-          - final_velocity: 1469 ft/s
-          - final_velocity: 1492 ft/s
-          - final_velocity: 1414 ft/s
-          - final_velocity: 1475 ft/s
-          - final_velocity: 1476 ft/s
-          - final_velocity: 1440 ft/s
-          - final_velocity: 1497 ft/s
-      -
-        desc2: "More on flash hole size"
-        data:
-          - final_velocity: 1553 ft/s
-          - final_velocity: 1485 ft/s
-          - final_velocity: 1515 ft/s
-          - final_velocity: 1475 ft/s
-          - final_velocity: 1546 ft/s
-          - final_velocity: 1506 ft/s
-          - final_velocity: 1514 ft/s
-          - final_velocity: 1562 ft/s
-          - final_velocity: 1587 ft/s
-          - final_velocity: 1519 ft/s
-          - final_velocity: 1521 ft/s
-          - final_velocity: 1501 ft/s
-          - final_velocity: 1496 ft/s
-          - final_velocity: 1515 ft/s
-          - final_velocity: 1528 ft/s
-          - final_velocity: 1350 ft/s
-          - final_velocity: 1407 ft/s
-          - final_velocity: 1332 ft/s
-          - final_velocity: 1419 ft/s
-          - final_velocity: 1404 ft/s
-          - final_velocity: 1405 ft/s
-          - final_velocity: 1389 ft/s
-          - final_velocity: 1392 ft/s
-          - final_velocity: 1414 ft/s
-          - final_velocity: 1476 ft/s
-          - final_velocity: 1476 ft/s
-          - final_velocity: 1440 ft/s
-          - final_velocity: 1497 ft/s
-          - final_velocity: 1463 ft/s
-          - final_velocity: 1368 ft/s
   -
     ref2: "http://americanlongrifles.org/forum/index.php?topic=1119.0"
     desc: ".40 Bedford, Wigle Patch, Powder Velocity Tests"
@@ -496,3 +374,341 @@ data:
               - initial_velocity: 2002 ft/s
               - initial_velocity: 1974 ft/s
               - initial_velocity: 1992 ft/s
+  -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=9460.0"
+    date: "2010-03-12"
+    desc: ".54 cal. Load Data"
+    technique: chronograph
+    material: lead
+    diameter: 0.530 in
+    temperature: 60 F
+    angle: 0 deg
+    data:
+      -
+        desc2: "Swiss FF"
+        data:
+          -
+            charge: 60 gr
+            initial_velocity: 1337 ft/s
+          -
+            charge: 70 gr
+            initial_velocity: 1496 ft/s
+          -
+            charge: 80 gr
+            initial_velocity: 1611 ft/s
+          -
+            charge: 90 gr
+            initial_velocity: 1727 ft/s
+          -
+            charge: 100 gr
+            initial_velocity: 1828 ft/s
+      -
+        desc2: "Swiss FFF"
+        data:
+          -
+            charge: 60 gr
+            initial_velocity: 1481 ft/s
+          -
+            charge: 70 gr
+            initial_velocity: 1635 ft/s
+          -
+            charge: 80 gr
+            initial_velocity: 1714 ft/s
+          -
+            charge: 90 gr
+            initial_velocity: 1843 ft/s
+          -
+            charge: 100 gr
+            initial_velocity: 1983 ft/s
+      -
+        desc2: "Goex FF"
+        data:
+          -
+            charge: 60 gr
+            initial_velocity: 1224 ft/s
+          -
+            charge: 70 gr
+            initial_velocity: 1343 ft/s
+          -
+            charge: 80 gr
+            initial_velocity: 1510 ft/s
+          -
+            charge: 90 gr
+            initial_velocity: 1580 ft/s
+          -
+            charge: 100 gr
+            initial_velocity: 1637 ft/s
+      -
+        desc2: "Goex FFF"
+        data:
+          -
+            charge: 60 gr
+            initial_velocity: 1350 ft/s
+          -
+            charge: 70 gr
+            initial_velocity: 1473 ft/s
+          -
+            charge: 80 gr
+            initial_velocity: 1577 ft/s
+          -
+            charge: 90 gr
+            initial_velocity: 1699 ft/s
+          -
+            charge: 100 gr
+            initial_velocity: 1780 ft/s
+      -
+        data:
+          -
+            desc2: "Goex FFF"
+            charge: 80 gr
+            initial_velocity: 1690 ft/s
+          -
+            desc2: "Goex FFF"
+            charge: 90 gr
+            initial_velocity: 1800 ft/s
+          -
+            desc2: "Goex FF"
+            charge: 110 gr
+            initial_velocity: 1820 ft/s
+          -
+            desc2: "Goex FF"
+            charge: 110 gr
+            initial_velocity: 1795 ft/s
+  -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=21527.0"
+    date: "2012-03-09"
+    desc: "FFG vs FFFG- weight versus volume and velocity"
+    technique: chronograph
+    material: lead
+    diameter: 0.395 in
+    angle: 0 deg
+    data:
+      -
+        desc2: "Goex FFF"
+        charge: 40 gr
+        data:
+          - initial_velocity: 1795 ft/s
+          - initial_velocity: 1676 ft/s
+          - initial_velocity: 1600 ft/s
+          - initial_velocity: 1615 ft/s
+          - initial_velocity: 1644 ft/s
+          - initial_velocity: 1652 ft/s
+      -
+        desc2: "Goex FFF"
+        charge: 55 gr
+        data:
+          - initial_velocity: 1892 ft/s
+          - initial_velocity: 1928 ft/s
+          - initial_velocity: 1991 ft/s
+          - initial_velocity: 1937 ft/s
+          - initial_velocity: 1937 ft/s
+      -
+        desc2: "Goex FFF"
+        charge: 70 gr
+        data:
+          - initial_velocity: 2137 ft/s
+          - initial_velocity: 2183 ft/s
+          - initial_velocity: 2210 ft/s
+          - initial_velocity: 2196 ft/s
+          - initial_velocity: 2135 ft/s
+      -
+        desc2: "Goex FFF"
+        charge: 80 gr
+        data:
+          - initial_velocity: 2319 ft/s
+          - initial_velocity: 2340 ft/s
+          - initial_velocity: 2308 ft/s
+          - initial_velocity: 2288 ft/s
+          - initial_velocity: 2319 ft/s
+      -
+        desc2: "Goex FF"
+        charge: 40 gr
+        data:
+          - initial_velocity: 1558 ft/s
+          - initial_velocity: 1467 ft/s
+          - initial_velocity: 1420 ft/s
+          - initial_velocity: 1399 ft/s
+          - initial_velocity: 1356 ft/s
+          - initial_velocity: 1387 ft/s
+      -
+        desc2: "Goex FF"
+        charge: 55 gr
+        data:
+          - initial_velocity: 1646 ft/s
+          - initial_velocity: 1707 ft/s
+          - initial_velocity: 1730 ft/s
+          - initial_velocity: 1697 ft/s
+          - initial_velocity: 1722 ft/s
+          - initial_velocity: 1718 ft/s
+      -
+        desc2: "Goex FF"
+        charge: 70 gr
+        data:
+          - initial_velocity: 1960 ft/s
+          - initial_velocity: 1996 ft/s
+          - initial_velocity: 2000 ft/s
+          - initial_velocity: 2012 ft/s
+          - initial_velocity: 2009 ft/s
+          - initial_velocity: 2007 ft/s
+      -
+        desc2: "Goex FF"
+        charge: 90 gr
+        data:
+          - initial_velocity: 2216 ft/s
+          - initial_velocity: 2236 ft/s
+          - initial_velocity: 2265 ft/s
+          - initial_velocity: 2279 ft/s
+          - initial_velocity: 2285 ft/s
+          - initial_velocity: 2167 ft/s
+  -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=32573.0"
+    date: "2014-09-28"
+    desc: "Factors Affecting Muzzle Velocity Round 1"
+    technique: chronograph
+    material: lead
+    diameter: 0.495 in
+    charge: 70 gr
+    desc2: "Goex FF"
+    temperature: 85 F
+    angle: 0 deg
+    range: 15 ft
+    data:
+      -
+        desc2: "Breech plug shape"
+        data:
+          - final_velocity: 1608 ft/s
+          - final_velocity: 1613 ft/s
+          - final_velocity: 1618 ft/s
+          - final_velocity: 1598 ft/s
+          - final_velocity: 1670 ft/s
+          - final_velocity: 1642 ft/s
+          - final_velocity: 1636 ft/s
+          - final_velocity: 1612 ft/s
+          - final_velocity: 1571 ft/s
+          - final_velocity: 1581 ft/s
+          - final_velocity: 1617 ft/s
+          - final_velocity: 1570 ft/s
+          - final_velocity: 1596 ft/s
+          - final_velocity: 1589 ft/s
+          - final_velocity: 1610 ft/s
+          - final_velocity: 1553 ft/s
+          - final_velocity: 1485 ft/s
+          - final_velocity: 1515 ft/s
+          - final_velocity: 1475 ft/s
+          - final_velocity: 1546 ft/s
+          - final_velocity: 1514 ft/s
+          - final_velocity: 1562 ft/s
+          - final_velocity: 1587 ft/s
+          - final_velocity: 1519 ft/s
+          - final_velocity: 1521 ft/s
+          - final_velocity: 1501 ft/s
+          - final_velocity: 1496 ft/s
+          - final_velocity: 1515 ft/s
+          - final_velocity: 1528 ft/s
+          - final_velocity: 1608 ft/s
+      -
+        desc2: "Flash hole size"
+        data:
+          - final_velocity: 1447 ft/s
+          - final_velocity: 1490 ft/s
+          - final_velocity: 1491 ft/s
+          - final_velocity: 1472 ft/s
+          - final_velocity: 1515 ft/s
+          - final_velocity: 1552 ft/s
+          - final_velocity: 1521 ft/s
+          - final_velocity: 1525 ft/s
+          - final_velocity: 1558 ft/s
+          - final_velocity: 1537 ft/s
+          - final_velocity: 1525 ft/s
+          - final_velocity: 1541 ft/s
+          - final_velocity: 1513 ft/s
+          - final_velocity: 1512 ft/s
+          - final_velocity: 1522 ft/s
+          - final_velocity: 1522 ft/s
+          - final_velocity: 1497 ft/s
+          - final_velocity: 1529 ft/s
+          - final_velocity: 1499 ft/s
+          - final_velocity: 1523 ft/s
+          - final_velocity: 1511 ft/s
+          - final_velocity: 1494 ft/s
+          - final_velocity: 1491 ft/s
+          - final_velocity: 1491 ft/s
+          - final_velocity: 1503 ft/s
+          - final_velocity: 1511 ft/s
+          - final_velocity: 1551 ft/s
+          - final_velocity: 1544 ft/s
+          - final_velocity: 1452 ft/s
+          - final_velocity: 1479 ft/s
+          - final_velocity: 1459 ft/s
+          - final_velocity: 1472 ft/s
+          - final_velocity: 1445 ft/s
+          - final_velocity: 1469 ft/s
+          - final_velocity: 1492 ft/s
+          - final_velocity: 1414 ft/s
+          - final_velocity: 1475 ft/s
+          - final_velocity: 1476 ft/s
+          - final_velocity: 1440 ft/s
+          - final_velocity: 1497 ft/s
+      -
+        desc2: "More on flash hole size"
+        data:
+          - final_velocity: 1553 ft/s
+          - final_velocity: 1485 ft/s
+          - final_velocity: 1515 ft/s
+          - final_velocity: 1475 ft/s
+          - final_velocity: 1546 ft/s
+          - final_velocity: 1506 ft/s
+          - final_velocity: 1514 ft/s
+          - final_velocity: 1562 ft/s
+          - final_velocity: 1587 ft/s
+          - final_velocity: 1519 ft/s
+          - final_velocity: 1521 ft/s
+          - final_velocity: 1501 ft/s
+          - final_velocity: 1496 ft/s
+          - final_velocity: 1515 ft/s
+          - final_velocity: 1528 ft/s
+          - final_velocity: 1350 ft/s
+          - final_velocity: 1407 ft/s
+          - final_velocity: 1332 ft/s
+          - final_velocity: 1419 ft/s
+          - final_velocity: 1404 ft/s
+          - final_velocity: 1405 ft/s
+          - final_velocity: 1389 ft/s
+          - final_velocity: 1392 ft/s
+          - final_velocity: 1414 ft/s
+          - final_velocity: 1476 ft/s
+          - final_velocity: 1476 ft/s
+          - final_velocity: 1440 ft/s
+          - final_velocity: 1497 ft/s
+          - final_velocity: 1463 ft/s
+          - final_velocity: 1368 ft/s
+  -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=32720.0"
+    date: "2014-10-09"
+    desc: "Chronographed Loads in My Custom Engraved .54 Hawken"
+    technique: chronograph
+    material: lead
+    diameter: 0.530 in
+    angle: 0 deg
+    data:
+      -
+        desc2: "Goex FFF"
+        charge: 80 gr
+        data:
+          - initial_velocity: 1576 ft/s
+          - initial_velocity: 1662 ft/s
+          - initial_velocity: 1563 ft/s
+          - initial_velocity: 1582 ft/s
+          - initial_velocity: 1547 ft/s
+      -
+        desc2: "Goex FF"
+        charge: 80 gr
+        data:
+          - initial_velocity: 1577 ft/s
+          - initial_velocity: 1607 ft/s
+          - initial_velocity: 1528 ft/s
+          - initial_velocity: 1576 ft/s
+          - initial_velocity: 1578 ft/s
+      -
+        skip: true
+        skip_note: There are some rounds with Old Eynsford, but I can't read them
