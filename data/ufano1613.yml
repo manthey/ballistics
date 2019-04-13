@@ -1,0 +1,10 @@
+---
+key: ufano1613
+ref: "Ufano, 1613"
+cms: "Ufano, Diego.  <i>Tratado Dela Artillertia.</i>  Brusselas: Ivan Momarte, 1613."
+summary: "This includes basic geometry and descriptions of various artillery pieces."
+date: "1613"
+data:
+  -
+    skip: true
+    skip_note: The ranges given are a function of the cannon weight, seemingly, and are completely preposterous.

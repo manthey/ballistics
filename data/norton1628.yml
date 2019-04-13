@@ -2,7 +2,7 @@
 key: norton1628
 ref: "Norton, 1628"
 cms: "Norton, Robert.  <i>The Gunner, Shewing the Whole Practise of Artillery.</i>  London: Humphrey Robinson, 1628."
-summary: "This includes basic geometry and descriptions of various artillery pieces."
+summary: "This includes basic geometry and descriptions of various artillery pieces.  Most seems to be translated from Ufano, 1613."
 date: "1628"
 data:
   -
@@ -233,7 +233,7 @@ data:
             range: 3600 singlepace
   -
     ref2: "p. 61"
-    desc: "Mine owne Notws of practise in a Morter peece"
+    desc: "Mine owne Notes of practise in a Morter peece"
     data:
       -
         charge: 3 oz
