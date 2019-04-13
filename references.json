@@ -6,10 +6,10 @@
   "summary": "An alphabetical listing of information, largely compiled from sources at Woolwich."
  },
  "alr2019": {
-  "cms": "\"American Long Rifles.\"  Accessed April 11, 2019. https://americanlongrifles.org/forum.",
+  "cms": "\"American Longrifles.\"  Accessed April 11, 2019. https://americanlongrifles.org/forum.",
   "key": "alr2019",
   "link": "https://americanlongrifles.org/forum",
-  "ref": "American Long Rifles, 2019",
+  "ref": "American Longrifles, 2019",
   "summary": "Extensive forum for rifle enthusiasts."
  },
  "anderson1696": {
@@ -317,7 +317,7 @@
   "cms": "Ramage, C. Kenneth, editor. <i>Lyman Black Powder Handbook.</i> Middlefield, CT: Lyman Publications, 1975.",
   "key": "lyman1975",
   "ref": "Lyman, 1975",
-  "summary": "This is a guide for shooters and hunters.  Their load charts are based on firing a series of bullets and averaging them.  They also have trajectory charts based on a ballistics model.  It seems that each firearm was measured multiple times, avereraged, and then muzzle velocities were computed based on that average, a ballistic coefficient for round ball, and a ballistic modelling program."
+  "summary": "This is a guide for shooters and hunters.  Their load charts are based on firing a series of bullets and averaging them.  They also have trajectory charts based on a ballistics model.  It seems that each velocity was measured multiple times and averaged.  For ballistics tables, values were computed based on that average, a ballistic coefficient for round ball, and a ballistic modelling program."
  },
  "maxwell1870": {
   "cms": "Maxwell, H. H.  \"The New Field Artillery of Mattei-Rossi.  Translated from the Italian of 'L'Opinione,' 23rd-26th October 1868.\" <i>Minutes of Proceedings of the Royal Artillery Institution</i> VI (1870): 325-334",
