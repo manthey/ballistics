@@ -423,7 +423,7 @@
   "cms": "Norton, Robert.  <i>The Gunner, Shewing the Whole Practise of Artillery.</i>  London: Humphrey Robinson, 1628.",
   "key": "norton1628",
   "ref": "Norton, 1628",
-  "summary": "This includes basic geometry and descriptions of various artillery pieces."
+  "summary": "This includes basic geometry and descriptions of various artillery pieces.  Most seems to be translated from Ufano, 1613."
  },
  "norwest2001": {
   "cms": "\"Practical Chronographic Comparison of Goex, KIK and Elephant Brand of Black Powder.\" Comparing Goex, KIK and Elephant Brands of Black Powder. Accessed February 28, 2005. http://www.norwestcompany.com/comparison.htm.",
@@ -620,6 +620,12 @@
   "key": "tromenec1873",
   "ref": "Tromenec, 1873",
   "summary": "Force of power measured via calorimeter."
+ },
+ "ufano1613": {
+  "cms": "Ufano, Diego.  <i>Tratado Dela Artillertia.</i>  Brusselas: Ivan Momarte, 1613.",
+  "key": "ufano1613",
+  "ref": "Ufano, 1613",
+  "summary": "This includes basic geometry and descriptions of various artillery pieces."
  },
  "west1991": {
   "cms": "West, Jenny.  <i>Gunpowder, Government and War in the Mid-Eighteenth Century.</i>  Woodbridge: The Boydell Press, 1991.",
