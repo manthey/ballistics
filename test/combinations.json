@@ -445,13 +445,13 @@
  {
   "conditions": {
    "angle": "0 deg",
-   "charge": "16 lbit",
-   "diameter": "41 punti",
-   "initial_velocity": "900 ftit/sec",
-   "mass": "32 lbit",
-   "material": "iron"
+   "charge": "95 gr",
+   "diameter": "0.575 in",
+   "initial_velocity": "1424 ft/s",
+   "mass": "285 gr",
+   "material": "lead"
   },
-  "power_factor": 213963.85381257787,
+  "power_factor": 282579.83225856005,
   "time": null
  },
  {

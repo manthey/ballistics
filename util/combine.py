@@ -58,13 +58,13 @@ def combine(opts):  # noqa
     basedir = opts.get('results', 'results')
     sources = 0
     for file in sorted(os.listdir(basedir)):  # noqa
+        used = False
         path = os.path.join(basedir, file)
         try:
             data = json.load(open(path))
         except Exception:
             print('Failed to parse file %s' % path)
             raise
-        sources += 1
         references.setdefault(data['key'], {})
         for key in ('key', 'ref', 'cms', 'summary', 'link', 'details'):
             if key in data:
@@ -142,12 +142,15 @@ def combine(opts):  # noqa
                             if key in opts['fields']}
                 if not skip:
                     total.append(item)
+                    used = True
                 if opts.get('grid') or opts.get('adjust'):
                     compile_grid(ReMnGrid, entry, opts, item)
             except Exception:
                 print('Failed on %s: %d\n%r' % (file, entry.get('idx', 0),
                                                 entry.get('conditions')))
                 print(traceback.format_exc().strip())
+        if used:
+            sources += 1
     output_files(total, 'totallist', opts)
     output_files(trajectories, 'trajectories', opts)
     print('%d samples from %d sources' % (len(total), sources))

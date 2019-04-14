@@ -124,7 +124,7 @@ export default {
             tdata = plotdata.filter(d => { return d.technique == technique; }),
             color = this.colors[tidx % this.colors.length];
         return {
-          // data: tdata,
+          data: tdata,
           x: tdata.map(d => d.date_filled),
           y: tdata.map(d => d.power_factor),
           hovertext: tdata.map(d => {

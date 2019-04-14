@@ -475,6 +475,33 @@ data:
             charge: 110 gr
             initial_velocity: 1795 ft/s
   -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=16873.0"
+    date: "2011-06-11"
+    desc: "Topic: Testing The .40"
+    technique: chronograph
+    material: lead
+    diameter: 0.390 in
+    angle: 0 deg
+    data:
+      -
+        desc2: "Goex FFF"
+        data:
+          -
+            charge: 30 gr
+            initial_velocity: 1371 ft/s
+          -
+            charge: 35 gr
+            initial_velocity: 1449 ft/s
+          -
+            charge: 40 gr
+            initial_velocity: 1678 ft/s
+          -
+            charge: 60 gr
+            initial_velocity: 1848 ft/s
+          -
+            charge: 65 gr
+            initial_velocity: 1920 ft/s
+  -
     ref2: "http://americanlongrifles.org/forum/index.php?topic=21527.0"
     date: "2012-03-09"
     desc: "FFG vs FFFG- weight versus volume and velocity"
@@ -560,6 +587,32 @@ data:
           - initial_velocity: 2279 ft/s
           - initial_velocity: 2285 ft/s
           - initial_velocity: 2167 ft/s
+  -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=28028.0"
+    date: "2013-09-23"
+    desc: "recovered round ball"
+    technique: chronograph
+    material: lead
+    angle: 0 deg
+    data:
+      -
+        date: "1988"
+        desc2: "Goex FF"
+        diameter: 0.575 in
+        mass: 285 gr
+        data:
+          -
+            charge: 95 gr
+            initial_velocity: 1424 ft/s
+          -
+            charge: 140 gr
+            initial_velocity: 1683 ft/s
+          -
+            charge: 160 gr
+            initial_velocity: 1810 ft/s
+          -
+            charge: 200 gr
+            initial_velocity: 1850 ft/s
   -
     ref2: "http://americanlongrifles.org/forum/index.php?topic=32573.0"
     date: "2014-09-28"
@@ -712,3 +765,618 @@ data:
       -
         skip: true
         skip_note: There are some rounds with Old Eynsford, but I can't read them
+  -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=36771.0"
+    date: "2013-06-01"
+    desc: "Old Eynsford Adventures in my .54 Bridger Hawken"
+    technique: chronograph
+    material: lead
+    diameter: 0.530 in
+    angle: 0 deg
+    data:
+      -
+        date: "2013-05-31"
+        data:
+          -
+            desc2: "Old Eynsford FFF"
+            charge: 106.4 gr
+            data:
+              - initial_velocity: 1891 ft/s
+              - initial_velocity: 1723 ft/s
+              - initial_velocity: 1717 ft/s
+              - initial_velocity: 1691 ft/s
+              - initial_velocity: 1789 ft/s
+              - initial_velocity: 1766 ft/s
+              - initial_velocity: 1768 ft/s
+              - initial_velocity: 1823 ft/s
+          -
+            desc2: "Old Eynsford FFF"
+            charge: 100 gr
+            data:
+              - initial_velocity: 1797 ft/s
+              - initial_velocity: 1717 ft/s
+              - initial_velocity: 1740 ft/s
+              - initial_velocity: 1879 ft/s
+              - initial_velocity: 1965 ft/s
+              - initial_velocity: 1909 ft/s
+          -
+            desc2: "Old Eynsford 1 1/2 F"
+            charge: 102.6 gr
+            data:
+              - initial_velocity: 1726 ft/s
+              - initial_velocity: 1776 ft/s
+              - initial_velocity: 1819 ft/s
+              - initial_velocity: 1820 ft/s
+              - initial_velocity: 1823 ft/s
+              - initial_velocity: 1828 ft/s
+              - initial_velocity: 1787 ft/s
+          -
+            desc2: "Old Eynsford 1 1/2 F"
+            charge: 100 gr
+            data:
+              - initial_velocity: 1772 ft/s
+              - initial_velocity: 1792 ft/s
+              - initial_velocity: 1794 ft/s
+              - initial_velocity: 1797 ft/s
+              - initial_velocity: 1818 ft/s
+      -
+        date: "2013-06-02"
+        data:
+          -
+            desc2: "Goex FFF"
+            charge: 100 gr
+            data:
+              - initial_velocity: 1646 ft/s
+              - initial_velocity: 1719 ft/s
+              - initial_velocity: 1804 ft/s
+              - initial_velocity: 1769 ft/s
+              - initial_velocity: 1801 ft/s
+              - initial_velocity: 1845 ft/s
+              - initial_velocity: 1820 ft/s
+              - initial_velocity: 1799 ft/s
+          -
+            desc2: "Old Eynsford FFF"
+            charge: 100 gr
+            data:
+              - initial_velocity: 1880 ft/s
+              - initial_velocity: 1863 ft/s
+              - initial_velocity: 1845 ft/s
+              - initial_velocity: 1963 ft/s
+              - initial_velocity: 1970 ft/s
+              - initial_velocity: 1856 ft/s
+              - initial_velocity: 1805 ft/s
+
+      -
+        date: "2013-06-02"
+        diameter: 0.562 in
+        data:
+          -
+            desc2: "Old Eynsford FFF"
+            charge: 100 gr
+            data:
+              - initial_velocity: 1543 ft/s
+              - initial_velocity: 1406 ft/s
+              - initial_velocity: 1555 ft/s
+              - initial_velocity: 1594 ft/s
+              - initial_velocity: 1684 ft/s
+              - initial_velocity: 1579 ft/s
+              - initial_velocity: 1632 ft/s
+          -
+            desc2: "Old Eynsford 1 1/2 F"
+            charge: 100 gr
+            data:
+              - initial_velocity: 1605 ft/s
+              - initial_velocity: 1628 ft/s
+              - initial_velocity: 1604 ft/s
+              - initial_velocity: 1616 ft/s
+              - initial_velocity: 1606 ft/s
+              - initial_velocity: 1617 ft/s
+              - initial_velocity: 1583 ft/s
+      -
+        date: "2013-06-04"
+        data:
+          -
+            desc2: "Goex FFF"
+            charge: 80 gr
+            data:
+              - initial_velocity: 1574 ft/s
+              - initial_velocity: 1613 ft/s
+              - initial_velocity: 1582 ft/s
+              - initial_velocity: 1591 ft/s
+              - initial_velocity: 1663 ft/s
+              - initial_velocity: 1579 ft/s
+              - initial_velocity: 1676 ft/s
+              - initial_velocity: 1611 ft/s
+          -
+            desc2: "Old Eynsford FFF"
+            charge: 80 gr
+            data:
+              - initial_velocity: 1642 ft/s
+              - initial_velocity: 1708 ft/s
+              - initial_velocity: 1723 ft/s
+              - initial_velocity: 1627 ft/s
+              - initial_velocity: 1672 ft/s
+              - initial_velocity: 1676 ft/s
+              - initial_velocity: 1718 ft/s
+              - initial_velocity: 1694 ft/s
+              - initial_velocity: 1801 ft/s
+          -
+            desc2: "Old Eynsford 1 1/2 F"
+            charge: 80 gr
+            data:
+              - initial_velocity: 1579 ft/s
+              - initial_velocity: 1569 ft/s
+              - initial_velocity: 1557 ft/s
+              - initial_velocity: 1583 ft/s
+              - initial_velocity: 1559 ft/s
+              - initial_velocity: 1581 ft/s
+              - initial_velocity: 1555 ft/s
+              - initial_velocity: 1546 ft/s
+  -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=52212.0"
+    date: "2018-12-23"
+    desc: "Powder Comparisons, Goex, Olde Enynsford and Swiss"
+    technique: chronograph
+    material: lead
+    angle: 0 deg
+    data:
+      -
+        date: "2004-03-07"
+        desc2: "Charge by volume"
+        diameter: 0.380 in
+        charge: 70 gr
+        data:
+          -
+            desc3: "Goex FFF"
+            initial_velocity: 2201 ft/s
+          -
+            desc3: "Swiss FFF"
+            initial_velocity: 2361 ft/s
+          -
+            desc3: "Swiss FF"
+            initial_velocity: 2271 ft/s
+      -
+        date: "2014-12-05"
+        diameter: 0.440 in
+        charge: 70 gr
+        data:
+          -
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 1654 ft/s
+              - initial_velocity: 1745 ft/s
+              - initial_velocity: 1751 ft/s
+              - initial_velocity: 1721 ft/s
+              - initial_velocity: 1731 ft/s
+          -
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 1820 ft/s
+              - initial_velocity: 1803 ft/s
+              - initial_velocity: 1853 ft/s
+              - initial_velocity: 1832 ft/s
+              - initial_velocity: 1786 ft/s
+              - initial_velocity: 1673 ft/s
+              - initial_velocity: 1829 ft/s
+      -
+        date: "2014-12-08"
+        diameter: 0.440 in
+        charge: 70 gr
+        data:
+          -
+            desc2: "Old Eynsford FF"
+            data:
+              - initial_velocity: 1833 ft/s
+              - initial_velocity: 1785 ft/s
+              - initial_velocity: 1832 ft/s
+              - initial_velocity: 1870 ft/s
+              - initial_velocity: 1826 ft/s
+          -
+            desc2: "Old Eynsford 1 1/2 F"
+            data:
+              - initial_velocity: 1801 ft/s
+              - initial_velocity: 1845 ft/s
+              - initial_velocity: 1831 ft/s
+              - initial_velocity: 1811 ft/s
+              - initial_velocity: 1832 ft/s
+          -
+            desc2: "Swiss 1 1/2 F"
+            data:
+              - initial_velocity: 1754 ft/s
+              - initial_velocity: 1774 ft/s
+              - initial_velocity: 1792 ft/s
+              - initial_velocity: 1747 ft/s
+              - initial_velocity: 1776 ft/s
+              - initial_velocity: 1744 ft/s
+              - initial_velocity: 1748 ft/s
+              - initial_velocity: 1733 ft/s
+              - initial_velocity: 1719 ft/s
+              - initial_velocity: 1738 ft/s
+      -
+        date: "2018-10-29"
+        diameter: 0.490 in
+        charge: 50 gr
+        data:
+          -
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 1410 ft/s
+              - initial_velocity: 1302 ft/s
+              - initial_velocity: 1322 ft/s
+              - initial_velocity: 1364 ft/s
+              - initial_velocity: 1336 ft/s
+              - initial_velocity: 1352 ft/s
+          -
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 1268 ft/s
+              - initial_velocity: 1292 ft/s
+              - initial_velocity: 1265 ft/s
+              - initial_velocity: 1264 ft/s
+      -
+        date: "2018-10-29"
+        diameter: 0.490 in
+        charge: 80 gr
+        data:
+          -
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 1505 ft/s
+              - initial_velocity: 1536 ft/s
+              - initial_velocity: 1592 ft/s
+              - initial_velocity: 1558 ft/s
+          -
+            desc2: "Old Eynsford FF"
+            data:
+              - initial_velocity: 1805 ft/s
+              - initial_velocity: 1757 ft/s
+              - initial_velocity: 1765 ft/s
+              - initial_velocity: 1910 ft/s
+              - initial_velocity: 1730 ft/s
+              - initial_velocity: 1784 ft/s
+      -
+        skip: true
+        skip_note: 2013-05-13 results already included
+      -
+        date: "2012-11-16"
+        diameter: 0.570 in
+        charge: 117 gr
+        data:
+          -
+            desc2: "Swiss 1 1/2 F"
+            data:
+              - initial_velocity: 1678 ft/s
+              - initial_velocity: 1661 ft/s
+              - initial_velocity: 1648 ft/s
+              - initial_velocity: 1621 ft/s
+              - initial_velocity: 1628 ft/s
+      -
+        skip: true
+        skip_note: 2013-06-02 results already included
+      -
+        date: "2012-11-15"
+        diameter: 0.570 in
+        charge: 117 gr
+        data:
+          -
+            desc2: "Swiss 1 1/2 F"
+            data:
+              - initial_velocity: 1578 ft/s
+              - initial_velocity: 1578 ft/s
+              - initial_velocity: 1737 ft/s
+              - initial_velocity: 1717 ft/s
+              - initial_velocity: 1633 ft/s
+              - initial_velocity: 1711 ft/s
+              - initial_velocity: 1670 ft/s
+              - initial_velocity: 1675 ft/s
+      -
+        date: "2012-11-16"
+        diameter: 0.570 in
+        charge: 100 gr
+        data:
+          -
+            desc2: "Swiss FFF"
+            data:
+              - initial_velocity: 1678 ft/s
+              - initial_velocity: 1653 ft/s
+              - initial_velocity: 1686 ft/s
+              - initial_velocity: 1657 ft/s
+              - initial_velocity: 1634 ft/s
+      -
+        date: "2012-11-16"
+        diameter: 0.570 in
+        charge: 109 gr
+        data:
+          -
+            desc2: "Swiss FF"
+            data:
+              - initial_velocity: 1780 ft/s
+              - initial_velocity: 1753 ft/s
+              - initial_velocity: 1766 ft/s
+              - initial_velocity: 1763 ft/s
+              - initial_velocity: 1784 ft/s
+      -
+        date: "2012-11-16"
+        diameter: 0.570 in
+        charge: 117 gr
+        data:
+          -
+            desc2: "Swiss 1 1/2 F"
+            data:
+              - initial_velocity: 1678 ft/s
+              - initial_velocity: 1661 ft/s
+              - initial_velocity: 1648 ft/s
+              - initial_velocity: 1621 ft/s
+              - initial_velocity: 1628 ft/s
+      -
+        date: "2012-11-26"
+        diameter: 0.562 in
+        charge: 85 gr
+        data:
+          -
+            desc2: "Swiss FFF"
+            data:
+              - initial_velocity: 1637 ft/s
+              - initial_velocity: 1601 ft/s
+              - initial_velocity: 1657 ft/s
+              - initial_velocity: 1673 ft/s
+              - initial_velocity: 1638 ft/s
+      -
+        date: "2013-05-13"
+        diameter: 0.562 in
+        charge: 112 gr
+        data:
+          -
+            desc2: "Swiss 1 1/2 F"
+            data:
+              - initial_velocity: 1706 ft/s
+              - initial_velocity: 1634 ft/s
+              - initial_velocity: 1572 ft/s
+              - initial_velocity: 1531 ft/s
+              - initial_velocity: 1538 ft/s
+      -
+        date: "2012-11-07"
+        diameter: 0.562 in
+        charge: 100 gr
+        data:
+          -
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 1676 ft/s
+              - initial_velocity: 1614 ft/s
+              - initial_velocity: 1612 ft/s
+              - initial_velocity: 1649 ft/s
+              - initial_velocity: 1615 ft/s
+              - initial_velocity: 1618 ft/s
+      -
+        date: "2012-05-25"
+        diameter: 0.562 in
+        charge: 87 gr
+        data:
+          -
+            desc2: "Swiss FF"
+            data:
+              - initial_velocity: 1613 ft/s
+              - initial_velocity: 1599 ft/s
+              - initial_velocity: 1604 ft/s
+              - initial_velocity: 1592 ft/s
+              - initial_velocity: 1622 ft/s
+              - initial_velocity: 1618 ft/s
+      -
+        date: "2014-10-03"
+        diameter: 0.530 in
+        charge: 120 gr
+        data:
+          -
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 1819 ft/s
+              - initial_velocity: 1862 ft/s
+              - initial_velocity: 1833 ft/s
+              - initial_velocity: 1859 ft/s
+      -
+        date: "2014-10-11"
+        diameter: 0.530 in
+        charge: 80 gr
+        data:
+          -
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 1550 ft/s
+              - initial_velocity: 1538 ft/s
+              - initial_velocity: 1550 ft/s
+              - initial_velocity: 1566 ft/s
+              - initial_velocity: 1577 ft/s
+          -
+            desc2: "Old Eynsford FF by volume"
+            data:
+              - initial_velocity: 1609 ft/s
+              - initial_velocity: 1663 ft/s
+              - initial_velocity: 1669 ft/s
+              - initial_velocity: 1682 ft/s
+              - initial_velocity: 1655 ft/s
+      -
+        date: "2014-10-11"
+        diameter: 0.530 in
+        charge: 100 gr
+        data:
+          -
+            desc2: "Old Eynsford 1 1/2 F by volume"
+            data:
+              - initial_velocity: 1755 ft/s
+              - initial_velocity: 1796 ft/s
+              - initial_velocity: 1786 ft/s
+              - initial_velocity: 1799 ft/s
+              - initial_velocity: 1798 ft/s
+              - initial_velocity: 1808 ft/s
+      -
+        date: "2014-10-11"
+        diameter: 0.526 in
+        charge: 55 gr
+        data:
+          -
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 1338 ft/s
+              - initial_velocity: 1375 ft/s
+              - initial_velocity: 1419 ft/s
+              - initial_velocity: 1409 ft/s
+              - initial_velocity: 1352 ft/s
+              - initial_velocity: 1387 ft/s
+      -
+        date: "2014-10-14"
+        diameter: 0.530 in
+        charge: 80 gr
+        data:
+          -
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 1565 ft/s
+              - initial_velocity: 1535 ft/s
+              - initial_velocity: 1567 ft/s
+              - initial_velocity: 1575 ft/s
+      -
+        date: "2014-10-14"
+        diameter: 0.530 in
+        charge: 100 gr
+        data:
+          -
+            desc2: "Old Eynsford FF"
+            data:
+              - initial_velocity: 1743 ft/s
+              - initial_velocity: 1772 ft/s
+              - initial_velocity: 1782 ft/s
+          -
+            desc2: "Old Eynsford 1 1/2 F"
+            data:
+              - initial_velocity: 1775 ft/s
+              - initial_velocity: 1786 ft/s
+              - initial_velocity: 1792 ft/s
+          -
+            desc2: "Swiss FF"
+            data:
+              - initial_velocity: 1850 ft/s
+              - initial_velocity: 1875 ft/s
+              - initial_velocity: 1916 ft/s
+              - initial_velocity: 1912 ft/s
+          -
+            desc2: "Swiss 1 1/2 F"
+            data:
+              - initial_velocity: 1711 ft/s
+              - initial_velocity: 1654 ft/s
+              - initial_velocity: 1759 ft/s
+              - initial_velocity: 1774 ft/s
+      -
+        date: "2014-07-15"
+        diameter: 0.530 in
+        charge: 50 gr
+        data:
+          -
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 1256 ft/s
+              - initial_velocity: 1264 ft/s
+              - initial_velocity: 1249 ft/s
+              - initial_velocity: 1269 ft/s
+              - initial_velocity: 1248 ft/s
+              - initial_velocity: 1245 ft/s
+              - initial_velocity: 1246 ft/s
+          -
+            desc2: "Old Eynsford FFF"
+            data:
+              - initial_velocity: 1378 ft/s
+              - initial_velocity: 1324 ft/s
+              - initial_velocity: 1319 ft/s
+              - initial_velocity: 1313 ft/s
+              - initial_velocity: 1353 ft/s
+              - initial_velocity: 1344 ft/s
+              - initial_velocity: 1356 ft/s
+      -
+        date: "2014-07-16"
+        diameter: 0.530 in
+        charge: 50 gr
+        data:
+          -
+            desc2: "Goex FFF"
+            data:
+              - initial_velocity: 1271 ft/s
+              - initial_velocity: 1229 ft/s
+              - initial_velocity: 1211 ft/s
+              - initial_velocity: 1247 ft/s
+              - initial_velocity: 1201 ft/s
+              - initial_velocity: 1218 ft/s
+              - initial_velocity: 1226 ft/s
+          -
+            desc2: "Old Eynsford FFF"
+            data:
+              - initial_velocity: 1227 ft/s
+              - initial_velocity: 1183 ft/s
+              - initial_velocity: 1044 ft/s
+              - initial_velocity: 1304 ft/s
+              - initial_velocity: 1231 ft/s
+              - initial_velocity: 1182 ft/s
+      -
+        date: "2014-07-15"
+        diameter: 0.530 in
+        charge: 80 gr
+        data:
+          -
+            desc2: "Goex FF"
+            data:
+              - initial_velocity: 1482 ft/s
+              - initial_velocity: 1493 ft/s
+              - initial_velocity: 1521 ft/s
+              - initial_velocity: 1515 ft/s
+              - initial_velocity: 1525 ft/s
+              - initial_velocity: 1503 ft/s
+          -
+            desc2: "Old Eynsford FF"
+            data:
+              - initial_velocity: 1563 ft/s
+              - initial_velocity: 1527 ft/s
+              - initial_velocity: 1528 ft/s
+              - initial_velocity: 1534 ft/s
+              - initial_velocity: 1518 ft/s
+      -
+        date: "2014-07-15"
+        diameter: 0.530 in
+        charge: 80 gr
+        data:
+          -
+            desc2: "Old Eynsford 1 1/2 F"
+            data:
+              - initial_velocity: 1499 ft/s
+              - initial_velocity: 1521 ft/s
+              - initial_velocity: 1501 ft/s
+              - initial_velocity: 1496 ft/s
+              - initial_velocity: 1518 ft/s
+              - initial_velocity: 1526 ft/s
+      -
+        date: "2014-07-16"
+        diameter: 0.530 in
+        charge: 100 gr
+        data:
+          -
+            desc2: "Old Eynsford 1 1/2 F"
+            data:
+              - initial_velocity: 1638 ft/s
+              - initial_velocity: 1691 ft/s
+              - initial_velocity: 1705 ft/s
+              - initial_velocity: 1691 ft/s
+              - initial_velocity: 1725 ft/s
+              - initial_velocity: 1695 ft/s
+              - initial_velocity: 1713 ft/s
+      -
+        date: "2014-07-16"
+        diameter: 0.530 in
+        charge: 80 gr
+        data:
+          -
+            desc2: "Old Eynsford FFF"
+            data:
+              - initial_velocity: 1480 ft/s
+              - initial_velocity: 1507 ft/s
+              - initial_velocity: 1558 ft/s
+              - initial_velocity: 1623 ft/s
+              - initial_velocity: 1615 ft/s
+# Through reply 14
