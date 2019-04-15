@@ -1,0 +1,374 @@
+---
+key: madras1849
+ref: "Madras, 1849"
+cms: "<i>Madras Artillery Records, Volume 1.</i>  Madras: Madras Artillery, 1849 (questionable -- no real publisher information)."
+summary: "This is a miscellany of artillery records published by a member of the regiment."
+date: "1849"
+data:
+  -
+    ref2: p. 24
+    date: 1814
+    data:
+      -
+        diameter: 11.85 in
+        mass: 122 lb
+        data:
+          -
+            charge: 10 lb
+            angle: 1.25 deg
+            range: 400 yards
+          -
+            charge: 11 lb
+            angle: 1 deg
+            range: 400 yards
+          -
+            charge: 12 lb
+            data:
+              -
+                angle: 0.75 deg
+                range: 400 yards
+              -
+                angle: 2 deg
+                data:
+                  - range: 750 yards
+                  - range: 750 yards
+                  - range: 843 yards
+                  - range: 818 yards
+                  - range: 872 yards
+                  - final_time: 2.75 s
+                  - final_time: 2.75 s
+                  - final_time: 2.75 s
+                  - final_time: 3 s
+                  - final_time: 3 s
+              -
+                angle: 3 deg
+                data:
+                  - range: 1032 yards
+                  - range: 1000 yards
+                  - range: 976 yards
+                  - range: 1087 yards
+                  - range: 1060 yards
+                  - final_time: 4.5 s
+                  - final_time: 3.75 s
+                  - final_time: 4 s
+                  - final_time: 4 s
+                  - final_time: 4 s
+              -
+                angle: 4 deg
+                data:
+                  - range: 1233 yards
+                  - range: 1247 yards
+                  - range: 1141 yards
+                  - range: 1210 yards
+                  - range: 1330 yards
+                  - final_time: 5.25 s
+                  - final_time: 5 s
+                  - final_time: 4.75 s
+                  - final_time: 5 s
+                  - final_time: 5.25 s
+      -
+        diameter: 9.88 in
+        mass: 72 lb
+        charge: 8 lb
+        data:
+          -
+            angle: 1 deg
+            range: 400 yards
+          -
+            angle: 2 deg
+            data:
+              - range: 856 yards
+              - range: 816 yards
+              - range: 782 yards
+              - range: 795 yards
+              - range: 630 yards
+              - final_time: 3 s
+              - final_time: 2.75 s
+              - final_time: 3 s
+              - final_time: 3.25 s
+              - final_time: 2.5 s
+          -
+            angle: 3 deg
+            data:
+              - range: 1027 yards
+              - range: 1006 yards
+              - range: 970 yards
+              - range: 1150 yards
+              - range: 1034 yards
+              - range: 1020 yards
+              - final_time: 3.75 s
+              - final_time: 4.25 s
+          -
+            angle: 4 deg
+            data:
+              - range: 1215 yards
+              - range: 1300 yards
+              - range: 1237 yards
+              - range: 1107 yards
+              - range: 1280 yards
+              - range: 1250 yards
+              - final_time: 4.25 s
+              - final_time: 4.25 s
+  -
+    ref2: p. 27
+    date: 1810
+    data:
+      -
+        diameter: 13 in
+        material: iron
+        charge: 40 lb
+        angle: 45 deg
+        range: 4000 yards
+  -
+    ref2: p. 36
+    angle: 45 deg
+    data:
+      -
+        mass: 24 lb
+        material: iron
+        charge: 8 lb
+        initial_velocity: 1339 ft/s
+      -
+        mass: 28 lb
+        diameter: 5.55 in
+        diameter_note: diameter of a 24 lb solid ball
+        charge: 8 lb
+        initial_velocity: 1224 ft/s
+  -
+    ref2: p. 40
+    desc: "From Hutton, at least as early as 1815"
+    date: 1815
+    data:
+    data:
+      -
+        mass: 16 oz 5 dwt
+        diameter: 1.96 in
+        charge: 2 oz
+        angle: 15 deg
+        data:
+          - initial_velocity: 860 ft/s
+          - range: 4100 ft
+          - final_time: 9 s
+      -
+        mass: 16 oz 8 dwt
+        diameter: 1.96 in
+        charge: 4 oz
+        angle: 15 deg
+        data:
+          - initial_velocity: 1230 ft/s
+          - range: 5100 ft
+          - final_time: 12 s
+      -
+        mass: 16 oz 12 dwt
+        diameter: 1.96 in
+        charge: 8 oz
+        angle: 15 deg
+        data:
+          - initial_velocity: 1640 ft/s
+          - range: 6000 ft
+          - final_time: 14.5 s
+      -
+        mass: 16 oz 12 dwt
+        diameter: 1.95 in
+        charge: 12 oz
+        angle: 15 deg
+        data:
+          - initial_velocity: 1680 ft/s
+          - range: 6700 ft
+          - final_time: 15.5 s
+      -
+        mass: 16 oz 10 dwt
+        diameter: 1.96 in
+        charge: 2 oz
+        angle: 45 deg
+        data:
+          - initial_velocity: 860 ft/s
+          - range: 5100 ft
+          - final_time: 21 s
+  -
+    desc: "Mortar proof ranges"
+    angle: 45 deg
+    mass_note: From p. 55, including typical charge
+    diameter_note: Median from p. 55.
+    data:
+      -
+        ref2: p. 66
+        range: 900 yards
+        data:
+          -
+            mass: 200 lb 9 lb
+            diameter: 12.84 in
+            data:
+              - charge: 1 lb 13 oz 15 dr
+              - charge: 2 lb  0 oz 11 dr
+              - charge: 2 lb  3 oz 10 dr
+              - charge: 2 lb  6 oz 13 dr
+              - charge: 2 lb  9 oz  3 dr
+              - charge: 2 lb 11 oz  3 dr
+              - charge: 2 lb 13 oz  3 dr
+              - charge: 2 lb 15 oz 13 dr
+              - charge: 3 lb  2 oz  0 dr
+              - charge: 3 lb  3 oz  7 dr
+              - charge: 3 lb  6 oz  0 dr
+              - charge: 3 lb  8 oz  3 dr
+              - charge: 3 lb 10 oz 11 dr
+              - charge: 3 lb 13 oz  1 dr
+              - charge: 3 lb 15 oz 11 dr
+              - charge: 4 lb  2 oz 11 dr
+              - charge: 4 lb  4 oz 12 dr
+              - charge: 4 lb  8 oz  0 dr
+              - charge: 4 lb 11 oz  0 dr
+          -
+            mass: 88 lb 4 lb
+            diameter: 9.84 in
+            data:
+              - charge: 1 lb  1 oz 13 dr
+              - charge: 1 lb  2 oz 14 dr
+              - charge: 1 lb  4 oz  4 dr
+              - charge: 1 lb  5 oz  7 dr
+              - charge: 1 lb  6 oz 11 dr
+              - charge: 1 lb  7 oz 15 dr
+              - charge: 1 lb  9 oz  1 dr
+              - charge: 1 lb 10 oz  4 dr
+              - charge: 1 lb 11 oz  4 dr
+              - charge: 1 lb 12 oz  4 dr
+              - charge: 1 lb 13 oz  2 dr
+              - charge: 1 lb 14 oz  5 dr
+              - charge: 1 lb 15 oz 11 dr
+              - charge: 2 lb  1 oz  0 dr
+              - charge: 2 lb  2 oz  8 dr
+              - charge: 2 lb  3 oz 13 dr
+              - charge: 2 lb  4 oz 15 dr
+              - charge: 2 lb  5 oz 15 dr
+              - charge: 2 lb  7 oz  1 dr
+          -
+            mass: 41 lb 2 lb 4 oz
+            diameter: 7.9 in
+            data:
+              - charge: 0 lb 11 oz 11 dr
+              - charge: 0 lb 12 oz  7 dr
+              - charge: 0 lb 13 oz  1 dr
+              - charge: 0 lb 14 oz  0 dr
+              - charge: 0 lb 14 oz 13 dr
+              - charge: 0 lb 15 oz 11 dr
+              - charge: 1 lb  0 oz 10 dr
+              - charge: 1 lb  1 oz 11 dr
+              - charge: 1 lb  2 oz  8 dr
+              - charge: 1 lb  3 oz  5 dr
+              - charge: 1 lb  4 oz  2 dr
+              - charge: 1 lb  5 oz  1 dr
+              - charge: 1 lb  6 oz  1 dr
+              - charge: 1 lb  7 oz  5 dr
+              - charge: 1 lb  8 oz  0 dr
+              - charge: 1 lb  8 oz 13 dr
+              - charge: 1 lb  9 oz  8 dr
+              - charge: 1 lb 10 oz  2 dr
+              - charge: 1 lb 11 oz 10 dr
+          -
+            mass: 15 lb 10 oz
+            diameter: 5.595 in
+            data:
+              - charge: 0 lb  5 oz  5 dr
+              - charge: 0 lb  5 oz  9 dr
+              - charge: 0 lb  5 oz 13 dr
+              - charge: 0 lb  6 oz  1 dr
+              - charge: 0 lb  6 oz  6 dr
+              - charge: 0 lb  6 oz  8 dr
+              - charge: 0 lb  7 oz  0 dr
+              - charge: 0 lb  7 oz  2 dr
+              - charge: 0 lb  7 oz  7 dr
+              - charge: 0 lb  7 oz 12 dr
+              - charge: 0 lb  8 oz  0 dr
+              - charge: 0 lb  8 oz  4 dr
+      -
+        ref2: p. 67
+        range: 950 yards
+        data:
+          -
+            mass: 200 lb 9 lb
+            diameter: 12.84 in
+            data:
+              - charge: 1 lb 11 oz 14 dr
+              - charge: 1 lb 14 oz  6 dr
+              - charge: 2 lb  1 oz  0 dr
+              - charge: 2 lb  3 oz 14 dr
+              - charge: 2 lb  6 oz  2 dr
+              - charge: 2 lb  7 oz 10 dr
+              - charge: 2 lb  9 oz  2 dr
+              - charge: 2 lb 11 oz 14 dr
+              - charge: 2 lb 14 oz  0 dr
+              - charge: 2 lb 15 oz  8 dr
+              - charge: 3 lb  2 oz  8 dr
+              - charge: 3 lb  4 oz  6 dr
+              - charge: 3 lb  7 oz  6 dr
+              - charge: 3 lb  9 oz  9 dr
+              - charge: 3 lb 12 oz  1 dr
+              - charge: 3 lb 14 oz  6 dr
+              - charge: 4 lb  0 oz 14 dr
+              - charge: 4 lb  4 oz  8 dr
+              - charge: 4 lb  7 oz  8 dr
+          -
+            mass: 88 lb 4 lb
+            diameter: 9.84 in
+            data:
+              - charge: 1 lb  0 oz  6 dr
+              - charge: 1 lb  1 oz  8 dr
+              - charge: 1 lb  3 oz  0 dr
+              - charge: 1 lb  4 oz  2 dr
+              - charge: 1 lb  5 oz  6 dr
+              - charge: 1 lb  6 oz 10 dr
+              - charge: 1 lb  7 oz 12 dr
+              - charge: 1 lb  8 oz 14 dr
+              - charge: 1 lb  9 oz 14 dr
+              - charge: 1 lb 10 oz 11 dr
+              - charge: 1 lb 11 oz  6 dr
+              - charge: 1 lb 12 oz 10 dr
+              - charge: 1 lb 14 oz  2 dr
+              - charge: 1 lb 15 oz  8 dr
+              - charge: 2 lb  1 oz  4 dr
+              - charge: 2 lb  2 oz  6 dr
+              - charge: 2 lb  3 oz 10 dr
+              - charge: 2 lb  4 oz 10 dr
+              - charge: 2 lb  5 oz 14 dr
+          -
+            mass: 41 lb 2 lb 4 oz
+            diameter: 7.9 in
+            data:
+              - charge: 0 lb 10 oz  6 dr
+              - charge: 0 lb 11 oz  2 dr
+              - charge: 0 lb 11 oz 14 dr
+              - charge: 0 lb 12 oz 14 dr
+              - charge: 0 lb 13 oz 12 dr
+              - charge: 0 lb 14 oz 10 dr
+              - charge: 0 lb 15 oz 10 dr
+              - charge: 1 lb  0 oz 10 dr
+              - charge: 1 lb  1 oz  4 dr
+              - charge: 1 lb  2 oz  0 dr
+              - charge: 1 lb  2 oz 12 dr
+              - charge: 1 lb  3 oz 13 dr
+              - charge: 1 lb  4 oz 14 dr
+              - charge: 1 lb  6 oz  4 dr
+              - charge: 1 lb  6 oz 10 dr
+              - charge: 1 lb  7 oz  4 dr
+              - charge: 1 lb  8 oz  0 dr
+              - charge: 1 lb  8 oz 14 dr
+              - charge: 1 lb  9 oz  6 dr
+          -
+            mass: 15 lb 10 oz
+            diameter: 5.595 in
+            data:
+              - charge: 0 lb  5 oz  0 dr
+              - charge: 0 lb  5 oz  4 dr
+              - charge: 0 lb  5 oz  7 dr
+              - charge: 0 lb  5 oz 10 dr
+              - charge: 0 lb  6 oz  1 dr
+              - charge: 0 lb  6 oz  3 dr
+              - charge: 0 lb  6 oz 10 dr
+              - charge: 0 lb  6 oz 12 dr
+              - charge: 0 lb  7 oz  2 dr
+              - charge: 0 lb  7 oz  6 dr
+              - charge: 0 lb  7 oz 10 dr
+              - charge: 0 lb  7 oz 14 dr
+
+
+# p. 55, 12.84 in, 200 lb, 9.84 in, 88 lb, 7.9 in, 41 lb, 5.595 in, 15 lb, 4.454 in, 7 lb 8 oz;  + 9, 4, 2 lb 4 oz, 10 oz, 4.5 oz

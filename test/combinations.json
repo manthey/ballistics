@@ -382,15 +382,15 @@
  },
  {
   "conditions": {
-   "angle": 0,
-   "charge": "0.041667 lb",
-   "diameter": "0.75 in",
-   "final_velocity": "1670 ft/s",
-   "material": "plomb",
-   "range": "25 ft"
+   "angle": "0 deg",
+   "charge": "70 gr",
+   "diameter": "0.440 in",
+   "final_velocity": "1590 ft/s",
+   "material": "lead",
+   "range": "15 ft"
   },
-  "power_factor": 299935.14211469464,
-  "time": 0.014733404615379225
+  "power_factor": 229044.1412292362,
+  "time": 0.00928183449886744
  },
  {
   "conditions": {
