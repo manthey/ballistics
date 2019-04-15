@@ -319,6 +319,12 @@
   "ref": "Lyman, 1975",
   "summary": "This is a guide for shooters and hunters.  Their load charts are based on firing a series of bullets and averaging them.  They also have trajectory charts based on a ballistics model.  It seems that each velocity was measured multiple times and averaged.  For ballistics tables, values were computed based on that average, a ballistic coefficient for round ball, and a ballistic modelling program."
  },
+ "madras1849": {
+  "cms": "<i>Madras Artillery Records, Volume 1.</i>  Madras: Madras Artillery, 1849 (questionable -- no real publisher information).",
+  "key": "madras1849",
+  "ref": "Madras, 1849",
+  "summary": "This is a miscellany of artillery records published by a member of the regiment."
+ },
  "maxwell1870": {
   "cms": "Maxwell, H. H.  \"The New Field Artillery of Mattei-Rossi.  Translated from the Italian of 'L'Opinione,' 23rd-26th October 1868.\" <i>Minutes of Proceedings of the Royal Artillery Institution</i> VI (1870): 325-334",
   "key": "maxwell1870",
