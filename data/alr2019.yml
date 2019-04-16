@@ -624,6 +624,163 @@ data:
           - initial_velocity: 2285 ft/s
           - initial_velocity: 2167 ft/s
   -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=23268.0"
+    desc: "New Goex and Old GRRW powder in a .58 Hawken flintlock"
+    technique: chronograph
+    material: lead
+    angle: 0 deg
+    date: "2012-09-06"
+    data:
+      -
+        data:
+          -
+            date: "2012-09-05"
+            charge: 120 gr
+            desc2: "Green River Rifle Works FFF"
+            diameter: 0.562 in
+            data:
+              - initial_velocity: 1632 ft/s
+              - initial_velocity: 1659 ft/s
+              - initial_velocity: 1670 ft/s
+              - initial_velocity: 1646 ft/s
+              - initial_velocity: 1669 ft/s
+              - initial_velocity: 1658 ft/s
+          -
+            date: "2012-09-05"
+            charge: 120 gr
+            desc2: "Goex FFF"
+            diameter: 0.562 in
+            data:
+              - initial_velocity: 1730 ft/s
+              - initial_velocity: 1743 ft/s
+              - initial_velocity: 1742 ft/s
+              - initial_velocity: 1730 ft/s
+              - initial_velocity: 1655 ft/s
+              - initial_velocity: 1724 ft/s
+          -
+            date: "2012-09-05"
+            charge: 120 gr
+            desc2: "Goex FF"
+            diameter: 0.562 in
+            data:
+              - initial_velocity: 1573 ft/s
+              - initial_velocity: 1622 ft/s
+              - initial_velocity: 1628 ft/s
+              - initial_velocity: 1652 ft/s
+              - initial_velocity: 1615 ft/s
+              - initial_velocity: 1632 ft/s
+          -
+            date: "2012-09-05"
+            charge: 120 gr
+            desc2: "Green River Rifle Works FF"
+            diameter: 0.562 in
+            data:
+              - initial_velocity: 1577 ft/s
+              - initial_velocity: 1570 ft/s
+              - initial_velocity: 1560 ft/s
+              - initial_velocity: 1530 ft/s
+              - initial_velocity: 1514 ft/s
+              - initial_velocity: 1605 ft/s
+              - initial_velocity: 1587 ft/s
+              - initial_velocity: 1572 ft/s
+  -
+    ref2: "http://americanlongrifles.org/forum/index.php?topic=27786.0"
+    desc: "Olde Eynsford 2F in my .58 flint Hawken "
+    technique: chronograph
+    material: lead
+    angle: 0 deg
+    date: "2013-09-01"
+    data:
+      -
+        data:
+          -
+            date: "2013-08-31"
+            charge: 100 gr
+            desc2: "Old Eynsford FF"
+            diameter: 0.562 in
+            data:
+              - initial_velocity: 1682 ft/s
+              - initial_velocity: 1692 ft/s
+              - initial_velocity: 1684 ft/s
+              - initial_velocity: 1687 ft/s
+              - initial_velocity: 1692 ft/s
+              - initial_velocity: 1750 ft/s
+              - initial_velocity: 1717 ft/s
+              - initial_velocity: 1721 ft/s
+          -
+            charge: 100 gr
+            desc2: "Other powders"
+            diameter: 0.562 in
+            data:
+              - initial_velocity: 1650 ft/s
+              - initial_velocity: 1630 ft/s
+              - initial_velocity: 1725 ft/s
+              - initial_velocity: 1756 ft/s
+              - initial_velocity: 1429 ft/s
+          -
+            date: "2013-09-01"
+            charge: 100 gr
+            desc2: "Old Eynsford FF"
+            diameter: 0.562 in
+            data:
+              - initial_velocity: 1707 ft/s
+              - initial_velocity: 1654 ft/s
+              - initial_velocity: 1606 ft/s
+              - initial_velocity: 1677 ft/s
+              - initial_velocity: 1687 ft/s
+              - initial_velocity: 1680 ft/s
+              - initial_velocity: 1682 ft/s
+              - initial_velocity: 1694 ft/s
+          -
+            date: "2013-09-01"
+            charge: 100 gr
+            desc2: "Old Eynsford 1 1/2 F"
+            diameter: 0.562 in
+            data:
+              - initial_velocity: 1664 ft/s
+              - initial_velocity: 1604 ft/s
+              - initial_velocity: 1598 ft/s
+              - initial_velocity: 1591 ft/s
+              - initial_velocity: 1553 ft/s
+              - initial_velocity: 1620 ft/s
+              - initial_velocity: 1633 ft/s
+          -
+            date: "2013-09-01"
+            charge: 100 gr
+            desc2: "Old Eynsford FFF"
+            diameter: 0.562 in
+            data:
+              - initial_velocity: 1474 ft/s
+              - initial_velocity: 1579 ft/s
+              - initial_velocity: 1565 ft/s
+              - initial_velocity: 1584 ft/s
+              - initial_velocity: 1629 ft/s
+              - initial_velocity: 1653 ft/s
+          -
+            date: "2013-09-01"
+            charge: 100 gr
+            desc2: "Old Eynsford FF"
+            diameter: 0.530 in
+            data:
+              - initial_velocity: 1753 ft/s
+              - initial_velocity: 1779 ft/s
+              - initial_velocity: 1793 ft/s
+              - initial_velocity: 1807 ft/s
+              - initial_velocity: 1794 ft/s
+              - initial_velocity: 1800 ft/s
+          -
+            date: "2013-09-01"
+            charge: 100 gr
+            desc2: "Old Eynsford 1 1/2 F"
+            diameter: 0.530 in
+            data:
+              - initial_velocity: 1687 ft/s
+              - initial_velocity: 1720 ft/s
+              - initial_velocity: 1745 ft/s
+              - initial_velocity: 1745 ft/s
+              - initial_velocity: 1735 ft/s
+              - initial_velocity: 1732 ft/s
+  -
     ref2: "http://americanlongrifles.org/forum/index.php?topic=28028.0"
     date: "2013-09-23"
     desc: "recovered round ball"
