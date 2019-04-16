@@ -484,12 +484,12 @@
  {
   "conditions": {
    "angle": "0 deg",
-   "charge": "60 gr",
-   "diameter": "0.395 in",
-   "initial_velocity": "2024 ft/s",
+   "charge": "70 gr",
+   "diameter": "0.451 in",
+   "initial_velocity": "1791 ft/s",
    "material": "lead"
   },
-  "power_factor": 293498.6504799372,
+  "power_factor": 293202.5973252117,
   "time": null
  },
  {

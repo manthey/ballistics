@@ -369,6 +369,211 @@ data:
               - charge: 0 lb  7 oz  6 dr
               - charge: 0 lb  7 oz 10 dr
               - charge: 0 lb  7 oz 14 dr
-
+      -
+        ref2: p. 68
+        range: 1000 yards
+        data:
+          -
+            mass: 200 lb 9 lb
+            diameter: 12.84 in
+            data:
+              - charge: 1 lb  9 oz 12 dr
+              - charge: 1 lb 12 oz  0 dr
+              - charge: 1 lb 14 oz  7 dr
+              - charge: 2 lb  1 oz  0 dr
+              - charge: 2 lb  3 oz  0 dr
+              - charge: 2 lb  4 oz  0 dr
+              - charge: 2 lb  5 oz  0 dr
+              - charge: 2 lb  8 oz  0 dr
+              - charge: 2 lb 10 oz  0 dr
+              - charge: 2 lb 11 oz  9 dr
+              - charge: 2 lb 15 oz  0 dr
+              - charge: 3 lb  0 oz  8 dr
+              - charge: 3 lb  4 oz  0 dr
+              - charge: 3 lb  6 oz  0 dr
+              - charge: 3 lb  8 oz  8 dr
+              - charge: 3 lb 10 oz  0 dr
+              - charge: 3 lb 13 oz  0 dr
+              - charge: 4 lb  1 oz  0 dr
+              - charge: 4 lb  4 oz  0 dr
+          -
+            mass: 88 lb 4 lb
+            diameter: 9.84 in
+            data:
+              - charge: 0 lb 14 oz 14 dr
+              - charge: 1 lb  0 oz  1 dr
+              - charge: 1 lb  1 oz 11 dr
+              - charge: 1 lb  2 oz 14 dr
+              - charge: 1 lb  4 oz  2 dr
+              - charge: 1 lb  5 oz  5 dr
+              - charge: 1 lb  6 oz  6 dr
+              - charge: 1 lb  7 oz  7 dr
+              - charge: 1 lb  8 oz  8 dr
+              - charge: 1 lb  9 oz  2 dr
+              - charge: 1 lb  9 oz 10 dr
+              - charge: 1 lb 11 oz  0 dr
+              - charge: 1 lb 12 oz  8 dr
+              - charge: 1 lb 14 oz  0 dr
+              - charge: 2 lb  0 oz  0 dr
+              - charge: 2 lb  1 oz  0 dr
+              - charge: 2 lb  2 oz  4 dr
+              - charge: 2 lb  3 oz  6 dr
+              - charge: 2 lb  4 oz 12 dr
+              - charge: 2 lb  6 oz  4 dr
+          -
+            mass: 41 lb 2 lb 4 oz
+            diameter: 7.9 in
+            data:
+              - charge: 0 lb  9 oz  0 dr
+              - charge: 0 lb  9 oz 14 dr
+              - charge: 0 lb 10 oz 12 dr
+              - charge: 0 lb 11 oz 11 dr
+              - charge: 0 lb 12 oz 10 dr
+              - charge: 0 lb 13 oz 10 dr
+              - charge: 0 lb 14 oz 11 dr
+              - charge: 0 lb 15 oz  9 dr
+              - charge: 1 lb  0 oz  0 dr
+              - charge: 1 lb  0 oz 10 dr
+              - charge: 1 lb  1 oz 10 dr
+              - charge: 1 lb  2 oz  9 dr
+              - charge: 1 lb  3 oz  8 dr
+              - charge: 1 lb  5 oz  2 dr
+              - charge: 1 lb  5 oz  5 dr
+              - charge: 1 lb  5 oz 12 dr
+              - charge: 1 lb  6 oz  8 dr
+              - charge: 1 lb  7 oz 10 dr
+              - charge: 1 lb  8 oz  0 dr
+              - charge: 1 lb  8 oz 10 dr
+          -
+            mass: 15 lb 10 oz
+            diameter: 5.595 in
+            data:
+              - charge: 0 lb  4 oz 11 dr
+              - charge: 0 lb  4 oz 15 dr
+              - charge: 0 lb  5 oz  2 dr
+              - charge: 0 lb  5 oz  6 dr
+              - charge: 0 lb  5 oz 11 dr
+              - charge: 0 lb  5 oz 14 dr
+              - charge: 0 lb  6 oz  3 dr
+              - charge: 0 lb  6 oz  7 dr
+              - charge: 0 lb  6 oz 12 dr
+              - charge: 0 lb  7 oz  1 dr
+              - charge: 0 lb  7 oz  4 dr
+              - charge: 0 lb  7 oz  9 dr
+          -
+            mass: 7 lb 8 oz 4.5 oz
+            diameter: 4.454 in
+            data:
+              - charge: 0 lb  2 oz 12 dr
+              - charge: 0 lb  2 oz 14 dr
+              - charge: 0 lb  3 oz  0 dr
+              - charge: 0 lb  3 oz  3 dr
+              - charge: 0 lb  3 oz  6 dr
+              - charge: 0 lb  3 oz 10 dr
+              - charge: 0 lb  3 oz 13 dr
+              - charge: 0 lb  3 oz 15 dr
+              - charge: 0 lb  4 oz  1 dr
+              - charge: 0 lb  4 oz  4 dr
+      -
+        ref2: p. 69
+        range: 1050 yards
+        data:
+          -
+            mass: 200 lb 9 lb
+            diameter: 12.84 in
+            data:
+              - charge: 1 lb  8 oz 15 dr
+              - charge: 1 lb  1 oz 13 dr
+              - charge: 1 lb 13 oz  9 dr
+              - charge: 2 lb  0 oz  2 dr
+              - charge: 2 lb  2 oz  3 dr
+              - charge: 2 lb  3 oz  6 dr
+              - charge: 2 lb  4 oz  8 dr
+              - charge: 2 lb  7 oz  6 dr
+              - charge: 2 lb  9 oz  7 dr
+              - charge: 2 lb 11 oz  2 dr
+              - charge: 2 lb 14 oz  7 dr
+              - charge: 3 lb  0 oz  0 dr
+              - charge: 3 lb  3 oz  7 dr
+              - charge: 3 lb  5 oz  8 dr
+              - charge: 3 lb  8 oz  1 dr
+              - charge: 3 lb  9 oz 11 dr
+              - charge: 3 lb 12 oz  7 dr
+              - charge: 4 lb  0 oz  6 dr
+          -
+            mass: 88 lb 4 lb
+            diameter: 9.84 in
+            data:
+              - charge: 0 lb 14 oz 6.5 dr
+              - charge: 0 lb 15 oz 10 dr
+              - charge: 1 lb  1 oz  2 dr
+              - charge: 1 lb  2 oz  5 dr
+              - charge: 1 lb  3 oz 7.5 dr
+              - charge: 1 lb  4 oz 8.5 dr
+              - charge: 1 lb  5 oz 9.5 dr
+              - charge: 1 lb  6 oz 9.5 dr
+              - charge: 1 lb  7 oz 10 dr
+              - charge: 1 lb  8 oz 4.5 dr
+              - charge: 1 lb  8 oz 14.5 dr
+              - charge: 1 lb 10 oz  3 dr
+              - charge: 1 lb 11 oz  8 dr
+              - charge: 1 lb 12 oz 14 dr
+              - charge: 1 lb 14 oz 12 dr
+              - charge: 1 lb 15 oz 13 dr
+              - charge: 2 lb  1 oz  0 dr
+              - charge: 2 lb  2 oz 2.5 dr
+              - charge: 2 lb  3 oz  9 dr
+          -
+            mass: 41 lb 2 lb 4 oz
+            diameter: 7.9 in
+            data:
+              - charge: 0 lb  8 oz 12.5 dr
+              - charge: 0 lb  9 oz 10.5 dr
+              - charge: 0 lb 10 oz  7 dr
+              - charge: 0 lb 11 oz  4 dr
+              - charge: 0 lb 12 oz 2.5 dr
+              - charge: 0 lb 13 oz 2.5 dr
+              - charge: 0 lb 14 oz  1 dr
+              - charge: 0 lb 14 oz 13 dr
+              - charge: 0 lb 15 oz 5.5 dr
+              - charge: 0 lb 15 oz 14.5 dr
+              - charge: 1 lb  0 oz 13 dr
+              - charge: 1 lb  1 oz  9 dr
+              - charge: 1 lb  2 oz  8 dr
+              - charge: 1 lb  3 oz 13.5 dr
+              - charge: 1 lb  4 oz  3 dr
+              - charge: 1 lb  4 oz 11 dr
+              - charge: 1 lb  5 oz  8 dr
+              - charge: 1 lb  6 oz 8.5 dr
+              - charge: 1 lb  7 oz  1 dr
+          -
+            mass: 15 lb 10 oz
+            diameter: 5.595 in
+            data:
+              - charge: 0 lb  4 oz 7.25 dr
+              - charge: 0 lb  4 oz 11 dr
+              - charge: 0 lb  4 oz 14.5 dr
+              - charge: 0 lb  5 oz 2.5 dr
+              - charge: 0 lb  5 oz  7 dr
+              - charge: 0 lb  5 oz 10 dr
+              - charge: 0 lb  5 oz 15 dr
+              - charge: 0 lb  6 oz  3 dr
+              - charge: 0 lb  6 oz 7.5 dr
+              - charge: 0 lb  6 oz 12 dr
+              - charge: 0 lb  6 oz 15 dr
+              - charge: 0 lb  7 oz  4 dr
+          -
+            mass: 7 lb 8 oz 4.5 oz
+            diameter: 4.454 in
+            data:
+              - charge: 0 lb  2 oz  8 dr
+              - charge: 0 lb  2 oz 11.25 dr
+              - charge: 0 lb  2 oz 13 dr
+              - charge: 0 lb  3 oz  0 dr
+              - charge: 0 lb  3 oz  3 dr
+              - charge: 0 lb  3 oz 6.5 dr
+              - charge: 0 lb  3 oz 9.5 dr
+              - charge: 0 lb  3 oz 12 dr
+              - charge: 0 lb  3 oz 14 dr
 
 # p. 55, 12.84 in, 200 lb, 9.84 in, 88 lb, 7.9 in, 41 lb, 5.595 in, 15 lb, 4.454 in, 7 lb 8 oz;  + 9, 4, 2 lb 4 oz, 10 oz, 4.5 oz
