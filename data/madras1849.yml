@@ -186,10 +186,11 @@ data:
           - range: 5100 ft
           - final_time: 21 s
   -
-    desc: "Elevation and ranges; only the 45 degree ranges are listed here -- the others are derived from it and produce the same approximate results within 3 or 4 percent"
+    desc: "Elevation and ranges; only the 45 degree ranges are listed here -- the others are derived from it and produce the same approximate results within 3 or 4 percent."
     diameter_note: Median
     material: iron
     ref2: p. 65-76
+    charge_note: "This data seems to have been interpolated from some live results, but the actual results are fairly copious and it it isn't obvious which entries are strictly original and which are interpolated.  All are presented."
     data:
       -
         desc2: "line a"
@@ -1573,7 +1574,7 @@ data:
   -
     desc: "Carcasses"
     material: iron
-    ref2: p. 67
+    ref2: p. 77
     angle: 45 deg
     data:
       -
@@ -1750,4 +1751,377 @@ data:
             charge: 0 lb 10 oz 0 dr
             angle: 42 deg
             range: 332 yards
-# Through page 81
+  -
+    desc: "Pactice of 1837"
+    date: 1837
+    angle: 45 deg
+    data:
+      -
+        ref2: p. 82
+        mass: 88 lb 2 lb 10 oz
+        diameter: 9.84 in
+        data:
+          -
+            charge: 1 lb 4 oz 0 dr
+            group: 82-1
+            data:
+              - range: 568 yards
+              - final_time: 11 s
+          -
+            charge: 1 lb 8 oz 0 dr
+            group: 82-2
+            data:
+              - range: 770 yards
+              - final_time: 12 s
+          -
+            charge: 1 lb 12 oz 0 dr
+            group: 82-3
+            data:
+              - range: 889 yards
+              - final_time: 13 s
+          -
+            charge: 1 lb 11 oz 8 dr
+            group: 82-4
+            data:
+              - range: 1013 yards
+              - final_time: 14.1667 s
+          -
+            charge: 2 lb 0 oz 0 dr
+            group: 82-5
+            data:
+              - range: 1106 yards
+              - final_time: 15 s
+          -
+            charge: 1 lb 8 oz 8 dr
+            group: 82-6
+            data:
+              - range: 782 yards
+              - final_time: 12 s
+          -
+            charge: 1 lb 0 oz 0 dr
+            group: 82-7
+            data:
+              - range: 481 yards
+              - final_time: 9.25 s
+          -
+            charge: 1 lb 2 oz 0 dr
+            group: 82-8
+            data:
+              - range: 521 yards
+              - final_time: 10 s
+          -
+            charge: 1 lb 8 oz 0 dr
+            group: 82-9
+            data:
+              - range: 796 yards
+              - final_time: 12.333 s
+          -
+            charge: 2 lb 0 oz 0 dr
+            group: 82-10
+            data:
+              - range: 1132 yards
+              - final_time: 15.25 s
+          -
+            charge: 1 lb 14 oz 0 dr
+            group: 82-11
+            data:
+              - range: 1018 yards
+              - final_time: 14.25 s
+          -
+            charge: 1 lb 8 oz 8 dr
+            group: 82-12
+            data:
+              - range: 780 yards
+              - final_time: 12.08333 s
+      -
+        ref2: p. 82
+        diameter: 7.85 in
+        mass: 50 lb 14 oz
+        data:
+          -
+            charge: 0 lb 12 oz 0 dr
+            group: 83-1
+            data:
+              - range: 568 yards
+              - final_time: 10 s
+          -
+            charge: 0 lb 13 oz 4 dr
+            group: 83-2
+            data:
+              - range: 655 yards
+              - final_time: 11.5 s
+          -
+            charge: 0 lb 14 oz 8 dr
+            group: 83-3
+            data:
+              - range: 720 yards
+              - final_time: 11.667 s
+          -
+            charge: 1 lb 1 oz 0 dr
+            group: 83-4
+            data:
+              - range: 906 yards
+              - final_time: 13.1667 s
+          -
+            charge: 1 lb 2 oz 4 dr
+            group: 83-5
+            data:
+              - range: 966 yards
+              - final_time: 13.25 s
+          -
+            charge: 0 lb 15 oz 6 dr
+            group: 83-6
+            data:
+              - range: 788 yards
+              - final_time: 12 s
+          -
+            charge: 1 lb 14 oz 12 dr
+            group: 83-7
+            data:
+              - range: 1112 yards
+              - final_time: 15 s
+          -
+            charge: 1 lb 6 oz 0 dr
+            group: 83-8
+            data:
+              - range: 1226 yards
+              - final_time: 15.5 s
+          -
+            charge: 0 lb 13 oz 4 dr
+            group: 83-9
+            data:
+              - range: 660 yards
+              - final_time: 11.333 s
+          -
+            charge: 0 lb 15 oz 2 dr
+            group: 83-10
+            data:
+              - range: 770 yards
+              - final_time: 12.333 s
+          -
+            charge: 1 lb 2 oz 4 dr
+            group: 83-11
+            data:
+              - range: 996 yards
+              - final_time: 13.5 s
+          -
+            charge: 1 lb 3 oz 8 dr
+            group: 83-12
+            data:
+              - range: 1008 yards
+              - final_time: 14.25 s
+          -
+            charge: 1 lb 4 oz 2 dr
+            group: 83-13
+            data:
+              - range: 1136 yards
+              - final_time: 15 s
+          -
+            charge: 1 lb 6 oz 0 dr
+            group: 83-14
+            data:
+              - range: 1267 yards
+              - final_time: 15.75 s
+          -
+            charge: 0 lb 12 oz 0 dr
+            group: 83-15
+            data:
+              - range: 564 yards
+              - final_time: 11 s
+          -
+            charge: 0 lb 13 oz 4 dr
+            group: 83-16
+            data:
+              - range: 655 yards
+              - final_time: 11 s
+          -
+            charge: 0 lb 15 oz 12 dr
+            group: 83-17
+            data:
+              - range: 940 yards
+              - final_time: 13 s
+          -
+            charge: 0 lb 15 oz 6 dr
+            group: 83-18
+            data:
+              - range: 787 yards
+              - final_time: 12.75 s
+          -
+            charge: 1 lb 4 oz 12 dr
+            group: 83-19
+            data:
+              - range: 1126 yards
+              - final_time: 15.1667 s
+          -
+            charge: 1 lb 6 oz 0 dr
+            group: 83-20
+            data:
+              - range: 1210 yards
+              - final_time: 15.5 s
+  -
+    desc: "Pactice of 1838"
+    date: 1838
+    angle: 45 deg
+    data:
+      -
+        ref2: p. 84
+        mass: 88 lb 2 lb 10 oz
+        diameter: 9.84 in
+        data:
+          -
+            charge: 1 lb 4 oz 10 dr
+            group: 84-1
+            data:
+              - range: 594 yards
+              - final_time: 10.5 s
+          -
+            charge: 1 lb 5 oz 0 dr
+            group: 84-2
+            data:
+              - range: 612 yards
+              - final_time: 11.25 s
+          -
+            charge: 1 lb 8 oz 8 dr
+            group: 84-3
+            data:
+              - range: 778 yards
+              - final_time: 14.333 s
+          -
+            charge: 1 lb 14 oz 0 dr
+            group: 84-4
+            data:
+              - range: 1028 yards
+              - final_time: 14.25 s
+          -
+            charge: 2 lb 1 oz 0 dr
+            group: 84-5
+            data:
+              - range: 1142 yards
+              - final_time: 14.8333 s
+          -
+            charge: 2 lb 2 oz 6 dr
+            group: 84-6
+            data:
+              - range: 1199 yards
+              - final_time: 15.1667 s
+          -
+            charge: 1 lb 4 oz 8 dr
+            group: 84-7
+            data:
+              - range: 600.667 yards
+              - final_time: 10.5 s
+          -
+            charge: 1 lb 9 oz 4 dr
+            group: 84-8
+            data:
+              - range: 815 yards
+              - final_time: 12.41667 s
+          -
+            charge: 1 lb 14 oz 0 dr
+            group: 84-9
+            data:
+              - range: 1010 yards
+              - final_time: 14.08333 s
+          -
+            charge: 2 lb 1 oz 0 dr
+            group: 84-10
+            data:
+              - range: 1150.333 yards
+              - final_time: 14.91667 s
+          -
+            charge: 2 lb 2 oz 6 dr
+            group: 84-11
+            data:
+              - range: 1204 yards
+              - final_time: 15.25 s
+      -
+        ref2: p. 85
+        diameter: 7.85 in
+        mass: 50 lb 14 oz
+        data:
+          -
+            charge: 0 lb 12 oz 13 dr
+            group: 85-1
+            data:
+              - range: 570 yards
+              - final_time: 10.333 s
+          -
+            charge: 0 lb 13 oz 4 dr
+            group: 85-2
+            data:
+              - range: 614 yards
+              - final_time: 11 s
+          -
+            charge: 1 lb 0 oz 0 dr
+            group: 85-3
+            data:
+              - range: 824 yards
+              - final_time: 12.41667 s
+          -
+            charge: 0 lb 15 oz 12 dr
+            group: 85-4
+            data:
+              - range: 785 yards
+              - final_time: 12.25 s
+          -
+            charge: 1 lb 3 oz 0 dr
+            group: 85-5
+            data:
+              - range: 1003 yards
+              - final_time: 14.25 s
+          -
+            charge: 1 lb 5 oz 8 dr
+            group: 85-6
+            data:
+              - range: 1177 yards
+              - final_time: 15.25 s
+          -
+            charge: 0 lb 13 oz 0 dr
+            group: 85-7
+            data:
+              - range: 612.333 yards
+              - final_time: 10.667 s
+          -
+            charge: 1 lb 0 oz 0 dr
+            group: 85-8
+            data:
+              - range: 803.667 yards
+              - final_time: 12.25 s
+          -
+            charge: 1 lb 3 oz 8 dr
+            group: 85-9
+            data:
+              - range: 1032.667 yards
+              - final_time: 14.1667 s
+          -
+            charge: 1 lb 5 oz 8 dr
+            group: 85-10
+            data:
+              - range: 1185 yards
+              - final_time: 15.25 s
+          -
+            charge: 0 lb 13 oz 4 dr
+            group: 85-11
+            data:
+              - range: 581 yards
+              - final_time: 10.5 s
+          -
+            charge: 1 lb 0 oz 0 dr
+            group: 85-12
+            data:
+              - range: 816 yards
+              - final_time: 12.25 s
+          -
+            charge: 1 lb 3 oz 8 dr
+            group: 85-13
+            data:
+              - range: 1011 yards
+              - final_time: 14.1667 s
+          -
+            charge: 1 lb 5 oz 0 dr
+            group: 85-14
+            data:
+              - range: 1178 yards
+              - final_time: 15 s
+
+# Through page 85
