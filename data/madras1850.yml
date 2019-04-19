@@ -1,0 +1,118 @@
+---
+key: madras1850
+ref: "Madras, 1850"
+cms: "<i>Madras Artillery Records, Volume 7.</i>  Madras: Madras Artillery, 1850 (no real publisher information)."
+summary: "This is a miscellany of artillery records published by a member of the regiment."
+date: "1850"
+data:
+  -
+    ref2: p. 23
+    date: 1839
+    diameter: 7.95 in
+    mass: 66 lb 5 oz 12 dr
+    angle: 45 deg
+    data:
+      -
+        charge: 1 lb
+        desc: "No. 1 and 2 mixed Powder from Ashreef Khans house, fine"
+        data:
+          - range: 196 yards
+          - range: 166 yards
+          - range: 175 yards
+          - range: 873 yards
+          - final_time: 5 sec 30 thirds
+          - final_time: 5 sec 30 thirds
+      -
+        charge: 2 oz
+        desc: "No. 1 and 2 mixed Powder from Ashreef Khans house, fine"
+        data:
+          - range: 15 yards
+          - range: 16 yards
+          - range: 22 yards
+          - final_time: 2 sec
+          - final_time: 2 sec
+          - final_time: 2 sec 15 thirds
+      -
+        charge: 2 oz
+        desc: "No. 3, Powder fine Grain from Hussain Khan's house"
+        data:
+          - range: 23 yards
+          - range: 28 yards
+          - range: 25 yards
+          - final_time: 2 sec 15 thirds
+          - final_time: 2 sec 15 thirds
+          - final_time: 2 sec 15 thirds
+  -
+    ref2: p. 26
+    diameter: 9.5 in
+    mass: 96 lb
+    angle: 45 deg
+    charge: 2 lb
+    data:
+      -
+        date: "1840-01-17"
+        data:
+          - final_time: 8 sec 0 thirds
+          - range: 230 yards
+          - final_time: 9 sec 0 thirds
+          - range: 248 yards
+          - final_time: 8 sec 30 thirds
+          - range: 233 yards
+          - final_time: 4 sec 30 thirds
+          - range: 63 yards
+          - final_time: 7 sec 0 thirds
+          - range: 166 yards
+      -
+        date: "1840-01-20"
+        data:
+          - final_time: 11 sec 0 thirds
+          - range: 444 yards
+          - final_time: 12 sec 0 thirds
+          - range: 496 yards
+          - final_time: 12 sec 0 thirds
+          - range: 537 yards
+      -
+        date: "1840-01-21"
+        data:
+          - final_time: 17 sec 0 thirds
+          - range: 1100 yards
+          - final_time: 17 sec 0 thirds
+          - range: 1110 yards
+          - final_time: 18 sec 0 thirds
+          - range: 1140 yards
+      -
+        date: "1840-01-22"
+        data:
+          - final_time: 18 sec 0 thirds
+          - range: 1156 yards
+          - final_time: 18 sec 30 thirds
+          - range: 1173 yards
+      -
+        date: "1840-01-23"
+        data:
+          - final_time: 17 sec 0 thirds
+          - range: 1105 yards
+          - final_time: 18 sec 0 thirds
+          - range: 1153 yards
+          - final_time: 17 sec 30 thirds
+          - range: 1102 yards
+  -
+    ref2: p. 260
+    material: iron
+    mass: 24 lb
+    angle: 2 deg
+    date: "1841-09-12"
+    desc: "Comparison of long and short 24 pounders"
+    data:
+      -
+        charge: 6 lb
+        data:
+          - range: 847 yards
+          - range: 832 yards
+      -
+        charge: 4 lb
+        data:
+          - range: 777 yards
+          - range: 745 yards
+
+# Through p. 263

@@ -1752,7 +1752,7 @@ data:
             angle: 42 deg
             range: 332 yards
   -
-    desc: "Pactice of 1837"
+    desc: "Practice of 1837"
     date: 1837
     angle: 45 deg
     data:
@@ -1959,7 +1959,7 @@ data:
               - range: 1210 yards
               - final_time: 15.5 s
   -
-    desc: "Pactice of 1838"
+    desc: "Practice of 1838"
     date: 1838
     angle: 45 deg
     data:
@@ -2123,5 +2123,491 @@ data:
             data:
               - range: 1178 yards
               - final_time: 15 s
-
-# Through page 85
+  -
+    ref2: p. 98
+    desc: "Range tests with a 24 pounder, average of four rounds"
+    date: 1740
+    angle: 4 deg
+    material: iron
+    mass: 24 lb
+    data:
+      -
+        charge: 8 lb
+        range: 800 yards
+      -
+        charge: 9 lb
+        range: 828 yards
+      -
+        charge: 10 lb
+        range: 850 yards
+      -
+        charge: 11 lb
+        range: 866 yards
+      -
+        charge: 12 lb
+        range: 833 yards
+      -
+        charge: 14 lb
+        range: 844 yards
+      -
+        charge: 16 lb
+        range: 949 yards
+      -
+        charge: 18 lb
+        range: 975 yards
+      -
+        charge: 20 lb
+        range: 970 yards
+  -
+    ref2: p. 116
+    desc: "Ranges with Light Guns - Round Shot"
+    material: iron
+    diameter_note: Median from p. 110
+    mass_note: From p. 110
+    charge_note: From p. 109
+    data:
+      -
+        diameter: 4.08 in
+        mass: 8 lb 13 oz
+        charge: 2 lb 4 oz
+        data:
+          -
+            angle: 0.25 deg
+            range: 400 yards
+          -
+            angle: 0.5 deg
+            range: 500 yards
+          -
+            angle: 0.75 deg
+            range: 600 yards
+          -
+            angle: 1 deg
+            range: 700 yards
+          -
+            angle: 1.25 deg
+            range: 775 yards
+          -
+            angle: 1.5 deg
+            range: 850 yards
+          -
+            angle: 1.75 deg
+            range: 925 yards
+          -
+            angle: 2 deg
+            range: 1000 yards
+          -
+            angle: 2.25 deg
+            range: 1050 yards
+          -
+            angle: 2.5 deg
+            range: 1100 yards
+          -
+            angle: 2.75 deg
+            range: 1150 yards
+          -
+            angle: 3 deg
+            range: 1200 yards
+      -
+        diameter: 3.55 in
+        mass: 5 lb 15 oz
+        charge: 1 lb 8 oz
+        data:
+          -
+            angle: 0.25 deg
+            range: 200 yards
+          -
+            angle: 0.5 deg
+            range: 300 yards
+          -
+            angle: 0.75 deg
+            range: 400 yards
+          -
+            angle: 1 deg
+            range: 500 yards
+          -
+            angle: 1.25 deg
+            range: 650 yards
+          -
+            angle: 1.5 deg
+            range: 700 yards
+          -
+            angle: 1.75 deg
+            range: 750 yards
+          -
+            angle: 2 deg
+            range: 800 yards
+          -
+            angle: 2.25 deg
+            range: 850 yards
+          -
+            angle: 2.5 deg
+            range: 900 yards
+          -
+            angle: 2.75 deg
+            range: 950 yards
+          -
+            angle: 3 deg
+            range: 1000 yards
+  -
+    ref2: p. 117
+    desc: "Ranges with Howitzers with Common Shells and Service Charge."
+    material: iron
+    diameter_note: Median from p. 110
+    mass_note: From p. 110; including bursting charge
+    charge_note: From p. 109
+    data:
+      -
+        diameter: 5.595 in
+        mass: 15 lb 0 oz 12 oz
+        charge: 2 lb 0 oz
+        data:
+          -
+            angle: 0.25 deg
+            range: 300 yards
+          -
+            angle: 0.5 deg
+            range: 350 yards
+          -
+            angle: 0.75 deg
+            range: 400 yards
+          -
+            angle: 1 deg
+            range: 450 yards
+          -
+            angle: 1.25 deg
+            range: 500 yards
+          -
+            angle: 1.5 deg
+            range: 550 yards
+          -
+            angle: 1.75 deg
+            range: 600 yards
+          -
+            angle: 2 deg
+            range: 650 yards
+          -
+            angle: 2.25 deg
+            range: 700 yards
+          -
+            angle: 2.5 deg
+            range: 750 yards
+          -
+            angle: 2.75 deg
+            range: 800 yards
+          -
+            angle: 3 deg
+            range: 850 yards
+      -
+        diameter: 4.454 in
+        mass: 7 lb 8 oz 6 oz
+        charge: 1 lb 4 oz
+        data:
+          -
+            angle: 0.25 deg
+            range: 250 yards
+          -
+            angle: 0.5 deg
+            range: 300 yards
+          -
+            angle: 0.75 deg
+            range: 350 yards
+          -
+            angle: 1 deg
+            range: 400 yards
+          -
+            angle: 1.25 deg
+            range: 450 yards
+          -
+            angle: 1.5 deg
+            range: 500 yards
+          -
+            angle: 1.75 deg
+            range: 550 yards
+          -
+            angle: 2 deg
+            range: 600 yards
+          -
+            angle: 2.25 deg
+            range: 650 yards
+          -
+            angle: 2.5 deg
+            range: 700 yards
+          -
+            angle: 2.75 deg
+            range: 750 yards
+          -
+            angle: 3 deg
+            range: 800 yards
+      -
+        diameter: 5.595 in
+        mass: 15 lb 0 oz 12 oz
+        charge: 2 lb 0 oz
+        data:
+          -
+            angle: 1 deg
+            range: 453 yards
+          -
+            angle: 2 deg
+            range: 595 yards
+          -
+            angle: 3 deg
+            range: 666 yards
+          -
+            angle: 4 deg
+            range: 847 yards
+          -
+            angle: 5 deg
+            range: 957 yards
+          -
+            angle: 6 deg
+            range: 1173 yards
+          -
+            angle: 7 deg
+            range: 1149 yards
+          -
+            angle: 8 deg
+            range: 1355 yards
+          -
+            angle: 9 deg
+            range: 1585 yards
+          -
+            angle: 10 deg
+            range: 1853 yards
+          -
+            angle: 11 deg
+            range: 1793 yards
+          -
+            angle: 12 deg
+            range: 1686 yards
+      -
+        diameter: 4.454 in
+        mass: 7 lb 8 oz 6 oz
+        charge: 0 lb 8 oz
+        data:
+          -
+            angle: 4 deg
+            range: 500 yards
+          -
+            angle: 6 deg
+            range: 600 yards
+          -
+            angle: 10 deg
+            range: 800 yards
+          -
+            angle: 12 deg
+            range: 1000 yards
+          -
+            angle: 14 deg
+            range: 1200 yards
+  -
+    ref2: p. 117
+    desc: "Spherical Case Shot - Guns"
+    material: iron
+    diameter_note: Median from p. 110
+    mass_note: From p. 110
+    charge_note: From p. 109
+    data:
+      -
+        diameter: 4.08 in
+        mass: 7 lb 10 oz
+        charge: 2 lb 4 oz
+        data:
+          -
+            angle: 1.25 deg
+            data:
+              - range: 640 yards
+              - range: 920 yards
+          -
+            angle: 1.75 deg
+            data:
+              - range: 800 yards
+              - range: 1060 yards
+          -
+            angle: 2.25 deg
+            data:
+              - range: 930 yards
+              - range: 1180 yards
+          -
+            angle: 2.75 deg
+            data:
+              - range: 1050 yards
+              - range: 1290 yards
+          -
+            angle: 3.25 deg
+            data:
+              - range: 1160 yards
+              - range: 1390 yards
+          -
+            angle: 3.75 deg
+            data:
+              - range: 1260 yards
+              - range: 1480 yards
+          -
+            angle: 4.375 deg
+            data:
+              - range: 1360 yards
+              - range: 1570 yards
+          -
+            angle: 5.25 deg
+            data:
+              - range: 1455 yards
+              - range: 1655 yards
+          -
+            angle: 5.75 deg
+            data:
+              - range: 1555 yards
+              - range: 1700 yards
+          -
+            angle: 6.5 deg
+            data:
+              - range: 1640 yards
+              - range: 1820 yards
+      -
+        diameter: 3.55 in
+        mass: 4 lb 15 oz
+        charge: 1 lb 8 oz
+        data:
+          -
+            angle: 1.25 deg
+            data:
+              - range: 570 yards
+              - range: 800 yards
+          -
+            angle: 1.625 deg
+            data:
+              - range: 720 yards
+              - range: 960 yards
+          -
+            angle: 2.25 deg
+            data:
+              - range: 845 yards
+              - range: 1040 yards
+          -
+            angle: 2.875 deg
+            data:
+              - range: 955 yards
+              - range: 1145 yards
+          -
+            angle: 3.375 deg
+            data:
+              - range: 1060 yards
+              - range: 1240 yards
+          -
+            angle: 4 deg
+            data:
+              - range: 1160 yards
+              - range: 1355 yards
+          -
+            angle: 4.625 deg
+            data:
+              - range: 1255 yards
+              - range: 1415 yards
+          -
+            angle: 5.25 deg
+            data:
+              - range: 1345 yards
+              - range: 1500 yards
+          -
+            angle: 5.875 deg
+            data:
+              - range: 1430 yards
+              - range: 1580 yards
+          -
+            angle: 6.625 deg
+            data:
+              - range: 1510 yards
+              - range: 1655 yards
+          -
+            angle: 7.25 deg
+            data:
+              - range: 1585 yards
+              - range: 1725 yards
+  -
+    ref2: p. 118
+    desc: "Spherical Case Shot - Howitzers"
+    material: iron
+    diameter_note: Median from p. 110
+    mass_note: From p. 110
+    charge_note: From p. 109
+    data:
+      -
+        diameter: 5.595 in
+        mass: 20 lb 0 oz
+        charge: 2 lb 0 oz
+        data:
+          -
+            angle: 2 deg
+            range: 650 yards
+          -
+            angle: 3 deg
+            range: 900 yards
+          -
+            angle: 4 deg
+            range: 1100 yards
+          -
+            angle: 5 deg
+            range: 1200 yards
+      -
+        diameter: 4.454 in
+        mass: 10 lb 2 oz
+        charge: 1 lb 4 oz
+        data:
+          -
+            angle: 2.25 deg
+            range: 650 yards
+          -
+            angle: 3.5 deg
+            range: 900 yards
+          -
+            angle: 5 deg
+            range: 1100 yards
+          -
+            angle: 5.75 deg
+            range: 1200 yards
+      -
+        diameter: 5.595 in
+        mass: 20 lb 0 oz
+        charge: 2 lb 0 oz
+        data:
+          -
+            angle: 3.25 deg
+            range: 650 yards
+          -
+            angle: 4.75 deg
+            range: 900 yards
+          -
+            angle: 6.25 deg
+            range: 1100 yards
+          -
+            angle: 7.25 deg
+            range: 1200 yards
+      -
+        diameter: 4.454 in
+        mass: 10 lb 2 oz
+        charge: 0 lb 8 oz
+        data:
+          -
+            angle: 4.75 deg
+            range: 650 yards
+          -
+            angle: 8.5 deg
+            range: 900 yards
+          -
+            angle: 10 deg
+            range: 1100 yards
+          -
+            angle: 11 deg
+            range: 1200 yards
+  -
+    ref2: p. 167
+    desc: "Proof ranges"
+    angle: 45 deg
+    mass: 65 lb
+    diameter: 7.87 in
+    data:
+      -
+        charge: 1 lb
+        range: 500 yards
+      -
+        charge: 2 oz
+        range: 40 yards
