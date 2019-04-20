@@ -729,6 +729,18 @@
  },
  {
   "conditions": {
+   "angle": "2 deg 0 arcmin",
+   "charge": "5 lb 0 oz",
+   "final_time": "3 sec 0 thirds",
+   "mass": "18 lb",
+   "material": "iron",
+   "range": "1000 yards"
+  },
+  "power_factor": 417582.1013854117,
+  "time": 2.8243960959918546
+ },
+ {
+  "conditions": {
    "angle": "0 deg",
    "charge": "9 italiandenari",
    "final_velocity": "1160 ftit/sec",

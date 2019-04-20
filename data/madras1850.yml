@@ -114,5 +114,157 @@ data:
         data:
           - range: 777 yards
           - range: 745 yards
+  -
+    ref2: p. 264
+    material: iron
+    mass: 18 lb
+    date: "1840-02-03"
+    range: 1000 yards
+    data:
+      -
+        charge: 5 lb 0 oz
+        angle: 2 deg 0 arcmin
+        final_time: 3 sec 0 thirds
+      -
+        charge: 5 lb 4 oz
+        angle: 1 deg 45 arcmin
+        final_time: 3 sec 0 thirds
+      -
+        charge: 5 lb 4 oz
+        angle: 1 deg 45 arcmin
+        final_time: 3 sec 0 thirds
+      -
+        charge: 5 lb 4 oz
+        angle: 1 deg 45 arcmin
+        final_time: 3 sec 0 thirds
+      -
+        charge: 5 lb 4 oz
+        angle: 1 deg 35 arcmin
+        final_time: 2 sec 45 thirds
+      -
+        charge: 5 lb 4 oz
+        angle: 1 deg 35 arcmin
+        final_time: 2 sec 45 thirds
+      -
+        charge: 5 lb 4 oz
+        angle: 1 deg 35 arcmin
+        final_time: 2 sec 45 thirds
 
-# Through p. 263
+      -
+        charge: 6 lb 0 oz
+        angle: 1 deg 45 arcmin
+        final_time: 2 sec 15 thirds
+      -
+        charge: 6 lb 0 oz
+        angle: 1 deg 45 arcmin
+        final_time: 2 sec 30 thirds
+      -
+        charge: 6 lb 0 oz
+        angle: 1 deg 45 arcmin
+        final_time: 2 sec 30 thirds
+      -
+        charge: 6 lb 0 oz
+        angle: 1 deg 35 arcmin
+        final_time: 2 sec 15 thirds
+      -
+        charge: 6 lb 0 oz
+        angle: 1 deg 30 arcmin
+        final_time: 2 sec 30 thirds
+  -
+    ref2: p. 273
+    desc: "Monck's Gun"
+    material: iron
+    # mass: 42 lb
+    mass_note: A solid shot weight of 42 lb is given, but this is light; the diameter should result in a mass of around 60 lb, and on p. 353, this same gun is referred to as a 56-pounder
+    diameter: 7.525 in
+    charge: 16 lb
+    data:
+      -
+        angle: 32 deg
+        range: 5327 yards
+      -
+        angle: 1 deg
+        range: 700 yards
+      -
+        angle: 2 deg
+        range: 1360 yards
+      -
+        angle: 3 deg
+        range: 1750 yards
+      -
+        angle: 5 deg
+        range: 2260 yards
+      -
+        angle: 10 deg
+        range: 3200 yards
+      -
+        angle: 15 deg
+        range: 4150 yards
+  -
+    ref2: p. 354
+    skip: true
+    skip_note: insufficient range information
+  -
+    ref2: p. 399
+    date: "1843-03-02"
+    angle: 45 deg
+    mass: 15 lb
+    data:
+      -
+        desc: "Madras powder"
+        diameter: 5.3 in
+        data:
+          -
+            charge: 6 oz 1 dr
+            range: 472 yards
+          -
+            charge: 7 oz 0 dr
+            range: 600 yards
+          -
+            charge: 8 oz 0 dr
+            range: 682 yards
+          -
+            charge: 9 oz 0 dr
+            range: 846 yards
+      -
+        desc: "Chinese powder"
+        diameter: 5.3 in
+        data:
+          -
+            charge: 3 oz 0 dr
+            range: 12 yards
+          -
+            charge: 4 oz 0 dr
+            range: 27 yards
+          -
+            charge: 9 oz 0 dr
+            range: 78 yards
+      -
+        desc: "Madras powder"
+        diameter: 5.1 in
+        data:
+          -
+            charge: 4 oz 6 dr
+            range: 472 yards
+          -
+            charge: 5 oz 8 dr
+            range: 472 yards
+          -
+            charge: 6 oz 0 dr
+            range: 472 yards
+      -
+        desc: "Chinese powder"
+        diameter: 5.1 in
+        data:
+          -
+            charge: 3 oz 0 dr
+            range: 16 yards
+          -
+            charge: 4 oz 0 dr
+            range: 45 yards
+          -
+            charge: 6 oz 0 dr
+            range: 80 yards
+          -
+            charge: 9 oz 0 dr
+            range: 356 yards
