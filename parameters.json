@@ -24,20 +24,20 @@
   "unique": 53
  },
  "ax": {
-  "count": 11833,
+  "count": 11834,
   "key": "ax",
   "max": 0.0,
   "min": -8523.616816172043,
-  "numeric": 11833,
-  "unique": 11026
+  "numeric": 11834,
+  "unique": 11027
  },
  "ay": {
-  "count": 11833,
+  "count": 11834,
   "key": "ay",
   "max": 0.39623454995021606,
   "min": -612.9879584330095,
-  "numeric": 11833,
-  "unique": 11030
+  "numeric": 11834,
+  "unique": 11031
  },
  "chamber_diameter": {
   "count": 23,
@@ -62,28 +62,28 @@
   }
  },
  "charge": {
-  "count": 15299,
+  "count": 15300,
   "key": "charge",
   "max": 34.926612490000004,
   "min": 6.479891000000001e-05,
-  "numeric": 15299,
+  "numeric": 15300,
   "unique": 1059
  },
  "computation_time": {
-  "count": 15467,
+  "count": 15468,
   "key": "computation_time",
   "max": 0.37999999999999545,
   "min": 0.0,
-  "numeric": 15467,
+  "numeric": 15468,
   "unique": 46
  },
  "date": {
-  "count": 15467,
+  "count": 15468,
   "key": "date",
   "unique": 479
  },
  "date_filled": {
-  "count": 15467,
+  "count": 15468,
   "key": "date_filled",
   "unique": 473
  },
@@ -116,16 +116,16 @@
   "unique": 1227
  },
  "desc": {
-  "count": 14738,
+  "count": 14739,
   "key": "desc",
   "unique": 2139
  },
  "diam": {
-  "count": 15276,
+  "count": 15277,
   "key": "diam",
   "max": 0.33020000000000005,
   "min": 0.006350000000000001,
-  "numeric": 15276,
+  "numeric": 15277,
   "unique": 423
  },
  "final_angle": {
@@ -143,119 +143,119 @@
   }
  },
  "final_density_T": {
-  "count": 11833,
+  "count": 11834,
   "key": "final_density_T",
   "max": 309.8166666666667,
   "min": 270.9277777777778,
-  "numeric": 11833,
+  "numeric": 11834,
   "unique": 85
  },
  "final_density_density": {
-  "count": 11833,
+  "count": 11834,
   "key": "final_density_density",
   "max": 1.3169788369520694,
   "min": 1.1002742226729985,
-  "numeric": 11833,
-  "unique": 11040
+  "numeric": 11834,
+  "unique": 11041
  },
  "final_density_h": {
-  "count": 11833,
+  "count": 11834,
   "key": "final_density_h",
   "max": 0.9999013765372261,
   "min": 0,
-  "numeric": 11833,
+  "numeric": 11834,
   "unique": 127
  },
  "final_density_pressure": {
-  "count": 11833,
+  "count": 11834,
   "key": "final_density_pressure",
   "max": 106392.97980285343,
   "min": 91112.73268903878,
-  "numeric": 11833,
-  "unique": 11034
+  "numeric": 11834,
+  "unique": 11035
  },
  "final_density_psv": {
-  "count": 11833,
+  "count": 11834,
   "key": "final_density_psv",
   "max": 6168.922273788103,
   "min": 519.3066681356044,
-  "numeric": 11833,
+  "numeric": 11834,
   "unique": 85
  },
  "final_density_xv": {
-  "count": 11833,
+  "count": 11834,
   "key": "final_density_xv",
   "max": 0.041942765267628,
   "min": 0.0,
-  "numeric": 11833,
+  "numeric": 11834,
   "unique": 2777
  },
  "final_density_y": {
-  "count": 11833,
+  "count": 11834,
   "key": "final_density_y",
   "max": 887.043740682417,
   "min": -12.014835501445525,
-  "numeric": 11833,
-  "unique": 11026
+  "numeric": 11834,
+  "unique": 11027
  },
  "final_drag_Mn": {
-  "count": 11810,
+  "count": 11811,
   "key": "final_drag_Mn",
   "max": 2.436917492706728,
   "min": 0.0029033605240485387,
-  "numeric": 11810,
-  "unique": 11025
+  "numeric": 11811,
+  "unique": 11026
  },
  "final_drag_Re": {
-  "count": 11810,
+  "count": 11811,
   "key": "final_drag_Re",
   "max": 9013424.694623543,
   "min": 8938.868766669957,
-  "numeric": 11810,
-  "unique": 11025
+  "numeric": 11811,
+  "unique": 11026
  },
  "final_drag_cd": {
-  "count": 11810,
+  "count": 11811,
   "key": "final_drag_cd",
   "max": 0.9931706616028949,
   "min": 0.06348951665451776,
-  "numeric": 11810,
-  "unique": 11025
+  "numeric": 11811,
+  "unique": 11026
  },
  "final_drag_critical_Re": {
-  "count": 11810,
+  "count": 11811,
   "key": "final_drag_critical_Re",
   "max": 1000000.0,
   "min": 421000.0,
-  "numeric": 11810,
+  "numeric": 11811,
   "unique": 3357
  },
  "final_drag_in_range": {
-  "count": 11810,
+  "count": 11811,
   "key": "final_drag_in_range",
   "max": true,
   "min": false,
-  "numeric": 11810,
+  "numeric": 11811,
   "unique": 2,
   "values": {
    "false": 3682,
-   "true": 8128
+   "true": 8129
   }
  },
  "final_drag_sos": {
-  "count": 11810,
+  "count": 11811,
   "key": "final_drag_sos",
   "max": 353.056561099758,
   "min": 330.09898453330334,
-  "numeric": 11810,
+  "numeric": 11811,
   "unique": 2791
  },
  "final_height": {
-  "count": 11022,
+  "count": 11023,
   "key": "final_height",
   "max": 889.7112000000001,
   "min": -11.85,
-  "numeric": 11022,
+  "numeric": 11023,
   "unique": 133
  },
  "final_time": {
@@ -275,12 +275,12 @@
   "unique": 1610
  },
  "final_viscosity_mua": {
-  "count": 11810,
+  "count": 11811,
   "key": "final_viscosity_mua",
   "max": 1.904032700872956e-05,
   "min": 1.7131965970396322e-05,
-  "numeric": 11810,
-  "unique": 10845
+  "numeric": 11811,
+  "unique": 10846
  },
  "final_viscosity_muv": {
   "count": 2899,
@@ -291,15 +291,15 @@
   "unique": 2776
  },
  "final_viscosity_viscosity": {
-  "count": 11810,
+  "count": 11811,
   "key": "final_viscosity_viscosity",
   "max": 1.903270894603986e-05,
   "min": 1.7131965970396322e-05,
-  "numeric": 11810,
-  "unique": 10890
+  "numeric": 11811,
+  "unique": 10891
  },
  "given_angle": {
-  "count": 14159,
+  "count": 14160,
   "key": "given_angle",
   "max": 0,
   "min": 0,
@@ -338,7 +338,7 @@
   }
  },
  "given_charge": {
-  "count": 15299,
+  "count": 15300,
   "key": "given_charge",
   "unique": 1414
  },
@@ -348,7 +348,7 @@
   "unique": 15
  },
  "given_date": {
-  "count": 15467,
+  "count": 15468,
   "key": "given_date",
   "max": 1998,
   "min": 1646,
@@ -388,7 +388,7 @@
   "unique": 1
  },
  "given_diameter": {
-  "count": 13825,
+  "count": 13826,
   "key": "given_diameter",
   "unique": 383
  },
@@ -490,7 +490,7 @@
   "unique": 2
  },
  "given_mass": {
-  "count": 13628,
+  "count": 13629,
   "key": "given_mass",
   "unique": 740
  },
@@ -658,12 +658,12 @@
   "unique": 170
  },
  "given_range": {
-  "count": 11174,
+  "count": 11175,
   "key": "given_range",
   "max": 290,
   "min": 220,
   "numeric": 2,
-  "unique": 3509
+  "unique": 3510
  },
  "given_range_note": {
   "count": 708,
@@ -734,19 +734,19 @@
   "unique": 47
  },
  "idx": {
-  "count": 15467,
+  "count": 15468,
   "key": "idx",
   "max": 2197,
   "min": 0,
-  "numeric": 15467,
+  "numeric": 15468,
   "unique": 2198
  },
  "initial_angle": {
-  "count": 14159,
+  "count": 14160,
   "key": "initial_angle",
   "max": 90.0,
   "min": -0.16666666666666666,
-  "numeric": 14159,
+  "numeric": 14160,
   "unique": 384
  },
  "initial_height": {
@@ -766,15 +766,15 @@
   }
  },
  "initial_velocity": {
-  "count": 15276,
+  "count": 15277,
   "key": "initial_velocity",
   "max": 7441.628658909786,
   "min": 0.97294089614646,
-  "numeric": 15276,
-  "unique": 13049
+  "numeric": 15277,
+  "unique": 13050
  },
  "key": {
-  "count": 15467,
+  "count": 15468,
   "key": "key",
   "unique": 75,
   "values": {
@@ -816,7 +816,7 @@
    "lombard1796": 386,
    "lyman1975": 510,
    "madras1849": 1240,
-   "madras1850": 86,
+   "madras1850": 87,
    "maxwell1870": 1,
    "modern2019": 48,
    "montagu1792": 86,
@@ -856,15 +856,15 @@
   }
  },
  "mass": {
-  "count": 15299,
+  "count": 15300,
   "key": "mass",
   "max": 3665.4799419700003,
   "min": 0.001520312452597155,
-  "numeric": 15299,
+  "numeric": 15300,
   "unique": 755
  },
  "material": {
-  "count": 13436,
+  "count": 13437,
   "key": "material",
   "unique": 9,
   "values": {
@@ -876,7 +876,7 @@
    "iron": 6615,
    "lead": 2774,
    "plomb": 5,
-   "stone": 345
+   "stone": 346
   }
  },
  "material_density": {
@@ -903,12 +903,12 @@
   }
  },
  "max_height": {
-  "count": 11833,
+  "count": 11834,
   "key": "max_height",
   "max": 9095.429194377877,
   "min": 0,
-  "numeric": 11833,
-  "unique": 6506
+  "numeric": 11834,
+  "unique": 6507
  },
  "pendulum_impact_length": {
   "count": 58,
@@ -1000,12 +1000,12 @@
   }
  },
  "power_factor": {
-  "count": 15467,
+  "count": 15468,
   "key": "power_factor",
   "max": 38649115.474022925,
   "min": 792.2795381859743,
-  "numeric": 15467,
-  "unique": 14457
+  "numeric": 15468,
+  "unique": 14458
  },
  "pressure": {
   "count": 4648,
@@ -1024,23 +1024,23 @@
   "unique": 37
  },
  "projectile_density": {
-  "count": 15276,
+  "count": 15277,
   "key": "projectile_density",
   "max": 42103.81566305655,
   "min": 242.4197358223152,
-  "numeric": 15276,
+  "numeric": 15277,
   "unique": 903
  },
  "range": {
-  "count": 11174,
+  "count": 11175,
   "key": "range",
   "max": 36399.025042038,
   "min": 0.6096,
-  "numeric": 11174,
-  "unique": 3125
+  "numeric": 11175,
+  "unique": 3126
  },
  "ref": {
-  "count": 15467,
+  "count": 15468,
   "key": "ref",
   "unique": 563
  },
@@ -1090,15 +1090,15 @@
   }
  },
  "sourceline": {
-  "count": 15467,
+  "count": 15468,
   "key": "sourceline",
   "max": 9787,
   "min": 9,
-  "numeric": 15467,
+  "numeric": 15468,
   "unique": 5269
  },
  "technique": {
-  "count": 15467,
+  "count": 15468,
   "key": "technique",
   "unique": 16,
   "values": {
@@ -1112,7 +1112,7 @@
    "height": 4,
    "pendulum": 1177,
    "pressure": 23,
-   "range": 6213,
+   "range": 6214,
    "theory": 1065,
    "time": 430,
    "trajectory": 110,
@@ -1121,73 +1121,73 @@
   }
  },
  "time": {
-  "count": 11833,
+  "count": 11834,
   "key": "time",
   "max": 86.24076512825077,
   "min": 0.0020195359931883938,
-  "numeric": 11833,
-  "unique": 11048
+  "numeric": 11834,
+  "unique": 11049
  },
  "time_delta": {
-  "count": 15467,
+  "count": 15468,
   "key": "time_delta",
   "max": 0.02,
   "min": 2e-05,
-  "numeric": 15467,
+  "numeric": 15468,
   "unique": 4,
   "values": {
    "2e-05": 191,
    "0.0002": 1786,
    "0.002": 1709,
-   "0.02": 11781
+   "0.02": 11782
   }
  },
  "version": {
-  "count": 15467,
+  "count": 15468,
   "key": "version",
   "unique": 1,
   "values": {
-   "2019-04-09v68": 15467
+   "2019-04-09v68": 15468
   }
  },
  "vx": {
-  "count": 11833,
+  "count": 11834,
   "key": "vx",
   "max": 840.9431804823975,
   "min": 5.957339722663525e-17,
-  "numeric": 11833,
-  "unique": 11048
+  "numeric": 11834,
+  "unique": 11049
  },
  "vy": {
-  "count": 11833,
+  "count": 11834,
   "key": "vy",
   "max": 288.47580849374424,
   "min": -422.062872108614,
-  "numeric": 11833,
-  "unique": 11048
+  "numeric": 11834,
+  "unique": 11049
  },
  "x": {
-  "count": 11833,
+  "count": 11834,
   "key": "x",
   "max": 36399.02502280339,
   "min": 1.1820941436120927e-17,
-  "numeric": 11833,
-  "unique": 6782
+  "numeric": 11834,
+  "unique": 6783
  },
  "y": {
-  "count": 11833,
+  "count": 11834,
   "key": "y",
   "max": 889.7112000000001,
   "min": -11.85,
-  "numeric": 11833,
+  "numeric": 11834,
   "unique": 4478
  },
  "year": {
-  "count": 15467,
+  "count": 15468,
   "key": "year",
   "max": 2019,
   "min": 1580,
-  "numeric": 15467,
+  "numeric": 15468,
   "unique": 137
  }
 }
