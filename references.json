@@ -457,6 +457,12 @@
   "ref": "Ordnance Manual, 1850",
   "summary": "This covers many aspects of inspecting and maintaining artillery."
  },
+ "owen1873": {
+  "cms": "Owen, Charles Henry.  <i>The Principles and Practice of Modern Artillery, Second Edition.</i>  London: John Murray: 1873.",
+  "key": "owen1873",
+  "ref": "Owen, 1873",
+  "summary": "This is a textbook for artillery officers at Woolwich."
+ },
  "parish1977": {
   "cms": "Parish, O. Owen and Terril W. Putnam. <i>Equations for the Determination of Humidity from Dewpoint and Psychrometric Data.</i>  Washington, D.C.: National Aeronautics and Space Administration, 1977.",
   "key": "parish1977",
