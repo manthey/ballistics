@@ -1,0 +1,938 @@
+---
+key: owen1873
+ref: "Owen, 1873"
+cms: "Owen, Charles Henry.  <i>The Principles and Practice of Modern Artillery, Second Edition.</i>  London: John Murray: 1873."
+summary: "This is a textbook for artillery officers at Woolwich."
+date: "1873"
+data:
+  -
+    date: "1858"
+    ref2: p. 227
+    mass: 26.69 lb
+    diameter: 5.868 in
+    technique: "trajectory"
+    data:
+      -
+        charge: 8 lb
+        angle: 1.75 deg
+        data:
+          -
+            technique: "chronograph"
+            initial_velocity: 1731 ft/s
+          -
+            range: 12 yards
+            rising_height: 1.116 ft
+            skip: true
+            skip_note: This seems impossible, unless the range has been misconverted.
+          -
+            range: 116 yards
+            rising_height: 10.10 ft
+          -
+            range: 233 yards
+            rising_height: 18.85 ft
+          -
+            range: 350 yards
+            rising_height: 24.67 ft
+          -
+            range: 466 yards
+            rising_height: 28.68 ft
+          -
+            range: 583 yards
+            final_height: 29.42 ft
+          -
+            range: 700 yards
+            final_height: 26.90 ft
+          -
+            range: 816 yards
+            final_height: 20.33 ft
+          -
+            range: 933 yards
+            final_height: 9.76 ft
+          -
+            range: 1050 yards
+            final_height: -5.47 ft
+      -
+        charge: 5 lb
+        angle: 2 deg
+        data:
+          -
+            technique: "chronograph"
+            initial_velocity: 1367 ft/s
+          -
+            range: 116 yards
+            rising_height: 11.56 ft
+          -
+            range: 233 yards
+            rising_height: 20.76 ft
+          -
+            range: 350 yards
+            rising_height: 26.27 ft
+          -
+            range: 466 yards
+            final_height: 28.43 ft
+          -
+            range: 583 yards
+            final_height: 27.02 ft
+          -
+            range: 700 yards
+            final_height: 19.69 ft
+          -
+            range: 816 yards
+            final_height: 9.49 ft
+      -
+        charge: 3 lb
+        angle: 2.5 deg
+        data:
+          -
+            technique: "chronograph"
+            initial_velocity: 1073 ft/s
+          -
+            range: 116 yards
+            rising_height: 14.06 ft
+          -
+            range: 233 yards
+            rising_height: 24.37 ft
+          -
+            range: 350 yards
+            rising_height: 29.85 ft
+          -
+            range: 466 yards
+            final_height: 30.64 ft
+          -
+            range: 583 yards
+            final_height: 25.47 ft
+          -
+            range: 700 yards
+            final_height: 14.76 ft
+          -
+            range: 816 yards
+            final_height: -2.43 ft
+      -
+        charge: 1.5 lb
+        angle: 3.5 deg
+        data:
+          -
+            technique: "chronograph"
+            initial_velocity: 713 ft/s
+          -
+            range: 116 yards
+            rising_height: 18.03 ft
+          -
+            range: 233 yards
+            rising_height: 27.33 ft
+          -
+            range: 350 yards
+            final_height: 27.48 ft
+          -
+            range: 466 yards
+            final_height: 17.41 ft
+      -
+        charge: 0.75 lb
+        angle: 5.5 deg
+        data:
+          -
+            technique: "chronograph"
+            initial_velocity: 453 ft/s
+          -
+            range: 116 yards
+            rising_height: 25.07 ft
+          -
+            range: 233 yards
+            final_height: 30.06 ft
+          -
+            range: 350 yards
+            final_height: 13.41 ft
+  -
+    ref2: p. 309
+    mass: 24 lb
+    material: iron
+    angle: 45 deg
+    data:
+      -
+        charge: 6 lb
+        range: 4500 yards
+      -
+        charge: 8 lb
+        range: 4800 yards
+  -
+    ref2: p. 320
+    angle: 0 deg
+    data:
+      -
+        diameter: 8 in
+        mass: 66.5 lb
+        material: iron
+        charge: 16 lb
+        range: 200 yards
+        final_velocity: 1400 ft/s
+      -
+        diameter: 13 in
+        mass: 279.5 lb
+        material: iron
+        charge: 74.25 lb
+        initial_velocity: 1630 ft/s
+      -
+        diameter: 13 in
+        mass: 284 lb
+        material: iron
+        charge: 74.25 lb
+        range: 800 yards
+        final_velocity: 1290 ft/s
+      -
+        diameter: 9 in
+        mass: 105 lb
+        material: iron
+        charge: 25 lb
+        initial_velocity: 1653 ft/s
+  -
+    ref2: p. 531
+    desc: "Experiments of A. Noble"
+    angle: 0
+    diameter_note: From p. 527
+    data:
+      -
+        diameter: 9.82 in
+        data:
+          -
+            charge: 12 lb
+            mass: 88 lb 5 oz
+            initial_velocity: 1292 ft/s
+          -
+            charge: 8 lb
+            mass: 117 lb
+            initial_velocity: 940 ft/s
+      -
+        diameter: 7.82 in
+        data:
+          -
+            charge: 16 lb
+            mass: 66 lb 4 oz
+            initial_velocity: 1579 ft/s
+          -
+            charge: 16 lb
+            mass: 51 lb 8 oz
+            initial_velocity: 1809 ft/s
+          -
+            charge: 10 lb
+            mass: 60 lb 0 oz
+            initial_velocity: 1308 ft/s
+          -
+            charge: 10 lb
+            mass: 49 lb 14 oz
+            initial_velocity: 1464 ft/s
+          -
+            charge: 10 lb
+            mass: 51 lb 8 oz
+            initial_velocity: 1506 ft/s
+      -
+        diameter: 6.147 in
+        data:
+          -
+            charge: 10 lb
+            mass: 31 lb 6 oz
+            initial_velocity: 1690 ft/s
+          -
+            charge: 8 lb
+            mass: 31 lb 6 oz
+            initial_velocity: 1618 ft/s
+          -
+            charge: 6 lb
+            mass: 31 lb 6 oz
+            initial_velocity: 1447 ft/s
+      -
+        diameter: 5.57 in
+        charge: 8 lb
+        mass: 23 lb 8 oz
+        initial_velocity: 1720 ft/s
+      -
+        diameter: 5.074 in
+        charge: 6 lb
+        mass: 17 lb 11 oz
+        initial_velocity: 1690 ft/s
+      -
+        diameter: 4.432 in
+        charge: 4 lb
+        mass: 12 lb 10.5 oz
+        initial_velocity: 1769 ft/s
+      -
+        diameter: 4.06 in
+        charge: 2.5 lb
+        mass: 9 lb 5.75 oz
+        initial_velocity: 1613 ft/s
+      -
+        diameter: 3.332 in
+        charge: 1.5 lb
+        mass: 6 lb 3.75 oz
+        initial_velocity: 1484 ft/s
+      -
+        diameter: 5.57 in
+        charge: 2.5 lb
+        mass: 16 lb 11.5 oz
+        initial_velocity: 1252 ft/s
+      -
+        diameter: 4.432 in
+        charge: 1.25 lb
+        mass: 8 lb 12 oz
+        initial_velocity: 1163 ft/s
+      -
+        diameter: 13 in
+        data:
+          -
+            charge: 7 lb
+            mass: 204 lb 8 oz
+            initial_velocity: 506 ft/s
+          -
+            charge: 3.5 lb
+            mass: 204 lb 8 oz
+            initial_velocity: 328 ft/s
+      -
+        diameter: 9.82 in
+        data:
+          -
+            charge: 4 lb
+            mass: 91 lb 7 oz
+            initial_velocity: 521 ft/s
+          -
+            charge: 2 lb
+            mass: 91 lb 7 oz
+            initial_velocity: 325 ft/s
+      -
+        material: iron
+        mass: 149 lb 14 oz
+        data:
+          -
+            charge: 40 lb
+            initial_velocity: 1726 ft/s
+          -
+            charge: 30 lb
+            initial_velocity: 1569 ft/s
+          -
+            charge: 20 lb
+            initial_velocity: 1344 ft/s
+      -
+        material: iron
+        mass: 102 lb 0 oz
+        data:
+          -
+            charge: 25 lb
+            initial_velocity: 1653 ft/s
+          -
+            charge: 20 lb
+            initial_velocity: 1547 ft/s
+  -
+    skip: true
+    skip_note: "p. 534 summarizes Bashforth's results, which are given in that data file."
+  -
+    ref2: p. 540
+    skip: true
+    skip_note: Table XXI doesn't specify charge
+  -
+    ref2: p. 540
+    material: iron
+    data:
+      -
+        diameter: 7.92 in
+        charge: 18 lb
+        data:
+          -
+            angle: 1 deg
+            data:
+              - range: 900 yards
+              - final_time: 2.25 s
+          -
+            angle: 2 deg
+            data:
+              - range: 1170 yards
+              - final_time: 3.25 s
+          -
+            angle: 3 deg
+            data:
+              - range: 1660 yards
+              - final_time: 4.25 s
+          -
+            angle: 4 deg
+            data:
+              - range: 1860 yards
+              - final_time: 5.25 s
+          -
+            angle: 5 deg
+            data:
+              - range: 2140 yards
+              - final_time: 6.25 s
+          -
+            angle: 6 deg
+            data:
+              - range: 2400 yards
+              - final_time: 7.75 s
+          -
+            angle: 8 deg
+            data:
+              - range: 2740 yards
+              - final_time: 9.75 s
+      -
+        diameter: 7.92 in
+        charge: 16 lb
+        data:
+          -
+            angle: 1 deg
+            data:
+              - range: 700 yards
+              - final_time: 2 s
+          -
+            angle: 2 deg
+            data:
+              - range: 1070 yards
+              - final_time: 3 s
+          -
+            angle: 3 deg
+            data:
+              - range: 1410 yards
+              - final_time: 4.25 s
+          -
+            angle: 4 deg
+            data:
+              - range: 1710 yards
+              - final_time: 5.5 s
+          -
+            angle: 5 deg
+            data:
+              - range: 1930 yards
+              - final_time: 6.5 s
+          -
+            angle: 6 deg
+            data:
+              - range: 2140 yards
+              - final_time: 7.5 s
+          -
+            angle: 8 deg
+            data:
+              - range: 2540 yards
+              - final_time: 9 s
+      -
+        diameter: 6.147 in
+        charge: 10 lb
+        data:
+          -
+            angle: 1 deg
+            data:
+              - range: 820 yards
+              - range: 772 yards
+          -
+            angle: 2 deg
+            data:
+              - range: 1200 yards
+              - range: 1160 yards
+          -
+            angle: 3 deg
+            data:
+              - range: 1520 yards
+              - range: 1460 yards
+          -
+            angle: 4 deg
+            data:
+              - range: 1810 yards
+              - range: 1690 yards
+          -
+            angle: 5 deg
+            data:
+              - range: 2050 yards
+              - range: 1910 yards
+          -
+            angle: 6 deg
+            data:
+              - range: 2250 yards
+              - range: 2110 yards
+          -
+            angle: 8 deg
+            data:
+              - range: 2610 yards
+              - range: 2460 yards
+      -
+        diameter: 6.147 in
+        charge: 10 lb
+        data:
+          -
+            angle: 1 deg
+            data:
+              - range: 747 yards
+              - final_time: 2 s
+          -
+            angle: 2 deg
+            data:
+              - range: 1173 yards
+              - final_time: 3 s
+          -
+            angle: 3 deg
+            data:
+              - range: 1435 yards
+              - final_time: 4 s
+          -
+            angle: 4 deg
+            data:
+              - range: 1698 yards
+              -
+                final_time: 5.25 s
+                final_time_note: The table lists 3.25 s, which must be a mistake
+          -
+            angle: 5 deg
+            data:
+              - range: 1900 yards
+              - final_time: 6.25 s
+          -
+            angle: 6 deg
+            data:
+              - range: 2127 yards
+              - final_time: 7.25 s
+          -
+            angle: 8 deg
+            data:
+              - range: 2443 yards
+              - final_time: 8.75 s
+      -
+        diameter: 5.57 in
+        mass: 24 lb 12.5 oz
+        charge: 8 lb
+        data:
+          -
+            angle: 1 deg
+            range: 750 yards
+          -
+            angle: 2 deg
+            range: 1120 yards
+          -
+            angle: 3 deg
+            range: 1440 yards
+          -
+            angle: 4 deg
+            range: 1630 yards
+          -
+            angle: 5 deg
+            range: 1840 yards
+          -
+            angle: 6 deg
+            range: 1950 yards
+          -
+            angle: 8 deg
+            range: 2230 yards
+      -
+        diameter: 5.047 in
+        mass: 19 lb 0.5 oz
+        charge: 6 lb
+        data:
+          -
+            angle: 1 deg
+            range: 690 yards
+          -
+            angle: 2 deg
+            range: 990 yards
+          -
+            angle: 3 deg
+            range: 1270 yards
+          -
+            angle: 4 deg
+            range: 1500 yards
+          -
+            angle: 5 deg
+            range: 1710 yards
+          -
+            angle: 6 deg
+            range: 1890 yards
+          -
+            angle: 8 deg
+            range: 2130 yards
+      -
+        skip: true
+        skip_note: The mass of the hollow shot is not given
+  -
+    ref2: p. 541
+    data:
+      -
+        mass: 34 lb 12 oz
+        diameter: 6.147 in
+        charge: 10 lb
+        data:
+          -
+            range: 1000 yards
+            angle: 1.75 deg
+          -
+            range: 1100 yards
+            angle: 2 deg
+          -
+            range: 1200 yards
+            angle: 2.25 deg
+          -
+            range: 1300 yards
+            angle: 2.625 deg
+          -
+            range: 1400 yards
+            angle: 3 deg
+      -
+        mass: 102 lb 0 oz
+        material: iron
+        data:
+          -
+            charge: 25 lb
+            data:
+              -
+                range: 100 yards
+                angle: 0 deg 6 arcmin
+              -
+                range: 200 yards
+                angle: 0 deg 14 arcmin
+              -
+                range: 300 yards
+                angle: 0 deg 22 arcmin
+              -
+                range: 400 yards
+                angle: 0 deg 30 arcmin
+              -
+                range: 500 yards
+                angle: 0 deg 38 arcmin
+              -
+                range: 600 yards
+                angle: 0 deg 47 arcmin
+              -
+                range: 700 yards
+                angle: 0 deg 57 arcmin
+              -
+                range: 800 yards
+                angle: 1 deg 7 arcmin
+              -
+                range: 900 yards
+                angle: 1 deg 18 arcmin
+              -
+                range: 1000 yards
+                angle: 1 deg 30 arcmin
+              -
+                range: 1100 yards
+                angle: 1 deg 43 arcmin
+              -
+                range: 1200 yards
+                angle: 1 deg 56 arcmin
+              -
+                range: 1300 yards
+                angle: 2 deg 10 arcmin
+              -
+                range: 1400 yards
+                angle: 2 deg 24 arcmin
+              -
+                range: 1500 yards
+                angle: 2 deg 39 arcmin
+              -
+                range: 1600 yards
+                angle: 2 deg 55 arcmin
+              -
+                range: 1700 yards
+                angle: 3 deg 12 arcmin
+              -
+                range: 1800 yards
+                angle: 3 deg 30 arcmin
+              -
+                range: 1900 yards
+                angle: 3 deg 49 arcmin
+              -
+                range: 2000 yards
+                angle: 4 deg 9 arcmin
+              -
+                range: 2100 yards
+                angle: 4 deg 29 arcmin
+              -
+                range: 2200 yards
+                angle: 4 deg 50 arcmin
+              -
+                range: 2300 yards
+                angle: 5 deg 12 arcmin
+              -
+                range: 2400 yards
+                angle: 5 deg 35 arcmin
+              -
+                range: 2500 yards
+                angle: 5 deg 58 arcmin
+          -
+            charge: 20 lb
+            data:
+              -
+                range: 100 yards
+                angle: 0 deg 8 arcmin
+              -
+                range: 200 yards
+                angle: 0 deg 16 arcmin
+              -
+                range: 300 yards
+                angle: 0 deg 25 arcmin
+              -
+                range: 400 yards
+                angle: 0 deg 34 arcmin
+              -
+                range: 500 yards
+                angle: 0 deg 43 arcmin
+              -
+                range: 600 yards
+                angle: 0 deg 53 arcmin
+              -
+                range: 700 yards
+                angle: 1 deg 3 arcmin
+              -
+                range: 800 yards
+                angle: 1 deg 13 arcmin
+              -
+                range: 900 yards
+                angle: 1 deg 24 arcmin
+              -
+                range: 1000 yards
+                angle: 1 deg 36 arcmin
+              -
+                range: 1100 yards
+                angle: 1 deg 49 arcmin
+              -
+                range: 1200 yards
+                angle: 2 deg 4 arcmin
+              -
+                range: 1300 yards
+                angle: 2 deg 19 arcmin
+              -
+                range: 1400 yards
+                angle: 2 deg 35 arcmin
+              -
+                range: 1500 yards
+                angle: 2 deg 51 arcmin
+              -
+                range: 1600 yards
+                angle: 3 deg 8 arcmin
+              -
+                range: 1700 yards
+                angle: 3 deg 26 arcmin
+              -
+                range: 1800 yards
+                angle: 3 deg 45 arcmin
+              -
+                range: 1900 yards
+                angle: 4 deg 5 arcmin
+              -
+                range: 2000 yards
+                angle: 4 deg 25 arcmin
+              -
+                range: 2100 yards
+                angle: 4 deg 47 arcmin
+              -
+                range: 2200 yards
+                angle: 5 deg 9 arcmin
+              -
+                range: 2300 yards
+                angle: 5 deg 32 arcmin
+              -
+                range: 2400 yards
+                angle: 5 deg 56 arcmin
+              -
+                range: 2500 yards
+                angle: 6 deg 21 arcmin
+          -
+            charge: 12 lb
+            data:
+              -
+                range: 100 yards
+                angle: 0 deg 10 arcmin
+              -
+                range: 200 yards
+                angle: 0 deg 20 arcmin
+              -
+                range: 300 yards
+                angle: 0 deg 30 arcmin
+              -
+                range: 400 yards
+                angle: 0 deg 42 arcmin
+              -
+                range: 500 yards
+                angle: 0 deg 54 arcmin
+              -
+                range: 600 yards
+                angle: 1 deg 6 arcmin
+              -
+                range: 700 yards
+                angle: 1 deg 20 arcmin
+              -
+                range: 800 yards
+                angle: 1 deg 34 arcmin
+              -
+                range: 900 yards
+                angle: 1 deg 49 arcmin
+              -
+                range: 1000 yards
+                angle: 2 deg 5 arcmin
+              -
+                range: 1100 yards
+                angle: 2 deg 22 arcmin
+              -
+                range: 1200 yards
+                angle: 2 deg 41 arcmin
+              -
+                range: 1300 yards
+                angle: 3 deg 0 arcmin
+              -
+                range: 1400 yards
+                angle: 3 deg 21 arcmin
+              -
+                range: 1500 yards
+                angle: 3 deg 43 arcmin
+              -
+                range: 1600 yards
+                angle: 4 deg 6 arcmin
+              -
+                range: 1700 yards
+                angle: 4 deg 31 arcmin
+              -
+                range: 1800 yards
+                angle: 4 deg 56 arcmin
+              -
+                range: 1900 yards
+                angle: 5 deg 22 arcmin
+              -
+                range: 2000 yards
+                angle: 5 deg 49 arcmin
+              -
+                range: 2100 yards
+                angle: 6 deg 18 arcmin
+              -
+                range: 2200 yards
+                angle: 6 deg 48 arcmin
+              -
+                range: 2300 yards
+                angle: 7 deg 18 arcmin
+  -
+    ref2: p. 542
+    data:
+      -
+        diameter: 13 in
+        mass: 284 lb
+        material: iron
+        angle: 45 deg
+        data:
+          -
+            range: 400 yards
+            charge: 1 lb 12 oz
+          -
+            range: 450 yards
+            charge: 1 lb 15 oz
+          -
+            range: 500 yards
+            charge: 2 lb 1 oz
+          -
+            range: 550 yards
+            charge: 2 lb 3 oz
+          -
+            range: 600 yards
+            charge: 2 lb 5 oz
+          -
+            range: 650 yards
+            charge: 2 lb 7 oz
+          -
+            range: 700 yards
+            charge: 2 lb 9 oz
+          -
+            range: 750 yards
+            charge: 2 lb 11.5 oz
+          -
+            range: 800 yards
+            charge: 2 lb 13.5 oz
+          -
+            range: 850 yards
+            charge: 3 lb 0 oz
+          -
+            range: 900 yards
+            charge: 3 lb 2 oz
+          -
+            range: 950 yards
+            charge: 3 lb 4 oz
+          -
+            range: 1000 yards
+            charge: 3 lb 7 oz
+          -
+            range: 1050 yards
+            charge: 3 lb 9 oz
+          -
+            range: 1100 yards
+            charge: 3 lb 11 oz
+          -
+            range: 1150 yards
+            charge: 3 lb 14 oz
+          -
+            range: 1200 yards
+            charge: 4 lb 0 oz
+          -
+            range: 1300 yards
+            charge: 4 lb 5 oz
+          -
+            range: 1500 yards
+            charge: 4 lb 15 oz
+          -
+            range: 1700 yards
+            charge: 5 lb 10 oz
+          -
+            range: 2900 yards
+            charge: 9 lb 0 oz
+      -
+        skip: true
+        skip_note: The mass of a 10 inch shell isn't specified.
+      -
+        diameter: 8 in
+        mass: 66.5 lb
+        material: iron
+        angle: 45 deg
+        data:
+          -
+            range: 400 yards
+            charge: 0 lb 9 oz 8 dr
+          -
+            range: 450 yards
+            charge: 0 lb 9 oz 12 dr
+          -
+            range: 500 yards
+            charge: 0 lb 10 oz 12 dr
+          -
+            range: 550 yards
+            charge: 0 lb 12 oz 8 dr
+          -
+            range: 600 yards
+            charge: 0 lb 13 oz 12 dr
+          -
+            range: 650 yards
+            charge: 0 lb 14 oz 10 dr
+          -
+            range: 700 yards
+            charge: 0 lb 15 oz 4 dr
+          -
+            range: 750 yards
+            charge: 0 lb 15 oz 14 dr
+          -
+            range: 800 yards
+            charge: 1 lb 0 oz 10 dr
+          -
+            range: 850 yards
+            charge: 1 lb 1 oz 4 dr
+          -
+            range: 900 yards
+            charge: 1 lb 2 oz 0 dr
+          -
+            range: 950 yards
+            charge: 1 lb 2 oz 12 dr
+          -
+            range: 1000 yards
+            charge: 1 lb 3 oz 8 dr
+          -
+            range: 1050 yards
+            charge: 1 lb 4 oz 0 dr
+          -
+            range: 1100 yards
+            charge: 1 lb 4 oz 12 dr
+          -
+            range: 1150 yards
+            charge: 1 lb 5 oz 4 dr
+          -
+            range: 1200 yards
+            charge: 1 lb 6 oz 0 dr
+          -
+            range: 2000 yards
+            charge: 2 lb 0 oz 0 dr
+      -
+        skip: true
+        skip_note: The mass of a 5 1/2 or 4 1/4 inch shell isn't specified.
