@@ -193,6 +193,12 @@
   "ref": "Goex, 2019",
   "summary": "Expected loads from Goex."
  },
+ "hall1969": {
+  "cms": "Hall, A. R.  <i>Ballistics in the Seventeenth Century.</i>  New York: Harper and Row, 1969.",
+  "key": "hall1969",
+  "ref": "Hall, 1969",
+  "summary": "This covers how the science of ballistics developed in the 17th century.  It includes several range tables in an appendix."
+ },
  "hall1997": {
   "cms": "Hall, Bert S.  <i>Weapons and Warfare in Renaissance Europe.</i>  Baltimore: The John Hopkins Press, 1997.",
   "key": "hall1997",
