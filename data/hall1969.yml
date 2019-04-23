@@ -1,0 +1,81 @@
+---
+key: hall1969
+ref: "Hall, 1969"
+cms: "Hall, A. R.  <i>Ballistics in the Seventeenth Century.</i>  New York: Harper and Row, 1969."
+summary: "This covers how the science of ballistics developed in the 17th century.  It includes several range tables in an appendix."
+date: "1969"
+data:
+  -
+    ref2: p. 70
+    date: 1690
+    desc: "Halley reporting to the Royal Society on reducing windage"
+    mass: 14 lb
+    range: 550 yards
+    charge: 2 oz
+    material: iron
+    angle: 45 deg
+  -
+    ref2: p. 166
+    desc: "From John Sheriffe"
+    date: "1590"
+    material: iron
+    angle: 45 deg
+    angle_note: The range given is for the maximum, but the angle isn't actually specified.
+    data:
+      -
+        mass: 66 lb
+        charge: 30 lb
+        range: 1930 paces
+      -
+        mass: 60 lb
+        charge: 27 lb
+        range: 2000 paces
+      -
+        mass: 53.333 lb
+        charge: 25 lb
+        range: 2000 paces
+      -
+        mass: 41.25 lb
+        charge: 20 lb
+        range: 1800 paces
+      -
+        mass: 30.25 lb
+        charge: 18 lb
+        range: 1700 paces
+      -
+        mass: 24.25 lb
+        charge: 14 lb
+        range: 1600 paces
+      -
+        mass: 17.333 lb
+        charge: 12 lb
+        range: 2500 paces
+      -
+        mass: 9.333 lb
+        charge: 8 lb
+        range: 2500 paces
+      -
+        mass: 7 lb
+        charge: 6.25 lb
+        range: 1800 paces
+      -
+        mass: 5.333 lb
+        charge: 5.333 lb
+        range: 1700 paces
+      -
+        mass: 4 lb
+        charge: 4 lb
+        range: 1600 paces
+      -
+        mass: 3 lb
+        charge: 3 lb
+        range: 1500 paces
+      -
+        mass: 1.25 lb
+        charge: 1.25 lb
+        range: 1800 paces
+  -
+    ref2: p. 167
+    skip: true
+    skip_note: No charges are given.
+    desc: "From John Sheriffe"

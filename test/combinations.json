@@ -243,6 +243,17 @@
  },
  {
   "conditions": {
+   "angle": "1 deg",
+   "charge": "18 lb",
+   "diameter": "7.92 in",
+   "final_time": "2.25 s",
+   "material": "iron"
+  },
+  "power_factor": 1055935.9242694043,
+  "time": 2.2500000002456635
+ },
+ {
+  "conditions": {
    "angle": "0 deg",
    "charge": "9 italiandenari",
    "diameter": "4 punti 10 atomi",

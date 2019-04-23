@@ -327,7 +327,7 @@ UnitsTable = [{
     'value': math.pi / 200,
     'desc': 'Gradian (gon)',
 }, {
-    'names': ['quadpt', 'quadrentpoint', 'quadrentpoints'],
+    'names': ['quadpt', 'quadrantpoint', 'quadrantpoints'],
     'value': math.pi / 24,
     'desc': 'Gunners quadrant point (12 points in a quarter circle)',
 }, {
