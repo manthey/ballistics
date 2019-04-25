@@ -79,3 +79,243 @@ data:
     skip: true
     skip_note: No charges are given.
     desc: "From John Sheriffe"
+  -
+    ref2: p. 169
+    desc: "From de la Fontaine, Les Fortifications Royales"
+    date: 1666
+    material: iron
+    angle: 45 deg
+    technique: theory
+    technique_note: "I've marked this as theory, as it is not credible that these are real ranges."
+    data:
+      -
+        mass: 45 lbfr
+        charge: 22.5 lbfr
+        range: 16200 ftfr
+      -
+        mass: 33.333 lbfr
+        charge: 17 lbfr
+        range: 16400 ftfr
+      -
+        mass: 24 lbfr
+        charge: 15 lbfr
+        range: 16500 ftfr
+      -
+        mass: 15 lbfr
+        charge: 10 lbfr
+        range: 16625 ftfr
+      -
+        mass: 18 lbfr
+        charge: 12 lbfr
+        range: 16850 ftfr
+      -
+        mass: 12 lbfr
+        charge: 8.5 lbfr
+        range: 16050 ftfr
+      -
+        mass: 6 lbfr
+        charge: 4.5 lbfr
+        range: 15925 ftfr
+      -
+        mass: 3 lbfr
+        charge: 2.5 lbfr
+        range: 15550 ftfr
+      -
+        mass: 1.5 lbfr
+        charge: 1.5 lbfr
+        range: 15200 ftfr
+        skip: true
+        skip_note: This yields a power factor that is absurd, so it is excluded.
+  -
+    ref2: p. 170
+    desc: "From Surirey de Saint R\u00e9my, M\u00e9moires d'Artillerie"
+    date: 1697
+    material: iron
+    angle: 45 deg
+    range_note: Hall gives the range in yards, but the original is half as many toises.
+    data:
+      -
+        mass: 24 lbfr
+        range: 2250 toises
+        data:
+          - charge: 16 lbfr
+          - charge: 8 lbfr
+      -
+        mass: 16 lbfr
+        range: 2020 toises
+        data:
+          - charge: 10.667 lbfr
+          - charge: 5.333 lbfr
+      -
+        mass: 12 lbfr
+        range: 1870 toises
+        data:
+          - charge: 8 lbfr
+          - charge: 4 lbfr
+      -
+        mass: 8 lbfr
+        range: 1660 toises
+        data:
+          - charge: 5.333 lbfr
+          - charge: 2.667 lbfr
+      -
+        mass: 4 lbfr
+        range: 1520 toises
+        data:
+          - charge: 2.667 lbfr
+          - charge: 1.333 lbfr
+  -
+    skip: true
+    skip_note: The weights of mortar shells is not given.
+  -
+    ref2: p. 171
+    desc: "A table of ranges from Howard Douglas, A Treatise of Naval Gunnery"
+    date: 1820
+    material: iron
+    data:
+      -
+        mass: 32 lb
+        charge: 10.5 lb
+        data:
+          -
+            angle: 1 deg
+            range: 750 yards
+          -
+            angle: 2 deg
+            range: 1050 yards
+          -
+            angle: 3 deg
+            range: 1320 yards
+          -
+            angle: 4 deg
+            range: 1600 yards
+          -
+            angle: 5 deg
+            range: 2085 yards
+          -
+            angle: 6 deg
+            range: 2100 yards
+          -
+            angle: 7 deg
+            range: 2200 yards
+          -
+            angle: 8 deg
+            range: 2460 yards
+          -
+            angle: 9 deg
+            range: 2600 yards
+          -
+            angle: 10 deg
+            range: 2900 yards
+      -
+        mass: 24 lb
+        charge: 6 lb
+        data:
+          -
+            angle: 1 deg
+            range: 661 yards
+          -
+            angle: 2 deg
+            range: 847 yards
+          -
+            angle: 3 deg
+            range: 1213 yards
+          -
+            angle: 4 deg
+            range: 1472 yards
+          -
+            angle: 5 deg
+            range: 1590 yards
+          -
+            angle: 6 deg
+            range: 1939 yards
+          -
+            angle: 7 deg
+            range: 2097 yards
+          -
+            angle: 8 deg
+            range: 2288 yards
+          -
+            angle: 9 deg
+            range: 2545 yards
+          -
+            angle: 10 deg
+            range: 2673 yards
+      -
+        mass: 24 lb
+        charge: 6 lb
+        data:
+          -
+            angle: 1 deg
+            range: 582 yards
+          -
+            angle: 2 deg
+            range: 832 yards
+          -
+            angle: 3 deg
+            range: 1133 yards
+          -
+            angle: 4 deg
+            range: 1308 yards
+          -
+            angle: 5 deg
+            range: 1545 yards
+          -
+            angle: 6 deg
+            range: 1741 yards
+          -
+            angle: 7 deg
+            range: 2273 yards
+          -
+            angle: 8 deg
+            range: 2250 yards
+          -
+            angle: 9 deg
+            range: 2204 yards
+          -
+            angle: 10 deg
+            range: 2562 yards
+      -
+        mass: 12 lb
+        charge: 4 lb
+        data:
+          -
+            angle: 1 deg
+            range: 700 yards
+          -
+            angle: 2 deg
+            range: 913 yards
+          -
+            angle: 3 deg
+            range: 1189 yards
+          -
+            angle: 4 deg
+            range: 1400 yards
+          -
+            angle: 5 deg
+            range: 1580 yards
+          -
+            angle: 6 deg
+            range: 1800 yards
+      -
+        mass: 9 lb
+        charge: 3 lb
+        data:
+          -
+            angle: 1 deg
+            range: 683 yards
+          -
+            angle: 2 deg
+            range: 900 yards
+          -
+            angle: 3 deg
+            range: 1200 yards
+          -
+            angle: 4 deg
+            range: 1400 yards
+          -
+            angle: 5 deg
+            range: 1622 yards
+          -
+            angle: 6 deg
+            range: 1800 yards
