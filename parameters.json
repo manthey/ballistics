@@ -67,7 +67,7 @@
   "max": 34.926612490000004,
   "min": 6.479891000000001e-05,
   "numeric": 15628,
-  "unique": 1071
+  "unique": 1070
  },
  "computation_time": {
   "count": 15796,
@@ -80,12 +80,12 @@
  "date": {
   "count": 15796,
   "key": "date",
-  "unique": 483
+  "unique": 484
  },
  "date_filled": {
   "count": 15796,
   "key": "date_filled",
-  "unique": 477
+  "unique": 478
  },
  "delta_range": {
   "count": 1334,
@@ -340,7 +340,7 @@
  "given_charge": {
   "count": 15628,
   "key": "given_charge",
-  "unique": 1439
+  "unique": 1438
  },
  "given_charge_note": {
   "count": 1415,
@@ -353,7 +353,7 @@
   "max": 1998,
   "min": 1646,
   "numeric": 2400,
-  "unique": 501
+  "unique": 502
  },
  "given_date_note": {
   "count": 504,
@@ -1148,6 +1148,6 @@
   "max": 2019,
   "min": 1580,
   "numeric": 15796,
-  "unique": 141
+  "unique": 142
  }
 }
