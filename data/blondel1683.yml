@@ -211,7 +211,7 @@ data:
     technique: "theory"
     data:
       -
-        charge: 20.5 lbfr
+        charge: 0.5 lbfr
         data:
           -
             angle: 5 deg
