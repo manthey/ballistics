@@ -1,0 +1,137 @@
+---
+key: didion1848
+ref: "Didion, 1848"
+cms: "Didion, Isidore.  <i>Tr\u00e1it\u00e9 de Balistique.</i>  Paris: A. Leneveu, 1848."
+summary: "A treatise on equations for trajectories."
+date: "1848"
+data:
+  -
+    ref2: p. 17
+    desc: "From Scharnhost"
+    data:
+      -
+        mass: 29.4 kg
+        diameter: 22 cm
+        data:
+          -
+            charge: 0.234 kg
+            data:
+              -
+                angle: 45 deg
+                data:
+                  - range: 343 m
+                  - final_time: 9.8 s
+              -
+                angle: 30 deg
+                data:
+                  - range: 290 m
+                  - final_time: 6.8 s
+          -
+            charge: 0.351 kg
+            data:
+              -
+                angle: 45 deg
+                data:
+                  - range: 629 m
+                  - final_time: 12.9 s
+              -
+                angle: 30 deg
+                data:
+                  - range: 561 m
+                  - final_time: 10.0 s
+          -
+            charge: 0.585 kg
+            data:
+              -
+                angle: 45 deg
+                data:
+                  - range: 1146 m
+                  - final_time: 16.0 s
+              -
+                angle: 30 deg
+                data:
+                  - range: 1011 m
+                  - final_time: 12.3 s
+          -
+            charge: 0.994 kg
+            data:
+              -
+                angle: 45 deg
+                data:
+                  - range: 1792 m
+                  - final_time: 20.8 s
+              -
+                angle: 30 deg
+                data:
+                  - range: 1690 m
+                  - final_time: 16.9 s
+      -
+        mass: 54.34 kg
+        diameter: 28 cm
+        data:
+          -
+            charge: 0.468 kg
+            data:
+              -
+                angle: 45 deg
+                data:
+                  - range: 457 m
+                  - final_time: 11 s
+              -
+                angle: 30 deg
+                data:
+                  - range: 383 m
+                  - final_time: 7.5 s
+          -
+            charge: 0.693 kg
+            data:
+              -
+                angle: 45 deg
+                data:
+                  - range: 734 m
+                  - final_time: 14 s
+              -
+                angle: 30 deg
+                data:
+                  - range: 637 m
+                  - final_time: 10 s
+          -
+            charge: 1.054 kg
+            data:
+              -
+                angle: 45 deg
+                data:
+                  - range: 1132 m
+                  - final_time: 17 s
+              -
+                angle: 30 deg
+                data:
+                  - range: 980 m
+                  - final_time: 12 s
+          -
+            charge: 1.405 kg
+            data:
+              -
+                angle: 45 deg
+                data:
+                  - range: 1555 m
+                  - final_time: 20 s
+              -
+                angle: 30 deg
+                data:
+                  - range: 1355 m
+                  - final_time: 14 s
+          -
+            charge: 1.639 kg
+            data:
+              -
+                angle: 45 deg
+                data:
+                  - range: 1757 m
+                  - final_time: 23 s
+              -
+                angle: 30 deg
+                data:
+                  - range: 1516 m
+                  - final_time: 15 s
+# p. 89
