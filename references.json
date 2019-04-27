@@ -158,6 +158,12 @@
   "ref": "Diderot, 1751",
   "summary": "This is an amazing compendium of knowledge.  It is one of the few mostly original encyclopedias."
  },
+ "didion1848": {
+  "cms": "Didion, Isidore.  <i>Tr\u00e1it\u00e9 de Balistique.</i>  Paris: A. Leneveu, 1848.",
+  "key": "didion1848",
+  "ref": "Didion, 1848",
+  "summary": "A treatise on equations for trajectories."
+ },
  "didion1857": {
   "cms": "Didion, Isidore.  <i>Lois de la R\u00e9sistance de L'Air sur Les Projectiles.</i>  Paris: J. Dumaine, 1857.",
   "details": "Didion produces equations for air resistance based on ball velocity, atmospheric density, and ball size.  He compares the results of his equations with the experimental data from Robin, Hutton, and Metz.  His final resistance equation is:\n\n$\\rho = 0.027 \\pi R^2 v^2 (1 + 0.0023 v)$  (p. 79)\n\nfor an atmospheric density of 1.2083 kg/m/m/m.\n",
@@ -195,6 +201,7 @@
  },
  "hall1969": {
   "cms": "Hall, A. R.  <i>Ballistics in the Seventeenth Century.</i>  New York: Harper and Row, 1969.",
+  "details": "This is an excellent account of how the theory of ballistics was developed from the crude beginnings of Aristotle through various authors including Newton, Leibniz, and Huygens, and up to the precise formula of Bernoulli.  The authors observes how \"Philosophers from Galileo to Newton ... used the problems of ballistics as a gymnasium in which to develop their powers for larger and more important researches,\" and how these theories were not developed with utility or even a description of the real world as a goal.  Based on this, the plethora of ballistics treatises without factual data is not a surprise.\n\nThis work was originally published in 1952.\n",
   "key": "hall1969",
   "ref": "Hall, 1969",
   "summary": "This covers how the science of ballistics developed in the 17th century.  It includes several range tables in an appendix."
