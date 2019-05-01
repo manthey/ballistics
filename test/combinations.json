@@ -728,15 +728,15 @@
  },
  {
   "conditions": {
-   "angle": "51 deg",
-   "charge": "16 lb",
-   "final_height": "973 yd",
-   "mass": "24 lb",
+   "angle": "0.02593 tangent",
+   "charge": "1.333 kg",
+   "final_height": "4.305 m",
+   "mass": "16 lbfr",
    "material": "iron",
-   "range": "4680 yd"
+   "range": "400 m"
   },
-  "power_factor": 438236.0623285366,
-  "time": 34.56026377363267
+  "power_factor": 486301.57161210553,
+  "time": 1.17210575226921
  },
  {
   "conditions": {
@@ -834,6 +834,18 @@
  },
  {
   "conditions": {
+   "angle": "0.02663 tangent",
+   "charge": "1.333 kg",
+   "mass": "16 lbfr",
+   "material": "iron",
+   "range": "200 m",
+   "rising_height": "3.917 m"
+  },
+  "power_factor": 462489.6599632765,
+  "time": 0.551420219956546
+ },
+ {
+  "conditions": {
    "chamber_diameter": "0.25 in",
    "chamber_volume": "0.08974 in*in*in",
    "charge": "6 gr",
@@ -868,12 +880,12 @@
  },
  {
   "conditions": {
-   "charge": "30 gr",
-   "diameter": "0.36 in",
-   "initial_velocity": "1460 ft/s",
-   "mass": "70 gr"
+   "charge": "1.500 kg",
+   "diameter": "16 cm",
+   "initial_velocity": "384 m/s",
+   "mass": "11.2 kg"
   },
-  "power_factor": 231037.47340800002,
+  "power_factor": 550502.4,
   "time": null
  },
  {
