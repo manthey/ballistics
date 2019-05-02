@@ -920,5 +920,199 @@ data:
               -
                 charge: 3.000 kg
                 initial_velocity: 375 m/s
-
-# p. 372
+  -
+    desc: "Initial speeds measured with ballistic pendulums"
+    ref2: p. 373
+    date: 1846
+    material: iron
+    technique: pendulum
+    data:
+      -
+        diameter: 0.1596 m
+        mass: 15.10 kg
+        data:
+          -
+            charge: 6.000 kg
+            initial_velocity: 501.2 m/s
+          -
+            charge: 5.000 kg
+            initial_velocity: 484.7 m/s
+          -
+            charge: 4.500 kg
+            initial_velocity: 474.4 m/s
+          -
+            charge: 3.750 kg
+            initial_velocity: 455.1 m/s
+          -
+            charge: 3.000 kg
+            initial_velocity: 426.6 m/s
+          -
+            charge: 2.000 kg
+            initial_velocity: 359.2 m/s
+      -
+        diameter: 0.1602 m
+        mass: 10.61 kg
+        data:
+          -
+            charge: 5.000 kg
+            initial_velocity: 549.6 m/s
+          -
+            charge: 4.500 kg
+            initial_velocity: 544.1 m/s
+          -
+            charge: 3.750 kg
+            initial_velocity: 530.9 m/s
+          -
+            charge: 3.000 kg
+            initial_velocity: 503.8 m/s
+          -
+            charge: 2.000 kg
+            initial_velocity: 436.8 m/s
+      -
+        diameter: 0.1596 m
+        mass: 15.10 kg
+        data:
+          -
+            charge: 5.000 kg
+            initial_velocity: 473.7 m/s
+          -
+            charge: 4.500 kg
+            initial_velocity: 464.0 m/s
+          -
+            charge: 3.750 kg
+            initial_velocity: 495.8 m/s
+          -
+            charge: 3.000 kg
+            initial_velocity: 421.0 m/s
+          -
+            charge: 2.000 kg
+            initial_velocity: 357.9 m/s
+      -
+        diameter: 0.1602 m
+        mass: 10.61 kg
+        data:
+          -
+            charge: 5.000 kg
+            initial_velocity: 532.7 m/s
+          -
+            charge: 4.500 kg
+            initial_velocity: 528.3 m/s
+          -
+            charge: 3.750 kg
+            initial_velocity: 517.2 m/s
+          -
+            charge: 3.000 kg
+            initial_velocity: 497.0 m/s
+          -
+            charge: 2.000 kg
+            initial_velocity: 433.6 m/s
+      -
+        diameter: 0.1474 m
+        mass: 11.93 kg
+        data:
+          -
+            charge: 4.000 kg
+            initial_velocity: 491.2 m/s
+          -
+            charge: 3.500 kg
+            initial_velocity: 477.1 m/s
+          -
+            charge: 3.000 kg
+            initial_velocity: 458.9 m/s
+          -
+            charge: 2.500 kg
+            initial_velocity: 439.0 m/s
+          -
+            charge: 2.000 kg
+            initial_velocity: 397.5 m/s
+          -
+            charge: 1.500 kg
+            initial_velocity: 346.9 m/s
+      -
+        diameter: 0.1485 m
+        mass: 8.67 kg
+        data:
+          -
+            charge: 4.000 kg
+            initial_velocity: 560.9 m/s
+          -
+            charge: 3.500 kg
+            initial_velocity: 552.2 m/s
+          -
+            charge: 3.000 kg
+            initial_velocity: 538.2 m/s
+          -
+            charge: 2.500 kg
+            initial_velocity: 514.9 m/s
+          -
+            charge: 2.000 kg
+            initial_velocity: 479.1 m/s
+          -
+            charge: 1.500 kg
+            initial_velocity: 426.2 m/s
+      -
+        diameter: 0.1474 m
+        mass: 11.93 kg
+        data:
+          -
+            charge: 4.000 kg
+            initial_velocity: 481.3 m/s
+          -
+            charge: 3.500 kg
+            initial_velocity: 467.9 m/s
+          -
+            charge: 3.000 kg
+            initial_velocity: 451.4 m/s
+          -
+            charge: 2.500 kg
+            initial_velocity: 427.3 m/s
+          -
+            charge: 2.000 kg
+            initial_velocity: 395.0 m/s
+          -
+            charge: 1.500 kg
+            initial_velocity: 346.0 m/s
+      -
+        diameter: 0.1485 m
+        mass: 8.67 kg
+        data:
+          -
+            charge: 4.000 kg
+            initial_velocity: 545.5 m/s
+          -
+            charge: 3.500 kg
+            initial_velocity: 538.1 m/s
+          -
+            charge: 3.000 kg
+            initial_velocity: 526.8 m/s
+          -
+            charge: 2.500 kg
+            initial_velocity: 505.9 m/s
+          -
+            charge: 2.000 kg
+            initial_velocity: 474.4 m/s
+          -
+            charge: 1.500 kg
+            initial_velocity: 422.7 m/s
+      -
+        diameter: 0.1173 m
+        mass: 6.09 kg
+        data:
+          -
+            charge: 2.500 kg
+            initial_velocity: 520.7 m/s
+          -
+            charge: 2.000 kg
+            initial_velocity: 499.7 m/s
+          -
+            charge: 1.750 kg
+            initial_velocity: 485.8 m/s
+          -
+            charge: 1.500 kg
+            initial_velocity: 467.0 m/s
+          -
+            charge: 1.250 kg
+            initial_velocity: 440.6 m/s
+          -
+            charge: 1.000 kg
+            initial_velocity: 403.8 m/s
