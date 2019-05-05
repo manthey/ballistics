@@ -152,6 +152,16 @@ UnitsTable = [{
     'value': SardiniaFootInMeters * 6,
     'desc': 'Sardinia trabucco (fathom)',
 }, {
+    # From Zupko, p. 89
+    'names': ['bresciacavezzo', 'bresciacavezzi'],
+    'value': 2.853,
+    'desc': 'Brescia cavezzo (6 piedi)',
+}, {
+    # From Zupko, p. 189
+    'names': ['veronapertica', 'veronapertiche'],
+    'value': 2.057,
+    'desc': 'Verona pertica (6 piedi)',
+}, {
 
     # Mass (reference is kg)
     'names': ['g', 'gram', 'grams'],
@@ -232,6 +242,20 @@ UnitsTable = [{
     'names': ['italiandenari', 'piedmontesedenari', 'denari'],
     'value': PeidmontPoundInKilograms / 12 / 24,
     'desc': 'Peidmont denari (dram)',
+}, {
+    # Zupko, p. 131
+    'names': ['brescialibra', 'brescialibbra', 'brescialibre', 'brescialibbre'],
+    'value': 0.321,
+    'desc': 'Brescia libra',
+}, {
+    'names': ['bresciaonce'],
+    'value': 0.321 / 12,
+    'desc': 'Brescia once',
+}, {
+    # Zupko, p. 134
+    'names': ['veronalibra', 'veronalibbra'],
+    'value': 0.333,
+    'desc': 'Verona libra',
 }, {
 
     # Energy (reference is J)

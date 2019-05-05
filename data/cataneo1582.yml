@@ -1,0 +1,73 @@
+---
+key: cataneo1582
+ref: "Cataneo, 1582"
+cms: "Cataneo, Girolamo.  <i>Advertimenti et Essamini Intorno a Quelle Code Che Richiede a un Bombardiero.</i>  Brescia: Appresso Thomas Bozzola, 1582."
+summary: "This includes making basic tools and some range information."
+date: "1582"
+data:
+  -
+    ref2: p. 8
+    charge_note: From pp. 4-6.
+    angle: 45 deg
+    material: iron
+    data:
+      -
+        desc: "Falcon da libre 9"
+        range: 916 bresciacavezzi
+        mass: 9 brescialibra
+        charge_note: "From p. 5, proportional to a Falcone da 6."
+        data:
+          - charge: 6 brescialibre 0 bresciaonce
+          - charge: 5 brescialibre 5.2 bresciaonce
+          - charge: 5 brescialibre 4 bresciaonce
+      -
+        desc: "Sacro da da libre 12"
+        range: 1222 bresciacavezzi
+        mass: 12 brescialibra
+        data:
+          - charge: 8 brescialibre 0 bresciaonce
+          - charge: 7 brescialibre 5.6 bresciaonce
+          - charge: 7 brescialibre 1.333 bresciaonce
+      -
+        desc: "Passavolante overo meza Colvbrina rinforzada da libre 25"
+        range: 1833 bresciacavezzi
+        range_note: "This has the same values as the colvbrina da libra 30, which seems unlikely."
+        mass: 25 brescialibra
+        charge_note: "From p. 5, halfway between the charge for a Colvbrina da 20 and Colvbrina da 30, though on p. 6 it is suggested that the charge should be 2/3 of the ball, not 4/5."
+        data:
+          - charge: 20 brescialibre 0 bresciaonce
+          - charge: 18 brescialibre 8 bresciaonce
+          - charge: 17 brescialibre 9.1667 bresciaonce
+      -
+        desc: "Canone da libre 60"
+        range: 1528 bresciacavezzi
+        mass: 60 brescialibra
+        data:
+          - charge: 40 brescialibre 0 bresciaonce
+          - charge: 37 brescialibre 4 bresciaonce
+          - charge: 35 brescialibre 6.667 bresciaonce
+      -
+        desc: "Colvbrina da libra 20"
+        range: 1214 bresciacavezzi
+        range_note: last digit is obscured
+        mass: 20 brescialibra
+        data:
+          - charge: 16 brescialibre 0 bresciaonce
+          - charge: 14 brescialibre 11.2 bresciaonce
+          - charge: 14 brescialibre 2.667 bresciaonce
+      -
+        desc: "Colvbrina da libra 30"
+        range: 1833 bresciacavezzi
+        mass: 30 brescialibra
+        data:
+          - charge: 24 brescialibre 0 bresciaonce
+          - charge: 22 brescialibre 4.8 bresciaonce
+          - charge: 21 brescialibre 4 bresciaonce
+      -
+        desc: "Colvbrina da libra 60"
+        range: 2140 bresciacavezzi
+        mass: 60 brescialibra
+        data:
+          - charge: 48 brescialibre 0 bresciaonce
+          - charge: 44 brescialibre 9.6 bresciaonce
+          - charge: 42 brescialibre 8 bresciaonce
