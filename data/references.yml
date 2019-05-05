@@ -102,3 +102,8 @@ references:
     ref: "Subramanian, 2005"
     cms: "Subramanian, R. Shankar. <i>Drag on spherical particles and steady settling velocities.</i> Accessed February 7, 2005.  http://web2.clarkson.edu/projects/subramanian/ch330/notes/Drag%20on%20a%20Sphere.pdf"
     link: http://web2.clarkson.edu/projects/subramanian/ch330/notes/Drag%20on%20a%20Sphere.pdf
+  -
+    key: valleriani2017
+    ref: "Valleriani, 2017"
+    cms: "Valleriani, Matteo. <i>Metallurgy, Ballistics and Epistemic Instruments: The </i>Nova scientia<i> of Nicol\u00f2 Tartaglia.</i> Berlin: Max Planck Institute for the History of Science, 2017."
+    summary: "This is a modern translation of \"La nova scientia de Nicol\u00f2 Tartaglia con una gionta al terzo libro.\" from 1558.  The first edition was published in 1537.  It doesn't have enough data to supply any values for the analysis with certainty, but there is an example on p. 71.  This says that a 20 libra culverin was fired at angles of 6 quadrant points and 4 quadrant points producing ranges of 1972 and 1872 Veronese pertica respectively.  Unfortunately, no powder charge is give.  However, if a Veronese pertica is taken as around 2.05 meters, a libra is the same as a Peidmont pound, and the charge is assumed to be equal to the weight of the ball, then these produce power factors on the order of 145 kJ/kg and 105 kJ/kg respectively."
