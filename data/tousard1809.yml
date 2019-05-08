@@ -1,0 +1,293 @@
+---
+key: tousard1809
+ref: "Tousard, 1809"
+cms: "Tousard, Louis de. <i>American Artillerist's Companion, or Elements of Artillery.</i> Philadelphia: C. and A. Conrad and Co, 1809."
+summary: "Tousard was the Inspector of Artillery of the United States."
+date: "1809"
+data:
+  -
+    ref2: "p. xxxi"
+    skip: true
+    skip_note: "The 1736 data from Armstrong is the same as listed in Muller, 1780 (nearly what is listed in Robins, 1761, though two entries differ from that)."
+  -
+    ref2: "p. xxxiv"
+    desc: "Comparison of two four pounders of different lengths"
+    date: "1771-07-31"
+    date_note: "The date is recorded in Scheel, 1777, p. 221"
+    material: iron
+    mass: 4 lbfr
+    data:
+      -
+        charge: 1.5 lbfr
+        data:
+          -
+            angle: 0 deg 58 arcmin
+            angle_note: "The lowest angle is recorded in Scheel, 1777, p. 221"
+            data:
+              -
+                initial_height: 36 infr
+                range: 197 toises
+              -
+                initial_height: 46 infr
+                range: 224 toises
+          -
+            angle: 3 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 635 toises
+              -
+                initial_height: 46 infr
+                range: 622 toises
+          -
+            angle: 6 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 845 toises
+              -
+                initial_height: 46 infr
+                range: 941 toises
+          -
+            angle: 10 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 1094 toises
+              -
+                initial_height: 46 infr
+                range: 1058 toises
+          -
+            angle: 15 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 1319 toises
+              -
+                initial_height: 46 infr
+                range: 1406 toises
+      -
+        charge: 2 lbfr
+        data:
+          -
+            angle: 0 deg 58 arcmin
+            angle_note: "The lowest angle is recorded in Scheel, 1777, p. 221"
+            data:
+              -
+                initial_height: 36 infr
+                range: 215 toises
+              -
+                initial_height: 46 infr
+                range: 235 toises
+          -
+            angle: 3 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 554 toises
+              -
+                initial_height: 46 infr
+                range: 593 toises
+          -
+            angle: 6 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 818 toises
+              -
+                initial_height: 46 infr
+                range: 941 toises
+          -
+            angle: 10 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 1034 toises
+              -
+                initial_height: 46 infr
+                range: 1129 toises
+          -
+            angle: 15 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 1379 toises
+              -
+                initial_height: 46 infr
+                range: 1328 toises
+      -
+        charge: 2.5 lbfr
+        data:
+          -
+            angle: 0 deg 58 arcmin
+            angle_note: "The lowest angle is recorded in Scheel, 1777, p. 221"
+            data:
+              -
+                initial_height: 36 infr
+                range: 179 toises
+              -
+                initial_height: 46 infr
+                range: 258 toises
+          -
+            angle: 3 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 584 toises
+              -
+                initial_height: 46 infr
+                range: 597 toises
+          -
+            angle: 6 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 843 toises
+              -
+                initial_height: 46 infr
+                range: 949 toises
+          -
+            angle: 10 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 1142 toises
+              -
+                initial_height: 46 infr
+                range: 1139 toises
+          -
+            angle: 15 deg
+            data:
+              -
+                initial_height: 36 infr
+                range: 1385 toises
+              -
+                initial_height: 46 infr
+                range: 1334 toises
+  -
+    ref2: "p. l"
+    desc: "Comparison of two eight pounders of different lengths"
+    date: "1764-07-07"
+    material: iron
+    mass: 8 lbfr
+    angle: 6 deg
+    data:
+      -
+        charge: 2 lbfr 12 ozfr
+        data:
+          - range: 605 toises
+          - range: 502 toises
+          - range: 539 toises
+          - range: 670 toises
+          - range: 459 toises
+          - range: 546 toises
+      -
+        charge: 2 lbfr 8 ozfr
+        data:
+          - range: 649 toises
+          - range: 503 toises
+          - range: 574 toises
+  -
+    ref2: "p. li"
+    desc: "Comparison of three 12 pounders of different lengths"
+    material: iron
+    mass: 12 lbfr
+    angle: 6 deg
+    data:
+      -
+        date: "1764-06-27"
+        charge: 4 lbfr
+        data:
+          - range: 1036 toises
+          - range: 903 toises
+          - range: 976 toises
+          - range: 1013 toises
+          - range: 830 toises
+          - range: 918 toises
+          - range: 1086 toises
+          - range: 777 toises
+          - range: 949 toises
+      -
+        date: "1764-06-28"
+        charge: 4 lbfr
+        data:
+          - range: 1010 toises
+          - range: 835 toises
+          - range: 936 toises
+          - range: 1028 toises
+          - range: 762 toises
+          - range: 922 toises
+          - range: 1036 toises
+          - range: 839 toises
+          - range: 929 toises
+      -
+        date: "1764-06-30"
+        charge: 4.5 lbfr
+        data:
+          - range: 1050 toises
+          - range: 815 toises
+          - range: 903 toises
+      -
+        date: "1764-06-30"
+        charge: 4 lbfr
+        data:
+          - range: 1056 toises
+          - range: 819 toises
+          - range: 905 toises
+  -
+    ref2: "p. 129"
+    material: iron
+    angle: 0 deg
+    data:
+      -
+        mass: 24 lb
+        charge: 8 lb
+        data:
+          -
+            initial_height: 1 yard
+            range: 219 yards
+          -
+            initial_height: 30 yards
+            range: 1045 yards
+          -
+            initial_height: 190 yards
+            range: 2023 yards
+      -
+        mass: 12 lb
+        charge: 4 lb
+        data:
+          -
+            initial_height: 1 yard
+            range: 229 yards
+          -
+            initial_height: 30 yards
+            range: 1056 yards
+          -
+            initial_height: 190 yards
+            range: 1961 yards
+      -
+        mass: 6 lb
+        charge: 2 lb
+        data:
+          -
+            initial_height: 1 yard
+            range: 233 yards
+          -
+            initial_height: 30 yards
+            range: 1050 yards
+          -
+            initial_height: 190 yards
+            range: 1836 yards
+      -
+        mass: 3 lb
+        charge: 1 lb
+        data:
+          -
+            initial_height: 1 yard
+            range: 238 yards
+          -
+            initial_height: 30 yards
+            range: 1003 yards
+          -
+            initial_height: 190 yards
+            range: 1703 yards

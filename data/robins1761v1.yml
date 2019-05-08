@@ -347,8 +347,8 @@ data:
     mass: 24 lb
     material: iron
     angle: 7.25 deg
-    charge: 12 lb
-    charge_note: "Speculative, as it just as \"these were all loaded with the same charge\".  I think this must either be 1/2 or 1/3 the weight of the ball, but based on other tests at Woolwich, 1/2 is more likely."
+    charge: 16 lb
+    charge_note: "Other references give this same information and cite that the charge is 2/3 the weight of the ball; see Muller, 1780, p. xi."
     data:
       -
         date: "1736-06-01"

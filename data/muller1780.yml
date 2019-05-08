@@ -48,7 +48,8 @@ data:
     material: iron
     mass: 24 lb
     charge: 16 lb
-    angle: 45 deg
+    angle: 7.25 deg
+    angle_note: "Angle given by Robins, 1761, p. 268"
     data:
       - range: 2486 yards
       - range: 2614 yards
