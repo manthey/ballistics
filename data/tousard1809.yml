@@ -291,3 +291,79 @@ data:
           -
             initial_height: 190 yards
             range: 1703 yards
+  -
+    ref2: "p. 130"
+    material: iron
+    angle: 45 deg
+    date: 1756
+    data:
+      -
+        mass: 24 lbfr
+        charge: 16 lbfr
+        range: 4817 yards
+      -
+        mass: 16 lbfr
+        charge: 10.667 lbfr
+        range: 4324 yards
+      -
+        mass: 12 lbfr
+        charge: 8 lbfr
+        range: 4002 yards
+      -
+        mass: 8 lbfr
+        charge: 5.333 lbfr
+        range: 3552 yards
+      -
+        mass: 4 lbfr
+        charge: 2.667 lbfr
+        range: 3254 yards
+  -
+    ref2: "p. 237"
+    diameter: 12.79 in
+    skip: true
+    skip_note: There are many experiments with mortars listed, inlcuding various shell weights, but it isn't clear if these are the 10 or 12 inch mortars.
+  -
+    ref2: "p. 249"
+    data:
+      -
+        diameter: 12.652 in
+        mass: 147 lb
+        charge: 3 lb 2 oz
+        range: 2400 yards
+      -
+        diameter: 10.698 in
+        mass: 100 lb
+        charge: 6 lb 8.25 oz
+        data:
+          - range: 2400 yards
+          - range: 2800 yards
+      -
+        diameter: 10.698 in
+        mass: 100 lb
+        charge: 3 lb 10.25 oz
+        range: 2200 yards
+      -
+        diameter: 8.701 in
+        mass: 43 lb
+        charge: 1 lb 3.75 oz
+        range: 1160 yards
+      -
+        diameter: 7.457 in
+        material: copper
+        mass: 60 lb
+        charge: 3 oz
+        range: 180 yards
+  -
+    ref2: p. 251
+    data:
+      -
+        diameter: 8.70 in
+        mass: 44 lb
+        charge: 1 lb 12 oz
+        charge_note: I suspect that this is in error.
+        range: 3200 yards
+      -
+        diameter: 6.44 in
+        mass: 24 lb
+        charge: 1 lb 12 oz
+        range: 2400 yards

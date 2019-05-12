@@ -934,6 +934,17 @@
  },
  {
   "conditions": {
+   "charge": "3 oz",
+   "diameter": "7.457 in",
+   "mass": "60 lb",
+   "material": "copper",
+   "range": "180 yards"
+  },
+  "power_factor": 260570.41238932707,
+  "time": 5.810134700778008
+ },
+ {
+  "conditions": {
    "charge": "2 oz",
    "diameter": "8 in",
    "mass": "41 lb 11 oz",
