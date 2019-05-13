@@ -740,6 +740,17 @@
  },
  {
   "conditions": {
+   "angle": "1 deg 11 arcmin",
+   "charge": "8 lbfr",
+   "final_time": "1 sec 27 thirds",
+   "mass": "24 lbfr",
+   "material": "iron"
+  },
+  "power_factor": 202570.49983397222,
+  "time": 1.4500000001211462
+ },
+ {
+  "conditions": {
    "angle": "2 deg 0 arcmin",
    "charge": "5 lb 0 oz",
    "final_time": "3 sec 0 thirds",
@@ -797,6 +808,17 @@
   },
   "power_factor": 306735.0,
   "time": null
+ },
+ {
+  "conditions": {
+   "angle": "1 deg 11 arcmin",
+   "charge": "8 lbfr",
+   "mass": "24 lbfr",
+   "material": "iron",
+   "max_height": "8 ftfr 0 infr"
+  },
+  "power_factor": 202975.03602794584,
+  "time": 1.4512156051788003
  },
  {
   "conditions": {

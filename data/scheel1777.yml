@@ -1,0 +1,128 @@
+---
+key: scheel1777
+ref: "Scheel, 1777"
+cms: "Scheel, M. de. <i>Memoires d'Artillertie, contenant L'Artillerie Nouvelle, ou les changemens faits dans l'Artillerie Fran\u00e7oise en 1765.</i> Copenhague: Claude Philibert: 1777."
+summary: "This is a work in French, seemingly to inform the Danish artillery about changes implemented by France."
+date: "1777"
+data:
+  -
+    ref2: p. 107
+    angle: 45 deg
+    diameter: 11 infr 11 linefr
+    mass: 150 lbfr
+    data:
+      -
+        charge: 12 lbfr
+        range: 1200 toises
+      -
+        charge: 5.5 lbfr
+        range: 800 toises
+  -
+    ref2: p. 218
+    desc: "Vitesses du boulet pendant la premier seconde"
+    method: pendulum
+    skip: true
+    skip_note: No charges listed.
+  -
+    ref2: p. 221
+    material: iron
+    date: 1764
+    data:
+      -
+        mass: 24 lbfr
+        angle: 1 deg 11 arcmin
+        charge: 8 lbfr
+        data:
+         - range: 260 toises
+         - max_height: 8 ftfr 0 infr
+         - final_time: 1 sec 27 thirds
+      -
+        mass: 16 lbfr
+        angle: 1 deg 5 arcmin
+        charge: 5.333 lbfr
+        data:
+         - range: 240 toises
+         - max_height: 6 ftfr 9 infr
+         - final_time: 1 sec 20 thirds
+      -
+        mass: 12 lbfr
+        angle: 1 deg 2 arcmin
+        charge: 4.5 lbfr
+        data:
+         - range: 220 toises
+         - max_height: 6 ftfr 0 infr
+         - final_time: 1 sec 16 thirds
+      -
+        mass: 8 lbfr
+        angle: 1 deg 01 arcmin
+        charge: 3.25 lbfr
+        data:
+         - range: 200 toises
+         - max_height: 6 ftfr 9 infr
+         - final_time: 1 sec 10.6 thirds
+      -
+        mass: 4 lbfr
+        angle: 0 deg 58 arcmin
+        charge: 2 lbfr
+        data:
+         - range: 180 toises
+         - max_height: 4 ftfr 6 infr
+         - final_time: 1 sec 5.4 thirds
+      -
+        mass: 12 lbfr
+        angle: 0 deg 58 arcmin
+        charge: 4 lbfr
+        data:
+         - range: 200 toises
+         - max_height: 4 ftfr 9 infr
+         - final_time: 1 sec 7.2 thirds
+      -
+        mass: 8 lbfr
+        angle: 0 deg 58 arcmin
+        charge: 2.5 lbfr
+        data:
+         - range: 180 toises
+         - max_height: 4 ftfr 6 infr
+         - final_time: 1 sec 5.2 thirds
+      -
+        mass: 4 lbfr
+        angle: 0 deg 58 arcmin
+        charge: 1.5 lbfr
+        data:
+         - range: 160 toises
+         - max_height: 4 ftfr 0 infr
+         - final_time: 1 sec 1.8 thirds
+      -
+        mass: 4 lbfr
+        angle: 1 deg 16 arcmin
+        charge: 1.5 lbfr
+        data:
+         - range: 210 toises
+         - max_height: 7 ftfr 0 infr
+         - final_time: 1 sec 21.6 thirds
+  -
+    ref2: p. 221
+    skip: true
+    skip_note: The comparison between different 4 pounders is exactly the same data as in Tousard, 1809, so it is not repeated here.
+  -
+    ref2: p. 233
+    technique: given
+    mass: 4 lbfr
+    material: iron
+    charge: 1.5 lbfr
+    initial_velocity: 1300 ftfr/s
+  -
+    ref2: p. 374
+    technique: given
+    data:
+      -
+        mass: 24 lbfr
+        material: iron
+        angle: 30 deg
+        charge: 8.5 lbfr
+        initial_velocity: 1295 ftfr/s
+      -
+        mass: 142 lbfr
+        diameter: 12 infr
+        charge: 3.75 lbfr
+        initial_velocity: 336 ftfr/s
