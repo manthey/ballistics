@@ -581,6 +581,12 @@
   "ref": "Sarrau, 1883",
   "summary": "Mostly calculated values with a few results from calorimeters."
  },
+ "scheel1777": {
+  "cms": "Scheel, M. de. <i>Memoires d'Artillertie, contenant L'Artillerie Nouvelle, ou les changemens faits dans l'Artillerie Fran\u00e7oise en 1765.</i> Copenhague: Claude Philibert: 1777.",
+  "key": "scheel1777",
+  "ref": "Scheel, 1777",
+  "summary": "This is a work in French, seemingly to inform the Danish artillery about changes implemented by France."
+ },
  "scott2017": {
   "cms": "Scott, Douglas D., Joel Bohy, Nathar Boor, Charles Haeker, William Rose, and Patrick Severts. <i>Colonial Era Firearm Bullet Performance: A Live Fire Experimental Study for Archeological Interpretation</i>. Dated April 2017, accessed April 6, 2019.  http://www.modernheritage.net/Scott_etal_2017.pdf.",
   "key": "scott2017",
