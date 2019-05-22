@@ -46,6 +46,10 @@ SardiniaFootInMeters = StatuteFootInMeters * 20.23457 / 12
 # Stone gives 11 Paris inches 7 Paris lines = 1 Rhine foot
 # Smith, 1779 gives 1 Rhine foot = 12 1/3 in
 RhineFootInMeters = StatuteFootInMeters * 12.357 / 12
+# Clarke lists 1 pie as 11.128 statute inches, though Smith lists it as
+# 899/1000 statute feet or 10 statute inches 7 lines.  Stone gives 1 vara as
+# 3 statute feet 9 lines.  These don't agree; I've gone with Clarke
+SpanishFootInMeters = StatuteFootInMeters * 11.128 / 12
 
 AvoirdupoisPoundInKilograms = 0.45359237
 TroyPoundInKilograms = AvoirdupoisPoundInKilograms * 5760 / 7000
@@ -56,6 +60,9 @@ ParisPoundInKilograms = AvoirdupoisPoundInKilograms / 0.926
 PeidmontPoundInKilograms = AvoirdupoisPoundInKilograms * 0.81332
 # Clarke, p. 62, gives 1 pfund = 1.03118 lb English
 RhinePoundInKilograms = AvoirdupoisPoundInKilograms * 1.03118
+# 1801 legislation.  However, Clarke, 1891, p. 70, gives 1.016097 lb
+# avoirdupois, and Smith, 1779, under Weights gives 100/97 lb avoirdupois.
+CastillianLibraInKilograms = 0.460093
 
 SIGravity = 9.806650
 
@@ -162,6 +169,20 @@ UnitsTable = [{
     'value': 2.057,
     'desc': 'Verona pertica (6 piedi)',
 }, {
+    # -- Spanish distances
+    'names': ['ftes', 'spanishfoot', 'spanishfeet', 'spanishpie'],
+    'value': SpanishFootInMeters,
+    'desc': 'Spanish foot (pie)',
+}, {
+    'names': ['passo', 'spanishpasso', 'spanishpassos'],
+    # Collado says a common pace is 5/8 a geometric pace
+    'value': SpanishFootInMeters * 5 * 5 / 8,
+    'desc': 'Spanish common pace (passo)',
+}, {
+    'names': ['geometricospasso', 'geometricospassos'],
+    'value': SpanishFootInMeters * 5,
+    'desc': 'Spanish geometric pace (geometricos passo)',
+}, {
 
     # Mass (reference is kg)
     'names': ['g', 'gram', 'grams'],
@@ -256,6 +277,17 @@ UnitsTable = [{
     'names': ['veronalibra', 'veronalibbra'],
     'value': 0.333,
     'desc': 'Verona libra',
+}, {
+    # -- Spanish
+    'names': ['lbes', 'spanishpound', 'spanishpounds', 'castillianpound',
+              'castillianpounds', 'castillianlibra'],
+    'value': CastillianLibraInKilograms,
+    'desc': 'Castillian libra (pound)',
+}, {
+    'names': ['ozes', 'spanishounce', 'spanishounces', 'castillianounce',
+              'castillianounces', 'castillianonza'],
+    'value': CastillianLibraInKilograms / 16,
+    'desc': 'Castillian onza (ounce)',
 }, {
 
     # Energy (reference is J)

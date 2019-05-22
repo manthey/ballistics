@@ -1,0 +1,90 @@
+---
+key: collado1592
+ref: "Collado, 1592"
+cms: "Collado, Luys. <i>Platica Manual de Artilleria, en La Qual se Tracta de la Excelencia de el Arte Militar, y Origen de Ella, y de Las Maquinas con que los Antiguos Comen\u00e7aron a usarla.</i> Milan: Pablo Gotardo Poncio, 1592."
+summary: "An early Spanish work on artillery.  Although this was published in Milan, it is dedicated to the Spanish king, and, therefore I think the units used are those of Spain and not those of Milan."
+date: "1592"
+data:
+  -
+    ref2: p. 26
+    desc: "De los mosquettes"
+    angle: 45 deg
+    material: lead
+    mass: 2 spanishounce
+    charge: 1.5 spanishounce
+    range: 600 spanishpasso
+  -
+    ref2: p. 27
+    angle: 45 deg
+    material: iron
+    data:
+      -
+        desc: "Esmeril"
+        range: 900 spanishpasso
+        data:
+          -
+            mass: 6 spanishounce
+            charge: 6 spanishounce
+          -
+            mass: 12 spanishounce
+            charge: 12 spanishounce
+      -
+        desc: "Falconete"
+        range: 3000 spanishpasso
+        data:
+          -
+            mass: 3 spanishpound
+            charge: 3 spanishpound
+          -
+            mass: 4 spanishpound
+            charge: 4 spanishpound
+      -
+        desc: "Media Sacre"
+        range: 4500 spanishpasso
+        data:
+          -
+            mass: 5 spanishpound
+            charge: 5 spanishpound
+          -
+            mass: 7 spanishpound
+            charge: 7 spanishpound
+      -
+        desc: "Passauolantes, \u00f2 Zerbatanas"
+        range: 5000 spanishpasso
+        data:
+          -
+            mass: 6 spanishpound
+            charge: 6 spanishpound
+          -
+            mass: 7 spanishpound
+            charge: 7 spanishpound
+      -
+        desc: "Sacres"
+        range: 5600 spanishpasso
+        data:
+          -
+            mass: 8 spanishpound
+            charge: 8 spanishpound
+          -
+            mass: 10 spanishpound
+            charge: 10 spanishpound
+      -
+        desc: "Media Culebrinas"
+        range: 6000 spanishpasso
+        data:
+          -
+            mass: 12 spanishpound
+            charge: 12 spanishpound
+          -
+            mass: 18 spanishpound
+            charge: 18 spanishpound
+      -
+        desc: "Culebrina"
+        range: 8000 spanishpasso
+        data:
+          -
+            mass: 20 spanishpound
+            charge: 20 spanishpound
+          -
+            mass: 50 spanishpound
+            charge: 50 spanishpound
