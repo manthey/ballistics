@@ -123,6 +123,12 @@
   "key": "clarke1891",
   "ref": "Clarke, 1891"
  },
+ "collado1592": {
+  "cms": "Collado, Luys. <i>Platica Manual de Artilleria, en La Qual se Tracta de la Excelencia de el Arte Militar, y Origen de Ella, y de Las Maquinas con que los Antiguos Comen\u00e7aron a usarla.</i> Milan: Pablo Gotardo Poncio, 1592.",
+  "key": "collado1592",
+  "ref": "Collado, 1592",
+  "summary": "An early Spanish work on artillery.  Although this was published in Milan, it is dedicated to the Spanish king, and, therefore I think the units used are those of Spain and not those of Milan."
+ },
  "collins2016": {
   "cms": "Collins, A. R. <i>SphereDrag.  Calculation of aerodynamic drag coefficient for a sphere at speeds near the speed of sound.</i>  Accessed April 29, 2016.  http://arc.id.au/CannonballDrag.html",
   "key": "collins2016",
@@ -582,7 +588,7 @@
   "summary": "Mostly calculated values with a few results from calorimeters."
  },
  "scheel1777": {
-  "cms": "Scheel, M. de. <i>Memoires d'Artillertie, contenant L'Artillerie Nouvelle, ou les changemens faits dans l'Artillerie Fran\u00e7oise en 1765.</i> Copenhague: Claude Philibert: 1777.",
+  "cms": "Scheel, M. de. <i>Memoires d'Artillertie, contenant L'Artillerie Nouvelle, ou les changemens faits dans l'Artillerie Fran\u00e7oise en 1765.</i> Copenhague: Claude Philibert, 1777.",
   "key": "scheel1777",
   "ref": "Scheel, 1777",
   "summary": "This is a work in French, seemingly to inform the Danish artillery about changes implemented by France."
