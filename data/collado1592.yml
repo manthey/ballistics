@@ -88,3 +88,29 @@ data:
           -
             mass: 50 spanishpound
             charge: 50 spanishpound
+  -
+    ref2: p. 39
+    material: iron
+    mass: 3 spanishpound
+    charge: 3 spanishpound
+    skip: true
+    skip_note: The charge isn't listed.  This set of data is self-consistent, but the charge must be much less than the weight of the ball.
+    data:
+      -
+        angle: 1 quadpt
+        range: 368 spanishpasso
+      -
+        angle: 2 quadpt
+        range: 594 spanishpasso
+      -
+        angle: 3 quadpt
+        range: 794 spanishpasso
+      -
+        angle: 4 quadpt
+        range: 954 spanishpasso
+      -
+        angle: 5 quadpt
+        range: 1010 spanishpasso
+      -
+        angle: 6 quadpt
+        range: 1040 spanishpasso

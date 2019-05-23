@@ -285,7 +285,7 @@ UnitsTable = [{
     'desc': 'Castillian libra (pound)',
 }, {
     'names': ['ozes', 'spanishounce', 'spanishounces', 'castillianounce',
-              'castillianounces', 'castillianonza'],
+              'castillianounces', 'castillianonca'],
     'value': CastillianLibraInKilograms / 16,
     'desc': 'Castillian onza (ounce)',
 }, {
