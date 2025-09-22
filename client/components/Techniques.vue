@@ -194,7 +194,7 @@ Modern high-speed video can record the flight of the projectile.  Knowing the fr
 
 [Plot](#/plot?filter=d.technique%3D%3D'calorimeter') [Table](#/table?filter=d.technique%3D%3D'calorimeter')
 
-A calorimeter measures the amount of energy released when a sample is burned or exploded by measuring the amount of heat that is released.  If this is done in a closed system, for instance, the temperature increase can be measure don a known quantity of water.
+A calorimeter measures the amount of energy released when a sample is burned or exploded by measuring the amount of heat that is released.  If this is done in a closed system, for instance, the temperature increase can be measured on a known quantity of water.
 
 ## Theory
 
